@@ -22,19 +22,30 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    env:
+      # Without the secret the run only republishes the app.
+      HAS_KEY: ${{ secrets.ANTHROPIC_API_KEY != '' }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - if: env.HAS_KEY != 'true'
+        run: echo "Nessun secret ANTHROPIC_API_KEY, salto la generazione e pubblico l'app."
+      - if: env.HAS_KEY == 'true'
+        uses: actions/checkout@v4
+      - if: env.HAS_KEY == 'true'
+        uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
-      - run: npm ci
+      - if: env.HAS_KEY == 'true'
+        run: npm ci
       - name: Genera l'edizione di oggi
+        if: env.HAS_KEY == 'true'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/generate.mjs ${{ inputs.force && '--force' || '' }}
-      - run: node scripts/validate.mjs
+      - if: env.HAS_KEY == 'true'
+        run: node scripts/validate.mjs
       - name: Salva nel repository
+        if: env.HAS_KEY == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
