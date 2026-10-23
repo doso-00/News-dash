@@ -104,6 +104,7 @@ ${notes}
 
 Trasformali nell'edizione di oggi: 5 schede nell'ordine ai, finanza, mondo, sapere, routine.
 Ogni scheda ha 2 domande di quiz con 4 opzioni (una sola corretta, le altre plausibili) che verificano la comprensione, non la memoria di dettagli irrilevanti.
+Il testo si legge sul telefono: "sections" racconta la storia in 4-5 tappe brevi (cosa è successo, perché, conseguenze, contesto), ognuna con un titoletto concreto e 1-3 frasi. Evidenzia con **doppi asterischi** 1-2 dati o frasi chiave per sezione. "stat" è il numero simbolo della notizia. Usa nel testo i termini del glossario con la stessa grafia.
 "eli5" spiega il concetto centrale con un'analogia quotidiana. "deepDive" va oltre la notizia. "actionToday" è concreto e fattibile in 15 minuti; per la scheda ai proponi un prompt o un mini-progetto da fare con Claude.
 Le fonti devono essere URL presenti negli appunti.${feedback ? `\n\nLa bozza precedente aveva questi problemi, correggili: ${feedback}` : ""}`,
       },

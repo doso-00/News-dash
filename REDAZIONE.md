@@ -39,7 +39,17 @@ Scrivi `/tmp/bozza.json` in italiano, con questa forma:
 }
 ```
 
-Ogni scheda ha: `category`, `title`, `subtitle`, `summary` (2-3 frasi), `body` (3-5 paragrafi), `keyPoints` (3-4), `whyItMatters`, `actionToday` (concreto, 15 minuti; per ai un prompt o mini-progetto con Claude), `checklist` (solo routine, altrimenti `[]`), `eli5` (analogia quotidiana), `deepDive` (2 approfondimenti `{title, text}`), `glossary` (2-3 `{term, meaning}`), `sources` (`{title, url}` realmente consultate; obbligatorie per ai, finanza, mondo), `readingMinutes`, `quiz` (2 domande con 4 opzioni, `answer` = indice 0-3 della corretta, `explanation`), `reflection` (domanda aperta).
+Ogni scheda ha: `category`, `title`, `subtitle`, `summary` (2 frasi), `stat` (`{value, label}`: il numero simbolo della notizia, corto, es. "-2,6%" o "90 min"; `null` se non c'è un numero significativo), `sections` (4-5 `{heading, text}`), `keyPoints` (3, max 15 parole), `whyItMatters`, `actionToday` (concreto, 15 minuti; per ai un prompt o mini-progetto con Claude), `checklist` (solo routine, altrimenti `[]`), `eli5` (analogia quotidiana), `deepDive` (2 approfondimenti `{title, text}`), `glossary` (2-3 `{term, meaning}`), `sources` (`{title, url}` realmente consultate; obbligatorie per ai, finanza, mondo), `readingMinutes`, `quiz` (2 domande con 4 opzioni, `answer` = indice 0-3 della corretta, `explanation`), `reflection` (domanda aperta).
+
+### Stile di scrittura
+
+Il testo si legge sul telefono, deve scorrere come un racconto:
+
+- Le `sections` raccontano la storia in ordine: cosa è successo, perché, conseguenze, contesto. Ogni `heading` è un titoletto concreto di massimo 6 parole che anticipa il contenuto ("La scintilla: Meta", non "Analisi").
+- Ogni `text` ha 1-3 frasi brevi. Una sola idea per sezione.
+- Evidenzia con `**doppi asterischi**` il dato o la frase chiave: 1-2 per sezione, mai frasi intere lunghe. Puoi farlo anche in `summary`, `keyPoints`, `whyItMatters` e `actionToday`.
+- Usa nel testo i termini del `glossary` con la stessa grafia: nell'app diventano parole toccabili con la definizione.
+- Frasi attive e dirette, numeri concreti, niente giri di parole.
 
 Le domande del quiz verificano la comprensione, non la memoria di dettagli irrilevanti. Le opzioni sbagliate devono essere plausibili.
 

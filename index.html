@@ -39,6 +39,7 @@
         </div>
         <p class="headline" id="headline"></p>
         <div class="streak-row" id="streak-row"></div>
+        <div id="stories-cta"></div>
         <ol class="cards" id="cards" aria-label="Le cinque schede di oggi"></ol>
         <div class="quiz-cta" id="quiz-cta"></div>
       </section>
@@ -125,8 +126,22 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5h11v17l-5.5-4-5.5 4z" /></svg>
           </button>
         </div>
+        <div class="read-progress" id="read-progress"></div>
       </div>
       <article class="sheet-body" id="sheet-body"></article>
+    </div>
+
+    <div class="termpop" id="termpop" role="status" hidden></div>
+
+    <div class="stories" id="stories" role="dialog" aria-modal="true" aria-label="Sfoglia le notizie" hidden>
+      <div class="stories-top">
+        <div class="stories-bar" id="stories-bar"></div>
+        <button type="button" class="icon-btn" id="stories-close" aria-label="Chiudi">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+        </button>
+      </div>
+      <div class="story-slide" id="story-slide" aria-live="polite"></div>
+      <p class="stories-hint">Tocca a destra per andare avanti, a sinistra per tornare indietro</p>
     </div>
 
     <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>

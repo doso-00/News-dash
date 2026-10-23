@@ -169,6 +169,12 @@ function renderToday() {
     due ? `<span class="pill">Ripasso <strong>${due}</strong></span>` : "",
   ].join("");
 
+  $("#stories-cta").innerHTML = `<button type="button" class="stories-btn" data-stories="0">
+      <span class="stories-dots">${edition.cards.map((c) => `<i data-cat="${c.category}"></i>`).join("")}</span>
+      <span><strong>Sfoglia le 5 notizie</strong><small>circa 1 minuto</small></span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg>
+    </button>`;
+
   $("#cards").innerHTML = edition.cards
     .map((card, i) => {
       const [label, cls] = cardStatus(card);
@@ -176,7 +182,8 @@ function renderToday() {
         <span class="glyph"><svg viewBox="0 0 24 24" aria-hidden="true">${ICONS[card.category]}</svg></span>
         <span class="card-top"><span class="card-label">${CAT_SHORT[card.category]} · ${card.readingMinutes} min</span><span class="status ${cls}">${label}</span></span>
         <h3 class="card-title">${esc(card.title)}</h3>
-        <p class="card-summary">${esc(card.summary)}</p>
+        <p class="card-summary">${esc(plain(card.summary))}</p>
+        ${card.stat ? `<span class="card-stat"><b>${esc(card.stat.value)}</b> ${esc(card.stat.label)}</span>` : ""}
       </button></li>`;
     })
     .join("");
@@ -210,23 +217,41 @@ function openSheet(card, { push = true } = {}) {
   $("#sheet-save").setAttribute("aria-pressed", String(Boolean(state.saved[card.id])));
   const checks = state.checklist[card.id] ?? [];
 
-  $("#sheet-body").innerHTML = `
-    <p class="eyebrow">${longDate(edition.date)}</p>
-    <h2 id="sheet-title">${esc(card.title)}</h2>
-    <p class="sheet-sub">${esc(card.subtitle)}</p>
-    <div class="meta-row"><span>${card.readingMinutes} min di lettura</span>${card.sources.length ? `<span>${card.sources.length} fonti</span>` : ""}</div>
-    <div class="prose">
-      <p class="lede">${esc(card.summary)}</p>
-      ${card.body.map((p) => `<p>${esc(p)}</p>`).join("")}
-    </div>
+  const sections = sectionsOf(card);
+  const linkTerm = termLinker(card);
+  const idx = edition.cards.indexOf(card);
+  const next = edition.cards[idx + 1];
 
-    <section class="block"><h3>Punti chiave</h3>
-      <ul class="points">${card.keyPoints.map((p) => `<li>${esc(p)}</li>`).join("")}</ul>
+  $("#sheet-body").innerHTML = `
+    <header class="story-head">
+      <p class="eyebrow">${longDate(edition.date)} · ${card.readingMinutes} min</p>
+      <h2 id="sheet-title">${esc(card.title)}</h2>
+      <p class="sheet-sub">${esc(card.subtitle)}</p>
+    </header>
+
+    ${card.stat ? `<div class="stat-hero"><span class="stat-value">${esc(card.stat.value)}</span><span class="stat-label">${esc(card.stat.label)}</span></div>` : ""}
+
+    <section class="tldr" aria-label="In 30 secondi">
+      <h3>In 30 secondi</h3>
+      <p>${rich(card.summary)}</p>
+      <ul>${card.keyPoints.map((p) => `<li>${rich(p)}</li>`).join("")}</ul>
     </section>
 
+    <ol class="story">
+      ${sections
+        .map(
+          (sec) => `<li class="beat">
+            ${sec.heading ? `<h3>${esc(sec.heading)}</h3>` : ""}
+            <p>${linkTerm(rich(sec.text))}</p>
+          </li>`,
+        )
+        .join("")}
+    </ol>
+
     <section class="block">
-      <div class="callout"><h3>Perché ti riguarda</h3><p>${esc(card.whyItMatters)}</p></div>
-      <div class="callout"><h3>Da fare oggi</h3><p>${esc(card.actionToday)}</p></div>
+      <div class="callout"><h3>Perché ti riguarda</h3><p>${rich(card.whyItMatters)}</p></div>
+      <div class="callout"><h3>Da fare oggi</h3><p>${rich(card.actionToday)}</p>
+        <button type="button" class="link-btn copy-action" data-copy-action>Copia</button></div>
     </section>
 
     ${
@@ -267,10 +292,26 @@ function openSheet(card, { push = true } = {}) {
         <div class="callout"><h3>In parole semplici</h3><p>${esc(card.eli5)}</p></div>
         ${askBox(card, "Cosa non ti è chiaro? Chiedi a Claude…")}
       </div>
-    </section>`;
+    </section>
+
+    ${
+      next
+        ? `<button type="button" class="next-card" data-cat="${next.category}" data-next="${esc(next.id)}">
+            <span class="card-label">Prossima · ${CAT_SHORT[next.category]}</span>
+            <strong>${esc(next.title)}</strong>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>`
+        : `<a class="next-card done" href="#quiz" data-close-to-quiz>
+            <span class="card-label">Hai letto tutto</span>
+            <strong>Mettiti alla prova con il quiz</strong>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>`
+    }`;
 
   sheet.hidden = false;
   sheet.scrollTop = 0;
+  updateProgress();
+  revealBeats();
   document.body.style.overflow = "hidden";
   if (push) history.pushState({ sheet: card.id }, "", location.hash || "#oggi");
 
@@ -283,6 +324,56 @@ function openSheet(card, { push = true } = {}) {
   });
   readObserver.observe($("#understand"));
   $("#sheet-close").focus();
+}
+
+// Older editions have a plain `body`; newer ones have titled sections.
+const sectionsOf = (card) => card.sections ?? card.body.map((text) => ({ heading: "", text }));
+const plain = (text) => String(text ?? "").replace(/\*\*(.+?)\*\*/g, "$1");
+const rich = (text) => esc(text).replace(/\*\*(.+?)\*\*/g, "<mark>$1</mark>");
+
+// Turns the first mention of each glossary term into a tappable word.
+function termLinker(card) {
+  const used = new Set();
+  return (html) => {
+    card.glossary.forEach((g, i) => {
+      if (used.has(i)) return;
+      const re = new RegExp(`(^|[^\\p{L}])(${esc(g.term).replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})(?=[^\\p{L}]|$)`, "iu");
+      if (!re.test(html)) return;
+      used.add(i);
+      html = html.replace(re, `$1<button type="button" class="term" data-term="${i}">$2</button>`);
+    });
+    return html;
+  };
+}
+
+function showTerm(i) {
+  const g = openCard.glossary[i];
+  const pop = $("#termpop");
+  pop.innerHTML = `<strong>${esc(g.term)}</strong><span>${esc(g.meaning)}</span>`;
+  pop.hidden = false;
+}
+
+function updateProgress() {
+  const sheet = $("#sheet");
+  const max = sheet.scrollHeight - sheet.clientHeight;
+  $("#read-progress").style.transform = `scaleX(${max > 0 ? Math.min(1, sheet.scrollTop / max) : 0})`;
+}
+
+let beatObserver = null;
+function revealBeats() {
+  beatObserver?.disconnect();
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  beatObserver = new IntersectionObserver(
+    (entries) =>
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add("seen");
+          beatObserver.unobserve(e.target);
+        }
+      }),
+    { root: $("#sheet"), threshold: 0.35 },
+  );
+  document.querySelectorAll("#sheet-body .beat").forEach((el) => beatObserver.observe(el));
 }
 
 function closeSheet() {
@@ -298,6 +389,50 @@ function findCard(id) {
   return edition.cards.find((c) => c.id === id);
 }
 
+// ---------- stories: the five cards at a glance ----------
+
+let story = null;
+
+function openStories(start = 0) {
+  story = { i: start };
+  $("#stories").hidden = false;
+  document.body.style.overflow = "hidden";
+  renderStory();
+  $("#stories-close").focus();
+}
+
+function renderStory() {
+  const card = edition.cards[story.i];
+  $("#stories").dataset.cat = card.category;
+  $("#stories-bar").innerHTML = edition.cards
+    .map((c, i) => `<i class="${i < story.i ? "done" : i === story.i ? "now" : ""}"><b></b></i>`)
+    .join("");
+  $("#story-slide").innerHTML = `
+    <span class="story-cat"><span class="glyph"><svg viewBox="0 0 24 24" aria-hidden="true">${ICONS[card.category]}</svg></span>${esc(card.label)}</span>
+    ${card.stat ? `<p class="story-stat">${esc(card.stat.value)}</p><p class="story-stat-label">${esc(card.stat.label)}</p>` : ""}
+    <h2>${esc(card.title)}</h2>
+    <ul>${card.keyPoints.map((p) => `<li>${rich(p)}</li>`).join("")}</ul>
+    <button type="button" class="btn story-read" data-story-read="${esc(card.id)}">Leggi tutto</button>`;
+}
+
+function storyStep(delta) {
+  const n = story.i + delta;
+  if (n < 0) return;
+  if (n >= edition.cards.length) {
+    closeStories();
+    return toast("Fatto. Apri una scheda per approfondire.");
+  }
+  story.i = n;
+  renderStory();
+}
+
+function closeStories() {
+  if (!story) return;
+  $("#stories").hidden = true;
+  document.body.style.overflow = "";
+  story = null;
+}
+
 // ---------- text to speech ----------
 
 function stopSpeaking() {
@@ -309,7 +444,9 @@ function toggleSpeak() {
   if (!("speechSynthesis" in window)) return toast("La lettura vocale non è disponibile su questo browser");
   if (speechSynthesis.speaking) return stopSpeaking();
   const card = openCard;
-  const u = new SpeechSynthesisUtterance([card.title, card.summary, ...card.body, card.whyItMatters].join(". "));
+  const u = new SpeechSynthesisUtterance(
+    [card.title, card.summary, ...sectionsOf(card).map((x) => `${x.heading}. ${x.text}`), card.whyItMatters].map(plain).join(". "),
+  );
   u.lang = "it-IT";
   const voice = speechSynthesis.getVoices().find((v) => v.lang?.toLowerCase().startsWith("it"));
   if (voice) u.voice = voice;
@@ -344,12 +481,12 @@ function askBox(card, placeholder, key = `ask-${card.id}`, preset = "") {
 function tutorSystem(card) {
   return `Sei il tutor personale dell'app "Cinque al Mattino". Rispondi in italiano, in modo chiaro e concreto, con esempi quotidiani. Sii breve (massimo 180 parole) salvo richiesta diversa. Se la domanda va oltre la scheda, rispondi comunque ma segnala cosa non è verificato.
 Scheda di oggi (JSON):
-${JSON.stringify({ titolo: card.title, sintesi: card.summary, testo: card.body, punti: card.keyPoints, glossario: card.glossary, fonti: card.sources })}`;
+${JSON.stringify({ titolo: card.title, sintesi: plain(card.summary), testo: sectionsOf(card).map((x) => plain(x.text)), punti: card.keyPoints.map(plain), glossario: card.glossary, fonti: card.sources })}`;
 }
 
 function promptForClaudeApp(card, question) {
   return `Sto studiando questo argomento: "${card.title}".
-Sintesi: ${card.summary}
+Sintesi: ${plain(card.summary)}
 ${question}
 Rispondi in italiano, in modo semplice e con un esempio concreto.`;
 }
@@ -782,7 +919,26 @@ function route() {
 document.addEventListener("click", (e) => {
   const t = e.target.closest("button, a");
   if (!t) return;
-  if (t.dataset.open) {
+  if (!t.classList.contains("term")) $("#termpop").hidden = true;
+  if (t.classList.contains("term")) {
+    showTerm(Number(t.dataset.term));
+  } else if (t.dataset.next) {
+    const card = findCard(t.dataset.next);
+    if (card) openSheet(card, { push: false });
+  } else if (t.hasAttribute("data-copy-action")) {
+    navigator.clipboard
+      .writeText(plain(openCard.actionToday))
+      .then(() => toast("Copiato"))
+      .catch(() => toast("Copia non riuscita: seleziona il testo a mano"));
+  } else if (t.hasAttribute("data-stories")) {
+    openStories(Number(t.dataset.stories) || 0);
+  } else if (t.id === "stories-close") {
+    closeStories();
+  } else if (t.dataset.storyRead) {
+    const card = findCard(t.dataset.storyRead);
+    closeStories();
+    if (card) openSheet(card);
+  } else if (t.dataset.open) {
     const card = findCard(t.dataset.open);
     if (card) openSheet(card);
   } else if (t.dataset.openDay) {
@@ -895,12 +1051,33 @@ $("#settings").addEventListener("submit", (e) => {
   $("#key-status").textContent = key ? "Chiave salvata su questo dispositivo." : "Chiave rimossa.";
 });
 
+$("#stories").addEventListener("click", (e) => {
+  if (e.target.closest("button, a")) return;
+  const r = $("#stories").getBoundingClientRect();
+  storyStep(e.clientX - r.left < r.width * 0.3 ? -1 : 1);
+});
+$("#stories-bar").addEventListener("animationend", () => story && storyStep(1));
+for (const ev of ["pointerdown", "pointerup", "pointercancel", "pointerleave"]) {
+  $("#stories").addEventListener(ev, (e) => $("#stories").classList.toggle("paused", e.type === "pointerdown"));
+}
+
 document.addEventListener("keydown", (e) => {
+  if (story) {
+    if (e.key === "Escape") closeStories();
+    if (e.key === "ArrowRight") storyStep(1);
+    if (e.key === "ArrowLeft") storyStep(-1);
+    return;
+  }
   if (e.key === "Escape" && !$("#sheet").hidden) history.state?.sheet ? history.back() : closeSheet();
 });
 window.addEventListener("popstate", () => closeSheet());
+$("#sheet").addEventListener("scroll", updateProgress, { passive: true });
+document.addEventListener("click", (e) => {
+  if (!e.target.closest("button, a, #termpop")) $("#termpop").hidden = true;
+});
 window.addEventListener("hashchange", () => {
   closeSheet();
+  closeStories();
   route();
 });
 

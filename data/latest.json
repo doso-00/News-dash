@@ -10,19 +10,37 @@
       "label": "Intelligenza artificiale",
       "title": "Claude Duet: l'agente che lavora in background e ti prepara la giornata",
       "subtitle": "Gli assistenti AI passano dal rispondere all'agire da soli",
-      "summary": "Il 21 ottobre Anthropic ha aperto la lista d'attesa per Claude Duet, un agente proattivo in anteprima di ricerca. Ogni giorno prepara un breve briefing con le azioni da fare, leggendo le app che hai collegato, e lavora anche quando non hai Claude aperto.",
-      "body": [
-        "Claude Duet è un agente personale che gira su Claude Opus 5.5 e lavora su una macchina virtuale separata. Non serve tenere aperta una sessione: l'agente continua a lavorare in background e ti consegna un riepilogo giornaliero con le cose da fare, ricavate dalle app collegate.",
-        "Per ora l'accesso è limitato agli abbonati Pro e Max negli Stati Uniti, con inviti a ondate. Team ed Enterprise non sono ancora inclusi e Anthropic non ha indicato quando l'anteprima uscirà dagli USA.",
-        "Sul fronte sicurezza, Duet chiede conferma prima delle azioni sensibili e usa un classificatore che controlla i messaggi alla ricerca di informazioni delicate. Per impostazione predefinita rifiuta richieste di numeri di carta di credito e documenti d'identità.",
-        "Anthropic stessa indica dei limiti: l'agente non è ancora bravo nelle commissioni personali come prenotare biglietti e non mostra il browser mentre lavora. Il lavoro in background consuma gli stessi limiti di utilizzo del resto di Claude.",
-        "Duet arriva in un mercato affollato: la stampa lo confronta con Muse di Meta e Dots di OpenAI. Il tema comune è il passaggio da chatbot che aspettano una domanda ad agenti che prendono l'iniziativa."
+      "summary": "Anthropic ha aperto la lista d'attesa per **Claude Duet**, un agente che lavora in background. Ogni giorno ti prepara un briefing con le cose da fare, leggendo le app che hai collegato.",
+      "stat": {
+        "value": "24/7",
+        "label": "lavora anche quando non hai Claude aperto"
+      },
+      "sections": [
+        {
+          "heading": "Cosa è successo",
+          "text": "Il 21 ottobre Anthropic ha aperto la lista d'attesa per Claude Duet, in **anteprima di ricerca**. Per ora è riservato agli abbonati Pro e Max negli Stati Uniti, con inviti a ondate."
+        },
+        {
+          "heading": "Come funziona",
+          "text": "Duet gira su Claude Opus 5.5 dentro una **macchina virtuale separata**. Non serve tenere aperta una chat: legge le app collegate e ogni giorno ti consegna un riepilogo con le azioni da fare."
+        },
+        {
+          "heading": "I paletti di sicurezza",
+          "text": "Prima di ogni azione sensibile **chiede il permesso**. Un filtro individua i dati delicati, e di default rifiuta di gestire carte di credito e documenti d'identità."
+        },
+        {
+          "heading": "Cosa non sa ancora fare",
+          "text": "Anthropic ammette che non è bravo nelle commissioni personali, come prenotare biglietti, e che non mostra il browser mentre lavora. Il lavoro in background consuma gli stessi limiti d'uso di Claude."
+        },
+        {
+          "heading": "La corsa agli agenti",
+          "text": "Duet sfida Muse di Meta e Dots di OpenAI. La direzione è chiara: dagli assistenti che rispondono **agli assistenti che prendono l'iniziativa**."
+        }
       ],
       "keyPoints": [
-        "Lista d'attesa aperta il 21 ottobre 2026, solo USA, piani Pro e Max",
-        "Gira su Claude Opus 5.5 in una macchina virtuale separata",
-        "Briefing quotidiano con azioni da fare dalle app collegate",
-        "Chiede conferma prima delle azioni sensibili; condivide i limiti d'uso di Claude"
+        "Lista d'attesa dal 21 ottobre, solo USA, piani Pro e Max",
+        "Lavora in background e ti consegna un briefing quotidiano",
+        "Chiede conferma prima delle azioni sensibili"
       ],
       "whyItMatters": "Questa stessa dashboard segue lo schema di Duet: un lavoro programmato che raccoglie informazioni e te le consegna pronte. Capire come funzionano gli agenti proattivi (permessi, conferme, costi) ti aiuta a progettarne di tuoi, al lavoro e nella vita.",
       "actionToday": "Apri Claude e incolla: \"Ecco le mie ultime 10 email/attività [incolla]. Raggruppale per urgenza, proponi 3 azioni per oggi e scrivi una bozza di risposta per la più urgente.\" Poi chiediti quale parte potresti automatizzare ogni mattina.",
@@ -103,18 +121,33 @@
       "label": "Finanza",
       "title": "Nasdaq -2,6%: Wall Street teme il conto della corsa all'AI",
       "subtitle": "Perché un aumento degli investimenti può far scendere un titolo",
-      "summary": "Giovedì 22 ottobre il Nasdaq ha perso il 2,6% e l'S&P 500 l'1,2%, con il Dow quasi invariato. A pesare sono stati i produttori di chip e i piani di Meta di aumentare ancora la spesa in infrastrutture AI, mentre il Brent ha superato i 111 dollari al barile.",
-      "body": [
-        "Secondo Yahoo Finance l'S&P 500 ha chiuso in calo dell'1,2% e il Nasdaq Composite del 2,6%, mentre il Dow Jones è rimasto sostanzialmente piatto. Bloomberg riporta che un crollo di quasi il 7% dei produttori di chip ha regalato al Nasdaq 100 la peggior seduta da giugno.",
-        "La scintilla sono stati i piani di Meta di aumentare la spesa in conto capitale (capex). Gli investitori temono che le grandi aziende tecnologiche debbano emettere sempre più debito per finanziare data center e chip, e si chiedono quando questi investimenti produrranno ricavi sufficienti.",
-        "Allo stesso tempo il petrolio Brent ha superato i 111 dollari dopo gli attacchi mortali in Arabia Saudita (vedi la scheda Mondo). Petrolio caro significa rischio di inflazione più alta, ed è una pessima notizia a pochi giorni dalla decisione della Federal Reserve sui tassi.",
-        "Molti investitori si sono spostati sui titoli di Stato. Bloomberg collega questa fuga verso i bond a minori scommesse su un nuovo rialzo dei tassi della Fed nel 2026; le fonti però non concordano su come si siano mossi i rendimenti a fine giornata, quindi conviene guardare i dati di chiusura prima di trarre conclusioni."
+      "summary": "Giovedì Wall Street ha avuto paura del conto della corsa all'AI. Il Nasdaq ha chiuso a **-2,6%**, trascinato dai chip, mentre il petrolio superava i 111 dollari.",
+      "stat": {
+        "value": "-2,6%",
+        "label": "Nasdaq, giovedì 22 ottobre"
+      },
+      "sections": [
+        {
+          "heading": "La seduta in tre numeri",
+          "text": "Nasdaq **-2,6%**, S&P 500 -1,2%, Dow Jones quasi piatto. I produttori di chip hanno perso quasi il 7%: per il Nasdaq 100 è stata la **peggior giornata da giugno**."
+        },
+        {
+          "heading": "La scintilla: Meta",
+          "text": "Meta vuole aumentare ancora la spesa in data center e chip. Gli investitori temono che le Big Tech debbano **indebitarsi sempre di più** per finanziare l'AI, senza sapere quando arriveranno i ricavi."
+        },
+        {
+          "heading": "Il petrolio peggiora le cose",
+          "text": "Il Brent ha superato i **111 dollari** dopo gli attacchi in Arabia Saudita. Petrolio caro vuol dire rischio inflazione, proprio a pochi giorni dalla decisione della Fed sui tassi."
+        },
+        {
+          "heading": "Dove sono andati i soldi",
+          "text": "Molti investitori si sono spostati sui titoli di Stato. Secondo Bloomberg calano le scommesse su un nuovo rialzo dei tassi; le fonti però **non concordano** su come abbiano chiuso i rendimenti."
+        }
       ],
       "keyPoints": [
-        "22 ottobre: Nasdaq -2,6%, S&P 500 -1,2%, Dow quasi invariato",
-        "Chip in calo di quasi il 7%: peggior giornata del Nasdaq 100 da giugno",
-        "Timore che la spesa AI venga finanziata con nuovo debito",
-        "Brent sopra 111 dollari: rischio inflazione prima della decisione Fed"
+        "Nasdaq -2,6%, chip quasi -7%: peggior giornata da giugno",
+        "Timore che l'AI venga finanziata con nuovo debito",
+        "Brent oltre 111 dollari: rischio inflazione prima della Fed"
       ],
       "whyItMatters": "Se hai un ETF globale o sull'S&P 500, una buona fetta è in titoli tecnologici: questi movimenti ti toccano anche se non compri azioni singole. Capire il rapporto tra investimenti, debito e aspettative ti aiuta a non farti guidare dal panico di una singola giornata.",
       "actionToday": "Apri il tuo conto o l'app del tuo fondo e controlla quanto pesa la tecnologia nel tuo portafoglio (cerca 'composizione per settore'). Annota la percentuale: è la tua esposizione alla 'scommessa AI'.",
@@ -191,18 +224,33 @@
       "label": "Mondo",
       "title": "Golfo in fiamme: navi colpite vicino a Hormuz e attacchi in Arabia Saudita",
       "subtitle": "Perché una crisi in pochi chilometri di mare muove i prezzi in tutto il mondo",
-      "summary": "I Guardiani della Rivoluzione iraniani affermano di aver colpito quattro navi per il trasbordo di petrolio nel nord del Golfo Persico e che altre tre navi hanno urtato mine vicino allo Stretto di Hormuz. In Arabia Saudita attacchi houthi su un aeroporto e su un giacimento hanno causato almeno quattro morti.",
-      "body": [
-        "Secondo le rassegne del 22 ottobre, i Guardiani della Rivoluzione iraniani (IRGC) dichiarano di aver colpito quattro navi per il trasferimento di petrolio nel nord del Golfo Persico, mentre tre navi avrebbero urtato mine vicino allo Stretto di Hormuz. Donald Trump ha sostenuto che l'Iran stia 'inventando falsi attacchi' per far salire il prezzo del petrolio in vista delle elezioni di metà mandato americane.",
-        "In Arabia Saudita, un attacco degli Houthi (Ansar Allah) sull'aeroporto internazionale King Fahd ha ucciso almeno due persone, e un attacco con droni su un giacimento petrolifero ne avrebbe uccise altre due. È l'ultimo di una serie di attacchi mortali contro aeroporti sauditi.",
-        "Alcune fonti riportano che pianificatori statunitensi e israeliani avrebbero pronti piani per riprendere gli attacchi all'Iran dopo le elezioni di midterm. Sono notizie non confermate ufficialmente, ma contribuiscono alla tensione sui mercati energetici.",
-        "Sullo sfondo resta la guerra in Ucraina: nella notte attacchi russi con droni e missili hanno colpito 12 regioni ucraine, tra cui Kyiv, mentre Putin si è detto aperto 'in linea di principio' a riprendere i colloqui di pace."
+      "summary": "Nel Golfo Persico si combatte sulle rotte del petrolio: l'Iran dice di aver colpito quattro petroliere e tre navi hanno urtato mine. In Arabia Saudita gli attacchi houthi hanno fatto **almeno quattro morti**.",
+      "stat": {
+        "value": "1/5",
+        "label": "del petrolio mondiale passa da Hormuz"
+      },
+      "sections": [
+        {
+          "heading": "Navi colpite nel Golfo",
+          "text": "I Guardiani della Rivoluzione iraniani dichiarano di aver colpito **quattro navi petroliere** nel nord del Golfo Persico. Altre tre navi avrebbero urtato mine vicino allo Stretto di Hormuz."
+        },
+        {
+          "heading": "Attacchi in Arabia Saudita",
+          "text": "Gli Houthi hanno colpito l'aeroporto internazionale King Fahd, uccidendo almeno due persone. Un attacco con droni su un giacimento ne avrebbe uccise **altre due**."
+        },
+        {
+          "heading": "Lo scontro sulle parole",
+          "text": "Trump accusa l'Iran di **inventare falsi attacchi** per far salire il petrolio prima delle elezioni di midterm. Alcune fonti parlano di piani USA-Israele per colpire l'Iran dopo il voto, ma non ci sono conferme ufficiali."
+        },
+        {
+          "heading": "Intanto in Ucraina",
+          "text": "Raid russi con droni e missili hanno colpito **12 regioni**, tra cui Kyiv. Putin si è detto aperto \"in linea di principio\" a riprendere i negoziati."
+        }
       ],
       "keyPoints": [
-        "IRGC: colpite quattro navi petroliere nel Golfo, tre navi su mine vicino a Hormuz",
-        "Attacchi houthi in Arabia Saudita: almeno quattro morti tra aeroporto e giacimento",
-        "Trump accusa l'Iran di gonfiare gli attacchi per spingere il petrolio prima del voto",
-        "Ucraina: raid su 12 regioni; Putin aperto in principio a nuovi negoziati"
+        "Iran: colpite quattro petroliere, tre navi su mine vicino a Hormuz",
+        "Houthi: almeno quattro morti in Arabia Saudita",
+        "Trump accusa l'Iran di gonfiare gli attacchi prima del voto"
       ],
       "whyItMatters": "È il motivo per cui il Brent ha superato i 111 dollari: la crisi nel Golfo arriva in Italia sotto forma di bollette, carburante e inflazione. Seguire Hormuz significa capire in anticipo cosa succederà a prezzi e tassi.",
       "actionToday": "Apri una mappa e cerca lo Stretto di Hormuz: guarda quanto è stretto e quali Paesi lo circondano. Poi controlla il prezzo della benzina vicino a te oggi e annotalo per confrontarlo tra due settimane.",
@@ -283,18 +331,33 @@
       "label": "Sapere",
       "title": "La regola del 72: quanto ci mettono i soldi a raddoppiare",
       "subtitle": "Un calcolo a mente per capire interesse composto e inflazione",
-      "summary": "Dividi 72 per il rendimento annuo in percentuale e ottieni, circa, gli anni necessari a raddoppiare un capitale. Al 6% annuo servono circa 12 anni. La stessa regola, applicata all'inflazione, ti dice in quanto tempo i tuoi soldi perdono metà del loro potere d'acquisto.",
-      "body": [
-        "L'interesse composto significa guadagnare interessi anche sugli interessi già maturati. Il capitale non cresce in linea retta ma a 'palla di neve': più passa il tempo, più accelera.",
-        "La regola del 72 è una scorciatoia per stimarlo senza calcolatrice: anni per raddoppiare ≈ 72 ÷ tasso annuo. Al 4% servono circa 18 anni, al 6% circa 12, all'8% circa 9. Il calcolo esatto al 6% dà 11,9 anni: l'approssimazione è ottima per tassi tra il 4% e il 12%.",
-        "Funziona anche al contrario: per raddoppiare in 10 anni serve un rendimento di circa il 7,2% annuo. E vale per i debiti: un debito su carta di credito al 18% raddoppia in circa 4 anni se non lo ripaghi.",
-        "Il caso più sottovalutato è l'inflazione. Con un'inflazione media del 3%, 72 ÷ 3 = 24: in circa 24 anni gli stessi euro comprano la metà. Tenere tutto sul conto corrente non è 'rischio zero': è una perdita lenta e garantita del potere d'acquisto."
+      "summary": "Dividi 72 per il rendimento annuo e ottieni gli anni necessari per **raddoppiare** un capitale. Funziona anche al contrario: ti dice quanto in fretta l'inflazione si mangia i risparmi.",
+      "stat": {
+        "value": "72 ÷ r",
+        "label": "anni per raddoppiare un capitale"
+      },
+      "sections": [
+        {
+          "heading": "La palla di neve",
+          "text": "Con l'interesse composto guadagni interessi **anche sugli interessi**. Il capitale non cresce in linea retta: accelera con il passare degli anni."
+        },
+        {
+          "heading": "La regola in un colpo d'occhio",
+          "text": "Anni per raddoppiare ≈ **72 ÷ tasso annuo**. Al 4% servono 18 anni, al 6% 12, all'8% 9. Il calcolo esatto al 6% dà 11,9 anni: l'approssimazione è ottima."
+        },
+        {
+          "heading": "Al contrario",
+          "text": "Vuoi raddoppiare in 10 anni? Ti serve circa il **7,2% annuo**. Vale anche per i debiti: una carta di credito al 18% raddoppia il debito in circa 4 anni."
+        },
+        {
+          "heading": "Il nemico silenzioso",
+          "text": "Con un'inflazione al 3%, 72 ÷ 3 = 24: in circa **24 anni i tuoi euro valgono la metà**. Tenere tutto fermo sul conto non è rischio zero, è una perdita lenta."
+        }
       ],
       "keyPoints": [
-        "Anni per raddoppiare ≈ 72 ÷ tasso annuo (%)",
-        "Al 6% annuo un capitale raddoppia in circa 12 anni",
-        "Vale anche per debiti e inflazione: al 3% il potere d'acquisto si dimezza in circa 24 anni",
-        "Precisa per tassi tra 4% e 12%; per tassi molto bassi è più precisa la regola del 70"
+        "Anni per raddoppiare ≈ 72 ÷ tasso annuo",
+        "Al 6% un capitale raddoppia in circa 12 anni",
+        "Con inflazione al 3% il potere d'acquisto si dimezza in 24 anni"
       ],
       "whyItMatters": "Ti permette di valutare in pochi secondi un investimento, un mutuo, un finanziamento a rate o il costo di lasciare i soldi fermi. È uno strumento che usi per tutta la vita, anche in una riunione o davanti a un consulente.",
       "actionToday": "Prendi tre numeri reali: il rendimento del tuo conto deposito o fondo, il tasso di un eventuale finanziamento e l'inflazione italiana attuale. Applica la regola del 72 a ciascuno e scrivi i tre risultati in anni.",
@@ -367,18 +430,33 @@
       "label": "Metodo & routine",
       "title": "Il blocco di lavoro profondo: 90 minuti senza interruzioni",
       "subtitle": "Una routine per fare in mezza mattina il lavoro di un giorno",
-      "summary": "Il 'deep work', reso popolare da Cal Newport, è lavoro cognitivamente impegnativo svolto senza distrazioni. Uno studio di Sophie Leroy mostra che quando passi da un compito all'altro una parte dell'attenzione resta bloccata sul precedente. Un solo blocco protetto al giorno può cambiare la tua produttività.",
-      "body": [
-        "Nel 2009 la ricercatrice Sophie Leroy ha descritto il fenomeno del 'residuo di attenzione': quando interrompi un compito per passare a un altro, una parte della mente resta sul primo e lavori peggio sul secondo. Ogni notifica controllata 'solo un attimo' lascia un piccolo residuo.",
-        "Cal Newport, professore di informatica a Georgetown, ha chiamato 'deep work' la concentrazione senza distrazioni su un compito impegnativo, contrapposta allo 'shallow work': email, chat, riunioni di routine. La sua tesi è che il lavoro profondo sia sempre più raro e quindi sempre più prezioso.",
-        "Il metodo più semplice per iniziare è un blocco fisso al giorno, alla stessa ora, con una regola: niente telefono, niente email, una sola attività. Se 90 minuti sono troppi, parti da 45 o 50 e allunga di settimana in settimana.",
-        "La parte che fa la differenza è la preparazione: decidere la sera prima cosa farai nel blocco evita di sprecare i primi minuti a scegliere. E se vieni interrotto, scrivi su un foglio il prossimo passo prima di cambiare attività: così riduci il residuo di attenzione."
+      "summary": "Ogni volta che cambi attività, una parte dell'attenzione **resta indietro**. Un solo blocco protetto di lavoro profondo al giorno può valere più di una giornata frammentata.",
+      "stat": {
+        "value": "90 min",
+        "label": "un blocco al giorno, senza interruzioni"
+      },
+      "sections": [
+        {
+          "heading": "Il residuo di attenzione",
+          "text": "Nel 2009 la ricercatrice Sophie Leroy ha dimostrato che dopo un cambio di compito **una parte della mente resta sul precedente**. Ogni notifica controllata \"solo un attimo\" ti costa concentrazione."
+        },
+        {
+          "heading": "Profondo contro superficiale",
+          "text": "Cal Newport chiama **deep work** la concentrazione piena su un compito difficile. Email, chat e riunioni di routine sono shallow work: utili, ma non fanno la differenza."
+        },
+        {
+          "heading": "Il metodo",
+          "text": "Un blocco fisso al giorno, sempre alla stessa ora. Niente telefono, niente email, **un solo obiettivo**. Se 90 minuti sono troppi, parti da 45 e allunga ogni settimana."
+        },
+        {
+          "heading": "Il trucco che fa la differenza",
+          "text": "Decidi **la sera prima** cosa farai nel blocco. E se qualcuno ti interrompe, annota il prossimo passo prima di cambiare attività: riprendere sarà molto più facile."
+        }
       ],
       "keyPoints": [
-        "Il residuo di attenzione peggiora il lavoro dopo ogni cambio di compito",
-        "Un blocco fisso al giorno, senza telefono né email, su un solo obiettivo",
-        "Parti da 45-50 minuti se 90 sono troppi",
-        "Decidi il compito la sera prima; annota il prossimo passo se ti interrompono"
+        "Ogni cambio di compito lascia un residuo di attenzione",
+        "Un blocco fisso al giorno, telefono lontano, un solo obiettivo",
+        "Decidi il compito la sera prima"
       ],
       "whyItMatters": "Per costruire progetti con l'AI, studiare o risolvere problemi complessi al lavoro servono ore di concentrazione vera. Un blocco protetto al giorno, ripetuto per settimane, vale più di intere giornate frammentate.",
       "actionToday": "Scegli adesso l'ora del tuo blocco di domani, mettila in calendario come appuntamento e scrivi in una riga il compito che farai.",

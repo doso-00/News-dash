@@ -26,13 +26,24 @@ const DeepDive = z.object({
   text: z.string().describe("Un paragrafo che va oltre la notizia: contesto, storia, meccanismo"),
 });
 
+const Section = z.object({
+  heading: z.string().describe("Titoletto breve e concreto, max 6 parole, che anticipa il contenuto"),
+  text: z.string().describe("1-3 frasi brevi. Evidenzia con **doppi asterischi** la frase o il dato chiave (max 1-2 per sezione)"),
+});
+
+const Stat = z.object({
+  value: z.string().describe("Il numero simbolo della notizia, corto: es. '-2,6%', '111 $', '72', '90 min'"),
+  label: z.string().describe("Cosa misura, in poche parole"),
+});
+
 export const Card = z.object({
   category: z.enum(CATEGORIES.map((c) => c.id)),
   title: z.string().describe("Titolo incisivo, max 90 caratteri"),
   subtitle: z.string().describe("Una riga che dice cosa si impara"),
-  summary: z.string().describe("Sintesi in 2-3 frasi"),
-  body: z.array(z.string()).describe("3-5 paragrafi di spiegazione"),
-  keyPoints: z.array(z.string()).describe("3-4 punti chiave"),
+  summary: z.string().describe("Sintesi in 2 frasi, la seconda può avere un **dato chiave** evidenziato"),
+  stat: Stat.nullable().describe("Il numero del giorno per questa scheda, o null se non c'è un numero significativo"),
+  sections: z.array(Section).describe("4-5 sezioni brevi che raccontano la storia in ordine: cosa è successo, perché, conseguenze, contesto"),
+  keyPoints: z.array(z.string()).describe("3 punti chiave, max 15 parole ciascuno"),
   whyItMatters: z.string().describe("Perché conta per il lettore, in concreto"),
   actionToday: z.string().describe("Una cosa concreta da fare oggi (es. un prompt da provare con Claude)"),
   checklist: z
@@ -66,7 +77,7 @@ export function checkEdition(edition) {
       if (q.options.length !== 4) problems.push(`${card.category} quiz ${j}: servono 4 opzioni`);
       if (q.answer < 0 || q.answer >= q.options.length) problems.push(`${card.category} quiz ${j}: indice risposta fuori range`);
     });
-    if (card.body.length < 2) problems.push(`${card.category}: corpo troppo corto`);
+    if (card.sections.length < 3) problems.push(`${card.category}: servono almeno 3 sezioni`);
     if (["ai", "finanza", "mondo"].includes(card.category) && card.sources.length === 0)
       problems.push(`${card.category}: mancano le fonti`);
     if (card.category === "routine" && card.checklist.length === 0) problems.push("routine: manca la checklist");
