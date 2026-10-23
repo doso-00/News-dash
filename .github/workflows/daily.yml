@@ -1,9 +1,9 @@
 name: Edizione quotidiana
 
+# L'edizione quotidiana la scrive un'attività programmata di Claude Code (vedi REDAZIONE.md)
+# e il suo push pubblica l'app. La generazione qui sotto serve solo se avvii il workflow a mano
+# e hai impostato il secret ANTHROPIC_API_KEY.
 on:
-  schedule:
-    # 04:41 UTC = 05:41 in Italia d'inverno, 06:41 d'estate
-    - cron: "41 4 * * *"
   workflow_dispatch:
     inputs:
       force:
@@ -18,7 +18,7 @@ concurrency:
 
 jobs:
   generate:
-    if: github.event_name != 'push'
+    if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     permissions:
       contents: write

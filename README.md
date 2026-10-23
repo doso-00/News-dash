@@ -24,44 +24,41 @@ Ogni scheda ha punti chiave, "perché ti riguarda", un'azione da fare oggi, glos
 ## Come funziona
 
 ```
-GitHub Actions (ogni mattina alle 05:41 UTC)
-  └─ scripts/generate.mjs
-       1. Claude + ricerca web: raccoglie le notizie delle ultime 24-48 ore
-       2. Claude + output strutturato: scrive le 5 schede con quiz
-       3. salva data/days/AAAA-MM-GG.json, data/latest.json, data/index.json
-  └─ commit + pubblicazione su GitHub Pages
+Attività programmata di Claude Code (ogni mattina verso le 6:15, ora italiana)
+  └─ segue REDAZIONE.md: cerca le notizie sul web, scrive le 5 schede con i quiz
+  └─ node scripts/publish.mjs → data/days/AAAA-MM-GG.json, data/latest.json, data/index.json
+  └─ git push → GitHub Actions pubblica l'app su GitHub Pages
 App (index.html + app.js) ── legge data/latest.json
 ```
 
-## Attivazione (una volta sola, 5 minuti)
+Non serve nessuna chiave API: l'attività usa il tuo abbonamento Claude e consuma una parte dei tuoi limiti di utilizzo. La puoi vedere, mettere in pausa o cancellare tra le attività programmate di Claude Code.
 
-1. **Chiave API**: crea una chiave su [platform.claude.com](https://platform.claude.com/settings/keys) e aggiungila al repository in *Settings → Secrets and variables → Actions → New repository secret* con il nome `ANTHROPIC_API_KEY`.
-2. **GitHub Pages**: in *Settings → Pages*, alla voce *Source* scegli **GitHub Actions**.
-3. **Primo avvio**: in *Actions → Edizione quotidiana → Run workflow*. Da quel momento parte da solo ogni mattina.
-4. **Installa l'app** aprendo `https://doso-00.github.io/News-dash/` dal telefono:
+## Attivazione (una volta sola)
+
+1. **GitHub Pages**: in *Settings → Pages* (`https://github.com/doso-00/News-dash/settings/pages`), alla voce *Source* scegli **GitHub Actions**.
+2. **Installa l'app** aprendo `https://doso-00.github.io/News-dash/` dal telefono:
    - iPhone (Safari): *Condividi → Aggiungi alla schermata Home*
    - Android (Chrome): menu *⋮ → Installa app*
 
-La pianificazione di GitHub parte solo dal branch predefinito del repository: se sposti il lavoro su `main`, impostalo come predefinito.
-
 ### Chat con Claude dentro l'app (facoltativa)
 
-In *Progressi → Impostazioni* puoi incollare una chiave API: le domande e il feedback sulle tue risposte arrivano direttamente nell'app. La chiave resta solo sul tuo dispositivo. Senza chiave, i pulsanti "Apri in Claude" e "Copia domanda" portano la domanda, già contestualizzata, nell'app di Claude.
+Senza configurare nulla, i pulsanti "Apri in Claude" e "Copia domanda" portano la domanda, già contestualizzata, nell'app di Claude. Se un giorno vuoi le risposte direttamente dentro l'app, incolla una chiave API in *Progressi → Impostazioni*: resta solo sul tuo dispositivo, ma le API si pagano a consumo.
+
+### Alternativa con chiave API
+
+`scripts/generate.mjs` fa lo stesso lavoro tramite l'API di Claude. Per usarlo aggiungi il secret `ANTHROPIC_API_KEY` al repository e avvia a mano *Actions → Edizione quotidiana → Run workflow* (costo indicativo: circa un dollaro per edizione).
 
 ## Personalizzazione
 
 Modifica `config/profile.json`: lavoro, obiettivi, interessi finanziari, aree di "Sapere" e "Routine", tono. Il generatore lo legge ogni mattina.
-
-## Costi
-
-Il generatore usa Claude Opus 5.5 con ricerca web (fino a 15 ricerche al giorno). Indicativamente si parla di circa un dollaro al giorno; controlla il consumo reale nella console di Claude dopo i primi giorni. Per spendere meno, cambia `MODEL` in `scripts/generate.mjs` in `claude-sonnet-5-5`.
 
 ## Sviluppo locale
 
 ```bash
 npm ci
 npm run serve                                    # apre l'app su http://localhost:8080
-ANTHROPIC_API_KEY=... npm run generate           # genera l'edizione di oggi
+node scripts/publish.mjs bozza.json              # salva un'edizione scritta a mano o da Claude Code
+ANTHROPIC_API_KEY=... npm run generate           # genera l'edizione di oggi via API
 ANTHROPIC_API_KEY=... node scripts/generate.mjs --force   # la rigenera
 npm run validate                                 # controlla tutti i file in data/
 npm run build:sdk                                # ricostruisce vendor/anthropic-sdk.mjs

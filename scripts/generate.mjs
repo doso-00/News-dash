@@ -3,41 +3,19 @@
 //
 // Usage: ANTHROPIC_API_KEY=... node scripts/generate.mjs [--date YYYY-MM-DD] [--force]
 
-import fs from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
 import Anthropic from "@anthropic-ai/sdk";
 import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
 import { CATEGORIES, Edition, checkEdition } from "./schema.mjs";
+import { ROOT, editionExists, readJson, recentHistory, romeDate, saveEdition } from "./store.mjs";
 
-const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const DATA = path.join(ROOT, "data");
-const DAYS = path.join(DATA, "days");
 const MODEL = "claude-opus-5-5";
 const MAX_CONTINUATIONS = 5;
 
 const args = process.argv.slice(2);
 const force = args.includes("--force");
 const dateArg = args.includes("--date") ? args[args.indexOf("--date") + 1] : null;
-const date = dateArg ?? romeDate(new Date());
-
-function romeDate(d) {
-  // en-CA formats as YYYY-MM-DD
-  return new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Rome" }).format(d);
-}
-
-function readJson(file, fallback) {
-  try {
-    return JSON.parse(fs.readFileSync(file, "utf8"));
-  } catch {
-    return fallback;
-  }
-}
-
-function writeJson(file, value) {
-  fs.mkdirSync(path.dirname(file), { recursive: true });
-  fs.writeFileSync(file, JSON.stringify(value, null, 2) + "\n");
-}
+const date = dateArg ?? romeDate();
 
 function textOf(message) {
   return message.content
@@ -54,16 +32,6 @@ function assertNotRefused(message, step) {
   if (message.stop_reason === "max_tokens") throw new Error(`${step}: risposta troncata (max_tokens)`);
 }
 
-// Titles from the last 30 editions, so sapere/routine never repeat a topic.
-function recentHistory() {
-  const index = readJson(path.join(DATA, "index.json"), { days: [] });
-  return index.days
-    .filter((d) => d.date !== date)
-    .slice(0, 30)
-    .map((d) => `${d.date}: ${d.cards.map((c) => `[${c.category}] ${c.title}`).join(" | ")}`)
-    .join("\n");
-}
-
 const client = new Anthropic();
 const profile = readJson(path.join(ROOT, "config", "profile.json"), {});
 
@@ -78,7 +46,7 @@ Ogni giorno prepari 5 schede: ${CATEGORIES.map((c) => `${c.id} = ${c.label}`).jo
 Regole: usa solo fatti verificati nelle fonti trovate, non inventare numeri, date o citazioni. Se una cifra è incerta, dillo. Tono: ${profile.tono ?? "chiaro e concreto"}.`;
 
 async function research() {
-  const history = recentHistory();
+  const history = recentHistory(date);
   const messages = [
     {
       role: "user",
@@ -147,8 +115,7 @@ Le fonti devono essere URL presenti negli appunti.${feedback ? `\n\nLa bozza pre
 }
 
 async function main() {
-  const dayFile = path.join(DAYS, `${date}.json`);
-  if (fs.existsSync(dayFile) && !force) {
+  if (editionExists(date) && !force) {
     console.log(`Edizione ${date} già presente, salto (usa --force per rigenerarla).`);
     return;
   }
@@ -171,26 +138,7 @@ async function main() {
   }
   if (problems.length) throw new Error(`Edizione non valida: ${problems.join("; ")}`);
 
-  const index = readJson(path.join(DATA, "index.json"), { days: [] });
-  const issue = {
-    date,
-    number: index.days.filter((d) => d.date !== date).length + 1,
-    generatedAt: new Date().toISOString(),
-    headline: edition.headline,
-    cards: edition.cards.map((card) => ({
-      ...card,
-      id: `${date}-${card.category}`,
-      label: CATEGORIES.find((c) => c.id === card.category).label,
-    })),
-  };
-
-  writeJson(dayFile, issue);
-  writeJson(path.join(DATA, "latest.json"), issue);
-  index.days = [
-    { date, number: issue.number, headline: issue.headline, cards: issue.cards.map(({ category, title }) => ({ category, title })) },
-    ...index.days.filter((d) => d.date !== date),
-  ].sort((a, b) => b.date.localeCompare(a.date));
-  writeJson(path.join(DATA, "index.json"), index);
+  const issue = saveEdition(date, edition);
   console.log(`Edizione n.${issue.number} del ${date} salvata.`);
 }
 
