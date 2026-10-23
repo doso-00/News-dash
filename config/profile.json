@@ -1,0 +1,28 @@
+{
+  "_nota": "Modifica questo file per personalizzare i contenuti generati ogni mattina.",
+  "nome": "",
+  "lingua": "italiano",
+  "paese": "Italia",
+  "lavoro": "Lavoro nel mondo tech e dei dati; uso l'AI (Claude) sia al lavoro sia per progetti personali.",
+  "obiettivi": [
+    "Restare aggiornato su AI, finanza e attualità senza perdere tempo",
+    "Imparare a costruire strumenti e automazioni con Claude",
+    "Diventare più competente in aree di conoscenza generale",
+    "Costruire abitudini sane e sostenibili"
+  ],
+  "interessi_finanza": ["mercati globali", "tassi e BCE/Fed", "risparmio e investimento personale", "economia italiana ed europea"],
+  "aree_sapere": [
+    "economia e finanza personale",
+    "psicologia e bias cognitivi",
+    "statistica e pensiero probabilistico",
+    "comunicazione e negoziazione",
+    "storia e geopolitica",
+    "scienza e tecnologia",
+    "programmazione e dati",
+    "filosofia pratica",
+    "produttività e gestione del tempo",
+    "salute e fisiologia"
+  ],
+  "aree_routine": ["sonno", "movimento", "concentrazione", "alimentazione", "relazioni", "mindset", "apprendimento", "gestione dello stress"],
+  "tono": "diretto, concreto, motivante ma senza retorica"
+}

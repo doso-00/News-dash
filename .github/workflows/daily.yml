@@ -1,0 +1,71 @@
+name: Edizione quotidiana
+
+on:
+  schedule:
+    # 04:41 UTC = 05:41 in Italia d'inverno, 06:41 d'estate
+    - cron: "41 4 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Rigenera anche se l'edizione di oggi esiste già"
+        type: boolean
+        default: false
+  push:
+
+concurrency:
+  group: daily-edition
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Genera l'edizione di oggi
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/generate.mjs ${{ inputs.force && '--force' || '' }}
+      - run: node scripts/validate.mjs
+      - name: Salva nel repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "Nessuna novità da salvare."
+          else
+            git commit -m "Edizione del $(TZ=Europe/Rome date +%F)"
+            git push
+          fi
+
+  deploy:
+    needs: generate
+    if: >-
+      always() &&
+      (needs.generate.result == 'success' || needs.generate.result == 'skipped') &&
+      github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4

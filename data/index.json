@@ -1,0 +1,31 @@
+{
+  "days": [
+    {
+      "date": "2026-10-23",
+      "number": 1,
+      "headline": "Agenti AI che lavorano mentre dormi, petrolio sopra 111 dollari e la matematica che raddoppia i risparmi.",
+      "cards": [
+        {
+          "category": "ai",
+          "title": "Claude Duet: l'agente che lavora in background e ti prepara la giornata"
+        },
+        {
+          "category": "finanza",
+          "title": "Nasdaq -2,6%: Wall Street teme il conto della corsa all'AI"
+        },
+        {
+          "category": "mondo",
+          "title": "Golfo in fiamme: navi colpite vicino a Hormuz e attacchi in Arabia Saudita"
+        },
+        {
+          "category": "sapere",
+          "title": "La regola del 72: quanto ci mettono i soldi a raddoppiare"
+        },
+        {
+          "category": "routine",
+          "title": "Il blocco di lavoro profondo: 90 minuti senza interruzioni"
+        }
+      ]
+    }
+  ]
+}

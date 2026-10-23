@@ -1,0 +1,21 @@
+{
+  "name": "news-dash",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "validate": "node scripts/validate.mjs",
+    "serve": "npx --yes http-server@14.1.1 -c-1 -p 8080 .",
+    "build:sdk": "esbuild node_modules/@anthropic-ai/sdk/index.mjs --bundle --format=esm --platform=browser --minify --legal-comments=eof --outfile=vendor/anthropic-sdk.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "0.132.1",
+    "zod": "4.1.12"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.10"
+  }
+}

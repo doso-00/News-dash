@@ -1,0 +1,18 @@
+{
+  "name": "Cinque al Mattino",
+  "short_name": "Cinque",
+  "description": "Ogni mattina cinque schede: AI, finanza, mondo, sapere e una routine, con quiz e approfondimenti.",
+  "lang": "it",
+  "start_url": "./#oggi",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0e121b",
+  "theme_color": "#0e121b",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
