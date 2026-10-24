@@ -30,3 +30,11 @@ I dati arrivano come file allegati e non entrano mai nel repository. Lavora nell
 - generane una nuova: `openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:3072 -out key.pem`;
 - scrivi la chiave pubblica in `config/regia.pub.pem` con `openssl pkey -in key.pem -pubout`;
 - fai commit e push, poi riparti dal passo 1.
+
+## Mail del mattino
+
+7. **Riepilogo.** Esegui `node scripts/regia/mail.mjs $S/out`: scrive `$S/out/mail.html` e `$S/out/mail.txt` e stampa l'oggetto.
+   - Inviala con Gmail `send_message` a `dosoformulauno@gmail.com`: `subject` è l'oggetto stampato, `htmlBody` il contenuto di `mail.html`, `body` quello di `mail.txt`.
+   - Una sola mail al giorno: se nella stessa giornata la regia viene aggiornata di nuovo, non rimandarla.
+   - La mail contiene solo numeri e titoli, mai i testi dei messaggi.
+   - Se Gmail non è disponibile, scrivilo nella riga finale.
