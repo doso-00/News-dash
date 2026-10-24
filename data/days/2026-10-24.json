@@ -5,7 +5,14 @@
   "headline": "Le banche fermano gli agenti AI, Meta brucia cassa per i data center e la guerra con l'Iran potrebbe durare un altro anno.",
   "cards": [
     {
+      "id": "2026-10-24-ai",
       "category": "ai",
+      "label": "Intelligenza artificiale",
+      "interests": [
+        "ai",
+        "tech",
+        "finanza"
+      ],
       "title": "Agenti AI nei conti bancari: le grandi banche USA corrono ai ripari",
       "subtitle": "Perché non devi mai dare le tue password a un assistente AI",
       "summary": "Secondo Axios, le grandi banche americane stanno trovando agenti AI di terze parti dentro i conti dei clienti. Molti entrano perché **gli utenti consegnano le proprie credenziali** all'assistente.",
@@ -104,12 +111,17 @@
           "explanation": "La sola lettura permette di analizzare i movimenti senza poter spostare denaro: è l'applicazione del minimo privilegio."
         }
       ],
-      "reflection": "Se dovessi far usare a un agente AI il tuo conto o la tua email di lavoro, quali azioni gli permetteresti e quali vorresti sempre approvare tu?",
-      "id": "2026-10-24-ai",
-      "label": "Intelligenza artificiale"
+      "reflection": "Se dovessi far usare a un agente AI il tuo conto o la tua email di lavoro, quali azioni gli permetteresti e quali vorresti sempre approvare tu?"
     },
     {
+      "id": "2026-10-24-finanza",
       "category": "finanza",
+      "label": "Finanza",
+      "interests": [
+        "finanza",
+        "economia",
+        "tech"
+      ],
       "title": "Meta brucia cassa per l'AI: il free cash flow va in rosso",
       "subtitle": "Perché il denaro che resta in cassa conta più dell'utile",
       "summary": "Nel terzo trimestre Meta ha speso in data center più di quanto ha incassato dall'attività: il free cash flow è sceso a **circa -2,1 miliardi di dollari**. Venerdì intanto Wall Street ha chiuso in calo, con il petrolio sopra i 100 dollari.",
@@ -211,12 +223,17 @@
           "explanation": "Con gli ammortamenti il costo di un investimento si spalma sull'utile di molti anni, mentre la cassa esce tutta subito."
         }
       ],
-      "reflection": "Spiega con parole tue la differenza tra utile e free cash flow, usando un esempio della tua vita o del tuo lavoro.",
-      "id": "2026-10-24-finanza",
-      "label": "Finanza"
+      "reflection": "Spiega con parole tue la differenza tra utile e free cash flow, usando un esempio della tua vita o del tuo lavoro."
     },
     {
+      "id": "2026-10-24-mondo",
       "category": "mondo",
+      "label": "Mondo",
+      "interests": [
+        "geopolitica",
+        "politica",
+        "economia"
+      ],
       "title": "Iran, l'ambasciatore USA all'ONU: la guerra può durare un altro anno",
       "subtitle": "Cosa vuole Washington e quanto sta costando all'Europa",
       "summary": "Mike Waltz, ambasciatore USA all'ONU, ha detto al Financial Times che la guerra con l'Iran **potrebbe durare un altro anno**. Secondo la Commissione europea il conflitto è già costato all'Europa circa **100 miliardi di euro**.",
@@ -322,12 +339,17 @@
           "explanation": "Per un importatore netto ogni rincaro dell'energia è denaro che esce; gli USA, grandi produttori, in parte ci guadagnano."
         }
       ],
-      "reflection": "In due frasi: come arriva una guerra in Medio Oriente fino al tuo portafoglio in Italia?",
-      "id": "2026-10-24-mondo",
-      "label": "Mondo"
+      "reflection": "In due frasi: come arriva una guerra in Medio Oriente fino al tuo portafoglio in Italia?"
     },
     {
+      "id": "2026-10-24-sapere",
       "category": "sapere",
+      "label": "Sapere",
+      "interests": [
+        "psicologia",
+        "scienza",
+        "economia"
+      ],
       "title": "La regressione verso la media: perché dopo un exploit arriva il calo",
       "subtitle": "L'errore statistico che ci fa credere che i rimproveri funzionino",
       "summary": "Quando un risultato è eccezionale, quello successivo tende a essere più normale, **per pura statistica**. Ignorarlo ci porta a vedere cause e meriti dove c'è solo caso.",
@@ -417,12 +439,17 @@
           "explanation": "Il miglioramento sarebbe arrivato comunque: era il ritorno verso la media, scambiato per effetto del rimprovero."
         }
       ],
-      "reflection": "Fai un esempio dal tuo lavoro in cui potresti aver dato merito o colpa a qualcuno per quella che era, almeno in parte, regressione verso la media.",
-      "id": "2026-10-24-sapere",
-      "label": "Sapere"
+      "reflection": "Fai un esempio dal tuo lavoro in cui potresti aver dato merito o colpa a qualcuno per quella che era, almeno in parte, regressione verso la media."
     },
     {
+      "id": "2026-10-24-routine",
       "category": "routine",
+      "label": "Metodo & routine",
+      "interests": [
+        "salute",
+        "sport",
+        "crescita"
+      ],
       "title": "La camminata dopo i pasti: 10 minuti che il tuo corpo ringrazia",
       "subtitle": "Una piccola abitudine con un effetto misurabile sulla glicemia",
       "summary": "Muoversi qualche minuto dopo aver mangiato aiuta a tenere più stabile lo zucchero nel sangue. Secondo una meta-analisi del 2022, brevi camminate leggere **riducono la glicemia di circa il 17%** rispetto allo stare seduti.",
@@ -517,9 +544,7 @@
           "explanation": "Muovendosi quando la glicemia sale, i muscoli assorbono parte del glucosio e il picco si abbassa."
         }
       ],
-      "reflection": "A quale momento della tua giornata puoi agganciare la camminata dopo i pasti, e cosa potrebbe impedirti di farla?",
-      "id": "2026-10-24-routine",
-      "label": "Metodo & routine"
+      "reflection": "A quale momento della tua giornata puoi agganciare la camminata dopo i pasti, e cosa potrebbe impedirti di farla?"
     }
   ]
 }

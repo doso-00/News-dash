@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { CATEGORIES } from "./schema.mjs";
+import { INTEREST_FAMILY, INTEREST_LABEL } from "../interests.js";
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DATA = path.join(ROOT, "data");
@@ -27,6 +28,7 @@ function writeJson(file, value) {
 }
 
 export const editionExists = (date) => fs.existsSync(path.join(DAYS, `${date}.json`));
+export const loadDay = (date) => readJson(path.join(DAYS, `${date}.json`), null);
 
 // Titles from the last 30 editions, so sapere/routine never repeat a topic.
 export function recentHistory(date) {
@@ -50,6 +52,13 @@ export function saveEdition(date, edition) {
       ...card,
       id: `${date}-${card.category}`,
       label: CATEGORIES.find((c) => c.id === card.category).label,
+    })),
+    // Cards written for a single interest take the colour of their family and the interest's name.
+    extras: (edition.extras ?? []).map((x) => ({
+      ...x,
+      id: `${date}-x-${x.topic}-${x.kind}`,
+      category: INTEREST_FAMILY[x.topic],
+      label: INTEREST_LABEL[x.topic],
     })),
   };
 

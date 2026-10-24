@@ -1,4 +1,5 @@
 import * as z from "zod/v4";
+import { EXTRA_KINDS, INTEREST_IDS, INTEREST_FAMILY } from "../interests.js";
 
 // The five daily sections, in the order the app shows them.
 export const CATEGORIES = [
@@ -36,8 +37,7 @@ const Stat = z.object({
   label: z.string().describe("Cosa misura, in poche parole"),
 });
 
-export const Card = z.object({
-  category: z.enum(CATEGORIES.map((c) => c.id)),
+const cardFields = {
   title: z.string().describe("Titolo incisivo, max 90 caratteri"),
   subtitle: z.string().describe("Una riga che dice cosa si impara"),
   summary: z.string().describe("Sintesi in 2 frasi, la seconda può avere un **dato chiave** evidenziato"),
@@ -48,7 +48,7 @@ export const Card = z.object({
   actionToday: z.string().describe("Una cosa concreta da fare oggi (es. un prompt da provare con Claude)"),
   checklist: z
     .array(z.string())
-    .describe("Solo per 'routine': 3-5 passi spuntabili. Per le altre categorie un array vuoto"),
+    .describe("Solo per le routine e per gli spunti pratici: 3-5 passi spuntabili. Per le altre schede un array vuoto"),
   eli5: z.string().describe("Spiegazione semplicissima con un'analogia, per chi non ha capito"),
   deepDive: z.array(DeepDive).describe("2 approfondimenti"),
   glossary: z
@@ -58,12 +58,31 @@ export const Card = z.object({
   readingMinutes: z.number().int(),
   quiz: z.array(QuizQuestion).describe("Esattamente 2 domande"),
   reflection: z.string().describe("Una domanda aperta per verificare la comprensione"),
+};
+
+export const Card = z.object({
+  category: z.enum(CATEGORIES.map((c) => c.id)),
+  interests: z
+    .array(z.enum(INTEREST_IDS))
+    .describe("Da 2 a 5 interessi a cui la scheda parla davvero. Chi non ne ha nessuno vede al suo posto una scheda su misura"),
+  ...cardFields,
+});
+
+// A card written for one interest. The app shows it in place of a main card the reader's interests don't fit.
+export const Extra = z.object({
+  topic: z.enum(INTEREST_IDS),
+  kind: z.enum(EXTRA_KINDS).describe("news = la novità di oggi in quel settore; spunto = qualcosa da imparare o provare"),
+  ...cardFields,
 });
 
 export const Edition = z.object({
   headline: z.string().describe("Frase di apertura del giorno, max 120 caratteri"),
   cards: z.array(Card).describe("Esattamente 5 schede, una per categoria, nell'ordine ai, finanza, mondo, sapere, routine"),
+  extras: z.array(Extra).optional().describe("Schede su misura per gli interessi che le schede principali non coprono"),
 });
+
+// Fields the app adds when an edition is saved.
+export const extraCategory = (topic) => INTEREST_FAMILY[topic];
 
 // Checks the model output beyond what the JSON schema can express.
 export function checkEdition(edition) {
@@ -81,6 +100,21 @@ export function checkEdition(edition) {
     if (["ai", "finanza", "mondo"].includes(card.category) && card.sources.length === 0)
       problems.push(`${card.category}: mancano le fonti`);
     if (card.category === "routine" && card.checklist.length === 0) problems.push("routine: manca la checklist");
+    if (card.interests.length < 2) problems.push(`${card.category}: indica almeno 2 interessi`);
   });
+
+  const seen = new Set();
+  for (const x of edition.extras ?? []) {
+    const name = `scheda su misura ${x.topic}/${x.kind}`;
+    if (seen.has(`${x.topic}/${x.kind}`)) problems.push(`${name}: duplicata`);
+    seen.add(`${x.topic}/${x.kind}`);
+    if (x.sections.length < 3) problems.push(`${name}: servono almeno 3 sezioni`);
+    if (x.quiz.length < 1) problems.push(`${name}: serve almeno 1 domanda`);
+    x.quiz.forEach((q, j) => {
+      if (q.options.length !== 4) problems.push(`${name} quiz ${j}: servono 4 opzioni`);
+      if (q.answer < 0 || q.answer >= q.options.length) problems.push(`${name} quiz ${j}: indice risposta fuori range`);
+    });
+    if (x.kind === "news" && x.sources.length === 0) problems.push(`${name}: mancano le fonti`);
+  }
   return problems;
 }

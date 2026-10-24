@@ -8,6 +8,11 @@
       "id": "2026-10-23-ai",
       "category": "ai",
       "label": "Intelligenza artificiale",
+      "interests": [
+        "ai",
+        "tech",
+        "code"
+      ],
       "title": "Claude Duet: l'agente che lavora in background e ti prepara la giornata",
       "subtitle": "Gli assistenti AI passano dal rispondere all'agire da soli",
       "summary": "Anthropic ha aperto la lista d'attesa per **Claude Duet**, un agente che lavora in background. Ogni giorno ti prepara un briefing con le cose da fare, leggendo le app che hai collegato.",
@@ -119,6 +124,10 @@
       "id": "2026-10-23-finanza",
       "category": "finanza",
       "label": "Finanza",
+      "interests": [
+        "finanza",
+        "economia"
+      ],
       "title": "Nasdaq -2,6%: Wall Street teme il conto della corsa all'AI",
       "subtitle": "Perché un aumento degli investimenti può far scendere un titolo",
       "summary": "Giovedì Wall Street ha avuto paura del conto della corsa all'AI. Il Nasdaq ha chiuso a **-2,6%**, trascinato dai chip, mentre il petrolio superava i 111 dollari.",
@@ -222,6 +231,11 @@
       "id": "2026-10-23-mondo",
       "category": "mondo",
       "label": "Mondo",
+      "interests": [
+        "geopolitica",
+        "politica",
+        "economia"
+      ],
       "title": "Golfo in fiamme: navi colpite vicino a Hormuz e attacchi in Arabia Saudita",
       "subtitle": "Perché una crisi in pochi chilometri di mare muove i prezzi in tutto il mondo",
       "summary": "Nel Golfo Persico si combatte sulle rotte del petrolio: l'Iran dice di aver colpito quattro petroliere e tre navi hanno urtato mine. In Arabia Saudita gli attacchi houthi hanno fatto **almeno quattro morti**.",
@@ -329,6 +343,10 @@
       "id": "2026-10-23-sapere",
       "category": "sapere",
       "label": "Sapere",
+      "interests": [
+        "finanza",
+        "economia"
+      ],
       "title": "La regola del 72: quanto ci mettono i soldi a raddoppiare",
       "subtitle": "Un calcolo a mente per capire interesse composto e inflazione",
       "summary": "Dividi 72 per il rendimento annuo e ottieni gli anni necessari per **raddoppiare** un capitale. Funziona anche al contrario: ti dice quanto in fretta l'inflazione si mangia i risparmi.",
@@ -428,6 +446,12 @@
       "id": "2026-10-23-routine",
       "category": "routine",
       "label": "Metodo & routine",
+      "interests": [
+        "produttivita",
+        "crescita",
+        "lavoro",
+        "psicologia"
+      ],
       "title": "Il blocco di lavoro profondo: 90 minuti senza interruzioni",
       "subtitle": "Una routine per fare in mezza mattina il lavoro di un giorno",
       "summary": "Ogni volta che cambi attività, una parte dell'attenzione **resta indietro**. Un solo blocco protetto di lavoro profondo al giorno può valere più di una giornata frammentata.",
