@@ -22,7 +22,7 @@ I dati arrivano come file allegati e non entrano mai nel repository. Lavora nell
 5. **File.** Esegui `node scripts/regia/build.mjs $S/export.json $S/consumo.json $S/sessioni.json $S/limiti.json $S/out`.
 6. **Caricamento.** Carica ogni file di `$S/out` con lo strumento Artifact (`url` della regia, `asset: true`, un file per chiamata).
    - Leggi le versioni con ArtifactData `list` della collezione `datasets`.
-   - Con un solo `batch` aggiorna `source.url`, `source.name` e `updated: {at, by: "Claude"}` dei dataset `consumo`, `utenti`, `attivita`, `notizie`, `messaggi` (è un CSV), `sessioni`, `limiti`, `limiti_storia` ed `extra`. `stime` resta fisso, passando `if_version`.
+   - Con un solo `batch` aggiorna `source.url`, `source.name` e `updated: {at, by: "Claude"}` dei dataset `consumo`, `utenti`, `attivita`, `notizie`, `messaggi` (è un CSV), `sessioni`, `limiti`, `limiti_storia` ed `extra`, passando `if_version`. `stime` resta fisso.
    - Infine elimina i file decifrati (`$S/export.json`, `$S/log.txt`).
    - Poi cancella gli allegati vecchi (Artifact `delete` con `url` e `path` = id): sono quelli che i dataset non citano più.
 
