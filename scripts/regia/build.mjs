@@ -1,21 +1,24 @@
 // Builds the data files of the owner's control dashboard ("Regia").
 //
-//   node scripts/regia/build.mjs <export.json> <consumo.json> <sessioni.json> <out dir>
+//   node scripts/regia/build.mjs <export.json> <consumo.json> <sessioni.json> <limiti.json> <out dir>
 //
 // export.json   the decrypted output of the "Esporta regia" workflow (profiles and messages)
 // consumo.json  the output of scripts/regia/consumo.mjs
-// sessioni.json [{titolo, costo, creata, aggiornata, progetto}] from list_sessions, plus the
-//               rate limit as {limiti: {stato, finestra, reset}} in its first row's place, see README
+// sessioni.json {sessioni: [{titolo, progetto, costo, creata, aggiornata}]} from list_sessions
+// limiti.json   readings of the plan's usage limits, see README: {letture: [{letto, finestra,
+//               usato, si_azzera}], extra: {in_uso, stato, motivo}}. New readings are added to
+//               the history kept next to the private key.
 //
 // The files go to the dashboard as attachments: they never enter the repository.
 import fs from "node:fs";
+import os from "node:os";
 import path from "node:path";
 import { ROOT, readJson } from "../store.mjs";
 import { INTEREST_LABEL } from "../../interests.js";
 
-const [exportFile, consumoFile, sessioniFile, outDir] = process.argv.slice(2);
+const [exportFile, consumoFile, sessioniFile, limitiFile, outDir] = process.argv.slice(2);
 if (!outDir) {
-  console.error("uso: node scripts/regia/build.mjs <export.json> <consumo.json> <sessioni.json> <out dir>");
+  console.error("uso: node scripts/regia/build.mjs <export.json> <consumo.json> <sessioni.json> <limiti.json> <out dir>");
   process.exit(1);
 }
 const exp = readJson(exportFile, null);
@@ -80,17 +83,46 @@ const messaggi = exp.messages.map((m) => ({
 }));
 
 const consumo = readJson(consumoFile, []);
-const sessioni = readJson(sessioniFile, { sessioni: [], limiti: null });
+const sessioni = readJson(sessioniFile, { sessioni: [] });
+
+// ---- plan usage limits: history of readings, latest per window ----
+const limitiIn = readJson(limitiFile, { letture: [], extra: null });
+const historyFile = path.join(os.homedir(), ".config/cinque-regia/limiti-storia.json");
+const storia = readJson(historyFile, []);
+for (const r of limitiIn.letture) {
+  if (!storia.some((h) => h.letto === r.letto && h.finestra === r.finestra)) storia.push(r);
+}
+storia.sort((a, b) => a.letto.localeCompare(b.letto));
+fs.mkdirSync(path.dirname(historyFile), { recursive: true });
+fs.writeFileSync(historyFile, JSON.stringify(storia, null, 1) + "\n");
+const limiti = [...new Set(storia.map((r) => r.finestra))].map((f) => storia.filter((r) => r.finestra === f).at(-1));
+
+// How many dollars at list price fill one percent of each window. Measured on 24/10: between
+// 11:35 and 11:53 this session spent $3.14 and the 5-hour window went from 68% to 76%; the weekly
+// window was at 37% after about $67 of sessions since it opened on 22/10 at 21:00. Rough: the plan
+// counts all Claude use (chat included) and rounds the percentages.
+const STIME = [
+  { finestra: "5 ore", dollari_per_punto: 0.39, metodo: "3,14 $ per 8 punti, 24/10" },
+  { finestra: "7 giorni", dollari_per_punto: 1.8, metodo: "67 $ per 37 punti, 22-24/10" },
+];
+
+// CSV, so that an empty discussion still has its columns.
+const csvCell = (v) => (v == null ? "" : /[",\n\r]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v));
+const MSG_COLS = ["id", "day", "scritto", "username", "notizia", "card_id", "testo", "segnalazioni"];
+const messaggiCsv = [MSG_COLS.join(","), ...messaggi.map((m) => MSG_COLS.map((c) => csvCell(m[c])).join(","))].join("\n") + "\n";
 
 fs.mkdirSync(outDir, { recursive: true });
 const write = (name, rows) => fs.writeFileSync(path.join(outDir, name), JSON.stringify(rows) + "\n");
 write("utenti.json", utenti);
 write("attivita.json", attivita);
 write("notizie.json", notizie);
-write("messaggi.json", messaggi);
+fs.writeFileSync(path.join(outDir, "messaggi.csv"), messaggiCsv);
 write("consumo.json", consumo);
 write("sessioni.json", sessioni.sessioni);
-write("limiti.json", sessioni.limiti ? [sessioni.limiti] : []);
+write("limiti.json", limiti);
+write("limiti_storia.json", storia);
+write("extra.json", limitiIn.extra ? [limitiIn.extra] : []);
+write("stime.json", STIME);
 console.log(
-  `utenti ${utenti.length}, giorni attivi ${attivita.length}, notizie ${notizie.length}, messaggi ${messaggi.length}, consumo ${consumo.length}, sessioni ${sessioni.sessioni.length}`,
+  `utenti ${utenti.length}, giorni attivi ${attivita.length}, notizie ${notizie.length}, messaggi ${messaggi.length}, consumo ${consumo.length}, sessioni ${sessioni.sessioni.length}, letture dei limiti ${storia.length}`,
 );

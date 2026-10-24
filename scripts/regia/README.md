@@ -9,14 +9,21 @@ I dati arrivano come file allegati e non entrano mai nel repository. Lavora nell
    - Esegui `sh scripts/regia/decrypt.sh $S/log.txt $S/export.json`.
    - Cancella il log del run con `actions_run_trigger`, `delete_workflow_run_logs`.
 2. **Consumo.** Esegui `node scripts/regia/consumo.mjs $S/consumo.json` e annota il totale "$ dal registro".
-3. **Sessioni e limite.** Prendi i dati da `list_sessions` (`mine: true`) e da `get_session` senza id. Scrivi `$S/sessioni.json`:
-   - `sessioni`: elenco di `{titolo, progetto, costo, creata, aggiornata}`; `progetto` vale "Cinque al Mattino" per questa sessione e per le redazioni automatiche, "Altri progetti" per il resto;
-   - per questa sessione `costo` è il totale del passo 2, non quello di `get_session`;
-   - `limiti`: `{stato, finestra, reset, letto, fuori_piano}` da `rate_limit_info`, con `reset` in ISO.
-4. **File.** Esegui `node scripts/regia/build.mjs $S/export.json $S/consumo.json $S/sessioni.json $S/out`.
-5. **Caricamento.** Carica ogni file di `$S/out` con lo strumento Artifact (`url` della regia, `asset: true`, un file per chiamata).
+3. **Sessioni.** Prendi i dati da `list_sessions` (`mine: true`) e scrivi `$S/sessioni.json` come `{sessioni: [{titolo, progetto, costo, creata, aggiornata}]}`.
+   - `progetto` vale "Cinque al Mattino" per questa sessione e per le redazioni automatiche, "Altri progetti" per il resto.
+   - Per questa sessione `costo` è il totale del passo 2, non quello di `list_sessions`.
+4. **Limiti dell'abbonamento.** Leggi gli eventi recenti con `list_events` (questa sessione, `kinds: ["rate_limit_event"]`, `limit: 100`); se la pagina è vuota, torna indietro con `before_id`. Da ogni evento prendi `unifiedWindows`:
+   - `five_hour` diventa la finestra "5 ore", `seven_day` la finestra "7 giorni";
+   - ogni lettura è `{letto: created_at, finestra, usato: utilization, si_azzera: resetsAt in ISO}`;
+   - scrivi `$S/limiti.json` come `{letture: [...], extra: {in_uso, stato, motivo}}`;
+   - `extra` viene da `isUsingOverage` e `overageStatus`: oggi è `{"in_uso": "no", "stato": "disattivato", "motivo": "l'uso extra a pagamento è disattivato sul tuo account"}`. Se cambia, dillo nella riga finale.
+
+   Lo storico si accumula da solo in `/root/.config/cinque-regia/limiti-storia.json`.
+5. **File.** Esegui `node scripts/regia/build.mjs $S/export.json $S/consumo.json $S/sessioni.json $S/limiti.json $S/out`.
+6. **Caricamento.** Carica ogni file di `$S/out` con lo strumento Artifact (`url` della regia, `asset: true`, un file per chiamata).
    - Leggi le versioni con ArtifactData `list` della collezione `datasets`.
-   - Con un solo `batch` aggiorna `source.url`, `source.name` e `updated: {at, by: "Claude"}` dei dataset `consumo`, `utenti`, `attivita`, `notizie`, `messaggi`, `sessioni` e `limiti`, passando `if_version`.
+   - Con un solo `batch` aggiorna `source.url`, `source.name` e `updated: {at, by: "Claude"}` dei dataset `consumo`, `utenti`, `attivita`, `notizie`, `messaggi` (è un CSV), `sessioni`, `limiti`, `limiti_storia` ed `extra`. `stime` resta fisso, passando `if_version`.
+   - Infine elimina i file decifrati (`$S/export.json`, `$S/log.txt`).
    - Poi cancella gli allegati vecchi (Artifact `delete` con `url` e `path` = id): sono quelli che i dataset non citano più.
 
 **Chiave privata.** Si trova in `/root/.config/cinque-regia/key.pem`, fuori dal repository. Se il container è stato ricreato e la chiave manca:
