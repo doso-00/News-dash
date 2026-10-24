@@ -1,6 +1,33 @@
 {
   "days": [
     {
+      "date": "2026-10-24",
+      "number": 2,
+      "headline": "Le banche fermano gli agenti AI, Meta brucia cassa per i data center e la guerra con l'Iran potrebbe durare un altro anno.",
+      "cards": [
+        {
+          "category": "ai",
+          "title": "Agenti AI nei conti bancari: le grandi banche USA corrono ai ripari"
+        },
+        {
+          "category": "finanza",
+          "title": "Meta brucia cassa per l'AI: il free cash flow va in rosso"
+        },
+        {
+          "category": "mondo",
+          "title": "Iran, l'ambasciatore USA all'ONU: la guerra può durare un altro anno"
+        },
+        {
+          "category": "sapere",
+          "title": "La regressione verso la media: perché dopo un exploit arriva il calo"
+        },
+        {
+          "category": "routine",
+          "title": "La camminata dopo i pasti: 10 minuti che il tuo corpo ringrazia"
+        }
+      ]
+    },
+    {
       "date": "2026-10-23",
       "number": 1,
       "headline": "Agenti AI che lavorano mentre dormi, petrolio sopra 111 dollari e la matematica che raddoppia i risparmi.",

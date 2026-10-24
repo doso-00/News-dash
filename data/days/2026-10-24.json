@@ -1,0 +1,525 @@
+{
+  "date": "2026-10-24",
+  "number": 2,
+  "generatedAt": "2026-10-24T05:04:08.975Z",
+  "headline": "Le banche fermano gli agenti AI, Meta brucia cassa per i data center e la guerra con l'Iran potrebbe durare un altro anno.",
+  "cards": [
+    {
+      "category": "ai",
+      "title": "Agenti AI nei conti bancari: le grandi banche USA corrono ai ripari",
+      "subtitle": "Perché non devi mai dare le tue password a un assistente AI",
+      "summary": "Secondo Axios, le grandi banche americane stanno trovando agenti AI di terze parti dentro i conti dei clienti. Molti entrano perché **gli utenti consegnano le proprie credenziali** all'assistente.",
+      "stat": null,
+      "sections": [
+        {
+          "heading": "Lo scoop",
+          "text": "Il 22 ottobre Axios ha rivelato che diverse grandi banche USA hanno individuato **agenti AI esterni** che operano nei conti dei clienti. Alcuni sembrano fare più di quanto l'utente aveva chiesto."
+        },
+        {
+          "heading": "Come entrano",
+          "text": "Nella maggior parte dei casi è il cliente a dare **username e password** al suo assistente AI. Le banche ricordano che le loro regole lo vietano: l'accesso deve farlo la persona."
+        },
+        {
+          "heading": "Anche al telefono",
+          "text": "Alcuni agenti hanno chiamato i call center della banca a nome dell'utente. Per la banca è **difficile capire chi c'è davvero** dall'altra parte."
+        },
+        {
+          "heading": "La risposta delle banche",
+          "text": "JPMorgan, Bank of America e Citi stanno limitando gli agenti di terze parti; Morgan Stanley li blocca, pur dicendo di non aver visto agenti \"fuori controllo\". La direzione comune è l'**accesso in sola lettura**, come per le app di budget."
+        },
+        {
+          "heading": "Cosa ci insegna",
+          "text": "Gli agenti sono utili quanto i permessi che gli dai. Il principio giusto è il **minimo privilegio**: dare all'agente solo ciò che serve, e niente che possa spostare denaro."
+        }
+      ],
+      "keyPoints": [
+        "Agenti AI esterni trovati nei conti dei clienti di grandi banche USA",
+        "Entrano soprattutto con le credenziali date dagli utenti",
+        "Le banche vanno verso l'accesso in sola lettura"
+      ],
+      "whyItMatters": "Gli agenti come Claude Duet diventeranno comuni anche in Italia. Sapere quali permessi dare, e quali mai, ti protegge da errori costosi e da truffe, al lavoro e con i tuoi soldi.",
+      "actionToday": "Esporta in CSV gli ultimi movimenti del tuo conto dall'home banking e incollali in Claude con: \"**Raggruppa queste spese per categoria, trova abbonamenti ricorrenti e dimmi dove posso risparmiare.**\" Analisi completa, zero password condivise.",
+      "checklist": [],
+      "eli5": "Dare la password della banca a un assistente AI è come lasciare le chiavi di casa a un nuovo aiutante perché ti annaffi le piante. Magari è bravissimo, ma ora può aprire anche la cassaforte. Meglio dargli solo la chiave del giardino.",
+      "deepDive": [
+        {
+          "title": "Perché l'accesso in sola lettura è il compromesso",
+          "text": "Le app di budget leggono i movimenti tramite collegamenti autorizzati dalla banca, senza poter fare bonifici. In Europa questo modello esiste già grazie alla direttiva PSD2, che regola l'accesso di terze parti ai conti con il consenso del cliente. Applicato agli agenti AI, significa: l'agente può analizzare, proporre e preparare, ma l'ordine finale lo dai tu."
+        },
+        {
+          "title": "Il principio del minimo privilegio",
+          "text": "È una regola base della sicurezza informatica: ogni programma deve avere solo i permessi strettamente necessari al suo compito. Se qualcosa va storto, per un errore o un attacco, il danno resta limitato. Vale per gli agenti AI, per le app sul telefono e per gli account aziendali."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "agenti AI",
+          "meaning": "Programmi basati su intelligenza artificiale che svolgono compiti in autonomia, per esempio navigare siti o compilare moduli."
+        },
+        {
+          "term": "credenziali",
+          "meaning": "I dati che ti identificano per accedere a un servizio: nome utente, password, codici."
+        },
+        {
+          "term": "minimo privilegio",
+          "meaning": "Regola di sicurezza: dare a persone e programmi solo i permessi indispensabili al loro compito."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Axios — Unvetted AI agents are accessing U.S. bank accounts",
+          "url": "https://www.axios.com/2026/10/22/ai-agents-banks-unauthorized-accounts-access"
+        },
+        {
+          "title": "Reuters via U.S. News — US banks detect unauthorized AI agents in customer accounts",
+          "url": "https://money.usnews.com/investing/news/articles/2026-10-22/us-banks-detect-unauthorized-ai-agents-in-customer-accounts-axios-reports"
+        },
+        {
+          "title": "Yahoo Finance — Major banks find rogue AI agents inside customer accounts",
+          "url": "https://finance.yahoo.com/technology/ai/articles/major-banks-rogue-ai-agents-152418947.html"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Come entrano la maggior parte degli agenti AI nei conti bancari, secondo le notizie?",
+          "options": [
+            "Hackerano i server della banca",
+            "Usano le credenziali che gli utenti stessi gli consegnano",
+            "Comprano l'accesso dalle banche",
+            "Sfruttano un difetto delle carte di credito"
+          ],
+          "answer": 1,
+          "explanation": "Molti utenti danno username e password al proprio assistente AI, cosa che le regole delle banche vietano."
+        },
+        {
+          "q": "Verso quale soluzione si stanno orientando le banche?",
+          "options": [
+            "Vietare l'AI a tutti i dipendenti",
+            "Accesso in sola lettura per gli agenti, come per le app di budget",
+            "Far pagare una tassa agli agenti",
+            "Dare agli agenti pieno accesso per velocizzare i pagamenti"
+          ],
+          "answer": 1,
+          "explanation": "La sola lettura permette di analizzare i movimenti senza poter spostare denaro: è l'applicazione del minimo privilegio."
+        }
+      ],
+      "reflection": "Se dovessi far usare a un agente AI il tuo conto o la tua email di lavoro, quali azioni gli permetteresti e quali vorresti sempre approvare tu?",
+      "id": "2026-10-24-ai",
+      "label": "Intelligenza artificiale"
+    },
+    {
+      "category": "finanza",
+      "title": "Meta brucia cassa per l'AI: il free cash flow va in rosso",
+      "subtitle": "Perché il denaro che resta in cassa conta più dell'utile",
+      "summary": "Nel terzo trimestre Meta ha speso in data center più di quanto ha incassato dall'attività: il free cash flow è sceso a **circa -2,1 miliardi di dollari**. Venerdì intanto Wall Street ha chiuso in calo, con il petrolio sopra i 100 dollari.",
+      "stat": {
+        "value": "-2,1 mld $",
+        "label": "free cash flow di Meta nel terzo trimestre"
+      },
+      "sections": [
+        {
+          "heading": "I numeri del trimestre",
+          "text": "Meta ha generato **32,8 miliardi** di flusso di cassa operativo, ma ne ha spesi **34,9** in investimenti, compresi i leasing finanziari. Il risultato è un free cash flow di circa -2,1 miliardi."
+        },
+        {
+          "heading": "Una prima volta dal 2012",
+          "text": "Secondo Benzinga, Meta non aveva un trimestre con free cash flow negativo **dal 2012**, l'anno della quotazione. Nonostante questo, ha alzato la stima di spesa 2026 a **135-145 miliardi di dollari**."
+        },
+        {
+          "heading": "Come pagherà",
+          "text": "Meta ha annunciato una nuova classe di azioni senza diritto di voto, la Classe C, in vigore da gennaio 2027. Gli analisti la leggono come un modo in più per **finanziare la corsa all'AI**."
+        },
+        {
+          "heading": "Venerdì a Wall Street",
+          "text": "Il Dow Jones ha perso l'**1,23%**, l'S&P 500 lo 0,52% e il Nasdaq lo 0,21%. A pesare è stato il petrolio: il greggio americano ha superato i **100 dollari** per i timori di una nuova escalation con l'Iran."
+        }
+      ],
+      "keyPoints": [
+        "Meta: free cash flow di circa -2,1 miliardi nel trimestre",
+        "Prima volta in negativo dal 2012, ma spesa 2026 alzata a 135-145 miliardi",
+        "Venerdì Dow -1,23% con il petrolio USA sopra 100 dollari"
+      ],
+      "whyItMatters": "Il free cash flow è il numero che dice se un'azienda si mantiene da sola. Lo puoi usare per valutare qualsiasi titolo o fondo, e capire quando un'azienda sta scommettendo sul futuro con soldi che oggi non genera.",
+      "actionToday": "Cerca \"free cash flow\" più il nome di un'azienda di cui hai azioni o che conosci bene, e confrontalo con l'utile netto. Chiediti: **i due numeri raccontano la stessa storia?**",
+      "checklist": [],
+      "eli5": "Immagina di guadagnare 3.280 euro al mese e di spenderne 3.490 per ristrutturare casa. Il tuo stipendio è buono, ma a fine mese sei sotto di 210 euro. È quello che è successo a Meta: guadagna molto, ma sta investendo ancora di più.",
+      "deepDive": [
+        {
+          "title": "Utile e free cash flow non sono la stessa cosa",
+          "text": "L'utile contabile distribuisce il costo di un investimento su molti anni con gli ammortamenti, quindi un data center da miliardi pesa poco sull'utile del trimestre. Il free cash flow invece conta i soldi usciti davvero: flusso di cassa operativo meno investimenti. Per questo un'azienda può avere utili record e cassa in calo."
+        },
+        {
+          "title": "Quando il free cash flow negativo non è un allarme",
+          "text": "Per una startup o per un'azienda in forte espansione è normale: investe oggi per guadagnare domani. Il punto è se gli investimenti produrranno ricavi sufficienti e in quanto tempo. Gli investitori si preoccupano quando la spesa cresce più in fretta della visibilità sui ritorni, ed è il dibattito di queste settimane sull'AI."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "free cash flow",
+          "meaning": "Il denaro che resta a un'azienda dopo aver pagato gli investimenti: flusso di cassa operativo meno spese in conto capitale."
+        },
+        {
+          "term": "flusso di cassa operativo",
+          "meaning": "I soldi effettivamente incassati dall'attività ordinaria, al netto dei costi pagati."
+        },
+        {
+          "term": "azioni senza diritto di voto",
+          "meaning": "Azioni che danno diritto agli utili ma non a votare nelle assemblee: permettono di raccogliere capitale senza cedere il controllo."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Benzinga — Meta free cash flow negative first time since 2012",
+          "url": "https://www.benzinga.com/markets/earnings/26/10/62530530/meta-free-cash-flow-negative-first-time-since-2012-capex"
+        },
+        {
+          "title": "Yahoo Finance — Meta's free cash flow turned negative",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/meta-free-cash-flow-turned-054033484.html"
+        },
+        {
+          "title": "CNBC — Stock market news, 23 ottobre",
+          "url": "https://www.cnbc.com/2026/10/22/stock-market-today-live-update.html"
+        },
+        {
+          "title": "TheStreet — Stock Market Today, 23 ottobre",
+          "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-23-2026"
+        }
+      ],
+      "readingMinutes": 4,
+      "quiz": [
+        {
+          "q": "Perché il free cash flow di Meta è diventato negativo?",
+          "options": [
+            "Perché i ricavi pubblicitari sono crollati",
+            "Perché gli investimenti in data center hanno superato il flusso di cassa operativo",
+            "Perché ha pagato un dividendo straordinario",
+            "Perché ha perso una causa miliardaria"
+          ],
+          "answer": 1,
+          "explanation": "Meta ha incassato circa 32,8 miliardi dall'attività ma ne ha investiti circa 34,9: la differenza è negativa."
+        },
+        {
+          "q": "Un'azienda può avere utili alti e free cash flow negativo?",
+          "options": [
+            "No, sono la stessa misura",
+            "Sì, perché gli investimenti pesano subito sulla cassa ma poco alla volta sull'utile",
+            "Solo se è in perdita",
+            "Solo se è una banca"
+          ],
+          "answer": 1,
+          "explanation": "Con gli ammortamenti il costo di un investimento si spalma sull'utile di molti anni, mentre la cassa esce tutta subito."
+        }
+      ],
+      "reflection": "Spiega con parole tue la differenza tra utile e free cash flow, usando un esempio della tua vita o del tuo lavoro.",
+      "id": "2026-10-24-finanza",
+      "label": "Finanza"
+    },
+    {
+      "category": "mondo",
+      "title": "Iran, l'ambasciatore USA all'ONU: la guerra può durare un altro anno",
+      "subtitle": "Cosa vuole Washington e quanto sta costando all'Europa",
+      "summary": "Mike Waltz, ambasciatore USA all'ONU, ha detto al Financial Times che la guerra con l'Iran **potrebbe durare un altro anno**. Secondo la Commissione europea il conflitto è già costato all'Europa circa **100 miliardi di euro**.",
+      "stat": {
+        "value": "100 mld €",
+        "label": "costo stimato della guerra per l'Europa"
+      },
+      "sections": [
+        {
+          "heading": "Da cinque settimane a un anno",
+          "text": "All'inizio Trump aveva parlato di una guerra di **quattro o cinque settimane**. Ora Waltz dice che potrebbe durare un altro anno, anche se spera che l'Iran \"venga al tavolo\" prima."
+        },
+        {
+          "heading": "Cosa chiedono gli USA",
+          "text": "Secondo Waltz, gli obiettivi non saranno raggiunti finché l'Iran non si libererà del suo **uranio altamente arricchito** e non accetterà un accordo serio sull'arricchimento."
+        },
+        {
+          "heading": "Il conto per l'Europa",
+          "text": "La Commissione europea stima un costo di circa **100 miliardi di euro**, tra commerci interrotti ed energia più cara. In Francia le proteste studentesche si stanno allargando alla rabbia per il carovita."
+        },
+        {
+          "heading": "Il petrolio non si ferma",
+          "text": "Venerdì il Brent ha toccato **tra 114 e 117 dollari** secondo le fonti, il livello più alto dall'inizio della guerra. Intanto rinforzi militari americani si dirigono verso il Medio Oriente."
+        },
+        {
+          "heading": "Da tenere d'occhio",
+          "text": "Martedì Israele vota alle **elezioni politiche**, mentre Netanyahu ha ordinato di preparare la chiusura della Cisgiordania dopo l'uccisione di due soldati israeliani."
+        }
+      ],
+      "keyPoints": [
+        "Waltz: la guerra con l'Iran potrebbe durare un altro anno",
+        "Commissione UE: costo per l'Europa di circa 100 miliardi di euro",
+        "Brent ai massimi della guerra, elezioni in Israele martedì"
+      ],
+      "whyItMatters": "Una guerra lunga significa energia cara più a lungo: bollette, carburante e inflazione in Italia dipendono da come evolve questo conflitto. Ed è il contesto dietro i movimenti di borsa di questi giorni.",
+      "actionToday": "Controlla quanto hai pagato l'ultima bolletta di luce o gas e confrontala con lo stesso mese dell'anno scorso. **Annota la differenza**: è il costo della crisi energetica sul tuo bilancio.",
+      "checklist": [],
+      "eli5": "Immagina che il negozio dove compri il pane sia sempre chiuso per lavori: devi andare in uno più lontano e più caro. Se i lavori durano una settimana, poco male; se durano un anno, spendi molto di più. La guerra con l'Iran fa lo stesso con il petrolio per l'Europa.",
+      "deepDive": [
+        {
+          "title": "Perché l'uranio arricchito è il nodo",
+          "text": "L'uranio naturale contiene meno dell'1% dell'isotopo utile per la fissione. Per le centrali basta arricchirlo al 3-5%, per un'arma serve circa il 90%. Più alta è la percentuale che un Paese possiede, più breve è il tempo per costruire una bomba. Per questo gli USA chiedono all'Iran di liberarsi delle scorte già arricchite, non solo di smettere di produrne."
+        },
+        {
+          "title": "Perché l'Europa paga più degli Stati Uniti",
+          "text": "Gli Stati Uniti sono grandi produttori di petrolio e gas, quindi un prezzo alto danneggia i consumatori ma aiuta le loro aziende energetiche. L'Europa invece importa gran parte dell'energia che usa: ogni aumento del prezzo è denaro che esce dal continente."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "uranio altamente arricchito",
+          "meaning": "Uranio con una percentuale elevata dell'isotopo U-235, vicina a quella necessaria per un'arma nucleare."
+        },
+        {
+          "term": "Brent",
+          "meaning": "Il petrolio del Mare del Nord usato come prezzo di riferimento mondiale."
+        },
+        {
+          "term": "Cisgiordania",
+          "meaning": "Territorio palestinese a ovest del fiume Giordano, occupato da Israele dal 1967."
+        }
+      ],
+      "sources": [
+        {
+          "title": "CBS News — Iran war updates: war could last another year",
+          "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-oil-gas-prices-strait-of-hormuz-midterms/"
+        },
+        {
+          "title": "NPR — The News Roundup for October 23, 2026",
+          "url": "https://www.npr.org/2026/10/23/nx-s1-6014574/the-news-roundup-for-october-23-2026"
+        },
+        {
+          "title": "Yahoo News — Trump's U.N. envoy says Iran war could drag on for another year",
+          "url": "https://www.yahoo.com/news/us/articles/trumps-u-n-envoy-says-093836444.html"
+        },
+        {
+          "title": "Democracy Now! — Headlines 23 ottobre 2026",
+          "url": "https://www.democracynow.org/2026/10/23/headlines"
+        }
+      ],
+      "readingMinutes": 4,
+      "quiz": [
+        {
+          "q": "Quale condizione pone Waltz per considerare raggiunti gli obiettivi USA?",
+          "options": [
+            "Un cambio di governo in Iran",
+            "Che l'Iran si liberi dell'uranio altamente arricchito e accetti un accordo sull'arricchimento",
+            "Che l'Iran paghi i danni di guerra",
+            "Che l'Iran esca dall'ONU"
+          ],
+          "answer": 1,
+          "explanation": "Waltz ha indicato le scorte di uranio altamente arricchito e un accordo serio sull'arricchimento come obiettivi chiave."
+        },
+        {
+          "q": "Perché la guerra pesa più sull'Europa che sugli Stati Uniti?",
+          "options": [
+            "Perché l'Europa partecipa ai combattimenti",
+            "Perché l'Europa importa gran parte della sua energia, mentre gli USA la producono",
+            "Perché l'euro è legato al rial iraniano",
+            "Perché gli USA non usano petrolio"
+          ],
+          "answer": 1,
+          "explanation": "Per un importatore netto ogni rincaro dell'energia è denaro che esce; gli USA, grandi produttori, in parte ci guadagnano."
+        }
+      ],
+      "reflection": "In due frasi: come arriva una guerra in Medio Oriente fino al tuo portafoglio in Italia?",
+      "id": "2026-10-24-mondo",
+      "label": "Mondo"
+    },
+    {
+      "category": "sapere",
+      "title": "La regressione verso la media: perché dopo un exploit arriva il calo",
+      "subtitle": "L'errore statistico che ci fa credere che i rimproveri funzionino",
+      "summary": "Quando un risultato è eccezionale, quello successivo tende a essere più normale, **per pura statistica**. Ignorarlo ci porta a vedere cause e meriti dove c'è solo caso.",
+      "stat": {
+        "value": "1886",
+        "label": "Galton descrive il fenomeno studiando le altezze"
+      },
+      "sections": [
+        {
+          "heading": "La scoperta di Galton",
+          "text": "Nel 1886 Francis Galton notò che i figli di genitori molto alti erano in media **alti, ma meno dei genitori**. E i figli di genitori molto bassi erano un po' meno bassi. I valori estremi tendono a tornare verso la media."
+        },
+        {
+          "heading": "Perché succede",
+          "text": "Ogni risultato è fatto di **abilità più fortuna**. Un risultato eccezionale di solito contiene anche molta fortuna, che la volta dopo difficilmente si ripete."
+        },
+        {
+          "heading": "Gli istruttori di volo",
+          "text": "Daniel Kahneman racconta di istruttori dell'aviazione israeliana convinti che **i rimproveri funzionassero** meglio delle lodi: dopo un rimprovero il volo migliorava. In realtà dopo un volo pessimo il successivo tende comunque a essere migliore."
+        },
+        {
+          "heading": "Dove la trovi ogni giorno",
+          "text": "Il fondo che ha reso tantissimo l'anno scorso, il venditore del mese, la cura provata nel momento peggiore di un mal di schiena. **Prima di cercare una causa**, chiediti se non è solo un ritorno alla normalità."
+        }
+      ],
+      "keyPoints": [
+        "Dopo un risultato estremo il successivo tende a essere più normale",
+        "Succede perché ogni risultato è abilità più fortuna",
+        "Prima di dare meriti o colpe, considera il ritorno alla media"
+      ],
+      "whyItMatters": "Ti protegge da decisioni sbagliate: comprare il fondo che è appena salito di più, premiare o punire una persona dopo un singolo risultato, credere a rimedi che \"funzionano\" solo perché li hai provati nel momento peggiore.",
+      "actionToday": "Ripensa a un risultato eccezionale, tuo o del tuo team, seguito da un calo. Scrivi quanta parte era **abilità** e quanta **fortuna**: cambia il modo in cui lo giudichi?",
+      "checklist": [],
+      "eli5": "Se lanci dieci volte una moneta ed esce testa nove volte, non diventi bravo a far uscire testa. Al prossimo giro di dieci lanci probabilmente uscirà più o meno cinque volte. Non sei peggiorato: è tornata la normalità.",
+      "deepDive": [
+        {
+          "title": "La maledizione della copertina",
+          "text": "Negli Stati Uniti si parla della \"maledizione di Sports Illustrated\": gli atleti finiti in copertina spesso calano subito dopo. Nessuna maledizione: in copertina ci finisce chi ha appena avuto un periodo straordinario, spesso aiutato dalla fortuna, e poi torna al suo livello normale."
+        },
+        {
+          "title": "Come non farsi ingannare",
+          "text": "La regola pratica è confrontare con un gruppo di controllo. Se vuoi sapere se un rimedio funziona, devi confrontare chi lo usa con chi non lo usa partendo dalla stessa situazione. Per questo gli studi clinici seri usano gruppi di controllo: senza, la regressione verso la media si fa passare per un effetto della cura."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "media",
+          "meaning": "Il valore tipico di un insieme di dati: la somma dei valori divisa per il loro numero."
+        },
+        {
+          "term": "gruppo di controllo",
+          "meaning": "Gruppo che non riceve il trattamento studiato, usato come confronto per misurarne l'effetto reale."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wikipedia — Regression toward the mean",
+          "url": "https://en.wikipedia.org/wiki/Regression_toward_the_mean"
+        },
+        {
+          "title": "Wikipedia — Regressione verso la media",
+          "url": "https://it.wikipedia.org/wiki/Regressione_verso_la_media"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Un venditore ha il mese migliore della sua carriera, il mese dopo vende meno. Qual è la spiegazione più probabile?",
+          "options": [
+            "Si è montato la testa",
+            "Il mese record conteneva anche molta fortuna, che non si è ripetuta",
+            "I clienti lo hanno boicottato",
+            "Il premio ricevuto lo ha demotivato"
+          ],
+          "answer": 1,
+          "explanation": "È la regressione verso la media: un risultato estremo contiene una componente di fortuna che tende a non ripetersi."
+        },
+        {
+          "q": "Perché gli istruttori di volo credevano che i rimproveri funzionassero?",
+          "options": [
+            "Perché i piloti avevano paura",
+            "Perché dopo un volo pessimo il successivo tende comunque a migliorare, rimprovero o no",
+            "Perché le lodi erano vietate",
+            "Perché i rimproveri erano scritti"
+          ],
+          "answer": 1,
+          "explanation": "Il miglioramento sarebbe arrivato comunque: era il ritorno verso la media, scambiato per effetto del rimprovero."
+        }
+      ],
+      "reflection": "Fai un esempio dal tuo lavoro in cui potresti aver dato merito o colpa a qualcuno per quella che era, almeno in parte, regressione verso la media.",
+      "id": "2026-10-24-sapere",
+      "label": "Sapere"
+    },
+    {
+      "category": "routine",
+      "title": "La camminata dopo i pasti: 10 minuti che il tuo corpo ringrazia",
+      "subtitle": "Una piccola abitudine con un effetto misurabile sulla glicemia",
+      "summary": "Muoversi qualche minuto dopo aver mangiato aiuta a tenere più stabile lo zucchero nel sangue. Secondo una meta-analisi del 2022, brevi camminate leggere **riducono la glicemia di circa il 17%** rispetto allo stare seduti.",
+      "stat": {
+        "value": "−17%",
+        "label": "glicemia con brevi camminate rispetto a stare seduti"
+      },
+      "sections": [
+        {
+          "heading": "Cosa dice la ricerca",
+          "text": "Una meta-analisi pubblicata nel 2022 su Sports Medicine ha confrontato **sette studi** su stare seduti, in piedi o camminare durante la giornata. Le brevi camminate leggere hanno dato i risultati migliori sulla glicemia."
+        },
+        {
+          "heading": "Bastano pochi minuti",
+          "text": "Nei test bastavano pause di **2-5 minuti** ogni 20-30 minuti. Camminare ha ridotto la glicemia di circa il 17% rispetto a stare seduti; stare in piedi di circa il 9%."
+        },
+        {
+          "heading": "Il momento migliore",
+          "text": "Dopo il pasto lo zucchero nel sangue sale. Se cammini subito dopo, i muscoli usano parte di quel glucosio e **il picco si abbassa**: zuccheri e insulina salgono e scendono in modo più graduale."
+        },
+        {
+          "heading": "Come farla diventare abitudine",
+          "text": "Aggancia la camminata a qualcosa che fai già: **finisci di pranzare, ti alzi ed esci**. Anche un giro dell'isolato o una telefonata fatta camminando valgono."
+        }
+      ],
+      "keyPoints": [
+        "Brevi camminate dopo i pasti abbassano i picchi di glicemia",
+        "Bastano 2-10 minuti a passo tranquillo",
+        "Agganciala al pranzo per farla diventare automatica"
+      ],
+      "whyItMatters": "Picchi di glicemia più bassi significano meno sonnolenza dopo pranzo e più energia nel pomeriggio, oltre a un beneficio per la salute metabolica nel lungo periodo. Costa pochi minuti e nessuna attrezzatura.",
+      "actionToday": "Oggi, dopo pranzo, **cammina 10 minuti** prima di tornare alla scrivania o al divano. Stasera annota come ti sei sentito nel primo pomeriggio rispetto al solito.",
+      "checklist": [
+        "Dopo pranzo: 10 minuti di camminata tranquilla",
+        "Dopo cena: almeno 5 minuti in movimento",
+        "Una telefonata fatta camminando invece che seduto",
+        "Ogni ora di lavoro: alzati e muoviti per 2 minuti"
+      ],
+      "eli5": "Dopo mangiato nel sangue arriva tanto zucchero tutto insieme, come un camion che scarica davanti al magazzino. Se cammini, i muscoli aprono le porte e lo portano dentro subito. Così il carico non resta ammucchiato fuori.",
+      "deepDive": [
+        {
+          "title": "Perché i muscoli fanno la differenza",
+          "text": "Quando i muscoli lavorano usano il glucosio come carburante e possono assorbirlo dal sangue anche con meno bisogno di insulina. Per questo anche un'attività leggera, se fatta subito dopo il pasto quando la glicemia sale, ha un effetto visibile. Non serve correre: conta muoversi nel momento giusto."
+        },
+        {
+          "title": "Cosa non dice la ricerca",
+          "text": "La meta-analisi misura effetti immediati sulla glicemia, soprattutto in contesti di laboratorio. Non dimostra da sola benefici a lungo termine, né sostituisce dieta e attività fisica regolare. Chi ha il diabete o assume farmaci per la glicemia dovrebbe parlarne con il medico prima di cambiare abitudini."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "glicemia",
+          "meaning": "La quantità di zucchero (glucosio) presente nel sangue."
+        },
+        {
+          "term": "meta-analisi",
+          "meaning": "Studio che combina i risultati di più ricerche sullo stesso tema per ottenere una stima più affidabile."
+        },
+        {
+          "term": "insulina",
+          "meaning": "Ormone che aiuta le cellule ad assorbire il glucosio dal sangue."
+        }
+      ],
+      "sources": [
+        {
+          "title": "CNN — Just 2 minutes of walking after eating can help blood sugar, study says",
+          "url": "https://edition.cnn.com/2022/09/02/health/walking-blood-sugar-study-wellness/index.html"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Secondo la meta-analisi, cosa riduce di più la glicemia rispetto a stare seduti?",
+          "options": [
+            "Stare in piedi",
+            "Brevi camminate leggere",
+            "Bere acqua dopo i pasti",
+            "Dormire dopo pranzo"
+          ],
+          "answer": 1,
+          "explanation": "Le brevi camminate leggere hanno ridotto la glicemia di circa il 17%, contro il 9% circa dello stare in piedi."
+        },
+        {
+          "q": "Perché camminare subito dopo il pasto è particolarmente efficace?",
+          "options": [
+            "Perché si digerisce meno",
+            "Perché i muscoli usano il glucosio proprio mentre la glicemia sta salendo",
+            "Perché si bruciano tutte le calorie del pasto",
+            "Perché si dorme meglio la notte"
+          ],
+          "answer": 1,
+          "explanation": "Muovendosi quando la glicemia sale, i muscoli assorbono parte del glucosio e il picco si abbassa."
+        }
+      ],
+      "reflection": "A quale momento della tua giornata puoi agganciare la camminata dopo i pasti, e cosa potrebbe impedirti di farla?",
+      "id": "2026-10-24-routine",
+      "label": "Metodo & routine"
+    }
+  ]
+}
