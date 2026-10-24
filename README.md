@@ -48,6 +48,24 @@ Senza configurare nulla, i pulsanti "Apri in Claude" e "Copia domanda" portano l
 
 `scripts/generate.mjs` fa lo stesso lavoro tramite l'API di Claude. Per usarlo aggiungi il secret `ANTHROPIC_API_KEY` al repository e avvia a mano *Actions → Edizione quotidiana → Run workflow* (costo indicativo: circa un dollaro per edizione).
 
+## Utenti, punteggi e amici
+
+All'apertura l'app chiede di entrare: la prima volta con nome, cognome e username, poi basta lo username. Ognuno legge le stesse notizie ma ha i propri progressi (schede lette, quiz, routine). In *Progressi* c'è la classifica con gli amici: cerchi per nome o username, tocchi **Confronta** e vedi il confronto tema per tema.
+
+**Punti:** 10 per scheda letta, 5 per risposta giusta, 20 per routine completata.
+
+Finché `config/backend.json` è vuoto l'app funziona in **modalità locale**: i profili restano sul dispositivo. Per condividerli tra telefoni diversi serve un database Supabase gratuito:
+
+1. Crea un account su [supabase.com](https://supabase.com) e un nuovo progetto (regione consigliata: Europa).
+2. Apri *SQL Editor → New query*, incolla il contenuto di `supabase/schema.sql` e premi **Run**.
+3. In *Project Settings → API Keys* copia il **Project URL** e la **publishable key** (inizia con `sb_publishable_`).
+4. Inseriscili in `config/backend.json`:
+   ```json
+   { "supabaseUrl": "https://xxxx.supabase.co", "supabaseKey": "sb_publishable_..." }
+   ```
+
+La chiave publishable è pensata per stare in un'app pubblica. Poiché si entra solo con lo username, chiunque abbia il link può vedere profili e punteggi e potrebbe entrare con lo username di un altro: va bene tra amici, non per dati riservati. La chiave API di Claude e le risposte scritte alle domande di verifica restano sempre solo sul dispositivo.
+
 ## Personalizzazione
 
 Modifica `config/profile.json`: lavoro, obiettivi, interessi finanziari, aree di "Sapere" e "Routine", tono. Il generatore lo legge ogni mattina.

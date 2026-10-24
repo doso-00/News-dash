@@ -20,6 +20,32 @@
 </head>
 <body>
 <!--APP-->
+  <section class="login" id="login" aria-labelledby="login-title" hidden>
+    <div class="login-inner">
+      <div class="login-ring" aria-hidden="true">
+        <i data-cat="ai"></i><i data-cat="finanza"></i><i data-cat="mondo"></i><i data-cat="sapere"></i><i data-cat="routine"></i>
+      </div>
+      <h1 class="brand" id="login-title">Cinque al Mattino</h1>
+      <p class="login-sub">Cinque cose da sapere ogni mattina, un quiz per fissarle e gli amici con cui confrontarti.</p>
+      <div class="login-tabs" role="tablist">
+        <button type="button" role="tab" id="tab-entra" aria-selected="true">Entra</button>
+        <button type="button" role="tab" id="tab-registrati" aria-selected="false">Prima volta? Registrati</button>
+      </div>
+      <form id="login-form" class="login-form" data-mode="entra" autocomplete="off" novalidate>
+        <div id="register-fields" class="name-row" hidden>
+          <label>Nome<input type="text" id="first-name" autocomplete="given-name" maxlength="40"></label>
+          <label>Cognome<input type="text" id="last-name" autocomplete="family-name" maxlength="40"></label>
+        </div>
+        <label>Username
+          <span class="at-field"><span aria-hidden="true">@</span><input type="text" id="username" autocapitalize="none" autocomplete="username" spellcheck="false" maxlength="21" placeholder="mario.rossi"></span>
+        </label>
+        <p class="login-error" id="login-error" role="alert"></p>
+        <button type="submit" class="btn login-submit" id="login-submit">Entra</button>
+      </form>
+      <p class="hint" id="login-mode"></p>
+    </div>
+  </section>
+
   <div class="app" id="app">
     <header class="masthead" id="masthead">
       <div class="masthead-inner">
@@ -37,6 +63,7 @@
           <span id="past-label"></span>
           <button type="button" class="link-btn" id="back-today">Torna a oggi</button>
         </div>
+        <p class="hello" id="hello"></p>
         <p class="headline" id="headline"></p>
         <div class="streak-row" id="streak-row"></div>
         <div id="stories-cta"></div>
@@ -56,6 +83,8 @@
       <section class="view" id="view-progressi" data-view="progressi" aria-labelledby="tab-progressi" hidden>
         <h2 class="view-title">Progressi</h2>
         <div id="stats"></div>
+        <h3 class="section-label">Confronta con gli amici</h3>
+        <div id="friends"></div>
         <h3 class="section-label">Impostazioni</h3>
         <form class="settings" id="settings" autocomplete="off">
           <fieldset class="field">

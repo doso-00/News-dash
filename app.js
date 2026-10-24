@@ -1,5 +1,7 @@
 // Cinque al Mattino — client app. No build step: plain ES module.
 
+import { BackendError, connect, normalizeUsername, validUsername } from "./backend.js";
+
 const SDK_URL = "./vendor/anthropic-sdk.mjs"; // built by `npm run build:sdk`
 const MODEL = "claude-opus-5-5";
 const STORE_KEY = "cinque:v1";
@@ -27,6 +29,10 @@ const esc = (s) =>
 
 // ---------- storage ----------
 
+const USER_KEY = "cinque:user"; // profile of whoever is signed in on this device
+const LEGACY_KEY = "cinque:v1"; // progress saved before profiles existed
+const userKey = (username) => `cinque:v1:u:${username}`;
+
 const defaults = () => ({
   read: {}, // cardId -> date read
   understood: {}, // cardId -> true | false
@@ -37,27 +43,91 @@ const defaults = () => ({
   catStats: {}, // category -> { right, total }
   answers: {}, // cardId -> reflection text
   review: [], // missed questions waiting to come back
+  friends: [], // usernames to compare with
+  updatedAt: 0,
   settings: { theme: "system", font: "1", apiKey: "" },
 });
 
-function load() {
+function readState(key) {
   try {
-    const raw = localStorage.getItem(STORE_KEY);
-    if (!raw) return defaults();
+    const raw = localStorage.getItem(key);
+    if (!raw) return null;
     const saved = JSON.parse(raw);
     const base = defaults();
     return { ...base, ...saved, settings: { ...base.settings, ...saved.settings } };
   } catch {
-    return defaults();
+    return null;
   }
 }
-const state = load();
-function persist() {
+
+const state = defaults();
+let me = null; // { username, first_name, last_name }
+let backend = null;
+
+function replaceState(next) {
+  for (const k of Object.keys(state)) delete state[k];
+  const base = defaults();
+  Object.assign(state, base, next, { settings: { ...base.settings, ...next?.settings } });
+}
+
+function saveLocal() {
+  if (!me) return;
   try {
-    localStorage.setItem(STORE_KEY, JSON.stringify(state));
+    localStorage.setItem(userKey(me.username), JSON.stringify(state));
   } catch {
     /* storage unavailable: keep working in memory */
   }
+}
+
+function persist() {
+  state.updatedAt = Date.now();
+  saveLocal();
+  scheduleSync();
+}
+
+// ---------- sync with the shared database ----------
+
+let syncTimer = null;
+function scheduleSync() {
+  if (!me || !backend) return;
+  clearTimeout(syncTimer);
+  syncTimer = setTimeout(syncNow, 1500);
+}
+
+// The API key and reflection answers never leave the device.
+const shareable = (s) => ({ ...s, answers: {}, settings: { ...s.settings, apiKey: "" } });
+
+async function syncNow() {
+  clearTimeout(syncTimer);
+  syncTimer = null;
+  if (!me || !backend) return;
+  try {
+    await backend.savePlayer(me.username, { state: shareable(state), stats: computeStats(state) });
+  } catch {
+    /* offline: the next change retries */
+  }
+}
+
+const sumCats = (cats) =>
+  Object.values(cats ?? {}).reduce((a, b) => ({ right: a.right + b.right, total: a.total + b.total }), { right: 0, total: 0 });
+const routineCount = (checklist) =>
+  Object.entries(checklist).filter(([id, list]) => id.endsWith("-routine") && list.length && list.every(Boolean)).length;
+const pointsFor = (read, right, routine) => read * 10 + right * 5 + routine * 20;
+
+// What friends see: totals only, never the cards' answers or settings.
+function computeStats(s) {
+  const totals = sumCats(s.catStats);
+  const read = Object.keys(s.read).length;
+  const routineDays = routineCount(s.checklist);
+  return {
+    read,
+    quizRight: totals.right,
+    quizTotal: totals.total,
+    routineDays,
+    byCat: s.catStats,
+    activity: Object.keys(s.activity).sort().slice(-60),
+    points: pointsFor(read, totals.right, routineDays),
+  };
 }
 
 // ---------- dates ----------
@@ -75,11 +145,11 @@ const longDate = (iso) =>
   new Date(`${iso}T12:00:00`).toLocaleDateString("it-IT", { weekday: "long", day: "numeric", month: "long" });
 const shortDate = (iso) => new Date(`${iso}T12:00:00`).toLocaleDateString("it-IT", { day: "2-digit", month: "2-digit" });
 
-function streak() {
+function streak(activity = state.activity) {
   let day = localDate();
-  if (!state.activity[day]) day = addDays(day, -1);
+  if (!activity[day]) day = addDays(day, -1);
   let n = 0;
-  while (state.activity[day]) {
+  while (activity[day]) {
     n++;
     day = addDays(day, -1);
   }
@@ -159,6 +229,7 @@ function renderToday() {
   $("#past-banner").hidden = isToday;
   $("#past-label").textContent = `Stai leggendo l'edizione del ${longDate(edition.date)}`;
   $("#headline").textContent = edition.headline;
+  $("#hello").textContent = `Ciao ${me.first_name}, ecco le tue cinque di oggi`;
 
   const s = streak();
   const quiz = state.quiz[edition.date];
@@ -824,10 +895,10 @@ async function showDay(date, cardId = null) {
 // ---------- progress ----------
 
 function renderStats() {
-  const reads = Object.keys(state.read).length;
-  const totals = Object.values(state.catStats).reduce((a, b) => ({ right: a.right + b.right, total: a.total + b.total }), { right: 0, total: 0 });
-  const acc = totals.total ? Math.round((totals.right / totals.total) * 100) : null;
-  const routineDays = Object.entries(state.checklist).filter(([id, list]) => id.endsWith("-routine") && list.length && list.every(Boolean)).length;
+  const mine = computeStats(state);
+  const reads = mine.read;
+  const acc = mine.quizTotal ? Math.round((mine.quizRight / mine.quizTotal) * 100) : null;
+  const routineDays = mine.routineDays;
 
   const days = Object.entries(state.quiz)
     .sort((a, b) => a[0].localeCompare(b[0]))
@@ -843,6 +914,11 @@ function renderStats() {
   const weakest = scored.length > 1 && scored[0].pct < 100 ? scored[0] : null;
 
   $("#stats").innerHTML = `
+    <div class="me-card">
+      <span class="avatar" aria-hidden="true">${esc(initials(me))}</span>
+      <div><strong>${esc(fullName(me))}</strong><span>@${esc(me.username)} · ${mine.points} punti</span></div>
+      <button type="button" class="btn ghost" id="logout">Esci</button>
+    </div>
     <div class="stats">
       <div class="stat"><b>${streak()}</b><span>giorni di fila</span></div>
       <div class="stat"><b>${reads}</b><span>schede lette</span></div>
@@ -858,6 +934,258 @@ function renderStats() {
       )
       .join("")}</div>
     ${weakest ? `<p class="tip">Il tema da rinforzare è <strong>${CAT_LABEL[weakest.c]}</strong>: apri "Non ho capito" sulle prossime schede di questo tema.</p>` : ""}`;
+}
+
+// ---------- friends ----------
+
+const fullName = (p) => `${p.first_name} ${p.last_name}`.trim();
+const initials = (p) => `${p.first_name[0] ?? ""}${p.last_name[0] ?? ""}`.toUpperCase();
+const pct = (right, total) => (total ? Math.round((right / total) * 100) : null);
+const days = (n) => `${n} ${n === 1 ? "giorno" : "giorni"}`;
+const streakOf = (stats) => streak(Object.fromEntries((stats?.activity ?? []).map((d) => [d, true])));
+
+let openFriend = null;
+let searchTimer = null;
+
+function renderFriends() {
+  $("#friends").innerHTML = `
+    <div class="friend-search">
+      <input type="search" id="friend-q" placeholder="Cerca per nome o username" autocomplete="off" spellcheck="false">
+      <ul class="friend-results" id="friend-results"></ul>
+    </div>
+    <ol class="leaderboard" id="leaderboard"><li class="empty">Caricamento della classifica…</li></ol>
+    <p class="tip">Punti: 10 per scheda letta, 5 per risposta giusta, 20 per routine completata.</p>
+    ${
+      backend.mode === "local"
+        ? '<p class="tip">Modalità locale: trovi solo i profili creati su questo dispositivo. Con il database online vedrai gli amici da qualsiasi telefono.</p>'
+        : ""
+    }`;
+  renderLeaderboard();
+}
+
+async function renderLeaderboard() {
+  const list = $("#leaderboard");
+  if (!list) return;
+  let friends = [];
+  try {
+    friends = await backend.getMany(state.friends);
+  } catch (err) {
+    list.innerHTML = `<li class="empty">${esc(err.message)}</li>`;
+    return;
+  }
+  const rows = [{ ...me, stats: computeStats(state), self: true }, ...friends].sort(
+    (a, b) => (b.stats?.points ?? 0) - (a.stats?.points ?? 0),
+  );
+  if (rows.length === 1) {
+    list.innerHTML = `${leaderRow(rows[0], 0)}<li class="empty">Cerca un amico qui sopra per iniziare il confronto.</li>`;
+    return;
+  }
+  list.innerHTML = rows.map(leaderRow).join("");
+}
+
+function leaderRow(p, i) {
+  const st = p.stats ?? {};
+  const acc = pct(st.quizRight, st.quizTotal);
+  const open = !p.self && openFriend === p.username;
+  return `<li class="leader ${p.self ? "self" : ""}">
+    <button type="button" class="leader-row" ${p.self ? "disabled" : `data-friend="${esc(p.username)}" aria-expanded="${open}"`}>
+      <span class="rank">${i + 1}</span>
+      <span class="avatar" aria-hidden="true">${esc(initials(p))}</span>
+      <span class="who"><strong>${esc(fullName(p))}${p.self ? " <em>(tu)</em>" : ""}</strong>
+        <small>@${esc(p.username)} · ${days(streakOf(st))} di fila · ${st.read ?? 0} ${st.read === 1 ? "scheda" : "schede"} · ${acc === null ? "–" : `${acc}%`} quiz</small></span>
+      <span class="pts"><b>${st.points ?? 0}</b><small>punti</small></span>
+    </button>
+    ${open ? compareBlock(p) : ""}
+  </li>`;
+}
+
+function compareBlock(friend) {
+  const a = computeStats(state);
+  const b = friend.stats ?? {};
+  const metric = (label, x, y, suffix = "") => {
+    const xs = x ?? "–";
+    const ys = y ?? "–";
+    const win = typeof x === "number" && typeof y === "number" ? (x > y ? "a" : y > x ? "b" : "") : "";
+    return `<tr><th scope="row">${label}</th><td class="${win === "a" ? "win" : ""}">${xs}${x == null ? "" : suffix}</td><td class="${win === "b" ? "win" : ""}">${ys}${y == null ? "" : suffix}</td></tr>`;
+  };
+  const cats = CATS.map((c) => {
+    const pa = pct(a.byCat?.[c]?.right, a.byCat?.[c]?.total);
+    const pb = pct(b.byCat?.[c]?.right, b.byCat?.[c]?.total);
+    return `<div class="duel" data-cat="${c}"><span>${CAT_SHORT[c]}</span>
+      <span class="duel-bars"><i style="width:${pa ?? 0}%"></i><i class="them" style="width:${pb ?? 0}%"></i></span>
+      <span class="duel-val">${pa ?? "–"} / ${pb ?? "–"}</span></div>`;
+  }).join("");
+  return `<div class="compare">
+    <table>
+      <thead><tr><th></th><th scope="col">Tu</th><th scope="col">${esc(friend.first_name)}</th></tr></thead>
+      <tbody>
+        ${metric("Punti", a.points, b.points)}
+        ${metric("Giorni di fila", streakOf(a), streakOf(b))}
+        ${metric("Schede lette", a.read, b.read)}
+        ${metric("Risposte giuste", pct(a.quizRight, a.quizTotal), pct(b.quizRight, b.quizTotal), "%")}
+        ${metric("Routine completate", a.routineDays, b.routineDays)}
+      </tbody>
+    </table>
+    <p class="duel-legend"><span class="key you"></span>Tu <span class="key them"></span>${esc(friend.first_name)} · risposte giuste per tema (%)</p>
+    <div class="duels">${cats}</div>
+    <button type="button" class="link-btn" data-unfriend="${esc(friend.username)}">Rimuovi dal confronto</button>
+  </div>`;
+}
+
+async function searchFriends(q) {
+  const box = $("#friend-results");
+  if (!box) return;
+  if (q.trim().length < 2) {
+    box.innerHTML = "";
+    return;
+  }
+  let hits = [];
+  try {
+    hits = (await backend.search(q)).filter((p) => p.username !== me.username);
+  } catch (err) {
+    box.innerHTML = `<li class="empty">${esc(err.message)}</li>`;
+    return;
+  }
+  box.innerHTML = hits.length
+    ? hits
+        .map((p) => {
+          const added = state.friends.includes(p.username);
+          return `<li><span class="avatar" aria-hidden="true">${esc(initials(p))}</span>
+            <span class="who"><strong>${esc(fullName(p))}</strong><small>@${esc(p.username)}</small></span>
+            <button type="button" class="btn ${added ? "ghost" : "tint"}" data-add-friend="${esc(p.username)}" ${added ? "disabled" : ""}>${added ? "Già aggiunto" : "Confronta"}</button></li>`;
+        })
+        .join("")
+    : `<li class="empty">Nessuno trovato con "${esc(q.trim())}".</li>`;
+}
+
+// ---------- sign in ----------
+
+function showLogin(tab = "entra") {
+  $("#login").hidden = false;
+  $("#app").setAttribute("aria-hidden", "true");
+  $("#login-mode").textContent =
+    backend?.mode === "cloud"
+      ? "I profili sono condivisi: puoi entrare da qualsiasi dispositivo."
+      : "Modalità locale: i profili restano su questo dispositivo.";
+  setLoginTab(tab);
+}
+
+function setLoginTab(tab) {
+  const register = tab === "registrati";
+  $("#tab-entra").setAttribute("aria-selected", String(!register));
+  $("#tab-registrati").setAttribute("aria-selected", String(register));
+  $("#register-fields").hidden = !register;
+  $("#login-submit").textContent = register ? "Crea il profilo" : "Entra";
+  $("#login-error").textContent = "";
+  $("#first-name").required = register;
+  $("#last-name").required = register;
+  $("#login-form").dataset.mode = tab;
+}
+
+function enterAs(profile, remote) {
+  me = { username: profile.username, first_name: profile.first_name, last_name: profile.last_name };
+  try {
+    localStorage.setItem(USER_KEY, JSON.stringify(me));
+  } catch {
+    /* remembered for this session only */
+  }
+  const local = readState(userKey(me.username));
+  const cloud = remote?.state && remote.state.updatedAt ? remote.state : null;
+  if (cloud && (!local || cloud.updatedAt > local.updatedAt)) {
+    replaceState({ ...cloud, answers: local?.answers ?? {}, settings: { ...cloud.settings, apiKey: local?.settings.apiKey ?? "" } });
+    saveLocal();
+  } else if (local) {
+    replaceState(local);
+  } else {
+    // First profile on a device that already has progress from before profiles: keep it.
+    const legacy = readState(LEGACY_KEY);
+    replaceState(legacy ?? defaults());
+    try {
+      localStorage.removeItem(LEGACY_KEY);
+    } catch {
+      /* nothing to clean */
+    }
+  }
+  persist();
+  $("#login").hidden = true;
+  $("#app").removeAttribute("aria-hidden");
+  applySettings();
+  if (edition) {
+    renderToday(); // the masthead ring belongs to every view
+    route();
+  }
+}
+
+// Picks up progress made on another device since this one last synced.
+async function refreshFromCloud() {
+  if (backend?.mode !== "cloud" || !me) return;
+  try {
+    const remote = await backend.getPlayer(me.username);
+    if (remote?.state?.updatedAt > state.updatedAt) {
+      replaceState({ ...remote.state, answers: state.answers, settings: { ...remote.state.settings, apiKey: state.settings.apiKey } });
+      saveLocal();
+      applySettings();
+      renderToday();
+      route();
+    } else if (remote && state.updatedAt > (remote.state?.updatedAt ?? 0)) {
+      syncNow();
+    }
+  } catch {
+    /* offline: keep local progress */
+  }
+}
+
+async function submitLogin(e) {
+  e.preventDefault();
+  const mode = $("#login-form").dataset.mode;
+  const error = $("#login-error");
+  const username = normalizeUsername($("#username").value);
+  error.textContent = "";
+  if (!validUsername(username)) {
+    error.textContent = "Lo username deve avere da 3 a 20 caratteri: lettere minuscole, numeri, punto o trattino basso.";
+    return;
+  }
+  const btn = $("#login-submit");
+  btn.disabled = true;
+  try {
+    if (mode === "registrati") {
+      const first_name = $("#first-name").value.trim().slice(0, 40);
+      const last_name = $("#last-name").value.trim().slice(0, 40);
+      if (!first_name || !last_name) {
+        error.textContent = "Inserisci nome e cognome.";
+        return;
+      }
+      const profile = await backend.createPlayer({ username, first_name, last_name });
+      enterAs(profile, null);
+      toast(`Benvenuto, ${first_name}`);
+    } else {
+      const remote = await backend.getPlayer(username);
+      if (!remote) {
+        error.textContent = `Non trovo @${username}. Controlla lo username oppure registrati.`;
+        return;
+      }
+      enterAs(remote, remote);
+      toast(`Bentornato, ${remote.first_name}`);
+    }
+  } catch (err) {
+    error.textContent = err instanceof BackendError ? err.message : "Qualcosa è andato storto. Riprova.";
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+async function logout() {
+  await syncNow();
+  try {
+    localStorage.removeItem(USER_KEY);
+  } catch {
+    /* nothing remembered */
+  }
+  me = null;
+  replaceState(defaults());
+  applySettings();
+  $("#login-form").reset();
+  showLogin("entra");
 }
 
 function quizChart(days) {
@@ -904,12 +1232,13 @@ function route() {
     if (v === name) tab.setAttribute("aria-current", "page");
     else tab.removeAttribute("aria-current");
   }
-  if (!edition) return;
+  if (!edition || !me) return;
   if (name === "oggi") renderToday();
   if (name === "quiz") renderQuiz();
   if (name === "archivio") renderArchive();
   if (name === "progressi") {
     renderStats();
+    renderFriends();
     renderSettings();
   }
 }
@@ -994,20 +1323,44 @@ document.addEventListener("click", (e) => {
     $("#reset-row").innerHTML = `<span class="hint">Cancellare letture, quiz e salvati da questo dispositivo?</span>
       <button type="button" class="btn" id="reset-yes">Sì, azzera</button><button type="button" class="btn ghost" id="reset-no">Annulla</button>`;
   } else if (t.id === "reset-yes") {
-    const settings = state.settings;
-    Object.assign(state, defaults(), { settings });
+    replaceState({ settings: state.settings, friends: state.friends });
     persist();
     toast("Progressi azzerati");
     route();
     $("#reset-row").innerHTML = '<button type="button" class="btn ghost" id="reset">Azzera progressi</button>';
   } else if (t.id === "reset-no") {
     $("#reset-row").innerHTML = '<button type="button" class="btn ghost" id="reset">Azzera progressi</button>';
+  } else if (t.id === "logout") {
+    logout();
+  } else if (t.dataset.friend) {
+    openFriend = openFriend === t.dataset.friend ? null : t.dataset.friend;
+    renderLeaderboard();
+  } else if (t.dataset.addFriend) {
+    state.friends = [...new Set([...state.friends, t.dataset.addFriend])];
+    openFriend = t.dataset.addFriend;
+    persist();
+    $("#friend-q").value = "";
+    $("#friend-results").innerHTML = "";
+    renderLeaderboard();
+    toast("Aggiunto al confronto");
+  } else if (t.dataset.unfriend) {
+    state.friends = state.friends.filter((u) => u !== t.dataset.unfriend);
+    openFriend = null;
+    persist();
+    renderLeaderboard();
+  } else if (t.id === "tab-entra" || t.id === "tab-registrati") {
+    setLoginTab(t.id.slice(4));
   } else if (t.id === "ring") {
     location.hash = "#oggi";
   }
 });
 
 document.addEventListener("input", (e) => {
+  if (e.target.id === "friend-q") {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => searchFriends(e.target.value), 300);
+    return;
+  }
   const box = e.target.closest("[data-chat]");
   const link = box && $("[data-claude-link]", box);
   if (!link) return;
@@ -1051,6 +1404,12 @@ $("#settings").addEventListener("submit", (e) => {
   $("#key-status").textContent = key ? "Chiave salvata su questo dispositivo." : "Chiave rimossa.";
 });
 
+$("#login-form").addEventListener("submit", submitLogin);
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "hidden" && syncTimer) syncNow();
+  if (document.visibilityState === "visible") refreshFromCloud();
+});
+
 $("#stories").addEventListener("click", (e) => {
   if (e.target.closest("button, a")) return;
   const r = $("#stories").getBoundingClientRect();
@@ -1085,6 +1444,20 @@ window.addEventListener("hashchange", () => {
 
 async function boot() {
   applySettings();
+  const connecting = connect().then((b) => (backend = b));
+  let saved = null;
+  try {
+    saved = JSON.parse(localStorage.getItem(USER_KEY));
+  } catch {
+    /* not signed in */
+  }
+  if (saved?.username) {
+    enterAs(saved, null);
+    connecting.then(refreshFromCloud);
+  } else {
+    await connecting;
+    showLogin(localStorage.getItem(LEGACY_KEY) ? "registrati" : "entra");
+  }
   try {
     [latest, index] = await Promise.all([fetchJson("data/latest.json"), fetchJson("data/index.json").catch(() => ({ days: [] }))]);
   } catch {

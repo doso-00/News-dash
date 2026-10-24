@@ -1,6 +1,6 @@
 // Offline support: app shell cache-first, daily data network-first.
-const VERSION = "cinque-v2";
-const SHELL = ["./", "index.html", "styles.css", "app.js", "manifest.webmanifest", "icons/icon.svg", "icons/icon-192.png", "icons/icon-512.png", "vendor/anthropic-sdk.mjs"];
+const VERSION = "cinque-v3";
+const SHELL = ["./", "index.html", "styles.css", "app.js", "backend.js", "manifest.webmanifest", "icons/icon.svg", "icons/icon-192.png", "icons/icon-512.png", "vendor/anthropic-sdk.mjs"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(VERSION).then((cache) => cache.addAll(SHELL)).then(() => self.skipWaiting()));
@@ -16,7 +16,7 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(event.request.url);
   if (event.request.method !== "GET") return;
 
-  if (url.origin === location.origin && url.pathname.includes("/data/")) {
+  if (url.origin === location.origin && (url.pathname.includes("/data/") || url.pathname.includes("/config/"))) {
     event.respondWith(
       fetch(event.request)
         .then((res) => {
