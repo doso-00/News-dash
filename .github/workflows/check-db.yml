@@ -1,0 +1,34 @@
+name: Verifica database
+
+# Read-only checks of the Supabase setup: they never create or change a profile.
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - config/backend.json
+      - supabase/**
+      - .github/workflows/check-db.yml
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Controlla tabella e permessi
+        run: |
+          URL=$(jq -r .supabaseUrl config/backend.json)
+          KEY=$(jq -r .supabaseKey config/backend.json)
+          if [ -z "$URL" ] || [ -z "$KEY" ]; then echo "Database non configurato: modalità locale."; exit 0; fi
+          API="$URL/rest/v1/players"
+          fail=0
+          expect() { # name, expected codes (regex), curl args...
+            name=$1; want=$2; shift 2
+            code=$(curl -s -o /tmp/body -w '%{http_code}' -H "apikey: $KEY" -H "Content-Type: application/json" "$@")
+            if echo "$code" | grep -Eq "^($want)$"; then echo "OK   $name ($code)"; else echo "FAIL $name ($code): $(head -c 300 /tmp/body)"; fail=1; fi
+          }
+          expect "lettura dei profili" "200" "$API?select=username&limit=1"
+          expect "registrazione aperta (username non valido rifiutato dal controllo)" "400" -X POST "$API" -d '{"username":"X!","first_name":"a","last_name":"b"}'
+          expect "aggiornamento dei progressi permesso" "204" -X PATCH "$API?username=eq.__nessuno__" -H "Prefer: return=minimal" -d '{"stats":{}}'
+          expect "cambio di nome bloccato" "401|403" -X PATCH "$API?username=eq.__nessuno__" -d '{"first_name":"x"}'
+          expect "cancellazione bloccata" "401|403|204" -X DELETE "$API?username=eq.__nessuno__"
+          exit $fail
