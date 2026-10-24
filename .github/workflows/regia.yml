@@ -1,0 +1,32 @@
+name: Esporta regia
+
+# Copies profiles and messages for the owner's private control dashboard. The repository is
+# public and so are these logs, so the export is printed only encrypted with config/regia.pub.pem:
+# the private key lives in the editing session and nowhere else. Run it by hand.
+on:
+  workflow_dispatch:
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Leggi profili e messaggi e cifrali
+        run: |
+          URL=$(jq -r .supabaseUrl config/backend.json)
+          KEY=$(jq -r .supabaseKey config/backend.json)
+          API="$URL/rest/v1"
+          get() { curl -sf "$API/$1" -H "apikey: $KEY"; }
+          get "players?select=username,first_name,last_name,created_at,updated_at,stats&order=created_at" > /tmp/players.json
+          # the chat may not exist yet: an empty list is fine
+          get "messages?select=id,card_id,username,body,created_at,reports&order=id&limit=5000" > /tmp/messages.json || echo "[]" > /tmp/messages.json
+          jq -n --slurpfile p /tmp/players.json --slurpfile m /tmp/messages.json \
+            '{exportedAt: (now | todate), players: $p[0], messages: $m[0]}' > /tmp/export.json
+          echo "profili: $(jq '.players | length' /tmp/export.json), messaggi: $(jq '.messages | length' /tmp/export.json)"
+
+          # hybrid encryption: a random AES key for the data, the key itself sealed with RSA
+          openssl rand -hex 32 > /tmp/k
+          openssl enc -aes-256-cbc -pbkdf2 -salt -in /tmp/export.json -out /tmp/export.enc -pass file:/tmp/k
+          openssl pkeyutl -encrypt -pubin -inkey config/regia.pub.pem -pkeyopt rsa_padding_mode:oaep -in /tmp/k -out /tmp/k.enc
+          echo "-----CHIAVE-----"; base64 -w 76 /tmp/k.enc; echo "-----DATI-----"; base64 -w 76 /tmp/export.enc; echo "-----FINE-----"
+          rm -f /tmp/k /tmp/export.json /tmp/players.json /tmp/messages.json
