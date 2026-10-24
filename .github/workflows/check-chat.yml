@@ -1,0 +1,55 @@
+name: Verifica chat
+
+# Checks the discussion functions and their permissions on the real database. It writes one
+# message under a made-up card id and deletes it straight away, so nothing is left behind.
+# Run it by hand after pasting supabase/chat.sql into the Supabase SQL Editor.
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Controlla funzioni e permessi
+        run: |
+          URL=$(jq -r .supabaseUrl config/backend.json)
+          KEY=$(jq -r .supabaseKey config/backend.json)
+          API="$URL/rest/v1"
+          fail=0
+          call() { # name, expected codes (regex), method, path, body
+            name=$1; want=$2; method=$3; path=$4; body=${5:-}
+            if [ -n "$body" ]; then
+              code=$(curl -s -o /tmp/body -w '%{http_code}' -X "$method" -H "apikey: $KEY" -H "Content-Type: application/json" "$API/$path" -d "$body")
+            else
+              code=$(curl -s -o /tmp/body -w '%{http_code}' -X "$method" -H "apikey: $KEY" -H "Content-Type: application/json" "$API/$path")
+            fi
+            if echo "$code" | grep -Eq "^($want)$"; then echo "OK   $name ($code)"; else echo "FAIL $name ($code): $(head -c 300 /tmp/body)"; fail=1; fi
+          }
+          CARD="2000-01-01-prova-chat"
+          SECRET="0123456789abcdef0123456789abcdef"
+          USER=$(curl -s "$API/players?select=username&limit=1" -H "apikey: $KEY" | jq -r '.[0].username // empty')
+          if [ -z "$USER" ]; then echo "Nessun profilo nel database: registrane uno e rilancia."; exit 1; fi
+
+          call "elenco stanze (rooms)" "200" POST "rpc/rooms" '{"p_cards":["2000-01-01-prova-chat"]}'
+          call "lettura dei messaggi" "200" GET "messages?card_id=eq.$CARD&select=id,username,body,created_at,reports&limit=1"
+          call "scrittura diretta bloccata" "401|403" POST "messages" "{\"card_id\":\"$CARD\",\"username\":\"$USER\",\"body\":\"x\",\"secret_hash\":\"x\"}"
+          call "colonna segreta non leggibile" "401|403" GET "messages?select=secret_hash&limit=1"
+          call "scheda non valida rifiutata" "400" POST "rpc/post_message" "{\"p_card\":\"x\",\"p_user\":\"$USER\",\"p_body\":\"ciao\",\"p_secret\":\"$SECRET\"}"
+          call "utente sconosciuto rifiutato" "400" POST "rpc/post_message" "{\"p_card\":\"$CARD\",\"p_user\":\"__nessuno__\",\"p_body\":\"ciao\",\"p_secret\":\"$SECRET\"}"
+          call "messaggio vuoto rifiutato" "400" POST "rpc/post_message" "{\"p_card\":\"$CARD\",\"p_user\":\"$USER\",\"p_body\":\"   \",\"p_secret\":\"$SECRET\"}"
+
+          # one real round trip: write, read back, delete with the wrong code (must fail), delete with the right one
+          call "scrittura di un messaggio" "200" POST "rpc/post_message" "{\"p_card\":\"$CARD\",\"p_user\":\"$USER\",\"p_body\":\"prova automatica\",\"p_secret\":\"$SECRET\"}"
+          ID=$(jq -r '.[0].msg_id // empty' /tmp/body)
+          if [ -n "$ID" ]; then
+            call "messaggio ripetuto rifiutato" "400" POST "rpc/post_message" "{\"p_card\":\"$CARD\",\"p_user\":\"$USER\",\"p_body\":\"prova automatica\",\"p_secret\":\"$SECRET\"}"
+            call "stanza conta il messaggio" "200" POST "rpc/rooms" "{\"p_cards\":[\"$CARD\"]}"
+            [ "$(jq -r '.[0].messages' /tmp/body)" = "1" ] && echo "OK   conteggio messaggi = 1" || { echo "FAIL conteggio messaggi: $(cat /tmp/body)"; fail=1; }
+            call "cancellazione con codice sbagliato" "200" POST "rpc/delete_message" "{\"p_id\":$ID,\"p_secret\":\"ffffffffffffffffffffffffffffffff\"}"
+            [ "$(cat /tmp/body)" = "false" ] && echo "OK   il messaggio non si cancella con un altro codice" || { echo "FAIL cancellazione con altro codice: $(cat /tmp/body)"; fail=1; }
+            call "cancellazione con il codice giusto" "200" POST "rpc/delete_message" "{\"p_id\":$ID,\"p_secret\":\"$SECRET\"}"
+            [ "$(cat /tmp/body)" = "true" ] && echo "OK   messaggio cancellato" || { echo "FAIL cancellazione: $(cat /tmp/body)"; fail=1; }
+          fi
+          call "pulizia dei messaggi vecchi" "200" POST "rpc/purge_old_messages" '{}'
+          exit $fail

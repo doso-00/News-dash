@@ -74,6 +74,8 @@ const defaults = () => ({
   review: [], // missed questions waiting to come back
   friends: [], // usernames to compare with
   plan: {}, // edition date -> [[cardId, category]] the cards this person had
+  chatSeen: {}, // cardId -> id of the last message read in its discussion
+  hidden: [], // ids of messages this person reported
   interests: [], // ids from INTERESTS
   updatedAt: 0,
   settings: { theme: "system", font: "1", apiKey: "" },
@@ -157,6 +159,11 @@ function computeStats(s) {
     byCat: s.catStats,
     activity: Object.keys(s.activity).sort().slice(-60),
     interests: s.interests,
+    // Cards from the last 30 days, so others can see who shares a news item.
+    cards: Object.entries(s.plan ?? {})
+      .sort((a, b) => a[0].localeCompare(b[0]))
+      .slice(-30)
+      .flatMap(([, list]) => list.map(([id]) => id)),
     points: pointsFor(read, totals.right, routineDays),
   };
 }
@@ -350,6 +357,7 @@ function renderToday() {
         <h3 class="card-title">${esc(card.title)}</h3>
         <p class="card-summary">${esc(plain(card.summary))}</p>
         ${card.stat ? `<span class="card-stat"><b>${esc(card.stat.value)}</b> ${esc(card.stat.label)}</span>` : ""}
+        <span class="card-room" data-room="${esc(card.id)}">${roomBadge(card.id)}</span>
       </button></li>`;
     })
     .join("");
@@ -360,6 +368,7 @@ function renderToday() {
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>`;
   ring(cards);
+  paintRooms();
 }
 
 // ---------- reading sheet ----------
@@ -460,6 +469,20 @@ function openSheet(card, { push = true } = {}) {
       </div>
     </section>
 
+    <section class="chat" id="chat" aria-labelledby="chat-title">
+      <h3 id="chat-title">Discussione</h3>
+      <p class="chat-meta" id="chat-meta">Caricamento…</p>
+      <ol class="msgs" id="msgs">
+        <li class="msg prompt"><span class="msg-label">Per iniziare</span><p>${esc(card.reflection)}</p></li>
+      </ol>
+      <form class="chat-form" id="chat-form" autocomplete="off" hidden>
+        <label class="sr" for="chat-input">Il tuo messaggio</label>
+        <textarea id="chat-input" maxlength="500" rows="2" placeholder="Scrivi agli altri…"></textarea>
+        <div class="chat-foot"><span id="chat-count">0/500</span><button type="submit" class="btn" id="chat-send">Invia</button></div>
+      </form>
+      <p class="chat-note" id="chat-note" role="status"></p>
+    </section>
+
     ${
       next
         ? `<button type="button" class="next-card" data-cat="${next.category}" data-next="${esc(next.id)}">
@@ -490,6 +513,7 @@ function openSheet(card, { push = true } = {}) {
   });
   readObserver.observe($("#understand"));
   $("#sheet-close").focus();
+  openChat(card);
 }
 
 // Older editions have a plain `body`; newer ones have titled sections.
@@ -545,14 +569,260 @@ function revealBeats() {
 function closeSheet() {
   if ($("#sheet").hidden) return;
   stopSpeaking();
+  closeChat();
   $("#sheet").hidden = true;
   document.body.style.overflow = "";
   readObserver?.disconnect();
   openCard = null;
+  refreshRooms();
 }
 
 function findCard(id) {
   return allCards(edition).find((c) => c.id === id);
+}
+
+// ---------- discussion inside each news item ----------
+
+const POLL_MS = 6000;
+let rooms = {}; // cardId -> { people, messages, last_id }
+let chatOff = false; // the database has no chat functions yet
+let chat = null; // the discussion open in the sheet
+
+const names = new Map(); // username -> first name
+const deviceSecret = () => {
+  try {
+    let secret = localStorage.getItem("cinque:secret");
+    if (!secret) {
+      secret = [...crypto.getRandomValues(new Uint8Array(16))].map((b) => b.toString(16).padStart(2, "0")).join("");
+      localStorage.setItem("cinque:secret", secret);
+    }
+    return secret;
+  } catch {
+    return "volatile-" + Math.random().toString(36).slice(2, 14);
+  }
+};
+const myMessages = () => {
+  try {
+    return JSON.parse(localStorage.getItem("cinque:mine")) ?? [];
+  } catch {
+    return [];
+  }
+};
+const rememberMine = (id) => {
+  try {
+    localStorage.setItem("cinque:mine", JSON.stringify([...myMessages(), id].slice(-300)));
+  } catch {
+    /* nothing to remember */
+  }
+};
+const draftKey = (cardId) => `cinque:draft:${cardId}`;
+
+const linkify = (text) =>
+  esc(text).replace(/https?:\/\/[^\s<]+/g, (url) => {
+    const clean = url.replace(/[.,;:!?)]+$/, "");
+    const tail = url.slice(clean.length);
+    return `<a href="${clean}" target="_blank" rel="noopener noreferrer">${clean.length > 40 ? `${clean.slice(0, 38)}…` : clean}</a>${tail}`;
+  });
+
+function when(iso) {
+  const d = new Date(iso);
+  const ageMin = (Date.now() - d.getTime()) / 60000;
+  if (ageMin < 1) return "adesso";
+  if (ageMin < 60) return `${Math.floor(ageMin)} min fa`;
+  const time = d.toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" });
+  return localDate(d) === localDate() ? time : `${shortDate(localDate(d))} ${time}`;
+}
+
+const chatEnabled = () => backend && !chatOff && me;
+
+// Counts and badges for the cards on screen.
+async function refreshRooms() {
+  if (!chatEnabled() || !edition) return;
+  try {
+    const rows = await backend.rooms(shown().map((c) => c.id));
+    rooms = Object.fromEntries(rows.map((r) => [r.card_id, r]));
+  } catch (err) {
+    if (err instanceof BackendError && err.code === "missing") chatOff = true;
+    return;
+  }
+  paintRooms();
+}
+
+function roomBadge(id) {
+  const r = rooms[id];
+  if (!r || (!r.messages && r.people < 2)) return "";
+  const fresh = r.last_id && r.last_id > (state.chatSeen[id] ?? 0);
+  const text = fresh ? "Nuovi messaggi" : r.messages ? `${r.messages} ${r.messages === 1 ? "messaggio" : "messaggi"}` : "Discussione aperta";
+  return `<span class="chat-pill ${fresh ? "new" : ""}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>${text}</span>`;
+}
+
+function paintRooms() {
+  document.querySelectorAll("[data-room]").forEach((el) => {
+    el.innerHTML = roomBadge(el.dataset.room);
+  });
+}
+
+async function openChat(card) {
+  closeChat();
+  const input = $("#chat-input");
+  try {
+    input.value = localStorage.getItem(draftKey(card.id)) ?? "";
+  } catch {
+    /* no draft */
+  }
+  updateCount();
+  if (!chatEnabled()) {
+    $("#chat-meta").textContent = chatOff ? "La discussione non è ancora attiva." : "";
+    return;
+  }
+  chat = { cardId: card.id, last: 0, people: 0, token: Symbol(), timer: null };
+  await pollChat(true);
+  if (chat?.cardId === card.id) {
+    chat.timer = setInterval(() => document.visibilityState === "visible" && pollChat(false), POLL_MS);
+  }
+}
+
+function closeChat() {
+  if (chat?.timer) clearInterval(chat.timer);
+  chat = null;
+}
+
+async function pollChat(first) {
+  const current = chat;
+  if (!current) return;
+  let room;
+  let fresh;
+  try {
+    [room, fresh] = await Promise.all([backend.rooms([current.cardId]), backend.messages(current.cardId, { after: current.last })]);
+    await learnNames(fresh.map((m) => m.username));
+  } catch (err) {
+    if (chat !== current) return;
+    if (err instanceof BackendError && err.code === "missing") {
+      chatOff = true;
+      $("#chat-meta").textContent = "La discussione non è ancora attiva.";
+    } else if (first) {
+      $("#chat-meta").textContent = err.message ?? "Non riesco a caricare la discussione.";
+    }
+    return;
+  }
+  if (chat !== current) return; // the sheet moved on while we were waiting
+
+  current.people = room[0]?.people ?? 0;
+  const visible = fresh.filter((m) => m.reports < 2 && !state.hidden.includes(m.id));
+  appendMessages(visible, first);
+  const last = fresh.reduce((n, m) => Math.max(n, m.id), current.last);
+  current.last = last;
+  if (last > (state.chatSeen[current.cardId] ?? 0)) {
+    state.chatSeen[current.cardId] = last;
+    persist();
+  }
+  renderChatMeta(room[0]);
+}
+
+async function learnNames(usernames) {
+  const unknown = [...new Set(usernames)].filter((u) => !names.has(u));
+  if (!unknown.length) return;
+  for (const p of await backend.names(unknown)) names.set(p.username, p.first_name);
+}
+
+function renderChatMeta(room) {
+  const people = room?.people ?? 0;
+  const n = $("#msgs").querySelectorAll(".msg:not(.prompt)").length;
+  const can = people >= 2;
+  $("#chat-meta").textContent = `${people} ${people === 1 ? "persona ha" : "persone hanno"} questa notizia${n ? ` · ${n} ${n === 1 ? "messaggio" : "messaggi"}` : ""}`;
+  $("#chat-form").hidden = !can;
+  $("#chat-note").textContent = can ? "" : "La discussione si apre quando almeno due persone hanno questa notizia.";
+}
+
+function msgHtml(m) {
+  const mine = m.username === me.username;
+  const canDelete = mine && myMessages().includes(m.id);
+  return `<li class="msg ${mine ? "mine" : ""}" data-msg="${m.id}">
+    <div class="msg-head"><strong>${esc(names.get(m.username) ?? m.username)}</strong><span>@${esc(m.username)} · ${esc(when(m.created_at))}</span></div>
+    <p>${linkify(m.body)}</p>
+    ${canDelete ? `<button type="button" class="msg-act" data-msg-del="${m.id}">Elimina</button>` : ""}
+    ${!mine ? `<button type="button" class="msg-act" data-msg-report="${m.id}">Segnala</button>` : ""}
+  </li>`;
+}
+
+function appendMessages(list, first) {
+  if (!list.length) return;
+  const box = $("#msgs");
+  const sheet = $("#sheet");
+  const nearEnd = sheet.scrollHeight - sheet.scrollTop - sheet.clientHeight < 240;
+  box.insertAdjacentHTML("beforeend", list.filter((m) => !box.querySelector(`[data-msg="${m.id}"]`)).map(msgHtml).join(""));
+  if (!first && nearEnd) sheet.scrollTo({ top: sheet.scrollHeight, behavior: "smooth" });
+}
+
+function updateCount() {
+  const input = $("#chat-input");
+  if (input) $("#chat-count").textContent = `${input.value.length}/500`;
+}
+
+async function sendMessage(e) {
+  e.preventDefault();
+  const current = chat;
+  const input = $("#chat-input");
+  const text = input.value.trim();
+  if (!current || !text) return input.focus();
+  const btn = $("#chat-send");
+  btn.disabled = true;
+  $("#chat-note").textContent = "";
+  try {
+    const sent = await backend.post(current.cardId, me.username, text, deviceSecret());
+    rememberMine(sent.id);
+    names.set(me.username, me.first_name);
+    input.value = "";
+    updateCount();
+    try {
+      localStorage.removeItem(draftKey(current.cardId));
+    } catch {
+      /* no draft to clear */
+    }
+    if (chat === current) {
+      appendMessages([{ id: sent.id, username: me.username, body: text, created_at: sent.created_at, reports: 0 }], false);
+      current.last = Math.max(current.last, sent.id);
+      state.chatSeen[current.cardId] = current.last;
+      persist();
+      renderChatMeta({ people: current.people });
+    }
+  } catch (err) {
+    $("#chat-note").textContent = err instanceof BackendError ? err.message : "Non sono riuscito a inviare il messaggio. Riprova.";
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+// Two taps to delete or report: the first asks, the second confirms.
+async function messageAction(button, kind) {
+  if (!button.dataset.confirm) {
+    button.dataset.confirm = "1";
+    button.textContent = kind === "del" ? "Conferma: elimina" : "Conferma: segnala";
+    setTimeout(() => {
+      if (button.isConnected && button.dataset.confirm) {
+        delete button.dataset.confirm;
+        button.textContent = kind === "del" ? "Elimina" : "Segnala";
+      }
+    }, 4000);
+    return;
+  }
+  const id = Number(button.dataset[kind === "del" ? "msgDel" : "msgReport"]);
+  const li = button.closest(".msg");
+  try {
+    if (kind === "del") {
+      if (await backend.remove(id, deviceSecret())) li.remove();
+      else $("#chat-note").textContent = "Puoi eliminare i messaggi solo dal dispositivo da cui li hai scritti.";
+    } else {
+      await backend.report(id, me.username);
+      state.hidden = [...state.hidden, id].slice(-200);
+      persist();
+      li.remove();
+      toast("Messaggio segnalato e nascosto");
+    }
+    if (chat) renderChatMeta({ people: chat.people });
+  } catch (err) {
+    $("#chat-note").textContent = err instanceof BackendError ? err.message : "Operazione non riuscita. Riprova.";
+  }
 }
 
 // ---------- stories: the five cards at a glance ----------
@@ -987,6 +1257,7 @@ async function showDay(date, cardId = null) {
   }
   session = null;
   renderToday();
+  refreshRooms();
   location.hash = "#oggi";
   if (cardId) {
     const card = findCard(cardId);
@@ -1299,6 +1570,9 @@ function enterAs(profile, remote) {
     route();
   }
   ensureInterests();
+  rooms = {};
+  names.clear();
+  refreshRooms();
 }
 
 // ---------- moving progress between profiles on one device ----------
@@ -1580,6 +1854,10 @@ document.addEventListener("click", (e) => {
     toast("Interessi salvati");
   } else if (t.id === "interests-skip") {
     closeInterestsStep(false);
+  } else if (t.dataset.msgDel) {
+    messageAction(t, "del");
+  } else if (t.dataset.msgReport) {
+    messageAction(t, "report");
   } else if (t.id === "logout") {
     logout();
   } else if (t.dataset.friend) {
@@ -1606,6 +1884,15 @@ document.addEventListener("click", (e) => {
 });
 
 document.addEventListener("input", (e) => {
+  if (e.target.id === "chat-input") {
+    updateCount();
+    try {
+      if (chat) localStorage.setItem(draftKey(chat.cardId), e.target.value);
+    } catch {
+      /* draft not saved */
+    }
+    return;
+  }
   if (e.target.id === "friend-q") {
     clearTimeout(searchTimer);
     searchTimer = setTimeout(() => searchFriends(e.target.value), 300);
@@ -1655,9 +1942,15 @@ $("#settings").addEventListener("submit", (e) => {
 });
 
 $("#login-form").addEventListener("submit", submitLogin);
+$("#sheet").addEventListener("submit", (e) => {
+  if (e.target.id === "chat-form") sendMessage(e);
+});
 document.addEventListener("visibilitychange", () => {
   if (document.visibilityState === "hidden" && syncTimer) syncNow();
-  if (document.visibilityState === "visible") refreshFromCloud();
+  if (document.visibilityState === "visible") {
+    refreshFromCloud();
+    refreshRooms();
+  }
 });
 
 $("#stories").addEventListener("click", (e) => {
@@ -1703,7 +1996,10 @@ async function boot() {
   }
   if (saved?.username) {
     enterAs(saved, null);
-    connecting.then(refreshFromCloud);
+    connecting.then(() => {
+      refreshFromCloud();
+      refreshRooms();
+    });
   } else {
     await connecting;
     showLogin(localStorage.getItem(LEGACY_KEY) ? "registrati" : "entra");
@@ -1718,6 +2014,7 @@ async function boot() {
   if (!index.days.length) index.days = [{ date: latest.date, number: latest.number, headline: latest.headline, cards: latest.cards }];
   edition = latest;
   route();
+  refreshRooms();
 }
 
 if ("serviceWorker" in navigator && location.protocol === "https:") {

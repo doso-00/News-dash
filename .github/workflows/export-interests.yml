@@ -34,6 +34,14 @@ jobs:
           else
             cp /tmp/interests.json data/interests.json
           fi
+      - name: Pulisci i messaggi con più di 30 giorni
+        run: |
+          URL=$(jq -r .supabaseUrl config/backend.json)
+          KEY=$(jq -r .supabaseKey config/backend.json)
+          [ -z "$URL" ] && exit 0
+          # not an error if the chat functions don't exist yet
+          curl -s -o /dev/null -w "pulizia messaggi: HTTP %{http_code}\n" -X POST "$URL/rest/v1/rpc/purge_old_messages" \
+            -H "apikey: $KEY" -H "Content-Type: application/json" -d '{}' || true
       - name: Salva nel repository
         run: |
           git config user.name "github-actions[bot]"

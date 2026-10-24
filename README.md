@@ -56,6 +56,10 @@ Al primo accesso ognuno sceglie almeno 3 **interessi** tra 22 temi (modificabili
 
 **Schede su misura.** Le notizie sono uguali per tutti, ma se nessuno degli interessi di una persona coincide con quelli di una scheda del giorno, al suo posto compare una scheda scritta per un suo interesse (una notizia o uno spunto da provare). Ogni notte il workflow *Esporta interessi* copia in `data/interests.json` le liste di interessi (senza nomi); la redazione quotidiana, con `scripts/plan.mjs`, scrive le schede per quelli non coperti, fino a sei interessi al giorno. Chi si iscrive durante il giorno vede le schede principali, e quelle su misura dal giorno dopo.
 
+**Discussione dentro ogni notizia.** Ogni scheda ha la sua stanza, identificata dall'id della scheda. Chi ha la stessa notizia (principale o su misura) la vede: la discussione si apre quando almeno due persone la hanno, e il primo messaggio suggerito è la domanda di verifica. I messaggi si aggiornano ogni pochi secondi mentre la stanza è aperta; sulla home un segnaposto avvisa dei messaggi nuovi. Un messaggio si può eliminare dal dispositivo da cui è stato scritto e si può segnalare quello di un altro: con due segnalazioni di persone diverse sparisce dalla vista (resta nel database, dove lo puoi controllare). Limiti: 500 caratteri, 6 messaggi al minuto per persona. I messaggi vengono cancellati dopo 30 giorni.
+Per attivarla incolla `supabase/chat.sql` nel SQL Editor di Supabase e poi lancia a mano il workflow *Verifica chat*. Finché non lo fai l'app mostra "La discussione non è ancora attiva".
+Come per il resto, chi scrive è riconosciuto dal solo username: qualcuno potrebbe scrivere a nome di un altro. Va bene tra amici fidati.
+
 **Punti:** 10 per scheda letta, 5 per risposta giusta, 20 per routine completata.
 
 Finché `config/backend.json` è vuoto l'app funziona in **modalità locale**: i profili restano sul dispositivo. Per condividerli tra telefoni diversi serve un database Supabase gratuito:

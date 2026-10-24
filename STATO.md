@@ -14,6 +14,8 @@ Appunti per scrivere l'edizione del giorno senza dover ricostruire il contesto. 
 
 - Schede su misura: ogni scheda principale dichiara `interests`; chi non ne condivide nessuno vede al suo posto una scheda `extras` scritta per un suo interesse (logica in `personalize()` di `app.js`). Gli interessi arrivano da `data/interests.json` (workflow "Esporta interessi", ogni notte). Procedura in `REDAZIONE.md`, sezione 5; `node scripts/plan.mjs` dice per quali interessi scrivere.
 
+- Discussione per notizia: tabella `messages` e funzioni in `supabase/chat.sql` (da incollare a mano nel SQL Editor; poi workflow "Verifica chat"). Stanza = id della scheda; membri = chi ha l'id in `stats.cards`. Messaggi tenuti 30 giorni (il workflow notturno chiama `purge_old_messages`). La redazione non scrive mai messaggi.
+
 ## Lezioni imparate
 
 - Il push funziona solo dalla sessione che ha il repository tra le fonti. Una sessione nuova può clonare, ma non pubblicare.
