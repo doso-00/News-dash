@@ -1,5 +1,5 @@
 // Offline support: app shell cache-first, daily data network-first.
-const VERSION = "cinque-v4";
+const VERSION = "cinque-v5";
 const SHELL = ["./", "index.html", "styles.css", "app.js", "backend.js", "manifest.webmanifest", "icons/icon.svg", "icons/icon-192.png", "icons/icon-512.png", "vendor/anthropic-sdk.mjs"];
 
 self.addEventListener("install", (event) => {

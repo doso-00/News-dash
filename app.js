@@ -22,6 +22,32 @@ const ICONS = {
   routine: '<path d="M3 18.5h18M6.5 18.5a5.5 5.5 0 0 1 11 0M12 4v3.5M5 9l2.2 2.2M19 9l-2.2 2.2"/>',
 };
 const REVIEW_STEPS = [1, 3, 7]; // days until a missed question comes back
+const MIN_INTERESTS = 3;
+const INTERESTS = [
+  ["ai", "Intelligenza artificiale"],
+  ["tech", "Tecnologia"],
+  ["code", "Programmazione e dati"],
+  ["finanza", "Finanza e investimenti"],
+  ["economia", "Economia"],
+  ["politica", "Politica italiana"],
+  ["geopolitica", "Geopolitica"],
+  ["scienza", "Scienza"],
+  ["salute", "Salute e benessere"],
+  ["sport", "Sport"],
+  ["crescita", "Crescita personale"],
+  ["produttivita", "Produttività"],
+  ["psicologia", "Psicologia"],
+  ["storia", "Storia"],
+  ["cultura", "Libri e cultura"],
+  ["cinema", "Cinema e serie"],
+  ["musica", "Musica"],
+  ["viaggi", "Viaggi"],
+  ["clima", "Ambiente e clima"],
+  ["startup", "Imprenditoria e startup"],
+  ["lavoro", "Lavoro e carriera"],
+  ["cucina", "Cucina"],
+];
+const INTEREST_LABEL = Object.fromEntries(INTERESTS);
 
 const $ = (sel, root = document) => root.querySelector(sel);
 const esc = (s) =>
@@ -44,6 +70,7 @@ const defaults = () => ({
   answers: {}, // cardId -> reflection text
   review: [], // missed questions waiting to come back
   friends: [], // usernames to compare with
+  interests: [], // ids from INTERESTS
   updatedAt: 0,
   settings: { theme: "system", font: "1", apiKey: "" },
 });
@@ -126,6 +153,7 @@ function computeStats(s) {
     routineDays,
     byCat: s.catStats,
     activity: Object.keys(s.activity).sort().slice(-60),
+    interests: s.interests,
     points: pointsFor(read, totals.right, routineDays),
   };
 }
@@ -230,6 +258,12 @@ function renderToday() {
   $("#past-label").textContent = `Stai leggendo l'edizione del ${longDate(edition.date)}`;
   $("#headline").textContent = edition.headline;
   $("#hello").textContent = `Ciao ${me.first_name}, ecco le tue cinque di oggi`;
+  const imp = pendingImport;
+  $("#import-banner").hidden = !imp;
+  if (imp) {
+    const n = Object.keys(imp.state.read).length;
+    $("#import-text").textContent = `Su questo telefono ci sono progressi ${imp.from ? `del profilo @${imp.from}` : "salvati prima dei profili"}: ${n} ${n === 1 ? "scheda letta" : "schede lette"}. Vuoi spostarli in @${me.username}?`;
+  }
 
   const s = streak();
   const quiz = state.quiz[edition.date];
@@ -1026,10 +1060,93 @@ function compareBlock(friend) {
         ${metric("Routine completate", a.routineDays, b.routineDays)}
       </tbody>
     </table>
+    ${commonInterests(friend)}
     <p class="duel-legend"><span class="key you"></span>Tu <span class="key them"></span>${esc(friend.first_name)} · risposte giuste per tema (%)</p>
     <div class="duels">${cats}</div>
     <button type="button" class="link-btn" data-unfriend="${esc(friend.username)}">Rimuovi dal confronto</button>
   </div>`;
+}
+
+function commonInterests(friend) {
+  const theirs = new Set(friend.stats?.interests ?? []);
+  const shared = state.interests.filter((i) => theirs.has(i));
+  if (!theirs.size) return "";
+  return `<div class="shared"><span class="shared-label">${shared.length ? `Interessi in comune (${shared.length})` : "Nessun interesse in comune, per ora"}</span>
+    <div class="chips small">${shared.map((i) => `<span class="chip on">${esc(INTEREST_LABEL[i] ?? i)}</span>`).join("")}</div></div>`;
+}
+
+function interestChips(selected, attr) {
+  return INTERESTS.map(
+    ([id, label]) =>
+      `<button type="button" class="chip" ${attr}="${id}" aria-pressed="${selected.includes(id)}">${esc(label)}</button>`,
+  ).join("");
+}
+
+function renderInterests() {
+  $("#my-interests").innerHTML = `<p class="tip">Servono per trovare persone con i tuoi stessi interessi. Le notizie del mattino restano uguali per tutti.</p>
+    <div class="chips">${interestChips(state.interests, "data-interest")}</div>`;
+}
+
+function toggleInterest(list, id) {
+  return list.includes(id) ? list.filter((x) => x !== id) : [...list, id];
+}
+
+// Shown after sign-up, or at sign-in for a profile that has never picked any.
+let draftInterests = [];
+function showInterestsStep() {
+  draftInterests = [...state.interests];
+  $("#login").hidden = false;
+  $("#app").setAttribute("aria-hidden", "true");
+  $("#login-step").hidden = true;
+  $("#interests-step").hidden = false;
+  $("#interests-hello").textContent = `Ciao ${me.first_name}, cosa ti interessa?`;
+  renderInterestsStep();
+}
+
+function renderInterestsStep() {
+  $("#interest-picker").innerHTML = interestChips(draftInterests, "data-pick-interest");
+  const n = draftInterests.length;
+  const done = $("#interests-done");
+  done.disabled = n < MIN_INTERESTS;
+  done.textContent = n < MIN_INTERESTS ? `Scegline ancora ${MIN_INTERESTS - n}` : `Continua con ${n} temi`;
+}
+
+function closeInterestsStep(save) {
+  if (save) {
+    state.interests = draftInterests;
+    persist();
+  }
+  $("#interests-step").hidden = true;
+  $("#login-step").hidden = false;
+  $("#login").hidden = true;
+  $("#app").removeAttribute("aria-hidden");
+  route();
+}
+
+// Interests chosen in advance for a profile (config/presets.json), applied once.
+async function applyPreset() {
+  try {
+    const res = await fetch("config/presets.json", { cache: "no-cache" });
+    const preset = res.ok ? (await res.json())[me.username] : null;
+    if (preset?.interests?.length) {
+      state.interests = preset.interests.filter((i) => INTEREST_LABEL[i]);
+      persist();
+      return true;
+    }
+  } catch {
+    /* no presets */
+  }
+  return false;
+}
+
+async function ensureInterests() {
+  if (!me || state.interests.length) return;
+  if (await applyPreset()) {
+    toast("Ho impostato i tuoi interessi: puoi cambiarli in Progressi");
+    route();
+  } else {
+    showInterestsStep();
+  }
 }
 
 async function searchFriends(q) {
@@ -1062,6 +1179,8 @@ async function searchFriends(q) {
 
 function showLogin(tab = "entra") {
   $("#login").hidden = false;
+  $("#login-step").hidden = false;
+  $("#interests-step").hidden = true;
   $("#app").setAttribute("aria-hidden", "true");
   $("#login-mode").textContent =
     backend?.mode === "cloud"
@@ -1097,15 +1216,9 @@ function enterAs(profile, remote) {
   } else if (local) {
     replaceState(local);
   } else {
-    // First profile on a device that already has progress from before profiles: keep it.
-    const legacy = readState(LEGACY_KEY);
-    replaceState(legacy ?? defaults());
-    try {
-      localStorage.removeItem(LEGACY_KEY);
-    } catch {
-      /* nothing to clean */
-    }
+    replaceState(defaults());
   }
+  pendingImport = hasProgress(state) ? null : findLocalProgress();
   persist();
   $("#login").hidden = true;
   $("#app").removeAttribute("aria-hidden");
@@ -1114,6 +1227,47 @@ function enterAs(profile, remote) {
     renderToday(); // the masthead ring belongs to every view
     route();
   }
+  ensureInterests();
+}
+
+// ---------- moving progress between profiles on one device ----------
+
+const PROGRESS_KEYS = ["read", "understood", "saved", "checklist", "activity", "quiz", "catStats", "answers", "review"];
+const hasProgress = (s) => Object.keys(s.read ?? {}).length > 0 || Object.keys(s.quiz ?? {}).length > 0;
+let pendingImport = null; // { from, state } offered to a profile that starts empty
+
+// Progress on this device that a profile starting from zero may want to keep.
+function findLocalProgress() {
+  const found = [];
+  try {
+    const legacy = readState(LEGACY_KEY);
+    if (legacy && hasProgress(legacy)) found.push({ from: null, state: legacy });
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (!key.startsWith("cinque:v1:u:") || key === userKey(me.username)) continue;
+      const other = readState(key);
+      if (other && hasProgress(other)) found.push({ from: key.slice("cinque:v1:u:".length), state: other });
+    }
+  } catch {
+    /* storage unavailable */
+  }
+  return found.sort((a, b) => (b.state.updatedAt ?? 0) - (a.state.updatedAt ?? 0))[0] ?? null;
+}
+
+function importProgress() {
+  const { from, state: source } = pendingImport;
+  for (const k of PROGRESS_KEYS) state[k] = structuredClone(source[k] ?? defaults()[k]);
+  pendingImport = null;
+  persist();
+  if (from === null) {
+    try {
+      localStorage.removeItem(LEGACY_KEY);
+    } catch {
+      /* already gone */
+    }
+  }
+  renderToday();
+  toast("Progressi spostati nel tuo profilo");
 }
 
 // Picks up progress made on another device since this one last synced.
@@ -1245,6 +1399,7 @@ function route() {
   if (name === "archivio") renderArchive();
   if (name === "progressi") {
     renderStats();
+    renderInterests();
     renderFriends();
     renderSettings();
   }
@@ -1337,6 +1492,23 @@ document.addEventListener("click", (e) => {
     $("#reset-row").innerHTML = '<button type="button" class="btn ghost" id="reset">Azzera progressi</button>';
   } else if (t.id === "reset-no") {
     $("#reset-row").innerHTML = '<button type="button" class="btn ghost" id="reset">Azzera progressi</button>';
+  } else if (t.id === "import-yes") {
+    importProgress();
+  } else if (t.id === "import-no") {
+    pendingImport = null;
+    renderToday();
+  } else if (t.dataset.interest) {
+    state.interests = toggleInterest(state.interests, t.dataset.interest);
+    t.setAttribute("aria-pressed", String(state.interests.includes(t.dataset.interest)));
+    persist();
+  } else if (t.dataset.pickInterest) {
+    draftInterests = toggleInterest(draftInterests, t.dataset.pickInterest);
+    renderInterestsStep();
+  } else if (t.id === "interests-done") {
+    closeInterestsStep(true);
+    toast("Interessi salvati");
+  } else if (t.id === "interests-skip") {
+    closeInterestsStep(false);
   } else if (t.id === "logout") {
     logout();
   } else if (t.dataset.friend) {

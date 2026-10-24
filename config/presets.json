@@ -1,0 +1,6 @@
+{
+  "_nota": "Interessi preimpostati per profilo, applicati al primo accesso se il profilo non ne ha ancora. Si possono sempre cambiare dall'app.",
+  "doso": {
+    "interests": ["ai", "tech", "code", "finanza", "economia", "politica", "geopolitica", "crescita", "produttivita", "psicologia", "salute", "lavoro"]
+  }
+}

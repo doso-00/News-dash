@@ -703,6 +703,30 @@ mark {
 
 .hello { margin: 4px 0 0; font-size: var(--t-s); font-weight: 600; color: var(--muted); }
 
+.import-banner { margin: 12px 0 4px; padding: 16px; border-radius: var(--radius); background: color-mix(in srgb, var(--focus) 10%, var(--surface)); border: 1px solid color-mix(in srgb, var(--focus) 30%, var(--line)); display: grid; gap: 12px; }
+.import-banner p { margin: 0; line-height: 1.45; }
+
+/* interests */
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: var(--t-s);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.chip[aria-pressed="true"], .chip.on { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+.chips.small .chip { padding: 4px 10px; font-size: var(--t-xs); cursor: default; }
+.shared { display: grid; gap: 8px; }
+.shared-label { font-size: var(--t-xs); font-family: var(--f-mono); text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.skip { justify-self: center; }
+#my-interests { display: grid; gap: 10px; }
+#my-interests .tip { margin: 0; }
+
 /* profile and friends */
 .avatar {
   flex: none;

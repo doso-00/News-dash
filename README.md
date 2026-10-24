@@ -52,6 +52,8 @@ Senza configurare nulla, i pulsanti "Apri in Claude" e "Copia domanda" portano l
 
 All'apertura l'app chiede di entrare: la prima volta con nome, cognome e username, poi basta lo username. Ognuno legge le stesse notizie ma ha i propri progressi (schede lette, quiz, routine). In *Progressi* c'è la classifica con gli amici: cerchi per nome o username, tocchi **Confronta** e vedi il confronto tema per tema.
 
+Al primo accesso ognuno sceglie almeno 3 **interessi** tra 22 temi (modificabili in *Progressi*): nel confronto con un amico compaiono quelli in comune. Se sul telefono ci sono progressi di un altro profilo o di prima dei profili, l'app propone di spostarli nel profilo appena aperto.
+
 **Punti:** 10 per scheda letta, 5 per risposta giusta, 20 per routine completata.
 
 Finché `config/backend.json` è vuoto l'app funziona in **modalità locale**: i profili restano sul dispositivo. Per condividerli tra telefoni diversi serve un database Supabase gratuito:

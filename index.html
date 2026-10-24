@@ -21,7 +21,7 @@
 <body>
 <!--APP-->
   <section class="login" id="login" aria-labelledby="login-title" hidden>
-    <div class="login-inner">
+    <div class="login-inner" id="login-step">
       <div class="login-ring" aria-hidden="true">
         <i data-cat="ai"></i><i data-cat="finanza"></i><i data-cat="mondo"></i><i data-cat="sapere"></i><i data-cat="routine"></i>
       </div>
@@ -44,6 +44,16 @@
       </form>
       <p class="hint" id="login-mode"></p>
     </div>
+    <div class="login-inner" id="interests-step" hidden>
+      <div class="login-ring" aria-hidden="true">
+        <i data-cat="ai"></i><i data-cat="finanza"></i><i data-cat="mondo"></i><i data-cat="sapere"></i><i data-cat="routine"></i>
+      </div>
+      <h1 class="brand" id="interests-hello">Cosa ti interessa?</h1>
+      <p class="login-sub">Scegli almeno 3 temi. Ti aiuteranno a trovare persone con i tuoi stessi interessi; le notizie del mattino restano uguali per tutti.</p>
+      <div class="chips" id="interest-picker"></div>
+      <button type="button" class="btn login-submit" id="interests-done" disabled>Scegline ancora 3</button>
+      <button type="button" class="link-btn skip" id="interests-skip">Salta per ora</button>
+    </div>
   </section>
 
   <div class="app" id="app">
@@ -64,6 +74,13 @@
           <button type="button" class="link-btn" id="back-today">Torna a oggi</button>
         </div>
         <p class="hello" id="hello"></p>
+        <div class="import-banner" id="import-banner" role="region" aria-label="Progressi trovati" hidden>
+          <p id="import-text"></p>
+          <div class="btn-row">
+            <button type="button" class="btn" id="import-yes">Sposta i progressi</button>
+            <button type="button" class="btn ghost" id="import-no">No, grazie</button>
+          </div>
+        </div>
         <p class="headline" id="headline"></p>
         <div class="streak-row" id="streak-row"></div>
         <div id="stories-cta"></div>
@@ -83,6 +100,8 @@
       <section class="view" id="view-progressi" data-view="progressi" aria-labelledby="tab-progressi" hidden>
         <h2 class="view-title">Progressi</h2>
         <div id="stats"></div>
+        <h3 class="section-label">I tuoi interessi</h3>
+        <div id="my-interests"></div>
         <h3 class="section-label">Confronta con gli amici</h3>
         <div id="friends"></div>
         <h3 class="section-label">Impostazioni</h3>

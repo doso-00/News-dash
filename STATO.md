@@ -10,7 +10,7 @@ Appunti per scrivere l'edizione del giorno senza dover ricostruire il contesto. 
 - App online: https://doso-00.github.io/News-dash/
 - Attività programmata attiva: `trig_0164dUcat7EQX2ZHKsXt4Ymt`, ogni giorno alle 6:14 ora italiana, in questa sessione.
 - Attività vecchia `trig_01Pxsx1Qh6CEMQaZQTzDm9TJ` disattivata: le sessioni nuove non hanno i permessi di push (errore 403).
-- Utenti: `backend.js` usa Supabase se `config/backend.json` è compilato, altrimenti salva i profili sul dispositivo. Database collegato: progetto `vhzigfqjqcilooodnhms`. Schema in `supabase/schema.sql`. La redazione quotidiana non tocca mai questi file.
+- Utenti: `backend.js` usa Supabase se `config/backend.json` è compilato, altrimenti salva i profili sul dispositivo. Database collegato: progetto `vhzigfqjqcilooodnhms`. Profilo del proprietario: `@doso` (Riccardo Manfredonia), interessi preimpostati in `config/presets.json`. Per creare un profilo senza toccarne uno esistente: workflow "Crea profilo". Schema in `supabase/schema.sql`. La redazione quotidiana non tocca mai questi file.
 
 ## Lezioni imparate
 
