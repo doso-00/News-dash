@@ -9,8 +9,9 @@ import { Edition, checkEdition } from "./schema.mjs";
 import { loadDay, romeDate, saveEdition } from "./store.mjs";
 
 const args = process.argv.slice(2);
-const file = args.find((a) => !a.startsWith("--") && a !== args[args.indexOf("--date") + 1]);
-const date = args.includes("--date") ? args[args.indexOf("--date") + 1] : romeDate();
+const dateAt = args.indexOf("--date");
+const date = dateAt >= 0 ? args[dateAt + 1] : romeDate();
+const file = args.find((a, i) => !a.startsWith("--") && (dateAt < 0 || i !== dateAt + 1));
 if (!file) {
   console.error("Uso: node scripts/publish.mjs bozza.json [--date AAAA-MM-GG]");
   process.exit(1);

@@ -1,6 +1,7 @@
 // Cinque al Mattino — client app. No build step: plain ES module.
 
 import { BackendError, connect, normalizeUsername, validUsername } from "./backend.js";
+import { INTERESTS, INTEREST_FAMILY, INTEREST_LABEL } from "./interests.js";
 
 const SDK_URL = "./vendor/anthropic-sdk.mjs"; // built by `npm run build:sdk`
 const MODEL = "claude-opus-5-5";
@@ -21,33 +22,35 @@ const ICONS = {
   sapere: '<path d="M12 6.5C10 5 7 4.5 3.5 5v13c3.5-.5 6.5 0 8.5 1.5 2-1.5 5-2 8.5-1.5V5c-3.5-.5-6.5 0-8.5 1.5zM12 6.5V19"/>',
   routine: '<path d="M3 18.5h18M6.5 18.5a5.5 5.5 0 0 1 11 0M12 4v3.5M5 9l2.2 2.2M19 9l-2.2 2.2"/>',
 };
+// One icon per interest; cards fall back to the icon of their colour family.
+const TOPIC_ICONS = {
+  tech: '<rect x="7" y="3.5" width="10" height="17" rx="2"/><path d="M11 17.5h2"/>',
+  code: '<path d="M8.5 8L4.5 12l4 4M15.5 8l4 4-4 4M13.5 5.5l-3 13"/>',
+  economia: '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
+  politica: '<path d="M3.5 9.5L12 4l8.5 5.5M5.5 10v7M10 10v7M14 10v7M18.5 10v7M3.5 20h17"/>',
+  geopolitica: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/>',
+  scienza: '<path d="M9.5 3.5h5M10.5 3.5v6L5 19a1.6 1.6 0 0 0 1.4 2.5h11.2A1.6 1.6 0 0 0 19 19l-5.5-9.5v-6M7.5 15h9"/>',
+  salute: '<path d="M12 20s-7.5-4.6-7.5-10A4.2 4.2 0 0 1 12 7.5 4.2 4.2 0 0 1 19.5 10c0 5.400-7.500 10-7.500 10z"/>',
+  sport: '<circle cx="12" cy="12" r="9"/><path d="M3.500 9.500c4 .5 7 3 8.500 8.500M12 3c0 4 2.500 7 9 8M9.500 3.500c.5 4 3 7 8 8.500"/>',
+  crescita: '<path d="M12 21v-9M12 12c0-4 3-6.500 7-6.500 0 4-2.500 6.500-7 6.500zM12 14.500C12 11 9.500 9 5 9c0 3.500 2.500 5.500 7 5.500z"/>',
+  produttivita: '<circle cx="12" cy="13" r="7.500"/><path d="M12 8.500V13l3 2M9.500 3h5"/>',
+  psicologia: '<path d="M9 3.500a4.500 4.500 0 0 0-4.500 4.500c0 1.300.5 2.300 1.300 3.100-.3 1-.1 2.100.7 2.900V17a3 3 0 0 0 3 3h2v-3.500M15 3.500a4.500 4.500 0 0 1 4.500 4.500c0 1.300-.5 2.300-1.300 3.100.3 1 .1 2.100-.7 2.900V17a3 3 0 0 1-3 3h-2"/>',
+  storia: '<path d="M6 3.500h9l3 3V20.500H6zM14.500 3.500v4h3.500M9 12h6M9 15.500h6"/>',
+  cultura: '<path d="M12 6.500C10 5 7 4.500 3.500 5v13c3.500-.5 6.500 0 8.500 1.500 2-1.500 5-2 8.500-1.500V5c-3.500-.5-6.500 0-8.500 1.500zM12 6.500V19"/>',
+  cinema: '<rect x="3.500" y="8.500" width="17" height="12" rx="1.500"/><path d="M3.500 8.500l2.500-5 3 1.500 2.500-5M9 8.500l2.500-4.500M14.500 8.500l2.500-4.500M20.500 8.500l-1.500-3"/>',
+  musica: '<path d="M9 18V6l10-2v12M9 18a2.500 2.500 0 1 1-2.500-2.500A2.500 2.500 0 0 1 9 18zm10-2a2.500 2.500 0 1 1-2.500-2.500A2.500 2.500 0 0 1 19 16z"/>',
+  viaggi: '<path d="M10.500 13.500L3 11l1.500-1.500 9 .5 4-4a2 2 0 0 1 2.800 2.800l-4 4 .5 9L19.500 21 17 13.500M10.500 13.500L8 17l-3 .5"/>',
+  clima: '<path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14M5 19c3-4 6-6.500 10-8"/>',
+  startup: '<path d="M12 3c3 2 5 5.500 5 9l-2 3h-6l-2-3c0-3.500 2-7 5-9zM9.500 15l-1.500 4 3-1.500M14.500 15l1.500 4-3-1.500M12 9.500v.1"/>',
+  lavoro: '<rect x="3.500" y="7.500" width="17" height="12" rx="2"/><path d="M9 7.500v-2a1.500 1.500 0 0 1 1.500-1.500h3A1.500 1.500 0 0 1 15 5.500v2M3.500 13h17"/>',
+  cucina: '<path d="M7 11.500a4 4 0 1 1 1.500-7.700A4 4 0 0 1 16 3.800a4 4 0 0 1 1 7.700V19H7zM7 16h10"/>',
+};
+const iconFor = (card) => TOPIC_ICONS[card.topic] ?? ICONS[card.category];
+
 const REVIEW_STEPS = [1, 3, 7]; // days until a missed question comes back
 const MIN_INTERESTS = 3;
-const INTERESTS = [
-  ["ai", "Intelligenza artificiale"],
-  ["tech", "Tecnologia"],
-  ["code", "Programmazione e dati"],
-  ["finanza", "Finanza e investimenti"],
-  ["economia", "Economia"],
-  ["politica", "Politica italiana"],
-  ["geopolitica", "Geopolitica"],
-  ["scienza", "Scienza"],
-  ["salute", "Salute e benessere"],
-  ["sport", "Sport"],
-  ["crescita", "Crescita personale"],
-  ["produttivita", "Produttività"],
-  ["psicologia", "Psicologia"],
-  ["storia", "Storia"],
-  ["cultura", "Libri e cultura"],
-  ["cinema", "Cinema e serie"],
-  ["musica", "Musica"],
-  ["viaggi", "Viaggi"],
-  ["clima", "Ambiente e clima"],
-  ["startup", "Imprenditoria e startup"],
-  ["lavoro", "Lavoro e carriera"],
-  ["cucina", "Cucina"],
-];
-const INTEREST_LABEL = Object.fromEntries(INTERESTS);
+const NEWS_SLOTS = new Set(["ai", "finanza", "mondo"]); // the other two slots take "spunto" cards first
+
 
 const $ = (sel, root = document) => root.querySelector(sel);
 const esc = (s) =>
@@ -70,6 +73,7 @@ const defaults = () => ({
   answers: {}, // cardId -> reflection text
   review: [], // missed questions waiting to come back
   friends: [], // usernames to compare with
+  plan: {}, // edition date -> [[cardId, category]] the cards this person had
   interests: [], // ids from INTERESTS
   updatedAt: 0,
   settings: { theme: "system", font: "1", apiKey: "" },
@@ -137,8 +141,7 @@ async function syncNow() {
 
 const sumCats = (cats) =>
   Object.values(cats ?? {}).reduce((a, b) => ({ right: a.right + b.right, total: a.total + b.total }), { right: 0, total: 0 });
-const routineCount = (checklist) =>
-  Object.entries(checklist).filter(([id, list]) => id.endsWith("-routine") && list.length && list.every(Boolean)).length;
+const routineCount = (checklist) => Object.values(checklist).filter((list) => list.length && list.every(Boolean)).length;
 const pointsFor = (read, right, routine) => read * 10 + right * 5 + routine * 20;
 
 // What friends see: totals only, never the cards' answers or settings.
@@ -203,6 +206,58 @@ async function loadEdition(date) {
   return dayCache.get(date);
 }
 
+// ---------- cards chosen for this person ----------
+
+const dayNumber = (iso) => Math.floor(new Date(`${iso}T12:00:00Z`).getTime() / 86400000);
+const rotate = (list, n) => (list.length ? [...list.slice(n % list.length), ...list.slice(0, n % list.length)] : list);
+const allCards = (ed) => [...ed.cards, ...(ed.extras ?? [])];
+
+// Same news for everyone; where a main card doesn't speak to any of this person's interests,
+// a card written for one of their interests takes its place. Today's interests take turns.
+function personalize(ed, interests) {
+  const mine = new Set(interests);
+  const extras = (ed.extras ?? []).filter((x) => mine.has(x.topic));
+  if (!mine.size || !extras.length) return ed.cards;
+
+  const topics = rotate(interests.filter((i) => extras.some((x) => x.topic === i)), dayNumber(ed.date));
+  const queue = (kind, order) => order.flatMap((t) => extras.filter((x) => x.topic === t && x.kind === kind));
+  const pool = { news: queue("news", topics), spunto: queue("spunto", rotate(topics, 1)) };
+  const take = (kind) => pool[kind].shift() ?? pool[kind === "news" ? "spunto" : "news"].shift() ?? null;
+
+  return ed.cards.map((card) => {
+    if ((card.interests ?? []).some((i) => mine.has(i))) return card;
+    return take(NEWS_SLOTS.has(card.category) ? "news" : "spunto") ?? card;
+  });
+}
+
+let shownKey = "";
+let shownCards = [];
+// The five cards this person sees for the edition on screen.
+function shown() {
+  const key = `${edition.date}|${state.interests.join(",")}`;
+  if (key !== shownKey) {
+    shownKey = key;
+    shownCards = personalize(edition, state.interests);
+  }
+  return shownCards;
+}
+
+const isExtra = (card) => Boolean(card.topic);
+const shortLabel = (card) => (card.topic ? INTEREST_LABEL[card.topic] : CAT_SHORT[card.category]);
+// Quiz results are counted per topic; the five main sections count under their own name.
+const statKey = (card) => card.topic ?? card.category;
+const statLabel = (key) => CAT_LABEL[key] ?? INTEREST_LABEL[key] ?? key;
+const familyOf = (key) => INTEREST_FAMILY[key] && !CAT_LABEL[key] ? INTEREST_FAMILY[key] : key;
+
+// Remembers which cards this person had on each day, for the archive.
+function recordPlan() {
+  const plan = shown().map((c) => [c.id, c.category]);
+  const saved = state.plan[edition.date];
+  if (JSON.stringify(saved) === JSON.stringify(plan)) return;
+  state.plan[edition.date] = plan;
+  persist();
+}
+
 // ---------- shell ----------
 
 function applySettings() {
@@ -256,8 +311,13 @@ function renderToday() {
   $("#edition-meta").textContent = `${longDate(edition.date)} · n.${edition.number}`;
   $("#past-banner").hidden = isToday;
   $("#past-label").textContent = `Stai leggendo l'edizione del ${longDate(edition.date)}`;
-  $("#headline").textContent = edition.headline;
+  const cards = shown();
+  const tailored = cards.filter(isExtra).length;
+  // The editor's headline talks about the main news: with other cards in the mix, name the topics instead.
+  const topics = [...new Set(cards.map((c) => (isExtra(c) ? INTEREST_LABEL[c.topic] : c.label)))];
+  $("#headline").textContent = tailored ? `Oggi per te: ${topics.slice(0, 4).join(", ")}.` : edition.headline;
   $("#hello").textContent = `Ciao ${me.first_name}, ecco le tue cinque di oggi`;
+  recordPlan();
   const imp = pendingImport;
   $("#import-banner").hidden = !imp;
   if (imp) {
@@ -272,20 +332,21 @@ function renderToday() {
     `<span class="pill ${s ? "on" : ""}"><strong>${s}</strong> ${s === 1 ? "giorno" : "giorni"} di fila</span>`,
     `<span class="pill ${quiz ? "on" : ""}">Quiz <strong>${quiz ? `${quiz.score}/${quiz.total}` : "da fare"}</strong></span>`,
     due ? `<span class="pill">Ripasso <strong>${due}</strong></span>` : "",
+    tailored ? `<a class="pill on" href="#progressi"><strong>${tailored}</strong> su misura per te</a>` : "",
   ].join("");
 
   $("#stories-cta").innerHTML = `<button type="button" class="stories-btn" data-stories="0">
-      <span class="stories-dots">${edition.cards.map((c) => `<i data-cat="${c.category}"></i>`).join("")}</span>
+      <span class="stories-dots">${cards.map((c) => `<i data-cat="${c.category}"></i>`).join("")}</span>
       <span><strong>Sfoglia le 5 notizie</strong><small>circa 1 minuto</small></span>
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg>
     </button>`;
 
-  $("#cards").innerHTML = edition.cards
+  $("#cards").innerHTML = cards
     .map((card, i) => {
       const [label, cls] = cardStatus(card);
       return `<li><button type="button" class="card ${i === 0 ? "lead" : ""}" data-cat="${card.category}" data-open="${esc(card.id)}">
-        <span class="glyph"><svg viewBox="0 0 24 24" aria-hidden="true">${ICONS[card.category]}</svg></span>
-        <span class="card-top"><span class="card-label">${CAT_SHORT[card.category]} · ${card.readingMinutes} min</span><span class="status ${cls}">${label}</span></span>
+        <span class="glyph"><svg viewBox="0 0 24 24" aria-hidden="true">${iconFor(card)}</svg></span>
+        <span class="card-top"><span class="card-label">${isExtra(card) ? "Per te · " : ""}${esc(shortLabel(card))} · ${card.readingMinutes} min</span><span class="status ${cls}">${label}</span></span>
         <h3 class="card-title">${esc(card.title)}</h3>
         <p class="card-summary">${esc(plain(card.summary))}</p>
         ${card.stat ? `<span class="card-stat"><b>${esc(card.stat.value)}</b> ${esc(card.stat.label)}</span>` : ""}
@@ -293,12 +354,12 @@ function renderToday() {
     })
     .join("");
 
-  const total = edition.cards.reduce((n, c) => n + c.quiz.length, 0);
+  const total = cards.reduce((n, c) => n + c.quiz.length, 0);
   $("#quiz-cta").innerHTML = `<a class="cta" href="#quiz">
       <div><strong>${quiz ? "Rivedi il quiz" : "Mettiti alla prova"}</strong><span>${total} domande${due ? ` + ${Math.min(due, 3)} di ripasso` : ""} · circa 4 minuti</span></div>
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>`;
-  ring(edition.cards);
+  ring(cards);
 }
 
 // ---------- reading sheet ----------
@@ -324,8 +385,8 @@ function openSheet(card, { push = true } = {}) {
 
   const sections = sectionsOf(card);
   const linkTerm = termLinker(card);
-  const idx = edition.cards.indexOf(card);
-  const next = edition.cards[idx + 1];
+  const idx = shown().indexOf(card);
+  const next = shown()[idx + 1];
 
   $("#sheet-body").innerHTML = `
     <header class="story-head">
@@ -402,7 +463,7 @@ function openSheet(card, { push = true } = {}) {
     ${
       next
         ? `<button type="button" class="next-card" data-cat="${next.category}" data-next="${esc(next.id)}">
-            <span class="card-label">Prossima · ${CAT_SHORT[next.category]}</span>
+            <span class="card-label">Prossima · ${esc(shortLabel(next))}</span>
             <strong>${esc(next.title)}</strong>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </button>`
@@ -491,7 +552,7 @@ function closeSheet() {
 }
 
 function findCard(id) {
-  return edition.cards.find((c) => c.id === id);
+  return allCards(edition).find((c) => c.id === id);
 }
 
 // ---------- stories: the five cards at a glance ----------
@@ -507,13 +568,13 @@ function openStories(start = 0) {
 }
 
 function renderStory() {
-  const card = edition.cards[story.i];
+  const card = shown()[story.i];
   $("#stories").dataset.cat = card.category;
-  $("#stories-bar").innerHTML = edition.cards
+  $("#stories-bar").innerHTML = shown()
     .map((c, i) => `<i class="${i < story.i ? "done" : i === story.i ? "now" : ""}"><b></b></i>`)
     .join("");
   $("#story-slide").innerHTML = `
-    <span class="story-cat"><span class="glyph"><svg viewBox="0 0 24 24" aria-hidden="true">${ICONS[card.category]}</svg></span>${esc(card.label)}</span>
+    <span class="story-cat"><span class="glyph"><svg viewBox="0 0 24 24" aria-hidden="true">${iconFor(card)}</svg></span>${esc(isExtra(card) ? `Per te · ${card.label}` : card.label)}</span>
     ${card.stat ? `<p class="story-stat">${esc(card.stat.value)}</p><p class="story-stat-label">${esc(card.stat.label)}</p>` : ""}
     <h2>${esc(card.title)}</h2>
     <ul>${card.keyPoints.map((p) => `<li>${rich(p)}</li>`).join("")}</ul>
@@ -523,7 +584,7 @@ function renderStory() {
 function storyStep(delta) {
   const n = story.i + delta;
   if (n < 0) return;
-  if (n >= edition.cards.length) {
+  if (n >= shown().length) {
     closeStories();
     return toast("Fatto. Apri una scheda per approfondire.");
   }
@@ -708,11 +769,16 @@ function dueReviews() {
 }
 
 function startQuiz(cardId = null) {
-  const cards = cardId ? edition.cards.filter((c) => c.id === cardId) : edition.cards;
+  const cards = cardId ? shown().filter((c) => c.id === cardId) : shown();
   const items = cards.flatMap((card) => card.quiz.map((q, i) => ({ card, q, qid: `${card.id}#${i}` })));
   if (!cardId) {
     for (const r of dueReviews().slice(0, 3)) {
-      items.push({ card: { id: r.cardId, category: r.category, label: CAT_LABEL[r.category] }, q: r.q, qid: r.qid, review: true });
+      items.push({
+        card: { id: r.cardId, category: r.category, topic: r.topic, label: r.label ?? CAT_LABEL[r.category] },
+        q: r.q,
+        qid: r.qid,
+        review: true,
+      });
     }
   }
   session = { cardId, items, i: 0, results: [], picked: null };
@@ -769,7 +835,7 @@ function pick(i) {
   const item = session.items[session.i];
   const right = i === item.q.answer;
   session.results.push(right);
-  const cs = (state.catStats[item.card.category] ??= { right: 0, total: 0 });
+  const cs = (state.catStats[statKey(item.card)] ??= { right: 0, total: 0 });
   cs.total++;
   if (right) cs.right++;
   scheduleReview(item, right);
@@ -796,6 +862,8 @@ function scheduleReview(item, right) {
       qid: item.qid,
       cardId: item.card.id,
       category: item.card.category,
+      topic: item.card.topic,
+      label: item.card.label,
       date: edition.date,
       q: item.q,
       box: 0,
@@ -818,7 +886,7 @@ function nextQuestion() {
 
 function renderQuizHome(view) {
   const done = state.quiz[edition.date];
-  const total = edition.cards.reduce((n, c) => n + c.quiz.length, 0);
+  const total = shown().reduce((n, c) => n + c.quiz.length, 0);
   const due = dueReviews().length;
   view.innerHTML = `
     <h2 class="view-title">Quiz</h2>
@@ -832,11 +900,11 @@ function renderQuizEnd(view) {
   const score = session.results.filter(Boolean).length;
   const byCat = {};
   session.items.forEach((it, i) => {
-    const b = (byCat[it.card.category] ??= { right: 0, total: 0 });
+    const b = (byCat[statKey(it.card)] ??= { right: 0, total: 0, label: it.card.topic ? INTEREST_LABEL[it.card.topic] : statLabel(it.card.category) });
     b.total++;
     if (session.results[i]) b.right++;
   });
-  const weak = edition.cards.filter((c) => byCat[c.category] && byCat[c.category].right < byCat[c.category].total);
+  const weak = shown().filter((c) => byCat[statKey(c)] && byCat[statKey(c)].right < byCat[statKey(c)].total);
   const missed = session.results.filter((r) => !r).length;
 
   view.innerHTML = `
@@ -844,16 +912,16 @@ function renderQuizEnd(view) {
     <div class="score"><span class="score-num">${score}</span><span class="score-of">su ${session.items.length}</span></div>
     <p class="tip">${missed ? `Le ${missed === 1 ? "domanda sbagliata tornerà" : `${missed} domande sbagliate torneranno`} nel ripasso tra 1, 3 e 7 giorni.` : "Tutto giusto. Ottimo lavoro."}</p>
     <ul class="breakdown">
-      ${CATS.filter((c) => byCat[c])
+      ${Object.entries(byCat)
         .map(
-          (c) => `<li data-cat="${c}"><span class="name"><span class="dot"></span>${CAT_LABEL[c]}</span><span class="res">${byCat[c].right}/${byCat[c].total}</span></li>`,
+          ([k, b]) => `<li data-cat="${familyOf(k)}"><span class="name"><span class="dot"></span>${esc(b.label)}</span><span class="res">${b.right}/${b.total}</span></li>`,
         )
         .join("")}
     </ul>
     ${
       weak.length
         ? `<h3 class="section-label">Da rivedere</h3><div class="btn-row">${weak
-            .map((c) => `<button type="button" class="btn tint" data-cat="${c.category}" data-open="${esc(c.id)}">${esc(c.label)}</button>`)
+            .map((c) => `<button type="button" class="btn tint" data-cat="${c.category}" data-open="${esc(c.id)}">${esc(isExtra(c) ? shortLabel(c) : c.label)}</button>`)
             .join("")}</div>`
         : ""
     }
@@ -863,7 +931,7 @@ function renderQuizEnd(view) {
 }
 
 function reflectionBlock(onlyCard = null) {
-  const cards = onlyCard ? edition.cards.filter((c) => c.id === onlyCard) : edition.cards;
+  const cards = onlyCard ? shown().filter((c) => c.id === onlyCard) : shown();
   const intro = state.settings.apiKey
     ? "Rispondi con parole tue: Claude ti dirà cosa hai capito bene e cosa approfondire."
     : "Rispondi con parole tue, poi apri la risposta in Claude per un feedback. Con una chiave API in Impostazioni il feedback arriva qui.";
@@ -895,7 +963,7 @@ function renderArchive() {
       ? `<ul class="saved">${saved
           .map(
             ([id, s]) =>
-              `<li><button type="button" data-cat="${s.category}" data-open-day="${s.date}" data-open-id="${esc(id)}"><span class="card-label">${esc(CAT_LABEL[s.category])} · ${shortDate(s.date)}</span><span>${esc(s.title)}</span></button></li>`,
+              `<li><button type="button" data-cat="${s.category}" data-open-day="${s.date}" data-open-id="${esc(id)}"><span class="card-label">${esc(s.label ?? CAT_LABEL[s.category])} · ${shortDate(s.date)}</span><span>${esc(s.title)}</span></button></li>`,
           )
           .join("")}</ul>`
       : '<p class="empty">Tocca il segnalibro in una scheda per ritrovarla qui.</p>'
@@ -905,7 +973,7 @@ function renderArchive() {
       (d) => `<li><button type="button" class="arch" data-open-day="${d.date}">
         <span class="arch-date">${longDate(d.date)} · n.${d.number}</span>
         <p class="arch-head">${esc(d.headline)}</p>
-        <span class="arch-dots">${d.cards.map((c) => `<i data-cat="${c.category}" class="${state.read[`${d.date}-${c.category}`] ? "read" : ""}" title="${esc(c.title)}"></i>`).join("")}</span>
+        <span class="arch-dots">${(state.plan[d.date] ?? d.cards.map((c) => [`${d.date}-${c.category}`, c.category])).map(([id, cat]) => `<i data-cat="${cat}" class="${state.read[id] ? "read" : ""}"></i>`).join("")}</span>
       </button></li>`,
     )
     .join("");
@@ -939,7 +1007,9 @@ function renderStats() {
     .slice(-14);
   const chart = days.length ? quizChart(days) : '<p class="empty">Il grafico si riempie quando completi il primo quiz.</p>';
 
-  const catRows = CATS.map((c) => {
+  // The five main sections always show; topics from cards written for an interest appear once they have answers.
+  const statKeys = [...CATS, ...Object.keys(state.catStats).filter((k) => !CATS.includes(k) && state.catStats[k].total)];
+  const catRows = statKeys.map((c) => {
     const s = state.catStats[c];
     const pct = s?.total ? Math.round((s.right / s.total) * 100) : null;
     return { c, pct, s };
@@ -964,10 +1034,10 @@ function renderStats() {
     <h3 class="section-label">Per tema</h3>
     <div class="bars">${catRows
       .map(
-        ({ c, pct }) => `<div class="bar-row" data-cat="${c}"><span>${CAT_SHORT[c]}</span><span class="bar-track"><span class="bar-fill" style="width:${pct ?? 0}%"></span></span><span class="bar-val">${pct === null ? "–" : `${pct}%`}</span></div>`,
+        ({ c, pct }) => `<div class="bar-row" data-cat="${familyOf(c)}"><span>${esc(CAT_SHORT[c] ?? statLabel(c))}</span><span class="bar-track"><span class="bar-fill" style="width:${pct ?? 0}%"></span></span><span class="bar-val">${pct === null ? "–" : `${pct}%`}</span></div>`,
       )
       .join("")}</div>
-    ${weakest ? `<p class="tip">Il tema da rinforzare è <strong>${CAT_LABEL[weakest.c]}</strong>: apri "Non ho capito" sulle prossime schede di questo tema.</p>` : ""}`;
+    ${weakest ? `<p class="tip">Il tema da rinforzare è <strong>${esc(statLabel(weakest.c))}</strong>: apri "Non ho capito" sulle prossime schede di questo tema.</p>` : ""}`;
 }
 
 // ---------- friends ----------
@@ -1042,10 +1112,11 @@ function compareBlock(friend) {
     const win = typeof x === "number" && typeof y === "number" ? (x > y ? "a" : y > x ? "b" : "") : "";
     return `<tr><th scope="row">${label}</th><td class="${win === "a" ? "win" : ""}">${xs}${x == null ? "" : suffix}</td><td class="${win === "b" ? "win" : ""}">${ys}${y == null ? "" : suffix}</td></tr>`;
   };
-  const cats = CATS.map((c) => {
+  const keys = [...CATS, ...new Set([...Object.keys(a.byCat ?? {}), ...Object.keys(b.byCat ?? {})].filter((k) => !CATS.includes(k)))];
+  const cats = keys.map((c) => {
     const pa = pct(a.byCat?.[c]?.right, a.byCat?.[c]?.total);
     const pb = pct(b.byCat?.[c]?.right, b.byCat?.[c]?.total);
-    return `<div class="duel" data-cat="${c}"><span>${CAT_SHORT[c]}</span>
+    return `<div class="duel" data-cat="${familyOf(c)}"><span>${esc(CAT_SHORT[c] ?? statLabel(c))}</span>
       <span class="duel-bars"><i style="width:${pa ?? 0}%"></i><i class="them" style="width:${pb ?? 0}%"></i></span>
       <span class="duel-val">${pa ?? "–"} / ${pb ?? "–"}</span></div>`;
   }).join("");
@@ -1077,7 +1148,7 @@ function commonInterests(friend) {
 
 function interestChips(selected, attr) {
   return INTERESTS.map(
-    ([id, label]) =>
+    ({ id, label }) =>
       `<button type="button" class="chip" ${attr}="${id}" aria-pressed="${selected.includes(id)}">${esc(label)}</button>`,
   ).join("");
 }
@@ -1443,7 +1514,7 @@ document.addEventListener("click", (e) => {
   } else if (t.id === "sheet-save") {
     const card = openCard;
     if (state.saved[card.id]) delete state.saved[card.id];
-    else state.saved[card.id] = { title: card.title, category: card.category, date: edition.date };
+    else state.saved[card.id] = { title: card.title, category: card.category, label: shortLabel(card), date: edition.date };
     persist();
     t.setAttribute("aria-pressed", String(Boolean(state.saved[card.id])));
     toast(state.saved[card.id] ? "Salvata nell'archivio" : "Rimossa dai salvati");

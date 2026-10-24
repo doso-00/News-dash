@@ -12,6 +12,8 @@ Appunti per scrivere l'edizione del giorno senza dover ricostruire il contesto. 
 - Attività vecchia `trig_01Pxsx1Qh6CEMQaZQTzDm9TJ` disattivata: le sessioni nuove non hanno i permessi di push (errore 403).
 - Utenti: `backend.js` usa Supabase se `config/backend.json` è compilato, altrimenti salva i profili sul dispositivo. Database collegato: progetto `vhzigfqjqcilooodnhms`. Profilo del proprietario: `@doso` (Riccardo Manfredonia), interessi preimpostati in `config/presets.json`. Per creare un profilo senza toccarne uno esistente: workflow "Crea profilo". Schema in `supabase/schema.sql`. La redazione quotidiana non tocca mai questi file.
 
+- Schede su misura: ogni scheda principale dichiara `interests`; chi non ne condivide nessuno vede al suo posto una scheda `extras` scritta per un suo interesse (logica in `personalize()` di `app.js`). Gli interessi arrivano da `data/interests.json` (workflow "Esporta interessi", ogni notte). Procedura in `REDAZIONE.md`, sezione 5; `node scripts/plan.mjs` dice per quali interessi scrivere.
+
 ## Lezioni imparate
 
 - Il push funziona solo dalla sessione che ha il repository tra le fonti. Una sessione nuova può clonare, ma non pubblicare.
@@ -19,6 +21,7 @@ Appunti per scrivere l'edizione del giorno senza dover ricostruire il contesto. 
 - Le rassegne online a volte riportano cifre diverse: indica la discordanza nel testo invece di sceglierne una a caso.
 - Non usare `pkill -f <nome>` in un comando che contiene lo stesso nome: uccide anche la shell e salta i comandi successivi.
 - Controlla che `data/latest.json` punti alla data di oggi prima del commit.
+- Gli `argv` degli script con opzioni facoltative: se cerchi il nome del file con `indexOf` di un'opzione assente, ottieni -1 e scarti il primo argomento. Controlla sempre `>= 0`.
 - Questa sessione non raggiunge supabase.co (rete bloccata). Per verificare il database usa il workflow "Verifica database" (`.github/workflows/check-db.yml`), che fa solo controlli in lettura, e leggine i log.
 
 ## Rotazione degli argomenti
@@ -32,6 +35,12 @@ Aree del profilo in `config/profile.json`. Non ripetere un'area di Sapere o Rout
 
 Prossime aree da coprire per Sapere: psicologia e bias cognitivi, comunicazione e negoziazione, storia e geopolitica, scienza e tecnologia, programmazione e dati, filosofia pratica, produttività, salute e fisiologia.
 Prossime aree per Routine: sonno, alimentazione, relazioni, mindset, apprendimento, gestione dello stress.
+
+## Schede su misura scritte
+
+| Data | Interessi coperti |
+|---|---|
+| 2026-10-24 | cinema, cucina, cultura (profilo con interessi che le schede principali non coprono) |
 
 ## Registro delle edizioni
 

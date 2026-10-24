@@ -54,6 +54,8 @@ All'apertura l'app chiede di entrare: la prima volta con nome, cognome e usernam
 
 Al primo accesso ognuno sceglie almeno 3 **interessi** tra 22 temi (modificabili in *Progressi*): nel confronto con un amico compaiono quelli in comune. Se sul telefono ci sono progressi di un altro profilo o di prima dei profili, l'app propone di spostarli nel profilo appena aperto.
 
+**Schede su misura.** Le notizie sono uguali per tutti, ma se nessuno degli interessi di una persona coincide con quelli di una scheda del giorno, al suo posto compare una scheda scritta per un suo interesse (una notizia o uno spunto da provare). Ogni notte il workflow *Esporta interessi* copia in `data/interests.json` le liste di interessi (senza nomi); la redazione quotidiana, con `scripts/plan.mjs`, scrive le schede per quelli non coperti, fino a sei interessi al giorno. Chi si iscrive durante il giorno vede le schede principali, e quelle su misura dal giorno dopo.
+
 **Punti:** 10 per scheda letta, 5 per risposta giusta, 20 per routine completata.
 
 Finché `config/backend.json` è vuoto l'app funziona in **modalità locale**: i profili restano sul dispositivo. Per condividerli tra telefoni diversi serve un database Supabase gratuito:

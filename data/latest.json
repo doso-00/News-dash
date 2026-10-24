@@ -1,13 +1,11 @@
 {
   "date": "2026-10-24",
   "number": 2,
-  "generatedAt": "2026-10-24T05:04:08.975Z",
+  "generatedAt": "2026-10-24T11:11:04.099Z",
   "headline": "Le banche fermano gli agenti AI, Meta brucia cassa per i data center e la guerra con l'Iran potrebbe durare un altro anno.",
   "cards": [
     {
-      "id": "2026-10-24-ai",
       "category": "ai",
-      "label": "Intelligenza artificiale",
       "interests": [
         "ai",
         "tech",
@@ -111,12 +109,12 @@
           "explanation": "La sola lettura permette di analizzare i movimenti senza poter spostare denaro: è l'applicazione del minimo privilegio."
         }
       ],
-      "reflection": "Se dovessi far usare a un agente AI il tuo conto o la tua email di lavoro, quali azioni gli permetteresti e quali vorresti sempre approvare tu?"
+      "reflection": "Se dovessi far usare a un agente AI il tuo conto o la tua email di lavoro, quali azioni gli permetteresti e quali vorresti sempre approvare tu?",
+      "id": "2026-10-24-ai",
+      "label": "Intelligenza artificiale"
     },
     {
-      "id": "2026-10-24-finanza",
       "category": "finanza",
-      "label": "Finanza",
       "interests": [
         "finanza",
         "economia",
@@ -223,12 +221,12 @@
           "explanation": "Con gli ammortamenti il costo di un investimento si spalma sull'utile di molti anni, mentre la cassa esce tutta subito."
         }
       ],
-      "reflection": "Spiega con parole tue la differenza tra utile e free cash flow, usando un esempio della tua vita o del tuo lavoro."
+      "reflection": "Spiega con parole tue la differenza tra utile e free cash flow, usando un esempio della tua vita o del tuo lavoro.",
+      "id": "2026-10-24-finanza",
+      "label": "Finanza"
     },
     {
-      "id": "2026-10-24-mondo",
       "category": "mondo",
-      "label": "Mondo",
       "interests": [
         "geopolitica",
         "politica",
@@ -339,12 +337,12 @@
           "explanation": "Per un importatore netto ogni rincaro dell'energia è denaro che esce; gli USA, grandi produttori, in parte ci guadagnano."
         }
       ],
-      "reflection": "In due frasi: come arriva una guerra in Medio Oriente fino al tuo portafoglio in Italia?"
+      "reflection": "In due frasi: come arriva una guerra in Medio Oriente fino al tuo portafoglio in Italia?",
+      "id": "2026-10-24-mondo",
+      "label": "Mondo"
     },
     {
-      "id": "2026-10-24-sapere",
       "category": "sapere",
-      "label": "Sapere",
       "interests": [
         "psicologia",
         "scienza",
@@ -439,12 +437,12 @@
           "explanation": "Il miglioramento sarebbe arrivato comunque: era il ritorno verso la media, scambiato per effetto del rimprovero."
         }
       ],
-      "reflection": "Fai un esempio dal tuo lavoro in cui potresti aver dato merito o colpa a qualcuno per quella che era, almeno in parte, regressione verso la media."
+      "reflection": "Fai un esempio dal tuo lavoro in cui potresti aver dato merito o colpa a qualcuno per quella che era, almeno in parte, regressione verso la media.",
+      "id": "2026-10-24-sapere",
+      "label": "Sapere"
     },
     {
-      "id": "2026-10-24-routine",
       "category": "routine",
-      "label": "Metodo & routine",
       "interests": [
         "salute",
         "sport",
@@ -544,7 +542,591 @@
           "explanation": "Muovendosi quando la glicemia sale, i muscoli assorbono parte del glucosio e il picco si abbassa."
         }
       ],
-      "reflection": "A quale momento della tua giornata puoi agganciare la camminata dopo i pasti, e cosa potrebbe impedirti di farla?"
+      "reflection": "A quale momento della tua giornata puoi agganciare la camminata dopo i pasti, e cosa potrebbe impedirti di farla?",
+      "id": "2026-10-24-routine",
+      "label": "Metodo & routine"
+    }
+  ],
+  "extras": [
+    {
+      "topic": "cinema",
+      "kind": "news",
+      "title": "Festa del Cinema di Roma: gli ultimi giorni, tra Cecchettin e Vanzina",
+      "subtitle": "Cosa vedere prima che il festival chiuda il 25 ottobre",
+      "summary": "La 21ª Festa del Cinema di Roma chiude domani, 25 ottobre. Tra i film presentati c'è **Se domani non torno** di Paola Randi, sulla storia di Giulia Cecchettin: esce in sala il 5 novembre.",
+      "stat": {
+        "value": "25 ott",
+        "label": "ultimo giorno della Festa del Cinema di Roma"
+      },
+      "sections": [
+        {
+          "heading": "Il festival chiude domani",
+          "text": "La 21ª **Festa del Cinema di Roma** è arrivata all'undicesimo giorno e finisce domenica 25 ottobre. Il programma di ieri ha messo insieme film, red carpet e incontri all'Auditorium Parco della Musica."
+        },
+        {
+          "heading": "Il film sul caso Cecchettin",
+          "text": "Paola Randi ha presentato **Se domani non torno**, sulla storia di Giulia Cecchettin. La regista ha detto che il patriarcato \"era un tabù\" e che serve dialogo con i giovani. Esce in sala il **5 novembre** con Notorious Pictures ed è anche in Alice nella Città."
+        },
+        {
+          "heading": "Gli altri titoli",
+          "text": "Enrico Vanzina ha presentato **La sera a Roma**, mentre la sezione Progressive Cinema ha chiuso la serata con **Congo Boy** di Rafiki Fariala. In programma anche un incontro sul nuovo album di Elisa."
+        },
+        {
+          "heading": "Sul red carpet",
+          "text": "Giovedì 22 sono sfilati i cast di **Il profilo dell'altra** e di **Me, you**. Per orari e risultati aggiornati c'è il sito ufficiale, romacinemafest.it: nelle fonti consultate non risultano premi assegnati il 23 ottobre."
+        }
+      ],
+      "keyPoints": [
+        "La Festa del Cinema di Roma chiude domenica 25 ottobre",
+        "Se domani non torno, di Paola Randi, esce in sala il 5 novembre",
+        "Tra i titoli di ieri: La sera a Roma e Congo Boy"
+      ],
+      "whyItMatters": "I festival sono il modo più veloce per capire di quali film e registi si parlerà nei prossimi mesi: molti titoli arrivano in sala poche settimane dopo.",
+      "actionToday": "Guarda il programma su romacinemafest.it, scegli **un titolo** e segna sul calendario la data di uscita in sala.",
+      "checklist": [],
+      "eli5": "Un festival del cinema è come una grande vetrina: per qualche giorno i film nuovi vengono mostrati in anteprima a pubblico e giornalisti, prima di arrivare nelle sale.",
+      "deepDive": [
+        {
+          "title": "Cos'è Alice nella Città",
+          "text": "È la sezione della Festa del Cinema di Roma dedicata ai giovani spettatori: propone film e incontri pensati per ragazzi, in parallelo al programma principale."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "red carpet",
+          "meaning": "Il tappeto rosso su cui sfilano attori e registi all'arrivo alle proiezioni."
+        },
+        {
+          "term": "Alice nella Città",
+          "meaning": "Sezione parallela della Festa del Cinema di Roma dedicata ai giovani spettatori."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Adnkronos — Randi presenta il film su Giulia Cecchettin",
+          "url": "https://adnkronos.com/spettacoli/festa-cinema-roma-presentato-se-domani-non-torno-su-giulia-cecchettin_7IsFVJsMWee4Mfeos5dTcH"
+        },
+        {
+          "title": "RomaToday — Il programma del 23 ottobre",
+          "url": "https://www.romatoday.it/eventi/festa-cinema-roma/programma-23-ottobre-cecchettin-vanzina.html"
+        },
+        {
+          "title": "Libero — Festa del Cinema di Roma 2026, programma del 23 ottobre",
+          "url": "https://www.libero.it/magazine/news/festa-del-cinema-di-roma-2026-programma-23-ottobre-rocio-munoz-morales-film-red-carpet-228029"
+        },
+        {
+          "title": "RomaToday — Look del red carpet, 22 ottobre",
+          "url": "https://romatoday.it/eventi/festa-cinema-roma/pagelle-22-ottobre-2026-voti-look.html"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Quando esce in sala Se domani non torno?",
+          "options": [
+            "5 novembre",
+            "25 ottobre",
+            "1 dicembre",
+            "È già in sala"
+          ],
+          "answer": 0,
+          "explanation": "Il film di Paola Randi esce il 5 novembre con Notorious Pictures."
+        },
+        {
+          "q": "Quando chiude la 21ª Festa del Cinema di Roma?",
+          "options": [
+            "23 ottobre",
+            "25 ottobre",
+            "31 ottobre",
+            "5 novembre"
+          ],
+          "answer": 1,
+          "explanation": "Il festival finisce domenica 25 ottobre."
+        }
+      ],
+      "reflection": "Che differenza c'è, per te, tra vedere un film in anteprima a un festival e vederlo dopo l'uscita in sala?",
+      "id": "2026-10-24-x-cinema-news",
+      "category": "mondo",
+      "label": "Cinema e serie"
+    },
+    {
+      "topic": "cinema",
+      "kind": "spunto",
+      "title": "Il piano sequenza: come guardare un film con occhi nuovi",
+      "subtitle": "Un trucco da regista per accorgerti di cosa fa il montaggio",
+      "summary": "Un **piano sequenza** è una ripresa continua, senza stacchi. Quando impari a riconoscerlo, ti accorgi di quante volte un film cambia inquadratura e di quanto ti stia guidando.",
+      "stat": {
+        "value": "96 min",
+        "label": "Arca russa, girato in un'unica ripresa"
+      },
+      "sections": [
+        {
+          "heading": "Cos'è",
+          "text": "Il **piano sequenza** è una scena girata con un'unica ripresa continua, senza **stacchi**. La macchina da presa segue i personaggi e cambia spazio senza interrompersi."
+        },
+        {
+          "heading": "Perché è difficile",
+          "text": "Attori, operatori e luci devono ripetere ogni movimento alla perfezione. Un errore a pochi secondi dalla fine obbliga a rifare **tutto dall'inizio**."
+        },
+        {
+          "heading": "Esempi da cercare",
+          "text": "**Arca russa** (2002) è girato in un'unica ripresa di 96 minuti dentro il museo Ermitage. **L'infernale Quinlan** (1958) si apre con una ripresa continua di oltre tre minuti. **1917** (2019) è montato per sembrare un'unica ripresa."
+        },
+        {
+          "heading": "Il trucco",
+          "text": "Guarda un film per un minuto e conta gli stacchi: in una scena d'azione possono essere **una ventina**. Dopo, un piano sequenza lo noti subito."
+        }
+      ],
+      "keyPoints": [
+        "Il piano sequenza è una ripresa continua senza stacchi",
+        "Ogni stacco è una scelta del regista, anche se non lo notiamo",
+        "Arca russa è un'unica ripresa di 96 minuti"
+      ],
+      "whyItMatters": "Capire come è costruita una scena ti fa godere di più i film e ti aiuta a riconoscere i registi che amano un certo stile.",
+      "actionToday": "Guarda **un minuto** di una scena d'azione e conta gli stacchi. Poi cerca l'apertura de L'infernale Quinlan e conta di nuovo.",
+      "checklist": [],
+      "eli5": "Un film di solito è un puzzle di tanti pezzetti incollati. Il piano sequenza è un pezzo unico, senza giunture: per questo sembra più vero ed è più difficile da fare.",
+      "deepDive": [
+        {
+          "title": "Il finto piano sequenza",
+          "text": "Molti film moderni nascondono gli stacchi con un movimento rapido o un passaggio al buio, così il montaggio sembra invisibile. Succede in 1917 e in Birdman: la continuità è un effetto, non una ripresa unica."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "piano sequenza",
+          "meaning": "Scena girata con un'unica ripresa continua, senza stacchi."
+        },
+        {
+          "term": "stacco",
+          "meaning": "Il punto in cui il film passa da un'inquadratura a un'altra."
+        },
+        {
+          "term": "montaggio",
+          "meaning": "Il lavoro di scegliere e unire le inquadrature per costruire il film."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wikipedia — Long take",
+          "url": "https://en.wikipedia.org/wiki/Long_take"
+        },
+        {
+          "title": "Wikipedia — Piano sequenza",
+          "url": "https://it.wikipedia.org/wiki/Piano_sequenza"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Che cos'è un piano sequenza?",
+          "options": [
+            "Una scena con molti stacchi veloci",
+            "Una ripresa continua senza stacchi",
+            "Un film muto",
+            "Una scena girata di notte"
+          ],
+          "answer": 1,
+          "explanation": "È una scena girata in un'unica ripresa, senza interruzioni."
+        },
+        {
+          "q": "Quanto dura Arca russa, girato in un'unica ripresa?",
+          "options": [
+            "12 minuti",
+            "45 minuti",
+            "96 minuti",
+            "3 ore"
+          ],
+          "answer": 2,
+          "explanation": "Il film di Sokurov dura 96 minuti ed è un'unica ripresa."
+        }
+      ],
+      "reflection": "Quale scena di un film ti è rimasta impressa? Prova a ricordare se aveva stacchi o era una ripresa continua.",
+      "id": "2026-10-24-x-cinema-spunto",
+      "category": "mondo",
+      "label": "Cinema e serie"
+    },
+    {
+      "topic": "cucina",
+      "kind": "news",
+      "title": "Tartufo bianco d'Alba: pochi tuberi e prezzi alle stelle",
+      "subtitle": "La siccità pesa sulla stagione, la fiera è aperta ogni weekend",
+      "summary": "La stagione del tartufo bianco d'Alba è partita con **pochi tuberi e prezzi molto alti**. Secondo le stime, il bianco pregiato può arrivare a circa 5.000 euro al chilo.",
+      "stat": {
+        "value": "~5.000 €/kg",
+        "label": "stima per il bianco pregiato, le fonti variano"
+      },
+      "sections": [
+        {
+          "heading": "La fiera",
+          "text": "La **Fiera Internazionale del Tartufo Bianco d'Alba** è aperta ogni sabato e domenica dal 10 ottobre al 6 dicembre, dalle 9:30 alle 19:30. L'ingresso costa 6 euro; il tartufo si paga a parte."
+        },
+        {
+          "heading": "Perché ce n'è poco",
+          "text": "Secondo GreenMe la **siccità** ha ridotto i ritrovamenti: i tartufi sono pochi e per lo più piccoli. Il tartufo cresce sottoterra e risente molto di quanto piove."
+        },
+        {
+          "heading": "Quanto costa",
+          "text": "Le fonti non concordano. Una pagina di quotazioni aggiornata al 23 ottobre indica una media di circa **4.700 euro al chilo**. GreenMe parla di primi prezzi al dettaglio fino a **500 euro all'etto**, cioè 5.000 al chilo."
+        },
+        {
+          "heading": "Come si compra",
+          "text": "Il prezzo si fa al grammo e cambia ogni settimana. Per condire un piatto di pasta bastano **pochi grammi** affettati a crudo."
+        }
+      ],
+      "keyPoints": [
+        "Fiera di Alba aperta ogni weekend fino al 6 dicembre",
+        "Siccità: pochi tartufi e prezzi molto alti",
+        "Le quotazioni variano per fonte: controlla il prezzo al grammo"
+      ],
+      "whyItMatters": "È un esempio concreto di come il clima influenza produzione e prezzi di un prodotto di nicchia, e ti evita sorprese al ristorante o al banco.",
+      "actionToday": "Chiedi sempre il **prezzo al grammo** prima di ordinare un piatto con il tartufo. Se vai ad Alba, confronta le bancarelle prima di comprare.",
+      "checklist": [],
+      "eli5": "Il tartufo è come una pietra preziosa nascosta sotto terra. Se per mesi non piove ne nascono meno, e quando ce ne sono pochi chi li vuole li paga di più.",
+      "deepDive": [
+        {
+          "title": "Perché non si coltiva come le patate",
+          "text": "Il tartufo vive in simbiosi con le radici di certi alberi, come querce e pioppi, e per questo è difficile da coltivare. Si cerca in boschi e terreni adatti, di solito con l'aiuto dei cani."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "siccità",
+          "meaning": "Lungo periodo con poca pioggia."
+        },
+        {
+          "term": "etto",
+          "meaning": "Cento grammi: 500 euro all'etto sono 5.000 euro al chilo."
+        }
+      ],
+      "sources": [
+        {
+          "title": "GreenMe — Tartufo bianco d'Alba, la siccità presenta il conto",
+          "url": "https://www.greenme.it/lifestyle/sai-cosa-compri/tartufo-bianco-dalba-la-siccita-presenta-il-conto-pochi-esemplari-e-prezzi-sempre-piu-alti/"
+        },
+        {
+          "title": "Andùma — Fiera del Tartufo Bianco d'Alba 2026",
+          "url": "https://andumapiemonte.it/guide/fiera-del-tartufo-alba-2026-date-orari-prezzi"
+        },
+        {
+          "title": "tartufo.com — Prezzi del tartufo aggiornati al 23 ottobre 2026",
+          "url": "https://www.tartufo.com/en/truffle-prices/"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Fino a quando è aperta la Fiera del Tartufo Bianco d'Alba?",
+          "options": [
+            "Fino al 6 dicembre",
+            "Fino al 31 ottobre",
+            "Fino al 25 dicembre",
+            "Fino a gennaio"
+          ],
+          "answer": 0,
+          "explanation": "La fiera si tiene ogni weekend dal 10 ottobre al 6 dicembre 2026."
+        },
+        {
+          "q": "Quanto sono 500 euro all'etto?",
+          "options": [
+            "500 euro al chilo",
+            "1.000 euro al chilo",
+            "2.500 euro al chilo",
+            "5.000 euro al chilo"
+          ],
+          "answer": 3,
+          "explanation": "Un chilo sono dieci etti: 500 × 10 = 5.000 euro."
+        }
+      ],
+      "reflection": "Quanto saresti disposto a pagare per un ingrediente raro, e come decideresti se vale il prezzo?",
+      "id": "2026-10-24-x-cucina-news",
+      "category": "routine",
+      "label": "Cucina"
+    },
+    {
+      "topic": "cucina",
+      "kind": "spunto",
+      "title": "La reazione di Maillard: il segreto della crosta saporita",
+      "subtitle": "Perché la carne in padella è buona e quella bollita no",
+      "summary": "Il sapore di una crosta ben dorata nasce dalla **reazione di Maillard**, che parte oltre i **140 °C**. Per ottenerla servono una superficie asciutta e una padella molto calda.",
+      "stat": {
+        "value": "140 °C",
+        "label": "circa, da qui parte la reazione"
+      },
+      "sections": [
+        {
+          "heading": "Cos'è",
+          "text": "La **reazione di Maillard** avviene tra amminoacidi e zuccheri quando il cibo si scalda. Crea tantissime molecole nuove, che danno colore dorato e aromi di tostato."
+        },
+        {
+          "heading": "Perché il bollito non la fa",
+          "text": "L'acqua bolle a 100 °C e finché il cibo è bagnato non supera quella temperatura. Per dorare servono **temperature più alte**, dai 140 °C circa in su."
+        },
+        {
+          "heading": "I tre trucchi",
+          "text": "Prima **asciuga** la superficie con carta da cucina. Poi usa una padella ben calda. Infine non affollarla: troppo cibo abbassa la temperatura e libera vapore."
+        },
+        {
+          "heading": "Un po' di pazienza",
+          "text": "Lascia il cibo **fermo per un paio di minuti** prima di girarlo: la crosta si forma da sola e poi si stacca dalla padella."
+        }
+      ],
+      "keyPoints": [
+        "Il sapore della crosta viene dalla reazione di Maillard",
+        "Servono superficie asciutta e più di 140 °C",
+        "Non affollare la padella"
+      ],
+      "whyItMatters": "È la differenza tra una bistecca grigia e una dorata, tra patate molli e croccanti. Una volta che la conosci, la usi in ogni cottura.",
+      "actionToday": "Stasera cuoci **un solo alimento** (carne, patate o funghi) con i tre trucchi e confronta la crosta con l'ultima volta.",
+      "checklist": [
+        "Asciuga bene la superficie con carta da cucina",
+        "Scalda la padella prima di mettere il cibo",
+        "Non affollare: lascia spazio tra i pezzi",
+        "Lascia fermo due minuti prima di girare"
+      ],
+      "eli5": "È come tostare il pane: quello fresco è chiaro e morbido, quello tostato diventa dorato e profumato. Con il calore, zuccheri e proteine cambiano e creano nuovi sapori.",
+      "deepDive": [
+        {
+          "title": "Chi era Maillard",
+          "text": "Il nome viene dal chimico francese Louis-Camille Maillard, che la descrisse nel 1912. Vale per pane, caffè tostato, birra scura e cioccolato, non solo per la carne."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "amminoacidi",
+          "meaning": "I mattoni che formano le proteine."
+        },
+        {
+          "term": "reazione di Maillard",
+          "meaning": "Trasformazione tra amminoacidi e zuccheri che, a caldo, dà colore e aroma."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wikipedia — Maillard reaction",
+          "url": "https://en.wikipedia.org/wiki/Maillard_reaction"
+        },
+        {
+          "title": "Wikipedia — Reazione di Maillard",
+          "url": "https://it.wikipedia.org/wiki/Reazione_di_Maillard"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Perché l'acqua impedisce di dorare un alimento?",
+          "options": [
+            "Perché lo raffredda a zero gradi",
+            "Perché finché c'è acqua in superficie non si superano i 100 °C",
+            "Perché toglie sapore",
+            "Perché lo rende più acido"
+          ],
+          "answer": 1,
+          "explanation": "L'acqua bolle a 100 °C: per dorare servono temperature più alte."
+        },
+        {
+          "q": "Quale gesto favorisce la crosta?",
+          "options": [
+            "Mettere tutto insieme in una padella piccola",
+            "Asciugare la superficie prima di cuocere",
+            "Coprire la padella con un coperchio",
+            "Aggiungere acqua"
+          ],
+          "answer": 1,
+          "explanation": "Una superficie asciutta permette di superare i 100 °C e far partire la reazione."
+        }
+      ],
+      "reflection": "Quale piatto che cucini spesso potrebbe migliorare con una crosta più dorata?",
+      "id": "2026-10-24-x-cucina-spunto",
+      "category": "routine",
+      "label": "Cucina"
+    },
+    {
+      "topic": "cultura",
+      "kind": "news",
+      "title": "Anne Carson, la poetessa dei classici, vince il Nobel",
+      "subtitle": "Chi è e da quale libro conviene partire",
+      "summary": "Il **Nobel per la Letteratura 2026** è andato alla canadese Anne Carson, poetessa e studiosa di lettere classiche. La cerimonia di consegna è il **10 dicembre** a Stoccolma.",
+      "stat": {
+        "value": "10 dic",
+        "label": "cerimonia di consegna del Nobel a Stoccolma"
+      },
+      "sections": [
+        {
+          "heading": "L'annuncio",
+          "text": "L'8 ottobre l'**Accademia Svedese** ha assegnato il Nobel ad **Anne Carson**, nata a Toronto nel 1950. Ha 76 anni e insegna lettere classiche."
+        },
+        {
+          "heading": "La motivazione",
+          "text": "Il premio va a un'opera \"audace e creativa che, in un dialogo giocoso con la tradizione classica, ha dato vita a nuove forme per la letteratura contemporanea\"."
+        },
+        {
+          "heading": "Dove iniziare",
+          "text": "*Eros the Bittersweet* è un saggio sull'amore nella poesia greca antica. *Autobiography of Red* rilegge il mito di Gerione ed Eracle come un **romanzo in versi**."
+        },
+        {
+          "heading": "Perché se ne parla",
+          "text": "Era tra le favorite della vigilia. La scelta premia una scrittrice che mescola poesia, saggio e traduzione e **porta i classici greci nella letteratura di oggi**."
+        }
+      ],
+      "keyPoints": [
+        "Nobel 2026 per la Letteratura: la canadese Anne Carson",
+        "La sua opera dialoga con la tradizione classica",
+        "Cerimonia di consegna il 10 dicembre a Stoccolma"
+      ],
+      "whyItMatters": "È un invito a leggere qualcosa di diverso dai romanzi: poesia, saggio e mito insieme. E in queste settimane i suoi libri sono più facili da trovare in libreria.",
+      "actionToday": "Cerca *Autobiography of Red* o la sua edizione italiana in biblioteca: **leggi le prime dieci pagine** e decidi se continuare.",
+      "checklist": [],
+      "eli5": "Anne Carson prende le storie antiche dei greci, con dei ed eroi, e le racconta in modo nuovo, con versi e pensieri di oggi: come rifare una vecchia canzone con un arrangiamento moderno.",
+      "deepDive": [
+        {
+          "title": "Cos'è un romanzo in versi",
+          "text": "È un racconto lungo scritto come una poesia, a righe e strofe invece che a paragrafi. Unisce la trama del romanzo al ritmo e alle immagini dei versi."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Accademia Svedese",
+          "meaning": "L'istituzione che assegna ogni anno il Nobel per la Letteratura."
+        },
+        {
+          "term": "romanzo in versi",
+          "meaning": "Racconto lungo scritto in forma di poesia."
+        }
+      ],
+      "sources": [
+        {
+          "title": "ANSA — Il Nobel Letteratura 2026 va alla canadese Anne Carson",
+          "url": "https://www.ansa.it/sito/notizie/topnews/2026/10/08/il-nobel-letteratura-2026-va-alla-canadese-anne-carson_ad7eedb5-6668-4f81-96c3-7778f8ad59b8.html"
+        },
+        {
+          "title": "Il Post — Il Nobel per la Letteratura è stato vinto da Anne Carson",
+          "url": "https://www.ilpost.it/2026/10/08/premio-nobel-letteratura-2026/"
+        },
+        {
+          "title": "Il Sole 24 ORE — Anne Carson wins the 2026 Nobel Prize in Literature",
+          "url": "https://en.ilsole24ore.com/art/2026-nobel-prize-in-literature-awarded-to-anne-carson-AJKyJCdB"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Chi ha vinto il Nobel per la Letteratura 2026?",
+          "options": [
+            "Anne Carson",
+            "Colson Whitehead",
+            "Gisèle Pelicot",
+            "Wolf Biermann"
+          ],
+          "answer": 0,
+          "explanation": "L'Accademia Svedese lo ha assegnato alla canadese Anne Carson."
+        },
+        {
+          "q": "Con quale tradizione dialoga l'opera di Carson?",
+          "options": [
+            "La tradizione classica",
+            "Il romanzo giallo",
+            "La fantascienza",
+            "Il teatro elisabettiano"
+          ],
+          "answer": 0,
+          "explanation": "La motivazione parla di un dialogo giocoso con la tradizione classica."
+        }
+      ],
+      "reflection": "Hai mai letto poesia? Cosa ti spingerebbe a provare con un libro scritto in versi?",
+      "id": "2026-10-24-x-cultura-news",
+      "category": "sapere",
+      "label": "Libri e cultura"
+    },
+    {
+      "topic": "cultura",
+      "kind": "spunto",
+      "title": "Dieci pagine al giorno: la routine che ti fa finire i libri",
+      "subtitle": "Come trasformare la lettura in un'abitudine che regge",
+      "summary": "Leggere **dieci pagine al giorno** vuol dire finire circa dodici libri da trecento pagine in un anno. Basta legare la lettura a un momento fisso, come la sera prima di dormire.",
+      "stat": {
+        "value": "10 pag",
+        "label": "al giorno: circa 12 libri in un anno"
+      },
+      "sections": [
+        {
+          "heading": "Il conto",
+          "text": "Dieci pagine al giorno sono circa **3.650 pagine l'anno**: più di dodici libri da trecento pagine. Per molti lettori è circa un quarto d'ora."
+        },
+        {
+          "heading": "Un momento fisso",
+          "text": "L'abitudine regge se la **leghi a qualcosa che fai già**: il caffè della mattina, il treno, la sera prima di dormire."
+        },
+        {
+          "heading": "Rendila facile",
+          "text": "Tieni il libro dove lo vedi, sul comodino o sul tavolo, e il telefono lontano. Nei giorni senza voglia leggi **una sola pagina**: l'importante è non interrompere la serie."
+        },
+        {
+          "heading": "Scegli bene",
+          "text": "Molti lettori usano la regola delle cinquanta pagine: se un libro non ti prende, lo lasci. **Cambiare libro è meglio che smettere di leggere.**"
+        }
+      ],
+      "keyPoints": [
+        "10 pagine al giorno sono circa 12 libri all'anno",
+        "Lega la lettura a un momento fisso della giornata",
+        "Nei giorni no, leggi una pagina sola"
+      ],
+      "whyItMatters": "Ti regala un tempo di concentrazione lontano dallo schermo e ti fa incontrare libri e idee che altrimenti non troveresti.",
+      "actionToday": "Scegli un libro, mettilo **sul cuscino** o sul comodino e stasera leggi le prime dieci pagine.",
+      "checklist": [
+        "Scegli il libro e mettilo dove lo vedi",
+        "Decidi il momento: prima di dormire o a colazione",
+        "Telefono in un'altra stanza o in modalità aereo",
+        "Leggi dieci pagine, o una sola se sei stanco",
+        "Segna una crocetta sul calendario nei giorni in cui l'hai fatto"
+      ],
+      "eli5": "È come lavarsi i denti: se lo fai ogni sera allo stesso momento non devi decidere ogni volta. Il segreto non è leggere tanto, ma leggere ogni giorno un poco.",
+      "deepDive": [
+        {
+          "title": "Perché la serie conta più della durata",
+          "text": "Un'abitudine si forma ripetendo lo stesso gesto nello stesso contesto. Meglio dieci pagine ogni giorno che tre ore la domenica: il momento si associa al gesto e serve meno forza di volontà."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "abitudine",
+          "meaning": "Gesto che si ripete in un contesto fisso fino a diventare automatico."
+        },
+        {
+          "term": "modalità aereo",
+          "meaning": "Impostazione del telefono che spegne rete e notifiche."
+        }
+      ],
+      "sources": [],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Quanti libri da 300 pagine si leggono in un anno con 10 pagine al giorno?",
+          "options": [
+            "Circa 2",
+            "Circa 5",
+            "Circa 12",
+            "Circa 30"
+          ],
+          "answer": 2,
+          "explanation": "10 × 365 = 3.650 pagine, cioè più di 12 libri da 300 pagine."
+        },
+        {
+          "q": "Cosa fare nei giorni in cui non hai voglia di leggere?",
+          "options": [
+            "Saltare e recuperare nel weekend",
+            "Leggere una sola pagina per mantenere la serie",
+            "Cambiare libro ogni volta",
+            "Aspettare di avere più tempo"
+          ],
+          "answer": 1,
+          "explanation": "Mantenere la serie conta più della quantità."
+        }
+      ],
+      "reflection": "In quale momento della tua giornata potresti leggere dieci pagine senza sforzo?",
+      "id": "2026-10-24-x-cultura-spunto",
+      "category": "sapere",
+      "label": "Libri e cultura"
     }
   ]
 }

@@ -13,8 +13,9 @@ import { INTEREST_LABEL } from "../interests.js";
 import { ROOT, readJson } from "./store.mjs";
 
 const args = process.argv.slice(2);
-const file = args.find((a) => !a.startsWith("--") && a !== args[args.indexOf("--max") + 1]);
-const max = args.includes("--max") ? Number(args[args.indexOf("--max") + 1]) : 6;
+const maxAt = args.indexOf("--max");
+const max = maxAt >= 0 ? Number(args[maxAt + 1]) : 6;
+const file = args.find((a, i) => !a.startsWith("--") && (maxAt < 0 || i !== maxAt + 1));
 if (!file) {
   console.error("Uso: node scripts/plan.mjs bozza.json [--max 6]");
   process.exit(1);

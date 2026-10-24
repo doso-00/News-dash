@@ -39,7 +39,7 @@ Scrivi `/tmp/bozza.json` in italiano, con questa forma:
 }
 ```
 
-Ogni scheda ha: `category`, `title`, `subtitle`, `summary` (2 frasi), `stat` (`{value, label}`: il numero simbolo della notizia, corto, es. "-2,6%" o "90 min"; `null` se non c'è un numero significativo), `sections` (4-5 `{heading, text}`), `keyPoints` (3, max 15 parole), `whyItMatters`, `actionToday` (concreto, 15 minuti; per ai un prompt o mini-progetto con Claude), `checklist` (solo routine, altrimenti `[]`), `eli5` (analogia quotidiana), `deepDive` (2 approfondimenti `{title, text}`), `glossary` (2-3 `{term, meaning}`), `sources` (`{title, url}` realmente consultate; obbligatorie per ai, finanza, mondo), `readingMinutes`, `quiz` (2 domande con 4 opzioni, `answer` = indice 0-3 della corretta, `explanation`), `reflection` (domanda aperta).
+Ogni scheda ha: `category`, `interests` (da 2 a 5 id dell'elenco qui sotto: gli interessi a cui la scheda parla davvero; chi non ne ha nessuno vede al suo posto una scheda su misura), `title`, `subtitle`, `summary` (2 frasi), `stat` (`{value, label}`: il numero simbolo della notizia, corto, es. "-2,6%" o "90 min"; `null` se non c'è un numero significativo), `sections` (4-5 `{heading, text}`), `keyPoints` (3, max 15 parole), `whyItMatters`, `actionToday` (concreto, 15 minuti; per ai un prompt o mini-progetto con Claude), `checklist` (solo routine, altrimenti `[]`), `eli5` (analogia quotidiana), `deepDive` (2 approfondimenti `{title, text}`), `glossary` (2-3 `{term, meaning}`), `sources` (`{title, url}` realmente consultate; obbligatorie per ai, finanza, mondo), `readingMinutes`, `quiz` (2 domande con 4 opzioni, `answer` = indice 0-3 della corretta, `explanation`), `reflection` (domanda aperta).
 
 ### Stile di scrittura
 
@@ -53,7 +53,22 @@ Il testo si legge sul telefono, deve scorrere come un racconto:
 
 Le domande del quiz verificano la comprensione, non la memoria di dettagli irrilevanti. Le opzioni sbagliate devono essere plausibili.
 
-## 5. Pubblica
+## 5. Schede su misura
+
+Le notizie sono uguali per tutti, ma ognuno sceglie i propri interessi. Se nessun interesse di una persona coincide con quelli di una scheda principale, nell'app al suo posto compare una scheda scritta per un suo interesse.
+
+Gli interessi (id): ai, tech, code, finanza, economia, politica, geopolitica, scienza, salute, sport, crescita, produttivita, psicologia, storia, cultura, cinema, musica, viaggi, clima, startup, lavoro, cucina.
+
+1. `git pull`: porta `data/interests.json`, aggiornato ogni notte alle 02:30 UTC dal workflow "Esporta interessi" (contiene solo le liste di interessi, senza nomi). Se il file manca, salta questo passo.
+2. Quando la bozza delle cinque schede principali è pronta, con i loro `interests`, esegui `node scripts/plan.mjs /tmp/bozza.json`. Stampa gli interessi per cui servono schede (al massimo 6, i più richiesti).
+3. Per ogni interesse elencato scrivi **due** schede in `extras` della bozza:
+   - `kind: "news"`: la novità di oggi in quel settore (ultime 24-48 ore), in italiano, con fonti reali. Per `cucina`, `cinema`, `cultura` ecc. cerca le testate di settore.
+   - `kind: "spunto"`: qualcosa da imparare o da provare legato all'interesse, valido anche tra una settimana. Se è una pratica concreta, metti i passi nella `checklist`.
+   - Campi: `topic` (l'id) e `kind`, poi gli stessi campi di una scheda principale **senza** `category` e `interests`. Possono essere più brevi: 3-4 `sections`, 1-2 domande di `quiz`, 1 `deepDive`, `glossary` di 2 termini. Le `sources` sono obbligatorie per le `news`.
+4. Gli interessi esclusi dal limite di 6 oggi vedranno le schede principali: non scrivere altro per loro.
+5. Se una persona si iscrive durante il giorno, le sue schede arrivano il giorno dopo. Per aggiungerne subito, scrivi un file `{ "extras": [...] }` e pubblicalo con `node scripts/publish.mjs <file> --extras-only --date <oggi>`.
+
+## 6. Pubblica
 
 ```bash
 node scripts/publish.mjs /tmp/bozza.json
