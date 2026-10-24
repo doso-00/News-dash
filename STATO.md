@@ -10,7 +10,7 @@ Appunti per scrivere l'edizione del giorno senza dover ricostruire il contesto. 
 - App online: https://doso-00.github.io/News-dash/
 - Attività programmata attiva: `trig_0164dUcat7EQX2ZHKsXt4Ymt`, ogni giorno alle 6:14 ora italiana, in questa sessione.
 - Attività vecchia `trig_01Pxsx1Qh6CEMQaZQTzDm9TJ` disattivata: le sessioni nuove non hanno i permessi di push (errore 403).
-- Utenti: `backend.js` usa Supabase se `config/backend.json` è compilato, altrimenti salva i profili sul dispositivo. Schema in `supabase/schema.sql`. La redazione quotidiana non tocca mai questi file.
+- Utenti: `backend.js` usa Supabase se `config/backend.json` è compilato, altrimenti salva i profili sul dispositivo. Database collegato: progetto `vhzigfqjqcilooodnhms`. Schema in `supabase/schema.sql`. La redazione quotidiana non tocca mai questi file.
 
 ## Lezioni imparate
 
@@ -19,6 +19,7 @@ Appunti per scrivere l'edizione del giorno senza dover ricostruire il contesto. 
 - Le rassegne online a volte riportano cifre diverse: indica la discordanza nel testo invece di sceglierne una a caso.
 - Non usare `pkill -f <nome>` in un comando che contiene lo stesso nome: uccide anche la shell e salta i comandi successivi.
 - Controlla che `data/latest.json` punti alla data di oggi prima del commit.
+- Questa sessione non raggiunge supabase.co (rete bloccata). Per verificare il database usa il workflow "Verifica database" (`.github/workflows/check-db.yml`), che fa solo controlli in lettura, e leggine i log.
 
 ## Rotazione degli argomenti
 

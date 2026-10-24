@@ -1121,13 +1121,20 @@ async function refreshFromCloud() {
   if (backend?.mode !== "cloud" || !me) return;
   try {
     const remote = await backend.getPlayer(me.username);
-    if (remote?.state?.updatedAt > state.updatedAt) {
+    if (!remote) {
+      // Profile created while the app was in local mode: publish it now.
+      await backend.createPlayer(me).catch((err) => {
+        if (!(err instanceof BackendError && err.code === "taken")) throw err;
+      });
+      return syncNow();
+    }
+    if (remote.state?.updatedAt > state.updatedAt) {
       replaceState({ ...remote.state, answers: state.answers, settings: { ...remote.state.settings, apiKey: state.settings.apiKey } });
       saveLocal();
       applySettings();
       renderToday();
       route();
-    } else if (remote && state.updatedAt > (remote.state?.updatedAt ?? 0)) {
+    } else if (state.updatedAt > (remote.state?.updatedAt ?? 0)) {
       syncNow();
     }
   } catch {
