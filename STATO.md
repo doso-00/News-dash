@@ -16,6 +16,8 @@ Appunti per scrivere l'edizione del giorno senza dover ricostruire il contesto. 
 
 - Discussione per notizia: tabella `messages` e funzioni in `supabase/chat.sql` (da incollare a mano nel SQL Editor; poi workflow "Verifica chat"). Stanza = id della scheda; membri = chi ha l'id in `stats.cards`. Messaggi tenuti 30 giorni (il workflow notturno chiama `purge_old_messages`). La redazione non scrive mai messaggi.
 
+- Regia (dashboard privata del proprietario con utenti, notizie, chat e consumo di Claude): dopo il push dell'edizione si aggiorna seguendo `scripts/regia/README.md`. I suoi dati non vanno mai nel repository.
+
 ## Lezioni imparate
 
 - Il push funziona solo dalla sessione che ha il repository tra le fonti. Una sessione nuova può clonare, ma non pubblicare.
