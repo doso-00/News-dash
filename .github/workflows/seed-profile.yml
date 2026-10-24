@@ -1,0 +1,43 @@
+name: Crea profilo
+
+# Creates a profile if the username is free; never overwrites an existing one or its progress.
+on:
+  workflow_dispatch:
+    inputs:
+      username:
+        description: "Username (3-20 caratteri: lettere, numeri, punto, trattino basso)"
+        required: true
+      first_name:
+        description: "Nome"
+        required: true
+      last_name:
+        description: "Cognome"
+        required: true
+
+jobs:
+  seed:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Crea il profilo se non esiste
+        env:
+          IN_USER: ${{ inputs.username }}
+          IN_FIRST: ${{ inputs.first_name }}
+          IN_LAST: ${{ inputs.last_name }}
+        run: |
+          URL=$(jq -r .supabaseUrl config/backend.json)
+          KEY=$(jq -r .supabaseKey config/backend.json)
+          API="$URL/rest/v1/players"
+          USERNAME=$(echo "$IN_USER" | tr '[:upper:]' '[:lower:]' | sed 's/^@//')
+          echo "Profili registrati: $(curl -s "$API?select=username" -H "apikey: $KEY" | jq -c 'map(.username)')"
+          EXISTING=$(curl -s "$API?username=eq.$USERNAME&select=username,first_name,last_name,stats,updated_at" -H "apikey: $KEY")
+          if [ "$(echo "$EXISTING" | jq length)" != "0" ]; then
+            echo "Il profilo @$USERNAME esiste già, non lo modifico:"
+            echo "$EXISTING" | jq '.[0] | {username, first_name, last_name, letti: .stats.read, punti: .stats.points, aggiornato: .updated_at}'
+            exit 0
+          fi
+          BODY=$(jq -n --arg u "$USERNAME" --arg f "$IN_FIRST" --arg l "$IN_LAST" '{username:$u, first_name:$f, last_name:$l}')
+          CODE=$(curl -s -o /tmp/out -w '%{http_code}' -X POST "$API" -H "apikey: $KEY" -H "Content-Type: application/json" -H "Prefer: return=representation" -d "$BODY")
+          echo "Creazione @$USERNAME: HTTP $CODE"
+          jq '.[0] | {username, first_name, last_name}' /tmp/out || cat /tmp/out
+          [ "$CODE" = "201" ]
