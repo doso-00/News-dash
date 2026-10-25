@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24T11:05:22Z",
+  "updatedAt": "2026-10-25T02:59:05Z",
   "profiles": [
     [
       "ai",
@@ -20,6 +20,18 @@
       "viaggi",
       "cucina",
       "startup"
+    ],
+    [
+      "ai",
+      "tech",
+      "economia",
+      "finanza",
+      "politica",
+      "produttivita",
+      "storia",
+      "viaggi",
+      "startup",
+      "cucina"
     ],
     [
       "cucina",
