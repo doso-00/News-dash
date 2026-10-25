@@ -1,6 +1,33 @@
 {
   "days": [
     {
+      "date": "2026-10-25",
+      "number": 3,
+      "headline": "Petrolio ai massimi da sei mesi, il Brasile sceglie tra Lula e Bolsonaro e stanotte è tornata l'ora solare.",
+      "cards": [
+        {
+          "category": "ai",
+          "title": "Kimi K3.1 Pro: il modello cinese che sfiora i migliori e costa meno"
+        },
+        {
+          "category": "finanza",
+          "title": "Petrolio a 116 dollari e rendimenti al 5%: perché le Borse tremano"
+        },
+        {
+          "category": "mondo",
+          "title": "Brasile al ballottaggio: Lula contro Flávio Bolsonaro, testa a testa"
+        },
+        {
+          "category": "sapere",
+          "title": "Il bias di conferma: perché cerchiamo solo le prove che ci danno ragione"
+        },
+        {
+          "category": "routine",
+          "title": "Cambio dell'ora: la sveglia fissa che rimette a posto il sonno"
+        }
+      ]
+    },
+    {
       "date": "2026-10-24",
       "number": 2,
       "headline": "Le banche fermano gli agenti AI, Meta brucia cassa per i data center e la guerra con l'Iran potrebbe durare un altro anno.",

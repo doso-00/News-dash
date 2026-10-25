@@ -26,6 +26,7 @@ Appunti per scrivere l'edizione del giorno senza dover ricostruire il contesto. 
 - Non usare `pkill -f <nome>` in un comando che contiene lo stesso nome: uccide anche la shell e salta i comandi successivi.
 - Controlla che `data/latest.json` punti alla data di oggi prima del commit.
 - Gli `argv` degli script con opzioni facoltative: se cerchi il nome del file con `indexOf` di un'opzione assente, ottieni -1 e scarti il primo argomento. Controlla sempre `>= 0`.
+- Le notizie di settore (cultura, viaggi) del giorno stesso sono rare: va bene una novità della settimana, con le date verificate. Se le fonti non concordano (es. scioperi), dillo nel testo.
 - Questa sessione non raggiunge supabase.co (rete bloccata). Per verificare il database usa il workflow "Verifica database" (`.github/workflows/check-db.yml`), che fa solo controlli in lettura, e leggine i log.
 
 ## Rotazione degli argomenti
@@ -36,15 +37,17 @@ Aree del profilo in `config/profile.json`. Non ripetere un'area di Sapere o Rout
 |---|---|---|
 | 2026-10-23 | Regola del 72 (economia e finanza personale) | Blocco di lavoro profondo (concentrazione) |
 | 2026-10-24 | Regressione verso la media (statistica) | Camminata dopo i pasti (movimento) |
+| 2026-10-25 | Bias di conferma (psicologia e bias cognitivi) | Sveglia fissa dopo il cambio dell'ora (sonno) |
 
-Prossime aree da coprire per Sapere: psicologia e bias cognitivi, comunicazione e negoziazione, storia e geopolitica, scienza e tecnologia, programmazione e dati, filosofia pratica, produttività, salute e fisiologia.
-Prossime aree per Routine: sonno, alimentazione, relazioni, mindset, apprendimento, gestione dello stress.
+Prossime aree da coprire per Sapere: comunicazione e negoziazione, storia e geopolitica, scienza e tecnologia, programmazione e dati, filosofia pratica, produttività, salute e fisiologia.
+Prossime aree per Routine: alimentazione, relazioni, mindset, apprendimento, gestione dello stress.
 
 ## Schede su misura scritte
 
 | Data | Interessi coperti |
 |---|---|
 | 2026-10-24 | cinema, cucina, cultura (profilo con interessi che le schede principali non coprono) |
+| 2026-10-25 | cinema, cucina, cultura, viaggi (terzo profilo iscritto; viaggi per chi non ha Sapere tra i suoi interessi) |
 
 ## Registro delle edizioni
 
@@ -52,3 +55,4 @@ Prossime aree per Routine: sonno, alimentazione, relazioni, mindset, apprendimen
 |---|---|---|
 | 2026-10-23 | 1 | Scritta a mano; riscritta nel formato a sezioni |
 | 2026-10-24 | 2 | La sessione automatica non è riuscita a fare push; pubblicata da questa sessione |
+| 2026-10-25 | 3 | Prima edizione della redazione automatica in questa sessione; 8 schede su misura |

@@ -1,0 +1,1190 @@
+{
+  "date": "2026-10-25",
+  "number": 3,
+  "generatedAt": "2026-10-25T05:21:07.495Z",
+  "headline": "Petrolio ai massimi da sei mesi, il Brasile sceglie tra Lula e Bolsonaro e stanotte è tornata l'ora solare.",
+  "cards": [
+    {
+      "category": "ai",
+      "interests": [
+        "ai",
+        "tech",
+        "code",
+        "startup"
+      ],
+      "title": "Kimi K3.1 Pro: il modello cinese che sfiora i migliori e costa meno",
+      "subtitle": "Moonshot promette i pesi aperti entro il 4 novembre: i benchmark però li dichiara l'azienda",
+      "summary": "Moonshot AI ha lanciato **Kimi K3.1 Pro**, un modello che nei suoi test si avvicina ai migliori sistemi americani a un prezzo più basso. È il momento giusto per imparare a **valutare i modelli sui tuoi compiti**, non sulle classifiche.",
+      "stat": {
+        "value": "65,7%",
+        "label": "su Terminal-Bench 4.0 secondo Moonshot, contro il 66,4% di Claude Opus 5.5"
+      },
+      "sections": [
+        {
+          "heading": "Cosa ha lanciato Moonshot",
+          "text": "Il 23 ottobre la cinese Moonshot AI ha pubblicato **Kimi K3.1 Pro**, disponibile nelle sue app e via API. È un modello mixture-of-experts da circa **2.800 miliardi di parametri**, di cui 104 miliardi attivi a ogni passo, con una finestra di contesto da un milione di token."
+        },
+        {
+          "heading": "Prezzo e pesi aperti",
+          "text": "Le API costano **2 dollari per milione di token in ingresso e 10 in uscita**, circa un terzo meno del modello precedente. Moonshot promette i pesi aperti entro il 4 novembre, ma per ora non sono pubblicati e la licenza non è nota."
+        },
+        {
+          "heading": "Numeri da prendere con cautela",
+          "text": "Moonshot dichiara il **65,7% su Terminal-Bench 4.0**, vicino al 66,4% di Claude Opus 5.5. Sono numeri dell'azienda: la classifica indipendente di Artificial Analysis lo mette **quarto** nel suo indice di intelligenza."
+        },
+        {
+          "heading": "Le capacità tolte apposta",
+          "text": "Prima del rilascio aperto Moonshot dice di aver rimosso i dati di addestramento sugli attacchi informatici. Nel suo test interno il modello rilasciato risolve **l'81% delle prove**, contro il 90,5% della versione non filtrata."
+        },
+        {
+          "heading": "Cosa cambia per chi usa l'AI",
+          "text": "La distanza tra i modelli di punta e quelli più economici si accorcia. Per scegliere conta sempre meno la classifica generale e sempre più **come va il modello sui tuoi compiti reali**."
+        }
+      ],
+      "keyPoints": [
+        "Kimi K3.1 Pro: 2.800 miliardi di parametri, contesto da un milione di token",
+        "Costa 2 $ in ingresso e 10 $ in uscita per milione di token",
+        "I benchmark sono dichiarati da Moonshot; i pesi aperti non sono ancora usciti"
+      ],
+      "whyItMatters": "Quando escono modelli più economici con prestazioni simili, la scelta giusta dipende dal tuo uso. Una piccola **valutazione personale**, fatta una volta, ti fa risparmiare tempo e soldi ogni volta che cambi modello.",
+      "actionToday": "Chiedi a Claude: \"Aiutami a costruire una mini-valutazione: 10 compiti tipici del mio lavoro, per ognuno la risposta ideale e 3 criteri di voto da 1 a 5. Dammi un foglio da riempire per confrontare due modelli.\" Poi provalo su **3 compiti** con due modelli diversi.",
+      "checklist": [],
+      "eli5": "È come scegliere un'auto: la prova su pista della casa costruttrice dice qualcosa, ma conta di più come va sulla strada che fai tu ogni mattina.",
+      "deepDive": [
+        {
+          "title": "Cosa vuol dire mixture-of-experts",
+          "text": "Un modello mixture-of-experts è diviso in tanti sottomodelli, gli esperti. Per ogni parola ne attiva solo alcuni: per questo un modello da 2.800 miliardi di parametri ne usa circa 104 miliardi alla volta e costa meno da far girare."
+        },
+        {
+          "title": "Perché i pesi aperti contano",
+          "text": "Con i pesi aperti un'azienda può scaricare il modello e farlo girare sui propri server, senza mandare dati a terzi. Per questo Moonshot ha tolto alcune capacità informatiche pericolose prima del rilascio: una volta pubblicati, i pesi non si possono più ritirare."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "pesi aperti",
+          "meaning": "I parametri di un modello pubblicati e scaricabili, così chiunque può farlo girare sui propri computer."
+        },
+        {
+          "term": "benchmark",
+          "meaning": "Una batteria di prove standard per confrontare i modelli tra loro."
+        },
+        {
+          "term": "mixture-of-experts",
+          "meaning": "Architettura in cui il modello attiva solo una parte dei suoi sottomodelli per ogni passo, risparmiando calcolo."
+        }
+      ],
+      "sources": [
+        {
+          "title": "MarkTechPost — Moonshot AI Releases Kimi K3.1 Pro",
+          "url": "https://www.marktechpost.com/2026/10/23/moonshot-ai-kimi-k3-1-pro-open-weight-model/"
+        },
+        {
+          "title": "The Next Web — Moonshot releases Kimi K3.1 Pro and says it cut its hacking skills",
+          "url": "https://thenextweb.com/news/moonshot-kimi-k3-1-pro-open-weight-cyber"
+        },
+        {
+          "title": "Yotta Labs — Kimi K3.1 Pro: Specs, Price, Open Weights Date",
+          "url": "https://www.yottalabs.ai/post/kimi-k3-1-pro-specs-price-open-weights-benchmarks"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Perché i risultati di Kimi K3.1 Pro su Terminal-Bench vanno presi con cautela?",
+          "options": [
+            "Perché il test è vecchio di dieci anni",
+            "Perché sono dichiarati dall'azienda e non ancora verificati in modo indipendente",
+            "Perché il modello non è disponibile",
+            "Perché Terminal-Bench misura solo la velocità"
+          ],
+          "answer": 1,
+          "explanation": "Il 65,7% viene da Moonshot; una classifica indipendente lo mette quarto. I numeri dichiarati da chi vende vanno sempre verificati."
+        },
+        {
+          "q": "Qual è il modo più affidabile per scegliere tra due modelli per il tuo lavoro?",
+          "options": [
+            "Guardare chi è primo in classifica",
+            "Scegliere sempre il più caro",
+            "Provarli sugli stessi compiti tipici con criteri di voto fissati prima",
+            "Scegliere quello con più parametri"
+          ],
+          "answer": 2,
+          "explanation": "Una piccola valutazione sui tuoi compiti reali dice più di qualsiasi classifica generale."
+        }
+      ],
+      "reflection": "Quali sono i tre compiti che fai più spesso con l'AI, e come capiresti se un modello più economico li fa altrettanto bene?",
+      "id": "2026-10-25-ai",
+      "label": "Intelligenza artificiale"
+    },
+    {
+      "category": "finanza",
+      "interests": [
+        "finanza",
+        "economia",
+        "geopolitica"
+      ],
+      "title": "Petrolio a 116 dollari e rendimenti al 5%: perché le Borse tremano",
+      "subtitle": "Brent ai massimi da aprile, Treasury decennale al 4,99%: la settimana chiude in calo",
+      "summary": "Venerdì il **Brent ha chiuso a 116,72 dollari**, il livello più alto da fine aprile, e il rendimento del Treasury decennale è arrivato al **4,99%**. Petrolio caro e tassi alti sono una coppia che pesa sulle azioni, soprattutto quelle tecnologiche.",
+      "stat": {
+        "value": "116,72 $",
+        "label": "chiusura del Brent venerdì 23 ottobre, massimo da sei mesi"
+      },
+      "sections": [
+        {
+          "heading": "Il balzo del petrolio",
+          "text": "Venerdì il Brent è salito di **3,55 dollari (+3,1%)** e ha chiuso a 116,72 dollari al barile, il livello più alto dal 29 aprile. Il WTI americano ha superato i 103 dollari."
+        },
+        {
+          "heading": "La scintilla in Medio Oriente",
+          "text": "Hanno pesato i nuovi **attacchi degli Houthi contro infrastrutture saudite** e una fuoriuscita di petrolio negli Emirati. Secondo CNBC gli investitori si aspettano anche una ripresa degli attacchi statunitensi contro l'Iran nelle prossime settimane."
+        },
+        {
+          "heading": "Rendimenti a un passo dal 5%",
+          "text": "Il rendimento del Treasury a 10 anni è salito al **4,99%**. Il petrolio caro alimenta i timori di inflazione, e con l'inflazione i mercati temono tassi alti più a lungo."
+        },
+        {
+          "heading": "Le Borse chiudono in rosso",
+          "text": "Il Dow Jones ha perso l'**1,2%**, l'S&P 500 lo 0,5% e il Nasdaq lo 0,2%. Sul settore tecnologico pesano anche i dubbi sul costo dei debiti per finanziare gli investimenti nell'AI."
+        },
+        {
+          "heading": "La settimana che arriva",
+          "text": "Escono i conti di circa un terzo delle società dell'S&P 500, tra cui **Alphabet, Microsoft e Amazon**, e si riunisce la Federal Reserve. Saranno i due test per capire se la correzione continua."
+        }
+      ],
+      "keyPoints": [
+        "Brent a 116,72 $, massimo da fine aprile, per le tensioni in Medio Oriente",
+        "Treasury decennale al 4,99%: i mercati temono inflazione e tassi alti",
+        "Settimana prossima: conti di Big Tech e riunione della Fed"
+      ],
+      "whyItMatters": "Petrolio e tassi arrivano anche nel tuo portafoglio: **carburante e bollette** più cari, mutui a tasso variabile e prezzi delle obbligazioni che si muovono. Capire il legame tra rendimenti e prezzi ti evita di reagire d'istinto ai titoli dei giornali.",
+      "actionToday": "Apri il tuo conto titoli o il fondo pensione e guarda la **quota di obbligazioni** e la loro durata media (duration). Scrivi una riga: se i rendimenti salissero ancora di un punto, quanto potrebbero scendere?",
+      "checklist": [],
+      "eli5": "Un'obbligazione è come un biglietto che paga sempre lo stesso interesse. Se domani escono biglietti nuovi che pagano di più, i tuoi vecchi valgono meno: per venderli devi abbassare il prezzo.",
+      "deepDive": [
+        {
+          "title": "Perché rendimenti e prezzi vanno in direzioni opposte",
+          "text": "Un titolo che paga una cedola fissa del 4% vale meno quando i nuovi titoli rendono il 5%: il suo prezzo scende finché il rendimento effettivo per chi lo compra si allinea. Più è lunga la durata, più il prezzo si muove: è quello che misura la duration."
+        },
+        {
+          "title": "Perché i tassi pesano sulle tecnologiche",
+          "text": "Il valore delle aziende tecnologiche dipende molto dagli utili attesi tra molti anni. Con tassi più alti quei soldi futuri valgono meno oggi, e chi investe chiede di più per aspettare. Per questo il Nasdaq soffre spesso quando salgono i rendimenti."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Brent",
+          "meaning": "Il petrolio del Mare del Nord usato come prezzo di riferimento mondiale."
+        },
+        {
+          "term": "rendimento",
+          "meaning": "Il guadagno annuo di un'obbligazione rispetto al prezzo pagato: sale quando il prezzo scende."
+        },
+        {
+          "term": "duration",
+          "meaning": "Misura di quanto il prezzo di un'obbligazione reagisce a una variazione dei tassi: più è alta, più il prezzo si muove."
+        }
+      ],
+      "sources": [
+        {
+          "title": "CNBC — Brent crude oil tops $116, a six-month high",
+          "url": "https://www.cnbc.com/2026/10/23/oil-price-brent-wti-iran-war-saudi-arabia.html"
+        },
+        {
+          "title": "Proactive Investors — Wall Street ends volatile week lower as oil hits six-month high",
+          "url": "https://www.proactiveinvestors.com/companies/news/1100595/markets-live-wall-street-ends-volatile-week-lower-as-oil-hits-six-month-high-1100595.html"
+        },
+        {
+          "title": "Anadolu Agency — New York stock market closes week lower",
+          "url": "https://aa.com.tr/en/economy/new-york-stock-market-closes-week-lower/4099106"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Se i rendimenti dei titoli di Stato salgono, cosa succede al prezzo delle obbligazioni già in circolazione?",
+          "options": [
+            "Sale",
+            "Scende",
+            "Resta uguale",
+            "Raddoppia"
+          ],
+          "answer": 1,
+          "explanation": "Le vecchie obbligazioni pagano meno delle nuove: per renderle appetibili il loro prezzo deve scendere."
+        },
+        {
+          "q": "Perché il petrolio caro preoccupa chi investe in azioni?",
+          "options": [
+            "Perché le compagnie petrolifere chiudono",
+            "Perché alimenta l'inflazione e quindi il rischio di tassi alti più a lungo",
+            "Perché abbassa i rendimenti",
+            "Perché blocca le Borse per legge"
+          ],
+          "answer": 1,
+          "explanation": "Energia più cara spinge i prezzi; le banche centrali possono tenere i tassi alti, e questo pesa sulle valutazioni delle azioni."
+        }
+      ],
+      "reflection": "Quanto del tuo risparmio è esposto ai tassi (obbligazioni, mutuo variabile, conto deposito)? Lo sapevi prima di oggi?",
+      "id": "2026-10-25-finanza",
+      "label": "Finanza"
+    },
+    {
+      "category": "mondo",
+      "interests": [
+        "politica",
+        "geopolitica",
+        "storia"
+      ],
+      "title": "Brasile al ballottaggio: Lula contro Flávio Bolsonaro, testa a testa",
+      "subtitle": "Oggi il secondo turno: i sondaggi danno il figlio dell'ex presidente avanti di un soffio",
+      "summary": "Oggi i brasiliani scelgono il presidente tra **Luiz Inácio Lula da Silva** e **Flávio Bolsonaro**, figlio dell'ex presidente Jair. Gli ultimi sondaggi li danno quasi pari, con Bolsonaro leggermente avanti.",
+      "stat": {
+        "value": "51-49",
+        "label": "Flávio Bolsonaro su Lula negli ultimi sondaggi Datafolha e Quaest"
+      },
+      "sections": [
+        {
+          "heading": "Il primo turno",
+          "text": "Al primo turno del 4 ottobre Flávio Bolsonaro ha preso il **47,3% dei voti validi**, Lula il 45,2%. Nessuno ha superato il 50%, quindi si torna a votare oggi, 25 ottobre."
+        },
+        {
+          "heading": "Sondaggi quasi pari",
+          "text": "Datafolha e Quaest danno **Bolsonaro al 51% e Lula al 49%**; altri istituti mostrano distacchi ancora più piccoli, dentro il margine di errore. In pratica l'esito è aperto."
+        },
+        {
+          "heading": "Su cosa si è votato",
+          "text": "La campagna è stata dominata da **sicurezza e corruzione**. Lula, al terzo mandato, difende i programmi sociali; Bolsonaro raccoglie l'eredità politica del padre e gli elettori di destra."
+        },
+        {
+          "heading": "Perché conta fuori dal Brasile",
+          "text": "Il Brasile è la **più grande economia dell'America Latina** e un attore chiave su clima, Amazzonia e commercio con Cina e Stati Uniti. Un cambio di presidente sposterebbe gli equilibri della regione."
+        },
+        {
+          "heading": "Quando arrivano i risultati",
+          "text": "Il tribunale elettorale inizia a diffondere i risultati intorno alle **17 di Brasília**, cioè le 21 in Italia. Con il voto elettronico il nome del vincitore di solito si conosce in poche ore."
+        }
+      ],
+      "keyPoints": [
+        "Oggi il ballottaggio tra Lula e Flávio Bolsonaro",
+        "Primo turno: Bolsonaro 47,3%, Lula 45,2%",
+        "Sondaggi finali quasi pari, dentro il margine di errore"
+      ],
+      "whyItMatters": "Il Brasile pesa su materie prime, clima e commercio mondiale. E il voto è un caso da manuale di **ballottaggio in un paese polarizzato**: due blocchi quasi uguali, dove decidono pochi punti di affluenza.",
+      "actionToday": "Stasera, quando escono i risultati, guarda la differenza in punti tra i due e confrontala con il **51-49** dei sondaggi: lo scarto rientra nel margine di errore o no?",
+      "checklist": [],
+      "eli5": "È come una finale ai rigori: durante la partita nessuno ha segnato abbastanza, così si gioca un'ultima sfida secca tra i due rimasti.",
+      "deepDive": [
+        {
+          "title": "Come funziona il ballottaggio brasiliano",
+          "text": "Per essere eletto al primo turno serve più del 50% dei voti validi, senza contare schede bianche e nulle. Se nessuno ci arriva, i due più votati si sfidano tre settimane dopo. Il voto è obbligatorio per chi ha tra 18 e 70 anni."
+        },
+        {
+          "title": "Il peso dei sondaggi",
+          "text": "Un sondaggio con margine di errore di 2 punti che dà 51 a 49 è compatibile anche con una vittoria dello sfavorito. Nel 2022, al primo turno, molti sondaggi avevano sottostimato il voto per Jair Bolsonaro: per questo oggi gli analisti invitano alla prudenza."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "ballottaggio",
+          "meaning": "Secondo turno tra i due candidati più votati quando nessuno ha raggiunto la maggioranza richiesta."
+        },
+        {
+          "term": "margine di errore",
+          "meaning": "L'intervallo entro cui il risultato reale può discostarsi da quello di un sondaggio."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Anadolu Agency — Brazil runoff poll puts Bolsonaro 1 point up",
+          "url": "https://www.aa.com.tr/en/politics/brazil-runoff-poll-puts-bolsonaro-1-point-up-in-presidential-race/4096317"
+        },
+        {
+          "title": "The Rio Times — Brazil Election 2026: Presidential Runoff, Lula vs Flávio",
+          "url": "https://www.riotimesonline.com/brazil-runoff-october-25-2026-flavio-bolsonaro-lula/"
+        },
+        {
+          "title": "Euronews — Brazil heads to a runoff presidential vote",
+          "url": "https://www.euronews.com/2026/10/05/brazil-heads-to-a-runoff-presidential-vote-after-bolsonaro-and-lula-fail-to-acquire-outrig"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Perché in Brasile si vota una seconda volta?",
+          "options": [
+            "Perché il primo turno è stato annullato",
+            "Perché nessun candidato ha superato il 50% dei voti validi",
+            "Perché lo chiede la Costituzione ogni volta",
+            "Perché ha vinto un terzo candidato"
+          ],
+          "answer": 1,
+          "explanation": "Al primo turno serve la maggioranza assoluta dei voti validi: Bolsonaro si è fermato al 47,3%, Lula al 45,2%."
+        },
+        {
+          "q": "Un sondaggio dà 51 a 49 con margine di errore di 2 punti. Cosa se ne può concludere?",
+          "options": [
+            "Che vince sicuramente chi ha 51",
+            "Che il risultato è compatibile con la vittoria di entrambi",
+            "Che il sondaggio è sbagliato",
+            "Che l'affluenza sarà alta"
+          ],
+          "answer": 1,
+          "explanation": "Lo scarto è dentro il margine di errore: il sondaggio non permette di indicare con certezza un vincitore."
+        }
+      ],
+      "reflection": "Quando leggi un sondaggio molto stretto, tendi a fidarti di quello che conferma il risultato che speri? Come potresti accorgertene?",
+      "id": "2026-10-25-mondo",
+      "label": "Mondo"
+    },
+    {
+      "category": "sapere",
+      "interests": [
+        "psicologia",
+        "crescita",
+        "scienza"
+      ],
+      "title": "Il bias di conferma: perché cerchiamo solo le prove che ci danno ragione",
+      "subtitle": "Il test 2-4-6 di Wason e come smontare le proprie convinzioni prima che lo faccia la realtà",
+      "summary": "Tendiamo a cercare, ricordare e interpretare le informazioni in modo che **confermino quello che pensiamo già**. Sapere come funziona il bias di conferma è il primo passo per decidere meglio.",
+      "stat": {
+        "value": "1960",
+        "label": "Peter Wason pubblica l'esperimento della sequenza 2-4-6"
+      },
+      "sections": [
+        {
+          "heading": "Il gioco del 2-4-6",
+          "text": "Nel 1960 lo psicologo Peter Wason dava ai partecipanti la sequenza **2-4-6** e chiedeva di scoprire la regola proponendo altre terne. Quasi tutti provavano 8-10-12 o 20-22-24, ottenevano un sì e si convincevano: \"numeri pari crescenti di due\"."
+        },
+        {
+          "heading": "La regola era un'altra",
+          "text": "La regola vera era semplicemente **\"tre numeri in ordine crescente\"**. Per scoprirla bisognava provare terne che avrebbero potuto smentire l'ipotesi, come 1-2-3 o 5-10-50. Pochissimi lo facevano."
+        },
+        {
+          "heading": "Tre forme dello stesso errore",
+          "text": "Il bias di conferma agisce mentre **cerchiamo** informazioni (solo fonti che ci danno ragione), mentre le **interpretiamo** (leggiamo i dati ambigui a nostro favore) e mentre le **ricordiamo** (teniamo a mente i casi che tornano)."
+        },
+        {
+          "heading": "Dove costa caro",
+          "text": "Negli investimenti si leggono solo le analisi a favore del titolo che si possiede. Al lavoro si raccolgono i dati che sostengono il progetto già deciso. Nei rapporti si nota solo ciò che conferma la prima impressione."
+        },
+        {
+          "heading": "L'antidoto: cercare la smentita",
+          "text": "La domanda utile non è \"cosa conferma la mia idea?\", ma **\"cosa dovrei vedere se avessi torto?\"**. Poi andare a cercarlo davvero."
+        }
+      ],
+      "keyPoints": [
+        "Cerchiamo e ricordiamo soprattutto le prove che ci danno ragione",
+        "Nel test di Wason pochi provano terne che potrebbero smentirli",
+        "Chiediti cosa vedresti se avessi torto, poi cercalo"
+      ],
+      "whyItMatters": "Le decisioni peggiori raramente nascono dalla mancanza di informazioni: nascono da informazioni **filtrate senza accorgersene**. Contrastare il bias di conferma migliora investimenti, progetti e giudizi sulle persone.",
+      "actionToday": "Scegli una convinzione importante (un investimento, una scelta di lavoro). Scrivi **tre fatti che, se veri, ti farebbero cambiare idea**, poi dedica 10 minuti a cercare se esistono.",
+      "checklist": [],
+      "eli5": "È come cercare le chiavi solo nella stanza dove sei convinto di averle lasciate: puoi cercare benissimo, ma se sono in cucina non le troverai mai.",
+      "deepDive": [
+        {
+          "title": "Perché il cervello lo fa",
+          "text": "Confermare è economico: richiede meno sforzo che rimettere in discussione un'idea, e protegge la nostra immagine di persone che hanno ragione. In un ambiente semplice era una scorciatoia utile; in un mondo pieno di informazioni ci espone a scegliere quelle sbagliate."
+        },
+        {
+          "title": "L'avvocato del diavolo e il pre-mortem",
+          "text": "Due tecniche aiutano i gruppi. L'avvocato del diavolo affida a una persona il compito di sostenere la tesi opposta. Il pre-mortem, proposto dallo psicologo Gary Klein, chiede di immaginare che il progetto sia fallito e di scrivere perché: così emergono i dubbi che nessuno osava dire."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "bias di conferma",
+          "meaning": "La tendenza a cercare, interpretare e ricordare le informazioni in modo che confermino ciò che già si pensa."
+        },
+        {
+          "term": "pre-mortem",
+          "meaning": "Esercizio in cui si immagina che un progetto sia già fallito per individuarne in anticipo i rischi."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wikipedia — Bias di conferma",
+          "url": "https://it.wikipedia.org/wiki/Bias_di_conferma"
+        },
+        {
+          "title": "Wikipedia — Confirmation bias",
+          "url": "https://en.wikipedia.org/wiki/Confirmation_bias"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Nel test 2-4-6, quale terna aiutava di più a scoprire la regola vera?",
+          "options": [
+            "8-10-12",
+            "20-22-24",
+            "1-2-3",
+            "100-102-104"
+          ],
+          "answer": 2,
+          "explanation": "1-2-3 non segue l'ipotesi \"pari crescenti di due\": se ottiene comunque un sì, dimostra che l'ipotesi era sbagliata."
+        },
+        {
+          "q": "Qual è la domanda che contrasta meglio il bias di conferma?",
+          "options": [
+            "Chi è d'accordo con me?",
+            "Cosa dovrei vedere se avessi torto?",
+            "Quante prove ho a favore?",
+            "Qual è la fonte più famosa?"
+          ],
+          "answer": 1,
+          "explanation": "Cercare attivamente ciò che smentirebbe la propria idea è l'antidoto più efficace."
+        }
+      ],
+      "reflection": "Su quale tua convinzione non hai mai cercato seriamente le prove contrarie?",
+      "id": "2026-10-25-sapere",
+      "label": "Sapere"
+    },
+    {
+      "category": "routine",
+      "interests": [
+        "salute",
+        "produttivita",
+        "crescita"
+      ],
+      "title": "Cambio dell'ora: la sveglia fissa che rimette a posto il sonno",
+      "subtitle": "Stanotte siamo tornati all'ora solare: tre giorni di abitudini per riallineare l'orologio interno",
+      "summary": "Stanotte alle 3 le lancette sono tornate alle 2: **un'ora di sonno in più**, ma anche un orologio interno da riallineare. La regola più solida è una sola: **svegliarsi ogni giorno alla stessa ora**.",
+      "stat": {
+        "value": "60 min",
+        "label": "lo spostamento delle lancette nella notte tra il 24 e il 25 ottobre"
+      },
+      "sections": [
+        {
+          "heading": "Cosa è successo stanotte",
+          "text": "Alle **3:00 di oggi** gli orologi sono tornati alle 2:00 in tutta l'Unione Europea: siamo all'ora solare fino al 28 marzo 2027. Da domani il sole tramonta prima e la sera fa buio più presto."
+        },
+        {
+          "heading": "Perché l'orologio interno sbanda",
+          "text": "Il nostro ritmo circadiano si regola soprattutto con **la luce del mattino**. Un'ora di differenza è poca, ma per qualche giorno ci si può svegliare troppo presto o sentirsi stanchi già nel pomeriggio."
+        },
+        {
+          "heading": "L'ancora: la sveglia fissa",
+          "text": "Svegliarsi **alla stessa ora tutti i giorni**, weekend compresi, è il modo più semplice per stabilizzare il sonno. L'ora a cui ci si addormenta tende poi a sistemarsi da sola."
+        },
+        {
+          "heading": "Luce di giorno, buio di sera",
+          "text": "Uscire alla luce **nella prima ora dopo il risveglio** aiuta il corpo a capire che è mattina. La sera, luci basse e schermi lontani nell'ultima mezz'ora favoriscono l'addormentamento."
+        }
+      ],
+      "keyPoints": [
+        "Stanotte siamo tornati all'ora solare: un'ora in più di sonno",
+        "La sveglia fissa, anche nel weekend, stabilizza il ritmo",
+        "Luce al mattino e luci basse la sera aiutano il riallineamento"
+      ],
+      "whyItMatters": "Il sonno regolare migliora concentrazione, umore e controllo dell'appetito. Il cambio dell'ora è l'occasione perfetta per fissare **un orario di sveglia che valga tutta la settimana**.",
+      "actionToday": "Decidi adesso la tua **ora di sveglia fissa** per i prossimi 7 giorni e impostala come sveglia ripetuta. Stasera fai 10 minuti senza schermi prima di dormire.",
+      "checklist": [
+        "Imposta una sveglia uguale per tutti i giorni della settimana",
+        "Esci alla luce entro un'ora dal risveglio, anche 10 minuti",
+        "Niente caffè dopo le 15",
+        "Ultimi 30 minuti della sera con luci basse e senza schermi",
+        "Sistema a mano forno, auto e orologi non collegati alla rete"
+      ],
+      "eli5": "Il corpo ha un orologio che si rimette in ora guardando la luce del mattino. Se ogni giorno gliela mostri alla stessa ora, si regola da solo in pochi giorni.",
+      "deepDive": [
+        {
+          "title": "Il cronotipo",
+          "text": "Non tutti hanno lo stesso orologio: c'è chi è naturalmente mattiniero e chi nottambulo. La sveglia fissa non deve essere all'alba: deve essere costante. Scegli un orario sostenibile per te, e tienilo."
+        },
+        {
+          "title": "Il dibattito sul cambio dell'ora",
+          "text": "In Italia e in Europa si discute da anni se abolire il cambio dell'ora. La Camera ha avviato un'indagine conoscitiva sull'ipotesi di un'ora legale permanente, ma per ora il cambio resta in vigore: il prossimo è il 28 marzo 2027."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "ritmo circadiano",
+          "meaning": "Il ciclo biologico di circa 24 ore che regola sonno, veglia, temperatura e ormoni."
+        },
+        {
+          "term": "cronotipo",
+          "meaning": "La predisposizione personale a essere più attivi al mattino o alla sera."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Sky TG24 — Ora solare 2026, quando torna e come spostare le lancette",
+          "url": "https://tg24.sky.it/cronaca/2026/09/08/ora-solare-2026-quando-torna"
+        },
+        {
+          "title": "Idealista — Torna l'ora solare 2026, quando cambia e come funziona",
+          "url": "https://www.idealista.it/news/node/446396"
+        },
+        {
+          "title": "Wikipedia — Ritmo circadiano",
+          "url": "https://it.wikipedia.org/wiki/Ritmo_circadiano"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Qual è l'abitudine più efficace per stabilizzare il sonno dopo il cambio dell'ora?",
+          "options": [
+            "Dormire di più nel weekend",
+            "Svegliarsi alla stessa ora ogni giorno",
+            "Andare a letto appena si ha sonno",
+            "Fare un pisolino lungo il pomeriggio"
+          ],
+          "answer": 1,
+          "explanation": "Un'ora di sveglia costante, weekend compresi, è l'ancora che regola il ritmo circadiano."
+        },
+        {
+          "q": "Cosa aiuta di più l'orologio interno a capire che è mattina?",
+          "options": [
+            "Una colazione abbondante",
+            "La luce del giorno poco dopo il risveglio",
+            "Una doccia calda",
+            "Il caffè"
+          ],
+          "answer": 1,
+          "explanation": "La luce del mattino è il segnale principale che sincronizza il ritmo circadiano."
+        }
+      ],
+      "reflection": "Quanto cambia la tua ora di sveglia tra giorni feriali e weekend? Che cosa ti impedisce di tenerla uguale?",
+      "id": "2026-10-25-routine",
+      "label": "Metodo & routine"
+    }
+  ],
+  "extras": [
+    {
+      "topic": "cinema",
+      "kind": "news",
+      "title": "Festa del Cinema di Roma: vince Clio Barnard, premiato Paolo Pierobon",
+      "subtitle": "Chiusa ieri la 21ª edizione: miglior film \"I See Buildings Fall Like Lightning\"",
+      "summary": "Ieri sera la Festa del Cinema di Roma ha assegnato i premi: **miglior film** a *I See Buildings Fall Like Lightning* di Clio Barnard. Per l'Italia festeggia **Paolo Pierobon**, miglior attore ex aequo per *Brianza*.",
+      "stat": {
+        "value": "21ª",
+        "label": "edizione della Festa del Cinema di Roma, chiusa il 24 ottobre"
+      },
+      "sections": [
+        {
+          "heading": "Il miglior film",
+          "text": "Il premio principale è andato a **I See Buildings Fall Like Lightning** della regista britannica Clio Barnard. Il Gran premio della giuria a *The Life and Deaths of Wilson Shedd* di Tim Blake Nelson."
+        },
+        {
+          "heading": "Attori e regia",
+          "text": "Miglior attore **ex aequo** ad Anthony Boyle, protagonista del film di Barnard, e all'italiano **Paolo Pierobon** per *Brianza*. Miglior attrice Victoria Luengo per *Sants*, miglior regia Rafiki Fariala per *Congo Boy*."
+        },
+        {
+          "heading": "Il premio del pubblico",
+          "text": "Il pubblico ha diviso il premio tra *Congo Boy* e **Mustang**, l'opera di Kasia Smutniak. Miglior documentario *Dans la gueule de l'ogre* di Mahsa Karampour."
+        },
+        {
+          "heading": "Cosa segnarsi",
+          "text": "I film premiati ai festival autunnali spesso arrivano in sala o in streaming nei mesi successivi. **Brianza** e **Mustang** sono i titoli italiani da tenere d'occhio."
+        }
+      ],
+      "keyPoints": [
+        "Miglior film: I See Buildings Fall Like Lightning di Clio Barnard",
+        "Paolo Pierobon miglior attore ex aequo per Brianza",
+        "Premio del pubblico a Congo Boy e Mustang di Kasia Smutniak"
+      ],
+      "whyItMatters": "I palmarès dei festival sono una **lista di visione già filtrata**: ti aiutano a scegliere cosa vedere nei prossimi mesi senza affidarti solo agli algoritmi.",
+      "actionToday": "Aggiungi **Brianza** e **Mustang** alla tua lista di film da vedere e imposta un promemoria per controllare a dicembre se sono usciti.",
+      "checklist": [],
+      "eli5": "Un festival è come una degustazione: una giuria assaggia decine di film e ti dice quali vale la pena ordinare.",
+      "deepDive": [
+        {
+          "title": "Perché \"ex aequo\"",
+          "text": "Quando una giuria non riesce a scegliere tra due interpretazioni, può dividere il premio. Succede spesso nei festival: è un modo per segnalare due lavori di pari valore invece di sacrificarne uno."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "ex aequo",
+          "meaning": "A pari merito: il premio è condiviso da due vincitori."
+        },
+        {
+          "term": "palmarès",
+          "meaning": "L'elenco dei premi assegnati da un festival o di quelli vinti da qualcuno."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Sky TG24 — Festa del Cinema di Roma 2026: tutti i vincitori",
+          "url": "https://tg24.sky.it/spettacolo/cinema/2026/10/24/vincitori-festa-cinema-roma-2026"
+        },
+        {
+          "title": "Movieplayer — Festa del Cinema di Roma: tutti i vincitori dell'edizione 2026",
+          "url": "https://movieplayer.it/news/festa-del-cinema-roma-i-vincitori-2026_171654/"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Quale film italiano ha portato a Paolo Pierobon il premio come miglior attore?",
+          "options": [
+            "Mustang",
+            "Brianza",
+            "Sants",
+            "Congo Boy"
+          ],
+          "answer": 1,
+          "explanation": "Pierobon ha vinto ex aequo con Anthony Boyle per la sua interpretazione in Brianza."
+        }
+      ],
+      "reflection": "Ti fidi più dei premi dei festival, delle recensioni o dei consigli degli amici per scegliere un film? Perché?",
+      "id": "2026-10-25-x-cinema-news",
+      "category": "mondo",
+      "label": "Cinema e serie"
+    },
+    {
+      "topic": "cinema",
+      "kind": "spunto",
+      "title": "L'effetto Kuleshov: come il montaggio cambia quello che vediamo",
+      "subtitle": "Lo stesso volto, tre emozioni diverse: l'esperimento che spiega il cinema",
+      "summary": "Negli anni Venti il regista sovietico Lev Kuleshov mostrò che **lo stesso primo piano** sembra esprimere fame, dolore o desiderio a seconda dell'immagine che lo segue. Il significato nasce **dall'accostamento**.",
+      "stat": {
+        "value": "3",
+        "label": "le inquadrature accostate allo stesso volto nell'esperimento"
+      },
+      "sections": [
+        {
+          "heading": "L'esperimento",
+          "text": "Kuleshov montò il volto inespressivo di un attore accanto a un piatto di minestra, a una bambina in una bara e a una donna sdraiata. Il pubblico giurò che l'attore mostrasse **fame, dolore e desiderio**: il volto era sempre lo stesso."
+        },
+        {
+          "heading": "Cosa ci insegna",
+          "text": "Lo spettatore **completa il senso** collegando le immagini. Il montaggio non mostra solo cosa succede: decide cosa proviamo."
+        },
+        {
+          "heading": "Dove lo ritrovi",
+          "text": "Lo usano Hitchcock, la pubblicità e perfino i video sui social: **una reazione accostata a un'altra scena** cambia il significato di entrambe."
+        }
+      ],
+      "keyPoints": [
+        "Lo stesso volto cambia emozione a seconda dell'immagine accanto",
+        "Il senso nasce dall'accostamento delle inquadrature",
+        "Lo usano registi, pubblicitari e creator"
+      ],
+      "whyItMatters": "Riconoscere l'effetto Kuleshov ti fa guardare i film con più consapevolezza e ti rende **meno manipolabile** da video montati ad arte.",
+      "actionToday": "Stasera, guardando un film o una serie, fermati su una scena di dialogo e chiediti: **la reazione che vedo è dell'attore o del montaggio?**",
+      "checklist": [
+        "Scegli una scena con un primo piano muto",
+        "Nota quale inquadratura viene subito prima",
+        "Immagina un'altra immagine al suo posto: cambia l'emozione?"
+      ],
+      "eli5": "Se mostri una foto di una persona che guarda in basso e poi una torta, sembra golosa. Se poi mostri un cane ferito, sembra triste. La foto non è cambiata.",
+      "deepDive": [
+        {
+          "title": "Hitchcock lo spiegava così",
+          "text": "In una famosa intervista Hitchcock mostrava il proprio volto che sorride dopo l'immagine di una madre con un bambino: sembra un uomo gentile. Con la stessa espressione dopo una ragazza in bikini, sembra un uomo poco raccomandabile."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "montaggio",
+          "meaning": "L'operazione con cui si scelgono e si accostano le inquadrature di un film."
+        },
+        {
+          "term": "primo piano",
+          "meaning": "Inquadratura stretta sul volto di un personaggio."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wikipedia — Effetto Kuleshov",
+          "url": "https://it.wikipedia.org/wiki/Effetto_Kuleshov"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Cosa dimostra l'effetto Kuleshov?",
+          "options": [
+            "Che gli attori sovietici erano i migliori",
+            "Che il significato di un'immagine dipende da quelle che le stanno accanto",
+            "Che il colore cambia le emozioni",
+            "Che il pubblico non guarda i volti"
+          ],
+          "answer": 1,
+          "explanation": "Lo stesso volto sembrava esprimere emozioni diverse in base all'inquadratura accostata."
+        }
+      ],
+      "reflection": "Ti viene in mente un video sui social che ti ha fatto provare un'emozione grazie al montaggio più che ai fatti?",
+      "id": "2026-10-25-x-cinema-spunto",
+      "category": "mondo",
+      "label": "Cinema e serie"
+    },
+    {
+      "topic": "cucina",
+      "kind": "news",
+      "title": "Osterie d'Italia 2027: 335 Chiocciole, la Campania prima per numero",
+      "subtitle": "La guida Slow Food, presentata a Torino, segnala 1.952 indirizzi in tutta Italia",
+      "summary": "Slow Food ha presentato la 37ª edizione di **Osterie d'Italia**: 1.952 locali e **335 Chiocciole**, il riconoscimento per le osterie migliori. In testa la **Campania** con 34 Chiocciole.",
+      "stat": {
+        "value": "335",
+        "label": "osterie premiate con la Chiocciola nella guida 2027"
+      },
+      "sections": [
+        {
+          "heading": "La guida",
+          "text": "Presentata il 19 ottobre alle OGR di Torino e in libreria dal 21, la guida 2027 elenca **1.952 indirizzi** e costa 24,90 euro. La versione app arriva il 3 novembre."
+        },
+        {
+          "heading": "Le regioni in testa",
+          "text": "Per numero di Chiocciole guida la **Campania con 34**, poi il Piemonte con 31; Emilia-Romagna, Toscana e Puglia seguono a pari merito con 26."
+        },
+        {
+          "heading": "I Locali Quotidiani",
+          "text": "Novità di quest'anno: i **175 Locali Quotidiani**, come pastifici, gastronomie ed enoteche con cucina, sono ora inseriti nelle sezioni regionali invece che in fondo alla guida."
+        }
+      ],
+      "keyPoints": [
+        "1.952 indirizzi e 335 Chiocciole nella guida 2027",
+        "Campania prima con 34 Chiocciole, poi il Piemonte con 31",
+        "I Locali Quotidiani entrano nelle sezioni regionali"
+      ],
+      "whyItMatters": "Le osterie della guida sono un buon modo per mangiare **cucina del territorio a prezzi onesti**, soprattutto in viaggio. Le Chiocciole segnalano chi lavora con prodotti locali e stagionali.",
+      "actionToday": "Cerca **l'osteria con la Chiocciola più vicina a casa tua** su un articolo regione per regione e segnatela per il prossimo weekend.",
+      "checklist": [],
+      "eli5": "È come chiedere a migliaia di amici golosi dove mangiano bene senza spendere troppo, e ritrovarti tutte le risposte in un libro.",
+      "deepDive": [
+        {
+          "title": "Cosa premia la Chiocciola",
+          "text": "La Chiocciola è il simbolo che Slow Food assegna alle osterie che, oltre a cucinare bene, rispecchiano i suoi valori: accoglienza, prodotti del territorio, rispetto della stagionalità e prezzi corretti."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Chiocciola",
+          "meaning": "Il riconoscimento di Slow Food alle migliori osterie della guida."
+        },
+        {
+          "term": "Slow Food",
+          "meaning": "Associazione nata in Italia che promuove il cibo buono, pulito e giusto."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Dissapore — Le migliori Osterie d'Italia del 2027 secondo Slow Food",
+          "url": "https://www.dissapore.com/ristoranti/le-migliori-osterie-ditalia-del-2027-secondo-slow-food-regione-per-regione/"
+        },
+        {
+          "title": "HorecaNews — La nuova guida Osterie d'Italia 2027",
+          "url": "https://horecanews.it/la-nuova-guida-osterie-ditalia-2027-tra-locali-e-piatti-delle-tradizioni-regionali"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Quale regione ha più Chiocciole nella guida Osterie d'Italia 2027?",
+          "options": [
+            "Piemonte",
+            "Toscana",
+            "Campania",
+            "Puglia"
+          ],
+          "answer": 2,
+          "explanation": "La Campania è prima con 34 Chiocciole, davanti al Piemonte con 31."
+        }
+      ],
+      "reflection": "Qual è il piatto della tua regione che vorresti trovare in un'osteria della guida?",
+      "id": "2026-10-25-x-cucina-news",
+      "category": "routine",
+      "label": "Cucina"
+    },
+    {
+      "topic": "cucina",
+      "kind": "spunto",
+      "title": "La reazione di Maillard: il segreto di una rosolatura perfetta",
+      "subtitle": "Perché la carne in padella diventa dorata e saporita, e come non rovinarla",
+      "summary": "La crosticina dorata di carne, pane e caffè tostato nasce dalla **reazione di Maillard**, tra zuccheri e proteine ad alta temperatura. Per ottenerla servono **superficie asciutta, padella calda e spazio**.",
+      "stat": {
+        "value": "140 °C",
+        "label": "circa la temperatura oltre la quale la reazione accelera"
+      },
+      "sections": [
+        {
+          "heading": "Cosa succede in padella",
+          "text": "Sopra i **140 °C circa** zuccheri e proteine reagiscono e creano centinaia di molecole di aroma e il tipico colore bruno. È diversa dalla caramellizzazione, che riguarda solo gli zuccheri."
+        },
+        {
+          "heading": "Il nemico è l'acqua",
+          "text": "Finché c'è acqua la superficie non supera i **100 °C** e il cibo bolle invece di rosolare. Per questo carne bagnata o padella troppo piena danno un risultato grigio e lesso."
+        },
+        {
+          "heading": "Le tre regole",
+          "text": "**Asciuga** bene la superficie, scalda la padella prima di aggiungere il cibo e **non affollarla**: meglio cuocere in due volte. E non girare troppo presto."
+        }
+      ],
+      "keyPoints": [
+        "La crosticina dorata nasce da zuccheri e proteine ad alta temperatura",
+        "L'acqua blocca la reazione sotto i 100 °C",
+        "Asciuga, scalda bene, non affollare la padella"
+      ],
+      "whyItMatters": "Capire una sola reazione chimica migliora **decine di piatti**: carne, verdure arrosto, pane tostato, persino la cipolla del soffritto.",
+      "actionToday": "La prossima volta che cuoci carne o verdure, **asciugale con carta da cucina** e cuocile in due turni invece che tutte insieme. Confronta il colore.",
+      "checklist": [
+        "Tampona il cibo con carta da cucina",
+        "Scalda la padella 2-3 minuti prima di iniziare",
+        "Lascia spazio tra i pezzi",
+        "Non girare finché il pezzo non si stacca da solo"
+      ],
+      "eli5": "È come abbronzarsi: serve calore, e se sei bagnato fradicio il sole non ti colora finché non ti asciughi.",
+      "deepDive": [
+        {
+          "title": "Perché si chiama così",
+          "text": "Prende il nome dal chimico francese Louis-Camille Maillard, che la descrisse nel 1912. Solo decenni dopo l'industria alimentare capì quanto fosse importante per il sapore di pane, birra, caffè e cioccolato."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "reazione di Maillard",
+          "meaning": "Reazione tra zuccheri e proteine ad alta temperatura che dà colore bruno e aroma ai cibi."
+        },
+        {
+          "term": "caramellizzazione",
+          "meaning": "Trasformazione dei soli zuccheri col calore, che produce colore e gusto di caramello."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wikipedia — Reazione di Maillard",
+          "url": "https://it.wikipedia.org/wiki/Reazione_di_Maillard"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Perché la carne bagnata in padella non diventa dorata?",
+          "options": [
+            "Perché l'acqua tiene la superficie intorno ai 100 °C",
+            "Perché l'acqua scioglie le proteine",
+            "Perché il sale non si attacca",
+            "Perché la padella si raffredda per sempre"
+          ],
+          "answer": 0,
+          "explanation": "Finché l'acqua evapora la superficie resta a circa 100 °C, troppo poco per la reazione di Maillard."
+        }
+      ],
+      "reflection": "Quale piatto che cucini spesso potrebbe migliorare con una rosolatura fatta meglio?",
+      "id": "2026-10-25-x-cucina-spunto",
+      "category": "routine",
+      "label": "Cucina"
+    },
+    {
+      "topic": "cultura",
+      "kind": "news",
+      "title": "Tiziano alla Galleria Borghese: l'Annunciazione di Treviso arriva a Roma",
+      "subtitle": "Una mostra-dossier fino all'8 dicembre per i 450 anni dalla morte del pittore",
+      "summary": "La Galleria Borghese ha aperto **\"Tiziano. Dialoghi tra Sacro e Profano\"**: l'Annunciazione del Duomo di Treviso dialoga per la prima volta con i Tiziano della collezione. Si visita **fino all'8 dicembre**.",
+      "stat": {
+        "value": "450",
+        "label": "anni dalla morte di Tiziano, nel 1576"
+      },
+      "sections": [
+        {
+          "heading": "La mostra",
+          "text": "Curata da Maria Giovanna Sarti, la mostra mette accanto **l'Annunciazione di Treviso** e i dipinti di Tiziano della Borghese, tra cui il celebre *Amor sacro e Amor profano*."
+        },
+        {
+          "heading": "Perché il quadro è a Roma",
+          "text": "La pala ha lasciato Treviso durante il **restauro degli affreschi del Pordenone** nella cappella Malchiostro, dove è custodita. Anche il dipinto è stato restaurato e ha rivelato nuovi dettagli."
+        },
+        {
+          "heading": "Le date",
+          "text": "Le fonti indicano l'apertura tra il 19 e il 20 ottobre; la chiusura è l'**8 dicembre 2026**. Meglio controllare orari e prenotazione sul sito del museo."
+        }
+      ],
+      "keyPoints": [
+        "L'Annunciazione di Treviso esposta accanto ai Tiziano della Borghese",
+        "La mostra celebra i 450 anni dalla morte del pittore",
+        "Aperta fino all'8 dicembre 2026"
+      ],
+      "whyItMatters": "Le mostre-dossier mettono a confronto **poche opere scelte**: si visitano in un'ora e permettono di guardare davvero, invece di correre tra cento sale.",
+      "actionToday": "Se passi da Roma entro l'8 dicembre, **prenota la visita**: alla Borghese l'ingresso è a turni. Altrimenti cerca online l'immagine dell'Annunciazione e guardala per 5 minuti.",
+      "checklist": [],
+      "eli5": "È come mettere vicine due foto della stessa persona a vent'anni di distanza: confrontandole noti cose che da sole non vedresti.",
+      "deepDive": [
+        {
+          "title": "Cos'è una mostra-dossier",
+          "text": "Una mostra-dossier ruota attorno a una sola opera o a un piccolo gruppo, studiati a fondo. Spesso nasce da un prestito o da un restauro, e permette di mostrare al pubblico scoperte che altrimenti resterebbero nei laboratori."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "pala d'altare",
+          "meaning": "Grande dipinto collocato sopra l'altare di una chiesa."
+        },
+        {
+          "term": "mostra-dossier",
+          "meaning": "Esposizione dedicata a una sola opera o a pochi lavori, approfonditi in dettaglio."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Finestre sull'Arte — Galleria Borghese, Tiziano. Dialoghi tra Sacro e Profano",
+          "url": "https://www.finestresullarte.info/mostre/galleria-borghese-tiziano-dialoghi-tra-sacro-e-profano-annunciazione-di-treviso"
+        },
+        {
+          "title": "Turismo Roma — Tiziano. Dialoghi tra Sacro e Profano",
+          "url": "https://turismoroma.it/it/node/178251"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Perché l'Annunciazione di Treviso è esposta a Roma?",
+          "options": [
+            "Perché è stata venduta alla Borghese",
+            "Perché la cappella dove si trova è in restauro",
+            "Perché è stata ritrovata in un deposito",
+            "Perché Treviso ha chiuso il Duomo"
+          ],
+          "answer": 1,
+          "explanation": "La pala è a Roma durante il restauro degli affreschi del Pordenone nella cappella Malchiostro."
+        }
+      ],
+      "reflection": "Preferisci le grandi mostre con tante opere o quelle piccole con pochi capolavori? Cosa ti resta di più dopo la visita?",
+      "id": "2026-10-25-x-cultura-news",
+      "category": "sapere",
+      "label": "Libri e cultura"
+    },
+    {
+      "topic": "cultura",
+      "kind": "spunto",
+      "title": "Guardare lentamente: 10 minuti davanti a un'opera sola",
+      "subtitle": "Il metodo dello slow looking per vedere davvero un quadro, anche da casa",
+      "summary": "Nei musei passiamo in media **pochi secondi** davanti a ogni opera. Lo **slow looking** propone l'opposto: sceglierne una e guardarla a lungo, con domande precise.",
+      "stat": {
+        "value": "10 min",
+        "label": "il tempo da dedicare a una sola opera"
+      },
+      "sections": [
+        {
+          "heading": "Il problema",
+          "text": "Nei musei si cammina di sala in sala e si fotografano le opere più che guardarle. Così resta **un'impressione vaga** e poco altro."
+        },
+        {
+          "heading": "Il metodo",
+          "text": "Scegli **un'opera sola** e guardala per dieci minuti. Prima descrivi solo quello che vedi, senza interpretare; poi chiediti cosa ti fa pensare; solo alla fine leggi la didascalia."
+        },
+        {
+          "heading": "Perché funziona",
+          "text": "Dopo i primi minuti l'occhio comincia a notare **dettagli, colori e gesti** che a un primo sguardo sfuggono. È lo stesso principio della lettura lenta di un libro."
+        }
+      ],
+      "keyPoints": [
+        "Nei musei guardiamo ogni opera per pochi secondi",
+        "Scegli un'opera e guardala dieci minuti",
+        "Prima descrivi, poi interpreta, infine leggi la didascalia"
+      ],
+      "whyItMatters": "Allena l'attenzione e trasforma una visita frettolosa in un ricordo. Funziona anche con **un'immagine ad alta risoluzione** sul computer.",
+      "actionToday": "Apri l'immagine di un quadro che ti piace, imposta un timer di **10 minuti** e segui i tre passi. Scrivi tre dettagli che non avevi mai notato.",
+      "checklist": [
+        "Scegli un'opera sola",
+        "Imposta un timer di 10 minuti",
+        "Descrivi solo ciò che vedi per i primi 3 minuti",
+        "Chiediti cosa ti fa pensare o provare",
+        "Leggi la didascalia solo alla fine"
+      ],
+      "eli5": "È come conoscere una persona: in un saluto veloce ricordi il vestito, in un'ora di chiacchiere scopri chi è.",
+      "deepDive": [
+        {
+          "title": "Lo Slow Art Day",
+          "text": "Dal 2009 musei di tutto il mondo partecipano allo Slow Art Day: i visitatori guardano poche opere per diversi minuti ciascuna e poi ne parlano insieme. L'idea è che l'arte si apra solo a chi le dà tempo."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "slow looking",
+          "meaning": "Pratica di osservare un'opera a lungo e con metodo, invece di guardarla di sfuggita."
+        },
+        {
+          "term": "didascalia",
+          "meaning": "Il testo accanto all'opera con autore, titolo, data e notizie essenziali."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wikipedia — Slow Art Day",
+          "url": "https://en.wikipedia.org/wiki/Slow_Art_Day"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Nel metodo dello slow looking, quando conviene leggere la didascalia?",
+          "options": [
+            "Prima di guardare",
+            "Alla fine, dopo aver osservato",
+            "Mai",
+            "A metà"
+          ],
+          "answer": 1,
+          "explanation": "Leggerla alla fine evita che le informazioni guidino lo sguardo prima di aver osservato da soli."
+        }
+      ],
+      "reflection": "Qual è l'ultima opera d'arte che ricordi davvero, e perché proprio quella?",
+      "id": "2026-10-25-x-cultura-spunto",
+      "category": "sapere",
+      "label": "Libri e cultura"
+    },
+    {
+      "topic": "viaggi",
+      "kind": "news",
+      "title": "Sciopero del 30 ottobre: cosa sapere prima di prenotare treni e voli",
+      "subtitle": "Le informazioni sono ancora discordanti: ecco come verificare prima di partire",
+      "summary": "Per **venerdì 30 ottobre** è annunciato uno sciopero generale, ma le fonti non concordano su quanto toccherà i trasporti. Alcune indicano uno stop ferroviario **dalle 21 del 29 alle 20:59 del 30**.",
+      "stat": {
+        "value": "30/10",
+        "label": "la data dello sciopero generale annunciato"
+      },
+      "sections": [
+        {
+          "heading": "Cosa è annunciato",
+          "text": "Per il 30 ottobre è proclamato uno **sciopero generale**. Secondo alcune fonti riguarda anche i treni, dalle 21:00 di giovedì 29 alle 20:59 di venerdì 30; secondo altre i principali comparti dei trasporti sarebbero esclusi."
+        },
+        {
+          "heading": "Le fasce garantite",
+          "text": "In caso di sciopero ferroviario, per i treni regionali valgono le **fasce garantite dalle 6 alle 9 e dalle 18 alle 21** nei giorni feriali. La Commissione di garanzia può ancora intervenire sulle date."
+        },
+        {
+          "heading": "Come muoversi",
+          "text": "Se devi viaggiare tra il 29 e il 30, **controlla la lista dei treni garantiti** sul sito dell'operatore pochi giorni prima e valuta di anticipare o posticipare la partenza."
+        }
+      ],
+      "keyPoints": [
+        "Sciopero generale annunciato per il 30 ottobre",
+        "Fonti discordanti sull'impatto su treni e voli",
+        "Treni regionali garantiti 6-9 e 18-21"
+      ],
+      "whyItMatters": "Un viaggio a cavallo del ponte di Ognissanti rischia di saltare. Saperlo **con qualche giorno di anticipo** ti permette di cambiare data senza penali o con meno stress.",
+      "actionToday": "Se hai un viaggio tra il 29 e il 30 ottobre, segnati un promemoria per il **28 ottobre**: controlla lo stato dello sciopero e i treni garantiti.",
+      "checklist": [],
+      "eli5": "È come una previsione del tempo che dice \"possibile pioggia\": non sai ancora se pioverà, ma ti conviene guardare il cielo prima di uscire.",
+      "deepDive": [
+        {
+          "title": "Perché le date possono cambiare",
+          "text": "In Italia gli scioperi nei servizi pubblici sono regolati da una legge che impone preavviso e fasce minime. La Commissione di garanzia può chiedere di spostarli se coincidono con periodi di forte traffico, come i ponti festivi."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "fasce garantite",
+          "meaning": "Orari in cui, anche durante uno sciopero, un servizio minimo deve essere assicurato."
+        },
+        {
+          "term": "Commissione di garanzia",
+          "meaning": "L'autorità che vigila sugli scioperi nei servizi pubblici essenziali."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Il Gazzettino — Scioperi ottobre 2026, tutte le date",
+          "url": "https://www.ilgazzettino.it/italia/primopiano/scioperi_ottobre_2026_date_treni_aerei-9780599.html"
+        },
+        {
+          "title": "Scuola Informa — Sciopero treni 30 ottobre 2026: orari e treni garantiti",
+          "url": "https://www.scuolainforma.news/sciopero-treni-30-ottobre-2026-le-novita-su-orari-e-treni-garantiti/"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Durante uno sciopero ferroviario, in quali fasce sono garantiti i treni regionali nei giorni feriali?",
+          "options": [
+            "8-10 e 16-18",
+            "6-9 e 18-21",
+            "Tutto il giorno",
+            "Solo la notte"
+          ],
+          "answer": 1,
+          "explanation": "Le fasce di tutela per i regionali sono dalle 6 alle 9 e dalle 18 alle 21."
+        }
+      ],
+      "reflection": "Quando un viaggio rischia di saltare, preferisci aspettare notizie certe o cambiare subito i piani?",
+      "id": "2026-10-25-x-viaggi-news",
+      "category": "mondo",
+      "label": "Viaggi"
+    },
+    {
+      "topic": "viaggi",
+      "kind": "spunto",
+      "title": "Volo in ritardo? Fino a 600 euro di rimborso con il regolamento UE",
+      "subtitle": "Il regolamento 261/2004 in tre numeri, e cosa fare in aeroporto",
+      "summary": "Se arrivi a destinazione con **più di 3 ore di ritardo** su un volo coperto dal regolamento europeo 261/2004, puoi avere una compensazione da **250 a 600 euro**, salvo circostanze straordinarie.",
+      "stat": {
+        "value": "600 €",
+        "label": "compensazione massima per i voli oltre 3.500 km"
+      },
+      "sections": [
+        {
+          "heading": "Quando vale",
+          "text": "Il regolamento copre i voli in partenza da un aeroporto dell'Unione e quelli in arrivo nell'Unione con una **compagnia europea**. Conta il ritardo all'arrivo, non alla partenza."
+        },
+        {
+          "heading": "I tre importi",
+          "text": "**250 euro** fino a 1.500 km, **400 euro** tra 1.500 e 3.500 km e per i voli intra-UE oltre 1.500 km, **600 euro** oltre i 3.500 km. Vale anche per le cancellazioni comunicate tardi."
+        },
+        {
+          "heading": "Le eccezioni",
+          "text": "La compagnia non paga se il ritardo dipende da **circostanze straordinarie**, come meteo estremo o scioperi del controllo di volo. Assistenza, pasti e albergo però restano dovuti."
+        }
+      ],
+      "keyPoints": [
+        "Ritardo all'arrivo oltre 3 ore: diritto alla compensazione",
+        "250, 400 o 600 euro in base alla distanza",
+        "Niente compensazione per circostanze straordinarie, ma l'assistenza resta"
+      ],
+      "whyItMatters": "Molti passeggeri non chiedono nulla perché non conoscono i propri diritti. Una richiesta compilata bene **direttamente alla compagnia** non costa niente.",
+      "actionToday": "Salva sul telefono una nota con **i tre importi** e la checklist qui sotto: la prossima volta che un volo ritarda saprai cosa fare in cinque minuti.",
+      "checklist": [
+        "Fotografa il tabellone con l'orario di arrivo effettivo",
+        "Conserva carta d'imbarco e prenotazione",
+        "Chiedi per iscritto il motivo del ritardo",
+        "Tieni gli scontrini di pasti e spese",
+        "Invia la richiesta dal sito della compagnia citando il regolamento 261/2004"
+      ],
+      "eli5": "È come una garanzia sul viaggio: se il servizio non arriva in tempo e non è colpa del meteo o di un evento eccezionale, la compagnia ti deve un indennizzo fisso.",
+      "deepDive": [
+        {
+          "title": "Ritardo e cancellazione",
+          "text": "Per le cancellazioni la compensazione spetta se la compagnia avvisa meno di 14 giorni prima e non offre un'alternativa con orari vicini. In ogni caso puoi scegliere tra il rimborso del biglietto e un volo alternativo."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "circostanze straordinarie",
+          "meaning": "Eventi fuori dal controllo della compagnia, come meteo estremo, che la esonerano dalla compensazione."
+        },
+        {
+          "term": "compensazione pecuniaria",
+          "meaning": "Somma fissa dovuta al passeggero per ritardo prolungato o cancellazione."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wikipedia — Regolamento (CE) n. 261/2004",
+          "url": "https://it.wikipedia.org/wiki/Regolamento_(CE)_n._261/2004"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Un volo Milano-Parigi (circa 850 km) arriva con 4 ore di ritardo per un guasto tecnico. Quanto spetta?",
+          "options": [
+            "Niente",
+            "250 euro",
+            "400 euro",
+            "600 euro"
+          ],
+          "answer": 1,
+          "explanation": "Sotto i 1.500 km la compensazione è di 250 euro; un guasto tecnico normalmente non è una circostanza straordinaria."
+        }
+      ],
+      "reflection": "Ti è mai capitato un ritardo per cui avresti potuto chiedere una compensazione? Cosa ti ha fermato?",
+      "id": "2026-10-25-x-viaggi-spunto",
+      "category": "mondo",
+      "label": "Viaggi"
+    }
+  ]
+}
