@@ -62,10 +62,18 @@ for (const file of fs.readdirSync(dir).filter((f) => f.endsWith(".jsonl"))) {
     } catch {
       continue;
     }
-    // A new turn: a person's message or a scheduled prompt. Notifications of background work
-    // keep the activity of the turn that started that work.
-    if (o.type === "user" && o.origin && o.origin.kind !== "task-notification") {
-      attivita = textOf(o.message?.content).trimStart().startsWith(DAILY_PROMPT) ? "redazione" : "sviluppo";
+    // A person's message starts development work. The daily task arrives either as the turn's
+    // own prompt or as a scheduled-trigger notification read with ReadNotifications: from there on
+    // everything is "redazione" until the next message from a person. Notifications of background
+    // work keep the activity of the turn that started that work.
+    if (o.type === "user") {
+      const text = textOf(o.message?.content);
+      const content = typeof o.message?.content === "string" ? o.message.content : JSON.stringify(o.message?.content ?? "");
+      if (o.origin?.kind === "human") attivita = text.trimStart().startsWith(DAILY_PROMPT) ? "redazione" : "sviluppo";
+      else if (o.origin && o.origin.kind !== "task-notification") attivita = text.trimStart().startsWith(DAILY_PROMPT) ? "redazione" : "sviluppo";
+      else if (content.includes("origin: scheduled trigger") && content.includes(DAILY_PROMPT)) attivita = "redazione";
+      // the wake-up notice that precedes it: its first call re-reads the whole context
+      else if (content.includes("queued-remote-notifications") && content.includes("scheduled trigger")) attivita = "redazione";
     }
     if (o.type !== "assistant" || !o.message?.usage || o.isSidechain) continue;
     const id = o.message.id ?? o.uuid;

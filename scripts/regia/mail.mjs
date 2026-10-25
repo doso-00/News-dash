@@ -76,7 +76,7 @@ ${latest?.date === today ? `<p style="margin:0 0 12px;color:#555">${esc(latest.h
 <table style="border-collapse:collapse;width:100%;font-size:14px">${rows.map(([a, b, c]) => `<tr><td style="padding:4px 8px 4px 0;color:#555;white-space:nowrap">${a}</td><td style="padding:4px 8px">${b}</td><td style="padding:4px 0;color:#888;font-size:12px">${c}</td></tr>`).join("")}</table>
 <p style="margin:8px 0 0;font-size:14px">${edCost != null ? `L'edizione del ${dayName(edDay)} è costata circa ${usd(edCost)} a prezzi di listino, cioè ${pct(edShare("7 giorni"))} della settimana e ${pct(edShare("5 ore"))} delle 5 ore.` : "Nessuna edizione misurata finora."}${left != null ? ` Con quello che ti resta ci stanno ancora circa ${left} edizioni.` : ""}</p>
 <h3 style="font-weight:500;margin:20px 0 6px">L'app</h3>
-<p style="margin:0;font-size:14px">${utenti.length} utenti, ${activeToday} attivi oggi${lastActive && lastActive !== today ? ` (ultimo accesso il ${dayName(lastActive)})` : ""}. ${notizie.length} schede pubblicate, ${rooms} discussioni aperte, ${messaggi} messaggi.</p>
+<p style="margin:0;font-size:14px">${utenti.length} utenti, ${activeToday} attivi oggi${lastActive && lastActive !== today ? ` (ultimo accesso il ${dayName(lastActive)})` : ""}. ${notizie.length} schede pubblicate, ${rooms} discussioni aperte, ${messaggi} ${messaggi === 1 ? "messaggio" : "messaggi"}.</p>
 <p style="margin:20px 0 0;font-size:14px"><a href="${DASH}">Apri la regia</a> · <a href="${APP}">Apri l'app</a></p>
 <p style="margin:16px 0 0;color:#999;font-size:12px">Le percentuali vengono dal tuo piano Claude; i costi per edizione sono stime. Mail inviata dalla redazione automatica delle 6:14.</p>
 </div>`;
