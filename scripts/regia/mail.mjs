@@ -88,7 +88,7 @@ const text = [
   "",
   `Abbonamento: settimana usato ${pct(week?.usato)} (rimane ${pct(week ? 1 - week.usato : null)}), 5 ore usato ${pct(five?.usato)} (rimane ${pct(five ? 1 - five.usato : null)}). Costi extra: ${extra?.in_uso === "no" ? "nessuno" : extra?.in_uso ?? "—"}.`,
   edCost != null ? `Ultima edizione: circa ${usd(edCost)}, ${pct(edShare("7 giorni"))} della settimana.` : "",
-  `App: ${utenti.length} utenti, ${activeToday} attivi oggi, ${notizie.length} schede, ${messaggi} messaggi.`,
+  `App: ${utenti.length} utenti, ${activeToday} attivi oggi, ${notizie.length} schede, ${messaggi} ${messaggi === 1 ? "messaggio" : "messaggi"}.`,
   "",
   `Regia: ${DASH}`,
   `App: ${APP}`,
