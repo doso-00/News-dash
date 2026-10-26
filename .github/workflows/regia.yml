@@ -26,7 +26,10 @@ jobs:
 
           # hybrid encryption: a random AES key for the data, the key itself sealed with RSA
           openssl rand -hex 32 > /tmp/k
-          openssl enc -aes-256-cbc -pbkdf2 -salt -in /tmp/export.json -out /tmp/export.enc -pass file:/tmp/k
+          gzip -9 -c /tmp/export.json > /tmp/export.gz
+          openssl enc -aes-256-cbc -pbkdf2 -salt -in /tmp/export.gz -out /tmp/export.enc -pass file:/tmp/k
           openssl pkeyutl -encrypt -pubin -inkey config/regia.pub.pem -pkeyopt rsa_padding_mode:oaep -in /tmp/k -out /tmp/k.enc
           echo "-----CHIAVE-----"; base64 -w 76 /tmp/k.enc; echo "-----DATI-----"; base64 -w 76 /tmp/export.enc; echo "-----FINE-----"
-          rm -f /tmp/k /tmp/export.json /tmp/players.json /tmp/messages.json
+          # fingerprint of the encrypted bytes, to check the copy read from this log
+          echo "SHA256 $(sha256sum /tmp/export.enc | cut -d' ' -f1)"
+          rm -f /tmp/k /tmp/export.json /tmp/export.gz /tmp/players.json /tmp/messages.json
