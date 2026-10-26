@@ -1,120 +1,120 @@
 {
-  "date": "2026-10-25",
-  "number": 3,
-  "generatedAt": "2026-10-25T05:21:07.495Z",
-  "headline": "Petrolio ai massimi da sei mesi, il Brasile sceglie tra Lula e Bolsonaro e stanotte è tornata l'ora solare.",
+  "date": "2026-10-26",
+  "number": 4,
+  "generatedAt": "2026-10-26T05:18:57.951Z",
+  "headline": "Lula ribalta i sondaggi e vince in Brasile, i chatbot si schierano in politica e la settimana della Fed è alle porte.",
   "cards": [
     {
       "category": "ai",
       "interests": [
         "ai",
         "tech",
-        "code",
-        "startup"
+        "politica",
+        "scienza"
       ],
-      "title": "Kimi K3.1 Pro: il modello cinese che sfiora i migliori e costa meno",
-      "subtitle": "Moonshot promette i pesi aperti entro il 4 novembre: i benchmark però li dichiara l'azienda",
-      "summary": "Moonshot AI ha lanciato **Kimi K3.1 Pro**, un modello che nei suoi test si avvicina ai migliori sistemi americani a un prezzo più basso. È il momento giusto per imparare a **valutare i modelli sui tuoi compiti**, non sulle classifiche.",
+      "title": "Chatbot e politica: Grok sceglie i repubblicani, GPT i democratici",
+      "subtitle": "Uno studio su quasi 500 sfide delle elezioni di metà mandato mostra quanto un modello possa pendere da una parte",
+      "summary": "Costretti a scegliere un candidato, **Grok ha indicato il repubblicano nel 92% dei casi e GPT il democratico nel 97%**. Non dice chi ha ragione: dice che **le risposte di un modello su temi politici vanno verificate**, anche quando sembrano neutrali.",
       "stat": {
-        "value": "65,7%",
-        "label": "su Terminal-Bench 4.0 secondo Moonshot, contro il 66,4% di Claude Opus 5.5"
+        "value": "92% / 97%",
+        "label": "Grok sceglie il repubblicano, GPT il democratico, in quasi 500 sfide"
       },
       "sections": [
         {
-          "heading": "Cosa ha lanciato Moonshot",
-          "text": "Il 23 ottobre la cinese Moonshot AI ha pubblicato **Kimi K3.1 Pro**, disponibile nelle sue app e via API. È un modello mixture-of-experts da circa **2.800 miliardi di parametri**, di cui 104 miliardi attivi a ogni passo, con una finestra di contesto da un milione di token."
+          "heading": "Cosa hanno testato",
+          "text": "Convovo, uno studio di ricerca guidato dal professor **Tapan Parikh della Cornell University**, ha chiesto a due modelli di scegliere un candidato in quasi 500 sfide delle elezioni di metà mandato. Il test usava le API per sviluppatori, non le app di chat."
         },
         {
-          "heading": "Prezzo e pesi aperti",
-          "text": "Le API costano **2 dollari per milione di token in ingresso e 10 in uscita**, circa un terzo meno del modello precedente. Moonshot promette i pesi aperti entro il 4 novembre, ma per ora non sono pubblicati e la licenza non è nota."
+          "heading": "Il risultato",
+          "text": "**Grok 4.7** ha indicato il repubblicano nel 92% delle risposte, **GPT-6.1** il democratico nel 97%. I due modelli concordavano in meno del 10% delle sfide."
         },
         {
-          "heading": "Numeri da prendere con cautela",
-          "text": "Moonshot dichiara il **65,7% su Terminal-Bench 4.0**, vicino al 66,4% di Claude Opus 5.5. Sono numeri dell'azienda: la classifica indipendente di Artificial Analysis lo mette **quarto** nel suo indice di intelligenza."
+          "heading": "Il test senza ricerca web",
+          "text": "In un controllo su 30 sfide, con la ricerca web disattivata, GPT ha scelto comunque i democratici in 24 casi. Grok ha **rifiutato di rispondere 27 volte**. Per i ricercatori la tendenza di GPT viene dall'addestramento, quella di Grok dalle fonti che cerca, ma il campione è piccolo."
         },
         {
-          "heading": "Le capacità tolte apposta",
-          "text": "Prima del rilascio aperto Moonshot dice di aver rimosso i dati di addestramento sugli attacchi informatici. Nel suo test interno il modello rilasciato risolve **l'81% delle prove**, contro il 90,5% della versione non filtrata."
+          "heading": "Dettagli che pesano",
+          "text": "Le risposte di Grok citavano spesso fonti conservatrici, quelle di GPT soprattutto Wikipedia e Reddit. Ogni richiesta a Grok conteneva inoltre **circa 1.240 token in più** che i ricercatori non avevano scritto e non potevano togliere."
         },
         {
-          "heading": "Cosa cambia per chi usa l'AI",
-          "text": "La distanza tra i modelli di punta e quelli più economici si accorcia. Per scegliere conta sempre meno la classifica generale e sempre più **come va il modello sui tuoi compiti reali**."
+          "heading": "La replica di OpenAI",
+          "text": "OpenAI sostiene che ChatGPT è progettato per essere obiettivo e che un test via API **non rappresenta quello che vedono gli utenti in chat**. Le app, nel test, si rifiutavano di indicare un nome."
         }
       ],
       "keyPoints": [
-        "Kimi K3.1 Pro: 2.800 miliardi di parametri, contesto da un milione di token",
-        "Costa 2 $ in ingresso e 10 $ in uscita per milione di token",
-        "I benchmark sono dichiarati da Moonshot; i pesi aperti non sono ancora usciti"
+        "Costretti a scegliere, Grok e GPT si sono schierati da parti opposte",
+        "Il test usava le API; OpenAI dice che la chat si comporta diversamente",
+        "Per i temi politici conviene far dire al modello le obiezioni a ogni posizione"
       ],
-      "whyItMatters": "Quando escono modelli più economici con prestazioni simili, la scelta giusta dipende dal tuo uso. Una piccola **valutazione personale**, fatta una volta, ti fa risparmiare tempo e soldi ogni volta che cambi modello.",
-      "actionToday": "Chiedi a Claude: \"Aiutami a costruire una mini-valutazione: 10 compiti tipici del mio lavoro, per ognuno la risposta ideale e 3 criteri di voto da 1 a 5. Dammi un foglio da riempire per confrontare due modelli.\" Poi provalo su **3 compiti** con due modelli diversi.",
+      "whyItMatters": "Sempre più persone chiedono ai chatbot di orientarsi su temi pubblici. Sapere che **un modello può pendere da una parte, a volte senza dirlo**, ti permette di usarlo meglio: come aiuto a ragionare, non come arbitro.",
+      "actionToday": "Chiedi a Claude: \"Presentami in modo neutrale le posizioni di [tema che ti interessa], poi dammi **le tre obiezioni più forti a ciascuna**.\" Poi ripeti la domanda invertendo l'ordine delle posizioni: se la risposta cambia, il modello è sensibile a come chiedi.",
       "checklist": [],
-      "eli5": "È come scegliere un'auto: la prova su pista della casa costruttrice dice qualcosa, ma conta di più come va sulla strada che fai tu ogni mattina.",
+      "eli5": "È come chiedere un consiglio a due amici che leggono giornali diversi: le loro risposte dicono qualcosa di loro, non solo della questione.",
       "deepDive": [
         {
-          "title": "Cosa vuol dire mixture-of-experts",
-          "text": "Un modello mixture-of-experts è diviso in tanti sottomodelli, gli esperti. Per ogni parola ne attiva solo alcuni: per questo un modello da 2.800 miliardi di parametri ne usa circa 104 miliardi alla volta e costa meno da far girare."
+          "title": "Perché un modello può pendere da una parte",
+          "text": "Un modello impara dai testi con cui è addestrato, dalle regole date da chi lo costruisce e, se cerca sul web, dalle fonti che trova. Ognuno di questi tre passaggi può spostare le risposte, e dall'esterno è difficile capire quale."
         },
         {
-          "title": "Perché i pesi aperti contano",
-          "text": "Con i pesi aperti un'azienda può scaricare il modello e farlo girare sui propri server, senza mandare dati a terzi. Per questo Moonshot ha tolto alcune capacità informatiche pericolose prima del rilascio: una volta pubblicati, i pesi non si possono più ritirare."
+          "title": "Come si misura la distorsione",
+          "text": "Gli studi come questo costringono il modello a una scelta secca e ripetono la stessa domanda molte volte, cambiando i dettagli. La distorsione non è un'opinione dichiarata: è una **regolarità statistica** nelle risposte."
         }
       ],
       "glossary": [
         {
-          "term": "pesi aperti",
-          "meaning": "I parametri di un modello pubblicati e scaricabili, così chiunque può farlo girare sui propri computer."
+          "term": "API",
+          "meaning": "L'interfaccia con cui un programma, e non una persona in una chat, invia richieste a un modello."
         },
         {
-          "term": "benchmark",
-          "meaning": "Una batteria di prove standard per confrontare i modelli tra loro."
+          "term": "distorsione",
+          "meaning": "Una tendenza sistematica delle risposte verso una direzione, che si vede solo confrontando molte risposte."
         },
         {
-          "term": "mixture-of-experts",
-          "meaning": "Architettura in cui il modello attiva solo una parte dei suoi sottomodelli per ogni passo, risparmiando calcolo."
+          "term": "token",
+          "meaning": "Il pezzetto di testo, una parola o parte di una parola, che un modello legge e conta."
         }
       ],
       "sources": [
         {
-          "title": "MarkTechPost — Moonshot AI Releases Kimi K3.1 Pro",
-          "url": "https://www.marktechpost.com/2026/10/23/moonshot-ai-kimi-k3-1-pro-open-weight-model/"
+          "title": "The AI Insider — Study finds Grok and GPT show opposing partisan leans on U.S. midterm races",
+          "url": "https://theaiinsider.tech/2026/10/25/study-finds-grok-and-gpt-models-show-opposing-partisan-leans-on-u-s-midterm-races/"
         },
         {
-          "title": "The Next Web — Moonshot releases Kimi K3.1 Pro and says it cut its hacking skills",
-          "url": "https://thenextweb.com/news/moonshot-kimi-k3-1-pro-open-weight-cyber"
+          "title": "Gadget Review — Grok picks Republicans, OpenAI picks Democrats when AI models are forced to choose",
+          "url": "https://www.gadgetreview.com/grok-picks-republicans-openai-picks-democrats-when-ai-models-are-forced-to-choose"
         },
         {
-          "title": "Yotta Labs — Kimi K3.1 Pro: Specs, Price, Open Weights Date",
-          "url": "https://www.yottalabs.ai/post/kimi-k3-1-pro-specs-price-open-weights-benchmarks"
+          "title": "Mezha — Grok favored Republicans in a study of AI voting recommendations",
+          "url": "https://mezha.net/eng/news/mezha-e7a80d87e8606cee69a815d0_grok_favored_republicans"
         }
       ],
       "readingMinutes": 3,
       "quiz": [
         {
-          "q": "Perché i risultati di Kimi K3.1 Pro su Terminal-Bench vanno presi con cautela?",
+          "q": "Perché il risultato dello studio va letto con cautela?",
           "options": [
-            "Perché il test è vecchio di dieci anni",
-            "Perché sono dichiarati dall'azienda e non ancora verificati in modo indipendente",
-            "Perché il modello non è disponibile",
-            "Perché Terminal-Bench misura solo la velocità"
+            "Perché ha usato solo modelli italiani",
+            "Perché ha testato i modelli via API con una scelta obbligata, e OpenAI dice che in chat si comportano diversamente",
+            "Perché è stato scritto da un chatbot",
+            "Perché riguardava un solo candidato"
           ],
           "answer": 1,
-          "explanation": "Il 65,7% viene da Moonshot; una classifica indipendente lo mette quarto. I numeri dichiarati da chi vende vanno sempre verificati."
+          "explanation": "Il test costringeva a una scelta secca via API; le app di chat, nello stesso test, rifiutavano di indicare un nome."
         },
         {
-          "q": "Qual è il modo più affidabile per scegliere tra due modelli per il tuo lavoro?",
+          "q": "Qual è un buon modo di usare un chatbot su un tema politico?",
           "options": [
-            "Guardare chi è primo in classifica",
-            "Scegliere sempre il più caro",
-            "Provarli sugli stessi compiti tipici con criteri di voto fissati prima",
-            "Scegliere quello con più parametri"
+            "Chiedere cosa votare",
+            "Chiedere le posizioni e le obiezioni più forti a ognuna, e verificare le fonti",
+            "Fidarsi della prima risposta",
+            "Evitare di fare domande"
           ],
-          "answer": 2,
-          "explanation": "Una piccola valutazione sui tuoi compiti reali dice più di qualsiasi classifica generale."
+          "answer": 1,
+          "explanation": "Così usi il modello come aiuto a ragionare e puoi accorgerti se pende da una parte."
         }
       ],
-      "reflection": "Quali sono i tre compiti che fai più spesso con l'AI, e come capiresti se un modello più economico li fa altrettanto bene?",
-      "id": "2026-10-25-ai",
+      "reflection": "Su quali temi ti capita di chiedere un parere a un chatbot? Come noteresti che la risposta pende da una parte?",
+      "id": "2026-10-26-ai",
       "label": "Intelligenza artificiale"
     },
     {
@@ -122,111 +122,111 @@
       "interests": [
         "finanza",
         "economia",
-        "geopolitica"
+        "tech"
       ],
-      "title": "Petrolio a 116 dollari e rendimenti al 5%: perché le Borse tremano",
-      "subtitle": "Brent ai massimi da aprile, Treasury decennale al 4,99%: la settimana chiude in calo",
-      "summary": "Venerdì il **Brent ha chiuso a 116,72 dollari**, il livello più alto da fine aprile, e il rendimento del Treasury decennale è arrivato al **4,99%**. Petrolio caro e tassi alti sono una coppia che pesa sulle azioni, soprattutto quelle tecnologiche.",
+      "title": "Settimana della Fed e di Big Tech: cosa guardare tra mercoledì e giovedì",
+      "subtitle": "Tassi, conti di Alphabet, Microsoft e Amazon, Pil e inflazione: i mercati vengono messi alla prova",
+      "summary": "Mercoledì decide la **Fed**, mercoledì e giovedì riferiscono **Alphabet, Microsoft e Amazon**. I mercati si aspettano tassi fermi, ma contano il tono di Warsh e quanto Big Tech continua a spendere in AI.",
       "stat": {
-        "value": "116,72 $",
-        "label": "chiusura del Brent venerdì 23 ottobre, massimo da sei mesi"
+        "value": "93%",
+        "label": "probabilità di tassi fermi il 28 ottobre per i mercati di previsione, al 25 ottobre"
       },
       "sections": [
         {
-          "heading": "Il balzo del petrolio",
-          "text": "Venerdì il Brent è salito di **3,55 dollari (+3,1%)** e ha chiuso a 116,72 dollari al barile, il livello più alto dal 29 aprile. Il WTI americano ha superato i 103 dollari."
+          "heading": "La Fed mercoledì",
+          "text": "La decisione sui tassi è mercoledì 28 ottobre alle 14 a New York, **le 20 in Italia**. Il tasso è nella fascia 3,75-4,00% dopo il rialzo di settembre, e il presidente è **Kevin Warsh**."
         },
         {
-          "heading": "La scintilla in Medio Oriente",
-          "text": "Hanno pesato i nuovi **attacchi degli Houthi contro infrastrutture saudite** e una fuoriuscita di petrolio negli Emirati. Secondo CNBC gli investitori si aspettano anche una ripresa degli attacchi statunitensi contro l'Iran nelle prossime settimane."
+          "heading": "Cosa si aspetta il mercato",
+          "text": "I mercati di previsione danno **circa il 93% di probabilità di tassi fermi**, secondo CME FedWatch l'80%. Le fonti non concordano sulle cifre. La mossa che i mercati danno per probabile è un rialzo a dicembre."
         },
         {
-          "heading": "Rendimenti a un passo dal 5%",
-          "text": "Il rendimento del Treasury a 10 anni è salito al **4,99%**. Il petrolio caro alimenta i timori di inflazione, e con l'inflazione i mercati temono tassi alti più a lungo."
+          "heading": "Il tono conta più del numero",
+          "text": "Warsh ha accorciato il comunicato e **tolto le indicazioni sulle mosse future**. Se la riunione non dà indizi, i mercati dovranno interpretare ogni parola della conferenza stampa."
         },
         {
-          "heading": "Le Borse chiudono in rosso",
-          "text": "Il Dow Jones ha perso l'**1,2%**, l'S&P 500 lo 0,5% e il Nasdaq lo 0,2%. Sul settore tecnologico pesano anche i dubbi sul costo dei debiti per finanziare gli investimenti nell'AI."
+          "heading": "Le trimestrali di Big Tech",
+          "text": "**Alphabet e Microsoft** presentano i conti mercoledì, **Amazon** giovedì. Si guarda alla crescita del cloud e agli investimenti in AI: Reuters stima circa **800 miliardi di dollari** di spesa in conto capitale dei grandi gruppi quest'anno."
         },
         {
-          "heading": "La settimana che arriva",
-          "text": "Escono i conti di circa un terzo delle società dell'S&P 500, tra cui **Alphabet, Microsoft e Amazon**, e si riunisce la Federal Reserve. Saranno i due test per capire se la correzione continua."
+          "heading": "Pil e inflazione",
+          "text": "Giovedì esce la prima stima del Pil del terzo trimestre, attesa intorno al **3% annualizzato**, e l'indice dei prezzi PCE di base. Petrolio e rendimenti alti restano i rischi principali."
         }
       ],
       "keyPoints": [
-        "Brent a 116,72 $, massimo da fine aprile, per le tensioni in Medio Oriente",
-        "Treasury decennale al 4,99%: i mercati temono inflazione e tassi alti",
-        "Settimana prossima: conti di Big Tech e riunione della Fed"
+        "Fed mercoledì alle 20 italiane: attesi tassi fermi, rialzo a dicembre",
+        "Alphabet e Microsoft mercoledì, Amazon giovedì: conta la spesa in AI",
+        "Giovedì Pil del terzo trimestre e inflazione PCE di base"
       ],
-      "whyItMatters": "Petrolio e tassi arrivano anche nel tuo portafoglio: **carburante e bollette** più cari, mutui a tasso variabile e prezzi delle obbligazioni che si muovono. Capire il legame tra rendimenti e prezzi ti evita di reagire d'istinto ai titoli dei giornali.",
-      "actionToday": "Apri il tuo conto titoli o il fondo pensione e guarda la **quota di obbligazioni** e la loro durata media (duration). Scrivi una riga: se i rendimenti salissero ancora di un punto, quanto potrebbero scendere?",
+      "whyItMatters": "Tassi e utili di Big Tech muovono i fondi indicizzati che molti hanno in portafoglio, e le parole della Fed arrivano fino ai **mutui e ai rendimenti dei conti deposito**. Sapere cosa aspettarsi ti aiuta a non reagire d'istinto.",
+      "actionToday": "Segna in agenda **mercoledì ore 20** e **giovedì**. Poi scrivi una riga: \"se i mercati scendono, cosa NON faccio\". Decidere prima, a mente fredda, è la difesa migliore contro le mosse d'impulso.",
       "checklist": [],
-      "eli5": "Un'obbligazione è come un biglietto che paga sempre lo stesso interesse. Se domani escono biglietti nuovi che pagano di più, i tuoi vecchi valgono meno: per venderli devi abbassare il prezzo.",
+      "eli5": "È come aspettare l'esito di un esame importante: non conta solo il voto, conta anche quello che dice il professore su come andrà il prossimo.",
       "deepDive": [
         {
-          "title": "Perché rendimenti e prezzi vanno in direzioni opposte",
-          "text": "Un titolo che paga una cedola fissa del 4% vale meno quando i nuovi titoli rendono il 5%: il suo prezzo scende finché il rendimento effettivo per chi lo compra si allinea. Più è lunga la durata, più il prezzo si muove: è quello che misura la duration."
+          "title": "Cos'è la forward guidance",
+          "text": "È l'insieme di indicazioni con cui una banca centrale anticipa le sue mosse future. Quando c'è, i mercati si aggiustano in anticipo; quando la banca centrale la toglie, ogni riunione diventa una sorpresa potenziale e la volatilità tende a salire."
         },
         {
-          "title": "Perché i tassi pesano sulle tecnologiche",
-          "text": "Il valore delle aziende tecnologiche dipende molto dagli utili attesi tra molti anni. Con tassi più alti quei soldi futuri valgono meno oggi, e chi investe chiede di più per aspettare. Per questo il Nasdaq soffre spesso quando salgono i rendimenti."
+          "title": "Perché gli investimenti in AI contano",
+          "text": "Le spese in conto capitale (capex) dei grandi gruppi sono il motore di una parte della crescita e dei ricavi dei fornitori di chip e di cloud. Se i gruppi rallentano gli investimenti, quelle aziende ne risentono; se li aumentano senza maggiori ricavi, preoccupano gli investitori."
         }
       ],
       "glossary": [
         {
-          "term": "Brent",
-          "meaning": "Il petrolio del Mare del Nord usato come prezzo di riferimento mondiale."
+          "term": "forward guidance",
+          "meaning": "Le indicazioni con cui una banca centrale anticipa la direzione futura dei tassi."
         },
         {
-          "term": "rendimento",
-          "meaning": "Il guadagno annuo di un'obbligazione rispetto al prezzo pagato: sale quando il prezzo scende."
+          "term": "capex",
+          "meaning": "Le spese in conto capitale: soldi investiti in strutture e macchinari, come i data center."
         },
         {
-          "term": "duration",
-          "meaning": "Misura di quanto il prezzo di un'obbligazione reagisce a una variazione dei tassi: più è alta, più il prezzo si muove."
+          "term": "PCE",
+          "meaning": "L'indice dei prezzi sulla spesa per consumi, la misura di inflazione preferita dalla Fed."
         }
       ],
       "sources": [
         {
-          "title": "CNBC — Brent crude oil tops $116, a six-month high",
-          "url": "https://www.cnbc.com/2026/10/23/oil-price-brent-wti-iran-war-saudi-arabia.html"
+          "title": "CNBC — Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
+          "url": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html"
         },
         {
-          "title": "Proactive Investors — Wall Street ends volatile week lower as oil hits six-month high",
-          "url": "https://www.proactiveinvestors.com/companies/news/1100595/markets-live-wall-street-ends-volatile-week-lower-as-oil-hits-six-month-high-1100595.html"
+          "title": "Reuters via Investing.com — Earnings flood, Fed meeting will test rickety AI market rally",
+          "url": "https://www.investing.com/news/economy-news/earnings-flood-fed-meeting-will-test-rickety-ai-market-rally-4971185"
         },
         {
-          "title": "Anadolu Agency — New York stock market closes week lower",
-          "url": "https://aa.com.tr/en/economy/new-york-stock-market-closes-week-lower/4099106"
+          "title": "Forbes — What to look for from the Fed's October meeting",
+          "url": "https://www.forbes.com/sites/simonmoore/2026/10/19/what-to-look-for-from-the-feds-october-meeting/"
         }
       ],
       "readingMinutes": 3,
       "quiz": [
         {
-          "q": "Se i rendimenti dei titoli di Stato salgono, cosa succede al prezzo delle obbligazioni già in circolazione?",
+          "q": "Perché il tono di una riunione della Fed può contare più della decisione?",
           "options": [
-            "Sale",
-            "Scende",
-            "Resta uguale",
-            "Raddoppia"
+            "Perché i tassi non cambiano mai",
+            "Perché le parole sulle mosse future orientano le aspettative dei mercati",
+            "Perché la Fed parla solo di Borsa",
+            "Perché il comunicato è segreto"
           ],
           "answer": 1,
-          "explanation": "Le vecchie obbligazioni pagano meno delle nuove: per renderle appetibili il loro prezzo deve scendere."
+          "explanation": "Il mercato ragiona sul futuro: una frase sulle prossime mosse può muovere i prezzi più del tasso deciso oggi."
         },
         {
-          "q": "Perché il petrolio caro preoccupa chi investe in azioni?",
+          "q": "Cosa misura il capex di Big Tech?",
           "options": [
-            "Perché le compagnie petrolifere chiudono",
-            "Perché alimenta l'inflazione e quindi il rischio di tassi alti più a lungo",
-            "Perché abbassa i rendimenti",
-            "Perché blocca le Borse per legge"
+            "I dividendi pagati",
+            "I soldi investiti in strutture e macchinari come i data center",
+            "Gli stipendi dei dipendenti",
+            "Le tasse pagate"
           ],
           "answer": 1,
-          "explanation": "Energia più cara spinge i prezzi; le banche centrali possono tenere i tassi alti, e questo pesa sulle valutazioni delle azioni."
+          "explanation": "Sono le spese in conto capitale, che oggi finanziano in gran parte l'infrastruttura per l'AI."
         }
       ],
-      "reflection": "Quanto del tuo risparmio è esposto ai tassi (obbligazioni, mutuo variabile, conto deposito)? Lo sapevi prima di oggi?",
-      "id": "2026-10-25-finanza",
+      "reflection": "Quali tue scelte finanziarie dipendono dai tassi: mutuo, conto deposito, fondi? Le hai riviste di recente?",
+      "id": "2026-10-26-finanza",
       "label": "Finanza"
     },
     {
@@ -236,52 +236,52 @@
         "geopolitica",
         "storia"
       ],
-      "title": "Brasile al ballottaggio: Lula contro Flávio Bolsonaro, testa a testa",
-      "subtitle": "Oggi il secondo turno: i sondaggi danno il figlio dell'ex presidente avanti di un soffio",
-      "summary": "Oggi i brasiliani scelgono il presidente tra **Luiz Inácio Lula da Silva** e **Flávio Bolsonaro**, figlio dell'ex presidente Jair. Gli ultimi sondaggi li danno quasi pari, con Bolsonaro leggermente avanti.",
+      "title": "Lula vince il ballottaggio e ribalta i sondaggi: quarto mandato in Brasile",
+      "subtitle": "Il presidente in carica batte Flávio Bolsonaro con circa il 51,8% dei voti",
+      "summary": "Con **circa il 51,8% dei voti**, Lula batte Flávio Bolsonaro e ottiene il quarto mandato. I sondaggi finali davano avanti, di poco, lo sfidante: lo scarto **rientrava nel margine di errore**.",
       "stat": {
-        "value": "51-49",
-        "label": "Flávio Bolsonaro su Lula negli ultimi sondaggi Datafolha e Quaest"
+        "value": "51,8%",
+        "label": "Lula al ballottaggio del 25 ottobre, con circa 4,4 milioni di voti di vantaggio"
       },
       "sections": [
         {
-          "heading": "Il primo turno",
-          "text": "Al primo turno del 4 ottobre Flávio Bolsonaro ha preso il **47,3% dei voti validi**, Lula il 45,2%. Nessuno ha superato il 50%, quindi si torna a votare oggi, 25 ottobre."
+          "heading": "Il risultato",
+          "text": "Secondo il tribunale elettorale, Lula ha vinto con **circa il 51,8% dei voti** e un margine di quasi 4,4 milioni di voti su Flávio Bolsonaro. È il suo **quarto mandato**: governerà dal gennaio 2027."
         },
         {
-          "heading": "Sondaggi quasi pari",
-          "text": "Datafolha e Quaest danno **Bolsonaro al 51% e Lula al 49%**; altri istituti mostrano distacchi ancora più piccoli, dentro il margine di errore. In pratica l'esito è aperto."
+          "heading": "La rimonta",
+          "text": "Al primo turno del 4 ottobre era avanti Bolsonaro, con circa il **47% contro il 45%**. Diversi media sottolineano che è la prima volta, nella storia democratica del Brasile, che chi è arrivato secondo al primo turno vince il ballottaggio."
         },
         {
-          "heading": "Su cosa si è votato",
-          "text": "La campagna è stata dominata da **sicurezza e corruzione**. Lula, al terzo mandato, difende i programmi sociali; Bolsonaro raccoglie l'eredità politica del padre e gli elettori di destra."
+          "heading": "I sondaggi sbagliati?",
+          "text": "Quasi tutti gli ultimi sondaggi davano Bolsonaro avanti di uno o due punti, entro il margine di errore. Ieri lo avevamo scritto: **un 51-49 non permette di indicare un vincitore**."
         },
         {
-          "heading": "Perché conta fuori dal Brasile",
-          "text": "Il Brasile è la **più grande economia dell'America Latina** e un attore chiave su clima, Amazzonia e commercio con Cina e Stati Uniti. Un cambio di presidente sposterebbe gli equilibri della regione."
+          "heading": "Le polemiche della notte",
+          "text": "Un giudice della Corte suprema ha deciso all'ultimo di **prolungare il voto di due ore**. Secondo alcuni media, questo potrebbe portare Bolsonaro a un ricorso legale: per ora si tratta di un'ipotesi."
         },
         {
-          "heading": "Quando arrivano i risultati",
-          "text": "Il tribunale elettorale inizia a diffondere i risultati intorno alle **17 di Brasília**, cioè le 21 in Italia. Con il voto elettronico il nome del vincitore di solito si conosce in poche ore."
+          "heading": "Cosa cambia",
+          "text": "Il Brasile resta un **Paese quasi spaccato a metà**. Le prossime settimane diranno se i risultati saranno accettati e come Lula potrà governare con un Parlamento diviso."
         }
       ],
       "keyPoints": [
-        "Oggi il ballottaggio tra Lula e Flávio Bolsonaro",
-        "Primo turno: Bolsonaro 47,3%, Lula 45,2%",
-        "Sondaggi finali quasi pari, dentro il margine di errore"
+        "Lula vince con circa il 51,8%: quarto mandato dal gennaio 2027",
+        "Per la prima volta chi era secondo al primo turno vince il ballottaggio",
+        "Voto prolungato di due ore: possibile ricorso, per ora solo un'ipotesi"
       ],
-      "whyItMatters": "Il Brasile pesa su materie prime, clima e commercio mondiale. E il voto è un caso da manuale di **ballottaggio in un paese polarizzato**: due blocchi quasi uguali, dove decidono pochi punti di affluenza.",
-      "actionToday": "Stasera, quando escono i risultati, guarda la differenza in punti tra i due e confrontala con il **51-49** dei sondaggi: lo scarto rientra nel margine di errore o no?",
+      "whyItMatters": "Il Brasile è la più grande economia dell'America Latina e un attore su **clima, Amazzonia e commercio**. E il voto ricorda cosa significa davvero il margine d'errore di un sondaggio.",
+      "actionToday": "Confronta i **sondaggi finali di ieri** (51-49 per Bolsonaro) con il risultato reale (circa 52-48 per Lula): di quanto si sono sbagliati? Scrivi una riga su cosa ti dice del fidarsi di un sondaggio.",
       "checklist": [],
-      "eli5": "È come una finale ai rigori: durante la partita nessuno ha segnato abbastanza, così si gioca un'ultima sfida secca tra i due rimasti.",
+      "eli5": "È come una finale ai rigori in cui il favorito, all'ultimo tiro, sbaglia: il pronostico non era sbagliato, era solo una probabilità, non una certezza.",
       "deepDive": [
         {
-          "title": "Come funziona il ballottaggio brasiliano",
-          "text": "Per essere eletto al primo turno serve più del 50% dei voti validi, senza contare schede bianche e nulle. Se nessuno ci arriva, i due più votati si sfidano tre settimane dopo. Il voto è obbligatorio per chi ha tra 18 e 70 anni."
+          "title": "Perché i sondaggi sbagliano di poco ma contano molto",
+          "text": "In una gara così serrata, uno scarto di due punti decide chi vince. I sondaggi stimano le intenzioni di voto di un campione, e chi poi va a votare può essere diverso da chi risponde: per questo gli errori di uno o due punti sono normali."
         },
         {
-          "title": "Il peso dei sondaggi",
-          "text": "Un sondaggio con margine di errore di 2 punti che dà 51 a 49 è compatibile anche con una vittoria dello sfavorito. Nel 2022, al primo turno, molti sondaggi avevano sottostimato il voto per Jair Bolsonaro: per questo oggi gli analisti invitano alla prudenza."
+          "title": "Il ballottaggio brasiliano",
+          "text": "Se nessun candidato supera il 50% dei voti validi, tre settimane dopo si vota di nuovo tra i due più votati. Il vincitore si insedia a gennaio. In Brasile il voto è obbligatorio per chi ha tra 18 e 70 anni."
         }
       ],
       "glossary": [
@@ -296,259 +296,259 @@
       ],
       "sources": [
         {
-          "title": "Anadolu Agency — Brazil runoff poll puts Bolsonaro 1 point up",
-          "url": "https://www.aa.com.tr/en/politics/brazil-runoff-poll-puts-bolsonaro-1-point-up-in-presidential-race/4096317"
+          "title": "CBS News — Lula wins fourth term as Brazil's president, beating Flávio Bolsonaro in runoff",
+          "url": "https://www.cbsnews.com/news/brazil-presidential-runoff-lula-flavio-bolsonaro/"
         },
         {
-          "title": "The Rio Times — Brazil Election 2026: Presidential Runoff, Lula vs Flávio",
-          "url": "https://www.riotimesonline.com/brazil-runoff-october-25-2026-flavio-bolsonaro-lula/"
+          "title": "The Statesman — Brazil election results 2026: Lula defeats Flávio Bolsonaro in historic runoff victory",
+          "url": "https://www.thestatesman.com/world/lula-turns-brazil-election-on-its-head-snatches-fourth-term-from-bolsonaros-son-in-dramatic-runoff-1503655060.html"
         },
         {
-          "title": "Euronews — Brazil heads to a runoff presidential vote",
-          "url": "https://www.euronews.com/2026/10/05/brazil-heads-to-a-runoff-presidential-vote-after-bolsonaro-and-lula-fail-to-acquire-outrig"
+          "title": "Latin Times — Lula defeats Flávio Bolsonaro in Brazil runoff",
+          "url": "https://www.latintimes.com/lula-defeats-flavio-bolsonaro-brazil-runoff-600552"
         }
       ],
       "readingMinutes": 3,
       "quiz": [
         {
-          "q": "Perché in Brasile si vota una seconda volta?",
+          "q": "Perché il risultato non ha dimostrato che i sondaggi erano \"sbagliati\"?",
           "options": [
-            "Perché il primo turno è stato annullato",
-            "Perché nessun candidato ha superato il 50% dei voti validi",
-            "Perché lo chiede la Costituzione ogni volta",
-            "Perché ha vinto un terzo candidato"
+            "Perché i sondaggi non esistono",
+            "Perché lo scarto previsto era dentro il margine di errore",
+            "Perché hanno votato in pochi",
+            "Perché i sondaggi erano di un anno prima"
           ],
           "answer": 1,
-          "explanation": "Al primo turno serve la maggioranza assoluta dei voti validi: Bolsonaro si è fermato al 47,3%, Lula al 45,2%."
+          "explanation": "Un 51-49 con margine di errore di 2 punti è compatibile con la vittoria di entrambi i candidati."
         },
         {
-          "q": "Un sondaggio dà 51 a 49 con margine di errore di 2 punti. Cosa se ne può concludere?",
+          "q": "Cosa ha di storico questa vittoria, secondo diversi media?",
           "options": [
-            "Che vince sicuramente chi ha 51",
-            "Che il risultato è compatibile con la vittoria di entrambi",
-            "Che il sondaggio è sbagliato",
-            "Che l'affluenza sarà alta"
+            "Lula è il più giovane presidente",
+            "Per la prima volta chi era secondo al primo turno vince il ballottaggio",
+            "È la prima volta che si vota di domenica",
+            "È la prima elezione digitale"
           ],
           "answer": 1,
-          "explanation": "Lo scarto è dentro il margine di errore: il sondaggio non permette di indicare con certezza un vincitore."
+          "explanation": "Bolsonaro era avanti al primo turno, e Lula ha ribaltato il risultato al secondo."
         }
       ],
-      "reflection": "Quando leggi un sondaggio molto stretto, tendi a fidarti di quello che conferma il risultato che speri? Come potresti accorgertene?",
-      "id": "2026-10-25-mondo",
+      "reflection": "Quando un sondaggio ti dava un risultato quasi certo, ti è mai capitato di restare sorpreso dall'esito? Cosa avevi dato per scontato?",
+      "id": "2026-10-26-mondo",
       "label": "Mondo"
     },
     {
       "category": "sapere",
       "interests": [
+        "lavoro",
         "psicologia",
-        "crescita",
-        "scienza"
+        "crescita"
       ],
-      "title": "Il bias di conferma: perché cerchiamo solo le prove che ci danno ragione",
-      "subtitle": "Il test 2-4-6 di Wason e come smontare le proprie convinzioni prima che lo faccia la realtà",
-      "summary": "Tendiamo a cercare, ricordare e interpretare le informazioni in modo che **confermino quello che pensiamo già**. Sapere come funziona il bias di conferma è il primo passo per decidere meglio.",
+      "title": "L'effetto ancoraggio: perché il primo numero decide la trattativa",
+      "subtitle": "Dal giro della ruota di Kahneman e Tversky a come fare (e difendersi da) la prima offerta",
+      "summary": "Il **primo numero che sentiamo**, anche se casuale, orienta le stime successive. Nelle trattative, chi fa la prima offerta ragionata sposta il risultato verso di sé: sapere come funziona serve per **usarlo e per non subirlo**.",
       "stat": {
-        "value": "1960",
-        "label": "Peter Wason pubblica l'esperimento della sequenza 2-4-6"
+        "value": "25 vs 45",
+        "label": "stime medie dopo un numero casuale basso o alto, nell'esperimento del 1974"
       },
       "sections": [
         {
-          "heading": "Il gioco del 2-4-6",
-          "text": "Nel 1960 lo psicologo Peter Wason dava ai partecipanti la sequenza **2-4-6** e chiedeva di scoprire la regola proponendo altre terne. Quasi tutti provavano 8-10-12 o 20-22-24, ottenevano un sì e si convincevano: \"numeri pari crescenti di due\"."
+          "heading": "La ruota truccata",
+          "text": "Nel 1974 Amos Tversky e Daniel Kahneman fecero girare una ruota truccata che si fermava su **10 o su 65**. Poi chiesero ai partecipanti di stimare la percentuale di Paesi africani all'ONU."
         },
         {
-          "heading": "La regola era un'altra",
-          "text": "La regola vera era semplicemente **\"tre numeri in ordine crescente\"**. Per scoprirla bisognava provare terne che avrebbero potuto smentire l'ipotesi, come 1-2-3 o 5-10-50. Pochissimi lo facevano."
+          "heading": "Il risultato",
+          "text": "Chi aveva visto il 10 stimò in media **25%**, chi aveva visto il 65 stimò in media **45%**. Un numero evidentemente casuale aveva spostato le risposte."
         },
         {
-          "heading": "Tre forme dello stesso errore",
-          "text": "Il bias di conferma agisce mentre **cerchiamo** informazioni (solo fonti che ci danno ragione), mentre le **interpretiamo** (leggiamo i dati ambigui a nostro favore) e mentre le **ricordiamo** (teniamo a mente i casi che tornano)."
+          "heading": "Perché funziona",
+          "text": "Partiamo da un numero e lo correggiamo, ma **ci fermiamo troppo presto**. Il punto di partenza resta attaccato alla stima, anche quando sappiamo che non c'entra."
         },
         {
-          "heading": "Dove costa caro",
-          "text": "Negli investimenti si leggono solo le analisi a favore del titolo che si possiede. Al lavoro si raccolgono i dati che sostengono il progetto già deciso. Nei rapporti si nota solo ciò che conferma la prima impressione."
+          "heading": "Nelle trattative",
+          "text": "Stipendio, prezzo di una casa, un preventivo: **la prima cifra sul tavolo fa da ancora**. Gli studi sulle trattative mostrano che chi apre con un'offerta ragionata tende a chiudere più vicino al proprio punto di partenza."
         },
         {
-          "heading": "L'antidoto: cercare la smentita",
-          "text": "La domanda utile non è \"cosa conferma la mia idea?\", ma **\"cosa dovrei vedere se avessi torto?\"**. Poi andare a cercarlo davvero."
+          "heading": "Come usarlo e difenderti",
+          "text": "Prima di trattare, scrivi il tuo **obiettivo** e il tuo **limite**. Se puoi, apri tu, con un numero ambizioso ma motivato. Se è l'altro ad aprire, non rispondere vicino al suo numero: **chiedi come l'ha calcolato** e ripartisci dal tuo."
         }
       ],
       "keyPoints": [
-        "Cerchiamo e ricordiamo soprattutto le prove che ci danno ragione",
-        "Nel test di Wason pochi provano terne che potrebbero smentirli",
-        "Chiediti cosa vedresti se avessi torto, poi cercalo"
+        "Il primo numero che sentiamo orienta le stime successive, anche se casuale",
+        "Chi apre una trattativa con un'offerta motivata sposta il risultato verso di sé",
+        "Se l'altro ancora, non rispondere vicino a quel numero: riparti dal tuo"
       ],
-      "whyItMatters": "Le decisioni peggiori raramente nascono dalla mancanza di informazioni: nascono da informazioni **filtrate senza accorgersene**. Contrastare il bias di conferma migliora investimenti, progetti e giudizi sulle persone.",
-      "actionToday": "Scegli una convinzione importante (un investimento, una scelta di lavoro). Scrivi **tre fatti che, se veri, ti farebbero cambiare idea**, poi dedica 10 minuti a cercare se esistono.",
+      "whyItMatters": "Ogni volta che discuti di **stipendio, prezzo o scadenze** c'è un numero che parte per primo. Chi lo sa può scegliere se aprire, o come reagire.",
+      "actionToday": "Pensa a una trattativa dei prossimi giorni o mesi (stipendio, affitto, preventivo). Scrivi tre cifre: **obiettivo, prima offerta, limite oltre cui rifiuti**. Poi scrivi la frase che userai per giustificare la prima.",
       "checklist": [],
-      "eli5": "È come cercare le chiavi solo nella stanza dove sei convinto di averle lasciate: puoi cercare benissimo, ma se sono in cucina non le troverai mai.",
+      "eli5": "È come entrare in un negozio e vedere subito un cartellino da 500 euro: dopo, un paio di scarpe a 200 euro sembra un affare, anche se vale 80.",
       "deepDive": [
         {
-          "title": "Perché il cervello lo fa",
-          "text": "Confermare è economico: richiede meno sforzo che rimettere in discussione un'idea, e protegge la nostra immagine di persone che hanno ragione. In un ambiente semplice era una scorciatoia utile; in un mondo pieno di informazioni ci espone a scegliere quelle sbagliate."
+          "title": "Gli esperti non ne sono immuni",
+          "text": "Gli studi sull'ancoraggio hanno coinvolto anche agenti immobiliari e giudici: i prezzi di listino e le richieste dell'accusa hanno spostato le loro stime. Sapere che l'effetto esiste riduce l'influenza, ma non la elimina."
         },
         {
-          "title": "L'avvocato del diavolo e il pre-mortem",
-          "text": "Due tecniche aiutano i gruppi. L'avvocato del diavolo affida a una persona il compito di sostenere la tesi opposta. Il pre-mortem, proposto dallo psicologo Gary Klein, chiede di immaginare che il progetto sia fallito e di scrivere perché: così emergono i dubbi che nessuno osava dire."
+          "title": "Il rischio dell'ancora esagerata",
+          "text": "Una prima offerta troppo estrema, senza motivazione, può far saltare la trattativa o fare perdere credibilità. L'ancora funziona quando è **ambiziosa ma difendibile**."
         }
       ],
       "glossary": [
         {
-          "term": "bias di conferma",
-          "meaning": "La tendenza a cercare, interpretare e ricordare le informazioni in modo che confermino ciò che già si pensa."
+          "term": "ancoraggio",
+          "meaning": "La tendenza a far dipendere una stima da un numero di partenza, anche se casuale."
         },
         {
-          "term": "pre-mortem",
-          "meaning": "Esercizio in cui si immagina che un progetto sia già fallito per individuarne in anticipo i rischi."
+          "term": "punto di rottura",
+          "meaning": "Il limite oltre il quale rifiuti un accordo e preferisci un'alternativa."
         }
       ],
       "sources": [
         {
-          "title": "Wikipedia — Bias di conferma",
-          "url": "https://it.wikipedia.org/wiki/Bias_di_conferma"
+          "title": "Wikipedia — Ancoraggio (psicologia)",
+          "url": "https://it.wikipedia.org/wiki/Ancoraggio_(psicologia)"
         },
         {
-          "title": "Wikipedia — Confirmation bias",
-          "url": "https://en.wikipedia.org/wiki/Confirmation_bias"
+          "title": "Wikipedia — Anchoring effect",
+          "url": "https://en.wikipedia.org/wiki/Anchoring_effect"
         }
       ],
       "readingMinutes": 3,
       "quiz": [
         {
-          "q": "Nel test 2-4-6, quale terna aiutava di più a scoprire la regola vera?",
+          "q": "Cosa mostrò l'esperimento della ruota di Tversky e Kahneman?",
           "options": [
-            "8-10-12",
-            "20-22-24",
-            "1-2-3",
-            "100-102-104"
-          ],
-          "answer": 2,
-          "explanation": "1-2-3 non segue l'ipotesi \"pari crescenti di due\": se ottiene comunque un sì, dimostra che l'ipotesi era sbagliata."
-        },
-        {
-          "q": "Qual è la domanda che contrasta meglio il bias di conferma?",
-          "options": [
-            "Chi è d'accordo con me?",
-            "Cosa dovrei vedere se avessi torto?",
-            "Quante prove ho a favore?",
-            "Qual è la fonte più famosa?"
+            "Che i numeri casuali non influenzano nessuno",
+            "Che un numero casuale visto prima sposta le stime successive",
+            "Che la ruota era truccata male",
+            "Che gli africani sono pochi all'ONU"
           ],
           "answer": 1,
-          "explanation": "Cercare attivamente ciò che smentirebbe la propria idea è l'antidoto più efficace."
+          "explanation": "Chi vedeva il 10 stimava in media 25%, chi vedeva il 65 stimava 45%: l'ancora spostava la risposta."
+        },
+        {
+          "q": "Se l'altra parte apre con una cifra molto alta, cosa conviene fare?",
+          "options": [
+            "Rispondere appena sotto la sua cifra",
+            "Chiedere come l'ha calcolata e ripartire dal proprio obiettivo",
+            "Accettare subito",
+            "Interrompere la trattativa"
+          ],
+          "answer": 1,
+          "explanation": "Rispondere vicino alla sua cifra la rende l'ancora: meglio chiedere la motivazione e riportare il discorso al tuo punto di partenza."
         }
       ],
-      "reflection": "Su quale tua convinzione non hai mai cercato seriamente le prove contrarie?",
-      "id": "2026-10-25-sapere",
+      "reflection": "L'ultima volta che hai trattato un prezzo o uno stipendio, chi ha detto il primo numero? Come è andata?",
+      "id": "2026-10-26-sapere",
       "label": "Sapere"
     },
     {
       "category": "routine",
       "interests": [
         "salute",
-        "produttivita",
-        "crescita"
+        "cucina",
+        "produttivita"
       ],
-      "title": "Cambio dell'ora: la sveglia fissa che rimette a posto il sonno",
-      "subtitle": "Stanotte siamo tornati all'ora solare: tre giorni di abitudini per riallineare l'orologio interno",
-      "summary": "Stanotte alle 3 le lancette sono tornate alle 2: **un'ora di sonno in più**, ma anche un orologio interno da riallineare. La regola più solida è una sola: **svegliarsi ogni giorno alla stessa ora**.",
+      "title": "Pianificare i pasti: 15 minuti di lunedì per mangiare meglio tutta la settimana",
+      "subtitle": "Uno studio su oltre 40.000 adulti collega la pianificazione dei pasti a una dieta più varia e di qualità",
+      "summary": "Lo studio francese NutriNet-Santé su **40.554 adulti** ha trovato che chi pianifica i pasti ha una **dieta di qualità migliore e più varia**. È un'associazione, non una prova di causa, ma il metodo costa 15 minuti.",
       "stat": {
-        "value": "60 min",
-        "label": "lo spostamento delle lancette nella notte tra il 24 e il 25 ottobre"
+        "value": "57%",
+        "label": "degli adulti dello studio pianifica i pasti almeno ogni tanto"
       },
       "sections": [
         {
-          "heading": "Cosa è successo stanotte",
-          "text": "Alle **3:00 di oggi** gli orologi sono tornati alle 2:00 in tutta l'Unione Europea: siamo all'ora solare fino al 28 marzo 2027. Da domani il sole tramonta prima e la sera fa buio più presto."
+          "heading": "Cosa dice lo studio",
+          "text": "Nel 2017 Ducrot e colleghi hanno analizzato **40.554 adulti francesi**. Chi pianificava i pasti aveva una dieta più aderente alle linee guida e **più varia**, con un'associazione moderata ma significativa."
         },
         {
-          "heading": "Perché l'orologio interno sbanda",
-          "text": "Il nostro ritmo circadiano si regola soprattutto con **la luce del mattino**. Un'ora di differenza è poca, ma per qualche giorno ci si può svegliare troppo presto o sentirsi stanchi già nel pomeriggio."
+          "heading": "Un'associazione, non una prova",
+          "text": "Lo studio è trasversale: fotografa un momento. Può darsi che chi pianifica sia già più attento all'alimentazione. Il metodo però è **semplice, gratuito e reversibile**, quindi vale la pena provarlo."
         },
         {
-          "heading": "L'ancora: la sveglia fissa",
-          "text": "Svegliarsi **alla stessa ora tutti i giorni**, weekend compresi, è il modo più semplice per stabilizzare il sonno. L'ora a cui ci si addormenta tende poi a sistemarsi da sola."
+          "heading": "Perché funziona",
+          "text": "Decidere **prima** evita le scelte di fretta alle 19:30, quando si sceglie quello che è più veloce. Si compra solo ciò che serve e si sprecano meno ingredienti."
         },
         {
-          "heading": "Luce di giorno, buio di sera",
-          "text": "Uscire alla luce **nella prima ora dopo il risveglio** aiuta il corpo a capire che è mattina. La sera, luci basse e schermi lontani nell'ultima mezz'ora favoriscono l'addormentamento."
+          "heading": "Il metodo in 15 minuti",
+          "text": "Il lunedì scegli **3-4 cene** e **1-2 pranzi** della settimana, guardando l'agenda: sere con impegni, sere con tempo. Poi scrivi la lista della spesa **partendo dagli ingredienti**, non da quello che ti viene in mente."
+        },
+        {
+          "heading": "Piccoli trucchi",
+          "text": "Cucina **una doppia porzione** in una sera: diventa il pranzo del giorno dopo. Lascia sempre una sera libera per gli imprevisti, così il piano regge anche quando salta qualcosa."
         }
       ],
       "keyPoints": [
-        "Stanotte siamo tornati all'ora solare: un'ora in più di sonno",
-        "La sveglia fissa, anche nel weekend, stabilizza il ritmo",
-        "Luce al mattino e luci basse la sera aiutano il riallineamento"
+        "Chi pianifica i pasti mangia in modo più vario e vicino alle linee guida",
+        "È un'associazione, non una prova di causa",
+        "Bastano 15 minuti il lunedì, una lista dagli ingredienti e una sera libera"
       ],
-      "whyItMatters": "Il sonno regolare migliora concentrazione, umore e controllo dell'appetito. Il cambio dell'ora è l'occasione perfetta per fissare **un orario di sveglia che valga tutta la settimana**.",
-      "actionToday": "Decidi adesso la tua **ora di sveglia fissa** per i prossimi 7 giorni e impostala come sveglia ripetuta. Stasera fai 10 minuti senza schermi prima di dormire.",
+      "whyItMatters": "L'alimentazione si decide soprattutto con scelte piccole e ripetute. Rendere automatica la scelta, con un piano fatto a mente fredda, **toglie la fatica decisionale** dalla sera.",
+      "actionToday": "Imposta un timer di **15 minuti** e fai il piano di questa settimana con la checklist qui sotto. Se oggi è troppo tardi, fallo per **domani e dopodomani**: anche un piano corto conta.",
       "checklist": [
-        "Imposta una sveglia uguale per tutti i giorni della settimana",
-        "Esci alla luce entro un'ora dal risveglio, anche 10 minuti",
-        "Niente caffè dopo le 15",
-        "Ultimi 30 minuti della sera con luci basse e senza schermi",
-        "Sistema a mano forno, auto e orologi non collegati alla rete"
+        "Guarda l'agenda: segna le sere con impegni e quelle con tempo",
+        "Scegli 3-4 cene e 1-2 pranzi della settimana",
+        "Scrivi la lista della spesa partendo dagli ingredienti dei piatti scelti",
+        "Programma una doppia porzione per il pranzo del giorno dopo",
+        "Lascia una sera libera per gli imprevisti"
       ],
-      "eli5": "Il corpo ha un orologio che si rimette in ora guardando la luce del mattino. Se ogni giorno gliela mostri alla stessa ora, si regola da solo in pochi giorni.",
+      "eli5": "È come preparare la valigia prima di partire: se la fai con calma a casa porti ciò che serve, se la fai all'ultimo minuto prendi quello che trovi.",
       "deepDive": [
         {
-          "title": "Il cronotipo",
-          "text": "Non tutti hanno lo stesso orologio: c'è chi è naturalmente mattiniero e chi nottambulo. La sveglia fissa non deve essere all'alba: deve essere costante. Scegli un orario sostenibile per te, e tienilo."
+          "title": "La fatica decisionale",
+          "text": "Ogni scelta, anche piccola, costa un po' di attenzione, e a fine giornata ne abbiamo meno. Decidere in anticipo cosa mangiare riduce le decisioni della sera e rende più facile scegliere piatti più bilanciati."
         },
         {
-          "title": "Il dibattito sul cambio dell'ora",
-          "text": "In Italia e in Europa si discute da anni se abolire il cambio dell'ora. La Camera ha avviato un'indagine conoscitiva sull'ipotesi di un'ora legale permanente, ma per ora il cambio resta in vigore: il prossimo è il 28 marzo 2027."
+          "title": "Perché la varietà conta",
+          "text": "Una dieta variata, con molti tipi di verdure, cereali e proteine, aiuta a coprire il fabbisogno di nutrienti diversi. Per questo lo studio guarda sia all'aderenza alle linee guida sia alla varietà del cibo."
         }
       ],
       "glossary": [
         {
-          "term": "ritmo circadiano",
-          "meaning": "Il ciclo biologico di circa 24 ore che regola sonno, veglia, temperatura e ormoni."
+          "term": "studio trasversale",
+          "meaning": "Studio che osserva molte persone in un momento solo e può mostrare associazioni, non cause."
         },
         {
-          "term": "cronotipo",
-          "meaning": "La predisposizione personale a essere più attivi al mattino o alla sera."
+          "term": "fatica decisionale",
+          "meaning": "Il calo di qualità delle scelte dopo molte decisioni consecutive."
         }
       ],
       "sources": [
         {
-          "title": "Sky TG24 — Ora solare 2026, quando torna e come spostare le lancette",
-          "url": "https://tg24.sky.it/cronaca/2026/09/08/ora-solare-2026-quando-torna"
+          "title": "Ducrot et al. 2017 — Meal planning is associated with food variety, diet quality and body weight status (PubMed)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28153017/"
         },
         {
-          "title": "Idealista — Torna l'ora solare 2026, quando cambia e come funziona",
-          "url": "https://www.idealista.it/news/node/446396"
-        },
-        {
-          "title": "Wikipedia — Ritmo circadiano",
-          "url": "https://it.wikipedia.org/wiki/Ritmo_circadiano"
+          "title": "Ducrot et al. 2017 — testo completo (PMC)",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5288891/"
         }
       ],
       "readingMinutes": 3,
       "quiz": [
         {
-          "q": "Qual è l'abitudine più efficace per stabilizzare il sonno dopo il cambio dell'ora?",
+          "q": "Perché lo studio sulla pianificazione dei pasti non dimostra che pianificare faccia mangiare meglio?",
           "options": [
-            "Dormire di più nel weekend",
-            "Svegliarsi alla stessa ora ogni giorno",
-            "Andare a letto appena si ha sonno",
-            "Fare un pisolino lungo il pomeriggio"
+            "Perché ha pochi partecipanti",
+            "Perché è trasversale: mostra un'associazione, non una causa",
+            "Perché è stato fatto in Italia",
+            "Perché non misura la dieta"
           ],
           "answer": 1,
-          "explanation": "Un'ora di sveglia costante, weekend compresi, è l'ancora che regola il ritmo circadiano."
+          "explanation": "Chi pianifica potrebbe essere già più attento all'alimentazione: lo studio fotografa un momento, non può stabilire la causa."
         },
         {
-          "q": "Cosa aiuta di più l'orologio interno a capire che è mattina?",
+          "q": "Quale passo rende più semplice il piano settimanale?",
           "options": [
-            "Una colazione abbondante",
-            "La luce del giorno poco dopo il risveglio",
-            "Una doccia calda",
-            "Il caffè"
+            "Comprare tutto ciò che sembra buono",
+            "Scrivere la lista della spesa partendo dagli ingredienti dei piatti scelti",
+            "Decidere ogni sera",
+            "Evitare ogni imprevisto"
           ],
           "answer": 1,
-          "explanation": "La luce del mattino è il segnale principale che sincronizza il ritmo circadiano."
+          "explanation": "Partire dagli ingredienti dei piatti scelti evita acquisti inutili e sprechi."
         }
       ],
-      "reflection": "Quanto cambia la tua ora di sveglia tra giorni feriali e weekend? Che cosa ti impedisce di tenerla uguale?",
-      "id": "2026-10-25-routine",
+      "reflection": "Qual è la sera della settimana in cui mangi peggio, e cosa potresti preparare prima per renderla più facile?",
+      "id": "2026-10-26-routine",
       "label": "Metodo & routine"
     }
   ],
@@ -556,633 +556,639 @@
     {
       "topic": "cinema",
       "kind": "news",
-      "title": "Festa del Cinema di Roma: vince Clio Barnard, premiato Paolo Pierobon",
-      "subtitle": "Chiusa ieri la 21ª edizione: miglior film \"I See Buildings Fall Like Lightning\"",
-      "summary": "Ieri sera la Festa del Cinema di Roma ha assegnato i premi: **miglior film** a *I See Buildings Fall Like Lightning* di Clio Barnard. Per l'Italia festeggia **Paolo Pierobon**, miglior attore ex aequo per *Brianza*.",
+      "title": "Box office USA: Clayface debutta primo con 24 milioni, A24 insegue",
+      "subtitle": "Nel weekend 23-25 ottobre il film DC supera di poco \"You Can See Everything\"",
+      "summary": "**Clayface** (Warner Bros./DC) ha incassato **oltre 24 milioni di dollari** nel weekend negli Stati Uniti. Al secondo posto *You Can See Everything* di A24, a circa 20 milioni al secondo weekend: quasi un testa a testa.",
       "stat": {
-        "value": "21ª",
-        "label": "edizione della Festa del Cinema di Roma, chiusa il 24 ottobre"
+        "value": "24 M$",
+        "label": "incasso di Clayface nel weekend 23-25 ottobre, negli Stati Uniti"
       },
       "sections": [
         {
-          "heading": "Il miglior film",
-          "text": "Il premio principale è andato a **I See Buildings Fall Like Lightning** della regista britannica Clio Barnard. Il Gran premio della giuria a *The Life and Deaths of Wilson Shedd* di Tim Blake Nelson."
+          "heading": "Il primo posto",
+          "text": "**Clayface** ha aperto con più di 24 milioni di dollari in circa 3.450 sale. È il film DC di Warner Bros. sul personaggio mutaforma dei fumetti di Batman."
         },
         {
-          "heading": "Attori e regia",
-          "text": "Miglior attore **ex aequo** ad Anthony Boyle, protagonista del film di Barnard, e all'italiano **Paolo Pierobon** per *Brianza*. Miglior attrice Victoria Luengo per *Sants*, miglior regia Rafiki Fariala per *Congo Boy*."
+          "heading": "A24 quasi alla pari",
+          "text": "*You Can See Everything*, in **seconda settimana**, ha incassato tra 19,5 e 20 milioni di dollari, e supera i 45 milioni in totale. È un risultato notevole per una distribuzione indipendente."
         },
         {
-          "heading": "Il premio del pubblico",
-          "text": "Il pubblico ha diviso il premio tra *Congo Boy* e **Mustang**, l'opera di Kasia Smutniak. Miglior documentario *Dans la gueule de l'ogre* di Mahsa Karampour."
-        },
-        {
-          "heading": "Cosa segnarsi",
-          "text": "I film premiati ai festival autunnali spesso arrivano in sala o in streaming nei mesi successivi. **Brianza** e **Mustang** sono i titoli italiani da tenere d'occhio."
+          "heading": "Gli altri titoli",
+          "text": "Terzo *Wildwood* di Laika con circa 11,6 milioni, poi *Street Fighter* con 8,6 milioni al secondo weekend e *Wicker* con 5,7 milioni. Le cifre sono stime e possono essere riviste."
         }
       ],
       "keyPoints": [
-        "Miglior film: I See Buildings Fall Like Lightning di Clio Barnard",
-        "Paolo Pierobon miglior attore ex aequo per Brianza",
-        "Premio del pubblico a Congo Boy e Mustang di Kasia Smutniak"
+        "Clayface primo con oltre 24 milioni di dollari",
+        "You Can See Everything a circa 20 milioni, in seconda settimana",
+        "Le cifre del weekend sono stime e possono cambiare"
       ],
-      "whyItMatters": "I palmarès dei festival sono una **lista di visione già filtrata**: ti aiutano a scegliere cosa vedere nei prossimi mesi senza affidarti solo agli algoritmi.",
-      "actionToday": "Aggiungi **Brianza** e **Mustang** alla tua lista di film da vedere e imposta un promemoria per controllare a dicembre se sono usciti.",
+      "whyItMatters": "Il box office dice quali storie trovano pubblico, e quali titoli avranno **seguiti, uscite in streaming e distribuzione in Italia**. Guardare il secondo weekend è spesso più utile del primo.",
+      "actionToday": "Se un film ti interessa, controlla **quando esce in Italia** e salvalo in una lista. I titoli che reggono bene al secondo weekend, come quello di A24, di solito arrivano anche nelle sale più piccole.",
       "checklist": [],
-      "eli5": "Un festival è come una degustazione: una giuria assaggia decine di film e ti dice quali vale la pena ordinare.",
+      "eli5": "È come la classifica dei libri più venduti: non dice se il libro è bello, ma dice quanta gente ha deciso di provarlo.",
       "deepDive": [
         {
-          "title": "Perché \"ex aequo\"",
-          "text": "Quando una giuria non riesce a scegliere tra due interpretazioni, può dividere il premio. Succede spesso nei festival: è un modo per segnalare due lavori di pari valore invece di sacrificarne uno."
+          "title": "Perché il secondo weekend conta",
+          "text": "Il primo weekend è trainato da marketing e fan. Il secondo mostra il passaparola: un film che cala poco viene consigliato da chi l'ha visto, mentre un calo forte indica che il pubblico non ha convinto altri."
         }
       ],
       "glossary": [
         {
-          "term": "ex aequo",
-          "meaning": "A pari merito: il premio è condiviso da due vincitori."
+          "term": "box office",
+          "meaning": "Gli incassi di un film nelle sale, di solito misurati ogni weekend."
         },
         {
-          "term": "palmarès",
-          "meaning": "L'elenco dei premi assegnati da un festival o di quelli vinti da qualcuno."
+          "term": "weekend di apertura",
+          "meaning": "Il primo fine settimana di uscita di un film, da venerdì a domenica."
         }
       ],
       "sources": [
         {
-          "title": "Sky TG24 — Festa del Cinema di Roma 2026: tutti i vincitori",
-          "url": "https://tg24.sky.it/spettacolo/cinema/2026/10/24/vincitori-festa-cinema-roma-2026"
+          "title": "Deadline — Box Office: Clayface No 1 with $24M+, You Can See Everything at near $20M",
+          "url": "https://deadline.com/2026/10/box-office-clayface-you-can-see-everything-1237171500/"
         },
         {
-          "title": "Movieplayer — Festa del Cinema di Roma: tutti i vincitori dell'edizione 2026",
-          "url": "https://movieplayer.it/news/festa-del-cinema-roma-i-vincitori-2026_171654/"
+          "title": "Awards Radar — Box Office Report for the Week of October 25",
+          "url": "https://awardsradar.com/2026/10/25/box-office-report-week-of-october-25/"
         }
       ],
       "readingMinutes": 2,
       "quiz": [
         {
-          "q": "Quale film italiano ha portato a Paolo Pierobon il premio come miglior attore?",
+          "q": "Quale film è arrivato primo al box office USA nel weekend 23-25 ottobre?",
           "options": [
-            "Mustang",
-            "Brianza",
-            "Sants",
-            "Congo Boy"
+            "You Can See Everything",
+            "Clayface",
+            "Wildwood",
+            "Street Fighter"
           ],
           "answer": 1,
-          "explanation": "Pierobon ha vinto ex aequo con Anthony Boyle per la sua interpretazione in Brianza."
+          "explanation": "Clayface ha incassato oltre 24 milioni di dollari, davanti a You Can See Everything con circa 20."
         }
       ],
-      "reflection": "Ti fidi più dei premi dei festival, delle recensioni o dei consigli degli amici per scegliere un film? Perché?",
-      "id": "2026-10-25-x-cinema-news",
+      "reflection": "Scegli un film guardando gli incassi, le recensioni o il passaparola? Quale dei tre ti ha dato più spesso ragione?",
+      "id": "2026-10-26-x-cinema-news",
       "category": "mondo",
       "label": "Cinema e serie"
     },
     {
       "topic": "cinema",
       "kind": "spunto",
-      "title": "L'effetto Kuleshov: come il montaggio cambia quello che vediamo",
-      "subtitle": "Lo stesso volto, tre emozioni diverse: l'esperimento che spiega il cinema",
-      "summary": "Negli anni Venti il regista sovietico Lev Kuleshov mostrò che **lo stesso primo piano** sembra esprimere fame, dolore o desiderio a seconda dell'immagine che lo segue. Il significato nasce **dall'accostamento**.",
+      "title": "Come leggere un box office: il calo del secondo weekend",
+      "subtitle": "Un calcolo da fare in 30 secondi per capire se un film sta funzionando",
+      "summary": "Per capire se un film sta funzionando guarda **di quanto cala il secondo weekend** rispetto al primo. Un calo moderato segnala passaparola positivo, un calo forte un pubblico già esaurito.",
       "stat": {
-        "value": "3",
-        "label": "le inquadrature accostate allo stesso volto nell'esperimento"
+        "value": "40-60%",
+        "label": "calo normale al secondo weekend per un film di grande uscita"
       },
       "sections": [
         {
-          "heading": "L'esperimento",
-          "text": "Kuleshov montò il volto inespressivo di un attore accanto a un piatto di minestra, a una bambina in una bara e a una donna sdraiata. Il pubblico giurò che l'attore mostrasse **fame, dolore e desiderio**: il volto era sempre lo stesso."
+          "heading": "Il calcolo",
+          "text": "Dividi l'incasso del secondo weekend per quello del primo e **sottrai da 100%**. Se un film passa da 24 a 12 milioni, il calo è del 50%."
         },
         {
-          "heading": "Cosa ci insegna",
-          "text": "Lo spettatore **completa il senso** collegando le immagini. Il montaggio non mostra solo cosa succede: decide cosa proviamo."
+          "heading": "Come leggerlo",
+          "text": "Per i grandi film, **un calo tra il 40% e il 60%** è considerato normale. Sotto il 40% il passaparola è forte; sopra il 60% il film ha attirato soprattutto chi lo aspettava."
         },
         {
-          "heading": "Dove lo ritrovi",
-          "text": "Lo usano Hitchcock, la pubblicità e perfino i video sui social: **una reazione accostata a un'altra scena** cambia il significato di entrambe."
+          "heading": "Attenzione ai casi speciali",
+          "text": "Un film che **esce in poche sale e poi si allarga** può addirittura crescere: il confronto con un titolo uscito ovunque non è equo."
         }
       ],
       "keyPoints": [
-        "Lo stesso volto cambia emozione a seconda dell'immagine accanto",
-        "Il senso nasce dall'accostamento delle inquadrature",
-        "Lo usano registi, pubblicitari e creator"
+        "Calo = 100% meno (secondo weekend diviso primo)",
+        "40-60% è normale per un film di grande uscita",
+        "Le uscite limitate che si allargano non vanno confrontate con le altre"
       ],
-      "whyItMatters": "Riconoscere l'effetto Kuleshov ti fa guardare i film con più consapevolezza e ti rende **meno manipolabile** da video montati ad arte.",
-      "actionToday": "Stasera, guardando un film o una serie, fermati su una scena di dialogo e chiediti: **la reazione che vedo è dell'attore o del montaggio?**",
+      "whyItMatters": "Ti permette di riconoscere in fretta i film che **stanno convincendo il pubblico**, e di capire quando i titoli di cui parlano tutti sono in realtà in calo.",
+      "actionToday": "Prendi gli incassi di due film dei tuoi preferiti, primo e secondo weekend, e calcola il **calo percentuale**. Chi ha retto meglio?",
       "checklist": [
-        "Scegli una scena con un primo piano muto",
-        "Nota quale inquadratura viene subito prima",
-        "Immagina un'altra immagine al suo posto: cambia l'emozione?"
+        "Annota l'incasso del primo weekend",
+        "Annota quello del secondo",
+        "Dividi il secondo per il primo",
+        "Sottrai da 100% per ottenere il calo",
+        "Confronta con la fascia normale"
       ],
-      "eli5": "Se mostri una foto di una persona che guarda in basso e poi una torta, sembra golosa. Se poi mostri un cane ferito, sembra triste. La foto non è cambiata.",
+      "eli5": "È come vedere quanta gente resta in fila il secondo giorno di una nuova gelateria: se la fila c'è ancora, qualcuno ne ha parlato bene.",
       "deepDive": [
         {
-          "title": "Hitchcock lo spiegava così",
-          "text": "In una famosa intervista Hitchcock mostrava il proprio volto che sorride dopo l'immagine di una madre con un bambino: sembra un uomo gentile. Con la stessa espressione dopo una ragazza in bikini, sembra un uomo poco raccomandabile."
+          "title": "Perché i film dell'orrore calano di più",
+          "text": "I film dell'orrore e quelli tratti da fumetti riempiono le sale nel primo weekend con i fan più fedeli, poi cala la domanda. Le commedie e i film per famiglie, trainati dal passaparola, tendono a calare meno."
         }
       ],
       "glossary": [
         {
-          "term": "montaggio",
-          "meaning": "L'operazione con cui si scelgono e si accostano le inquadrature di un film."
+          "term": "calo percentuale",
+          "meaning": "Di quanto è sceso un incasso rispetto al weekend precedente, in percentuale."
         },
         {
-          "term": "primo piano",
-          "meaning": "Inquadratura stretta sul volto di un personaggio."
+          "term": "uscita limitata",
+          "meaning": "Uscita in poche sale iniziali, prima di allargarsi a più cinema."
         }
       ],
       "sources": [
         {
-          "title": "Wikipedia — Effetto Kuleshov",
-          "url": "https://it.wikipedia.org/wiki/Effetto_Kuleshov"
+          "title": "Wikipedia — Box office",
+          "url": "https://it.wikipedia.org/wiki/Box_office"
         }
       ],
       "readingMinutes": 2,
       "quiz": [
         {
-          "q": "Cosa dimostra l'effetto Kuleshov?",
+          "q": "Un film incassa 20 milioni al primo weekend e 8 al secondo. Di quanto è calato?",
           "options": [
-            "Che gli attori sovietici erano i migliori",
-            "Che il significato di un'immagine dipende da quelle che le stanno accanto",
-            "Che il colore cambia le emozioni",
-            "Che il pubblico non guarda i volti"
+            "40%",
+            "50%",
+            "60%",
+            "80%"
           ],
-          "answer": 1,
-          "explanation": "Lo stesso volto sembrava esprimere emozioni diverse in base all'inquadratura accostata."
+          "answer": 2,
+          "explanation": "8 diviso 20 fa 0,4: il secondo weekend è il 40% del primo, quindi il calo è del 60%."
         }
       ],
-      "reflection": "Ti viene in mente un video sui social che ti ha fatto provare un'emozione grazie al montaggio più che ai fatti?",
-      "id": "2026-10-25-x-cinema-spunto",
+      "reflection": "Quale film che ti è piaciuto molto ha avuto un successo inferiore alle attese, secondo te? Cosa gli è mancato?",
+      "id": "2026-10-26-x-cinema-spunto",
       "category": "mondo",
       "label": "Cinema e serie"
     },
     {
-      "topic": "cucina",
-      "kind": "news",
-      "title": "Osterie d'Italia 2027: 335 Chiocciole, la Campania prima per numero",
-      "subtitle": "La guida Slow Food, presentata a Torino, segnala 1.952 indirizzi in tutta Italia",
-      "summary": "Slow Food ha presentato la 37ª edizione di **Osterie d'Italia**: 1.952 locali e **335 Chiocciole**, il riconoscimento per le osterie migliori. In testa la **Campania** con 34 Chiocciole.",
-      "stat": {
-        "value": "335",
-        "label": "osterie premiate con la Chiocciola nella guida 2027"
-      },
-      "sections": [
-        {
-          "heading": "La guida",
-          "text": "Presentata il 19 ottobre alle OGR di Torino e in libreria dal 21, la guida 2027 elenca **1.952 indirizzi** e costa 24,90 euro. La versione app arriva il 3 novembre."
-        },
-        {
-          "heading": "Le regioni in testa",
-          "text": "Per numero di Chiocciole guida la **Campania con 34**, poi il Piemonte con 31; Emilia-Romagna, Toscana e Puglia seguono a pari merito con 26."
-        },
-        {
-          "heading": "I Locali Quotidiani",
-          "text": "Novità di quest'anno: i **175 Locali Quotidiani**, come pastifici, gastronomie ed enoteche con cucina, sono ora inseriti nelle sezioni regionali invece che in fondo alla guida."
-        }
-      ],
-      "keyPoints": [
-        "1.952 indirizzi e 335 Chiocciole nella guida 2027",
-        "Campania prima con 34 Chiocciole, poi il Piemonte con 31",
-        "I Locali Quotidiani entrano nelle sezioni regionali"
-      ],
-      "whyItMatters": "Le osterie della guida sono un buon modo per mangiare **cucina del territorio a prezzi onesti**, soprattutto in viaggio. Le Chiocciole segnalano chi lavora con prodotti locali e stagionali.",
-      "actionToday": "Cerca **l'osteria con la Chiocciola più vicina a casa tua** su un articolo regione per regione e segnatela per il prossimo weekend.",
-      "checklist": [],
-      "eli5": "È come chiedere a migliaia di amici golosi dove mangiano bene senza spendere troppo, e ritrovarti tutte le risposte in un libro.",
-      "deepDive": [
-        {
-          "title": "Cosa premia la Chiocciola",
-          "text": "La Chiocciola è il simbolo che Slow Food assegna alle osterie che, oltre a cucinare bene, rispecchiano i suoi valori: accoglienza, prodotti del territorio, rispetto della stagionalità e prezzi corretti."
-        }
-      ],
-      "glossary": [
-        {
-          "term": "Chiocciola",
-          "meaning": "Il riconoscimento di Slow Food alle migliori osterie della guida."
-        },
-        {
-          "term": "Slow Food",
-          "meaning": "Associazione nata in Italia che promuove il cibo buono, pulito e giusto."
-        }
-      ],
-      "sources": [
-        {
-          "title": "Dissapore — Le migliori Osterie d'Italia del 2027 secondo Slow Food",
-          "url": "https://www.dissapore.com/ristoranti/le-migliori-osterie-ditalia-del-2027-secondo-slow-food-regione-per-regione/"
-        },
-        {
-          "title": "HorecaNews — La nuova guida Osterie d'Italia 2027",
-          "url": "https://horecanews.it/la-nuova-guida-osterie-ditalia-2027-tra-locali-e-piatti-delle-tradizioni-regionali"
-        }
-      ],
-      "readingMinutes": 2,
-      "quiz": [
-        {
-          "q": "Quale regione ha più Chiocciole nella guida Osterie d'Italia 2027?",
-          "options": [
-            "Piemonte",
-            "Toscana",
-            "Campania",
-            "Puglia"
-          ],
-          "answer": 2,
-          "explanation": "La Campania è prima con 34 Chiocciole, davanti al Piemonte con 31."
-        }
-      ],
-      "reflection": "Qual è il piatto della tua regione che vorresti trovare in un'osteria della guida?",
-      "id": "2026-10-25-x-cucina-news",
-      "category": "routine",
-      "label": "Cucina"
-    },
-    {
-      "topic": "cucina",
-      "kind": "spunto",
-      "title": "La reazione di Maillard: il segreto di una rosolatura perfetta",
-      "subtitle": "Perché la carne in padella diventa dorata e saporita, e come non rovinarla",
-      "summary": "La crosticina dorata di carne, pane e caffè tostato nasce dalla **reazione di Maillard**, tra zuccheri e proteine ad alta temperatura. Per ottenerla servono **superficie asciutta, padella calda e spazio**.",
-      "stat": {
-        "value": "140 °C",
-        "label": "circa la temperatura oltre la quale la reazione accelera"
-      },
-      "sections": [
-        {
-          "heading": "Cosa succede in padella",
-          "text": "Sopra i **140 °C circa** zuccheri e proteine reagiscono e creano centinaia di molecole di aroma e il tipico colore bruno. È diversa dalla caramellizzazione, che riguarda solo gli zuccheri."
-        },
-        {
-          "heading": "Il nemico è l'acqua",
-          "text": "Finché c'è acqua la superficie non supera i **100 °C** e il cibo bolle invece di rosolare. Per questo carne bagnata o padella troppo piena danno un risultato grigio e lesso."
-        },
-        {
-          "heading": "Le tre regole",
-          "text": "**Asciuga** bene la superficie, scalda la padella prima di aggiungere il cibo e **non affollarla**: meglio cuocere in due volte. E non girare troppo presto."
-        }
-      ],
-      "keyPoints": [
-        "La crosticina dorata nasce da zuccheri e proteine ad alta temperatura",
-        "L'acqua blocca la reazione sotto i 100 °C",
-        "Asciuga, scalda bene, non affollare la padella"
-      ],
-      "whyItMatters": "Capire una sola reazione chimica migliora **decine di piatti**: carne, verdure arrosto, pane tostato, persino la cipolla del soffritto.",
-      "actionToday": "La prossima volta che cuoci carne o verdure, **asciugale con carta da cucina** e cuocile in due turni invece che tutte insieme. Confronta il colore.",
-      "checklist": [
-        "Tampona il cibo con carta da cucina",
-        "Scalda la padella 2-3 minuti prima di iniziare",
-        "Lascia spazio tra i pezzi",
-        "Non girare finché il pezzo non si stacca da solo"
-      ],
-      "eli5": "È come abbronzarsi: serve calore, e se sei bagnato fradicio il sole non ti colora finché non ti asciughi.",
-      "deepDive": [
-        {
-          "title": "Perché si chiama così",
-          "text": "Prende il nome dal chimico francese Louis-Camille Maillard, che la descrisse nel 1912. Solo decenni dopo l'industria alimentare capì quanto fosse importante per il sapore di pane, birra, caffè e cioccolato."
-        }
-      ],
-      "glossary": [
-        {
-          "term": "reazione di Maillard",
-          "meaning": "Reazione tra zuccheri e proteine ad alta temperatura che dà colore bruno e aroma ai cibi."
-        },
-        {
-          "term": "caramellizzazione",
-          "meaning": "Trasformazione dei soli zuccheri col calore, che produce colore e gusto di caramello."
-        }
-      ],
-      "sources": [
-        {
-          "title": "Wikipedia — Reazione di Maillard",
-          "url": "https://it.wikipedia.org/wiki/Reazione_di_Maillard"
-        }
-      ],
-      "readingMinutes": 2,
-      "quiz": [
-        {
-          "q": "Perché la carne bagnata in padella non diventa dorata?",
-          "options": [
-            "Perché l'acqua tiene la superficie intorno ai 100 °C",
-            "Perché l'acqua scioglie le proteine",
-            "Perché il sale non si attacca",
-            "Perché la padella si raffredda per sempre"
-          ],
-          "answer": 0,
-          "explanation": "Finché l'acqua evapora la superficie resta a circa 100 °C, troppo poco per la reazione di Maillard."
-        }
-      ],
-      "reflection": "Quale piatto che cucini spesso potrebbe migliorare con una rosolatura fatta meglio?",
-      "id": "2026-10-25-x-cucina-spunto",
-      "category": "routine",
-      "label": "Cucina"
-    },
-    {
       "topic": "cultura",
       "kind": "news",
-      "title": "Tiziano alla Galleria Borghese: l'Annunciazione di Treviso arriva a Roma",
-      "subtitle": "Una mostra-dossier fino all'8 dicembre per i 450 anni dalla morte del pittore",
-      "summary": "La Galleria Borghese ha aperto **\"Tiziano. Dialoghi tra Sacro e Profano\"**: l'Annunciazione del Duomo di Treviso dialoga per la prima volta con i Tiziano della collezione. Si visita **fino all'8 dicembre**.",
+      "title": "Anne Carson, Nobel per la Letteratura: da dove iniziare a leggerla",
+      "subtitle": "La poetessa canadese è stata premiata l'8 ottobre: in Italia ci sono già diversi suoi libri",
+      "summary": "Il Nobel per la Letteratura 2026 è andato alla poetessa canadese **Anne Carson**. In Italia sono già tradotti, tra gli altri, *Autobiografia del rosso*, *Come l'acqua* ed *Era una nuvola*.",
       "stat": {
-        "value": "450",
-        "label": "anni dalla morte di Tiziano, nel 1576"
+        "value": "10 dic",
+        "label": "la cerimonia di consegna del Nobel a Stoccolma"
       },
       "sections": [
         {
-          "heading": "La mostra",
-          "text": "Curata da Maria Giovanna Sarti, la mostra mette accanto **l'Annunciazione di Treviso** e i dipinti di Tiziano della Borghese, tra cui il celebre *Amor sacro e Amor profano*."
+          "heading": "Il premio",
+          "text": "L'8 ottobre l'Accademia svedese ha assegnato il Nobel a **Anne Carson**, per un'opera che dialoga con la tradizione classica e inventa nuove forme per la letteratura contemporanea. La consegna è il 10 dicembre."
         },
         {
-          "heading": "Perché il quadro è a Roma",
-          "text": "La pala ha lasciato Treviso durante il **restauro degli affreschi del Pordenone** nella cappella Malchiostro, dove è custodita. Anche il dipinto è stato restaurato e ha rivelato nuovi dettagli."
+          "heading": "Chi è",
+          "text": "Carson è poetessa, saggista e traduttrice canadese, formata all'**Università di Toronto**. Il premio precedente era andato a László Krasznahorkai."
         },
         {
-          "heading": "Le date",
-          "text": "Le fonti indicano l'apertura tra il 19 e il 20 ottobre; la chiusura è l'**8 dicembre 2026**. Meglio controllare orari e prenotazione sul sito del museo."
+          "heading": "Da dove iniziare",
+          "text": "In italiano ci sono **Autobiografia del rosso** (La Nave di Teseo), un romanzo in versi ispirato al mito di Gerione, e **Come l'acqua** ed **Era una nuvola** (Crocetti)."
         }
       ],
       "keyPoints": [
-        "L'Annunciazione di Treviso esposta accanto ai Tiziano della Borghese",
-        "La mostra celebra i 450 anni dalla morte del pittore",
-        "Aperta fino all'8 dicembre 2026"
+        "Nobel 2026 per la Letteratura ad Anne Carson, poetessa canadese",
+        "Cerimonia a Stoccolma il 10 dicembre",
+        "In italiano: Autobiografia del rosso, Come l'acqua, Era una nuvola"
       ],
-      "whyItMatters": "Le mostre-dossier mettono a confronto **poche opere scelte**: si visitano in un'ora e permettono di guardare davvero, invece di correre tra cento sale.",
-      "actionToday": "Se passi da Roma entro l'8 dicembre, **prenota la visita**: alla Borghese l'ingresso è a turni. Altrimenti cerca online l'immagine dell'Annunciazione e guardala per 5 minuti.",
+      "whyItMatters": "I libri di un Nobel diventano più facili da trovare e più discussi nei mesi dopo il premio: **è il momento giusto per provare un autore o un'autrice che non conosci**.",
+      "actionToday": "Se vuoi provare Carson, comincia da **Autobiografia del rosso**: è breve e si legge anche a pezzi. Cerca in biblioteca o in libreria la copia più economica.",
       "checklist": [],
-      "eli5": "È come mettere vicine due foto della stessa persona a vent'anni di distanza: confrontandole noti cose che da sole non vedresti.",
+      "eli5": "È come quando una band famosa vince un premio: tutti vanno ad ascoltare il suo disco, e finalmente c'è un buon motivo per provarlo.",
       "deepDive": [
         {
-          "title": "Cos'è una mostra-dossier",
-          "text": "Una mostra-dossier ruota attorno a una sola opera o a un piccolo gruppo, studiati a fondo. Spesso nasce da un prestito o da un restauro, e permette di mostrare al pubblico scoperte che altrimenti resterebbero nei laboratori."
+          "title": "Cos'è un romanzo in versi",
+          "text": "Un romanzo in versi racconta una storia con le forme della poesia: righe, ritmo, immagini. Si legge più lentamente di una prosa, ma si può leggere un po' alla volta, come un album di canzoni."
         }
       ],
       "glossary": [
         {
-          "term": "pala d'altare",
-          "meaning": "Grande dipinto collocato sopra l'altare di una chiesa."
+          "term": "Accademia svedese",
+          "meaning": "L'istituzione che assegna ogni anno il Nobel per la Letteratura."
         },
         {
-          "term": "mostra-dossier",
-          "meaning": "Esposizione dedicata a una sola opera o a pochi lavori, approfonditi in dettaglio."
+          "term": "romanzo in versi",
+          "meaning": "Un racconto lungo scritto con le forme della poesia."
         }
       ],
       "sources": [
         {
-          "title": "Finestre sull'Arte — Galleria Borghese, Tiziano. Dialoghi tra Sacro e Profano",
-          "url": "https://www.finestresullarte.info/mostre/galleria-borghese-tiziano-dialoghi-tra-sacro-e-profano-annunciazione-di-treviso"
+          "title": "Euronews Italia — La poetessa canadese Anne Carson vince il Nobel 2026 per la letteratura",
+          "url": "https://it.euronews.com/2026/10/08/la-poetessa-canadese-anne-carson-vince-il-nobel-2026-per-la-letteratura"
         },
         {
-          "title": "Turismo Roma — Tiziano. Dialoghi tra Sacro e Profano",
-          "url": "https://turismoroma.it/it/node/178251"
+          "title": "Studenti.it — Anne Carson, Nobel per la letteratura 2026: chi è e i libri",
+          "url": "https://www.studenti.it/anne-carson-nobel-letteratura-2026-chi-e-libri.html"
         }
       ],
       "readingMinutes": 2,
       "quiz": [
         {
-          "q": "Perché l'Annunciazione di Treviso è esposta a Roma?",
+          "q": "Quale libro di Anne Carson è pubblicato in Italia da La Nave di Teseo?",
           "options": [
-            "Perché è stata venduta alla Borghese",
-            "Perché la cappella dove si trova è in restauro",
-            "Perché è stata ritrovata in un deposito",
-            "Perché Treviso ha chiuso il Duomo"
+            "Era una nuvola",
+            "Come l'acqua",
+            "Autobiografia del rosso",
+            "Gerione"
           ],
-          "answer": 1,
-          "explanation": "La pala è a Roma durante il restauro degli affreschi del Pordenone nella cappella Malchiostro."
+          "answer": 2,
+          "explanation": "Autobiografia del rosso è edito da La Nave di Teseo; Come l'acqua ed Era una nuvola da Crocetti."
         }
       ],
-      "reflection": "Preferisci le grandi mostre con tante opere o quelle piccole con pochi capolavori? Cosa ti resta di più dopo la visita?",
-      "id": "2026-10-25-x-cultura-news",
+      "reflection": "Quale libro hai letto solo perché premiato o molto discusso? Ne è valsa la pena?",
+      "id": "2026-10-26-x-cultura-news",
       "category": "sapere",
       "label": "Libri e cultura"
     },
     {
       "topic": "cultura",
       "kind": "spunto",
-      "title": "Guardare lentamente: 10 minuti davanti a un'opera sola",
-      "subtitle": "Il metodo dello slow looking per vedere davvero un quadro, anche da casa",
-      "summary": "Nei musei passiamo in media **pochi secondi** davanti a ogni opera. Lo **slow looking** propone l'opposto: sceglierne una e guardarla a lungo, con domande precise.",
+      "title": "Quando abbandonare un libro: la regola delle 50 pagine",
+      "subtitle": "Un metodo attribuito alla bibliotecaria Nancy Pearl per non sprecare tempo di lettura",
+      "summary": "Dai a un libro **50 pagine**. Se non ti prende, puoi smettere senza sensi di colpa. Il tempo di lettura è limitato: conviene dedicarlo ai libri che ti parlano.",
       "stat": {
-        "value": "10 min",
-        "label": "il tempo da dedicare a una sola opera"
+        "value": "50",
+        "label": "le pagine da concedere a un libro prima di decidere"
       },
       "sections": [
         {
-          "heading": "Il problema",
-          "text": "Nei musei si cammina di sala in sala e si fotografano le opere più che guardarle. Così resta **un'impressione vaga** e poco altro."
-        },
-        {
-          "heading": "Il metodo",
-          "text": "Scegli **un'opera sola** e guardala per dieci minuti. Prima descrivi solo quello che vedi, senza interpretare; poi chiediti cosa ti fa pensare; solo alla fine leggi la didascalia."
+          "heading": "La regola",
+          "text": "La bibliotecaria americana **Nancy Pearl** propone di leggere almeno **50 pagine** di un libro prima di decidere se continuare. Se dopo 50 pagine non ti interessa, passa a un altro."
         },
         {
           "heading": "Perché funziona",
-          "text": "Dopo i primi minuti l'occhio comincia a notare **dettagli, colori e gesti** che a un primo sguardo sfuggono. È lo stesso principio della lettura lenta di un libro."
+          "text": "Eviti due errori: **abbandonare troppo presto**, quando la storia deve ancora partire, e **ostinarti** su un libro che non ti dice niente solo perché l'hai iniziato."
+        },
+        {
+          "heading": "Come applicarla",
+          "text": "Mentre leggi le prime 50 pagine chiediti: **voglio sapere cosa succede? mi piace come è scritto?** Se la risposta è no a entrambe, segna il libro come \"rimandato\" e passa oltre."
         }
       ],
       "keyPoints": [
-        "Nei musei guardiamo ogni opera per pochi secondi",
-        "Scegli un'opera e guardala dieci minuti",
-        "Prima descrivi, poi interpreta, infine leggi la didascalia"
+        "Concedi a un libro 50 pagine prima di decidere",
+        "Chiediti se ti interessa la storia o la scrittura",
+        "Abbandonare un libro non è un fallimento"
       ],
-      "whyItMatters": "Allena l'attenzione e trasforma una visita frettolosa in un ricordo. Funziona anche con **un'immagine ad alta risoluzione** sul computer.",
-      "actionToday": "Apri l'immagine di un quadro che ti piace, imposta un timer di **10 minuti** e segui i tre passi. Scrivi tre dettagli che non avevi mai notato.",
+      "whyItMatters": "Leggere di più non dipende dalla velocità, ma dal **tempo speso sui libri giusti**. Abbandonare quello sbagliato libera tempo per quello che ti prende.",
+      "actionToday": "Se hai un libro iniziato che trascini da settimane, applica la regola: guarda a che pagina sei e decidi **adesso** se continuare o metterlo da parte.",
       "checklist": [
-        "Scegli un'opera sola",
-        "Imposta un timer di 10 minuti",
-        "Descrivi solo ciò che vedi per i primi 3 minuti",
-        "Chiediti cosa ti fa pensare o provare",
-        "Leggi la didascalia solo alla fine"
+        "Leggi almeno 50 pagine",
+        "Chiediti: voglio sapere cosa succede?",
+        "Chiediti: mi piace come è scritto?",
+        "Se no a entrambe, rimandalo",
+        "Scegli subito il prossimo da iniziare"
       ],
-      "eli5": "È come conoscere una persona: in un saluto veloce ricordi il vestito, in un'ora di chiacchiere scopri chi è.",
+      "eli5": "È come assaggiare un piatto: dopo qualche boccone sai se ti piace, e non sei obbligato a finire il piatto.",
       "deepDive": [
         {
-          "title": "Lo Slow Art Day",
-          "text": "Dal 2009 musei di tutto il mondo partecipano allo Slow Art Day: i visitatori guardano poche opere per diversi minuti ciascuna e poi ne parlano insieme. L'idea è che l'arte si apra solo a chi le dà tempo."
+          "title": "Il costo dei costi irrecuperabili",
+          "text": "Continuare un libro noioso solo perché ci hai già dedicato tempo è un esempio di **costo irrecuperabile**: il tempo già speso non si recupera, e conta solo quello che resta. Lo stesso vale per film, serie e progetti."
         }
       ],
       "glossary": [
         {
-          "term": "slow looking",
-          "meaning": "Pratica di osservare un'opera a lungo e con metodo, invece di guardarla di sfuggita."
+          "term": "costo irrecuperabile",
+          "meaning": "Un costo già sostenuto che non si può recuperare e che non dovrebbe influenzare le decisioni future."
         },
         {
-          "term": "didascalia",
-          "meaning": "Il testo accanto all'opera con autore, titolo, data e notizie essenziali."
+          "term": "lettura in pausa",
+          "meaning": "Un libro messo da parte senza finirlo, con la possibilità di riprenderlo più avanti."
         }
       ],
       "sources": [
         {
-          "title": "Wikipedia — Slow Art Day",
-          "url": "https://en.wikipedia.org/wiki/Slow_Art_Day"
+          "title": "Wikipedia — Nancy Pearl",
+          "url": "https://en.wikipedia.org/wiki/Nancy_Pearl"
         }
       ],
       "readingMinutes": 2,
       "quiz": [
         {
-          "q": "Nel metodo dello slow looking, quando conviene leggere la didascalia?",
+          "q": "Cosa dice la regola delle 50 pagine?",
           "options": [
-            "Prima di guardare",
-            "Alla fine, dopo aver osservato",
-            "Mai",
-            "A metà"
+            "Leggi sempre tutto il libro",
+            "Dai al libro 50 pagine e poi decidi se continuare",
+            "Leggi solo 50 pagine al giorno",
+            "Salta le prime 50 pagine"
           ],
           "answer": 1,
-          "explanation": "Leggerla alla fine evita che le informazioni guidino lo sguardo prima di aver osservato da soli."
+          "explanation": "Servono abbastanza pagine per dare una possibilità al libro, ma non così tante da sprecare tempo."
         }
       ],
-      "reflection": "Qual è l'ultima opera d'arte che ricordi davvero, e perché proprio quella?",
-      "id": "2026-10-25-x-cultura-spunto",
+      "reflection": "Quale libro hai finito per senso del dovere? Cosa avresti potuto leggere al suo posto?",
+      "id": "2026-10-26-x-cultura-spunto",
       "category": "sapere",
       "label": "Libri e cultura"
+    },
+    {
+      "topic": "startup",
+      "kind": "news",
+      "title": "Round da miliardi in una settimana: Ramp, Tenstorrent, Flapping Airplanes",
+      "subtitle": "Negli Stati Uniti, tra il 15 e il 23 ottobre, le startup hanno raccolto oltre 6 miliardi di dollari",
+      "summary": "**Ramp** ha raccolto 1,85 miliardi a una valutazione di 60 miliardi, **Tenstorrent** 1,5 miliardi e **Flapping Airplanes**, nata da un anno, 1 miliardo in un round di Serie A. I fondi continuano a puntare su AI e infrastruttura.",
+      "stat": {
+        "value": "1 mld $",
+        "label": "raccolti da Flapping Airplanes, startup AI di un anno, in un round di Serie A"
+      },
+      "sections": [
+        {
+          "heading": "I round più grandi",
+          "text": "**Ramp**, piattaforma americana di pagamenti aziendali, ha raccolto 1,85 miliardi di dollari a una valutazione di **60 miliardi**. **Tenstorrent**, che progetta chip, ha raccolto 1,5 miliardi in un round di Serie E a 6,2 miliardi di valutazione."
+        },
+        {
+          "heading": "Una startup di un anno",
+          "text": "**Flapping Airplanes**, startup AI nata da un anno, ha annunciato il 21 ottobre **1 miliardo di dollari di Serie A** a una valutazione di 6 miliardi. A guidare il round sono stati Index Ventures e Lux Capital."
+        },
+        {
+          "heading": "Dall'Europa",
+          "text": "**Legora**, startup svedese di AI per il settore legale, ha raccolto 550 milioni di dollari a una valutazione di **8,8 miliardi**."
+        },
+        {
+          "heading": "Una cifra da prendere con cautela",
+          "text": "Un riepilogo stima oltre 6 miliardi raccolti in più di 15 operazioni tra il 15 e il 23 ottobre. È la stima di una sola testata, e le date dei round variano tra le fonti."
+        }
+      ],
+      "keyPoints": [
+        "Ramp: 1,85 miliardi a 60 miliardi di valutazione",
+        "Flapping Airplanes: 1 miliardo di Serie A, startup di un anno",
+        "Legora, svedese: 550 milioni a 8,8 miliardi"
+      ],
+      "whyItMatters": "I grandi round mostrano **dove i fondi credono che si faranno i prossimi soldi**: oggi AI, chip e software per aziende. Per chi vuole fondare o lavorare in una startup, sono indicazioni sul mercato.",
+      "actionToday": "Scegli uno dei quattro nomi e cerca **cosa fa in due righe**. Poi chiediti: quale problema reale risolve, e per chi?",
+      "checklist": [],
+      "eli5": "È come vedere un gruppo di investitori fare la fila per entrare in una gelateria nuova: dice che pensano che venderà molti gelati, non che lo farà davvero.",
+      "deepDive": [
+        {
+          "title": "Cosa significa Serie A, B, E",
+          "text": "Le lettere indicano le tappe di raccolta di una startup: Seed per l'idea, poi Serie A, B, C e così via con importi crescenti. Una Serie E è un round maturo; una Serie A da un miliardo è un'eccezione, che segnala l'entusiasmo del momento."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "valutazione",
+          "meaning": "Il valore attribuito a una società nel momento in cui entra un nuovo investitore."
+        },
+        {
+          "term": "Serie A",
+          "meaning": "Il primo grande round di una startup, dopo la fase iniziale detta seed."
+        }
+      ],
+      "sources": [
+        {
+          "title": "The Daily Star — Year-old AI startup Flapping Airplanes raises $1 billion in Series A",
+          "url": "https://www.thedailystar.net/news/technology/news/year-old-ai-startup-flapping-airplanes-raises-1-billion-series-funding-4304921"
+        },
+        {
+          "title": "Best Startup US — US Startup Funding Rounds October 2026",
+          "url": "https://beststartup.us/us-startup-funding-rounds-october-2026/"
+        },
+        {
+          "title": "Tech Startups — Startup Funding News Today, October 22, 2026",
+          "url": "https://techstartups.com/2026/10/22/startup-funding-news-today-october-22-2026-flapping-airplanes-legora-mach9-peak-energy-whop-more/"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Cosa indica la \"valutazione\" di una startup?",
+          "options": [
+            "I suoi ricavi annuali",
+            "Il valore attribuito alla società quando entra un nuovo investitore",
+            "Il numero dei dipendenti",
+            "I debiti"
+          ],
+          "answer": 1,
+          "explanation": "È il valore che investitori e fondatori attribuiscono alla società nel round: non è un incasso e non è garantito."
+        }
+      ],
+      "reflection": "Quale problema vorresti vedere risolto da una startup? Chi lo sta già facendo?",
+      "id": "2026-10-26-x-startup-news",
+      "category": "finanza",
+      "label": "Imprenditoria e startup"
+    },
+    {
+      "topic": "startup",
+      "kind": "spunto",
+      "title": "Pre-money e post-money: quanta parte della società vende chi raccoglie",
+      "subtitle": "Una divisione per capire cosa vuol dire \"un miliardo a una valutazione di sei\"",
+      "summary": "Quando una startup raccoglie capitale, la quota ceduta è **investimento diviso valutazione post-money**. Con 1 miliardo a 6 miliardi post-money, i fondatori cedono circa il **17%**.",
+      "stat": {
+        "value": "16,7%",
+        "label": "quota ceduta con 1 miliardo di investimento a 6 miliardi di valutazione post-money"
+      },
+      "sections": [
+        {
+          "heading": "Pre e post",
+          "text": "La **valutazione pre-money** è il valore della società prima del round. La **post-money** è il valore dopo: pre-money più i soldi appena entrati."
+        },
+        {
+          "heading": "La formula",
+          "text": "La quota dell'investitore è **investimento diviso post-money**. Esempio: 1 miliardo con valutazione post-money di 6 miliardi è 1/6, cioè circa il 16,7% della società."
+        },
+        {
+          "heading": "Perché è importante",
+          "text": "Ogni round **diluisce** chi era già dentro. Un fondatore che ha il 30% prima del round e cede il 20% passa al **24%** (30% moltiplicato per 80%)."
+        }
+      ],
+      "keyPoints": [
+        "Post-money = pre-money + investimento",
+        "Quota ceduta = investimento / post-money",
+        "Ogni round diluisce chi era già socio"
+      ],
+      "whyItMatters": "Chi lavora in una startup con **stock option** o ne fonda una deve capire la diluizione: la quota di partenza si riduce a ogni round, anche se il valore dell'azienda cresce.",
+      "actionToday": "Calcola su un foglio: **quota ceduta** se una società vale 8 milioni pre-money e raccoglie 2 milioni. (Soluzione: 2 diviso 10, cioè 20%.)",
+      "checklist": [
+        "Scrivi la valutazione pre-money",
+        "Aggiungi l'investimento per avere la post-money",
+        "Dividi l'investimento per la post-money",
+        "Moltiplica la tua quota per (1 meno la quota ceduta)"
+      ],
+      "eli5": "È come vendere una fetta di una torta: la torta diventa più grande con i soldi dell'investitore, ma la tua parte, in percentuale, si riduce.",
+      "deepDive": [
+        {
+          "title": "Perché una quota piccola può valere di più",
+          "text": "Anche se la tua percentuale scende a ogni round, il valore dell'azienda può crescere più in fretta. Il 10% di una società da 100 milioni vale 10 milioni; il 20% di una da 20 milioni vale 4."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "diluizione",
+          "meaning": "La riduzione della quota di un socio quando entrano nuove azioni nel capitale."
+        },
+        {
+          "term": "pre-money",
+          "meaning": "La valutazione di una società prima che entri il capitale del nuovo round."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wikipedia — Valutazione d'azienda",
+          "url": "https://it.wikipedia.org/wiki/Valutazione_d%27azienda"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Una startup vale 8 milioni pre-money e raccoglie 2 milioni. Che quota cede?",
+          "options": [
+            "10%",
+            "20%",
+            "25%",
+            "40%"
+          ],
+          "answer": 1,
+          "explanation": "La post-money è 10 milioni: 2 diviso 10 fa il 20%."
+        }
+      ],
+      "reflection": "Preferiresti il 10% di un'azienda piccola o l'1% di una molto grande? Cosa guardi per decidere?",
+      "id": "2026-10-26-x-startup-spunto",
+      "category": "finanza",
+      "label": "Imprenditoria e startup"
     },
     {
       "topic": "viaggi",
       "kind": "news",
-      "title": "Sciopero del 30 ottobre: cosa sapere prima di prenotare treni e voli",
-      "subtitle": "Le informazioni sono ancora discordanti: ecco come verificare prima di partire",
-      "summary": "Per **venerdì 30 ottobre** è annunciato uno sciopero generale, ma le fonti non concordano su quanto toccherà i trasporti. Alcune indicano uno stop ferroviario **dalle 21 del 29 alle 20:59 del 30**.",
+      "title": "Ryanair: 10 nuove rotte da Malpensa e Bergamo per l'inverno 2026",
+      "subtitle": "Sei da Malpensa, quattro da Bergamo; tornano anche i voli da Rimini",
+      "summary": "Ryanair aggiunge **dieci nuove rotte** da Milano nell'inverno 2026: sei da Malpensa (Agadir, Crotone, Edimburgo, Danzica, Funchal, Tirana) e quattro da Bergamo. Su Malpensa la capacità cresce del **27%**.",
       "stat": {
-        "value": "30/10",
-        "label": "la data dello sciopero generale annunciato"
+        "value": "+27%",
+        "label": "capacità di Ryanair a Malpensa nell'inverno 2026, con oltre 640.000 posti in più"
       },
       "sections": [
         {
-          "heading": "Cosa è annunciato",
-          "text": "Per il 30 ottobre è proclamato uno **sciopero generale**. Secondo alcune fonti riguarda anche i treni, dalle 21:00 di giovedì 29 alle 20:59 di venerdì 30; secondo altre i principali comparti dei trasporti sarebbero esclusi."
+          "heading": "Le nuove rotte da Malpensa",
+          "text": "Le sei nuove destinazioni da Malpensa sono **Agadir, Crotone, Edimburgo, Danzica, Funchal e Tirana**. Le quattro da Bergamo non sono elencate in tutte le fonti: conviene controllare il sito della compagnia."
         },
         {
-          "heading": "Le fasce garantite",
-          "text": "In caso di sciopero ferroviario, per i treni regionali valgono le **fasce garantite dalle 6 alle 9 e dalle 18 alle 21** nei giorni feriali. La Commissione di garanzia può ancora intervenire sulle date."
+          "heading": "Più posti",
+          "text": "Su Malpensa la capacità sale del **27%**, con più di 640.000 posti in più rispetto alla stagione precedente."
         },
         {
-          "heading": "Come muoversi",
-          "text": "Se devi viaggiare tra il 29 e il 30, **controlla la lista dei treni garantiti** sul sito dell'operatore pochi giorni prima e valuta di anticipare o posticipare la partenza."
+          "heading": "Anche altrove",
+          "text": "Ryanair torna a **Rimini** nell'inverno 2026/27 con voli per Catania e Tirana, e in Sicilia prevede 17 nuove rotte tra Palermo, Catania e Trapani."
         }
       ],
       "keyPoints": [
-        "Sciopero generale annunciato per il 30 ottobre",
-        "Fonti discordanti sull'impatto su treni e voli",
-        "Treni regionali garantiti 6-9 e 18-21"
+        "Dieci nuove rotte da Milano: sei da Malpensa e quattro da Bergamo",
+        "Capacità di Malpensa +27% nell'inverno 2026",
+        "Ryanair torna a Rimini e amplia i voli in Sicilia"
       ],
-      "whyItMatters": "Un viaggio a cavallo del ponte di Ognissanti rischia di saltare. Saperlo **con qualche giorno di anticipo** ti permette di cambiare data senza penali o con meno stress.",
-      "actionToday": "Se hai un viaggio tra il 29 e il 30 ottobre, segnati un promemoria per il **28 ottobre**: controlla lo stato dello sciopero e i treni garantiti.",
+      "whyItMatters": "Nuove rotte di inverno significano **prezzi più bassi e più scelta per i weekend fuori stagione**. Le tariffe delle nuove rotte spesso partono basse per attirare i primi passeggeri.",
+      "actionToday": "Se vivi vicino a Milano, guarda il **calendario dei prezzi** per una delle sei destinazioni da Malpensa e confrontalo con una rotta già esistente.",
       "checklist": [],
-      "eli5": "È come una previsione del tempo che dice \"possibile pioggia\": non sai ancora se pioverà, ma ti conviene guardare il cielo prima di uscire.",
+      "eli5": "È come aprire una nuova corsia in autostrada: i viaggiatori hanno più scelta, e le compagnie abbassano i prezzi per riempirla.",
       "deepDive": [
         {
-          "title": "Perché le date possono cambiare",
-          "text": "In Italia gli scioperi nei servizi pubblici sono regolati da una legge che impone preavviso e fasce minime. La Commissione di garanzia può chiedere di spostarli se coincidono con periodi di forte traffico, come i ponti festivi."
+          "title": "Perché le rotte di inverno sono diverse",
+          "text": "Le compagnie low cost riorganizzano le rotte ogni stagione. In inverno puntano su mete di sole come Madeira e Agadir, sulle città d'arte e sui voli per tornare a casa per le feste."
         }
       ],
       "glossary": [
         {
-          "term": "fasce garantite",
-          "meaning": "Orari in cui, anche durante uno sciopero, un servizio minimo deve essere assicurato."
+          "term": "capacità",
+          "meaning": "Il numero di posti offerti da una compagnia su una rotta o in un aeroporto."
         },
         {
-          "term": "Commissione di garanzia",
-          "meaning": "L'autorità che vigila sugli scioperi nei servizi pubblici essenziali."
+          "term": "stagione invernale IATA",
+          "meaning": "Il periodo da fine ottobre a fine marzo in cui le compagnie applicano gli orari invernali."
         }
       ],
       "sources": [
         {
-          "title": "Il Gazzettino — Scioperi ottobre 2026, tutte le date",
-          "url": "https://www.ilgazzettino.it/italia/primopiano/scioperi_ottobre_2026_date_treni_aerei-9780599.html"
+          "title": "The Flight Club — Winter 2026, Ryanair annuncia 10 nuove rotte da Milano-Malpensa e Bergamo",
+          "url": "https://www.theflightclub.it/2026/10/winter-2026-ryanair-annuncia-10-nuove-rotte-da-milano-malpensa-e-bergamo/"
         },
         {
-          "title": "Scuola Informa — Sciopero treni 30 ottobre 2026: orari e treni garantiti",
-          "url": "https://www.scuolainforma.news/sciopero-treni-30-ottobre-2026-le-novita-su-orari-e-treni-garantiti/"
+          "title": "MilanoToday — Ryanair, crescita su Malpensa e Bergamo: 10 nuovi voli nell'inverno 2026",
+          "url": "https://www.milanotoday.it/attualita/nuovi-voli-ryanair-inverno-2026.html"
         }
       ],
       "readingMinutes": 2,
       "quiz": [
         {
-          "q": "Durante uno sciopero ferroviario, in quali fasce sono garantiti i treni regionali nei giorni feriali?",
+          "q": "Quante nuove rotte aggiunge Ryanair da Milano nell'inverno 2026?",
           "options": [
-            "8-10 e 16-18",
-            "6-9 e 18-21",
-            "Tutto il giorno",
-            "Solo la notte"
+            "Sei",
+            "Dieci",
+            "Diciassette",
+            "Venti"
           ],
           "answer": 1,
-          "explanation": "Le fasce di tutela per i regionali sono dalle 6 alle 9 e dalle 18 alle 21."
+          "explanation": "Sei da Malpensa e quattro da Bergamo, in totale dieci."
         }
       ],
-      "reflection": "Quando un viaggio rischia di saltare, preferisci aspettare notizie certe o cambiare subito i piani?",
-      "id": "2026-10-25-x-viaggi-news",
+      "reflection": "Quale destinazione di sole faresti d'inverno, se il volo costasse poco?",
+      "id": "2026-10-26-x-viaggi-news",
       "category": "mondo",
       "label": "Viaggi"
     },
     {
       "topic": "viaggi",
       "kind": "spunto",
-      "title": "Volo in ritardo? Fino a 600 euro di rimborso con il regolamento UE",
-      "subtitle": "Il regolamento 261/2004 in tre numeri, e cosa fare in aeroporto",
-      "summary": "Se arrivi a destinazione con **più di 3 ore di ritardo** su un volo coperto dal regolamento europeo 261/2004, puoi avere una compensazione da **250 a 600 euro**, salvo circostanze straordinarie.",
+      "title": "Tre filtri per trovare un volo economico: date, aeroporti e costo totale",
+      "subtitle": "Cosa controllare prima di prenotare, senza strumenti speciali",
+      "summary": "Il volo più economico spesso non è il più comodo né il più conveniente. Tre controlli, **date flessibili, aeroporti vicini e costo totale**, ti fanno risparmiare tempo e soldi.",
       "stat": {
-        "value": "600 €",
-        "label": "compensazione massima per i voli oltre 3.500 km"
+        "value": "3",
+        "label": "i controlli da fare prima di prenotare un volo"
       },
       "sections": [
         {
-          "heading": "Quando vale",
-          "text": "Il regolamento copre i voli in partenza da un aeroporto dell'Unione e quelli in arrivo nell'Unione con una **compagnia europea**. Conta il ritardo all'arrivo, non alla partenza."
+          "heading": "Date flessibili",
+          "text": "Cerca con la **vista a calendario** dei motori di ricerca: spesso spostare la partenza di un giorno o tornare un giorno prima cambia molto il prezzo."
         },
         {
-          "heading": "I tre importi",
-          "text": "**250 euro** fino a 1.500 km, **400 euro** tra 1.500 e 3.500 km e per i voli intra-UE oltre 1.500 km, **600 euro** oltre i 3.500 km. Vale anche per le cancellazioni comunicate tardi."
+          "heading": "Aeroporti vicini",
+          "text": "Confronta **tutti gli aeroporti raggiungibili**: per Milano sono Malpensa, Linate e Bergamo. Un volo da un aeroporto più lontano può costare meno, ma tieni conto di treno e navetta."
         },
         {
-          "heading": "Le eccezioni",
-          "text": "La compagnia non paga se il ritardo dipende da **circostanze straordinarie**, come meteo estremo o scioperi del controllo di volo. Assistenza, pasti e albergo però restano dovuti."
+          "heading": "Il costo totale",
+          "text": "Aggiungi al prezzo **bagaglio, scelta del posto e trasporto da e per l'aeroporto**. Un volo da 20 euro con bagaglio a pagamento può costare più di uno da 45 con bagaglio incluso."
         }
       ],
       "keyPoints": [
-        "Ritardo all'arrivo oltre 3 ore: diritto alla compensazione",
-        "250, 400 o 600 euro in base alla distanza",
-        "Niente compensazione per circostanze straordinarie, ma l'assistenza resta"
+        "Usa la vista a calendario per trovare i giorni più economici",
+        "Confronta tutti gli aeroporti raggiungibili",
+        "Confronta il costo totale con bagaglio e trasporto"
       ],
-      "whyItMatters": "Molti passeggeri non chiedono nulla perché non conoscono i propri diritti. Una richiesta compilata bene **direttamente alla compagnia** non costa niente.",
-      "actionToday": "Salva sul telefono una nota con **i tre importi** e la checklist qui sotto: la prossima volta che un volo ritarda saprai cosa fare in cinque minuti.",
+      "whyItMatters": "Il prezzo in evidenza è solo una parte della spesa. **Calcolare il totale** ti evita sorprese e ti fa scegliere davvero il volo più conveniente.",
+      "actionToday": "Scegli una meta che vorresti visitare entro tre mesi e fai la ricerca con i **tre filtri**: annota il totale, bagaglio compreso, di due combinazioni diverse.",
       "checklist": [
-        "Fotografa il tabellone con l'orario di arrivo effettivo",
-        "Conserva carta d'imbarco e prenotazione",
-        "Chiedi per iscritto il motivo del ritardo",
-        "Tieni gli scontrini di pasti e spese",
-        "Invia la richiesta dal sito della compagnia citando il regolamento 261/2004"
+        "Apri la vista a calendario con date flessibili",
+        "Controlla gli aeroporti vicini a casa e a destinazione",
+        "Aggiungi il costo del bagaglio",
+        "Aggiungi treno o navetta per l'aeroporto",
+        "Confronta il costo totale delle due migliori opzioni"
       ],
-      "eli5": "È come una garanzia sul viaggio: se il servizio non arriva in tempo e non è colpa del meteo o di un evento eccezionale, la compagnia ti deve un indennizzo fisso.",
+      "eli5": "È come confrontare i prezzi dei supermercati: conta quanto paghi alla fine, non quanto costa il primo prodotto che vedi.",
       "deepDive": [
         {
-          "title": "Ritardo e cancellazione",
-          "text": "Per le cancellazioni la compensazione spetta se la compagnia avvisa meno di 14 giorni prima e non offre un'alternativa con orari vicini. In ogni caso puoi scegliere tra il rimborso del biglietto e un volo alternativo."
+          "title": "Perché i prezzi cambiano",
+          "text": "Le compagnie aggiustano i prezzi in base ai posti rimasti, ai giorni mancanti alla partenza e alla domanda sulla rotta. Per questo lo stesso volo può costare molto diversamente in giorni vicini."
         }
       ],
       "glossary": [
         {
-          "term": "circostanze straordinarie",
-          "meaning": "Eventi fuori dal controllo della compagnia, come meteo estremo, che la esonerano dalla compensazione."
+          "term": "vista a calendario",
+          "meaning": "Funzione dei motori di ricerca che mostra il prezzo più basso per ogni giorno del mese."
         },
         {
-          "term": "compensazione pecuniaria",
-          "meaning": "Somma fissa dovuta al passeggero per ritardo prolungato o cancellazione."
+          "term": "costo totale",
+          "meaning": "Il prezzo reale del viaggio, con bagaglio, posto e trasporti inclusi."
         }
       ],
       "sources": [
         {
-          "title": "Wikipedia — Regolamento (CE) n. 261/2004",
-          "url": "https://it.wikipedia.org/wiki/Regolamento_(CE)_n._261/2004"
+          "title": "Wikipedia — Compagnia aerea low cost",
+          "url": "https://it.wikipedia.org/wiki/Compagnia_aerea_a_basso_costo"
         }
       ],
       "readingMinutes": 2,
       "quiz": [
         {
-          "q": "Un volo Milano-Parigi (circa 850 km) arriva con 4 ore di ritardo per un guasto tecnico. Quanto spetta?",
+          "q": "Perché conviene confrontare il costo totale e non solo il prezzo del biglietto?",
           "options": [
-            "Niente",
-            "250 euro",
-            "400 euro",
-            "600 euro"
+            "Perché il biglietto non conta",
+            "Perché bagaglio, posto e trasporti possono cambiare molto la spesa",
+            "Perché i voli sono tutti uguali",
+            "Perché il prezzo è sempre fisso"
           ],
           "answer": 1,
-          "explanation": "Sotto i 1.500 km la compensazione è di 250 euro; un guasto tecnico normalmente non è una circostanza straordinaria."
+          "explanation": "Un biglietto economico con extra a pagamento può costare più di uno apparentemente più caro che li include."
         }
       ],
-      "reflection": "Ti è mai capitato un ritardo per cui avresti potuto chiedere una compensazione? Cosa ti ha fermato?",
-      "id": "2026-10-25-x-viaggi-spunto",
+      "reflection": "Ti è mai capitato di scegliere un volo economico e di spendere poi di più tra extra e trasporti? Cosa faresti diversamente?",
+      "id": "2026-10-26-x-viaggi-spunto",
       "category": "mondo",
       "label": "Viaggi"
     }

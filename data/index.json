@@ -1,6 +1,33 @@
 {
   "days": [
     {
+      "date": "2026-10-26",
+      "number": 4,
+      "headline": "Lula ribalta i sondaggi e vince in Brasile, i chatbot si schierano in politica e la settimana della Fed è alle porte.",
+      "cards": [
+        {
+          "category": "ai",
+          "title": "Chatbot e politica: Grok sceglie i repubblicani, GPT i democratici"
+        },
+        {
+          "category": "finanza",
+          "title": "Settimana della Fed e di Big Tech: cosa guardare tra mercoledì e giovedì"
+        },
+        {
+          "category": "mondo",
+          "title": "Lula vince il ballottaggio e ribalta i sondaggi: quarto mandato in Brasile"
+        },
+        {
+          "category": "sapere",
+          "title": "L'effetto ancoraggio: perché il primo numero decide la trattativa"
+        },
+        {
+          "category": "routine",
+          "title": "Pianificare i pasti: 15 minuti di lunedì per mangiare meglio tutta la settimana"
+        }
+      ]
+    },
+    {
       "date": "2026-10-25",
       "number": 3,
       "headline": "Petrolio ai massimi da sei mesi, il Brasile sceglie tra Lula e Bolsonaro e stanotte è tornata l'ora solare.",
