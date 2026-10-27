@@ -29,7 +29,10 @@ jobs:
           gzip -9 -c /tmp/export.json > /tmp/export.gz
           openssl enc -aes-256-cbc -pbkdf2 -salt -in /tmp/export.gz -out /tmp/export.enc -pass file:/tmp/k
           openssl pkeyutl -encrypt -pubin -inkey config/regia.pub.pem -pkeyopt rsa_padding_mode:oaep -in /tmp/k -out /tmp/k.enc
-          echo "-----CHIAVE-----"; base64 -w 76 /tmp/k.enc; echo "-----DATI-----"; base64 -w 76 /tmp/export.enc; echo "-----FINE-----"
+          # every line carries its number and a 4-character checksum, so a hand copy of this log
+          # can be checked line by line and only the wrong lines need to be copied again
+          emit() { n=0; base64 -w 64 "$1" | while IFS= read -r line; do n=$((n+1)); printf '%03d %s %s\n' "$n" "$(printf %s "$line" | sha256sum | cut -c1-4)" "$line"; done; }
+          echo "-----CHIAVE-----"; emit /tmp/k.enc; echo "-----DATI-----"; emit /tmp/export.enc; echo "-----FINE-----"
           # fingerprint of the encrypted bytes, to check the copy read from this log
           echo "SHA256 $(sha256sum /tmp/export.enc | cut -d' ' -f1)"
           rm -f /tmp/k /tmp/export.json /tmp/export.gz /tmp/players.json /tmp/messages.json
