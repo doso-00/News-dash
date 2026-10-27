@@ -5,7 +5,7 @@ I dati arrivano come file allegati e non entrano mai nel repository. Lavora nell
 
 1. **Profili e messaggi.** Avvia il workflow `regia.yml` (strumento GitHub `actions_run_trigger`, `run_workflow`, ref `claude/personal-news-dashboard-f1mny6`).
    - Aspetta che finisca (`actions_list` → `list_workflow_runs`, poi `list_workflow_jobs`) e leggi il log del job con `get_job_logs` e `return_content: true`.
-   - Copia in `$S/log.txt` le righe da `-----CHIAVE-----` a `-----FINE-----`, più la riga `SHA256 ...` che segue (i timestamp all'inizio delle righe si possono lasciare). Ricopia carattere per carattere: lo script di decifratura confronta l'impronta e, se la copia è sbagliata, si ferma. In quel caso il log potrebbe essere già cancellato: rilancia l'esportazione e non cancellare il log finché la decifratura non è riuscita.
+   - Copia in `$S/log.txt` le righe da `-----CHIAVE-----` a `-----FINE-----`, più la riga `SHA256 ...` che segue (i timestamp all'inizio delle righe si possono lasciare). Ogni riga ha numero e checksum: se lo script di decifratura dice "riga NNN sbagliata", rileggi quelle righe dal log e correggi solo quelle (con `sed -i 'NNNs/.*/riga giusta/'`), poi rilancia. Non cancellare il log finché la decifratura non è riuscita. L'host dei log scaricabili (blob.core.windows.net) è bloccato dalla rete: la copia a mano è l'unica strada.
    - Esegui `sh scripts/regia/decrypt.sh $S/log.txt $S/export.json`.
    - Solo dopo una decifratura riuscita cancella il log del run con `actions_run_trigger`, `delete_workflow_run_logs`.
 2. **Consumo.** Esegui `node scripts/regia/consumo.mjs $S/consumo.json` e annota il totale "$ dal registro".

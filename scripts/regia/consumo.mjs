@@ -32,7 +32,15 @@ if (!out) {
   process.exit(1);
 }
 
-const dir = path.join(os.homedir(), ".claude/projects/-home-user-News-dash");
+// The session writes its transcript under the project of its working directory: when the
+// directory changes, a new file starts, so every project folder is read and the calls are
+// counted once across files.
+const root = path.join(os.homedir(), ".claude/projects");
+const files = fs
+  .readdirSync(root, { withFileTypes: true })
+  .filter((d) => d.isDirectory())
+  .flatMap((d) => fs.readdirSync(path.join(root, d.name)).filter((f) => f.endsWith(".jsonl")).map((f) => path.join(root, d.name, f)));
+const seen = new Set();
 const romeDay = (iso) => new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Rome" }).format(new Date(iso));
 const textOf = (content) => (typeof content === "string" ? content : (content ?? []).map((c) => c.text ?? "").join(" "));
 
@@ -51,10 +59,9 @@ function add(day, attivita, model, u, cost) {
 }
 
 let counted = 0;
-for (const file of fs.readdirSync(dir).filter((f) => f.endsWith(".jsonl"))) {
-  const lines = fs.readFileSync(path.join(dir, file), "utf8").split("\n").filter(Boolean);
+for (const file of files) {
+  const lines = fs.readFileSync(file, "utf8").split("\n").filter(Boolean);
   let attivita = "sviluppo";
-  const seen = new Set();
   for (const line of lines) {
     let o;
     try {

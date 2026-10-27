@@ -56,10 +56,11 @@ const left = week && avg && perPoint("7 giorni") ? Math.floor((1 - week.usato) /
 const lastActive = attivita.map((r) => r.day).sort().at(-1);
 const activeToday = new Set(attivita.filter((r) => r.day === today).map((r) => r.username)).size;
 const rooms = notizie.filter((n) => n.persone >= 2).length;
-const warn = [week, five].some((w) => w && w.usato >= 0.8);
+const warn = [week, five].some((w) => w && w.usato >= 0.75);
 
-const subject = `Cinque al Mattino · ${latest?.date === today ? `edizione n. ${latest.number}` : "riepilogo"} del ${dayName(today)}${warn ? " · limite oltre l'80%" : ""}`;
+const subject = `Cinque al Mattino · ${latest?.date === today ? `edizione n. ${latest.number}` : "riepilogo"} del ${dayName(today)}${warn ? " · limite oltre il 75%" : ""}`;
 
+const warnLine = week && week.usato >= 0.75 ? `la settimana è al ${pct(week.usato)}: resta il ${pct(1 - week.usato)} fino a ${when(week.si_azzera)}. Una conversazione lunga pesa molto, perché ogni passaggio rilegge tutto il contesto.` : "";
 const rows = [
   ["Settimana", week ? `usato ${pct(week.usato)}, rimane <b>${pct(1 - week.usato)}</b>` : "—", week ? `si azzera ${when(week.si_azzera)}` : ""],
   ["5 ore", five ? `usato ${pct(five.usato)}, rimane <b>${pct(1 - five.usato)}</b>` : "—", five ? `si azzera ${when(five.si_azzera)}` : ""],
@@ -74,6 +75,7 @@ const html = `<div style="font-family:-apple-system,Segoe UI,Roboto,Helvetica,Ar
 ${latest?.date === today ? `<p style="margin:0 0 12px;color:#555">${esc(latest.headline)}</p><ul style="padding-left:18px;margin:0">${cardList}</ul>${extrasLine}` : `<p style="color:#555">Oggi non c'è una nuova edizione.</p>`}
 <h3 style="font-weight:500;margin:20px 0 6px">Il tuo abbonamento Claude</h3>
 <table style="border-collapse:collapse;width:100%;font-size:14px">${rows.map(([a, b, c]) => `<tr><td style="padding:4px 8px 4px 0;color:#555;white-space:nowrap">${a}</td><td style="padding:4px 8px">${b}</td><td style="padding:4px 0;color:#888;font-size:12px">${c}</td></tr>`).join("")}</table>
+${warnLine ? `<p style="margin:8px 0 0;font-size:14px;color:#a15c00"><b>Attenzione:</b> ${warnLine}</p>` : ""}
 <p style="margin:8px 0 0;font-size:14px">${edCost != null ? `L'edizione del ${dayName(edDay)} è costata circa ${usd(edCost)} a prezzi di listino, cioè ${pct(edShare("7 giorni"))} della settimana e ${pct(edShare("5 ore"))} delle 5 ore.` : "Nessuna edizione misurata finora."}${left != null ? ` Con quello che ti resta ci stanno ancora circa ${left} edizioni.` : ""}</p>
 <h3 style="font-weight:500;margin:20px 0 6px">L'app</h3>
 <p style="margin:0;font-size:14px">${utenti.length} utenti, ${activeToday} attivi oggi${lastActive && lastActive !== today ? ` (ultimo accesso il ${dayName(lastActive)})` : ""}. ${notizie.length} schede pubblicate, ${rooms} discussioni aperte, ${messaggi} ${messaggi === 1 ? "messaggio" : "messaggi"}.</p>
@@ -87,6 +89,7 @@ const text = [
   latest?.date === today ? `${latest.headline}\n${latest.cards.map((c) => `- ${c.label}: ${c.title}`).join("\n")}` : "Oggi non c'è una nuova edizione.",
   "",
   `Abbonamento: settimana usato ${pct(week?.usato)} (rimane ${pct(week ? 1 - week.usato : null)}), 5 ore usato ${pct(five?.usato)} (rimane ${pct(five ? 1 - five.usato : null)}). Costi extra: ${extra?.in_uso === "no" ? "nessuno" : extra?.in_uso ?? "—"}.`,
+  warnLine ? `ATTENZIONE: ${warnLine}` : "",
   edCost != null ? `Ultima edizione: circa ${usd(edCost)}, ${pct(edShare("7 giorni"))} della settimana.` : "",
   `App: ${utenti.length} utenti, ${activeToday} attivi oggi, ${notizie.length} schede, ${messaggi} ${messaggi === 1 ? "messaggio" : "messaggi"}.`,
   "",
