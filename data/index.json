@@ -1,6 +1,33 @@
 {
   "days": [
     {
+      "date": "2026-10-27",
+      "number": 5,
+      "headline": "Anthropic deposita il prospetto per la Borsa, Israele va al voto e a Roma si chiude la manovra.",
+      "cards": [
+        {
+          "category": "ai",
+          "title": "Anthropic pubblica il prospetto per la Borsa: 16 miliardi di ricavi, 80 di perdita"
+        },
+        {
+          "category": "finanza",
+          "title": "Manovra 2027 da 23,5 miliardi: mercoledì il Consiglio dei ministri"
+        },
+        {
+          "category": "mondo",
+          "title": "Israele al voto: Netanyahu contro Eisenkot, rischio stallo"
+        },
+        {
+          "category": "sapere",
+          "title": "Il paradosso di Simpson: quando i numeri totali dicono il contrario dei gruppi"
+        },
+        {
+          "category": "routine",
+          "title": "Una domanda in più: l'abitudine che ti rende più simpatico"
+        }
+      ]
+    },
+    {
       "date": "2026-10-26",
       "number": 4,
       "headline": "Lula ribalta i sondaggi e vince in Brasile, i chatbot si schierano in politica e la settimana della Fed è alle porte.",

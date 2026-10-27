@@ -1,0 +1,1360 @@
+{
+  "date": "2026-10-27",
+  "number": 5,
+  "generatedAt": "2026-10-27T05:20:24.162Z",
+  "headline": "Anthropic deposita il prospetto per la Borsa, Israele va al voto e a Roma si chiude la manovra.",
+  "cards": [
+    {
+      "category": "ai",
+      "interests": [
+        "ai",
+        "tech",
+        "startup",
+        "finanza"
+      ],
+      "title": "Anthropic pubblica il prospetto per la Borsa: 16 miliardi di ricavi, 80 di perdita",
+      "subtitle": "Il documento S-1 mostra quanto costa far crescere un laboratorio di AI: la società prevede di quotarsi al Nasdaq con il simbolo ANT",
+      "summary": "Lunedì Anthropic ha pubblicato l'**S-1**, il prospetto per la quotazione: **16,3 miliardi di dollari di ricavi nel primo semestre 2026** e una **perdita netta di 80,7 miliardi**. Anthropic è l'azienda che sviluppa Claude, il modello con cui è scritta questa app: leggi la notizia con occhio critico.",
+      "stat": {
+        "value": "16,3 mld $",
+        "label": "ricavi di Anthropic nel primo semestre 2026, secondo l'S-1"
+      },
+      "sections": [
+        {
+          "heading": "Il documento",
+          "text": "Il **26 ottobre** Anthropic ha pubblicato la sua dichiarazione di registrazione **S-1**: il passo pubblico verso la quotazione. La società prevede di quotarsi al **Nasdaq** con il simbolo **ANT**. Una bozza riservata era stata annunciata il 1° giugno."
+        },
+        {
+          "heading": "I ricavi",
+          "text": "Secondo le testate, i ricavi del primo semestre 2026 sono circa **16,3 miliardi di dollari**, contro 1,2 miliardi dello stesso periodo del 2025. Fortune riporta che nel secondo trimestre sono entrati 11,6 miliardi, a fronte di 5,6 miliardi spesi in calcolo."
+        },
+        {
+          "heading": "La perdita",
+          "text": "La **perdita netta** del semestre è di circa **80,7 miliardi**. Le cifre vengono da articoli di stampa: io non ho aperto il documento, e le voci che compongono la perdita vanno lette nel prospetto."
+        },
+        {
+          "heading": "Cosa non c'è",
+          "text": "Il prospetto **non indica né prezzo né numero di azioni**. Le stime di valutazione tra 1.500 e 2.000 miliardi di dollari sono indiscrezioni di stampa, non confermate dalla società."
+        },
+        {
+          "heading": "Chi comanda",
+          "text": "Secondo le testate, i cofondatori avrebbero il **50,1% dei voti** tramite una singola azione di Classe F, e il **Long-Term Benefit Trust** eleggerebbe la maggioranza del consiglio. Anthropic è una società a beneficio pubblico."
+        },
+        {
+          "heading": "La reazione della Borsa",
+          "text": "Lunedì i titoli dell'AI sono saliti: **Nvidia quasi +3%** e l'indice dei semiconduttori oltre +3%, secondo Reuters. I dati di chiusura variano tra le fonti: il Nasdaq è dato a +0,82% da una sola."
+        }
+      ],
+      "keyPoints": [
+        "S-1 pubblicato il 26 ottobre: quotazione prevista al Nasdaq come ANT",
+        "Ricavi di circa 16,3 miliardi in sei mesi, perdita netta di circa 80,7 miliardi",
+        "Prezzo, azioni e valutazione non sono nel prospetto: le stime sono indiscrezioni"
+      ],
+      "whyItMatters": "Per chi usa l'AI ogni giorno, i conti di un laboratorio mostrano **quanto costa far girare i modelli** e quanto dipende il settore da investimenti enormi. Sono dati che pesano sui prezzi e sui limiti d'uso, anche se il legame non è diretto.",
+      "actionToday": "Chiedi a Claude: \"Ti incollo la sezione **Risk factors** di un prospetto. Riassumila in 5 punti e dammi **3 domande da farmi prima di fidarmi dei numeri**.\" Prova con un prospetto che trovi su sec.gov: cerca \"S-1\" e il nome della società.",
+      "checklist": [],
+      "eli5": "Quando una società si quota è come un negozio che apre le porte a nuovi soci: il prospetto è il libro dei conti che deve mostrare a tutti prima di vendere le quote.",
+      "deepDive": [
+        {
+          "title": "Cos'è un S-1",
+          "text": "È il modulo con cui una società americana si registra presso la SEC per vendere azioni al pubblico. Contiene la descrizione dell'attività, i **fattori di rischio**, i conti degli ultimi anni e l'uso previsto dei fondi raccolti. Prezzo e numero di azioni arrivano dopo, in una versione aggiornata."
+        },
+        {
+          "title": "Ricavi alti e perdita ancora più alta",
+          "text": "Una società in forte crescita può perdere molto più di quanto incassa se investe in infrastrutture o ha costi contabili non in denaro. Per capirlo bisogna distinguere nel prospetto la **perdita contabile** dal **flusso di cassa**: sono due misure diverse."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "S-1",
+          "meaning": "Il modulo con cui una società americana chiede alla SEC di poter vendere azioni al pubblico per la prima volta."
+        },
+        {
+          "term": "IPO",
+          "meaning": "Offerta pubblica iniziale: la prima vendita di azioni di una società al pubblico, che la porta in Borsa."
+        },
+        {
+          "term": "ticker",
+          "meaning": "Il codice breve con cui un titolo è identificato in Borsa, qui ANT."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Fortune — Anthropic's IPO prospectus shows $16.3 billion in revenue and an $80.7 billion net loss",
+          "url": "https://fortune.com/2026/10/26/anthropics-s-1/"
+        },
+        {
+          "title": "Reuters via TradingView — Equities end higher as Anthropic's IPO filing buoys AI stocks",
+          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L6N46C16G:0-equities-end-higher-as-anthropic-s-ipo-filing-buoys-ai-stocks/"
+        },
+        {
+          "title": "CNBC — Anthropic IPO live updates: AI lab's S-1 filing",
+          "url": "https://www.cnbc.com/2026/10/26/anthropic-ipo-live-updates-ai-s-1-filing.html"
+        },
+        {
+          "title": "Anthropic — Confidential draft S-1 submitted to the SEC",
+          "url": "https://www.anthropic.com/news/confidential-draft-s1-sec"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Cosa c'è, e cosa non c'è, nell'S-1 pubblicato da Anthropic?",
+          "options": [
+            "C'è il prezzo delle azioni, non i ricavi",
+            "Ci sono ricavi e perdite, ma non prezzo e numero di azioni",
+            "Non c'è nessun dato finanziario",
+            "C'è solo la valutazione di 2.000 miliardi"
+          ],
+          "answer": 1,
+          "explanation": "Il prospetto mostra i conti, ma prezzo e numero di azioni non sono ancora indicati; le valutazioni citate sono indiscrezioni."
+        },
+        {
+          "q": "Perché una perdita netta molto alta non basta a dire che una società sta per finire i soldi?",
+          "options": [
+            "Perché le perdite non contano mai",
+            "Perché la perdita contabile può includere voci non in denaro, e si guarda anche il flusso di cassa",
+            "Perché le società quotate non hanno perdite",
+            "Perché i ricavi sono sempre più alti"
+          ],
+          "answer": 1,
+          "explanation": "La perdita contabile e il flusso di cassa misurano cose diverse: per giudicare servono tutti e due."
+        }
+      ],
+      "reflection": "Se un'azienda di cui ti fidi pubblica un bilancio in forte perdita, che cosa cerchi nei suoi conti prima di cambiare idea su di lei?",
+      "id": "2026-10-27-ai",
+      "label": "Intelligenza artificiale"
+    },
+    {
+      "category": "finanza",
+      "interests": [
+        "economia",
+        "finanza",
+        "politica",
+        "lavoro"
+      ],
+      "title": "Manovra 2027 da 23,5 miliardi: mercoledì il Consiglio dei ministri",
+      "subtitle": "Tra trattativa con l'Ue, entrate dalle banche e una maggioranza divisa su pensioni e partite Iva",
+      "summary": "Il governo porta in Consiglio dei ministri una manovra da **23,5 miliardi**: circa **14 miliardi** tra energia e difesa dipendono dal dialogo con l'Ue. La coperta, come ripete il ministro Giorgetti, è **corta**.",
+      "stat": {
+        "value": "23,5 mld €",
+        "label": "valore della manovra 2027 in discussione"
+      },
+      "sections": [
+        {
+          "heading": "Il calendario",
+          "text": "Per **AGI e LaPresse** il Consiglio dei ministri è atteso **mercoledì 28 ottobre**, con l'obiettivo di approvare il testo in giornata. Un articolo del 26 ottobre parlava invece di martedì: le fonti non concordano."
+        },
+        {
+          "heading": "I numeri",
+          "text": "Sul totale di 23,5 miliardi, circa **14 miliardi** riguardano energia e difesa e sono oggetto della trattativa con la Commissione europea. Per il resto della manovra restano circa **9 miliardi**."
+        },
+        {
+          "heading": "Dove prendere i soldi",
+          "text": "Più di **5 miliardi** dovrebbero arrivare l'anno prossimo dal **settore finanziario**. È ancora in discussione l'**Irap sull'energia**."
+        },
+        {
+          "heading": "Le misure sul tavolo",
+          "text": "Si parla di **sgravi per gli under 30 neoassunti**, incentivi al lavoro femminile e un contributo sulle spese sanitarie per redditi bassi e anziani. La **Lega** punta su previdenza e sull'innalzamento a 100mila euro della flat tax per le partite Iva; **Forza Italia** chiede aiuti alle Pmi."
+        },
+        {
+          "heading": "I nodi politici",
+          "text": "La maggioranza è divisa e le **pensioni** restano irrisolte. È previsto un vertice in videocollegamento tra Meloni e i leader della coalizione. Le cifre sono quelle riportate dalle testate e possono cambiare nelle prossime ore."
+        }
+      ],
+      "keyPoints": [
+        "Manovra da 23,5 miliardi in Consiglio dei ministri, attesa per mercoledì",
+        "Circa 14 miliardi tra energia e difesa dipendono dal dialogo con l'Ue",
+        "Più di 5 miliardi dalla finanza, ma pensioni e flat tax dividono la maggioranza"
+      ],
+      "whyItMatters": "La manovra decide **tasse, bonus, pensioni e incentivi al lavoro** dell'anno prossimo. Per chi ha un contratto da dipendente, una partita Iva o una famiglia a carico, le misure possono cambiare il netto in busta paga.",
+      "actionToday": "Segna in agenda le **tre misure che ti riguardano** (lavoro, famiglia, casa o salute) e controlla dopo mercoledì quali sono entrate nel testo. Scrivi anche quanto pensi di guadagnare o perdere: confronterai la stima con il risultato.",
+      "checklist": [],
+      "eli5": "È il bilancio di una famiglia grande: ci sono tante richieste e un portafoglio limitato. Ogni spesa in più va coperta con un'entrata o togliendo qualcos'altro.",
+      "deepDive": [
+        {
+          "title": "Cosa vuol dire \"coperta corta\"",
+          "text": "Significa che i soldi disponibili non bastano a finanziare tutte le richieste: coprire un lato significa scoprirne un altro. Ogni miliardo di spesa deve avere una **copertura**, cioè una nuova entrata o un taglio, per non aumentare il deficit oltre i limiti concordati."
+        },
+        {
+          "title": "Perché c'entra l'Unione europea",
+          "text": "I paesi dell'Ue si impegnano a tenere sotto controllo l'andamento della spesa pubblica. Per questo la manovra viene discussa con la Commissione: alcune voci, come difesa ed energia, possono avere un trattamento diverso se la Commissione lo accetta."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "manovra",
+          "meaning": "La legge di bilancio: il pacchetto di tasse, spese e misure economiche per l'anno successivo."
+        },
+        {
+          "term": "copertura",
+          "meaning": "La fonte di denaro che finanzia una nuova spesa: un'entrata in più o un taglio altrove."
+        },
+        {
+          "term": "Irap",
+          "meaning": "L'imposta regionale sulle attività produttive, pagata dalle imprese."
+        }
+      ],
+      "sources": [
+        {
+          "title": "AGI — Manovra, focus del governo su famiglie, pensioni ed energia",
+          "url": "https://www.agi.it/economia/news/2026-10-27/manovra-misure-spendibili-governo-39720985/"
+        },
+        {
+          "title": "LaPresse — Manovra al rush finale, ma si attende l'esito del dialogo con l'Ue",
+          "url": "https://www.lapresse.it/economia/2026/10/27/manovra-al-rush-finale-ma-si-attende-lesito-del-dialogo-con-lue/"
+        },
+        {
+          "title": "Stampa Parlamento — Manovra, mercoledì il Consiglio dei ministri",
+          "url": "https://www.stampaparlamento.it/2026/10/26/manovra-mercoledi-il-consiglio-dei-ministri-obiettivo-approvazione-in-giornata/"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Cosa si intende per \"copertura\" di una spesa in manovra?",
+          "options": [
+            "Il nome della legge",
+            "La fonte di denaro che finanzia la spesa: un'entrata o un taglio",
+            "L'approvazione del Parlamento",
+            "Il voto della Commissione"
+          ],
+          "answer": 1,
+          "explanation": "Senza copertura una spesa in più farebbe salire il deficit."
+        },
+        {
+          "q": "Perché il ministro dice che \"la coperta è corta\"?",
+          "options": [
+            "Perché i soldi disponibili non bastano a finanziare tutte le richieste",
+            "Perché la manovra è breve",
+            "Perché le tasse sono scese",
+            "Perché la Ue ha bocciato il testo"
+          ],
+          "answer": 0,
+          "explanation": "Coprire una richiesta significa lasciarne scoperta un'altra."
+        }
+      ],
+      "reflection": "Quale misura di una manovra cambierebbe di più la tua vita quotidiana, e come lo scopriresti dai testi ufficiali?",
+      "id": "2026-10-27-finanza",
+      "label": "Finanza"
+    },
+    {
+      "category": "mondo",
+      "interests": [
+        "geopolitica",
+        "politica",
+        "storia"
+      ],
+      "title": "Israele al voto: Netanyahu contro Eisenkot, rischio stallo",
+      "subtitle": "Le prime elezioni politiche dopo il 7 ottobre 2023: nessun blocco ha la maggioranza nei sondaggi",
+      "summary": "Oggi circa **7,3 milioni di israeliani** votano per la Knesset. **Nessuno dei due blocchi** raggiunge i **61 seggi su 120** nei sondaggi, e il risultato potrebbe dipendere da piccoli partiti.",
+      "stat": {
+        "value": "61",
+        "label": "seggi su 120 necessari per la maggioranza alla Knesset"
+      },
+      "sections": [
+        {
+          "heading": "Oggi si vota",
+          "text": "Quasi tutte le fonti indicano **martedì 27 ottobre**. Sono le prime elezioni politiche dopo l'attacco di Hamas del 7 ottobre 2023, a fine naturale della legislatura. Gli elettori sono circa **7,3 milioni**."
+        },
+        {
+          "heading": "La sfida",
+          "text": "**Benjamin Netanyahu**, il premier più longevo, cerca un settimo mandato con Ben-Gvir, Smotrich e Shas. Lo sfida **Gadi Eisenkot**, ex capo di stato maggiore, con la lista **Yashar**."
+        },
+        {
+          "heading": "I sondaggi",
+          "text": "La media di Haaretz dà all'**opposizione 54 seggi**, al blocco di Netanyahu **50** e a forze non allineate 16. Un'altra rilevazione vede Yashar a 23 seggi e il Likud a 21. Per governare servono **61 seggi**."
+        },
+        {
+          "heading": "Come funziona",
+          "text": "Il sistema è **proporzionale con soglia al 3,25%**: su 36 liste in corsa, solo una quindicina dovrebbe entrare. Per questo **piccoli partiti e liste arabe** possono decidere chi governa. Il 60% degli israeliani si dice favorevole a un governo di unità nazionale."
+        },
+        {
+          "heading": "Aggiornamento sul Brasile",
+          "text": "Dopo la vittoria di Lula, con **51,76% contro 48,24%**, Flávio Bolsonaro ha chiesto di annullare il voto, contestando la proroga di due ore decisa dal giudice Zanin. Secondo la copertura, **entrambi i candidati** avevano chiesto più tempo. Molti leader mondiali si sono congratulati con Lula."
+        }
+      ],
+      "keyPoints": [
+        "Israele vota oggi: 120 seggi, maggioranza a 61, soglia al 3,25%",
+        "I sondaggi vedono Eisenkot leggermente avanti ma nessun blocco a 61",
+        "In Brasile Flávio Bolsonaro chiede l'annullamento del voto vinto da Lula"
+      ],
+      "whyItMatters": "Il governo che uscirà dal voto peserà su **guerra, tregue fragili e rapporti con gli Stati Uniti e i paesi arabi**. E con un parlamento diviso, i giorni dopo il voto contano quanto il voto stesso.",
+      "actionToday": "Stasera, guardando i primi risultati, cerca **quanti seggi hanno i due blocchi** e **quanti partiti hanno superato la soglia**. Poi chiediti: da quali partner dipende chi forma il governo?",
+      "checklist": [],
+      "eli5": "È come formare una squadra di calcio con i voti dei tifosi: nessuno ha abbastanza giocatori per una squadra intera, e conta chi si lascia convincere a unirsi.",
+      "deepDive": [
+        {
+          "title": "Perché in Israele i governi sono di coalizione",
+          "text": "Il paese è un'unica circoscrizione nazionale con proporzionale puro e soglia bassa: quasi sempre nessun partito ottiene la maggioranza. Dopo il voto il presidente affida a un candidato l'incarico di formare il governo, ma serve il sostegno di **61 deputati**."
+        },
+        {
+          "title": "Il peso dei \"non allineati\"",
+          "text": "Quando due blocchi sono vicini, pochi seggi di partiti che non si schierano fanno la differenza. Possono sostenere un governo, chiedere ministeri e politiche in cambio, o spingere verso un governo di unità nazionale."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Knesset",
+          "meaning": "Il parlamento israeliano, con 120 seggi."
+        },
+        {
+          "term": "soglia di sbarramento",
+          "meaning": "La percentuale minima di voti che una lista deve ottenere per avere seggi."
+        },
+        {
+          "term": "stallo",
+          "meaning": "Una situazione in cui nessuno schieramento ha la maggioranza per governare."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Open — Elezioni in Israele, sfida Netanyahu-Eisenkot: sondaggi e rischio stallo",
+          "url": "https://www.open.online/2026/10/27/elezioni-israele-netanyahu-eisenkot-sondaggi-usa/"
+        },
+        {
+          "title": "Il Messaggero — Sondaggi Israele, la media di Haaretz",
+          "url": "https://www.ilmessaggero.it/mondo/sondaggi_israele_eisenkot_netanyahu_chi_vince_elezioni-9850172.html"
+        },
+        {
+          "title": "AGI — Israele domani al voto, tutto pronto alla Knesset",
+          "url": "https://www.agi.it/estero/news/2026-10-26/elezioni-israele-2026-netanyahu-eisenkot-voto-knesset-39720533/"
+        },
+        {
+          "title": "Al Jazeera — World reacts to Lula's victory in Brazil's presidential race",
+          "url": "https://www.aljazeera.com/news/2026/10/26/world-reacts-to-lulas-victory-in-brazilian-presidential-race"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Quanti seggi servono per avere la maggioranza alla Knesset?",
+          "options": [
+            "50",
+            "56",
+            "61",
+            "90"
+          ],
+          "answer": 2,
+          "explanation": "La Knesset ha 120 seggi: la maggioranza è di almeno 61."
+        },
+        {
+          "q": "Perché le liste piccole possono essere decisive?",
+          "options": [
+            "Perché hanno più voti",
+            "Perché i due blocchi principali sono vicini e nessuno arriva a 61",
+            "Perché non c'è soglia",
+            "Perché il presidente le sceglie"
+          ],
+          "answer": 1,
+          "explanation": "Quando i blocchi sono quasi pari, pochi seggi di partiti non allineati decidono chi governa."
+        }
+      ],
+      "reflection": "Quando due parti sono quasi pari, chi detiene il potere di far pendere la bilancia? Hai un esempio nella tua vita?",
+      "id": "2026-10-27-mondo",
+      "label": "Mondo"
+    },
+    {
+      "category": "sapere",
+      "interests": [
+        "scienza",
+        "code",
+        "psicologia"
+      ],
+      "title": "Il paradosso di Simpson: quando i numeri totali dicono il contrario dei gruppi",
+      "subtitle": "Dal caso di Berkeley del 1973 a come leggere un grafico senza farsi ingannare",
+      "summary": "Un dato aggregato può dire una cosa e **ogni sottogruppo il contrario**. Il paradosso di Simpson succede quando i gruppi hanno **dimensioni e difficoltà diverse**: saperlo evita conclusioni sbagliate.",
+      "stat": {
+        "value": "44% vs 35%",
+        "label": "ammessi tra uomini e donne a Berkeley nel 1973, ma il dato per dipartimento diceva altro"
+      },
+      "sections": [
+        {
+          "heading": "Il caso di Berkeley",
+          "text": "Nel 1973 all'Università di Berkeley furono ammessi circa il **44% degli uomini** e il **35% delle donne** tra i candidati ai corsi di laurea magistrale. Sembrava una discriminazione contro le donne."
+        },
+        {
+          "heading": "Guardando i dipartimenti",
+          "text": "Nello studio di Bickel e colleghi (1975), in **gran parte dei dipartimenti** le donne avevano tassi di ammissione uguali o più alti degli uomini. Per esempio, nel dipartimento A: **62% degli uomini e 82% delle donne**."
+        },
+        {
+          "heading": "Il trucco",
+          "text": "Le donne si candidavano **di più ai dipartimenti più selettivi**, dove ammettevano in pochi. La differenza del totale non nasceva dal modo di scegliere, ma da **dove** si candidavano."
+        },
+        {
+          "heading": "Come riconoscerlo",
+          "text": "Quando un confronto tra gruppi si inverte spezzando i dati, c'è una **terza variabile** (qui, il dipartimento) che influenza sia la composizione dei gruppi sia il risultato."
+        },
+        {
+          "heading": "Come difendersi",
+          "text": "Prima di fidarti di un totale, chiedi: **quali sono i sottogruppi?** Poi guarda i dati separati per le variabili che contano e confronta."
+        }
+      ],
+      "keyPoints": [
+        "Un dato totale può contraddire ogni sottogruppo",
+        "Succede quando una terza variabile cambia la composizione dei gruppi",
+        "Chiedi sempre i dati separati per sottogruppo prima di concludere"
+      ],
+      "whyItMatters": "Ti protegge da titoli e grafici ingannevoli. Il paradosso compare in **medicina, marketing, scuola e analisi dei dati**: ovunque si confrontano gruppi diversi con un solo numero.",
+      "actionToday": "La prossima volta che vedi un confronto con un solo numero (\"A funziona meglio di B\"), scrivi **quali sottogruppi potrebbero esserci** e se un dato separato potrebbe dire il contrario.",
+      "checklist": [],
+      "eli5": "Due squadre di nuoto: una nuota solo in piscina bassa, l'altra anche in mare aperto. Se confronti i tempi totali, la prima sembra più veloce, ma in mare aperto l'altra è più veloce. Il luogo cambia tutto.",
+      "deepDive": [
+        {
+          "title": "Perché non è un vero paradosso",
+          "text": "Non c'è nessuna contraddizione matematica: sono due domande diverse. Il dato totale risponde a \"come va in media\", i dati per gruppo rispondono a \"come va a parità di gruppo\". Quale conti dipende da ciò che vuoi capire."
+        },
+        {
+          "title": "Il rischio opposto",
+          "text": "Spezzare i dati troppo, per variabili che non c'entrano, può creare altre illusioni. Per scegliere le variabili giuste serve capire come funziona il fenomeno, non solo guardare i numeri."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "variabile di confondimento",
+          "meaning": "Una terza variabile che influenza sia i gruppi sia il risultato e può falsare il confronto."
+        },
+        {
+          "term": "aggregato",
+          "meaning": "Il dato calcolato sul totale, senza distinguere i sottogruppi."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Bickel, Hammel e O'Connell (1975) — Sex bias in graduate admissions: data from Berkeley",
+          "url": "https://homepage.stat.uiowa.edu/~mbognar/1030/Bickel-Berkeley.pdf"
+        },
+        {
+          "title": "Wikipedia — Paradosso di Simpson",
+          "url": "https://it.wikipedia.org/wiki/Paradosso_di_Simpson"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Perché a Berkeley il totale mostrava meno ammissioni per le donne?",
+          "options": [
+            "Perché venivano scartate",
+            "Perché si candidavano più spesso ai dipartimenti più selettivi",
+            "Perché erano meno qualificate",
+            "Perché i dati erano falsi"
+          ],
+          "answer": 1,
+          "explanation": "La composizione delle candidature per dipartimento spiegava la differenza del totale."
+        },
+        {
+          "q": "Cosa chiedi per riconoscere un possibile paradosso di Simpson?",
+          "options": [
+            "Chi ha pubblicato il dato",
+            "Quali sono i sottogruppi e cosa dicono separatamente",
+            "Quanto è grande il grafico",
+            "Quando è uscito il dato"
+          ],
+          "answer": 1,
+          "explanation": "Se spezzando il dato il confronto si inverte, c'è una variabile nascosta."
+        }
+      ],
+      "reflection": "Quale numero che citi spesso nel lavoro o nella vita potrebbe nascondere dei sottogruppi che dicono altro?",
+      "id": "2026-10-27-sapere",
+      "label": "Sapere"
+    },
+    {
+      "category": "routine",
+      "interests": [
+        "crescita",
+        "psicologia",
+        "lavoro"
+      ],
+      "title": "Una domanda in più: l'abitudine che ti rende più simpatico",
+      "subtitle": "Uno studio di Harvard mostra che chi fa domande di approfondimento piace di più",
+      "summary": "Chi fa **più domande di approfondimento** durante una conversazione piace di più all'altro, e chi ascolta ne è consapevole poco. Basta **una domanda in più** per cambiare un incontro.",
+      "stat": {
+        "value": "3",
+        "label": "esperimenti dello studio di Huang e colleghi (2017) su conversazioni vere"
+      },
+      "sections": [
+        {
+          "heading": "Lo studio",
+          "text": "Nel 2017 Karen Huang e colleghi, della Harvard Business School, hanno pubblicato su *Journal of Personality and Social Psychology* **tre studi** su conversazioni dal vivo. Hanno trovato un legame costante tra fare domande e **piacere all'altro**."
+        },
+        {
+          "heading": "Le domande che contano",
+          "text": "Contano soprattutto le **domande di approfondimento**: quelle che riprendono ciò che l'altro ha appena detto (\"E come è andata dopo?\"). Nel *speed dating*, chi ne faceva di più otteneva più spesso un **secondo appuntamento**."
+        },
+        {
+          "heading": "Perché funziona",
+          "text": "Quando si chiede di fare più domande, le persone appaiono più **attente e reattive**. È questa reattività a spiegare il maggior gradimento."
+        },
+        {
+          "heading": "Un'intuizione sbagliata",
+          "text": "Gli stessi autori trovano che le persone **non si aspettano** che fare domande aumenti il gradimento. Per questo molti ne fanno poche."
+        },
+        {
+          "heading": "Il metodo",
+          "text": "In ogni conversazione, quando l'altro finisce una frase, fai **una domanda in più** che riprende un dettaglio. Una sola, non un interrogatorio: l'obiettivo è mostrare interesse, non raccogliere informazioni."
+        }
+      ],
+      "keyPoints": [
+        "Le domande di approfondimento aumentano il gradimento dell'altro",
+        "Il motivo è che mostrano attenzione e reattività",
+        "Basta una domanda in più per conversazione, non un interrogatorio"
+      ],
+      "whyItMatters": "Relazioni di lavoro, amicizie e nuovi incontri **si costruiscono nelle conversazioni**. Un'abitudine così piccola costa pochi secondi e si può esercitare ogni giorno.",
+      "actionToday": "Oggi, in **una conversazione** (collega, amico, negoziante), fai una domanda che riprende un dettaglio appena detto. Poi annota in una riga come ha reagito l'altro.",
+      "checklist": [
+        "Ascolta fino alla fine della frase, senza preparare la risposta",
+        "Cerca un dettaglio nelle ultime parole dell'altro",
+        "Fai una domanda aperta su quel dettaglio (\"E come è andata?\")",
+        "Aspetta la risposta senza interromperla",
+        "A fine giornata annota in una riga come è andata"
+      ],
+      "eli5": "Se qualcuno ti racconta un viaggio e tu chiedi \"e cosa ti è piaciuto di più?\", ti senti ascoltato. Se parli subito del tuo viaggio, ti senti ignorato.",
+      "deepDive": [
+        {
+          "title": "Domanda di approfondimento e domanda di cambio",
+          "text": "Una domanda di **approfondimento** riprende ciò che l'altro ha detto. Una di **cambio** introduce un altro argomento (\"E tu dove vai in vacanza?\"). Lo studio trova che le prime funzionano meglio per il gradimento: mostrano di aver ascoltato."
+        },
+        {
+          "title": "Il limite",
+          "text": "Troppe domande una dopo l'altra diventano un interrogatorio, e domande troppo personali possono mettere a disagio. Va bene seguire il ritmo e le risposte dell'altro, **alternando domande e racconto di sé**."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "domanda di approfondimento",
+          "meaning": "Una domanda che riprende ciò che l'altro ha appena detto per saperne di più."
+        },
+        {
+          "term": "reattività",
+          "meaning": "La percezione che l'altro ti stia ascoltando davvero e risponda a ciò che dici."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Harvard DASH — Huang, Yeomans, Brooks, Minson e Gino, It doesn't hurt to ask (2017)",
+          "url": "https://dash.harvard.edu/handle/1/35647952"
+        },
+        {
+          "title": "Huang et al. (2017), testo completo — Journal of Personality and Social Psychology",
+          "url": "https://gwern.net/doc/psychology/novelty/2017-huang.pdf"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Quali domande sono più legate al gradimento secondo lo studio?",
+          "options": [
+            "Quelle che cambiano argomento",
+            "Quelle di approfondimento, che riprendono ciò che l'altro ha detto",
+            "Quelle molto personali",
+            "Quelle senza risposta"
+          ],
+          "answer": 1,
+          "explanation": "Le domande di approfondimento mostrano ascolto e reattività, che spiegano il maggior gradimento."
+        },
+        {
+          "q": "Cosa succede se fai troppe domande di seguito?",
+          "options": [
+            "Piaci sempre di più",
+            "Rischi di sembrare un interrogatorio",
+            "Non cambia nulla",
+            "L'altro parla meno ma ti apprezza"
+          ],
+          "answer": 1,
+          "explanation": "Conviene alternare domande e racconto di sé, seguendo il ritmo della conversazione."
+        }
+      ],
+      "reflection": "Pensa all'ultima conversazione in cui ti sei sentito davvero ascoltato: che cosa ha fatto l'altro?",
+      "id": "2026-10-27-routine",
+      "label": "Metodo & routine"
+    }
+  ],
+  "extras": [
+    {
+      "topic": "cucina",
+      "kind": "news",
+      "title": "Gambero Rosso 2027: a daGorini il premio per il miglior menu degustazione",
+      "subtitle": "Il ristorante di San Piero in Bagno, sull'Appennino, premiato nella guida Ristoranti d'Italia",
+      "summary": "Nella guida **Ristoranti d'Italia 2027** del Gambero Rosso il premio **Menu degustazione dell'anno** va a **Gianluca Gorini**, chef di daGorini, a quasi dieci anni dall'apertura sull'Appennino tosco-romagnolo.",
+      "stat": null,
+      "sections": [
+        {
+          "heading": "Il premio",
+          "text": "La guida del **Gambero Rosso** è stata presentata a Roma. Il riconoscimento per il miglior menu degustazione è andato a **Gianluca Gorini**, del ristorante daGorini a San Piero in Bagno."
+        },
+        {
+          "heading": "Un ristorante in un borgo",
+          "text": "Gorini ha aperto il locale **in un borgo dell'Appennino**, lontano dai circuiti delle grandi città, quasi dieci anni fa. Oggi il premio arriva proprio per quel percorso."
+        },
+        {
+          "heading": "Il libro",
+          "text": "Lo chef ha raccontato le sue scelte in un libro, **Cucina radicale**: perché restare in un piccolo paese e cosa significa cucinare con il territorio."
+        }
+      ],
+      "keyPoints": [
+        "Gambero Rosso 2027: daGorini vince il Menu degustazione dell'anno",
+        "Il ristorante è a San Piero in Bagno, sull'Appennino tosco-romagnolo",
+        "Lo chef racconta il suo percorso in Cucina radicale"
+      ],
+      "whyItMatters": "Le guide sono una **mappa dei posti dove si cucina con identità**. Premiare un borgo dell'Appennino ricorda che i ristoranti migliori non sono solo nelle grandi città.",
+      "actionToday": "Cerca nella guida o sul sito del ristorante il **menu degustazione**, e segna il locale in una lista di posti da provare in primavera, quando riaprono molti ristoranti di montagna.",
+      "checklist": [],
+      "eli5": "Un menu degustazione è come un racconto in tanti capitoli: lo chef sceglie per te in che ordine assaggiare le cose.",
+      "deepDive": [
+        {
+          "title": "Cosa vuol dire \"menu degustazione\"",
+          "text": "Un percorso di piccole portate scelte dallo chef, spesso a prezzo fisso. Permette di assaggiare l'idea di cucina del ristorante e di non scegliere tra le proposte, ma richiede più tempo."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "menu degustazione",
+          "meaning": "Una serie di piccole portate scelte dallo chef, servite in sequenza a prezzo fisso."
+        },
+        {
+          "term": "guida gastronomica",
+          "meaning": "Una pubblicazione che seleziona e valuta ristoranti con criteri dichiarati."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Gambero Rosso — Gianluca Gorini, premio Menu degustazione dell'anno 2027",
+          "url": "https://www.gamberorosso.it/notizie/attualita/gianluca-gorini-premio-menu-degustazione-anno-2027-cucina-radicale"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Quale premio ha vinto daGorini nella guida del Gambero Rosso 2027?",
+          "options": [
+            "Miglior pizzeria",
+            "Menu degustazione dell'anno",
+            "Miglior cantina",
+            "Ristorante dell'anno"
+          ],
+          "answer": 1,
+          "explanation": "Il premio riconosce il percorso di piatti proposto da Gianluca Gorini."
+        }
+      ],
+      "reflection": "Preferisci un menu degustazione, dove decide lo chef, o scegliere alla carta? Perché?",
+      "id": "2026-10-27-x-cucina-news",
+      "category": "routine",
+      "label": "Cucina"
+    },
+    {
+      "topic": "cucina",
+      "kind": "spunto",
+      "title": "Sale, grasso, acido, calore: le quattro leve di un piatto",
+      "subtitle": "Prima di aggiungere altro sale, prova con un po' di acido",
+      "summary": "Un piatto \"piatto\" spesso non ha bisogno di **più sale**, ma di **acido** (limone, aceto). Pensare a sale, grasso, acido e calore ti aiuta a correggere quasi ogni ricetta.",
+      "stat": {
+        "value": "4",
+        "label": "le leve della cucina: sale, grasso, acido, calore"
+      },
+      "sections": [
+        {
+          "heading": "Le quattro leve",
+          "text": "La cuoca Samin Nosrat riassume la cucina in quattro elementi: **sale** che esalta il gusto, **grasso** che dà ricchezza, **acido** che dà freschezza e **calore** che trasforma gli ingredienti."
+        },
+        {
+          "heading": "Il trucco dell'acido",
+          "text": "Se un piatto è sapido ma sembra spento, spesso gli manca **acidità**. Una **goccia di limone o aceto** alla fine dà vivacità, senza renderlo più salato."
+        },
+        {
+          "heading": "Assaggia a ogni passaggio",
+          "text": "Assaggia **mentre cucini**, non solo alla fine. Così puoi correggere poco alla volta e capire cosa fa ogni ingrediente."
+        }
+      ],
+      "keyPoints": [
+        "Sale, grasso, acido e calore guidano ogni piatto",
+        "Se è spento, prova prima con l'acido",
+        "Assaggia durante la cottura"
+      ],
+      "whyItMatters": "Capire queste leve ti rende più libero dalle ricette: sai **correggere un piatto** invece di seguire le istruzioni alla lettera.",
+      "actionToday": "La prossima volta che un piatto ti sembra piatto, aggiungi **mezzo cucchiaino di limone o aceto**, mescola e riassaggia. Poi confronta con prima.",
+      "checklist": [
+        "Assaggia il piatto a metà cottura",
+        "Se manca vivacità, aggiungi un po' di acido",
+        "Se è secco o duro, aggiungi un po' di grasso",
+        "Se è anonimo, controlla il sale",
+        "Riassaggia dopo ogni correzione"
+      ],
+      "eli5": "È come l'equalizzatore di una radio: se il suono è spento non alzi tutto il volume, regoli le manopole giuste.",
+      "deepDive": [
+        {
+          "title": "Perché l'acido funziona",
+          "text": "L'acido stimola la salivazione e bilancia i sapori grassi o dolci. Per questo un filo d'aceto ravviva una zuppa e il limone rende più leggero un piatto fritto."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "acidità",
+          "meaning": "Il gusto aspro di limone, aceto o yogurt, che rende i piatti più freschi."
+        },
+        {
+          "term": "bilanciare",
+          "meaning": "Regolare sale, grasso, acido e dolce in modo che nessuno prevalga."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wikipedia — Salt, Fat, Acid, Heat",
+          "url": "https://en.wikipedia.org/wiki/Salt,_Fat,_Acid,_Heat"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Un brodo è sapido ma sembra spento. Cosa provi per primo?",
+          "options": [
+            "Altro sale",
+            "Una goccia di limone o aceto",
+            "Altro grasso",
+            "Più cottura"
+          ],
+          "answer": 1,
+          "explanation": "Spesso a un piatto spento manca acidità, non sale."
+        }
+      ],
+      "reflection": "Quale tuo piatto \"quasi perfetto\" potresti correggere con una sola leva?",
+      "id": "2026-10-27-x-cucina-spunto",
+      "category": "routine",
+      "label": "Cucina"
+    },
+    {
+      "topic": "cinema",
+      "kind": "news",
+      "title": "In sala dal 29 ottobre: Veronesi, Rubini e l'horror di Eli Roth",
+      "subtitle": "Una settimana ricca di titoli italiani, con Favino, Orlando e Miriam Leone",
+      "summary": "Nei cinema italiani escono **Dio ride** di Giovanni Veronesi, **L'uomo giusto** di Sergio Rubini e **Ice Cream Man**, horror di Eli Roth. Torna in sala anche **Fast & Furious** del 2001.",
+      "stat": null,
+      "sections": [
+        {
+          "heading": "I titoli italiani",
+          "text": "**Dio ride**, di Giovanni Veronesi, con Pierfrancesco Favino e Silvio Orlando, è ambientato nel Seicento. **L'uomo giusto**, di Sergio Rubini, ha Miriam Leone e Claudio Santamaria. **Un tranquillo funerale di famiglia**, di Massimiliano Bruno, è una commedia."
+        },
+        {
+          "heading": "Dall'estero",
+          "text": "**Ice Cream Man** di Eli Roth è l'horror più atteso. Nel calendario compaiono anche titoli d'autore europeo come **Nel silenzio delle stanze**, di Jérôme Bonnell."
+        },
+        {
+          "heading": "Il ritorno",
+          "text": "Il primo **Fast & Furious** (2001), di Rob Cohen, torna in sala come evento. Le date di alcuni titoli variano tra le fonti, quindi controlla la programmazione del tuo cinema."
+        }
+      ],
+      "keyPoints": [
+        "Dio ride di Veronesi con Favino e Orlando in sala dal 29 ottobre",
+        "Ice Cream Man di Eli Roth è l'horror della settimana",
+        "Controlla le date: le fonti non coincidono su tutti i titoli"
+      ],
+      "whyItMatters": "Le uscite della settimana sono il momento giusto per scegliere cosa vedere **al cinema** prima che i titoli spariscano dalle sale.",
+      "actionToday": "Apri il sito del tuo cinema e scegli **un film italiano** da vedere questo weekend. Poi guarda gli orari: molti titoli restano in sala poche settimane.",
+      "checklist": [],
+      "eli5": "Il calendario delle uscite è come il menu del giorno: non c'è tempo per assaggiare tutto, ma si può scegliere cosa non perdere.",
+      "deepDive": [
+        {
+          "title": "Perché le uscite sono di giovedì",
+          "text": "In Italia i film escono in sala di solito di giovedì, per sfruttare il weekend. Per questo i risultati del primo fine settimana contano molto per decidere quanto resta in programmazione."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "uscita in sala",
+          "meaning": "Il giorno in cui un film arriva nei cinema per il pubblico."
+        },
+        {
+          "term": "evento speciale",
+          "meaning": "Una proiezione limitata a pochi giorni, spesso per un film già uscito."
+        }
+      ],
+      "sources": [
+        {
+          "title": "MYmovies — Calendario film in uscita il 29 ottobre 2026",
+          "url": "https://www.mymovies.it/film/uscita/ottobre/2026/?data=29%2F10%2F2026"
+        },
+        {
+          "title": "4pareteita — I film e le serie tv in uscita dal 26 ottobre al 1 novembre 2026",
+          "url": "https://www.4pareteita.it/2026/10/25/film-serie-tv-uscita-26-ottobre-1-novembre-2026/"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Chi dirige Dio ride?",
+          "options": [
+            "Sergio Rubini",
+            "Giovanni Veronesi",
+            "Massimiliano Bruno",
+            "Eli Roth"
+          ],
+          "answer": 1,
+          "explanation": "Dio ride è il nuovo film di Giovanni Veronesi."
+        }
+      ],
+      "reflection": "Quale ultimo film in sala ti ha fatto dire \"valeva il biglietto\"? Cosa lo rendeva speciale?",
+      "id": "2026-10-27-x-cinema-news",
+      "category": "mondo",
+      "label": "Cinema e serie"
+    },
+    {
+      "topic": "cinema",
+      "kind": "spunto",
+      "title": "Guardare un film con tre domande: cosa vuole, cosa lo ostacola, cosa cambia",
+      "subtitle": "Il metodo più semplice per capire la struttura di quasi ogni storia",
+      "summary": "Per capire una storia basta chiedersi: **cosa vuole il protagonista**, **cosa glielo impedisce**, **cosa cambia alla fine**. Con queste tre domande leggi la struttura di quasi ogni film.",
+      "stat": {
+        "value": "3",
+        "label": "le domande per leggere la struttura di una storia"
+      },
+      "sections": [
+        {
+          "heading": "Cosa vuole",
+          "text": "Un protagonista ha un **obiettivo** chiaro: salvare qualcuno, vincere, essere accettato. Se riesci a dirlo in una frase, hai capito il motore del film."
+        },
+        {
+          "heading": "Cosa lo ostacola",
+          "text": "Senza **ostacoli** non c'è storia. Possono essere persone, regole, paure interne. Più l'ostacolo è forte, più il racconto è teso."
+        },
+        {
+          "heading": "Cosa cambia",
+          "text": "Alla fine qualcosa è **cambiato**: una situazione, una relazione, il protagonista stesso. Quel cambiamento è ciò che il film vuole dirti."
+        }
+      ],
+      "keyPoints": [
+        "Ogni storia ha un obiettivo, un ostacolo e un cambiamento",
+        "Un obiettivo si dice in una frase",
+        "Il cambiamento finale è il messaggio del film"
+      ],
+      "whyItMatters": "Guardare con queste domande trasforma la visione in **un esercizio di attenzione**: ricordi di più, discuti meglio e capisci perché un film ti ha preso o no.",
+      "actionToday": "Stasera, guardando un film o una serie, **scrivi le tre risposte** dopo i primi 20 minuti. Poi verifica a fine film se avevi indovinato.",
+      "checklist": [
+        "Dopo 20 minuti scrivi cosa vuole il protagonista",
+        "Annota l'ostacolo principale",
+        "A fine film scrivi cosa è cambiato",
+        "Confronta le risposte con le tue previsioni"
+      ],
+      "eli5": "È come seguire una corsa: sai da dove parte il corridore, cosa gli impedisce di arrivare e chi è alla fine del traguardo.",
+      "deepDive": [
+        {
+          "title": "La struttura in tre atti",
+          "text": "Molti film seguono tre atti: presentazione, conflitto, risoluzione. Le tre domande corrispondono a questi momenti: l'obiettivo si stabilisce nel primo, l'ostacolo domina il secondo, il cambiamento chiude il terzo."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "protagonista",
+          "meaning": "Il personaggio attorno al quale gira la storia."
+        },
+        {
+          "term": "conflitto",
+          "meaning": "Lo scontro tra ciò che il protagonista vuole e ciò che glielo impedisce."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wikipedia — Struttura in tre atti",
+          "url": "https://it.wikipedia.org/wiki/Struttura_in_tre_atti"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Quale domanda aiuta a trovare il \"motore\" di un film?",
+          "options": [
+            "Quanto dura?",
+            "Cosa vuole il protagonista?",
+            "Chi ha girato le scene?",
+            "Dove è ambientato?"
+          ],
+          "answer": 1,
+          "explanation": "L'obiettivo del protagonista è ciò che spinge la storia in avanti."
+        }
+      ],
+      "reflection": "Pensa al tuo ultimo film preferito: qual era l'obiettivo del protagonista e cosa cambiava alla fine?",
+      "id": "2026-10-27-x-cinema-spunto",
+      "category": "mondo",
+      "label": "Cinema e serie"
+    },
+    {
+      "topic": "cultura",
+      "kind": "news",
+      "title": "Libri in uscita il 27 ottobre: Manfredi, Aramburu e un esordio texano",
+      "subtitle": "Tra i titoli della settimana anche Strout, Geda e Piperno",
+      "summary": "Arrivano in libreria **Zenobia** di Valerio Massimo Manfredi (Mondadori), **Maite** di Fernando Aramburu (Guanda) e l'esordio **Passo falso** di Lucas Schaefer (NN). Questo mese escono anche Strout, Geda e Piperno.",
+      "stat": null,
+      "sections": [
+        {
+          "heading": "Le uscite del 27",
+          "text": "Il 27 ottobre escono **Zenobia. Il romanzo della regina guerriera**, di Valerio Massimo Manfredi, **Maite**, di Fernando Aramburu, e **Passo falso**, esordio di Lucas Schaefer ambientato in Texas."
+        },
+        {
+          "heading": "Gli altri titoli del mese",
+          "text": "Tra i romanzi di ottobre ci sono **Le cose che non diciamo** di Elizabeth Strout (Einaudi), **Cencio** di Fabio Geda (Einaudi), **Gli scherzi della vita** di Alessandro Piperno (Mondadori) e **Otto ragazze** di Aurora Tamigio (Feltrinelli)."
+        },
+        {
+          "heading": "Attenzione alle date",
+          "text": "Le date di uscita variano tra i siti: **La casa dei respiri** di Donato Carrisi risulta il **3 novembre** in una fonte, quindi non è ancora in libreria. Conviene controllare il sito dell'editore."
+        }
+      ],
+      "keyPoints": [
+        "Il 27 ottobre escono Manfredi, Aramburu e Schaefer",
+        "Ottobre porta anche Strout, Geda, Piperno e Tamigio",
+        "Le date possono variare: controlla l'editore"
+      ],
+      "whyItMatters": "Le novità di autunno sono il momento giusto per scegliere **le letture dei mesi freddi**, quando le sere lunghe favoriscono i romanzi più impegnativi.",
+      "actionToday": "Scegli **un solo titolo** della lista e leggi l'estratto sul sito dell'editore o in libreria. Se dopo qualche pagina ti prende, segnalo tra i prossimi acquisti.",
+      "checklist": [],
+      "eli5": "È come il menu stagionale di un ristorante: arrivano piatti nuovi, ma non devi assaggiarli tutti, solo scegliere quelli che ti incuriosiscono.",
+      "deepDive": [
+        {
+          "title": "Perché le uscite si concentrano in autunno",
+          "text": "L'autunno è il periodo in cui gli editori puntano sui titoli più importanti, anche in vista dei premi e dei regali di Natale. Per questo ottobre e novembre sono tra i mesi con più novità."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "esordio",
+          "meaning": "Il primo libro pubblicato da un autore."
+        },
+        {
+          "term": "estratto",
+          "meaning": "Le prime pagine di un libro, di solito leggibili gratis online."
+        }
+      ],
+      "sources": [
+        {
+          "title": "La Rivista dei Libri — Libri in uscita (ottobre 2026)",
+          "url": "https://www.larivistadeilibri.it/libri-in-uscita/"
+        },
+        {
+          "title": "Rivista Blam — Libri in uscita a ottobre 2026",
+          "url": "https://www.rivistablam.it/libri/libri-in-uscita-a-ottobre-2026-novita-e-consigli-letterari/"
+        },
+        {
+          "title": "Ubik — Libri in uscita a ottobre 2026",
+          "url": "https://www.ubiklibri.it/libri-in-uscita-a-ottobre-2026.html"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Quale titolo esce il 27 ottobre per Guanda?",
+          "options": [
+            "Cencio",
+            "Maite",
+            "Zenobia",
+            "Otto ragazze"
+          ],
+          "answer": 1,
+          "explanation": "Maite, di Fernando Aramburu, esce con Guanda il 27 ottobre."
+        }
+      ],
+      "reflection": "Come scegli il prossimo libro: dal consiglio di un amico, da una recensione o dalla copertina?",
+      "id": "2026-10-27-x-cultura-news",
+      "category": "sapere",
+      "label": "Libri e cultura"
+    },
+    {
+      "topic": "cultura",
+      "kind": "spunto",
+      "title": "Leggere con la matita: tre segni a margine per ricordare di più",
+      "subtitle": "Un metodo semplice per trasformare ogni libro in una conversazione",
+      "summary": "Leggere con la matita significa **segnare** mentre si legge: una riga sotto la frase che colpisce, un punto interrogativo dove non capisci, una freccia dove ti viene in mente altro.",
+      "stat": {
+        "value": "3",
+        "label": "i segni da usare: sottolineo, domanda, collegamento"
+      },
+      "sections": [
+        {
+          "heading": "Tre segni",
+          "text": "**Sottolineo** una frase che mi colpisce. Scrivo un **punto interrogativo** dove non capisco o non sono d'accordo. Disegno una **freccia** quando il passaggio mi ricorda altro."
+        },
+        {
+          "heading": "Perché aiuta",
+          "text": "Segnare ti obbliga a **decidere** cosa conta mentre leggi. Il testo diventa una conversazione: dopo, rileggere solo i segni ti restituisce l'idea del libro."
+        },
+        {
+          "heading": "Se il libro non è tuo",
+          "text": "Se è in prestito, usa **segnalibri** o piccoli foglietti, oppure appunta le pagine e una frase sul telefono. Il metodo funziona anche senza rovinare il libro."
+        }
+      ],
+      "keyPoints": [
+        "Tre segni: sottolineo, domanda, collegamento",
+        "Segnare obbliga a scegliere cosa conta",
+        "Si può fare anche con segnalibri o appunti"
+      ],
+      "whyItMatters": "Spesso dimentichiamo un libro poche settimane dopo averlo letto. Segnare lo rende **più vivo**, e ti lascia una traccia da rileggere in pochi minuti.",
+      "actionToday": "Stasera, mentre leggi, usa **solo tre segni** per dieci pagine. Poi rileggi i segni e scrivi in una riga di cosa parlano quelle pagine.",
+      "checklist": [
+        "Scegli un libro o un articolo",
+        "Tieni a portata una matita o un segnalibro",
+        "Sottolinea una frase per pagina, non di più",
+        "Scrivi un punto interrogativo dove hai un dubbio",
+        "A fine capitolo rileggi i segni"
+      ],
+      "eli5": "È come parlare con chi ha scritto il libro: ogni segno è un \"qui sono d'accordo\", \"qui non ho capito\" o \"questo mi ricorda\".",
+      "deepDive": [
+        {
+          "title": "Segnare poco, non tutto",
+          "text": "Evidenziare ogni riga non aiuta: il libro diventa un muro di colore. La regola è segnare **poco**: una frase per pagina costringe a scegliere e fa ricordare di più."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "annotare",
+          "meaning": "Aggiungere note e segni a un testo mentre lo si legge."
+        },
+        {
+          "term": "postilla",
+          "meaning": "Una breve nota scritta a margine di un testo."
+        }
+      ],
+      "sources": [],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Qual è la regola per non esagerare con i segni?",
+          "options": [
+            "Sottolineare ogni riga",
+            "Una frase per pagina circa",
+            "Non segnare mai",
+            "Segnare solo i titoli"
+          ],
+          "answer": 1,
+          "explanation": "Segnare poco costringe a scegliere cosa conta davvero."
+        }
+      ],
+      "reflection": "Qual è un libro che hai letto con molta attenzione e di cui ricordi ancora una frase?",
+      "id": "2026-10-27-x-cultura-spunto",
+      "category": "sapere",
+      "label": "Libri e cultura"
+    },
+    {
+      "topic": "produttivita",
+      "kind": "news",
+      "title": "Settimana corta: un'azienda padovana passa a 35 ore su 4 giorni",
+      "subtitle": "Il caso WMR, studiato dal Politecnico di Milano, e i dati sull'Italia",
+      "summary": "L'azienda padovana **WMR** riduce gradualmente l'orario da **40 a 35 ore su 4 giorni**, con il venerdì libero. Secondo l'Osservatorio del Politecnico, la settimana corta riguarda **meno del 10%** delle aziende italiane.",
+      "stat": {
+        "value": "35 ore",
+        "label": "su 4 giorni nel modello WMR, dopo quattro anni di permanenza"
+      },
+      "sections": [
+        {
+          "heading": "Il caso WMR",
+          "text": "Il Politecnico di Milano ha scelto **WMR** come caso di studio nazionale per smart working e settimana corta. L'orario scende da 40 a **35 ore su 4 giorni** dopo quattro anni di anzianità, in media con **due giorni di smart working** a settimana."
+        },
+        {
+          "heading": "I numeri dell'azienda",
+          "text": "La stessa fonte riporta alta soddisfazione interna sull'equilibrio tra vita e lavoro (**4,86 su 5**). Sono **dati aziendali**, non di una ricerca indipendente."
+        },
+        {
+          "heading": "Il quadro italiano",
+          "text": "Secondo l'Osservatorio Smart Working, meno del **10% delle aziende** applica la settimana corta, e punta soprattutto sul benessere, non sulla produttività. Un'indagine NielsenIQ indica che circa l'**80%** dei dipendenti la vorrebbe."
+        },
+        {
+          "heading": "Produttività: dibattito aperto",
+          "text": "Le sperimentazioni citate mostrano esiti diversi. Un'analisi osserva che ridurre i giorni non basta: conta **come si organizza il lavoro** e cosa si elimina."
+        }
+      ],
+      "keyPoints": [
+        "WMR passa a 35 ore su 4 giorni dopo quattro anni di anzianità",
+        "In Italia la settimana corta riguarda meno del 10% delle aziende",
+        "Conta più come si organizza il lavoro e quali attività inutili si eliminano che il numero di giorni"
+      ],
+      "whyItMatters": "Se lavori in un'azienda, **orari e smart working** sono la parte più concreta della produttività. Capire cosa funziona ti aiuta a proporre cambiamenti con dati.",
+      "actionToday": "Scrivi **tre attività** della tua settimana che non producono valore (riunioni inutili, report che nessuno legge). Chiediti se potresti eliminarle o ridurle.",
+      "checklist": [],
+      "eli5": "È come lasciare a casa lo zaino pieno di cose inutili: con meno peso arrivi più in fretta, ma solo se hai tolto le cose giuste.",
+      "deepDive": [
+        {
+          "title": "Il modello 100-80-100",
+          "text": "È il riferimento più noto: 100% dello stipendio, 80% del tempo, 100% della produttività. Esistono anche formule con lo stesso monte ore distribuito su quattro giorni."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "settimana corta",
+          "meaning": "Un orario di lavoro concentrato su meno giorni, o ridotto in ore, mantenendo lo stipendio."
+        },
+        {
+          "term": "smart working",
+          "meaning": "Lavoro agile: parte dell'attività svolta fuori dall'ufficio."
+        }
+      ],
+      "sources": [
+        {
+          "title": "PadovaOggi — Settimana corta e lavoro agile: WMR caso di studio del Politecnico di Milano",
+          "url": "https://www.padovaoggi.it/economia/settimana-corta-smart-working-wmr-politecnico-milano-24-ottobre-2026.html"
+        },
+        {
+          "title": "Unindustria — Lavoro, settimana corta e smart working: cosa vogliono gli italiani",
+          "url": "https://www.un-industria.it/notizia/126887/lavoro-settimana-corta-e-smart-working-cosa/"
+        },
+        {
+          "title": "TechBusiness — Settimana corta: perché ridurre il venerdì non basta",
+          "url": "https://techbusiness.it/settimana-corta-aziende/"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Perché i 4,86 su 5 di WMR vanno presi con cautela?",
+          "options": [
+            "Perché è un voto troppo basso",
+            "Perché sono dati aziendali, non di una ricerca indipendente",
+            "Perché riguardano il passato",
+            "Perché sono in dollari"
+          ],
+          "answer": 1,
+          "explanation": "Sono valutazioni interne: servono studi indipendenti per confermarle."
+        }
+      ],
+      "reflection": "Se avessi un giorno libero in più a settimana, cosa cambieresti nel modo in cui lavori?",
+      "id": "2026-10-27-x-produttivita-news",
+      "category": "routine",
+      "label": "Produttività"
+    },
+    {
+      "topic": "produttivita",
+      "kind": "spunto",
+      "title": "La regola dei due minuti: se serve poco, fallo subito",
+      "subtitle": "Un trucco del metodo Getting Things Done per svuotare la lista delle cose da fare",
+      "summary": "Se un'attività richiede **meno di due minuti**, falla subito invece di scriverla in lista. Costa meno che rimandarla e libera la testa.",
+      "stat": {
+        "value": "2 min",
+        "label": "la soglia sotto cui conviene fare subito"
+      },
+      "sections": [
+        {
+          "heading": "La regola",
+          "text": "Nel metodo **Getting Things Done**, David Allen suggerisce di fare subito ogni attività che richiede **meno di due minuti**. Rispondere a un messaggio breve, archiviare un documento, fissare un appuntamento."
+        },
+        {
+          "heading": "Perché funziona",
+          "text": "Annotare, ricordare e riprendere un compito costa **più tempo del compito stesso**. Se è breve, farlo subito evita l'accumulo di piccole cose."
+        },
+        {
+          "heading": "Quando non usarla",
+          "text": "Non va usata mentre sei concentrato su un compito importante: in quel caso **annota** e rimanda. Le attività da due minuti possono diventare una scusa per non iniziare quelle difficili."
+        }
+      ],
+      "keyPoints": [
+        "Sotto i due minuti, fai subito",
+        "Rimandare costa più del fare",
+        "Non interrompere un lavoro profondo per i compiti brevi"
+      ],
+      "whyItMatters": "La lista delle cose da fare si riempie soprattutto di **piccole cose**. Toglierle in fretta libera tempo e attenzione per il lavoro importante.",
+      "actionToday": "Scegli **un blocco di 15 minuti** nella giornata e dedicalo solo ai compiti da meno di due minuti. Conta quanti ne chiudi.",
+      "checklist": [
+        "Scrivi le piccole cose che aspettano",
+        "Imposta un timer di 15 minuti",
+        "Fai subito quelle sotto i due minuti",
+        "Annota le altre in lista",
+        "Chiudi il blocco e conta quante ne hai fatte"
+      ],
+      "eli5": "È come sistemare subito la tazza nel lavandino: ci metti dieci secondi, mentre lasciarla lì crea ogni giorno un po' di disordine.",
+      "deepDive": [
+        {
+          "title": "Il costo nascosto del rimandare",
+          "text": "Ogni compito in sospeso occupa un pezzetto di memoria di lavoro. Chiudere le piccole cose libera attenzione, e questo è il vero beneficio della regola."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Getting Things Done",
+          "meaning": "Metodo di organizzazione di David Allen basato su raccogliere, chiarire e fare."
+        },
+        {
+          "term": "memoria di lavoro",
+          "meaning": "La capacità di tenere a mente poche informazioni mentre si lavora."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wikipedia — Getting Things Done",
+          "url": "https://it.wikipedia.org/wiki/Getting_Things_Done"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Quando conviene NON usare la regola dei due minuti?",
+          "options": [
+            "Quando hai tempo libero",
+            "Quando sei concentrato su un lavoro importante",
+            "Quando il compito dura un minuto",
+            "Mai"
+          ],
+          "answer": 1,
+          "explanation": "Interrompere un lavoro profondo per compiti brevi spezza la concentrazione."
+        }
+      ],
+      "reflection": "Quale piccolo compito rimandi da giorni che potresti chiudere in meno di due minuti?",
+      "id": "2026-10-27-x-produttivita-spunto",
+      "category": "routine",
+      "label": "Produttività"
+    },
+    {
+      "topic": "viaggi",
+      "kind": "news",
+      "title": "Ognissanti 2026: il 1° novembre è domenica, come allungare il weekend",
+      "subtitle": "Nessun ponte automatico: bastano un giorno di ferie e un occhio agli scioperi",
+      "summary": "Il **1° novembre 2026 cade di domenica**: non c'è un ponte automatico. Prendendo **venerdì 30 ottobre** si ottengono tre giorni pieni, con lunedì 2 novembre quattro.",
+      "stat": {
+        "value": "3-4",
+        "label": "giorni di viaggio con uno o due giorni di ferie"
+      },
+      "sections": [
+        {
+          "heading": "Il calendario",
+          "text": "Con Ognissanti di domenica, per partire servono **ferie**: venerdì 30 ottobre per un weekend di tre giorni, oppure anche lunedì 2 novembre per quattro."
+        },
+        {
+          "heading": "Treni e orari festivi",
+          "text": "Controlla gli **orari festivi** di treni e autobus locali, che cambiano nei giorni di festa. Per i treni regionali valgono le fasce garantite in caso di sciopero."
+        },
+        {
+          "heading": "Lo sciopero del 30",
+          "text": "Il 30 ottobre è annunciato uno **sciopero generale**, ma le fonti non concordano sull'impatto sui trasporti: verifica sui siti degli operatori."
+        },
+        {
+          "heading": "Mete e prezzi",
+          "text": "Le guide indicano Tirana, Cracovia e Lisbona come mete economiche, ma i prezzi citati sono di mesi fa. Un operatore propone **treno più hotel a Parigi** da 527 euro con partenza il 31 ottobre."
+        }
+      ],
+      "keyPoints": [
+        "1° novembre di domenica: serve un giorno di ferie per allungare",
+        "Controlla orari festivi e scioperi del 30 ottobre",
+        "I prezzi delle guide possono essere datati: confronta prima di prenotare"
+      ],
+      "whyItMatters": "A pochi giorni dalla partenza i prezzi e le disponibilità cambiano in fretta. Decidere **oggi** se prendere un giorno di ferie ti lascia più scelta.",
+      "actionToday": "Decidi oggi **sì o no** al weekend lungo. Se sì, cerca una meta raggiungibile in treno entro tre ore e confronta il **costo totale** con il bus.",
+      "checklist": [],
+      "eli5": "È come guardare un calendario con il segnaposto vuoto: un solo giorno di ferie può trasformare un normale weekend in una piccola vacanza.",
+      "deepDive": [
+        {
+          "title": "Ponte e ferie",
+          "text": "Un ponte è un giorno lavorativo tra una festività e il weekend. Quando la festa cade di domenica non si forma, e per allungare servono permessi. Alcuni datori di lavoro li concedono più facilmente se chiesti con anticipo."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "ponte",
+          "meaning": "Il giorno lavorativo che separa un giorno festivo dal weekend."
+        },
+        {
+          "term": "fascia garantita",
+          "meaning": "Un orario in cui, anche durante lo sciopero, un servizio minimo è assicurato."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Esitur — Ponti 2026: tutte le date e le migliori idee di viaggio",
+          "url": "https://esitur.eu/blog/ponti-2026/"
+        },
+        {
+          "title": "Klomo — Ognissanti 2026: mete per il ponte dell'1 novembre",
+          "url": "https://klomo.it/blog/ognissanti-2026-ponte-1-novembre-mete/"
+        },
+        {
+          "title": "Italo — Ponte Ognissanti 2026: idee per un weekend",
+          "url": "https://blog.italotreno.com/idee-di-viaggio/ponte-ognissanti-2026-idee-weekend-con-bambini/"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Perché nel 2026 non c'è un ponte automatico per Ognissanti?",
+          "options": [
+            "Perché è una festa abolita",
+            "Perché il 1° novembre cade di domenica",
+            "Perché cade di mercoledì",
+            "Perché cade a dicembre"
+          ],
+          "answer": 1,
+          "explanation": "Con la festa di domenica non c'è un giorno lavorativo da \"ponteggiare\": servono ferie."
+        }
+      ],
+      "reflection": "Preferisci un weekend lungo vicino o una gita breve più lontana? Cosa decide la tua scelta?",
+      "id": "2026-10-27-x-viaggi-news",
+      "category": "mondo",
+      "label": "Viaggi"
+    },
+    {
+      "topic": "viaggi",
+      "kind": "spunto",
+      "title": "Weekend con solo bagaglio a mano: la checklist per partire leggeri",
+      "subtitle": "Meno bagaglio, meno costi e meno attese: come pianificarlo in 10 minuti",
+      "summary": "Per un weekend basta il **bagaglio a mano**: si risparmia il costo del bagaglio e si evitano attese. Il segreto è scegliere **capi che si combinano** e portare solo l'essenziale.",
+      "stat": {
+        "value": "1",
+        "label": "il solo bagaglio con cui partire per un weekend"
+      },
+      "sections": [
+        {
+          "heading": "Parti dal programma",
+          "text": "Scrivi **cosa farai** (camminate, cena, lavoro) e porta solo ciò che serve. Prima il programma, poi il bagaglio, mai il contrario."
+        },
+        {
+          "heading": "Capi che si combinano",
+          "text": "Scegli una **palette di colori** e capi che si abbinano tra loro. Con tre magliette e due pantaloni combinabili hai molte combinazioni."
+        },
+        {
+          "heading": "Controlla le regole",
+          "text": "Ogni compagnia ha **misure e peso** diversi per il bagaglio a mano: verifica sul sito prima di partire, specie per i voli low cost."
+        }
+      ],
+      "keyPoints": [
+        "Pianifica il bagaglio dal programma del viaggio",
+        "Scegli capi che si combinano tra loro",
+        "Controlla misure e peso della compagnia"
+      ],
+      "whyItMatters": "Un bagaglio più leggero significa **meno costi, meno stress e più libertà** di muoverti in treno, metro o a piedi.",
+      "actionToday": "Prepara **la lista di un weekend tipo** e salvala sul telefono: la prossima volta ti basterà copiarla e modificarla.",
+      "checklist": [
+        "Scrivi cosa farai ogni giorno",
+        "Scegli una palette di colori e capi combinabili",
+        "Metti i liquidi in contenitori piccoli",
+        "Controlla misure e peso del bagaglio a mano",
+        "Pesa la valigia prima di partire"
+      ],
+      "eli5": "È come fare lo zaino per una gita: porti ciò che userai, non ciò che potresti usare.",
+      "deepDive": [
+        {
+          "title": "Il costo nascosto del bagaglio",
+          "text": "Per i voli low cost il bagaglio a mano maggiore o in stiva si paga a parte. Confrontare il costo totale, non solo il biglietto, evita sorprese al momento dell'imbarco."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "bagaglio a mano",
+          "meaning": "Il bagaglio che si porta in cabina, con limiti di misure e peso."
+        },
+        {
+          "term": "palette",
+          "meaning": "Un insieme ristretto di colori scelti per far combinare i capi."
+        }
+      ],
+      "sources": [],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Da cosa conviene partire per fare il bagaglio?",
+          "options": [
+            "Dalla valigia più grande",
+            "Dal programma del viaggio",
+            "Dal colore della valigia",
+            "Dal peso di ieri"
+          ],
+          "answer": 1,
+          "explanation": "Sapere cosa farai ti dice cosa serve davvero."
+        }
+      ],
+      "reflection": "Quale oggetto porti sempre in viaggio e non usi quasi mai?",
+      "id": "2026-10-27-x-viaggi-spunto",
+      "category": "mondo",
+      "label": "Viaggi"
+    }
+  ]
+}

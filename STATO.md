@@ -40,9 +40,10 @@ Aree del profilo in `config/profile.json`. Non ripetere un'area di Sapere o Rout
 | 2026-10-24 | Regressione verso la media (statistica) | Camminata dopo i pasti (movimento) |
 | 2026-10-25 | Bias di conferma (psicologia e bias cognitivi) | Sveglia fissa dopo il cambio dell'ora (sonno) |
 | 2026-10-26 | Effetto ancoraggio (comunicazione e negoziazione) | Pianificare i pasti (alimentazione) |
+| 2026-10-27 | Paradosso di Simpson (programmazione e dati) | Domande di approfondimento (relazioni) |
 
-Prossime aree da coprire per Sapere: storia e geopolitica, scienza e tecnologia, programmazione e dati, filosofia pratica, produttività, salute e fisiologia.
-Prossime aree per Routine: relazioni, mindset, apprendimento, gestione dello stress.
+Prossime aree da coprire per Sapere: storia e geopolitica, scienza e tecnologia, filosofia pratica, produttività, salute e fisiologia.
+Prossime aree per Routine: mindset, apprendimento, gestione dello stress.
 
 ## Schede su misura scritte
 
@@ -51,6 +52,7 @@ Prossime aree per Routine: relazioni, mindset, apprendimento, gestione dello str
 | 2026-10-24 | cinema, cucina, cultura (profilo con interessi che le schede principali non coprono) |
 | 2026-10-25 | cinema, cucina, cultura, viaggi (terzo profilo iscritto; viaggi per chi non ha Sapere tra i suoi interessi) |
 | 2026-10-26 | cinema, cultura, startup, viaggi (cucina coperta dalla scheda principale di routine) |
+| 2026-10-27 | cucina, cinema, cultura, produttività, viaggi (10 schede: il terzo profilo e un profilo senza produttività tra le schede principali) |
 
 ## Registro delle edizioni
 
@@ -60,3 +62,4 @@ Prossime aree per Routine: relazioni, mindset, apprendimento, gestione dello str
 | 2026-10-24 | 2 | La sessione automatica non è riuscita a fare push; pubblicata da questa sessione |
 | 2026-10-25 | 3 | Prima edizione della redazione automatica in questa sessione; 8 schede su misura |
 | 2026-10-26 | 4 | Redazione automatica; 8 schede su misura. Il risultato del ballottaggio brasiliano era uscito nella notte: controllare sempre gli eventi annunciati il giorno prima |
+| 2026-10-27 | 5 | Redazione automatica; 10 schede su misura. Notizia sull'IPO di Anthropic: dichiarato nel testo che Claude è un suo modello; cifre prese da stampa (WebFetch non raggiunge sec.gov) |
