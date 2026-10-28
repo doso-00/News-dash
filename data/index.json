@@ -1,6 +1,33 @@
 {
   "days": [
     {
+      "date": "2026-10-28",
+      "number": 6,
+      "headline": "L'AI di OpenAI costa la metà, la Fed decide stasera e Israele resta senza maggioranza.",
+      "cards": [
+        {
+          "category": "ai",
+          "title": "GPT-6.1 Terra: un modello per usare il computer a metà prezzo"
+        },
+        {
+          "category": "finanza",
+          "title": "La Fed decide stasera: attesa per i tassi fermi, poi forse un rialzo a dicembre"
+        },
+        {
+          "category": "mondo",
+          "title": "Israele, nessun blocco ha la maggioranza: Likud primo, Arabi decisivi"
+        },
+        {
+          "category": "sapere",
+          "title": "Caffeina e adenosina: perché il caffè delle 17 ti toglie sonno senza che te ne accorga"
+        },
+        {
+          "category": "routine",
+          "title": "Il richiamo attivo: studiare meno rileggendo, di più rispondendo"
+        }
+      ]
+    },
+    {
       "date": "2026-10-27",
       "number": 5,
       "headline": "Anthropic deposita il prospetto per la Borsa, Israele va al voto e a Roma si chiude la manovra.",

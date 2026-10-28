@@ -41,9 +41,10 @@ Aree del profilo in `config/profile.json`. Non ripetere un'area di Sapere o Rout
 | 2026-10-25 | Bias di conferma (psicologia e bias cognitivi) | Sveglia fissa dopo il cambio dell'ora (sonno) |
 | 2026-10-26 | Effetto ancoraggio (comunicazione e negoziazione) | Pianificare i pasti (alimentazione) |
 | 2026-10-27 | Paradosso di Simpson (programmazione e dati) | Domande di approfondimento (relazioni) |
+| 2026-10-28 | Caffeina e adenosina (salute e fisiologia) | Richiamo attivo (apprendimento) |
 
-Prossime aree da coprire per Sapere: storia e geopolitica, scienza e tecnologia, filosofia pratica, produttività, salute e fisiologia.
-Prossime aree per Routine: mindset, apprendimento, gestione dello stress.
+Prossime aree da coprire per Sapere: storia e geopolitica, scienza e tecnologia, filosofia pratica, produttività.
+Prossime aree per Routine: mindset, gestione dello stress.
 
 ## Schede su misura scritte
 
@@ -53,6 +54,7 @@ Prossime aree per Routine: mindset, apprendimento, gestione dello stress.
 | 2026-10-25 | cinema, cucina, cultura, viaggi (terzo profilo iscritto; viaggi per chi non ha Sapere tra i suoi interessi) |
 | 2026-10-26 | cinema, cultura, startup, viaggi (cucina coperta dalla scheda principale di routine) |
 | 2026-10-27 | cucina, cinema, cultura, produttività, viaggi (10 schede: il terzo profilo e un profilo senza produttività tra le schede principali) |
+| 2026-10-28 | cinema, cucina, cultura (6 schede: solo il terzo profilo è fuori dalle principali) |
 
 ## Registro delle edizioni
 
@@ -63,3 +65,4 @@ Prossime aree per Routine: mindset, apprendimento, gestione dello stress.
 | 2026-10-25 | 3 | Prima edizione della redazione automatica in questa sessione; 8 schede su misura |
 | 2026-10-26 | 4 | Redazione automatica; 8 schede su misura. Il risultato del ballottaggio brasiliano era uscito nella notte: controllare sempre gli eventi annunciati il giorno prima |
 | 2026-10-27 | 5 | Redazione automatica; 10 schede su misura. Notizia sull'IPO di Anthropic: dichiarato nel testo che Claude è un suo modello; cifre prese da stampa (WebFetch non raggiunge sec.gov) |
+| 2026-10-28 | 6 | Redazione automatica; 6 schede su misura. Esito del voto israeliano ancora aperto all'ora della ricerca (solo exit poll e scrutinio parziale, discordanti): dichiarato nel testo. Fed: decisione di sera, scheda scritta come anteprima |
