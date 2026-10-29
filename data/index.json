@@ -1,6 +1,33 @@
 {
   "days": [
     {
+      "date": "2026-10-29",
+      "number": 7,
+      "headline": "Genie 4 simula mondi in tempo reale, la manovra passa in Cdm e Israele resta senza maggioranza.",
+      "cards": [
+        {
+          "category": "ai",
+          "title": "Genie 4: Google crea mondi simulati che cambiano mentre li esplori"
+        },
+        {
+          "category": "finanza",
+          "title": "Manovra 2027 approvata in Cdm: Irpef al 33% fino a 55 mila euro e fondo per le pensioni"
+        },
+        {
+          "category": "mondo",
+          "title": "Israele, spoglio finito: Netanyahu 53 seggi, Eisenkot 48, nessuna maggioranza"
+        },
+        {
+          "category": "sapere",
+          "title": "La dicotomia del controllo: cosa dipende da te e cosa no"
+        },
+        {
+          "category": "routine",
+          "title": "Il sospiro ciclico: 5 minuti di respiro per calmarti"
+        }
+      ]
+    },
+    {
       "date": "2026-10-28",
       "number": 6,
       "headline": "L'AI di OpenAI costa la metà, la Fed decide stasera e Israele resta senza maggioranza.",

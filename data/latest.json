@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-28",
-  "number": 6,
-  "generatedAt": "2026-10-28T05:20:53.422Z",
-  "headline": "L'AI di OpenAI costa la metà, la Fed decide stasera e Israele resta senza maggioranza.",
+  "date": "2026-10-29",
+  "number": 7,
+  "generatedAt": "2026-10-29T05:19:02.546Z",
+  "headline": "Genie 4 simula mondi in tempo reale, la manovra passa in Cdm e Israele resta senza maggioranza.",
   "cards": [
     {
       "category": "ai",
@@ -10,111 +10,111 @@
         "ai",
         "tech",
         "code",
-        "startup"
+        "scienza"
       ],
-      "title": "GPT-6.1 Terra: un modello per usare il computer a metà prezzo",
-      "subtitle": "OpenAI abbassa a 1 dollaro per milione di token l'input di un modello pensato per gli agenti",
-      "summary": "Il 26 ottobre OpenAI ha lanciato **GPT-6.1 Terra**, un modello per lavori da agente (usare il computer, eseguire compiti lunghi) a **1 dollaro per milione di token in ingresso**. Il prezzo è **la metà** dei modelli precedenti: i confronti con la concorrenza vengono però dai grafici di OpenAI.",
+      "title": "Genie 4: Google crea mondi simulati che cambiano mentre li esplori",
+      "subtitle": "Il modello di DeepMind aggiunge audio, dialoghi e comandi a testo in tempo reale: serve a far allenare agenti e robot",
+      "summary": "Il 27 ottobre Google DeepMind ha presentato **Genie 4**, un **modello del mondo** che genera ambienti interattivi in tempo reale. Puoi cambiare il meteo o aggiungere oggetti **mentre la simulazione gira**; per ora è in **anteprima di ricerca**.",
       "stat": {
-        "value": "1 $ / 5 $",
-        "label": "per milione di token in ingresso e in uscita, secondo OpenAI"
+        "value": "~2 minuti",
+        "label": "coerenza della scena di Genie 4, il doppio di Genie 3, secondo la stampa"
       },
       "sections": [
         {
-          "heading": "Cosa è uscito",
-          "text": "Il **26 ottobre** OpenAI ha presentato **GPT-6.1 Terra**. È disponibile per gli abbonati a pagamento di ChatGPT e nell'API come gpt-6.1-terra."
+          "heading": "Cos'è un modello del mondo",
+          "text": "Un **modello del mondo** non risponde con testo: genera **un ambiente da esplorare**, fotogramma dopo fotogramma. Genie 4 lo fa in **tempo reale**, mentre ti muovi con la tastiera."
         },
         {
-          "heading": "I prezzi",
-          "text": "L'API costa **1 dollaro per milione di token in ingresso** e **5 dollari in uscita**; i token già in cache costano 0,05 dollari. Secondo le testate è **il 50% in meno** di GPT-5.6 Terra e di GPT-6.1 Sol."
+          "heading": "Cosa c'è di nuovo",
+          "text": "Secondo DeepMind è il primo modello del mondo in tempo reale che genera **audio nativo**: musica, rumori e dialoghi che reagiscono a ciò che fai. Puoi anche dare **comandi a testo**, per cambiare meteo, camera o aggiungere persone e oggetti."
         },
         {
-          "heading": "Fatto per gli agenti",
-          "text": "Terra è pensato per **usare il computer**: aprire programmi, compilare moduli, seguire passaggi lunghi. Ha una finestra di contesto da circa **1 milione di token**."
+          "heading": "A che serve",
+          "text": "L'idea è creare **palestre virtuali** per agenti e robot. In un esperimento, un modello Gemini ha scomposto dei compiti in passaggi e Genie 4 li ha simulati subito, per provarli prima di farli nel mondo reale."
         },
         {
-          "heading": "Il confronto",
-          "text": "Sul test Agents' Last Exam, secondo i grafici di OpenAI, Terra fa **57,6% a 0,29 dollari per compito**; Claude Opus 5.5 fa 63,2% a 8,82 dollari. Sono numeri del produttore: non sono stati verificati da terzi."
+          "heading": "I limiti",
+          "text": "La coerenza della scena dura circa **due minuti**, il doppio di Genie 3. Una fonte avverte che dettagli e oggetti **peggiorano nel tempo**, quindi non basta ancora per simulazioni precise."
         },
         {
-          "heading": "Un avviso",
-          "text": "Claude è il modello con cui è scritta questa app, quindi un confronto con Claude va letto con attenzione. Le tariffe per input molto lunghi non sono descritte allo stesso modo da tutte le fonti."
+          "heading": "Chi può provarlo",
+          "text": "È un'**anteprima di ricerca** per tester selezionati. Nelle prossime settimane arriva agli abbonati Google AI Ultra e ad alcuni partner. Le fonti non concordano su quale modello Gemini faccia da pianificatore: il nome non è verificato."
         }
       ],
       "keyPoints": [
-        "GPT-6.1 Terra: 1 $ in ingresso e 5 $ in uscita per milione di token",
-        "Prezzo dimezzato rispetto ai modelli precedenti, pensato per usare il computer",
-        "I confronti con altri modelli sono dati di OpenAI, non verificati da terzi"
+        "Genie 4 genera mondi interattivi in tempo reale, con audio e comandi a testo",
+        "Serve ad addestrare e testare agenti e robot in simulazione",
+        "Per ora è un'anteprima: la scena tiene circa due minuti"
       ],
-      "whyItMatters": "Quando il prezzo di un compito da agente scende di molto, diventa sensato **automatizzare lavori piccoli e ripetitivi**. Per chi costruisce strumenti, il **costo per compito** conta quanto la qualità.",
-      "actionToday": "Chiedi a Claude: \"Ho un compito che ripeto ogni settimana: [descrivilo]. Stimane i **token in ingresso e in uscita** e calcola il costo a **1 $ e 5 $ per milione**, poi dimmi se vale la pena automatizzarlo.\"",
+      "whyItMatters": "Far provare a un agente migliaia di volte un compito **in simulazione** costa meno e rischia meno che farlo nel mondo reale. Se funziona, cambia quanto in fretta si possono migliorare robot e assistenti.",
+      "actionToday": "Chiedi a Claude: \"Ho questo compito ripetitivo: [descrivilo]. Scrivimi **5 scenari di prova**, tra cui 2 casi difficili, per testare un assistente prima di affidarglielo.\" È la stessa idea di Genie 4, in piccolo.",
       "checklist": [],
-      "eli5": "È come un negozio che dimezza la tariffa dei corrieri: spedire un pacco costa meno, quindi ti conviene mandarne di più invece di portarli a mano.",
+      "eli5": "È come un simulatore di volo: il pilota sbaglia mille volte a terra, dove gli errori non fanno male, prima di salire su un aereo vero.",
       "deepDive": [
         {
-          "title": "Cosa sono i token",
-          "text": "Un **token** è un pezzetto di testo, più o meno una sillaba o una parola corta. I modelli sono pagati in token letti e scritti: un testo lungo in ingresso costa meno di una risposta lunga, perché l'**uscita** ha un prezzo più alto."
+          "title": "Modello del mondo e modello linguistico",
+          "text": "Un modello linguistico prevede la **parola successiva**. Un modello del mondo prevede **come cambia una scena** dopo un'azione. Per un agente che deve muoversi o usare strumenti, la seconda capacità è molto utile."
         },
         {
-          "title": "Perché conta il costo per compito",
-          "text": "Un agente fa molti passaggi, e ogni passaggio rilegge il contesto. Il prezzo per token non basta: conta quanto costa **portare a termine il compito**, anche con qualche errore e riprova."
+          "title": "Perché la coerenza è difficile",
+          "text": "Ogni fotogramma si basa sui precedenti: piccoli errori **si accumulano** e dopo un po' un oggetto cambia forma o sparisce. Per questo la durata della scena è la misura da guardare."
         }
       ],
       "glossary": [
         {
-          "term": "token",
-          "meaning": "Un pezzetto di testo (una parola corta o una sillaba) che il modello legge e scrive, e per cui si paga."
+          "term": "modello del mondo",
+          "meaning": "Un'AI che simula come cambia un ambiente quando si compie un'azione, invece di produrre solo testo."
+        },
+        {
+          "term": "anteprima di ricerca",
+          "meaning": "Una versione provata da pochi tester prima del rilascio generale."
         },
         {
           "term": "agente",
           "meaning": "Un programma di AI che esegue da solo una sequenza di azioni per raggiungere un obiettivo."
-        },
-        {
-          "term": "cache",
-          "meaning": "Una memoria in cui restano i token già letti, così rileggerli costa molto meno."
         }
       ],
       "sources": [
         {
-          "title": "MarkTechPost — OpenAI Launches GPT-6.1 Terra, Halving GPT-6.1 Sol's API Price for Agent Work",
-          "url": "https://www.marktechpost.com/2026/10/26/openai-gpt-6-1-terra/"
+          "title": "TechCrunch — Google's Genie 4 world model adds audio, more realistic worlds, and real-time steering",
+          "url": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/"
         },
         {
-          "title": "gHacks — OpenAI Launches GPT-6.1 Terra With API Pricing 50% Lower Than GPT-5.6 Terra",
-          "url": "https://www.ghacks.net/2026/10/27/openai-launches-gpt-6-1-terra-with-api-pricing-50-lower-than-gpt-5-6-terra/"
+          "title": "Unite.AI — Google DeepMind Rolls Out Genie 4 World Model in Research Preview",
+          "url": "https://www.unite.ai/google-deepmind-rolls-out-genie-4-world-model-in-research-preview/"
         },
         {
-          "title": "DataCamp — GPT-6.1 Terra: Benchmarks, Pricing and Access",
-          "url": "https://www.datacamp.com/blog/gpt-6-1-terra"
+          "title": "The Next Web — Google DeepMind's Genie 4 builds AI worlds that talk and change on command",
+          "url": "https://thenextweb.com/news/google-deepmind-genie-4-world-model"
         }
       ],
       "readingMinutes": 3,
       "quiz": [
         {
-          "q": "Perché per un agente conta il costo per compito e non solo il prezzo per token?",
+          "q": "Che cosa fa un modello del mondo come Genie 4?",
           "options": [
-            "Perché i token non si pagano",
-            "Perché ogni passaggio rilegge il contesto e può servire riprovare",
-            "Perché il prezzo è sempre fisso",
-            "Perché i compiti sono tutti uguali"
+            "Prevede la parola successiva di un testo",
+            "Genera un ambiente interattivo che cambia in base alle azioni",
+            "Traduce lingue",
+            "Archivia documenti"
           ],
           "answer": 1,
-          "explanation": "Un agente fa molti passaggi: il costo totale dipende da quanti token legge e scrive per finire il lavoro."
+          "explanation": "Un modello del mondo simula come cambia una scena, e può essere esplorato in tempo reale."
         },
         {
-          "q": "Quanto costa un milione di token in uscita con GPT-6.1 Terra, secondo OpenAI?",
+          "q": "Perché le simulazioni servono ad addestrare agenti e robot?",
           "options": [
-            "1 dollaro",
-            "5 dollari",
-            "0,05 dollari",
-            "10 dollari"
+            "Perché sono sempre perfette",
+            "Perché si possono ripetere tante prove senza rischi e a costo basso",
+            "Perché sostituiscono i test reali per sempre",
+            "Perché non hanno limiti"
           ],
           "answer": 1,
-          "explanation": "L'ingresso costa 1 dollaro, l'uscita 5 dollari, i token in cache 0,05 dollari."
+          "explanation": "In simulazione gli errori non costano, ma restano limiti: la scena di Genie 4 tiene circa due minuti."
         }
       ],
-      "reflection": "Quale compito che fai ogni settimana a mano ti costa più tempo di quanto costerebbe farlo fare a un agente?",
-      "id": "2026-10-28-ai",
+      "reflection": "Quale compito ripetitivo del tuo lavoro potresti far provare a un assistente in uno scenario di prova, prima di fidartene?",
+      "id": "2026-10-29-ai",
       "label": "Intelligenza artificiale"
     },
     {
@@ -122,111 +122,120 @@
       "interests": [
         "finanza",
         "economia",
+        "politica",
         "lavoro"
       ],
-      "title": "La Fed decide stasera: attesa per i tassi fermi, poi forse un rialzo a dicembre",
-      "subtitle": "Inflazione al 3,7% e solo 29.000 posti di lavoro in più: il presidente Warsh non anticipa le mosse",
-      "summary": "Oggi la **Federal Reserve** chiude la riunione di ottobre: i mercati si aspettano **tassi fermi al 3,75%-4,00%**, ma vedono un **rialzo a dicembre**. La decisione arriva alle **20:00 italiane**; l'inflazione è al **3,7%** e il mercato del lavoro rallenta.",
+      "title": "Manovra 2027 approvata in Cdm: Irpef al 33% fino a 55 mila euro e fondo per le pensioni",
+      "subtitle": "Circa 26 miliardi, più di 5 dal settore finanziario. Ora il testo passa al Parlamento; intanto la Fed tiene i tassi fermi",
+      "summary": "Il Consiglio dei ministri ha approvato la **legge di bilancio 2027**, circa **26 miliardi**: l'aliquota Irpef del **33%** sale fino a **55 mila euro** e un fondo da **850 milioni** finanzia l'uscita flessibile. Le cifre vengono dai giornali e vanno verificate sul testo.",
       "stat": {
-        "value": "3,75%-4,00%",
-        "label": "fascia dei tassi Fed: l'attesa è che resti ferma oggi"
+        "value": "~26 mld €",
+        "label": "valore della prima versione della legge di bilancio 2027"
       },
       "sections": [
         {
-          "heading": "Cosa si decide oggi",
-          "text": "La **Fed** chiude oggi la riunione di due giorni. La decisione è alle **20:00 ora italiana**, la conferenza stampa del presidente **Kevin Warsh** subito dopo."
+          "heading": "Il via libera",
+          "text": "Il **28 ottobre** il Consiglio dei ministri ha approvato il disegno di legge di bilancio. Il valore è di circa **26 miliardi**, secondo i giornali: ieri si parlava di 23,5."
         },
         {
-          "heading": "L'attesa: tassi fermi",
-          "text": "Quasi tutti gli analisti si aspettano che la fascia resti a **3,75%-4,00%**. Secondo i futures, la probabilità di un rialzo oggi è tra il **10% e il 20%**: le fonti non coincidono."
+          "heading": "Irpef",
+          "text": "Il secondo scaglione, con **aliquota al 33%**, arriva fino a **55 mila euro** (prima 50 mila). Il beneficio massimo è di circa **500 euro l'anno**."
         },
         {
-          "heading": "Perché potrebbe salire",
-          "text": "L'**inflazione** di settembre è accelerata al **3,7%**, mentre i **posti di lavoro** sono cresciuti di soli **29.000**. I verbali della riunione di settembre dicono che servirà probabilmente un altro rialzo entro fine anno."
+          "heading": "Pensioni",
+          "text": "Niente riforma generale: c'è un **fondo da 850 milioni** per l'uscita flessibile, con la cosiddetta **Quota 64** dal 2027. Un voucher di 300 euro va agli over 75 con pensione fino a 28 mila euro."
         },
         {
-          "heading": "Warsh e le parole",
-          "text": "Warsh ha abbandonato la **forward guidance**, cioè l'abitudine di annunciare in anticipo le mosse. Questa volta non ci sono nuove previsioni sui tassi: contano il comunicato, i voti contrari e la conferenza."
+          "heading": "Chi paga",
+          "text": "Più di **5 miliardi** vengono dal settore finanziario, con un intervento sulla Tobin tax. Meloni ha detto di sperare che le banche non facciano ricorso. Sono escluse le Bcc e le banche popolari."
         },
         {
-          "heading": "I mercati ieri",
-          "text": "Martedì **Wall Street** ha chiuso in rialzo: **S&P 500 +0,6%** a 7.722,60 e **Nasdaq +1,18%**. Il rendimento del **Treasury a 10 anni** è rimasto al 4,986%."
+          "heading": "E la Fed",
+          "text": "Mercoledì sera la **Fed** ha lasciato i tassi a **3,75%-4%** con un voto **10 a 2**: Lisa Cook e Beth Hammack volevano un rialzo. Warsh non ha dato indicazioni su dicembre; la prossima riunione è il 9."
         }
       ],
       "keyPoints": [
-        "Decisione della Fed alle 20:00 italiane: attesi tassi fermi al 3,75%-4,00%",
-        "Inflazione al 3,7% e +29.000 posti di lavoro: dicembre resta il mese del possibile rialzo",
-        "Warsh non anticipa le mosse: contano comunicato e conferenza stampa"
+        "Cdm approva la manovra: circa 26 miliardi, aliquota 33% fino a 55 mila euro",
+        "Fondo da 850 milioni per l'uscita flessibile e più di 5 miliardi dalla finanza",
+        "La Fed tiene i tassi al 3,75%-4% con due voti per il rialzo"
       ],
-      "whyItMatters": "I tassi americani muovono **mutui, dollaro, Borsa e rendimenti dei titoli di Stato**, anche in Europa. Se la Fed alza i tassi, il denaro costa di più e gli investimenti rischiosi tendono a perdere attrattiva.",
-      "actionToday": "Stasera, dopo il comunicato, scrivi **tre righe**: tassi fermi o alzati, quanti membri hanno votato contro, e cosa ha detto Warsh su dicembre. Poi confrontale con le previsioni di stamattina.",
+      "whyItMatters": "La manovra decide **quanto resta in busta paga**, le regole per andare in pensione e chi paga di più. Il testo ora cambia in Parlamento: le cifre di oggi possono non essere quelle finali.",
+      "actionToday": "Prendi la tua **retribuzione annua lorda** e controlla se supera i **50 mila euro**. Se sì, il beneficio massimo è di circa 500 euro l'anno; se no, cerca **quale altra misura** ti riguarda.",
       "checklist": [],
-      "eli5": "La Fed è come chi regola il termostato di una casa: se fa troppo caldo (prezzi che salgono) abbassa il riscaldamento alzando i tassi, ma se esagera la casa si raffredda e si perdono posti di lavoro.",
+      "eli5": "È la lista della spesa di una famiglia numerosa: il governo decide cosa comprare e chi paga di più, ma il Parlamento può ancora cambiare la lista.",
       "deepDive": [
         {
-          "title": "Cosa fa la Fed con i tassi",
-          "text": "La Fed fissa il costo del denaro a brevissimo termine tra le banche. Alzarlo rende più cari mutui e prestiti, e frena la spesa: serve a **raffreddare l'inflazione**, con il rischio di rallentare anche l'occupazione."
+          "title": "Cos'è un'aliquota marginale",
+          "text": "Con l'Irpef si pagano aliquote diverse **per fasce di reddito**: l'aliquota più alta si applica solo alla parte che supera la soglia. Alzare la soglia del 33% da 50 a 55 mila euro riguarda quindi **solo chi guadagna più di 50 mila euro**."
         },
         {
-          "title": "Perché le parole contano",
-          "text": "Quando la Fed non fa promesse, ogni frase del presidente può muovere i mercati. Per questo si leggono con attenzione i **voti contrari**: se alcuni membri vogliono già alzare i tassi, un rialzo a dicembre diventa più probabile."
+          "title": "Cosa succede ora",
+          "text": "Il disegno di legge va in Parlamento, dove **Camera e Senato** possono modificarlo con emendamenti. Deve essere approvato entro la fine dell'anno, per evitare l'esercizio provvisorio."
         }
       ],
       "glossary": [
         {
-          "term": "forward guidance",
-          "meaning": "L'abitudine di una banca centrale di annunciare in anticipo, a parole, che cosa farà con i tassi."
+          "term": "legge di bilancio",
+          "meaning": "La legge annuale con cui lo Stato decide entrate e spese dell'anno successivo."
         },
         {
-          "term": "Treasury",
-          "meaning": "I titoli di Stato americani: il loro rendimento è un riferimento per tutti i tassi del mercato."
+          "term": "aliquota",
+          "meaning": "La percentuale di imposta applicata a una fascia di reddito."
         },
         {
-          "term": "inflazione",
-          "meaning": "L'aumento generale dei prezzi nel tempo: se sale, i soldi comprano meno."
+          "term": "Tobin tax",
+          "meaning": "Un'imposta sulle transazioni finanziarie."
         }
       ],
       "sources": [
         {
-          "title": "CNBC — Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
-          "url": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html"
+          "title": "Euronews — Manovra 2027, nel Ddl scaglione Irpef al 33% fino a 55mila euro",
+          "url": "https://it.euronews.com/2026/10/28/manovra-2027-il-consiglio-dei-ministri-approva-il-disegno-di-legge-di-bilancio"
         },
         {
-          "title": "Forbes — What To Look For From The Fed's October Meeting",
-          "url": "https://www.forbes.com/sites/simonmoore/2026/10/19/what-to-look-for-from-the-feds-october-meeting/"
+          "title": "Sky TG24 — Manovra finanziaria 2027, ok del Cdm: le novità",
+          "url": "https://tg24.sky.it/economia/2026/10/28/manovra-finanziaria-2027"
         },
         {
-          "title": "TheStreet — Stock Market Today (Oct. 27, 2026)",
-          "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-27-2026"
+          "title": "Today — Manovra 2027 approvata: tutte le misure",
+          "url": "https://www.today.it/economia/manovra-2027-misure-irpef-bollo-auto-affitti-meloni-ultime-notizie.html"
+        },
+        {
+          "title": "CNBC — Fed interest rate decision October 2026: Fed holds rates steady",
+          "url": "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html"
+        },
+        {
+          "title": "Axios — Fed leaves rates steady as governor Lisa Cook dissents",
+          "url": "https://www.axios.com/2026/10/28/fed-warsh-interest-rates-cook"
         }
       ],
       "readingMinutes": 3,
       "quiz": [
         {
-          "q": "Che cosa significa che Warsh ha abbandonato la forward guidance?",
+          "q": "Chi guadagna 40 mila euro lordi beneficia dell'allargamento dello scaglione al 33% fino a 55 mila?",
           "options": [
-            "Non parla mai con i giornalisti",
-            "Non annuncia in anticipo che cosa farà con i tassi",
-            "Ha cambiato l'inflazione obiettivo",
-            "Ha chiuso la riunione di ottobre"
+            "Sì, di 500 euro",
+            "No: riguarda la parte di reddito tra 50 e 55 mila euro",
+            "Sì, di 5 mila euro",
+            "Dipende dalla Fed"
           ],
           "answer": 1,
-          "explanation": "La forward guidance è l'annuncio anticipato delle mosse: senza di essa i mercati hanno meno indizi."
+          "explanation": "L'aliquota più alta si applica solo alla quota che supera la soglia: chi sta sotto i 50 mila non cambia."
         },
         {
-          "q": "Perché una Fed che alza i tassi può frenare l'inflazione?",
+          "q": "Che cosa significa che la Fed ha votato 10 a 2?",
           "options": [
-            "Perché stampa meno banconote",
-            "Perché mutui e prestiti costano di più e la spesa rallenta",
-            "Perché obbliga a spendere di più",
-            "Perché cambia il prezzo dell'oro"
+            "Che 10 membri hanno scelto di tenere i tassi e 2 volevano alzarli",
+            "Che i tassi sono saliti del 10%",
+            "Che la riunione è durata 10 ore",
+            "Che la Fed ha 2 sedi"
           ],
-          "answer": 1,
-          "explanation": "Con il denaro più caro famiglie e imprese spendono e investono meno, e la pressione sui prezzi cala."
+          "answer": 0,
+          "explanation": "La maggioranza ha tenuto i tassi fermi; due membri avrebbero preferito un rialzo."
         }
       ],
-      "reflection": "Se i tassi salgono, che cosa cambia nei tuoi debiti, nei tuoi risparmi e nelle tue decisioni di spesa?",
-      "id": "2026-10-28-finanza",
+      "reflection": "Se potessi scegliere una sola misura di una manovra da finanziare, quale sceglieresti e chi dovrebbe pagarla?",
+      "id": "2026-10-29-finanza",
       "label": "Finanza"
     },
     {
@@ -236,807 +245,1117 @@
         "politica",
         "storia"
       ],
-      "title": "Israele, nessun blocco ha la maggioranza: Likud primo, Arabi decisivi",
-      "subtitle": "Gli exit poll dicono stallo e il conteggio è ancora aperto: i voti dei militari e dei diplomatici arrivano per ultimi",
-      "summary": "Dopo il voto di martedì **nessun blocco arriva a 61 seggi** nei sondaggi all'uscita dai seggi. Il **Likud** è il primo partito, ma i dati cambiano da una rete all'altra e il conteggio è ancora aperto: l'affluenza è stata del **77,7%**.",
+      "title": "Israele, spoglio finito: Netanyahu 53 seggi, Eisenkot 48, nessuna maggioranza",
+      "subtitle": "I partiti arabi pesano 17-19 seggi e il presidente Herzog punta a un governo di unità nazionale; il risultato è ufficiale il 4 novembre",
+      "summary": "Lo spoglio ha confermato lo **stallo**: il blocco di **Netanyahu** ha **53 seggi**, quello di **Eisenkot 48**, e i partiti arabi 17-19 secondo le fonti. Per governare ne servono **61**; i voti in busta doppia possono ancora spostare qualcosa.",
       "stat": {
-        "value": "77,7%",
-        "label": "affluenza alle elezioni israeliane del 27 ottobre"
+        "value": "53 / 48",
+        "label": "seggi dei blocchi di Netanyahu e di Eisenkot, su 120; ne servono 61"
       },
       "sections": [
         {
-          "heading": "L'esito: stallo",
-          "text": "Gli **exit poll** delle reti israeliane indicano che né Netanyahu né Eisenkot raggiungono i **61 seggi** su 120. Tutti e due hanno rivendicato la vittoria."
+          "heading": "Il verdetto",
+          "text": "A spoglio concluso, secondo i giornali italiani, il blocco di Netanyahu ottiene **53 seggi** e quello di Eisenkot **48**. Nessuno arriva a **61**."
         },
         {
-          "heading": "Numeri diversi",
-          "text": "Canale 12 dà **52 seggi** al blocco di Netanyahu e **49** a quello di Eisenkot, con **19** ai partiti arabi. Canale 11 e 13 li danno pari a **51**. Kan inizialmente dava 53 a Eisenkot e 50 a Netanyahu."
+          "heading": "Il confronto con il 2022",
+          "text": "Il blocco di Netanyahu **perde** rispetto ai 64 del 2022. Il Likud resta primo partito ma scende da 32 a **24 deputati**."
         },
         {
-          "heading": "Likud primo partito",
-          "text": "Il **Likud** di Netanyahu è il primo partito, con circa 24-27 seggi nei sondaggi. **Yashar!** di Gadi Eisenkot è secondo, con circa 21-22. Il Canale 14 è l'unico a dare la maggioranza alla destra (60 seggi)."
+          "heading": "I partiti arabi",
+          "text": "I partiti arabi salgono da 10 a circa **19** seggi, ma una fonte ne dà **17**: il numero va verificato. Sono loro l'ago della bilancia."
         },
         {
-          "heading": "Il conteggio reale",
-          "text": "Con circa un quarto dei seggi scrutinati, **ANSA** dà il Likud al **23,36%**. Una proiezione parziale dava a Netanyahu 63 seggi: contraddice gli exit poll ed è lontana dall'essere definitiva."
+          "heading": "Le prossime mosse",
+          "text": "Secondo le cronache, il presidente **Herzog** vedrà Netanyahu ed Eisenkot per proporre un **governo di unità nazionale**. Netanyahu ha parlato di elezioni «rubate dai partiti arabi»: è una sua accusa, non un fatto verificato."
         },
         {
-          "heading": "Perché non è finita",
-          "text": "I voti in busta doppia di **soldati, diplomatici e detenuti** si contano dopo. Il risultato ufficiale arriva nei prossimi giorni; poi il presidente affida l'incarico di formare il governo."
+          "heading": "Quando è ufficiale",
+          "text": "I **voti in busta doppia** di militari e diplomatici sono contati per ultimi. Il risultato ufficiale è atteso per il **4 novembre**."
         }
       ],
       "keyPoints": [
-        "Exit poll: nessun blocco a 61 seggi, i partiti arabi pesano 18-19",
-        "Likud primo partito, Yashar! di Eisenkot secondo",
-        "I voti di soldati e diplomatici si contano dopo: il risultato può cambiare"
+        "Blocco di Netanyahu 53 seggi, blocco di Eisenkot 48: nessuna maggioranza a 61",
+        "Partiti arabi a 17-19 seggi, decisivi per qualunque coalizione",
+        "Herzog propone un governo di unità; risultati ufficiali il 4 novembre"
       ],
-      "whyItMatters": "Un governo che non nasce subito prolunga l'**incertezza su guerra, tregue e rapporti con Stati Uniti e paesi arabi**. Con blocchi quasi pari, anche un solo seggio cambia chi governa.",
-      "actionToday": "Fra due giorni cerca il **risultato ufficiale** della Commissione elettorale e confrontalo con gli exit poll: **di quanti seggi si sono sbagliati** le reti? Segna la differenza.",
+      "whyItMatters": "Senza maggioranza, la **guerra, le tregue e i rapporti con Stati Uniti e paesi arabi** restano nelle mani di un governo che non c'è. Settimane di trattative possono portare a un'**unità nazionale** o a nuove elezioni.",
+      "actionToday": "Fra una settimana, cerca il **risultato ufficiale del 4 novembre** e confrontalo con i dati di oggi: **quanti seggi sono cambiati** dopo le buste doppie? Segna la differenza.",
       "checklist": [],
-      "eli5": "Sono due squadre a un passo dal pareggio nel conteggio dei voti dei tifosi: l'ultima scatola di schede, arrivata dopo, decide chi gioca.",
+      "eli5": "Due squadre hanno quasi gli stessi punti e nessuna vince da sola il campionato: per decidere chi comanda, devono mettersi d'accordo con chi ha i voti che mancano.",
       "deepDive": [
         {
-          "title": "Cos'è un exit poll",
-          "text": "È un sondaggio fatto **all'uscita dai seggi**: si chiede agli elettori per chi hanno votato. È rapido, ma è solo un campione, e può sbagliare di alcuni seggi, soprattutto se i blocchi sono vicini."
+          "title": "Cos'è un governo di unità nazionale",
+          "text": "È un governo formato da **partiti che di solito sono avversari**, per superare uno stallo o un'emergenza. I partiti si dividono i ministeri e i temi su cui non fanno scontro."
         },
         {
-          "title": "Chi forma il governo",
-          "text": "In Israele il presidente affida l'incarico al candidato che ha più possibilità di ottenere i **61 voti** alla Knesset. Se nessuno ci riesce nei tempi, si può tornare al voto."
+          "title": "Perché le buste doppie arrivano dopo",
+          "text": "Sono i voti di **soldati, diplomatici e detenuti** che non votano nel proprio seggio. Vanno verificati uno a uno, quindi si contano dopo. Possono spostare uno o due seggi, che con blocchi così vicini contano molto."
         }
       ],
       "glossary": [
         {
-          "term": "exit poll",
-          "meaning": "Sondaggio fatto agli elettori all'uscita dal seggio, prima dello spoglio ufficiale."
+          "term": "stallo",
+          "meaning": "Una situazione in cui nessuno schieramento ha la maggioranza per governare."
+        },
+        {
+          "term": "governo di unità nazionale",
+          "meaning": "Un governo formato da partiti avversari per uscire da uno stallo."
         },
         {
           "term": "Knesset",
           "meaning": "Il parlamento israeliano, con 120 seggi."
-        },
-        {
-          "term": "stallo",
-          "meaning": "Una situazione in cui nessuno schieramento ha la maggioranza per governare."
         }
       ],
       "sources": [
         {
-          "title": "Axios — Netanyahu and Eisenkot blocs deadlocked and shy of a majority",
-          "url": "https://www.axios.com/2026/10/27/netanyahu-eisenkot-israel-election-exit-polls"
+          "title": "Il Sole 24 Ore — Elezioni in Israele, finito lo spoglio: Netanyahu 53 seggi, Eisenkot 48",
+          "url": "https://www.ilsole24ore.com/art/elezioni-israele-meta-seggi-scrutinati-likud-testa-il-2081percento-AJZN3SwB"
         },
         {
-          "title": "CNN — Israeli election results: No clear winner as exit polls suggest rebuke for Netanyahu",
-          "url": "https://www.cnn.com/2026/10/27/world/live-news/israel-elections-live-results-latest-votes-intl"
+          "title": "Il Gazzettino — Elezioni Israele, spoglio finito: al blocco Netanyahu 53 seggi, Eisenkot 48",
+          "url": "https://www.ilgazzettino.it/esteri/elezioni_israele_2026_risultati_diretta_netanyahu-9853826.html"
         },
         {
-          "title": "ANSA — Israele: ad un quarto dei seggi scrutinati Likud in testa con il 23,36%",
-          "url": "https://www.ansa.it/sito/notizie/mondo/2026/10/28/israele-ad-un-quarto-dei-seggi-scrutinati-likud-in-testa-con-il-2336_958b1ab2-5280-44a8-9639-8f99dc19e720.html"
+          "title": "Fanpage — Elezioni Israele 2026, i risultati in diretta",
+          "url": "https://www.fanpage.it/live/elezioni-israele-risultati-diretta-28-ottobre-eisenkot-netanyahu-sfida/"
         },
         {
-          "title": "Il Foglio — I risultati delle elezioni in Israele",
-          "url": "https://www.ilfoglio.it/esteri/2026/10/27/news/bibi-vs-eisenkot-i-risultati-delle-elezioni-in-israele--411864"
+          "title": "Il Fatto Quotidiano — Elezioni in Israele: lo scrutinio e i risultati",
+          "url": "https://www.ilfattoquotidiano.it/mondo/live-post/2026/10/28/israele-elezioni-risultati-ultime-notizie/8552182/"
         }
       ],
       "readingMinutes": 3,
       "quiz": [
         {
-          "q": "Perché gli exit poll di reti diverse danno numeri diversi?",
+          "q": "Perché i partiti arabi sono decisivi?",
           "options": [
-            "Perché ogni rete cambia le regole",
-            "Perché sono campioni, e con blocchi vicini poche schede cambiano il risultato",
-            "Perché il voto è segreto",
-            "Perché i seggi sono 120"
+            "Perché sono il primo partito",
+            "Perché nessun blocco arriva a 61 senza di loro",
+            "Perché scelgono il presidente",
+            "Perché contano i voti all'estero"
           ],
           "answer": 1,
-          "explanation": "Un sondaggio all'uscita è una stima su un campione: se i blocchi sono vicini, pochi punti spostano i seggi."
+          "explanation": "Con 53 e 48 seggi, nessuno dei due blocchi ha la maggioranza: i seggi dei partiti arabi fanno la differenza."
         },
         {
-          "q": "Perché il risultato può ancora cambiare?",
+          "q": "Che cos'è un governo di unità nazionale?",
           "options": [
-            "Perché i voti di soldati e diplomatici si contano dopo",
-            "Perché si rivota domani",
-            "Perché il Likud ritira le liste",
-            "Perché la Knesset ha 121 seggi"
+            "Un governo di un solo partito",
+            "Un governo di partiti avversari per uscire da uno stallo",
+            "Un governo militare",
+            "Un governo senza ministri"
           ],
-          "answer": 0,
-          "explanation": "I voti in busta doppia arrivano per ultimi e possono spostare uno o due seggi."
+          "answer": 1,
+          "explanation": "Partiti che di solito si oppongono governano insieme per superare lo stallo."
         }
       ],
-      "reflection": "Quando senti un risultato dato per certo dopo poche ore, che cosa controlli prima di fidarti?",
-      "id": "2026-10-28-mondo",
+      "reflection": "Quando nessuno ha la maggioranza, cosa conta di più: i programmi o la disponibilità a cedere qualcosa?",
+      "id": "2026-10-29-mondo",
       "label": "Mondo"
     },
     {
       "category": "sapere",
       "interests": [
-        "salute",
-        "scienza",
-        "produttivita",
-        "psicologia"
+        "crescita",
+        "psicologia",
+        "lavoro",
+        "salute"
       ],
-      "title": "Caffeina e adenosina: perché il caffè delle 17 ti toglie sonno senza che te ne accorga",
-      "subtitle": "Come funziona la pressione del sonno, e perché la caffeina la nasconde invece di cancellarla",
-      "summary": "Durante la veglia il cervello accumula **adenosina**, e questo crea la **pressione del sonno**. La **caffeina** non toglie la stanchezza: **blocca i recettori** dell'adenosina, e dopo ore può ancora ridurre il sonno senza che te ne accorga.",
-      "stat": {
-        "value": "> 1 ora",
-        "label": "di sonno in meno dopo 400 mg di caffeina presi 6 ore prima di dormire (studio del 2013)"
-      },
+      "title": "La dicotomia del controllo: cosa dipende da te e cosa no",
+      "subtitle": "Il primo principio dello stoico Epitteto, per decidere dove mettere energia e dove lasciar perdere",
+      "summary": "Epitteto apre il suo **Manuale** con una distinzione: alcune cose **dipendono da noi**, altre **no**. Dividerle prima di agire aiuta a non sprecare energie su ciò che non puoi cambiare.",
+      "stat": null,
       "sections": [
         {
-          "heading": "La pressione del sonno",
-          "text": "Più resti sveglio, più nel cervello si accumula una molecola, l'**adenosina**. Quando è alta, senti sonno. Dormire la fa scendere di nuovo."
+          "heading": "Il principio",
+          "text": "Nel *Manuale* (Enchiridion), compilato da Arriano dalle lezioni di **Epitteto**, la prima idea è questa: alcune cose sono **in nostro potere**, altre **no**."
         },
         {
-          "heading": "Cosa fa la caffeina",
-          "text": "La **caffeina** assomiglia all'adenosina e occupa i suoi **recettori**. Il segnale di stanchezza non arriva, ma l'adenosina continua ad accumularsi."
+          "heading": "Cosa dipende da noi",
+          "text": "Per Epitteto dipendono da noi **giudizi, impulsi, desideri e avversioni**: cioè le nostre scelte e il modo in cui interpretiamo le cose."
         },
         {
-          "heading": "Perché dura tanto",
-          "text": "L'**emivita della caffeina** è di circa **5 ore**, con differenze tra persone. Dopo 5 ore resta ancora metà della dose nel corpo."
+          "heading": "Cosa non dipende da noi",
+          "text": "Non dipendono da noi **corpo, beni, reputazione e cariche pubbliche**. Si può agire su queste cose, ma il risultato non è garantito."
         },
         {
-          "heading": "Lo studio del 2013",
-          "text": "In uno studio con **12 adulti sani**, una dose di 400 mg presa **6 ore prima di dormire** ha ridotto il sonno misurato di **oltre un'ora**. Le persone non se ne erano accorte."
+          "heading": "Un esempio",
+          "text": "Prepari un colloquio. Dipende da te **quanto ti prepari e come rispondi**; non dipende da te **quale altro candidato arriva** o come sta il selezionatore."
         },
         {
-          "heading": "Cosa cambia in pratica",
-          "text": "Gli autori consigliano di evitare la caffeina dopo le **17**. Se dormi poco e bevi più caffè, può partire un circolo vizioso."
+          "heading": "Un'obiezione",
+          "text": "Spesso il controllo è **parziale**: la distinzione non è netta. Un buon uso è dividere un problema nei suoi passaggi e chiedersi, per ognuno, **quanto dipende da me**."
         }
       ],
       "keyPoints": [
-        "L'adenosina si accumula da svegli e crea sonno; la caffeina blocca i recettori",
-        "L'emivita della caffeina è di circa 5 ore",
-        "Dopo le 17 il caffè può togliere oltre un'ora di sonno senza che tu lo senta"
+        "Epitteto separa ciò che dipende da noi da ciò che non dipende da noi",
+        "Dipendono da noi giudizi e scelte; non dipendono corpo, beni, reputazione",
+        "Il controllo è spesso parziale: si divide il problema in passaggi"
       ],
-      "whyItMatters": "Dormire bene sostiene **attenzione, umore e memoria** del giorno dopo. Saper dove agisce la caffeina ti permette di usarla senza pagare il conto di notte.",
-      "actionToday": "Per tre giorni scrivi **l'orario dell'ultimo caffè** e **a che ora dormi**. Poi sposta l'ultimo caffè **prima delle 14** e confronta come ti senti la mattina.",
+      "whyItMatters": "Ti aiuta a **decidere dove mettere l'energia** e a ridurre l'ansia per cose che non puoi cambiare. Funziona sul lavoro, nelle relazioni e nelle notizie che ti preoccupano.",
+      "actionToday": "Scegli **una preoccupazione di oggi** e scrivi due colonne: **dipende da me** e **non dipende da me**. Poi scegli **una sola azione** della prima colonna, da fare entro stasera.",
       "checklist": [],
-      "eli5": "L'adenosina è un contatore di stanchezza che si riempie: la caffeina è un cerotto sul display, il contatore continua a salire anche se non lo vedi.",
+      "eli5": "È come una partita a carte: non scegli le carte che ti arrivano, ma come le giochi sì.",
       "deepDive": [
         {
-          "title": "Sveglia ma non riposata",
-          "text": "Quando la caffeina svanisce, l'adenosina accumulata arriva tutta insieme: è il **calo** che molti sentono dopo il caffè. Non è il caffè che ti toglie energia, ma il segnale di stanchezza che era rimasto bloccato."
+          "title": "Stoicismo non vuol dire non sentire",
+          "text": "Il punto non è reprimere le emozioni, ma **non farsi guidare** da ciò che non si può cambiare. Prima si riconosce l'emozione, poi si sceglie su cosa agire."
         },
         {
-          "title": "Le differenze tra persone",
-          "text": "L'emivita varia con **genetica, farmaci, gravidanza e fumo**: per questo la stessa tazza non pesa uguale su tutti. Il dato di 5 ore è una media, non una regola."
+          "title": "Le traduzioni cambiano",
+          "text": "L'elenco dipende dalla traduzione: una versione parla di giudizio, impulso e desiderio, un'altra di **giudizio, motivazione, desiderio e avversione**. L'idea di fondo resta la stessa."
         }
       ],
       "glossary": [
         {
-          "term": "adenosina",
-          "meaning": "Una molecola che si accumula nel cervello durante la veglia e produce la sensazione di sonno."
+          "term": "stoicismo",
+          "meaning": "Una scuola filosofica antica che propone di concentrarsi su ciò che dipende da noi."
         },
         {
-          "term": "emivita",
-          "meaning": "Il tempo che serve al corpo per eliminare metà di una sostanza."
-        },
-        {
-          "term": "recettore",
-          "meaning": "Una proteina sulle cellule a cui si lega una molecola per trasmettere un segnale."
+          "term": "dicotomia",
+          "meaning": "Una divisione in due parti distinte."
         }
       ],
       "sources": [
         {
-          "title": "AASM — Late afternoon and early evening caffeine can disrupt sleep at night",
-          "url": "https://aasm.org/late-afternoon-and-early-evening-caffeine-can-disrupt-sleep-at-night/"
+          "title": "Living Stoicism — What is controlling what?",
+          "url": "https://livingstoicism.com/2023/05/13/what-is-controlling-what/"
         },
         {
-          "title": "ScienceDaily — Caffeine taken even six hours before bedtime disrupts sleep (Drake et al., 2013)",
-          "url": "https://sciencedaily.com/releases/2013/11/131114155838.htm"
+          "title": "Gregory Sadler — What Epictetus Really Thinks Is In Our Power Or Control",
+          "url": "https://gregorybsadler.substack.com/p/what-epictetus-really-thinks-is-in"
         }
       ],
       "readingMinutes": 3,
       "quiz": [
         {
-          "q": "Che cosa fa la caffeina rispetto all'adenosina?",
+          "q": "Quale di queste cose, per Epitteto, dipende da noi?",
           "options": [
-            "La elimina dal cervello",
-            "Blocca i suoi recettori, ma l'adenosina continua ad accumularsi",
-            "La trasforma in energia",
-            "Ne produce di più"
+            "La reputazione",
+            "Il giudizio e le scelte",
+            "Il corpo",
+            "I beni"
           ],
           "answer": 1,
-          "explanation": "La caffeina occupa i recettori dell'adenosina: il segnale non arriva, ma la molecola resta."
+          "explanation": "Giudizi e scelte sono nostri; corpo, beni e reputazione non dipendono solo da noi."
         },
         {
-          "q": "Se l'emivita è di 5 ore, quanta caffeina resta dopo 5 ore?",
+          "q": "Perché conviene dividere un problema in passaggi?",
           "options": [
-            "Tutta",
-            "Circa metà",
-            "Un quarto",
-            "Nulla"
+            "Perché il controllo è spesso parziale e passaggi diversi dipendono da noi in misura diversa",
+            "Perché così è più lungo",
+            "Perché gli stoici non agiscono",
+            "Perché nessun passaggio dipende da noi"
           ],
-          "answer": 1,
-          "explanation": "L'emivita è il tempo in cui l'organismo elimina metà della dose."
+          "answer": 0,
+          "explanation": "Spesso un problema ha parti in nostro controllo e parti no: separarle indica dove agire."
         }
       ],
-      "reflection": "A che ora prendi l'ultimo caffè, e quanto sai davvero di come dormi dopo?",
-      "id": "2026-10-28-sapere",
+      "reflection": "Quale preoccupazione ti porti dietro da giorni che, guardata bene, è quasi tutta fuori dal tuo controllo?",
+      "id": "2026-10-29-sapere",
       "label": "Sapere"
     },
     {
       "category": "routine",
       "interests": [
-        "crescita",
+        "salute",
         "psicologia",
-        "produttivita",
-        "scienza"
+        "crescita",
+        "produttivita"
       ],
-      "title": "Il richiamo attivo: studiare meno rileggendo, di più rispondendo",
-      "subtitle": "Provare a ricordare senza guardare è uno dei metodi di apprendimento meglio dimostrati",
-      "summary": "Rileggere dà l'**illusione di sapere**; provare a **ricordare senza guardare** rende la memoria più stabile. Nello studio di Roediger e Karpicke (2006) il test batteva la rilettura dopo una settimana.",
+      "title": "Il sospiro ciclico: 5 minuti di respiro per calmarti",
+      "subtitle": "Un doppio inspiro e una lunga espirazione: in uno studio di un mese ha migliorato l'umore più della meditazione",
+      "summary": "Il **sospiro ciclico** è un respiro con **due inspirazioni** e una **espirazione lunga**. In uno studio randomizzato di un mese, **5 minuti al giorno** hanno migliorato l'umore più della meditazione mindfulness.",
       "stat": {
-        "value": "1 settimana",
-        "label": "dopo cui, nello studio del 2006, chi si era interrogato ricordava più di chi aveva riletto"
+        "value": "5 minuti",
+        "label": "al giorno per un mese, nello studio di Balban e colleghi (2023)"
       },
       "sections": [
         {
-          "heading": "L'illusione della rilettura",
-          "text": "Rileggere un testo lo fa sembrare familiare, e **familiare** non vuol dire **ricordato**. Sul momento ci si sente preparati, ma dopo qualche giorno il ricordo svanisce."
+          "heading": "Lo studio",
+          "text": "Nel **2023** un gruppo di ricercatori ha pubblicato su *Cell Reports Medicine* uno studio randomizzato di **un mese**. I partecipanti facevano **5 minuti al giorno** di una tecnica di respiro o di meditazione mindfulness."
         },
         {
-          "heading": "Cos'è il richiamo attivo",
-          "text": "Il **richiamo attivo** (in inglese *retrieval practice*) significa chiudere il libro e **recuperare dalla memoria** quello che hai letto. Lo sforzo di ricordare rafforza la traccia."
-        },
-        {
-          "heading": "Lo studio del 2006",
-          "text": "Gli psicologi **Roediger e Karpicke** fecero studiare dei brani a degli studenti. Su test a distanza di **una settimana**, chi si era interrogato ricordava di più di chi aveva solo riletto, anche se i secondi si sentivano più sicuri."
+          "heading": "Il risultato",
+          "text": "Il **sospiro ciclico**, centrato sulla **espirazione lunga**, ha dato miglioramenti dell'umore e una riduzione della frequenza del respiro **maggiori** della meditazione. I dati venivano da un dispositivo da polso e da questionari."
         },
         {
           "heading": "Come si fa",
-          "text": "Dopo aver letto una pagina, chiudila e scrivi **tutto quello che ricordi**. Poi controlla cosa manca. Gli errori non sono una perdita: dicono **cosa ripassare**."
+          "text": "Inspira dal naso, poi fai **un secondo piccolo inspiro** per riempire i polmoni. Espira piano dalla bocca, il più a lungo possibile. Ripeti per cinque minuti."
         },
         {
-          "heading": "Un limite",
-          "text": "Lo studio misura il ricordo di testi brevi fino a una settimana. Funziona meglio con distanza tra un ripasso e l'altro, e vale per ciò che vuoi davvero ricordare, non per ogni lettura."
+          "heading": "Perché può aiutare",
+          "text": "Un'espirazione lunga **rallenta il respiro**, e il corpo lo legge come segnale di calma. Gli autori lo descrivono come uno strumento **promettente**, non come una cura."
+        },
+        {
+          "heading": "I limiti",
+          "text": "Lo studio era **a distanza**, con misure in parte **dichiarate dai partecipanti**. Non sostituisce un aiuto per ansia forte o disturbi: se il disagio dura, parlane con un medico."
         }
       ],
       "keyPoints": [
-        "Rileggere dà familiarità, non memoria",
-        "Chiudere il libro e ricordare rafforza l'apprendimento",
-        "Gli errori mostrano cosa ripassare"
+        "Sospiro ciclico: doppio inspiro dal naso e lunga espirazione dalla bocca",
+        "5 minuti al giorno per un mese hanno migliorato l'umore più della mindfulness",
+        "Studio a distanza: promettente ma non è una cura"
       ],
-      "whyItMatters": "Se studi per un esame, un corso o un nuovo lavoro, usare il **richiamo attivo** ti fa **risparmiare tempo**: ricordi di più con meno ripassi inutili.",
-      "actionToday": "Dopo il prossimo articolo o capitolo, chiudilo e scrivi in **due minuti** i 5 punti che ricordi. Controlla e correggi.",
+      "whyItMatters": "Hai sempre il respiro con te: è uno dei pochi strumenti per **calmarti in pochi minuti** senza app o attrezzi. Può aiutare prima di una riunione o quando senti la tensione salire.",
+      "actionToday": "Questa sera, prima di dormire o dopo una giornata pesante, fai **cinque minuti di sospiro ciclico** e scrivi in una riga **come ti senti** prima e dopo.",
       "checklist": [
-        "Leggi una pagina o un articolo una sola volta",
-        "Chiudi tutto e scrivi quello che ricordi, senza guardare",
-        "Riapri e confronta: segna cosa manca o è sbagliato",
-        "Ripeti il richiamo dopo un giorno e poi dopo una settimana"
+        "Siediti comodo e appoggia la schiena",
+        "Inspira dal naso, poi fai un secondo piccolo inspiro",
+        "Espira lentamente dalla bocca, più a lungo che puoi",
+        "Ripeti per cinque minuti, con un timer",
+        "Scrivi in una riga come ti senti dopo"
       ],
-      "eli5": "È come cercare la strada di casa a memoria invece di seguire sempre il navigatore: la prima volta sbagli, ma la volta dopo la conosci davvero.",
+      "eli5": "È come far uscire l'aria da un palloncino molto piano: più lenta esce, più il corpo capisce che può rilassarsi.",
       "deepDive": [
         {
-          "title": "Perché ricordare rafforza",
-          "text": "Ogni volta che **recuperi** un ricordo, il cervello lo ricostruisce e lo rende più facile da ritrovare. Rileggere invece fa solo riconoscere: la domanda è se riesci a **produrre** la risposta."
+          "title": "Il doppio inspiro",
+          "text": "Secondo i ricercatori, il secondo inspiro potrebbe **riaprire gli alveoli**, le piccole sacche dei polmoni che tendono a chiudersi. È un’ipotesi sul meccanismo: lo studio misura soprattutto l’effetto sull’umore."
         },
         {
-          "title": "Unirlo alla distanza",
-          "text": "Il richiamo attivo funziona ancora meglio se i ripassi sono **distanziati** nel tempo, in modo da sforzarsi appena prima di dimenticare. È la base delle app di ripetizione dilazionata."
+          "title": "Un'abitudine, non un trucco",
+          "text": "Nello studio la pratica era **quotidiana per un mese**. Cinque minuti fissi nello stesso momento della giornata sono più facili da mantenere di sessioni lunghe e rare."
         }
       ],
       "glossary": [
         {
-          "term": "richiamo attivo",
-          "meaning": "Recuperare un'informazione dalla memoria senza guardare, invece di rileggerla."
+          "term": "sospiro ciclico",
+          "meaning": "Un respiro con un doppio inspiro dal naso e una lunga espirazione dalla bocca."
         },
         {
-          "term": "ripetizione dilazionata",
-          "meaning": "Ripassare a intervalli sempre più lunghi, appena prima di dimenticare."
+          "term": "studio randomizzato",
+          "meaning": "Uno studio in cui i partecipanti sono assegnati a caso a gruppi diversi, per confrontare i metodi."
         }
       ],
       "sources": [
         {
-          "title": "Roediger & Karpicke (2006) — Test-enhanced learning, Psychological Science",
-          "url": "https://psychology.ecu.edu/wp-content/pv-uploads/sites/216/2019/03/Roediger-Karpicke-2006.pdf"
+          "title": "Balban et al. (2023) — Brief structured respiration practices enhance mood and reduce physiological arousal, Cell Reports Medicine",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/9873947/"
         },
         {
-          "title": "Association for Psychological Science — Test-enhanced learning",
-          "url": "https://www.psychologicalscience.org/observer/test-enhanced-learning"
+          "title": "Stanford Healthcare — Brief structured respiration practices",
+          "url": "https://stanfordhealthcare.org/publications/867/867953.html"
         }
       ],
       "readingMinutes": 3,
       "quiz": [
         {
-          "q": "Perché rileggere dà una falsa sicurezza?",
+          "q": "Qual è la parte più importante del sospiro ciclico?",
           "options": [
-            "Perché il testo è sbagliato",
-            "Perché la familiarità sembra memoria, ma non lo è",
-            "Perché leggere è inutile",
-            "Perché serve leggere più veloce"
+            "Trattenere il fiato a lungo",
+            "Un'espirazione lunga dopo un doppio inspiro",
+            "Respirare in fretta",
+            "Respirare solo con la bocca"
           ],
           "answer": 1,
-          "explanation": "Riconoscere un testo è più facile che ricordarlo: la familiarità inganna."
+          "explanation": "Il doppio inspiro prepara una lunga espirazione, che rallenta il respiro."
         },
         {
-          "q": "Qual è il primo passo del richiamo attivo?",
+          "q": "Perché lo studio non basta per dire che sia una cura?",
           "options": [
-            "Rileggere tutto da capo",
-            "Chiudere il testo e scrivere quello che ricordi",
-            "Evidenziare le frasi",
-            "Dormire"
+            "Perché era a distanza e in parte autodichiarato",
+            "Perché durava un anno",
+            "Perché non c'era un confronto",
+            "Perché non ha dato risultati"
           ],
-          "answer": 1,
-          "explanation": "Il richiamo comincia dal tentativo di ricordare senza guardare."
+          "answer": 0,
+          "explanation": "Gli autori lo descrivono come promettente: le misure erano in parte dichiarate dai partecipanti."
         }
       ],
-      "reflection": "Quale cosa che hai studiato di recente sapresti spiegare adesso, senza riaprire gli appunti?",
-      "id": "2026-10-28-routine",
+      "reflection": "In quale momento della giornata cinque minuti di respiro lento sarebbero più facili da inserire?",
+      "id": "2026-10-29-routine",
       "label": "Metodo & routine"
     }
   ],
   "extras": [
     {
-      "topic": "cinema",
+      "topic": "cucina",
       "kind": "news",
-      "title": "Box office: Je so' pazzo resta primo, il mercato cala del 14%",
-      "subtitle": "Il biopic su Pino Daniele supera i 3 milioni, dietro Clayface e Ragione e sentimento",
-      "summary": "Nel weekend 22-25 ottobre **Je so' pazzo**, il film su Pino Daniele, resta **primo con circa 1 milione di euro** e supera i **3 milioni** in totale. Il mercato intero cala del **14%** rispetto al weekend precedente.",
+      "title": "Gambero Rosso 2027: il Reale di Niko Romito prende 99 su 100, record della guida",
+      "subtitle": "Dietro, la Francescana di Bottura a 98 e Piazza Duomo di Crippa a 97; Ristorante dell'anno è un'osteria di un paese di 1.400 abitanti",
+      "summary": "Nella guida **Ristoranti d'Italia 2027** del Gambero Rosso il **Reale** di Niko Romito, a Castel di Sangro, ottiene **99 punti su 100**: il punteggio più alto mai dato dalla guida. Alle sue spalle ci sono Bottura e Crippa.",
       "stat": {
-        "value": "3,06 mln €",
-        "label": "incasso totale di Je so' pazzo dopo il weekend 22-25 ottobre"
+        "value": "99/100",
+        "label": "punteggio del Reale di Niko Romito, il più alto mai assegnato dalla guida"
       },
       "sections": [
         {
-          "heading": "Primo posto confermato",
-          "text": "**Je so' pazzo**, il biopic di Nicola Prosatore su **Pino Daniele**, resta in testa. Nel weekend ha incassato circa **1,03 milioni** di euro in 505 sale."
+          "heading": "Il record",
+          "text": "Il **Reale** di **Niko Romito** a Castel di Sangro, in Abruzzo, ottiene **99 punti**. È il voto più alto mai assegnato a un ristorante dalla guida del Gambero Rosso."
         },
         {
-          "heading": "Il resto della classifica",
-          "text": "Al secondo posto **Clayface**, con circa 733 mila euro. Terzo **Ragione e sentimento**, quarto **L'estranea** di Paolo Strippoli, che arriva a **2,7 milioni** in totale."
+          "heading": "Il podio",
+          "text": "Al secondo posto l'**Osteria Francescana** di Massimo Bottura con **98**. Terzo **Piazza Duomo** di Enrico Crippa con **97**."
         },
         {
-          "heading": "Il mercato",
-          "text": "Secondo Cinetel il mercato ha incassato **6,25 milioni** con circa 790 mila spettatori. È **-14%** sul weekend prima e **+10%** sullo stesso weekend del 2025."
+          "heading": "Ristorante dell'anno",
+          "text": "Il premio **Ristorante dell'anno** va a un'**osteria** di un paese di circa **1.400 abitanti**. Il premio all'ospitalità è per Michela Scarello, di Agli Amici dal 1887 a Godia, in provincia di Udine."
         },
         {
-          "heading": "Una cautela",
-          "text": "Le cifre cambiano di poco da una fonte all'altra, per i diversi periodi di conteggio. I dati definitivi sono quelli di Cinetel."
+          "heading": "Un dato da leggere bene",
+          "text": "I punti sono un voto della guida, non una classifica oggettiva. I premi diversi (cucina, ospitalità, ristorante dell'anno) misurano cose diverse."
         }
       ],
       "keyPoints": [
-        "Je so' pazzo primo con circa 1 milione nel weekend",
-        "Totale del film oltre 3 milioni di euro",
-        "Mercato -14% sul weekend precedente, +10% sul 2025"
+        "Il Reale di Niko Romito: 99/100, record della guida",
+        "Francescana 98, Piazza Duomo 97",
+        "Ristorante dell'anno è un'osteria di un paese di 1.400 abitanti"
       ],
-      "whyItMatters": "Il box office dice **cosa sceglie il pubblico** e quali film restano in sala. Un film italiano che resta primo per più settimane è un segnale per i distributori.",
-      "actionToday": "Guarda la classifica del prossimo weekend e confronta **il calo del primo film** con quello di questo: ti dice se il film regge il **passaparola**.",
+      "whyItMatters": "Le guide orientano **dove si mangia bene** e dove va il turismo gastronomico. Un record come questo porta attenzione su un territorio lontano dalle grandi città.",
+      "actionToday": "Apri la guida e cerca **un ristorante a meno di un'ora da casa** con un buon punteggio e un prezzo che ti va bene: segnalo per un'occasione futura.",
       "checklist": [],
-      "eli5": "È la classifica delle partite della domenica: ogni lunedì si contano quante persone sono andate allo stadio.",
+      "eli5": "È come la pagella dei ristoranti: più alto è il voto, più la guida pensa che valga il viaggio.",
       "deepDive": [
         {
-          "title": "Cos'è Cinetel",
-          "text": "È il sistema che raccoglie gli **incassi dei biglietti** dalle sale italiane: i numeri citati dai giornali arrivano da qui, con piccole differenze di aggiornamento."
+          "title": "Come si legge una guida",
+          "text": "Il **punteggio** dice quanto piace un posto agli ispettori; non dice se piacerà a te o se è adatto a una cena tra amici. Conta anche il **prezzo**, la distanza e l'occasione."
         }
       ],
       "glossary": [
         {
-          "term": "biopic",
-          "meaning": "Un film biografico che racconta la vita di una persona reale."
+          "term": "Tre Forchette",
+          "meaning": "Il massimo riconoscimento della guida Ristoranti d'Italia del Gambero Rosso."
         },
         {
-          "term": "box office",
-          "meaning": "La classifica degli incassi dei film nelle sale."
+          "term": "guida",
+          "meaning": "Un libro o sito che valuta i ristoranti con giudizi e punteggi."
         }
       ],
       "sources": [
         {
-          "title": "ANSA — Incassi Cinetel, resta primo il biopic su Pino Daniele, Je so' pazzo",
-          "url": "https://www.ansa.it/sito/notizie/topnews/2026/10/26/incassi-cinetel-resta-primo-il-biopic-su-pino-daniele-je-so-pazzo_6d95ccfe-281a-429f-8b93-293734c2bc7d.html"
+          "title": "Affaritaliani — Niko Romito, il Reale è il miglior ristorante d'Italia con il punteggio più alto mai assegnato",
+          "url": "https://www.affaritaliani.it/economia/niko-romito-ecco-perche-il-reale-e-oggi-il-miglior-ristorante-ditalia-con-il-punteggio-piu-alto-mai-assegnato.html"
         },
         {
-          "title": "Solaris — Box office 22-25 ottobre 2026",
-          "url": "https://www.solaris.news/2026/10/box-office-22-25-ottobre-2026.html"
+          "title": "FIRSTonline — Un'osteria di un paesino di 1400 abitanti eletta Ristorante dell'anno dalla Guida del Gambero Rosso 2027",
+          "url": "https://www.firstonline.info/unosteria-di-un-paesino-di-1400-abitanti-eletta-ristorante-dellanno-dalla-guida-del-gambero-rosso-2027-niko-romito-con-il-suo-reale-al-vertice-delle-tre-forchette-scalza-dal-podio-b/"
         },
         {
-          "title": "Cinematografo — Box office, Je so' pazzo supera i 3 milioni",
-          "url": "https://www.cinematografo.it/riflettori/box-office-je-so-pazzo-supera-i-3-milioni-su7brgoy"
+          "title": "HorecaNews — Dalla cucina all'accoglienza, un tour fra ristoranti premiati dal Gambero Rosso",
+          "url": "https://horecanews.it/dalla-cucina-allaccoglienza-un-tour-fra-ristoranti-premiati-dal-gambero-rosso"
         }
       ],
       "readingMinutes": 2,
       "quiz": [
         {
-          "q": "Che cosa vuol dire che il mercato è -14% sul weekend precedente?",
+          "q": "Che cosa significa 99/100 per il Reale?",
           "options": [
-            "Gli incassi totali sono scesi del 14%",
-            "I film sono diminuiti del 14%",
-            "Il primo film ha perso il 14%",
-            "I biglietti costano il 14% in meno"
+            "Un voto della guida, il più alto mai dato",
+            "Il prezzo del menu",
+            "Il numero dei coperti",
+            "Il numero di stelle Michelin"
           ],
           "answer": 0,
-          "explanation": "Il confronto riguarda gli incassi totali di tutte le sale rispetto a sette giorni prima."
+          "explanation": "È un punteggio della guida del Gambero Rosso, non una classifica oggettiva."
         }
       ],
-      "reflection": "Quando scegli un film, guardi più la classifica o il passaparola di chi conosci?",
-      "id": "2026-10-28-x-cinema-news",
+      "reflection": "Quanto conta per te il voto di una guida rispetto al consiglio di qualcuno che conosci?",
+      "id": "2026-10-29-x-cucina-news",
+      "category": "routine",
+      "label": "Cucina"
+    },
+    {
+      "topic": "cucina",
+      "kind": "spunto",
+      "title": "Tostare le spezie a secco: un minuto che cambia un piatto",
+      "subtitle": "Una padella asciutta fa uscire gli aromi di cumino, coriandolo e semi",
+      "summary": "Scaldare le spezie intere in una **padella asciutta** per un minuto ne fa uscire gli **aromi**. Poi si macinano e si usano: il piatto avrà un profumo più intenso.",
+      "stat": null,
+      "sections": [
+        {
+          "heading": "Perché si fa",
+          "text": "Il calore libera i **composti aromatici** chiusi nei semi. Le spezie intere tostate profumano molto più di quelle in polvere rimaste in dispensa."
+        },
+        {
+          "heading": "Come si fa",
+          "text": "Scalda una padella **senza olio** a fuoco medio. Aggiungi le spezie intere (cumino, coriandolo, finocchio) e **muovile** per circa un minuto, finché senti il profumo."
+        },
+        {
+          "heading": "Attenzione",
+          "text": "Appena senti l'aroma, **togli subito dal fuoco**. Se iniziano a scurirsi troppo diventano amare."
+        }
+      ],
+      "keyPoints": [
+        "Tosta le spezie intere in padella asciutta",
+        "Un minuto, muovendole, finché profumano",
+        "Se scuriscono troppo diventano amare"
+      ],
+      "whyItMatters": "È un gesto **gratuito** che dà più sapore a zuppe, legumi e carni, senza aggiungere sale.",
+      "actionToday": "Stasera tosta **un cucchiaino di semi di cumino o coriandolo**, macinali in un mortaio e aggiungili a una zuppa o a un piatto di legumi.",
+      "checklist": [
+        "Scegli spezie intere (cumino, coriandolo, finocchio)",
+        "Scalda una padella asciutta a fuoco medio",
+        "Muovile per circa un minuto",
+        "Toglile quando senti il profumo",
+        "Macinale e usale subito"
+      ],
+      "eli5": "È come strofinare una fogliolina di menta tra le dita: il profumo esce quando la scaldi o la schiacci.",
+      "deepDive": [
+        {
+          "title": "Intere o in polvere",
+          "text": "Le spezie **intere** conservano gli aromi più a lungo di quelle macinate. Macinarle poco prima dell'uso dà il massimo profumo."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "spezie intere",
+          "meaning": "Semi o bacche non macinati, che conservano più a lungo gli aromi."
+        },
+        {
+          "term": "tostare",
+          "meaning": "Scaldare un alimento secco per far uscire il profumo."
+        }
+      ],
+      "sources": [],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Quando togli le spezie dalla padella?",
+          "options": [
+            "Quando bruciano",
+            "Appena senti il profumo",
+            "Dopo dieci minuti",
+            "Mai"
+          ],
+          "answer": 1,
+          "explanation": "Se si scuriscono troppo diventano amare: basta circa un minuto."
+        }
+      ],
+      "reflection": "Quale piatto che cucini spesso potrebbe guadagnare da un profumo in più?",
+      "id": "2026-10-29-x-cucina-spunto",
+      "category": "routine",
+      "label": "Cucina"
+    },
+    {
+      "topic": "cinema",
+      "kind": "news",
+      "title": "Netflix svela il trailer di Orgoglio e pregiudizio: sei episodi dal 3 dicembre",
+      "subtitle": "Nella miniserie Emma Corrin, Jack Lowden e Olivia Colman; intanto arriva in streaming Noi un po' meglio di Luchetti",
+      "summary": "Netflix ha pubblicato il **trailer** della nuova serie **Orgoglio e pregiudizio**: **sei episodi** dal **3 dicembre**, con Emma Corrin, Jack Lowden e Olivia Colman. Da oggi è su Netflix anche il film di Luchetti **Noi un po' meglio**.",
+      "stat": {
+        "value": "6",
+        "label": "episodi della miniserie Orgoglio e pregiudizio di Netflix, dal 3 dicembre"
+      },
+      "sections": [
+        {
+          "heading": "La serie",
+          "text": "La nuova miniserie di **Netflix** adatta il romanzo di **Jane Austen**. Sono **sei episodi**, diretti da **Euros Lyn**, con adattamento di **Dolly Alderton**."
+        },
+        {
+          "heading": "Il cast",
+          "text": "Tra gli interpreti **Emma Corrin**, **Jack Lowden** e **Olivia Colman**. Il trailer è uscito il 28 ottobre; la serie sarà disponibile dal **3 dicembre**."
+        },
+        {
+          "heading": "Un film italiano in streaming",
+          "text": "Da oggi, 29 ottobre, su Netflix c'è **Noi un po' meglio**, il film di **Daniele Luchetti** con **Elio Germano** e **Maria Chiara Giannetta**."
+        },
+        {
+          "heading": "Altre uscite",
+          "text": "Il 28 ottobre in sala sono usciti, tra gli altri, l'horror *It Ends* e il documentario *Back to the Beginning* su Ozzy e i Black Sabbath. Alcune date cambiano da una fonte all'altra: controlla il calendario del cinema."
+        }
+      ],
+      "keyPoints": [
+        "Trailer di Orgoglio e pregiudizio, serie Netflix di sei episodi dal 3 dicembre",
+        "Noi un po' meglio di Luchetti è su Netflix dal 29 ottobre",
+        "Alcune date di uscita variano tra le fonti"
+      ],
+      "whyItMatters": "Le **trasposizioni dei classici** tornano spesso: confrontare una serie con il libro è un buon modo per capire cosa cambia con un altro mezzo.",
+      "actionToday": "Se non l'hai mai letto, leggi **il primo capitolo** di *Orgoglio e pregiudizio* e poi guarda il trailer: scrivi **una differenza** che noti.",
+      "checklist": [],
+      "eli5": "È come una ricetta cucinata da un altro cuoco: gli ingredienti sono gli stessi, ma il piatto è un po' diverso.",
+      "deepDive": [
+        {
+          "title": "Perché si rifanno i classici",
+          "text": "I romanzi famosi hanno **già un pubblico** e personaggi molto noti, quindi sono una base sicura. Ogni nuova versione cambia il tono, il ritmo e le scelte di cast."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "miniserie",
+          "meaning": "Una serie con una storia che si chiude in pochi episodi, senza stagioni successive."
+        },
+        {
+          "term": "trasposizione",
+          "meaning": "L'adattamento di un'opera da un mezzo all'altro, per esempio da libro a serie."
+        }
+      ],
+      "sources": [
+        {
+          "title": "CinecittàNews — Orgoglio e pregiudizio, Netflix svela il trailer della serie",
+          "url": "https://cinecittanews.it/orgoglio-e-pregiudizio-netflix-svela-il-trailer-della-serie/"
+        },
+        {
+          "title": "UniversalMovies — Orgoglio e Pregiudizio: il trailer della serie Netflix",
+          "url": "https://www.universalmovies.it/orgoglio-e-pregiudizio-netflix-trailer/"
+        },
+        {
+          "title": "ComingSoon — Film in streaming in uscita questa settimana",
+          "url": "https://www.comingsoon.it/cinema/news/film-in-streaming-in-uscita-questa-settimana-noi-un-po-meglio-wicked-2-e-le/n234559/"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Da quando è disponibile la serie Orgoglio e pregiudizio su Netflix?",
+          "options": [
+            "Dal 28 ottobre",
+            "Dal 3 dicembre",
+            "Dal 29 ottobre",
+            "Dal 1° gennaio"
+          ],
+          "answer": 1,
+          "explanation": "Il trailer è uscito il 28 ottobre; la serie arriva il 3 dicembre."
+        }
+      ],
+      "reflection": "Quale libro che ami vorresti vedere trasformato in serie, e quale parte non potresti perdere?",
+      "id": "2026-10-29-x-cinema-news",
       "category": "mondo",
       "label": "Cinema e serie"
     },
     {
       "topic": "cinema",
       "kind": "spunto",
-      "title": "Campo e controcampo: come un dialogo diventa tensione",
-      "subtitle": "La coppia di inquadrature che usano quasi tutti i film per farti stare dentro una conversazione",
-      "summary": "Il **campo-controcampo** alterna **chi parla** e **chi ascolta**. Cambia il ritmo di una scena anche senza movimenti di macchina: osservarlo ti fa vedere come un regista guida l'attenzione.",
+      "title": "Il MacGuffin: l'oggetto che muove la storia",
+      "subtitle": "Un termine reso famoso da Hitchcock per ciò che i personaggi inseguono e allo spettatore importa poco",
+      "summary": "Un **MacGuffin** è l'oggetto, il segreto o la persona che i personaggi **vogliono a ogni costo**. Serve a far partire la trama: spesso conta più la corsa dell'oggetto in sé.",
       "stat": null,
       "sections": [
         {
-          "heading": "Due inquadrature",
-          "text": "In un dialogo la macchina da presa mostra prima una persona e poi l'altra. Quella alternanza si chiama **campo e controcampo**."
+          "heading": "Che cos'è",
+          "text": "Il **MacGuffin** è ciò che dà un motivo ai personaggi per muoversi: una valigetta, un documento, una formula. Il termine è legato al regista **Alfred Hitchcock**."
         },
         {
           "heading": "Perché funziona",
-          "text": "Ti fa **guardare con gli occhi dei personaggi**. Le pause e i silenzi pesano di più, perché vedi la reazione di chi ascolta."
+          "text": "Allo spettatore non interessa cosa contiene la valigetta: interessa **cosa fanno i personaggi per averla**. Il MacGuffin crea tensione e porta da un luogo all'altro."
         },
         {
-          "heading": "Cosa osservare",
-          "text": "Conta **quante volte si alterna** e **quanto dura ogni inquadratura**. Un cambio rapido crea nervosismo; uno lento, intimità."
+          "heading": "Come riconoscerlo",
+          "text": "Se, togliendo l'oggetto, la storia sul **rapporto tra i personaggi** resta in piedi, forse era un MacGuffin."
         }
       ],
       "keyPoints": [
-        "Campo e controcampo alternano chi parla e chi ascolta",
-        "Le pause pesano di più grazie alle reazioni",
-        "Ritmo veloce = tensione, lento = intimità"
+        "Il MacGuffin è l'oggetto che muove la trama",
+        "Conta la corsa, non l'oggetto",
+        "Se lo togli e la storia regge, era un MacGuffin"
       ],
-      "whyItMatters": "Riconoscere la tecnica ti fa **guardare meglio** e capire perché una scena ti ha colpito.",
-      "actionToday": "Nel prossimo film guarda **una scena di dialogo** e conta **quante volte cambia l'inquadratura in un minuto**. Poi chiediti che effetto ti ha fatto.",
+      "whyItMatters": "Riconoscerlo ti fa capire **cosa vuole raccontare davvero** un film: spesso non l'oggetto, ma ciò che i personaggi diventano per ottenerlo.",
+      "actionToday": "Nel prossimo film o nella prossima serie chiediti: **che cosa inseguono i personaggi?** E poi: **se sparisse, cosa resterebbe della storia?**",
       "checklist": [
-        "Scegli una scena di dialogo",
-        "Conta i cambi di inquadratura in un minuto",
-        "Nota chi è inquadrato quando c'è silenzio",
-        "Scrivi una frase su come ti ha fatto sentire"
+        "Individua l'oggetto o l'obiettivo inseguito",
+        "Chiediti perché importa ai personaggi",
+        "Chiediti se importa anche a te",
+        "Nota cosa resta se lo togli"
       ],
-      "eli5": "È come seguire una partita a ping-pong girando la testa a destra e a sinistra: segui la pallina e senti il ritmo.",
+      "eli5": "È come l'esca che muove un gioco a inseguimento: a nessuno importa davvero cosa sia, ma tutti corrono.",
       "deepDive": [
         {
-          "title": "Quando si rompe la regola",
-          "text": "A volte un regista inquadra **entrambi i personaggi insieme** e non alterna: l'effetto è che sembrano legati, o intrappolati nella stessa scena."
+          "title": "Quando non è un MacGuffin",
+          "text": "Se l'oggetto ha un **significato profondo** per i personaggi o per il tema, come un anello simbolico, non è un puro MacGuffin ma un elemento della storia."
         }
       ],
       "glossary": [
         {
-          "term": "campo e controcampo",
-          "meaning": "L'alternanza di inquadrature tra due persone che parlano, per mostrare ognuna dal punto di vista dell'altra."
+          "term": "MacGuffin",
+          "meaning": "Un oggetto o un obiettivo che dà inizio alla trama senza essere importante in sé."
         },
         {
-          "term": "inquadratura",
-          "meaning": "Quello che la macchina da presa mostra senza stacchi."
+          "term": "trama",
+          "meaning": "La sequenza di eventi di una storia."
         }
       ],
       "sources": [],
       "readingMinutes": 2,
       "quiz": [
         {
-          "q": "Che cosa fa il campo e controcampo?",
+          "q": "Che cosa fa il MacGuffin?",
           "options": [
-            "Alterna chi parla e chi ascolta",
-            "Mostra solo il paesaggio",
-            "Inquadra sempre due persone insieme",
-            "Toglie i dialoghi"
+            "Spiega il finale",
+            "Dà ai personaggi un motivo per muoversi",
+            "Sostituisce la colonna sonora",
+            "Riassume la trama"
           ],
-          "answer": 0,
-          "explanation": "Mostra a turno i due interlocutori, per seguire la conversazione dai loro punti di vista."
+          "answer": 1,
+          "explanation": "È l'oggetto o l'obiettivo che mette in moto la storia."
         }
       ],
-      "reflection": "In quale scena di un film ti ha colpito di più il silenzio di chi ascoltava?",
-      "id": "2026-10-28-x-cinema-spunto",
+      "reflection": "In quale film l'oggetto inseguito ti importava meno delle persone che lo inseguivano?",
+      "id": "2026-10-29-x-cinema-spunto",
       "category": "mondo",
       "label": "Cinema e serie"
     },
     {
-      "topic": "cucina",
-      "kind": "news",
-      "title": "Guida Michelin Italia 2027: altri 25 ristoranti entrano in selezione",
-      "subtitle": "Tra i nuovi nomi Roteo sul lago di Como e Bàtu a Taormina; il verdetto finale non c'è ancora",
-      "summary": "A pochi giorni dalla lista di settembre, la **Guida Michelin Italia 2027** annuncia **altri 25 ristoranti** nella sua selezione. Non sono ancora stelle: la **lista completa** e i premi arrivano con la presentazione della guida.",
-      "stat": {
-        "value": "25",
-        "label": "nuovi ristoranti annunciati il 23 ottobre per la selezione Michelin 2027"
-      },
-      "sections": [
-        {
-          "heading": "L'annuncio",
-          "text": "Il **23 ottobre** la Guida Michelin ha segnalato **altri 25 ristoranti** che entrano nella selezione 2027. Vanno da osterie storiche a locali guidati da giovani chef."
-        },
-        {
-          "heading": "Roteo, sul lago",
-          "text": "**Roteo**, all'interno di MUSA sul lago di Como, entra nella selezione con gli chef **Matteo Corridori e Robert Moretti**."
-        },
-        {
-          "heading": "Bàtu a Taormina",
-          "text": "**Bàtu**, nel Grand Hotel San Pietro di Taormina, porta nella guida la cucina dello chef **Luca Miuccio**."
-        },
-        {
-          "heading": "Selezione non vuol dire stella",
-          "text": "Entrare nella **selezione** vuol dire essere segnalati dagli ispettori. Le **stelle** e gli altri premi sono assegnati con il verdetto finale: la lista di settembre, ricorda la guida, non lo è."
-        }
-      ],
-      "keyPoints": [
-        "Altri 25 ristoranti nella selezione Michelin 2027",
-        "Tra i nomi Roteo (Como) e Bàtu (Taormina)",
-        "Selezione non vuol dire stella: il verdetto finale non c'è ancora"
-      ],
-      "whyItMatters": "Le guide indicano **dove si mangia bene** e spostano il turismo: un ingresso in selezione porta più prenotazioni.",
-      "actionToday": "Apri la sezione della guida con **il tuo comune o la città vicina**: segna **un ristorante nuovo** che non conoscevi.",
-      "checklist": [],
-      "eli5": "È come la lista dei candidati prima delle premiazioni: essere in lista non è vincere, ma vuol dire che qualcuno ti ha notato.",
-      "deepDive": [
-        {
-          "title": "Come lavora la guida",
-          "text": "Gli ispettori visitano i ristoranti in forma anonima e valutano **qualità degli ingredienti, tecnica, personalità dello chef e costanza**. Le stelle si assegnano solo per la cucina, non per l'ambiente."
-        }
-      ],
-      "glossary": [
-        {
-          "term": "selezione",
-          "meaning": "L'elenco dei ristoranti che la guida segnala, anche senza stelle."
-        },
-        {
-          "term": "ispettore",
-          "meaning": "Chi visita in anonimo i ristoranti per conto della guida e li valuta."
-        }
-      ],
-      "sources": [
-        {
-          "title": "Italia a Tavola — Guida Michelin Italia 2027, altri 25 ristoranti in selezione",
-          "url": "https://www.italiaatavola.net/attualita-mercato/2026/10/23/guida-michelin-italia-2027-altri-25-ristoranti-in-selezione-ecco-quali-sono/122046/"
-        },
-        {
-          "title": "Agenfood — Roteo entra nella selezione della Guida Michelin Italia 2027",
-          "url": "https://www.agenfood.it/ristoranti/roteo-entra-nella-selezione-della-guida-michelin-italia-2027-con-gli-chef-corridori-e-moretti/"
-        },
-        {
-          "title": "ViVienna — Bàtu entra nella Guida Michelin",
-          "url": "https://www.vivienna.it/2026/10/23/batu-entra-nella-guida-michelin/"
-        }
-      ],
-      "readingMinutes": 2,
-      "quiz": [
-        {
-          "q": "Entrare nella selezione Michelin significa avere una stella?",
-          "options": [
-            "Sì, sempre",
-            "No: è una segnalazione, le stelle vengono assegnate con il verdetto finale",
-            "Sì, ma solo a Como",
-            "No, vuol dire essere esclusi"
-          ],
-          "answer": 1,
-          "explanation": "La selezione elenca i ristoranti segnalati: le stelle arrivano dopo, con la presentazione della guida."
-        }
-      ],
-      "reflection": "Che cosa conta di più per te quando scegli dove mangiare: una guida, il passaparola o l'istinto?",
-      "id": "2026-10-28-x-cucina-news",
-      "category": "routine",
-      "label": "Cucina"
-    },
-    {
-      "topic": "cucina",
-      "kind": "spunto",
-      "title": "L'acqua di cottura della pasta: l'ingrediente che lega il sugo",
-      "subtitle": "Un mestolo di acqua amidacea rende cremoso un condimento anche senza panna",
-      "summary": "L'**acqua di cottura** della pasta contiene **amido**, che aiuta olio e sugo a legarsi. Un mestolo aggiunto in padella rende il condimento più **cremoso**, senza ingredienti in più.",
-      "stat": null,
-      "sections": [
-        {
-          "heading": "Cosa c'è nell'acqua",
-          "text": "Mentre la pasta cuoce, rilascia **amido** nell'acqua. Per questo diventa torbida e un po' densa."
-        },
-        {
-          "heading": "Perché lega",
-          "text": "L'amido fa da **emulsionante**: tiene insieme il grasso (olio, burro) e l'acqua del sugo, che altrimenti restano separati."
-        },
-        {
-          "heading": "Come usarla",
-          "text": "Prima di scolare, **tieni da parte un mestolo** di acqua. Scola la pasta al dente, versala nel condimento e aggiungi l'acqua un po' alla volta, mescolando a fuoco vivo."
-        }
-      ],
-      "keyPoints": [
-        "L'acqua di cottura contiene amido",
-        "L'amido lega grasso e acqua del sugo",
-        "Tieni da parte un mestolo prima di scolare"
-      ],
-      "whyItMatters": "È un trucco che **migliora un piatto semplice** senza spendere nulla, e funziona per aglio e olio, cacio e pepe e molti sughi.",
-      "actionToday": "Stasera, prima di scolare la pasta, **metti da parte mezzo bicchiere di acqua**. Aggiungila un cucchiaio alla volta nel condimento finché diventa cremoso.",
-      "checklist": [
-        "Cuoci la pasta in poca acqua, così l'amido è più concentrato",
-        "Tieni da parte un mestolo prima di scolare",
-        "Versa la pasta nel condimento ancora al dente",
-        "Aggiungi l'acqua poco alla volta, mescolando",
-        "Assaggia e correggi il sale solo alla fine"
-      ],
-      "eli5": "L'amido è come un po' di colla leggera che fa restare insieme l'olio e il sugo, invece di lasciarli scivolare via.",
-      "deepDive": [
-        {
-          "title": "Attenzione al sale",
-          "text": "L'acqua è già salata e, riducendosi in padella, **concentra il sale**. Per questo conviene assaggiare solo alla fine, prima di aggiungere altro sale."
-        }
-      ],
-      "glossary": [
-        {
-          "term": "amido",
-          "meaning": "Una sostanza contenuta in pasta, riso e patate, che nell'acqua calda si gonfia e addensa."
-        },
-        {
-          "term": "emulsione",
-          "meaning": "Una miscela di due liquidi che normalmente non si mescolano, come olio e acqua."
-        }
-      ],
-      "sources": [],
-      "readingMinutes": 2,
-      "quiz": [
-        {
-          "q": "Perché si tiene da parte l'acqua di cottura?",
-          "options": [
-            "Per l'amido, che lega il condimento",
-            "Per lavare i piatti",
-            "Per aggiungere più sale",
-            "Per raffreddare la pasta"
-          ],
-          "answer": 0,
-          "explanation": "L'amido contenuto nell'acqua aiuta a legare grasso e sugo."
-        }
-      ],
-      "reflection": "Quale piatto semplice che prepari spesso potrebbe diventare più cremoso con questo trucco?",
-      "id": "2026-10-28-x-cucina-spunto",
-      "category": "routine",
-      "label": "Cucina"
-    },
-    {
       "topic": "cultura",
       "kind": "news",
-      "title": "Mostre d'autunno: Matisse a Milano, Haring a Roma, Kusama a Torino dal 31 ottobre",
-      "subtitle": "Quattro appuntamenti da segnare, con date che arrivano fino alla primavera 2027",
-      "summary": "Questo autunno ci sono **mostre grandi** in tutta Italia: **Matisse** al MUDEC di Milano, **Keith Haring** a Roma e, dal **31 ottobre**, **Yayoi Kusama** a Torino. Alcune restano aperte fino a primavera.",
+      "title": "Teatro e libri della settimana: Incendi di Mouawad a Padova, La lingua libera di Gheno",
+      "subtitle": "Due appuntamenti da segnare: uno spettacolo che apre la stagione e il nuovo saggio sulla lingua",
+      "summary": "Il **28 ottobre** debutta a Padova **Incendi** di **Wajdi Mouawad**, che apre la stagione del Teatro Stabile del Veneto fino al **3 novembre**. Nello stesso giorno esce **La lingua libera** di **Vera Gheno** per effequ.",
       "stat": {
-        "value": "31 ottobre",
-        "label": "inizio della mostra di Yayoi Kusama a Torino"
+        "value": "3 novembre",
+        "label": "ultima replica di Incendi al Teatro Verdi di Padova"
       },
       "sections": [
         {
-          "heading": "Matisse a Milano",
-          "text": "Al **MUDEC** è aperta dall'8 ottobre la prima grande mostra italiana su **Matisse** dopo dieci anni. Resta fino al **21 febbraio 2027**."
+          "heading": "Incendi a Padova",
+          "text": "Lo spettacolo di **Wajdi Mouawad** debutta in prima nazionale al **Teatro Verdi** di Padova e resta fino al **3 novembre**. Apre la stagione 2026-2027 del Teatro Stabile del Veneto."
         },
         {
-          "heading": "Haring e Dalí",
-          "text": "A Roma, a **Palazzo Braschi**, **Keith Haring** fino all'11 aprile 2027. A Milano, a **Palazzo Reale**, la mostra **Dalí e la Moda** fino al 31 gennaio 2027."
+          "heading": "Lo slittamento",
+          "text": "Il debutto è slittato dal 27 al 28 ottobre per lo **sciopero dei lavoratori**. Il testo racconta, secondo ANSA, la volontà di **spezzare la catena dell'odio**."
         },
         {
-          "heading": "Kusama a Torino",
-          "text": "Dal **31 ottobre** al 28 febbraio 2027 a Torino arriva la **Infinity Mirrored Room** di **Yayoi Kusama**, una stanza di specchi."
+          "heading": "Un nuovo saggio",
+          "text": "Il **28 ottobre** torna in libreria **Vera Gheno** con **La lingua libera**, pubblicato da **effequ**. È un saggio sul modo in cui usiamo le parole."
         },
         {
-          "heading": "Prima di andare",
-          "text": "Le date vengono da guide diverse: controlla orari e biglietti sul sito del museo. Alcune mostre, come quelle gratuite, hanno periodi brevi."
+          "heading": "Un appuntamento a Roma",
+          "text": "A Roma, il 28 e il 29 ottobre, con il **Roma Europa Festival**, va in scena *La medium* di **Marta Cuscunà**."
         }
       ],
       "keyPoints": [
-        "Matisse al MUDEC fino al 21 febbraio 2027",
-        "Haring a Roma e Dalí a Milano restano aperte fino al 2027",
-        "Kusama a Torino dal 31 ottobre"
+        "Incendi di Mouawad al Teatro Verdi di Padova fino al 3 novembre",
+        "La lingua libera di Vera Gheno esce il 28 ottobre",
+        "Alla fine di ottobre molti teatri aprono la nuova stagione"
       ],
-      "whyItMatters": "Le grandi mostre hanno **date precise**: segnarle ora evita di scoprirle quando sono chiuse.",
-      "actionToday": "Scegli **una sola mostra** vicino a te, segna **la data finale** in agenda e fissa un **sabato** per andare.",
+      "whyItMatters": "Teatro e saggistica ti danno **idee lente**: dopo una giornata di notizie veloci, un testo o uno spettacolo ti fanno ragionare con più calma.",
+      "actionToday": "Controlla **il teatro più vicino a te**: cerca lo spettacolo in cartellone fra due settimane e **segna la data**.",
       "checklist": [],
-      "eli5": "È come il calendario delle partite: ognuna ha una data di inizio e di fine, e dopo non la rivedi.",
+      "eli5": "È come un calendario delle cose da vedere: se non lo guardi, le date passano senza che te ne accorga.",
       "deepDive": [
         {
-          "title": "Perché le stanze degli specchi",
-          "text": "Le stanze di **Kusama** sfruttano gli specchi per moltiplicare luci e forme all'infinito: l'effetto è che il visitatore sembra dentro un'opera, non davanti."
+          "title": "Prima nazionale",
+          "text": "Una **prima nazionale** è la prima rappresentazione in Italia di uno spettacolo: spesso segna l'inizio di una **tournée** in altre città."
         }
       ],
       "glossary": [
         {
-          "term": "retrospettiva",
-          "meaning": "Una mostra che ripercorre l'intera carriera di un artista."
+          "term": "prima nazionale",
+          "meaning": "La prima rappresentazione di uno spettacolo in Italia."
         },
         {
-          "term": "installazione",
-          "meaning": "Un'opera pensata per uno spazio, che il visitatore attraversa."
+          "term": "stagione teatrale",
+          "meaning": "L'insieme degli spettacoli programmati da un teatro in un anno."
         }
       ],
       "sources": [
         {
-          "title": "Si Viaggia — Mostre ottobre 2026 in Italia: le più belle novità",
-          "url": "https://siviaggia.it/notizie/mostre-ottobre-2026-italia/604403/"
+          "title": "ANSA — 'Incendi', in scena il capolavoro di Wajdi Mouawad per spezzare la catena dell'odio",
+          "url": "https://www.ansa.it/sito/notizie/cultura/libri/2026/10/28/incendi-in-scena-il-capolavoro-di-wajdi-mouawad-per-spezzare-la-catena-dellodio_870b9b19-1579-46ac-880b-005f091b66b8.html"
         },
         {
-          "title": "Skuola.net — 10 mostre da vedere in Italia a ottobre 2026",
-          "url": "https://www.skuola.net/guide/tutankhamon-dali-10-mostre-da-vedere-ottobre-2026.html"
-        },
-        {
-          "title": "Revenews — Mostre ottobre 2026 a Roma: la guida aggiornata",
-          "url": "https://www.revenews.it/mostre/2026/10/27/mostre-roma-2026"
+          "title": "The Walk of Fame — Roma a Teatro: guida agli spettacoli dal 28 ottobre al 1 novembre 2026",
+          "url": "https://www.thewalkoffame.it/blog/roma-a-teatro-spettacoli-dal-28-ottobre-1-novembre-2026/"
         }
       ],
       "readingMinutes": 2,
       "quiz": [
         {
-          "q": "Quando arriva la mostra di Kusama a Torino?",
+          "q": "Perché il debutto di Incendi è slittato al 28 ottobre?",
           "options": [
-            "Dal 31 ottobre",
-            "Dal 21 febbraio",
-            "Dall'8 ottobre",
-            "Dall'11 aprile"
+            "Per lo sciopero dei lavoratori",
+            "Per il maltempo",
+            "Per un guasto alle luci",
+            "Per un lutto"
           ],
           "answer": 0,
-          "explanation": "La mostra è in programma dal 31 ottobre 2026 al 28 febbraio 2027."
+          "explanation": "Il debutto è slittato dal 27 al 28 ottobre a causa dello sciopero."
         }
       ],
-      "reflection": "Qual è stata l'ultima mostra che ti ha fatto cambiare idea su qualcosa?",
-      "id": "2026-10-28-x-cultura-news",
+      "reflection": "Quando sei stato l'ultima volta a teatro, e che cosa ti è rimasto?",
+      "id": "2026-10-29-x-cultura-news",
       "category": "sapere",
       "label": "Libri e cultura"
     },
     {
       "topic": "cultura",
       "kind": "spunto",
-      "title": "Il diario di lettura in una riga: una frase per ogni libro",
-      "subtitle": "Un'abitudine da due minuti che ti fa ricordare cosa hai letto",
-      "summary": "Scrivere **una sola frase** su ogni libro finito ti fa **ricordare** cosa ti ha lasciato. Non serve una recensione: basta una riga per titolo, con la data.",
+      "title": "Leggere ad alta voce per cinque minuti: un test per capire se capisci",
+      "subtitle": "Una pagina letta ad alta voce rivela subito dove perdi il filo",
+      "summary": "Leggere **ad alta voce** per cinque minuti ti costringe a **rallentare** e a notare dove ti distrai. È un modo semplice per ritrovare il gusto della lettura e capire meglio i testi difficili.",
       "stat": null,
       "sections": [
         {
-          "heading": "Il problema",
-          "text": "Dopo qualche mese di un libro resta poco: il titolo, forse un'immagine. Il resto **svanisce**, anche se l'hai amato."
+          "heading": "Perché funziona",
+          "text": "Ad alta voce non puoi **saltare le righe**. Il ritmo del testo si sente, e noti subito le frasi in cui perdi il filo."
         },
         {
-          "heading": "La regola",
-          "text": "Appena finito, scrivi **una riga**: titolo, data e **una frase** su cosa ti è rimasto. Non una trama, ma un'idea o un'emozione."
+          "heading": "Come si fa",
+          "text": "Scegli **una pagina** di un libro o di un articolo che ti interessa. Leggila a voce chiara, a **velocità normale**, per cinque minuti."
         },
         {
-          "heading": "Dove tenerlo",
-          "text": "Un quaderno o le note del telefono. Rileggere **l'elenco a fine anno** è un piccolo racconto delle tue letture."
+          "heading": "Dopo la lettura",
+          "text": "Chiudi il libro e **ripeti con parole tue** di cosa parlava la pagina. Se non ci riesci, rileggi solo il punto in cui ti sei perso."
         }
       ],
       "keyPoints": [
-        "Una riga per libro, con data",
-        "Scrivi cosa ti è rimasto, non la trama",
-        "Rileggi l'elenco a fine anno"
+        "Leggere ad alta voce impedisce di saltare le righe",
+        "Cinque minuti su una pagina bastano",
+        "Ripeti con parole tue per controllare"
       ],
-      "whyItMatters": "Scrivere ciò che ricordi **fissa il ricordo** e ti aiuta a capire cosa ti piace leggere.",
-      "actionToday": "Scegli **l'ultimo libro che hai finito** e scrivi la sua riga: titolo, mese e una frase.",
+      "whyItMatters": "È utile per testi **difficili** o quando sei stanco: il corpo tiene l'attenzione dove la lettura silenziosa scivola.",
+      "actionToday": "Stasera leggi **una pagina** ad alta voce, poi dillo con parole tue in **una frase**.",
       "checklist": [
-        "Apri un quaderno o una nota",
-        "Scrivi titolo e data",
-        "Scrivi una frase su cosa ti è rimasto",
-        "Ripeti a ogni libro finito"
+        "Scegli una pagina di un testo che ti interessa",
+        "Leggi a voce chiara per cinque minuti",
+        "Segna i punti in cui perdi il filo",
+        "Ripeti con parole tue di cosa parla"
       ],
-      "eli5": "È come scattare una foto a ogni viaggio: non racconta tutto, ma ti fa tornare lì.",
+      "eli5": "È come camminare a piedi invece che in auto: vedi più cose, perché vai piano.",
       "deepDive": [
         {
-          "title": "Perché funziona",
-          "text": "Ripensare a un libro per riassumerlo è una forma di **richiamo attivo**: recuperare dalla memoria rafforza il ricordo, più che rileggere."
+          "title": "Lettura e ascolto",
+          "text": "Quando leggi ad alta voce **senti anche te stesso**: due canali, vista e udito, lavorano insieme. Per questo può aiutare a ricordare di più."
         }
       ],
       "glossary": [
         {
-          "term": "richiamo attivo",
-          "meaning": "Recuperare un'informazione dalla memoria senza guardare, invece di rileggerla."
+          "term": "lettura silenziosa",
+          "meaning": "La lettura fatta in silenzio, con gli occhi, senza pronunciare le parole."
         },
         {
-          "term": "diario di lettura",
-          "meaning": "Un elenco personale dei libri letti, con appunti brevi."
+          "term": "ritmo del testo",
+          "meaning": "La musicalità delle frasi: pause, lunghezza, ripetizioni."
         }
       ],
       "sources": [],
       "readingMinutes": 2,
       "quiz": [
         {
-          "q": "Che cosa scrivi nella riga di un libro?",
+          "q": "Perché leggere ad alta voce aiuta a capire?",
           "options": [
-            "Tutta la trama",
-            "Titolo, data e una frase su cosa ti è rimasto",
-            "Solo il prezzo",
-            "Il numero di pagine"
+            "Perché non si possono saltare le righe e si nota dove ci si perde",
+            "Perché è più veloce",
+            "Perché il libro costa meno",
+            "Perché si legge meno"
           ],
-          "answer": 1,
-          "explanation": "L'obiettivo è fissare cosa ti ha lasciato il libro, non riassumerlo."
+          "answer": 0,
+          "explanation": "La voce obbliga a rallentare e a seguire ogni frase."
         }
       ],
-      "reflection": "Quale libro letto negli ultimi anni ti ha lasciato più di quanto ricordi?",
-      "id": "2026-10-28-x-cultura-spunto",
+      "reflection": "Che libro o articolo leggeresti ad alta voce, per goderne il suono?",
+      "id": "2026-10-29-x-cultura-spunto",
       "category": "sapere",
       "label": "Libri e cultura"
+    },
+    {
+      "topic": "startup",
+      "kind": "news",
+      "title": "Upwind raccoglie 400 milioni a 3,8 miliardi dopo aver rifiutato Datadog",
+      "subtitle": "La società di sicurezza cloud ha chiuso un Series C guidato da Bessemer, il secondo round in nove mesi",
+      "summary": "**Upwind**, società di **sicurezza cloud**, ha raccolto **400 milioni di dollari** in un round **Series C** a una valutazione di **3,8 miliardi**. Il round è guidato da **Bessemer** e arriva dopo che Upwind ha rifiutato un'offerta di acquisto di **Datadog**.",
+      "stat": {
+        "value": "400 mln $",
+        "label": "raccolti da Upwind in un Series C a 3,8 miliardi di valutazione"
+      },
+      "sections": [
+        {
+          "heading": "Il round",
+          "text": "Il 28 ottobre **Upwind** ha annunciato un **Series C da 400 milioni** di dollari, guidato da **Bessemer Venture Partners**. La valutazione è di **3,8 miliardi**."
+        },
+        {
+          "heading": "Il secondo round in nove mesi",
+          "text": "Nove mesi fa la società aveva raccolto **250 milioni** a **1,5 miliardi** di valutazione. La valutazione è quindi cresciuta di circa **2,5 volte**."
+        },
+        {
+          "heading": "Il no a Datadog",
+          "text": "Secondo le fonti, **Datadog** aveva tentato di acquistare Upwind, ma la società ha scelto di restare **indipendente** e raccogliere capitali. Le cifre vengono da articoli di stampa."
+        },
+        {
+          "heading": "Altri round",
+          "text": "In settimana altri round di AI: Tenstorrent 1,5 miliardi e FuriosaAI circa 570-620 milioni, con cifre diverse tra le fonti."
+        }
+      ],
+      "keyPoints": [
+        "Upwind: Series C da 400 milioni a 3,8 miliardi di valutazione",
+        "Secondo round in nove mesi: da 1,5 a 3,8 miliardi",
+        "Ha rifiutato l'offerta di acquisto di Datadog"
+      ],
+      "whyItMatters": "Il rifiuto di un'acquisizione per raccogliere capitali mostra quanto i fondatori puntino a **restare indipendenti** quando il mercato premia la crescita.",
+      "actionToday": "Scegli **una startup che segui** e cerca **a che round è** e **da chi è stata finanziata**: scrivi in una riga cosa ti dice.",
+      "checklist": [],
+      "eli5": "È come una squadra che rifiuta di essere comprata da una più grande e preferisce cercare nuovi soci per continuare da sola.",
+      "deepDive": [
+        {
+          "title": "Cos'è un Series C",
+          "text": "I round di una startup si chiamano **Seed, Series A, B, C** e così via: ogni lettera è una fase di crescita. Un **Series C** arriva di solito quando l'azienda ha già ricavi e vuole espandersi."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Series C",
+          "meaning": "Un round di finanziamento di una startup già avviata, che vuole crescere su scala più ampia."
+        },
+        {
+          "term": "valutazione",
+          "meaning": "Il valore attribuito a un'azienda al momento di un round di investimento."
+        }
+      ],
+      "sources": [
+        {
+          "title": "KuCoin News — Upwind Completes a $400 Million Funding Round at a $3.8 Billion Valuation After Rejecting Datadog's Acquisition Offer",
+          "url": "https://www.kucoin.com/news/flash/upwind-completes-400m-funding-round-at-3-8b-valuation-after-rejecting-datadog-acquisition"
+        },
+        {
+          "title": "Tech Bytes — Upwind Security Raises $400 Million at $3.8 Billion Valuation",
+          "url": "https://techbytes.app/posts/upwind-security-raises-400-million-at-38-billion-valuation/"
+        },
+        {
+          "title": "Tech Insider — AI Funding Rounds This Week: Tenstorrent $1.5B",
+          "url": "https://tech-insider.org/ai-funding-rounds-tenstorrent-flapping-airplanes-week-2026/"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Che cosa è successo prima di questo round di Upwind?",
+          "options": [
+            "La società è stata quotata",
+            "Ha rifiutato un'offerta di acquisto di Datadog",
+            "Ha chiuso un'attività",
+            "Ha cambiato nome"
+          ],
+          "answer": 1,
+          "explanation": "Secondo le fonti, Datadog aveva tentato di acquisire Upwind, che ha scelto di restare indipendente."
+        }
+      ],
+      "reflection": "Se ti offrissero di vendere il progetto su cui lavori, quale cifra o condizione ti farebbe dire sì?",
+      "id": "2026-10-29-x-startup-news",
+      "category": "finanza",
+      "label": "Imprenditoria e startup"
+    },
+    {
+      "topic": "startup",
+      "kind": "spunto",
+      "title": "Burn rate e runway: quanti mesi di cassa ha una startup",
+      "subtitle": "Due numeri per capire se un'azienda ha tempo davanti a sé",
+      "summary": "Il **burn rate** è quanto una startup spende ogni mese in più di quanto incassa. La **runway** è per quanti mesi basta la cassa: **cassa diviso burn rate**.",
+      "stat": null,
+      "sections": [
+        {
+          "heading": "Il burn rate",
+          "text": "Se una startup incassa 100 mila euro al mese e ne spende 300 mila, il **burn rate** è di **200 mila euro al mese**: è la cassa che brucia."
+        },
+        {
+          "heading": "La runway",
+          "text": "Se in cassa ha 2,4 milioni, la **runway** è 2,4 milioni diviso 200 mila: **12 mesi**. Dopo, senza nuovi soldi o più ricavi, i soldi finiscono."
+        },
+        {
+          "heading": "Come si usa",
+          "text": "Di solito si cerca di raccogliere nuovi capitali **con almeno 6-9 mesi di runway**: negoziare con poca cassa dà meno forza. È una regola pratica, non una legge."
+        }
+      ],
+      "keyPoints": [
+        "Burn rate = spesa mensile meno incassi mensili",
+        "Runway = cassa diviso burn rate",
+        "Raccogliere capitali con ancora mesi di cassa dà più forza"
+      ],
+      "whyItMatters": "Vale anche per un **progetto personale** o un'attività: sapere per quanti mesi hai risorse ti dice quando decidere.",
+      "actionToday": "Calcola la tua **runway personale**: i tuoi risparmi diviso la spesa mensile. Scrivi il numero di mesi.",
+      "checklist": [
+        "Scrivi quanto spendi al mese",
+        "Scrivi quanto incassi al mese",
+        "Calcola la differenza (burn rate)",
+        "Dividi la cassa per il burn rate",
+        "Segna la data in cui la cassa finirebbe"
+      ],
+      "eli5": "È la benzina di un'auto: il burn rate è quanta ne consumi ogni ora, la runway è per quante ore puoi guidare.",
+      "deepDive": [
+        {
+          "title": "Burn lordo e netto",
+          "text": "Il **burn lordo** è la spesa totale, il **burn netto** sottrae gli incassi. Per la runway si usa il netto."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "burn rate",
+          "meaning": "La cassa che un'azienda consuma ogni mese, spese meno incassi."
+        },
+        {
+          "term": "runway",
+          "meaning": "Il numero di mesi per cui la cassa basta, a questo ritmo di spesa."
+        }
+      ],
+      "sources": [],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Una startup ha 1,2 milioni in cassa e un burn rate di 100 mila euro al mese. Qual è la runway?",
+          "options": [
+            "6 mesi",
+            "12 mesi",
+            "24 mesi",
+            "120 mesi"
+          ],
+          "answer": 1,
+          "explanation": "1,2 milioni diviso 100 mila fa 12 mesi."
+        }
+      ],
+      "reflection": "Per quanti mesi potresti andare avanti con i risparmi di oggi, se le entrate si fermassero?",
+      "id": "2026-10-29-x-startup-spunto",
+      "category": "finanza",
+      "label": "Imprenditoria e startup"
+    },
+    {
+      "topic": "viaggi",
+      "kind": "news",
+      "title": "Sciopero generale del 30 ottobre: treni dalle 21 di giovedì, voli fermi tutto il giorno",
+      "subtitle": "Trenitalia, Italo e Trenord si fermano da giovedì sera; il ponte di Ognissanti rischia di complicarsi",
+      "summary": "Nello **sciopero generale del 30 ottobre** i treni si fermano dalle **21 di giovedì 29** alle **20:59 di venerdì 30**, i voli per l'intera giornata del 30. La Commissione di garanzia ha chiesto di escludere i trasporti: le comunicazioni possono cambiare.",
+      "stat": {
+        "value": "21:00",
+        "label": "ora in cui giovedì 29 ottobre scatta lo stop dei treni"
+      },
+      "sections": [
+        {
+          "heading": "Treni",
+          "text": "Lo stop del personale di **Trenitalia, Italo e Trenord** dura dalle **21 di giovedì 29** alle **20:59 di venerdì 30**. Per i regionali le fasce garantite sono **6-9 e 18-21**."
+        },
+        {
+          "heading": "Voli e autostrade",
+          "text": "Il settore aereo si ferma dalle **00:00 alle 23:59 del 30 ottobre**. Il settore autostradale si ferma dalle **22 di giovedì 29**."
+        },
+        {
+          "heading": "Città",
+          "text": "A Roma l'**ATAC** ha annunciato uno stop di 24 ore su bus, tram e metro, dalle **5 alle 23:59**."
+        },
+        {
+          "heading": "Un nodo",
+          "text": "La **Commissione di garanzia** ha richiamato la franchigia dal 30 ottobre al 5 novembre e invitato a escludere i trasporti, ma il sindacato USB dice di aver confermato lo sciopero. Le aziende potrebbero cambiare le comunicazioni."
+        },
+        {
+          "heading": "Cosa fare",
+          "text": "Controlla il tuo treno o volo sul **sito del vettore** poco prima di partire. Le fonti non concordano su tutte le fasce garantite."
+        }
+      ],
+      "keyPoints": [
+        "Treni fermi dalle 21 di giovedì 29 alle 20:59 di venerdì 30",
+        "Voli fermi tutto il 30 ottobre; ATAC dalle 5 alle 23:59",
+        "Le comunicazioni possono cambiare: controlla il vettore"
+      ],
+      "whyItMatters": "Chi parte per il ponte di Ognissanti rischia di restare a terra o di dover **cambiare programma all'ultimo**. Verificare prima costa poco, ed evita sorprese.",
+      "actionToday": "Se viaggi tra il 29 e il 30, apri **l'app o il sito del vettore** e segna la **fascia garantita** più vicina al tuo orario. Prepara un piano B.",
+      "checklist": [],
+      "eli5": "È come un cancello che si chiude per un giorno: qualcuno passa solo nelle ore in cui resta aperto, gli altri devono aspettare.",
+      "deepDive": [
+        {
+          "title": "Le fasce di garanzia",
+          "text": "Nei servizi pubblici essenziali la legge impone **fasce orarie** in cui il servizio deve funzionare. Per i regionali, qui sono 6-9 e 18-21."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "fascia di garanzia",
+          "meaning": "L'orario in cui, anche durante uno sciopero, il servizio deve restare attivo."
+        },
+        {
+          "term": "franchigia",
+          "meaning": "Un periodo in cui gli scioperi dei trasporti non sono permessi, per esempio durante le feste."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Civonline — Sciopero generale il 30 ottobre: l'Italia si ferma per 24 ore",
+          "url": "https://www.civonline.it/news/cronaca/1357178/sciopero-generale-il-30-ottobre-l-italia-si-ferma-per-24-ore-gli-orari-e-i-treni-garantiti.html"
+        },
+        {
+          "title": "Qualitytravel — Sciopero generale del 30 ottobre: chi si ferma nei trasporti",
+          "url": "https://www.qualitytravel.it/sciopero-generale-del-30-ottobre-chi-si-ferma-nei-trasporti/194034"
+        },
+        {
+          "title": "Today — Scioperi, due venerdì neri tra ottobre e novembre",
+          "url": "https://www.today.it/economia/scioperi-ottobre-novembre-2026.html"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Da quando si fermano i treni nello sciopero del 30 ottobre?",
+          "options": [
+            "Dalle 21 di giovedì 29",
+            "Dalle 5 di venerdì 30",
+            "Dalle 24 di sabato",
+            "Dalle 6 di lunedì"
+          ],
+          "answer": 0,
+          "explanation": "Lo stop va dalle 21 di giovedì 29 alle 20:59 di venerdì 30."
+        }
+      ],
+      "reflection": "Per un viaggio che hai in programma, qual è il tuo piano B se il mezzo previsto salta?",
+      "id": "2026-10-29-x-viaggi-news",
+      "category": "mondo",
+      "label": "Viaggi"
+    },
+    {
+      "topic": "viaggi",
+      "kind": "spunto",
+      "title": "Documenti in viaggio: la copia offline in tre posti",
+      "subtitle": "Una regola semplice per non restare bloccato se perdi il telefono o la connessione",
+      "summary": "Prima di partire salva **biglietti, prenotazioni e documenti** in **tre posti**: telefono, una copia stampata e un servizio online. Se uno manca, gli altri ti salvano il viaggio.",
+      "stat": null,
+      "sections": [
+        {
+          "heading": "Perché tre posti",
+          "text": "Un telefono può **scaricarsi o rompersi**, e la rete può mancare. Con più copie un singolo guasto non blocca il viaggio."
+        },
+        {
+          "heading": "Quali tre",
+          "text": "Una copia **offline sul telefono** (file scaricato, non solo email), una **copia stampata** dei documenti importanti e una **copia in cloud** o inviata a una persona di fiducia."
+        },
+        {
+          "heading": "Cosa includere",
+          "text": "**Biglietti**, prenotazioni di voli e alloggi, assicurazione, e **una foto del documento** d'identità. Metti anche i numeri utili."
+        }
+      ],
+      "keyPoints": [
+        "Salva i documenti in tre posti: telefono, carta e cloud",
+        "Il file offline funziona anche senza rete",
+        "Includi biglietti, prenotazioni, assicurazione e documento"
+      ],
+      "whyItMatters": "Costa **dieci minuti** e ti evita il peggio: restare senza biglietti o documenti lontano da casa, magari durante uno sciopero.",
+      "actionToday": "Per il tuo prossimo viaggio crea **una cartella** sul telefono con i file scaricati, stampa **una pagina riassuntiva** e invia una copia a una persona di fiducia.",
+      "checklist": [
+        "Scarica biglietti e prenotazioni come file",
+        "Stampa una pagina riassuntiva con orari e indirizzi",
+        "Salva una copia in cloud o inviala a qualcuno",
+        "Fotografa il documento d'identità",
+        "Controlla che il telefono sia carico prima di partire"
+      ],
+      "eli5": "È come portare una torcia di riserva: speri di non usarla, ma se manca la luce sei contento di averla.",
+      "deepDive": [
+        {
+          "title": "Attenzione ai dati sensibili",
+          "text": "Le foto dei documenti vanno conservate **in un posto protetto** (cartella con password) e non inviate a chiunque: servono a te, non a tutti."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "cloud",
+          "meaning": "Un servizio online dove si salvano file accessibili da qualunque dispositivo."
+        },
+        {
+          "term": "offline",
+          "meaning": "Senza connessione a internet."
+        }
+      ],
+      "sources": [],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Perché conviene avere una copia offline dei biglietti?",
+          "options": [
+            "Perché funziona anche senza rete",
+            "Perché costa meno",
+            "Perché è più veloce da stampare",
+            "Perché sostituisce il documento"
+          ],
+          "answer": 0,
+          "explanation": "Un file scaricato si apre anche senza connessione, a differenza di una mail da cercare online."
+        }
+      ],
+      "reflection": "Se domani perdessi il telefono in viaggio, che cosa ti mancherebbe subito?",
+      "id": "2026-10-29-x-viaggi-spunto",
+      "category": "mondo",
+      "label": "Viaggi"
     }
   ]
 }
