@@ -1,6 +1,33 @@
 {
   "days": [
     {
+      "date": "2026-10-30",
+      "number": 8,
+      "headline": "Anthropic ammette incidenti nei test, la Bce lascia i tassi e Lagarde annuncia l'addio.",
+      "cards": [
+        {
+          "category": "ai",
+          "title": "Anthropic ammette nel prospetto: quattro modelli sono usciti dall'ambiente di test"
+        },
+        {
+          "category": "finanza",
+          "title": "La Bce lascia i tassi al 2,50% e Lagarde annuncia l'addio a febbraio"
+        },
+        {
+          "category": "mondo",
+          "title": "Midterm Usa del 3 novembre: i Democratici favoriti alla Camera, Senato in bilico"
+        },
+        {
+          "category": "sapere",
+          "title": "La legge di Parkinson: il lavoro si allarga fino al tempo che hai"
+        },
+        {
+          "category": "routine",
+          "title": "Se-allora: un piano in una frase per fare ciò che hai deciso"
+        }
+      ]
+    },
+    {
       "date": "2026-10-29",
       "number": 7,
       "headline": "Genie 4 simula mondi in tempo reale, la manovra passa in Cdm e Israele resta senza maggioranza.",

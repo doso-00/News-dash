@@ -1,0 +1,1051 @@
+{
+  "date": "2026-10-30",
+  "number": 8,
+  "generatedAt": "2026-10-30T05:19:07.439Z",
+  "headline": "Anthropic ammette incidenti nei test, la Bce lascia i tassi e Lagarde annuncia l'addio.",
+  "cards": [
+    {
+      "category": "ai",
+      "interests": [
+        "ai",
+        "tech",
+        "code",
+        "startup"
+      ],
+      "title": "Anthropic ammette nel prospetto: quattro modelli sono usciti dall'ambiente di test",
+      "subtitle": "Per un errore, test di sicurezza informatica sono rimasti connessi a internet; l'azienda ha fermato per un mese l'addestramento del prossimo modello",
+      "summary": "Nel prospetto per la Borsa **Anthropic** scrive che **quattro suoi modelli** hanno raggiunto sistemi reali durante test di sicurezza, per un errore di configurazione. L'azienda ha anche **sospeso per oltre un mese** l'addestramento del prossimo modello. Anthropic è l'azienda che sviluppa Claude, con cui è scritta questa app: leggi con occhio critico.",
+      "stat": {
+        "value": "4 modelli",
+        "label": "usciti dall'ambiente di test e arrivati a sistemi reali, secondo il prospetto riportato dalla stampa"
+      },
+      "sections": [
+        {
+          "heading": "Cosa dice il prospetto",
+          "text": "Nel documento depositato il **26 ottobre** Anthropic descrive due fatti legati alla sicurezza. Le cifre che seguono vengono da Reuters e altre testate: io non ho letto il testo dell'S-1."
+        },
+        {
+          "heading": "L'incidente",
+          "text": "**Quattro modelli** sono usciti dagli ambienti di test e hanno raggiunto sistemi reali, in sessioni durate da **10 a 34 ore**. La causa, secondo il prospetto, è un **errore** durante test di sicurezza informatica con un partner esterno: l'ambiente è rimasto collegato a internet, anche se l'accesso al web doveva essere spento."
+        },
+        {
+          "heading": "Cosa dice l'azienda",
+          "text": "Anthropic scrive di **non aver trovato prove** che i modelli abbiano cercato di eludere il controllo umano o di coordinarsi tra loro. Ha sospeso alcune valutazioni di sicurezza informatica prima del rilascio e messo in pausa ambienti di addestramento più rischiosi."
+        },
+        {
+          "heading": "Il blocco dell'addestramento",
+          "text": "Il prospetto dice anche che l'addestramento del prossimo modello avanzato è stato **fermato per oltre un mese**, per rafforzare le difese contro il **furto dei pesi** del modello. Anthropic avverte che questi stop possono ritardare i ricavi."
+        },
+        {
+          "heading": "Perché è notizia",
+          "text": "Un prospetto è un documento con **obblighi di verità**: i rischi vanno dichiarati. Che l'incidente compaia proprio lì dice quanto l'azienda lo consideri rilevante per gli investitori."
+        }
+      ],
+      "keyPoints": [
+        "Il prospetto cita quattro modelli usciti da un ambiente di test",
+        "Causa dichiarata: un errore che ha lasciato i test collegati a internet",
+        "Addestramento del prossimo modello fermo oltre un mese per proteggere i pesi"
+      ],
+      "whyItMatters": "Se un modello che esegue compiti può raggiungere sistemi reali, i **test di sicurezza** contano quanto le capacità. Chi usa agenti sul proprio computer deve sapere quali **permessi** concede.",
+      "actionToday": "Se usi un assistente che esegue comandi, apri le sue impostazioni e scrivi **tre cose che non deve poter fare** senza chiedere (cancellare file, inviare mail, spendere). Poi verifica che siano bloccate.",
+      "checklist": [],
+      "eli5": "È come testare una serra con le porte chiuse: se per errore una porta resta aperta, devi dirlo subito e controllare cosa è uscito.",
+      "deepDive": [
+        {
+          "title": "Cosa sono i pesi di un modello",
+          "text": "I **pesi** sono i numeri che contengono ciò che il modello ha imparato. Chi li ottiene può far girare il modello altrove: per questo proteggerli dal furto è una questione di sicurezza e di valore economico."
+        },
+        {
+          "title": "Perché i test di sicurezza informatica",
+          "text": "Prima di rilasciare un modello si prova **cosa potrebbe fare** in un ambiente isolato, anche in compiti pericolosi. L'isolamento è la barriera: se manca, il test diventa un rischio."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "pesi",
+          "meaning": "I numeri di un modello di AI che contengono ciò che ha imparato: chi li ha può farlo funzionare."
+        },
+        {
+          "term": "prospetto",
+          "meaning": "Il documento con cui una società presenta conti e rischi a chi vuole comprarne le azioni."
+        },
+        {
+          "term": "ambiente isolato",
+          "meaning": "Un sistema separato dal resto della rete, dove si provano programmi senza danni."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rappler (Reuters) — Anthropic discloses month-long training pause, AI security breaches in IPO filing",
+          "url": "https://www.rappler.com/technology/anthropic-discloses-training-pause-ai-security-breaches-ipo-filing/"
+        },
+        {
+          "title": "ThePrint — Why Anthropic paused AI training for a month, and what its security lapses reveal",
+          "url": "https://theprint.in/theprint-essential/anthropic-ai-security-training-pause/3083199"
+        },
+        {
+          "title": "Resultsense — Anthropic S-1: training pause and AI agents on live systems",
+          "url": "https://www.resultsense.com/news/2026-10-27-anthropic-s1-training-pause-agents-live-systems/"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Qual è la causa dichiarata dell'incidente nei test?",
+          "options": [
+            "Un attacco hacker",
+            "Un errore che ha lasciato l'ambiente di test collegato a internet",
+            "Un modello ha deciso di fuggire",
+            "Un guasto dell'hardware"
+          ],
+          "answer": 1,
+          "explanation": "Secondo le fonti, un errore con un partner esterno ha lasciato i test connessi alla rete."
+        },
+        {
+          "q": "Perché Anthropic ha fermato l'addestramento del prossimo modello?",
+          "options": [
+            "Per risparmiare soldi",
+            "Per rafforzare le difese contro il furto dei pesi",
+            "Perché il modello non funzionava",
+            "Per cambiare nome"
+          ],
+          "answer": 1,
+          "explanation": "La pausa, di oltre un mese, serviva a proteggere i pesi e la proprietà intellettuale."
+        }
+      ],
+      "reflection": "Quando dai a un assistente il permesso di agire per te, che cosa decidi che non deve fare mai senza chiedertelo?",
+      "id": "2026-10-30-ai",
+      "label": "Intelligenza artificiale"
+    },
+    {
+      "category": "finanza",
+      "interests": [
+        "finanza",
+        "economia",
+        "politica",
+        "lavoro"
+      ],
+      "title": "La Bce lascia i tassi al 2,50% e Lagarde annuncia l'addio a febbraio",
+      "subtitle": "Decisione unanime, ma i mercati danno l'80-86% di probabilità a un rialzo a dicembre",
+      "summary": "Giovedì la **Bce** ha lasciato il tasso sui depositi al **2,50%**, con voto **unanime**. Nella stessa giornata **Christine Lagarde** ha annunciato che lascerà la presidenza il **7 febbraio 2027**, più di sei mesi prima della scadenza.",
+      "stat": {
+        "value": "2,50%",
+        "label": "tasso sui depositi della Bce, invariato"
+      },
+      "sections": [
+        {
+          "heading": "La decisione",
+          "text": "La **Bce** ha lasciato invariati i tassi: **2,50%** sui depositi, **2,65%** sulle operazioni principali e **2,90%** su quelle marginali. La decisione è stata presa **all'unanimità**."
+        },
+        {
+          "heading": "Il rialzo in discussione",
+          "text": "Lagarde ha detto che il consiglio ha **discusso** se un rialzo fosse appropriato, e ha scelto un approccio **misurato**. Le condizioni di finanziamento si sono irrigidite e, ha detto, l'inflazione probabilmente aumenterà."
+        },
+        {
+          "heading": "Dicembre sul tavolo",
+          "text": "I mercati scommettono su un **rialzo a dicembre** al 2,75%: le stime vanno dall'**80% all'86%**, secondo le fonti. Anche la **Fed** americana ha tenuto i tassi fermi mercoledì."
+        },
+        {
+          "heading": "L'addio di Lagarde",
+          "text": "**Lagarde** lascerà il **7 febbraio 2027**. Ha spiegato di volere più libertà di intervenire su temi che vanno oltre la politica monetaria. Il mandato sarebbe scaduto nel 2027, più tardi."
+        },
+        {
+          "heading": "I conti delle big tech",
+          "text": "Intanto i risultati: **Microsoft** ha visto Azure crescere del **48%** e il titolo salire di circa 4%. **Alphabet** ha avuto flusso di cassa negativo di circa 9 miliardi, e il titolo ha perso circa il 9-10% dopo la chiusura. **Amazon** ha visto AWS crescere del **39%**, ma l'utile per azione ha mancato le attese e il titolo è sceso di circa il 6-10%."
+        }
+      ],
+      "keyPoints": [
+        "Bce ferma, tasso sui depositi al 2,50%, voto unanime",
+        "Mercati: 80-86% di probabilità di un rialzo a dicembre",
+        "Lagarde lascia il 7 febbraio 2027; AWS cresce del 39% ma Amazon cala"
+      ],
+      "whyItMatters": "I tassi della Bce muovono **mutui a tasso variabile, prestiti e rendimenti dei conti deposito**. Un rialzo a dicembre renderebbe il denaro più caro e potrebbe frenare la crescita.",
+      "actionToday": "Guarda il tuo eventuale **mutuo o prestito a tasso variabile**: calcola di quanto cambia la rata se il tasso sale di **0,25 punti**. Se non ne hai, guarda quanto rende il tuo conto deposito.",
+      "checklist": [],
+      "eli5": "La Bce è come chi regola il rubinetto del denaro in tutta l'area euro: più apre il rubinetto, più prestiti e spesa; più lo chiude, più rallentano i prezzi ma anche la crescita.",
+      "deepDive": [
+        {
+          "title": "Tre tassi, uno guida tutti",
+          "text": "La Bce fissa tre tassi. Il **tasso sui depositi**, oggi 2,50%, è quello che guida i mercati ed è il riferimento nelle notizie. Gli altri due sono i tassi a cui le banche prendono a prestito."
+        },
+        {
+          "title": "Il motivo dichiarato",
+          "text": "Lagarde ha detto di voler avere **più libertà di intervenire** su temi più ampi della politica monetaria. È la **sua spiegazione**: le motivazioni non sono state verificate da fonti indipendenti."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "tasso sui depositi",
+          "meaning": "Il tasso che la Bce paga alle banche che le lasciano soldi in deposito; è il riferimento principale della politica monetaria."
+        },
+        {
+          "term": "unanimità",
+          "meaning": "Una decisione presa con il voto favorevole di tutti i membri."
+        },
+        {
+          "term": "flusso di cassa",
+          "meaning": "Il denaro che entra ed esce da un'azienda in un periodo."
+        }
+      ],
+      "sources": [
+        {
+          "title": "ANSA — La Bce si ferma sui tassi, in bilico il rialzo di dicembre",
+          "url": "https://www.ansa.it/sito/notizie/economia/2026/10/29/la-bce-si-ferma-sui-tassi-in-bilico-il-rialzo-di-dicembre_fff36f02-6e9c-4e87-af42-4776abe0acc8.html"
+        },
+        {
+          "title": "Sky TG24 — Tassi Bce invariati al 2,50%. Lagarde: Probabile che inflazione aumenterà",
+          "url": "https://tg24.sky.it/economia/2026/10/29/tassi-bce-lagarde-oggi"
+        },
+        {
+          "title": "Altroconsumo — BCE: tassi fermi, rialzo a dicembre e dimissioni anticipate di Lagarde",
+          "url": "https://www.altroconsumo.it/investi/investire/mercati-e-valute/news/2026/10/bce-riunione-29-ottobre"
+        },
+        {
+          "title": "GeekWire — AWS growth hits 39%, its fastest in nearly five years, as Amazon misses on earnings",
+          "url": "https://www.geekwire.com/2026/aws-growth-hits-39-its-fastest-in-nearly-five-years-as-amazon-misses-on-earnings/"
+        },
+        {
+          "title": "SiliconANGLE — Microsoft's stock rises on solid earnings and revenue beat, with Azure growing 48%",
+          "url": "https://siliconangle.com/2026/10/28/microsofts-stock-rises-on-solid-earnings-and-revenue-beat-with-azure-growing-48/"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Che cosa ha deciso la Bce giovedì?",
+          "options": [
+            "Di alzare i tassi di 0,25 punti",
+            "Di lasciare invariato il tasso sui depositi al 2,50%",
+            "Di abbassare i tassi",
+            "Di chiudere la riunione senza decidere"
+          ],
+          "answer": 1,
+          "explanation": "La Bce ha tenuto fermi i tassi, con voto unanime, discutendo però un rialzo."
+        },
+        {
+          "q": "Perché una Bce che alza i tassi può rallentare l'inflazione?",
+          "options": [
+            "Perché il denaro costa di più e si spende meno",
+            "Perché stampa meno banconote",
+            "Perché abbassa i salari per legge",
+            "Perché ferma le banche"
+          ],
+          "answer": 0,
+          "explanation": "Con prestiti più cari famiglie e imprese spendono meno, e la pressione sui prezzi cala."
+        }
+      ],
+      "reflection": "Se la rata del tuo debito salisse, o il tuo deposito rendesse di più, che cosa cambieresti nelle tue scelte di spesa e risparmio?",
+      "id": "2026-10-30-finanza",
+      "label": "Finanza"
+    },
+    {
+      "category": "mondo",
+      "interests": [
+        "politica",
+        "geopolitica",
+        "storia"
+      ],
+      "title": "Midterm Usa del 3 novembre: i Democratici favoriti alla Camera, Senato in bilico",
+      "subtitle": "Camera a 218-214 per i Repubblicani, Senato 53-47: i sondaggi sono favorevoli ai Democratici, ma con cautela",
+      "summary": "Il **3 novembre** gli americani votano per rinnovare la **Camera** e un terzo del **Senato**. Le previsioni danno i **Democratici** favoriti alla Camera, mentre il Senato è **più incerto**. I sondaggi hanno sbagliato in passato.",
+      "stat": {
+        "value": "3 novembre",
+        "label": "data delle elezioni di metà mandato negli Stati Uniti"
+      },
+      "sections": [
+        {
+          "heading": "Cosa si vota",
+          "text": "Si rinnovano tutti i **435 seggi della Camera** e circa un terzo del **Senato**. Oggi la Camera è a **218-214** per i Repubblicani e il Senato a **53-47**."
+        },
+        {
+          "heading": "Le previsioni",
+          "text": "Le previsioni danno i **Democratici** favoriti alla Camera: una stima parla di **86%** di probabilità, i mercati di scommesse oltre il **90%**. Per il Senato le stime sono tra il **58% e l'82%**, a seconda della fonte."
+        },
+        {
+          "heading": "I sondaggi",
+          "text": "Nel sondaggio NPR/Marist i Democratici hanno **10 punti** di vantaggio tra gli elettori registrati sulla scheda generica. Nelle corse per il Senato, CNN dà in vantaggio i Democratici in **Texas, Maine e Michigan**."
+        },
+        {
+          "heading": "Perché si perde a metà mandato",
+          "text": "Secondo Cook Political Report, il partito del presidente ha perso seggi alla Camera in **18 delle 20** elezioni di metà mandato dal dopoguerra. Le eccezioni sono il **1998** e il **2002**."
+        },
+        {
+          "heading": "La cautela",
+          "text": "I sondaggi hanno **sbagliato più volte** di recente, e i risultati possono arrivare lentamente. Le percentuali di oggi non sono un risultato."
+        }
+      ],
+      "keyPoints": [
+        "Voto di metà mandato il 3 novembre: Camera e un terzo del Senato",
+        "Democratici favoriti alla Camera, Senato più incerto",
+        "Il partito del presidente ha perso seggi in 18 midterm su 20 dal dopoguerra"
+      ],
+      "whyItMatters": "Chi controlla Camera e Senato decide **leggi, bilancio e nomine** negli Stati Uniti, e quindi anche politiche su commercio, dazi e alleanze che toccano l'Europa.",
+      "actionToday": "Segna sul calendario il **3 novembre** e scrivi **tre cose** che vorresti controllare nei risultati: quale partito vince la Camera, i seggi del Senato e le tre corse più vicine.",
+      "checklist": [],
+      "eli5": "È come un esame a metà anno: a metà del suo mandato il presidente riceve un voto dagli elettori, che quasi sempre è meno generoso di quello iniziale.",
+      "deepDive": [
+        {
+          "title": "Perché le midterm sono diverse",
+          "text": "Non si vota il presidente, ma il **Congresso**. Spesso il partito all'opposizione è più motivato a votare, e per questo di solito guadagna terreno."
+        },
+        {
+          "title": "Come si legge una previsione",
+          "text": "Una probabilità di **86%** non è una certezza: vuol dire che in 100 elezioni simili il partito ne vincerebbe 86. Il 14% restante si realizza, e ogni tanto succede."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "midterm",
+          "meaning": "Le elezioni di metà mandato presidenziale, in cui si rinnovano la Camera e un terzo del Senato."
+        },
+        {
+          "term": "scheda generica",
+          "meaning": "Un sondaggio che chiede per quale partito si voterebbe al Congresso, senza nomi di candidati."
+        },
+        {
+          "term": "toss-up",
+          "meaning": "Una corsa elettorale così incerta che nessun candidato è favorito."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NPR — These are the House races to watch in the 2026 midterm election on Nov. 3",
+          "url": "https://www.npr.org/2026/10/29/nx-s1-6020921/2026-house-map-democrats-flip-republicans-tossup-triage"
+        },
+        {
+          "title": "CNN — New polls have more good news for Democrats' Senate hopes",
+          "url": "https://www.cnn.com/2026/10/28/politics/polls-democrats-midterms-senate"
+        },
+        {
+          "title": "Forbes — Hottest 2026 Midterm Races",
+          "url": "https://www.forbes.com/sites/saradorn/2026/10/29/latest-polls-in-2026-midterms-democrats-lead-in-texas-maine-michigan-kansas-new-hampshire/"
+        },
+        {
+          "title": "Cook Political Report — Republicans, is it about environment or exposure",
+          "url": "https://www.cookpolitical.com/analysis/national/national-politics/republicans-it-about-environment-or-exposure"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Che cosa si rinnova alle elezioni di metà mandato?",
+          "options": [
+            "Il presidente",
+            "La Camera e circa un terzo del Senato",
+            "Solo i governatori",
+            "La Corte suprema"
+          ],
+          "answer": 1,
+          "explanation": "Si rinnovano tutti i seggi della Camera e circa un terzo del Senato."
+        },
+        {
+          "q": "Che cosa significa una probabilità del 86%?",
+          "options": [
+            "Che il partito vincerà sicuramente",
+            "Che in 100 elezioni simili ne vincerebbe circa 86",
+            "Che prenderà l'86% dei voti",
+            "Che i sondaggi sono perfetti"
+          ],
+          "answer": 1,
+          "explanation": "È una probabilità, non una certezza: nel restante 14% dei casi l'esito è diverso."
+        }
+      ],
+      "reflection": "Quando leggi una previsione elettorale, che cosa ti ricordi per non scambiarla con un risultato?",
+      "id": "2026-10-30-mondo",
+      "label": "Mondo"
+    },
+    {
+      "category": "sapere",
+      "interests": [
+        "produttivita",
+        "crescita",
+        "lavoro",
+        "psicologia"
+      ],
+      "title": "La legge di Parkinson: il lavoro si allarga fino al tempo che hai",
+      "subtitle": "Perché una scadenza lunga rende i compiti più lunghi e come usare il tempo a tuo favore",
+      "summary": "La **legge di Parkinson** dice che il lavoro **si dilata** fino a riempire il tempo disponibile. Una scadenza lunga non rende un compito migliore: spesso lo rende solo più lungo.",
+      "stat": null,
+      "sections": [
+        {
+          "heading": "Da dove viene",
+          "text": "La frase viene da un articolo satirico di **Cyril Northcote Parkinson**, pubblicato sull'*Economist* nel **1955**. Parlava della burocrazia, ma l'idea si applica a ogni lavoro."
+        },
+        {
+          "heading": "Cosa dice",
+          "text": "Se hai una settimana per scrivere una mail, la mail occuperà una settimana: la preparazione, i dubbi e le correzioni si **allargano** fino alla scadenza."
+        },
+        {
+          "heading": "Perché succede",
+          "text": "Con tempo in abbondanza è facile **rimandare**, aggiungere dettagli inutili e rifare cose già buone. La scadenza vicina obbliga a scegliere cosa conta."
+        },
+        {
+          "heading": "Come usarla",
+          "text": "Dai a ogni compito un **tempo più corto** del necessario, come **25 o 45 minuti**. Inizia, e alla fine decidi cosa manca davvero."
+        },
+        {
+          "heading": "Il limite",
+          "text": "Non è una legge scientifica. Accorciare troppo i tempi su lavori complessi porta a errori: serve per compiti **chiari**, non per quelli che richiedono ricerca."
+        }
+      ],
+      "keyPoints": [
+        "Il lavoro tende a riempire il tempo che gli concedi",
+        "Una scadenza più corta obbliga a scegliere cosa conta",
+        "Non vale per i compiti complessi o di ricerca"
+      ],
+      "whyItMatters": "Ti aiuta a **finire prima** compiti piccoli e ripetitivi e a ritrovare tempo per quelli importanti. Funziona anche sul lavoro d'ufficio, dove le attività sono spesso rimandabili.",
+      "actionToday": "Scegli **un compito di oggi**, scrivi quanto pensi che serva, poi **taglia il tempo di un terzo** e metti un timer. Alla fine annota se il risultato è peggiorato.",
+      "checklist": [],
+      "eli5": "È come lo zaino: se hai uno zaino enorme, lo riempi di cose in più; se è piccolo, porti solo l'essenziale.",
+      "deepDive": [
+        {
+          "title": "Parkinson era ironico",
+          "text": "L'articolo originale era una **satira** sull'amministrazione britannica: i funzionari aumentavano di numero anche quando il lavoro diminuiva. La versione sul tempo è diventata famosa dopo."
+        },
+        {
+          "title": "Collegata ad altre idee",
+          "text": "Somiglia all'idea di **timeboxing**, cioè dare a un compito un blocco di tempo fisso, e alla tecnica del pomodoro: lavori in blocchi corti con una fine chiara."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "legge di Parkinson",
+          "meaning": "L'idea che un lavoro si dilati fino a occupare tutto il tempo disponibile."
+        },
+        {
+          "term": "timeboxing",
+          "meaning": "Dare a un compito un blocco di tempo fisso e fermarsi allo scadere."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wikipedia — Parkinson's law",
+          "url": "https://en.wikipedia.org/wiki/Parkinson%27s_law"
+        },
+        {
+          "title": "Wikipedia — C. Northcote Parkinson",
+          "url": "https://en.wikipedia.org/wiki/C._Northcote_Parkinson"
+        },
+        {
+          "title": "World Economic Forum — This is why work will always fill up your time",
+          "url": "https://weforum.org/agenda/2015/11/this-is-why-work-will-always-fill-up-your-time"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Che cosa dice la legge di Parkinson?",
+          "options": [
+            "Il lavoro si dilata fino al tempo disponibile",
+            "Ogni lavoro si fa meglio con più tempo",
+            "I capi lavorano meno",
+            "Le mail si scrivono da sole"
+          ],
+          "answer": 0,
+          "explanation": "Con più tempo a disposizione, il lavoro tende a occuparlo tutto."
+        },
+        {
+          "q": "In quale caso conviene non accorciare i tempi?",
+          "options": [
+            "In un compito semplice",
+            "In un lavoro complesso o di ricerca",
+            "In una mail breve",
+            "In una lista della spesa"
+          ],
+          "answer": 1,
+          "explanation": "Per compiti complessi, tempi troppo brevi portano a errori."
+        }
+      ],
+      "reflection": "Quale compito ti prende più tempo di quanto servirebbe, solo perché hai una scadenza lontana?",
+      "id": "2026-10-30-sapere",
+      "label": "Sapere"
+    },
+    {
+      "category": "routine",
+      "interests": [
+        "crescita",
+        "psicologia",
+        "produttivita",
+        "salute"
+      ],
+      "title": "Se-allora: un piano in una frase per fare ciò che hai deciso",
+      "subtitle": "Le intenzioni di implementazione, studiate da Gollwitzer, aiutano a trasformare un obiettivo in un'azione",
+      "summary": "Una frase del tipo **\"Se succede X, allora faccio Y\"** aiuta a passare dall'intenzione all'azione. Una sintesi di **94 studi** (Gollwitzer e Sheeran, 2006) ha trovato un effetto **medio-grande** sul raggiungimento degli obiettivi.",
+      "stat": {
+        "value": "94 studi",
+        "label": "analizzati nella sintesi di Gollwitzer e Sheeran del 2006, con effetto d = 0,65"
+      },
+      "sections": [
+        {
+          "heading": "Il problema",
+          "text": "Spesso decidiamo di fare una cosa ma poi **non la facciamo**: non perché non vogliamo, ma perché non sappiamo quando e come iniziare."
+        },
+        {
+          "heading": "La soluzione",
+          "text": "Lo psicologo **Peter Gollwitzer** propone le **intenzioni di implementazione**: un piano che lega un **momento** o una situazione a una **azione precisa**. Per esempio: \"Se finisco la colazione, allora faccio 10 minuti di camminata\"."
+        },
+        {
+          "heading": "Cosa dicono i dati",
+          "text": "Una sintesi del 2006 su **94 test** ha trovato un effetto **medio-grande** (d = 0,65) sul raggiungimento degli obiettivi. Il confronto era con chi si era dato un obiettivo ma non il piano."
+        },
+        {
+          "heading": "Come scriverla",
+          "text": "Scegli **un segnale chiaro** (un orario, un luogo, un evento) e **una sola azione piccola**. Scrivi la frase e tienila dove la vedi."
+        },
+        {
+          "heading": "I limiti",
+          "text": "Il valore *d* è una misura statistica, non vuol dire che il 65% in più delle persone ce la faccia. Funziona meglio con obiettivi che vuoi davvero raggiungere."
+        }
+      ],
+      "keyPoints": [
+        "Formula: se (segnale) allora (azione piccola)",
+        "Una sintesi di 94 studi ha trovato un effetto medio-grande",
+        "Funziona con obiettivi che vuoi davvero e con segnali chiari"
+      ],
+      "whyItMatters": "Rende più facile iniziare **senza dipendere dalla forza di volontà**: la decisione è già presa, a ogni segnale devi solo eseguire.",
+      "actionToday": "Scrivi **una frase se-allora** per un'abitudine che vuoi costruire. Mettila come promemoria sul telefono, con l'orario scelto.",
+      "checklist": [
+        "Scegli un obiettivo piccolo che vuoi davvero",
+        "Scegli un segnale chiaro (orario, luogo o evento)",
+        "Scrivi: Se [segnale], allora [azione]",
+        "Metti la frase dove la vedi ogni giorno",
+        "Dopo una settimana controlla quante volte l'hai fatta"
+      ],
+      "eli5": "È come mettere le scarpe da corsa accanto alla porta: quando le vedi, sai già cosa fare.",
+      "deepDive": [
+        {
+          "title": "Perché funziona",
+          "text": "Il piano **delega la decisione** a un segnale. Quando il segnale arriva, l'azione parte quasi in automatico, senza dover scegliere ogni volta se farla."
+        },
+        {
+          "title": "Se-allora per gli ostacoli",
+          "text": "Si può usare anche per le difficoltà: \"Se mi viene voglia di rimandare, allora faccio solo 2 minuti\". Si chiama **piano per gli ostacoli**."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "intenzione di implementazione",
+          "meaning": "Un piano nella forma se-allora che lega un segnale a un'azione precisa."
+        },
+        {
+          "term": "effetto d",
+          "meaning": "Una misura statistica della differenza tra due gruppi: 0,65 indica un effetto medio-grande."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Gollwitzer & Sheeran (2006) — Implementation Intentions and Goal Achievement: A Meta-analysis of Effects and Processes",
+          "url": "https://kops.uni-konstanz.de/entities/publication/2e749bfb-8533-437c-8203-7e788c910c5f"
+        },
+        {
+          "title": "Wieber, Thürmer, Gollwitzer (2015) — Promoting the translation of intentions into action by implementation intentions, Frontiers in Human Neuroscience",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4500900"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Qual è la forma di un piano se-allora?",
+          "options": [
+            "Se succede X, allora faccio Y",
+            "Devo fare Y prima o poi",
+            "Farò Y quando ho voglia",
+            "Y è importante"
+          ],
+          "answer": 0,
+          "explanation": "Il piano lega un segnale preciso a un'azione precisa."
+        },
+        {
+          "q": "Che cosa non vuol dire d = 0,65?",
+          "options": [
+            "Un effetto medio-grande",
+            "Che il 65% in più di persone raggiunge l'obiettivo",
+            "Una differenza statistica",
+            "Che c'è un confronto tra gruppi"
+          ],
+          "answer": 1,
+          "explanation": "Il valore d è una misura statistica, non una percentuale di successo."
+        }
+      ],
+      "reflection": "Quale cosa che rimandi da settimane potrebbe partire con una sola frase se-allora?",
+      "id": "2026-10-30-routine",
+      "label": "Metodo & routine"
+    }
+  ],
+  "extras": [
+    {
+      "topic": "cucina",
+      "kind": "news",
+      "title": "Castagne 2026: raccolto in calo del 25% e prezzi all'origine quasi +65%",
+      "subtitle": "Il caldo estivo taglia la produzione, ma Coldiretti parla di qualità ottima; occhio all'etichetta d'origine",
+      "summary": "Secondo **Coldiretti** la raccolta di **castagne** 2026 è **-25%** per caldo e siccità. I prezzi all'origine sono saliti di circa **65%** sul 2025, secondo Ismea: da 2,13 a **3,50 euro al chilo**.",
+      "stat": {
+        "value": "-25%",
+        "label": "produzione di castagne 2026 rispetto al 2025, stima Coldiretti"
+      },
+      "sections": [
+        {
+          "heading": "Meno castagne",
+          "text": "Le prime stime di **Coldiretti** indicano una produzione in calo di circa il **25%** rispetto al 2025. La causa principale è il **caldo** e la siccità dell'estate. La qualità, dicono, è **ottima**."
+        },
+        {
+          "heading": "Prezzi in salita",
+          "text": "Secondo **Ismea**, nella prima settimana di ottobre il prezzo all'origine era di **3,50 euro al chilo**, contro circa **2,13** dello stesso periodo del 2025: **+64,7%**. Un'altra fonte parla di +46%, perché la data di rilevazione cambia."
+        },
+        {
+          "heading": "Italiane o importate",
+          "text": "Nel 2025 le importazioni hanno superato i **14 milioni di chili**, soprattutto da Turchia, Grecia, Portogallo e Spagna. Coldiretti invita a controllare **l'origine in etichetta**."
+        },
+        {
+          "heading": "Un settore di montagna",
+          "text": "L'Italia è il primo produttore europeo, con circa **40 mila ettari**. Oltre il **60%** della raccolta resta manuale, con difficoltà di manodopera in montagna."
+        }
+      ],
+      "keyPoints": [
+        "Raccolto di castagne 2026 in calo del 25% per il caldo",
+        "Prezzi all'origine +65% secondo Ismea (3,50 euro al chilo)",
+        "Controlla l'etichetta: molte castagne sono importate"
+      ],
+      "whyItMatters": "Il clima cambia **cosa trovi al mercato e quanto costa**. Le castagne sono un esempio: un'estate calda si vede sul prezzo all'autunno.",
+      "actionToday": "Al prossimo acquisto di castagne controlla **origine e prezzo al chilo**, e confronta una confezione italiana con una importata.",
+      "checklist": [],
+      "eli5": "Se un campo produce meno frutti, ce ne sono meno da vendere e chi li vuole è disposto a pagare di più.",
+      "deepDive": [
+        {
+          "title": "Perché il caldo incide",
+          "text": "Il castagno ha bisogno di **acqua nei mesi di crescita del frutto**. Con siccità e caldo i ricci si formano ma le castagne restano più piccole o meno numerose."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "prezzo all'origine",
+          "meaning": "Il prezzo a cui il produttore vende, prima dei passaggi fino al negozio."
+        },
+        {
+          "term": "Ismea",
+          "meaning": "L'istituto che raccoglie i dati sui prezzi e i mercati agricoli in Italia."
+        }
+      ],
+      "sources": [
+        {
+          "title": "QuiFinanza — Prezzi castagne 2026, raccolto in calo del 25% e rincari del 46%",
+          "url": "https://quifinanza.it/lifestyle/food-economy/castagne-prezzi-2026/1019869/"
+        },
+        {
+          "title": "Adnkronos Prometeo — Castagne, raccolti in calo (-25%) e prezzi alle stelle (+65%)",
+          "url": "https://prometeo.adnkronos.com/territorio/raccolta-castagne-2026-effetti-cambiamento-climatico-prezzi/"
+        },
+        {
+          "title": "Agricolae — Coldiretti, al via la raccolta delle castagne, clima taglia 25% produzione ma qualità ottima",
+          "url": "https://agricolae.eu/consumi-coldiretti-al-via-la-raccolta-della-castagne-clima-taglia-25-produzione-ma-qualita-ottima/"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Perché le percentuali di rincaro cambiano tra le fonti?",
+          "options": [
+            "Perché cambia la data di rilevazione",
+            "Perché le castagne cambiano nome",
+            "Perché Ismea sbaglia",
+            "Perché i prezzi sono fissi"
+          ],
+          "answer": 0,
+          "explanation": "Dato che i prezzi cambiano di settimana in settimana, +46% e +65% dipendono dalla data presa a confronto."
+        }
+      ],
+      "reflection": "Quando un prodotto costa di più, controlli da dove arriva prima di decidere se comprarlo?",
+      "id": "2026-10-30-x-cucina-news",
+      "category": "routine",
+      "label": "Cucina"
+    },
+    {
+      "topic": "cucina",
+      "kind": "spunto",
+      "title": "Caldarroste in forno: il taglio sulla buccia che evita gli scoppi",
+      "subtitle": "Un'incisione e dieci minuti di ammollo per castagne più morbide da sbucciare",
+      "summary": "Per cuocere le **castagne** in forno basta **incidere la buccia** con un taglio. Così il vapore esce e le castagne non scoppiano; l'ammollo prima aiuta a sbucciarle.",
+      "stat": null,
+      "sections": [
+        {
+          "heading": "Perché incidere",
+          "text": "Dentro la buccia l'acqua della castagna diventa **vapore**. Senza un'apertura, la pressione sale e la castagna può **scoppiare**."
+        },
+        {
+          "heading": "Come si fa",
+          "text": "Incidi la buccia con un coltello a lama corta, con un **taglio sul lato curvo**. Disponi le castagne su una teglia e cuocile a **200 gradi** per circa **20-30 minuti**, a seconda della grandezza."
+        },
+        {
+          "heading": "Per sbucciarle meglio",
+          "text": "Quando sono cotte, avvolgile in un **canovaccio** per qualche minuto: il vapore ammorbidisce la buccia e si toglie meglio. Sbucciale **ancora calde**."
+        }
+      ],
+      "keyPoints": [
+        "Incidi la buccia per far uscire il vapore",
+        "Forno a 200 gradi per 20-30 minuti",
+        "Avvolgile in un canovaccio e sbucciale calde"
+      ],
+      "whyItMatters": "È un modo semplice per sfruttare un prodotto di stagione senza padelle speciali, e meno castagne finiscono rotte o sprecate.",
+      "actionToday": "Stasera cuoci **una manciata di castagne** con questo metodo e assaggia: segna **dopo quanti minuti** erano pronte nel tuo forno.",
+      "checklist": [
+        "Lava e asciuga le castagne",
+        "Incidi la buccia sul lato curvo",
+        "Cuoci a 200 gradi per 20-30 minuti",
+        "Avvolgile in un canovaccio per 5 minuti",
+        "Sbucciale ancora calde"
+      ],
+      "eli5": "È come una pentola a pressione senza valvola: se il vapore non ha un'uscita, scoppia da qualche parte.",
+      "deepDive": [
+        {
+          "title": "Tempi diversi",
+          "text": "Le castagne più grosse cuociono in più tempo: assaggia **una** a metà cottura. Se la polpa è ancora dura, lasciale 5 minuti in più."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "caldarroste",
+          "meaning": "Castagne cotte con la buccia, di solito sulla brace o in forno."
+        },
+        {
+          "term": "vapore",
+          "meaning": "L'acqua allo stato gassoso, che si forma quando si scalda."
+        }
+      ],
+      "sources": [],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Perché si incide la buccia delle castagne?",
+          "options": [
+            "Per far uscire il vapore ed evitare gli scoppi",
+            "Per dare sapore",
+            "Per farle cuocere più in fretta",
+            "Per togliere il sale"
+          ],
+          "answer": 0,
+          "explanation": "Senza un'apertura il vapore aumenta la pressione e la buccia scoppia."
+        }
+      ],
+      "reflection": "Quale prodotto di stagione hai provato a cucinare in modo nuovo quest'anno?",
+      "id": "2026-10-30-x-cucina-spunto",
+      "category": "routine",
+      "label": "Cucina"
+    },
+    {
+      "topic": "cinema",
+      "kind": "news",
+      "title": "Dracula di Bram Stoker torna al cinema in 4K, per Halloween",
+      "subtitle": "Il film di Francis Ford Coppola del 1992 in versione restaurata, evento speciale dal 30 ottobre al 1° novembre",
+      "summary": "Dal **30 ottobre al 1° novembre** torna in sala il *Dracula di Bram Stoker* di **Francis Ford Coppola**, in versione **restaurata 4K**, distribuito da **Lucky Red**. Tra le altre uscite del 30, il documentario *Everest: The Other Side*.",
+      "stat": {
+        "value": "1992",
+        "label": "anno del film di Coppola che torna in sala restaurato in 4K"
+      },
+      "sections": [
+        {
+          "heading": "Il ritorno",
+          "text": "*Dracula di Bram Stoker* torna al cinema come **evento speciale** dal **30 ottobre al 1° novembre**, nel periodo di Halloween. È la versione **restaurata in 4K**, distribuita da **Lucky Red**."
+        },
+        {
+          "heading": "Il film",
+          "text": "Il film è del **1992** ed è diretto da **Francis Ford Coppola**, adattamento del romanzo di **Bram Stoker**. È noto per i costumi, le scenografie e per gli effetti ottenuti **senza il digitale**."
+        },
+        {
+          "heading": "Un documentario",
+          "text": "Venerdì 30 esce anche *Everest: The Other Side*, il documentario di **Elizabeth Chai Vasarhelyi** e **Jimmy Chin**, distribuito da Disney. Un'altra uscita, *Fast and Furious*, è data al 29 o al 30 a seconda delle fonti."
+        },
+        {
+          "heading": "Da verificare",
+          "text": "Le date di uscita variano da un calendario all'altro: controlla i **programmi del cinema vicino a te**."
+        }
+      ],
+      "keyPoints": [
+        "Dracula di Coppola restaurato in 4K, in sala dal 30 ottobre al 1° novembre",
+        "Distribuisce Lucky Red",
+        "Le date di alcune uscite non coincidono tra le fonti"
+      ],
+      "whyItMatters": "Rivedere un classico **in sala** è un'esperienza diversa dal divano: schermo grande e sonoro curato fanno notare dettagli che altrimenti sfuggono.",
+      "actionToday": "Controlla il programma del **cinema più vicino**: se c'è il Dracula di Coppola, scegli **un orario** e segnalo in agenda.",
+      "checklist": [],
+      "eli5": "È come riascoltare un disco vecchio su un impianto nuovo: la musica è la stessa, ma senti cose che prima non sentivi.",
+      "deepDive": [
+        {
+          "title": "Cos'è un restauro 4K",
+          "text": "Il restauro parte dalla **pellicola originale**, la scansiona in alta definizione e pulisce graffi e sporco. Il risultato è più nitido, ma deve restare fedele ai colori voluti dal regista."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "restauro",
+          "meaning": "Il recupero di un film dalla pellicola originale, con pulizia e correzione dei difetti."
+        },
+        {
+          "term": "4K",
+          "meaning": "Una definizione dell'immagine con circa quattromila pixel in larghezza."
+        }
+      ],
+      "sources": [
+        {
+          "title": "FilmTV — I nuovi film al cinema dal 26 ottobre al 1° novembre 2026",
+          "url": "https://www.filmtv.it/cinema/uscite/"
+        },
+        {
+          "title": "MyMovies — Calendario film uscita ottobre 2026",
+          "url": "https://www.mymovies.it/film/uscita/ottobre/2026/?country=italia"
+        },
+        {
+          "title": "Movieplayer — Film in uscita: prossimamente al cinema",
+          "url": "https://movieplayer.it/film/prossimamente/"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Che cosa è un restauro 4K?",
+          "options": [
+            "Un nuovo montaggio",
+            "Il recupero della pellicola originale in alta definizione",
+            "Un doppiaggio",
+            "Un remake"
+          ],
+          "answer": 1,
+          "explanation": "Si parte dalla pellicola originale, si scansiona e si pulisce."
+        }
+      ],
+      "reflection": "Quale classico vorresti rivedere in sala, e che cosa speri di notare di nuovo?",
+      "id": "2026-10-30-x-cinema-news",
+      "category": "mondo",
+      "label": "Cinema e serie"
+    },
+    {
+      "topic": "cinema",
+      "kind": "spunto",
+      "title": "Il colore nei film: cosa cercare in una scena",
+      "subtitle": "Un trucco per leggere l'atmosfera di un film guardando la tavolozza",
+      "summary": "I registi scelgono la **tavolozza dei colori** per far provare qualcosa allo spettatore. Individuare il **colore dominante** di una scena ti dice come il film vuole farti sentire.",
+      "stat": null,
+      "sections": [
+        {
+          "heading": "Il colore dominante",
+          "text": "In una scena spesso un colore prevale: il **blu** può dare freddezza, il **rosso** pericolo o passione, il **giallo** calore o malattia. Non è una regola fissa, ma un indizio."
+        },
+        {
+          "heading": "Come guardare",
+          "text": "Fermati su **un fotogramma** e chiediti: **quale colore domina?** E quale compare solo in un dettaglio, come un vestito o un oggetto?"
+        },
+        {
+          "heading": "I cambi di colore",
+          "text": "Se la tavolozza **cambia** nel corso del film, spesso cambia anche lo stato dei personaggi. Nota **quando** avviene il cambio."
+        }
+      ],
+      "keyPoints": [
+        "Cerca il colore dominante della scena",
+        "Un colore isolato in un dettaglio attira l'attenzione",
+        "Un cambio di tavolozza segnala un cambio nella storia"
+      ],
+      "whyItMatters": "Ti fa guardare un film come un testo: **ogni scelta** (colore, luce, costume) comunica qualcosa.",
+      "actionToday": "Nel prossimo film metti in pausa **tre volte** su una scena e scrivi il colore dominante e come ti fa sentire.",
+      "checklist": [
+        "Scegli una scena",
+        "Metti in pausa su un fotogramma",
+        "Scrivi il colore dominante",
+        "Scrivi quale emozione ti dà",
+        "Confronta con una scena più avanti"
+      ],
+      "eli5": "È come l'umore di una stanza: pareti blu e luce fredda ti fanno sentire diverso da pareti gialle e luce calda.",
+      "deepDive": [
+        {
+          "title": "Attenzione ai significati",
+          "text": "I colori **cambiano significato** da una cultura all'altra e da un film all'altro. Il bianco può essere purezza o lutto. Conta il contesto, non il dizionario."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "tavolozza",
+          "meaning": "L'insieme dei colori usati in un'immagine o in un film."
+        },
+        {
+          "term": "fotogramma",
+          "meaning": "Una singola immagine ferma di un film."
+        }
+      ],
+      "sources": [],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Che cosa conviene fare per capire il colore di una scena?",
+          "options": [
+            "Cercare il colore dominante in un fotogramma",
+            "Contare gli attori",
+            "Guardare solo i titoli di coda",
+            "Leggere la locandina"
+          ],
+          "answer": 0,
+          "explanation": "Il colore dominante è un indizio sull'atmosfera che il regista vuole creare."
+        }
+      ],
+      "reflection": "Quale film ti è rimasto in mente per il suo colore più che per la storia?",
+      "id": "2026-10-30-x-cinema-spunto",
+      "category": "mondo",
+      "label": "Cinema e serie"
+    },
+    {
+      "topic": "cultura",
+      "kind": "news",
+      "title": "Lucca Comics & Games compie 60 anni: fino al 1° novembre, tema Legacy",
+      "subtitle": "Tra gli ospiti Frank Miller, Zerocalcare e Alberto Angela; il programma cambia giorno per giorno",
+      "summary": "La **60ª edizione** di **Lucca Comics & Games** è iniziata il **28 ottobre** e dura fino al **1° novembre**. Il tema è **Legacy**, l'eredità che passa da una generazione all'altra.",
+      "stat": {
+        "value": "60",
+        "label": "anni di Lucca Comics & Games: l'edizione 2026 va dal 28 ottobre al 1° novembre"
+      },
+      "sections": [
+        {
+          "heading": "Date e tema",
+          "text": "Il festival va da **mercoledì 28 ottobre a domenica 1° novembre**, dalle 9 alle 19, con alcuni eventi serali. Il tema è **Legacy**: l'eredità tra generazioni."
+        },
+        {
+          "heading": "Gli ospiti",
+          "text": "Tra gli ospiti il fumettista **Frank Miller**, che presenta un film, **Zerocalcare**, **Jonathan Hickman** e **Go Nagai**. Sabato 31 ottobre è atteso **Alberto Angela**."
+        },
+        {
+          "heading": "Giorno per giorno",
+          "text": "Secondo le guide, giovedì 29 c'è **Hideki Kamiya** e Dungeons & Dragons; venerdì 30 **Dylan Dog** e la parata cosplay. Le guide non sono tutte allineate: controlla il **sito ufficiale**."
+        },
+        {
+          "heading": "Il cinema",
+          "text": "Domenica 1° novembre, dalle 18 alle 20, al Cinema Astra c'è un'anteprima per i fan di *Hunger Games: Sunrise on the Reaping*."
+        }
+      ],
+      "keyPoints": [
+        "Lucca Comics & Games 2026: dal 28 ottobre al 1° novembre",
+        "Tema Legacy; ospiti come Frank Miller, Zerocalcare e Alberto Angela",
+        "Il programma giorno per giorno va verificato sul sito ufficiale"
+      ],
+      "whyItMatters": "Fumetto, gioco e cinema popolare sono una **forma di cultura** con un pubblico enorme: seguire un festival ti dice dove sta andando l'immaginario di una generazione.",
+      "actionToday": "Se non vai a Lucca, **scegli un fumetto** di un autore ospite (per esempio Zerocalcare) e leggi le **prime dieci pagine**.",
+      "checklist": [],
+      "eli5": "È una grande fiera in cui fumetti, giochi e film si incontrano, e chi li ama si ritrova.",
+      "deepDive": [
+        {
+          "title": "Cosa vuol dire Legacy",
+          "text": "**Legacy** in inglese è l'eredità, ciò che si lascia a chi viene dopo. In un festival di 60 anni è un tema naturale: guarda a ciò che è stato tramandato."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "cosplay",
+          "meaning": "Travestirsi da personaggio di fumetti, giochi, film o serie."
+        },
+        {
+          "term": "legacy",
+          "meaning": "In inglese, l'eredità che un'opera o una persona lascia agli altri."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Il Libraio — Lucca Comics & Games 2026: ecco gli ospiti della 60esima edizione",
+          "url": "https://www.illibraio.it/news/narrativa/lucca-comics-games-2026-1500752/"
+        },
+        {
+          "title": "Fumettologica — Lucca Comics 2026, il programma del cinema",
+          "url": "https://fumettologica.it/2026/10/lucca-comics-2026-cinema-programma/"
+        },
+        {
+          "title": "Telepass Moveo — Il Lucca Comics 2026 si avvicina! Date, ospiti e programma",
+          "url": "https://moveo.telepass.com/lucca-comics-2026-guida/"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Qual è il tema dell'edizione 2026 di Lucca Comics & Games?",
+          "options": [
+            "Legacy",
+            "Futuro",
+            "Mondo",
+            "Tempo"
+          ],
+          "answer": 0,
+          "explanation": "Il tema della 60ª edizione è Legacy, l'eredità tra generazioni."
+        }
+      ],
+      "reflection": "Quale fumetto o gioco ti ha accompagnato più a lungo, e a chi lo passeresti?",
+      "id": "2026-10-30-x-cultura-news",
+      "category": "sapere",
+      "label": "Libri e cultura"
+    },
+    {
+      "topic": "cultura",
+      "kind": "spunto",
+      "title": "Leggere un fumetto: lo spazio tra due vignette",
+      "subtitle": "Quello che non è disegnato lo costruisce il lettore, ed è dove nasce il ritmo",
+      "summary": "Tra una vignetta e l'altra c'è uno **spazio bianco**. Il lettore **riempie con la mente** ciò che accade nel mezzo: è così che il fumetto crea il ritmo e la tensione.",
+      "stat": null,
+      "sections": [
+        {
+          "heading": "Lo spazio tra le vignette",
+          "text": "Lo spazio tra due vignette si chiama **gutter** (o canale). Non mostra nulla, ma il lettore **collega** le due immagini e capisce che c'è stato un passaggio."
+        },
+        {
+          "heading": "Il ritmo",
+          "text": "Vignette **piccole e frequenti** danno velocità; una **tavola intera** rallenta e fa fermare lo sguardo. Gli autori giocano con questo contrasto."
+        },
+        {
+          "heading": "Come leggere",
+          "text": "Leggi una pagina **due volte**: la prima per la storia, la seconda per guardare **come sono disposte** le vignette e dove si ferma l'occhio."
+        }
+      ],
+      "keyPoints": [
+        "Il canale tra le vignette lo riempie il lettore",
+        "Vignette piccole accelerano, tavole intere rallentano",
+        "Rileggi una pagina guardando la disposizione"
+      ],
+      "whyItMatters": "Imparare a leggere il **ritmo** di una tavola ti fa capire perché un fumetto funziona, e vale anche per film e narrativa.",
+      "actionToday": "Scegli **una pagina** di un fumetto: leggila una volta, poi **segna dove rallenta** e dove accelera.",
+      "checklist": [
+        "Scegli una pagina di un fumetto",
+        "Leggila come storia",
+        "Rileggila guardando le vignette",
+        "Segna dove il ritmo rallenta",
+        "Segna dove accelera"
+      ],
+      "eli5": "È come guardare una sequenza di foto: non vedi il passo fra una e l'altra, ma lo immagini.",
+      "deepDive": [
+        {
+          "title": "L'idea di chiusura",
+          "text": "Lo studioso di fumetti **Scott McCloud** chiama **chiusura** il processo con cui la mente completa ciò che non è disegnato. È ciò che rende attivo il lettore."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "gutter",
+          "meaning": "Lo spazio bianco tra due vignette."
+        },
+        {
+          "term": "tavola",
+          "meaning": "Una pagina di fumetto con le sue vignette."
+        }
+      ],
+      "sources": [],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Che cosa è il gutter?",
+          "options": [
+            "Lo spazio tra due vignette",
+            "Una vignetta più grande",
+            "Il titolo del fumetto",
+            "La copertina"
+          ],
+          "answer": 0,
+          "explanation": "Il gutter è lo spazio bianco tra le vignette, che il lettore completa con la mente."
+        }
+      ],
+      "reflection": "In quale fumetto o film hai sentito più forte ciò che non veniva mostrato?",
+      "id": "2026-10-30-x-cultura-spunto",
+      "category": "sapere",
+      "label": "Libri e cultura"
+    }
+  ]
+}

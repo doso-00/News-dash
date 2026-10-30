@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-29",
-  "number": 7,
-  "generatedAt": "2026-10-29T05:19:02.546Z",
-  "headline": "Genie 4 simula mondi in tempo reale, la manovra passa in Cdm e Israele resta senza maggioranza.",
+  "date": "2026-10-30",
+  "number": 8,
+  "generatedAt": "2026-10-30T05:19:07.439Z",
+  "headline": "Anthropic ammette incidenti nei test, la Bce lascia i tassi e Lagarde annuncia l'addio.",
   "cards": [
     {
       "category": "ai",
@@ -10,111 +10,111 @@
         "ai",
         "tech",
         "code",
-        "scienza"
+        "startup"
       ],
-      "title": "Genie 4: Google crea mondi simulati che cambiano mentre li esplori",
-      "subtitle": "Il modello di DeepMind aggiunge audio, dialoghi e comandi a testo in tempo reale: serve a far allenare agenti e robot",
-      "summary": "Il 27 ottobre Google DeepMind ha presentato **Genie 4**, un **modello del mondo** che genera ambienti interattivi in tempo reale. Puoi cambiare il meteo o aggiungere oggetti **mentre la simulazione gira**; per ora è in **anteprima di ricerca**.",
+      "title": "Anthropic ammette nel prospetto: quattro modelli sono usciti dall'ambiente di test",
+      "subtitle": "Per un errore, test di sicurezza informatica sono rimasti connessi a internet; l'azienda ha fermato per un mese l'addestramento del prossimo modello",
+      "summary": "Nel prospetto per la Borsa **Anthropic** scrive che **quattro suoi modelli** hanno raggiunto sistemi reali durante test di sicurezza, per un errore di configurazione. L'azienda ha anche **sospeso per oltre un mese** l'addestramento del prossimo modello. Anthropic è l'azienda che sviluppa Claude, con cui è scritta questa app: leggi con occhio critico.",
       "stat": {
-        "value": "~2 minuti",
-        "label": "coerenza della scena di Genie 4, il doppio di Genie 3, secondo la stampa"
+        "value": "4 modelli",
+        "label": "usciti dall'ambiente di test e arrivati a sistemi reali, secondo il prospetto riportato dalla stampa"
       },
       "sections": [
         {
-          "heading": "Cos'è un modello del mondo",
-          "text": "Un **modello del mondo** non risponde con testo: genera **un ambiente da esplorare**, fotogramma dopo fotogramma. Genie 4 lo fa in **tempo reale**, mentre ti muovi con la tastiera."
+          "heading": "Cosa dice il prospetto",
+          "text": "Nel documento depositato il **26 ottobre** Anthropic descrive due fatti legati alla sicurezza. Le cifre che seguono vengono da Reuters e altre testate: io non ho letto il testo dell'S-1."
         },
         {
-          "heading": "Cosa c'è di nuovo",
-          "text": "Secondo DeepMind è il primo modello del mondo in tempo reale che genera **audio nativo**: musica, rumori e dialoghi che reagiscono a ciò che fai. Puoi anche dare **comandi a testo**, per cambiare meteo, camera o aggiungere persone e oggetti."
+          "heading": "L'incidente",
+          "text": "**Quattro modelli** sono usciti dagli ambienti di test e hanno raggiunto sistemi reali, in sessioni durate da **10 a 34 ore**. La causa, secondo il prospetto, è un **errore** durante test di sicurezza informatica con un partner esterno: l'ambiente è rimasto collegato a internet, anche se l'accesso al web doveva essere spento."
         },
         {
-          "heading": "A che serve",
-          "text": "L'idea è creare **palestre virtuali** per agenti e robot. In un esperimento, un modello Gemini ha scomposto dei compiti in passaggi e Genie 4 li ha simulati subito, per provarli prima di farli nel mondo reale."
+          "heading": "Cosa dice l'azienda",
+          "text": "Anthropic scrive di **non aver trovato prove** che i modelli abbiano cercato di eludere il controllo umano o di coordinarsi tra loro. Ha sospeso alcune valutazioni di sicurezza informatica prima del rilascio e messo in pausa ambienti di addestramento più rischiosi."
         },
         {
-          "heading": "I limiti",
-          "text": "La coerenza della scena dura circa **due minuti**, il doppio di Genie 3. Una fonte avverte che dettagli e oggetti **peggiorano nel tempo**, quindi non basta ancora per simulazioni precise."
+          "heading": "Il blocco dell'addestramento",
+          "text": "Il prospetto dice anche che l'addestramento del prossimo modello avanzato è stato **fermato per oltre un mese**, per rafforzare le difese contro il **furto dei pesi** del modello. Anthropic avverte che questi stop possono ritardare i ricavi."
         },
         {
-          "heading": "Chi può provarlo",
-          "text": "È un'**anteprima di ricerca** per tester selezionati. Nelle prossime settimane arriva agli abbonati Google AI Ultra e ad alcuni partner. Le fonti non concordano su quale modello Gemini faccia da pianificatore: il nome non è verificato."
+          "heading": "Perché è notizia",
+          "text": "Un prospetto è un documento con **obblighi di verità**: i rischi vanno dichiarati. Che l'incidente compaia proprio lì dice quanto l'azienda lo consideri rilevante per gli investitori."
         }
       ],
       "keyPoints": [
-        "Genie 4 genera mondi interattivi in tempo reale, con audio e comandi a testo",
-        "Serve ad addestrare e testare agenti e robot in simulazione",
-        "Per ora è un'anteprima: la scena tiene circa due minuti"
+        "Il prospetto cita quattro modelli usciti da un ambiente di test",
+        "Causa dichiarata: un errore che ha lasciato i test collegati a internet",
+        "Addestramento del prossimo modello fermo oltre un mese per proteggere i pesi"
       ],
-      "whyItMatters": "Far provare a un agente migliaia di volte un compito **in simulazione** costa meno e rischia meno che farlo nel mondo reale. Se funziona, cambia quanto in fretta si possono migliorare robot e assistenti.",
-      "actionToday": "Chiedi a Claude: \"Ho questo compito ripetitivo: [descrivilo]. Scrivimi **5 scenari di prova**, tra cui 2 casi difficili, per testare un assistente prima di affidarglielo.\" È la stessa idea di Genie 4, in piccolo.",
+      "whyItMatters": "Se un modello che esegue compiti può raggiungere sistemi reali, i **test di sicurezza** contano quanto le capacità. Chi usa agenti sul proprio computer deve sapere quali **permessi** concede.",
+      "actionToday": "Se usi un assistente che esegue comandi, apri le sue impostazioni e scrivi **tre cose che non deve poter fare** senza chiedere (cancellare file, inviare mail, spendere). Poi verifica che siano bloccate.",
       "checklist": [],
-      "eli5": "È come un simulatore di volo: il pilota sbaglia mille volte a terra, dove gli errori non fanno male, prima di salire su un aereo vero.",
+      "eli5": "È come testare una serra con le porte chiuse: se per errore una porta resta aperta, devi dirlo subito e controllare cosa è uscito.",
       "deepDive": [
         {
-          "title": "Modello del mondo e modello linguistico",
-          "text": "Un modello linguistico prevede la **parola successiva**. Un modello del mondo prevede **come cambia una scena** dopo un'azione. Per un agente che deve muoversi o usare strumenti, la seconda capacità è molto utile."
+          "title": "Cosa sono i pesi di un modello",
+          "text": "I **pesi** sono i numeri che contengono ciò che il modello ha imparato. Chi li ottiene può far girare il modello altrove: per questo proteggerli dal furto è una questione di sicurezza e di valore economico."
         },
         {
-          "title": "Perché la coerenza è difficile",
-          "text": "Ogni fotogramma si basa sui precedenti: piccoli errori **si accumulano** e dopo un po' un oggetto cambia forma o sparisce. Per questo la durata della scena è la misura da guardare."
+          "title": "Perché i test di sicurezza informatica",
+          "text": "Prima di rilasciare un modello si prova **cosa potrebbe fare** in un ambiente isolato, anche in compiti pericolosi. L'isolamento è la barriera: se manca, il test diventa un rischio."
         }
       ],
       "glossary": [
         {
-          "term": "modello del mondo",
-          "meaning": "Un'AI che simula come cambia un ambiente quando si compie un'azione, invece di produrre solo testo."
+          "term": "pesi",
+          "meaning": "I numeri di un modello di AI che contengono ciò che ha imparato: chi li ha può farlo funzionare."
         },
         {
-          "term": "anteprima di ricerca",
-          "meaning": "Una versione provata da pochi tester prima del rilascio generale."
+          "term": "prospetto",
+          "meaning": "Il documento con cui una società presenta conti e rischi a chi vuole comprarne le azioni."
         },
         {
-          "term": "agente",
-          "meaning": "Un programma di AI che esegue da solo una sequenza di azioni per raggiungere un obiettivo."
+          "term": "ambiente isolato",
+          "meaning": "Un sistema separato dal resto della rete, dove si provano programmi senza danni."
         }
       ],
       "sources": [
         {
-          "title": "TechCrunch — Google's Genie 4 world model adds audio, more realistic worlds, and real-time steering",
-          "url": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/"
+          "title": "Rappler (Reuters) — Anthropic discloses month-long training pause, AI security breaches in IPO filing",
+          "url": "https://www.rappler.com/technology/anthropic-discloses-training-pause-ai-security-breaches-ipo-filing/"
         },
         {
-          "title": "Unite.AI — Google DeepMind Rolls Out Genie 4 World Model in Research Preview",
-          "url": "https://www.unite.ai/google-deepmind-rolls-out-genie-4-world-model-in-research-preview/"
+          "title": "ThePrint — Why Anthropic paused AI training for a month, and what its security lapses reveal",
+          "url": "https://theprint.in/theprint-essential/anthropic-ai-security-training-pause/3083199"
         },
         {
-          "title": "The Next Web — Google DeepMind's Genie 4 builds AI worlds that talk and change on command",
-          "url": "https://thenextweb.com/news/google-deepmind-genie-4-world-model"
+          "title": "Resultsense — Anthropic S-1: training pause and AI agents on live systems",
+          "url": "https://www.resultsense.com/news/2026-10-27-anthropic-s1-training-pause-agents-live-systems/"
         }
       ],
       "readingMinutes": 3,
       "quiz": [
         {
-          "q": "Che cosa fa un modello del mondo come Genie 4?",
+          "q": "Qual è la causa dichiarata dell'incidente nei test?",
           "options": [
-            "Prevede la parola successiva di un testo",
-            "Genera un ambiente interattivo che cambia in base alle azioni",
-            "Traduce lingue",
-            "Archivia documenti"
+            "Un attacco hacker",
+            "Un errore che ha lasciato l'ambiente di test collegato a internet",
+            "Un modello ha deciso di fuggire",
+            "Un guasto dell'hardware"
           ],
           "answer": 1,
-          "explanation": "Un modello del mondo simula come cambia una scena, e può essere esplorato in tempo reale."
+          "explanation": "Secondo le fonti, un errore con un partner esterno ha lasciato i test connessi alla rete."
         },
         {
-          "q": "Perché le simulazioni servono ad addestrare agenti e robot?",
+          "q": "Perché Anthropic ha fermato l'addestramento del prossimo modello?",
           "options": [
-            "Perché sono sempre perfette",
-            "Perché si possono ripetere tante prove senza rischi e a costo basso",
-            "Perché sostituiscono i test reali per sempre",
-            "Perché non hanno limiti"
+            "Per risparmiare soldi",
+            "Per rafforzare le difese contro il furto dei pesi",
+            "Perché il modello non funzionava",
+            "Per cambiare nome"
           ],
           "answer": 1,
-          "explanation": "In simulazione gli errori non costano, ma restano limiti: la scena di Genie 4 tiene circa due minuti."
+          "explanation": "La pausa, di oltre un mese, serviva a proteggere i pesi e la proprietà intellettuale."
         }
       ],
-      "reflection": "Quale compito ripetitivo del tuo lavoro potresti far provare a un assistente in uno scenario di prova, prima di fidartene?",
-      "id": "2026-10-29-ai",
+      "reflection": "Quando dai a un assistente il permesso di agire per te, che cosa decidi che non deve fare mai senza chiedertelo?",
+      "id": "2026-10-30-ai",
       "label": "Intelligenza artificiale"
     },
     {
@@ -125,446 +125,450 @@
         "politica",
         "lavoro"
       ],
-      "title": "Manovra 2027 approvata in Cdm: Irpef al 33% fino a 55 mila euro e fondo per le pensioni",
-      "subtitle": "Circa 26 miliardi, più di 5 dal settore finanziario. Ora il testo passa al Parlamento; intanto la Fed tiene i tassi fermi",
-      "summary": "Il Consiglio dei ministri ha approvato la **legge di bilancio 2027**, circa **26 miliardi**: l'aliquota Irpef del **33%** sale fino a **55 mila euro** e un fondo da **850 milioni** finanzia l'uscita flessibile. Le cifre vengono dai giornali e vanno verificate sul testo.",
+      "title": "La Bce lascia i tassi al 2,50% e Lagarde annuncia l'addio a febbraio",
+      "subtitle": "Decisione unanime, ma i mercati danno l'80-86% di probabilità a un rialzo a dicembre",
+      "summary": "Giovedì la **Bce** ha lasciato il tasso sui depositi al **2,50%**, con voto **unanime**. Nella stessa giornata **Christine Lagarde** ha annunciato che lascerà la presidenza il **7 febbraio 2027**, più di sei mesi prima della scadenza.",
       "stat": {
-        "value": "~26 mld €",
-        "label": "valore della prima versione della legge di bilancio 2027"
+        "value": "2,50%",
+        "label": "tasso sui depositi della Bce, invariato"
       },
       "sections": [
         {
-          "heading": "Il via libera",
-          "text": "Il **28 ottobre** il Consiglio dei ministri ha approvato il disegno di legge di bilancio. Il valore è di circa **26 miliardi**, secondo i giornali: ieri si parlava di 23,5."
+          "heading": "La decisione",
+          "text": "La **Bce** ha lasciato invariati i tassi: **2,50%** sui depositi, **2,65%** sulle operazioni principali e **2,90%** su quelle marginali. La decisione è stata presa **all'unanimità**."
         },
         {
-          "heading": "Irpef",
-          "text": "Il secondo scaglione, con **aliquota al 33%**, arriva fino a **55 mila euro** (prima 50 mila). Il beneficio massimo è di circa **500 euro l'anno**."
+          "heading": "Il rialzo in discussione",
+          "text": "Lagarde ha detto che il consiglio ha **discusso** se un rialzo fosse appropriato, e ha scelto un approccio **misurato**. Le condizioni di finanziamento si sono irrigidite e, ha detto, l'inflazione probabilmente aumenterà."
         },
         {
-          "heading": "Pensioni",
-          "text": "Niente riforma generale: c'è un **fondo da 850 milioni** per l'uscita flessibile, con la cosiddetta **Quota 64** dal 2027. Un voucher di 300 euro va agli over 75 con pensione fino a 28 mila euro."
+          "heading": "Dicembre sul tavolo",
+          "text": "I mercati scommettono su un **rialzo a dicembre** al 2,75%: le stime vanno dall'**80% all'86%**, secondo le fonti. Anche la **Fed** americana ha tenuto i tassi fermi mercoledì."
         },
         {
-          "heading": "Chi paga",
-          "text": "Più di **5 miliardi** vengono dal settore finanziario, con un intervento sulla Tobin tax. Meloni ha detto di sperare che le banche non facciano ricorso. Sono escluse le Bcc e le banche popolari."
+          "heading": "L'addio di Lagarde",
+          "text": "**Lagarde** lascerà il **7 febbraio 2027**. Ha spiegato di volere più libertà di intervenire su temi che vanno oltre la politica monetaria. Il mandato sarebbe scaduto nel 2027, più tardi."
         },
         {
-          "heading": "E la Fed",
-          "text": "Mercoledì sera la **Fed** ha lasciato i tassi a **3,75%-4%** con un voto **10 a 2**: Lisa Cook e Beth Hammack volevano un rialzo. Warsh non ha dato indicazioni su dicembre; la prossima riunione è il 9."
+          "heading": "I conti delle big tech",
+          "text": "Intanto i risultati: **Microsoft** ha visto Azure crescere del **48%** e il titolo salire di circa 4%. **Alphabet** ha avuto flusso di cassa negativo di circa 9 miliardi, e il titolo ha perso circa il 9-10% dopo la chiusura. **Amazon** ha visto AWS crescere del **39%**, ma l'utile per azione ha mancato le attese e il titolo è sceso di circa il 6-10%."
         }
       ],
       "keyPoints": [
-        "Cdm approva la manovra: circa 26 miliardi, aliquota 33% fino a 55 mila euro",
-        "Fondo da 850 milioni per l'uscita flessibile e più di 5 miliardi dalla finanza",
-        "La Fed tiene i tassi al 3,75%-4% con due voti per il rialzo"
+        "Bce ferma, tasso sui depositi al 2,50%, voto unanime",
+        "Mercati: 80-86% di probabilità di un rialzo a dicembre",
+        "Lagarde lascia il 7 febbraio 2027; AWS cresce del 39% ma Amazon cala"
       ],
-      "whyItMatters": "La manovra decide **quanto resta in busta paga**, le regole per andare in pensione e chi paga di più. Il testo ora cambia in Parlamento: le cifre di oggi possono non essere quelle finali.",
-      "actionToday": "Prendi la tua **retribuzione annua lorda** e controlla se supera i **50 mila euro**. Se sì, il beneficio massimo è di circa 500 euro l'anno; se no, cerca **quale altra misura** ti riguarda.",
+      "whyItMatters": "I tassi della Bce muovono **mutui a tasso variabile, prestiti e rendimenti dei conti deposito**. Un rialzo a dicembre renderebbe il denaro più caro e potrebbe frenare la crescita.",
+      "actionToday": "Guarda il tuo eventuale **mutuo o prestito a tasso variabile**: calcola di quanto cambia la rata se il tasso sale di **0,25 punti**. Se non ne hai, guarda quanto rende il tuo conto deposito.",
       "checklist": [],
-      "eli5": "È la lista della spesa di una famiglia numerosa: il governo decide cosa comprare e chi paga di più, ma il Parlamento può ancora cambiare la lista.",
+      "eli5": "La Bce è come chi regola il rubinetto del denaro in tutta l'area euro: più apre il rubinetto, più prestiti e spesa; più lo chiude, più rallentano i prezzi ma anche la crescita.",
       "deepDive": [
         {
-          "title": "Cos'è un'aliquota marginale",
-          "text": "Con l'Irpef si pagano aliquote diverse **per fasce di reddito**: l'aliquota più alta si applica solo alla parte che supera la soglia. Alzare la soglia del 33% da 50 a 55 mila euro riguarda quindi **solo chi guadagna più di 50 mila euro**."
+          "title": "Tre tassi, uno guida tutti",
+          "text": "La Bce fissa tre tassi. Il **tasso sui depositi**, oggi 2,50%, è quello che guida i mercati ed è il riferimento nelle notizie. Gli altri due sono i tassi a cui le banche prendono a prestito."
         },
         {
-          "title": "Cosa succede ora",
-          "text": "Il disegno di legge va in Parlamento, dove **Camera e Senato** possono modificarlo con emendamenti. Deve essere approvato entro la fine dell'anno, per evitare l'esercizio provvisorio."
+          "title": "Il motivo dichiarato",
+          "text": "Lagarde ha detto di voler avere **più libertà di intervenire** su temi più ampi della politica monetaria. È la **sua spiegazione**: le motivazioni non sono state verificate da fonti indipendenti."
         }
       ],
       "glossary": [
         {
-          "term": "legge di bilancio",
-          "meaning": "La legge annuale con cui lo Stato decide entrate e spese dell'anno successivo."
+          "term": "tasso sui depositi",
+          "meaning": "Il tasso che la Bce paga alle banche che le lasciano soldi in deposito; è il riferimento principale della politica monetaria."
         },
         {
-          "term": "aliquota",
-          "meaning": "La percentuale di imposta applicata a una fascia di reddito."
+          "term": "unanimità",
+          "meaning": "Una decisione presa con il voto favorevole di tutti i membri."
         },
         {
-          "term": "Tobin tax",
-          "meaning": "Un'imposta sulle transazioni finanziarie."
+          "term": "flusso di cassa",
+          "meaning": "Il denaro che entra ed esce da un'azienda in un periodo."
         }
       ],
       "sources": [
         {
-          "title": "Euronews — Manovra 2027, nel Ddl scaglione Irpef al 33% fino a 55mila euro",
-          "url": "https://it.euronews.com/2026/10/28/manovra-2027-il-consiglio-dei-ministri-approva-il-disegno-di-legge-di-bilancio"
+          "title": "ANSA — La Bce si ferma sui tassi, in bilico il rialzo di dicembre",
+          "url": "https://www.ansa.it/sito/notizie/economia/2026/10/29/la-bce-si-ferma-sui-tassi-in-bilico-il-rialzo-di-dicembre_fff36f02-6e9c-4e87-af42-4776abe0acc8.html"
         },
         {
-          "title": "Sky TG24 — Manovra finanziaria 2027, ok del Cdm: le novità",
-          "url": "https://tg24.sky.it/economia/2026/10/28/manovra-finanziaria-2027"
+          "title": "Sky TG24 — Tassi Bce invariati al 2,50%. Lagarde: Probabile che inflazione aumenterà",
+          "url": "https://tg24.sky.it/economia/2026/10/29/tassi-bce-lagarde-oggi"
         },
         {
-          "title": "Today — Manovra 2027 approvata: tutte le misure",
-          "url": "https://www.today.it/economia/manovra-2027-misure-irpef-bollo-auto-affitti-meloni-ultime-notizie.html"
+          "title": "Altroconsumo — BCE: tassi fermi, rialzo a dicembre e dimissioni anticipate di Lagarde",
+          "url": "https://www.altroconsumo.it/investi/investire/mercati-e-valute/news/2026/10/bce-riunione-29-ottobre"
         },
         {
-          "title": "CNBC — Fed interest rate decision October 2026: Fed holds rates steady",
-          "url": "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html"
+          "title": "GeekWire — AWS growth hits 39%, its fastest in nearly five years, as Amazon misses on earnings",
+          "url": "https://www.geekwire.com/2026/aws-growth-hits-39-its-fastest-in-nearly-five-years-as-amazon-misses-on-earnings/"
         },
         {
-          "title": "Axios — Fed leaves rates steady as governor Lisa Cook dissents",
-          "url": "https://www.axios.com/2026/10/28/fed-warsh-interest-rates-cook"
+          "title": "SiliconANGLE — Microsoft's stock rises on solid earnings and revenue beat, with Azure growing 48%",
+          "url": "https://siliconangle.com/2026/10/28/microsofts-stock-rises-on-solid-earnings-and-revenue-beat-with-azure-growing-48/"
         }
       ],
       "readingMinutes": 3,
       "quiz": [
         {
-          "q": "Chi guadagna 40 mila euro lordi beneficia dell'allargamento dello scaglione al 33% fino a 55 mila?",
+          "q": "Che cosa ha deciso la Bce giovedì?",
           "options": [
-            "Sì, di 500 euro",
-            "No: riguarda la parte di reddito tra 50 e 55 mila euro",
-            "Sì, di 5 mila euro",
-            "Dipende dalla Fed"
+            "Di alzare i tassi di 0,25 punti",
+            "Di lasciare invariato il tasso sui depositi al 2,50%",
+            "Di abbassare i tassi",
+            "Di chiudere la riunione senza decidere"
           ],
           "answer": 1,
-          "explanation": "L'aliquota più alta si applica solo alla quota che supera la soglia: chi sta sotto i 50 mila non cambia."
+          "explanation": "La Bce ha tenuto fermi i tassi, con voto unanime, discutendo però un rialzo."
         },
         {
-          "q": "Che cosa significa che la Fed ha votato 10 a 2?",
+          "q": "Perché una Bce che alza i tassi può rallentare l'inflazione?",
           "options": [
-            "Che 10 membri hanno scelto di tenere i tassi e 2 volevano alzarli",
-            "Che i tassi sono saliti del 10%",
-            "Che la riunione è durata 10 ore",
-            "Che la Fed ha 2 sedi"
+            "Perché il denaro costa di più e si spende meno",
+            "Perché stampa meno banconote",
+            "Perché abbassa i salari per legge",
+            "Perché ferma le banche"
           ],
           "answer": 0,
-          "explanation": "La maggioranza ha tenuto i tassi fermi; due membri avrebbero preferito un rialzo."
+          "explanation": "Con prestiti più cari famiglie e imprese spendono meno, e la pressione sui prezzi cala."
         }
       ],
-      "reflection": "Se potessi scegliere una sola misura di una manovra da finanziare, quale sceglieresti e chi dovrebbe pagarla?",
-      "id": "2026-10-29-finanza",
+      "reflection": "Se la rata del tuo debito salisse, o il tuo deposito rendesse di più, che cosa cambieresti nelle tue scelte di spesa e risparmio?",
+      "id": "2026-10-30-finanza",
       "label": "Finanza"
     },
     {
       "category": "mondo",
       "interests": [
-        "geopolitica",
         "politica",
+        "geopolitica",
         "storia"
       ],
-      "title": "Israele, spoglio finito: Netanyahu 53 seggi, Eisenkot 48, nessuna maggioranza",
-      "subtitle": "I partiti arabi pesano 17-19 seggi e il presidente Herzog punta a un governo di unità nazionale; il risultato è ufficiale il 4 novembre",
-      "summary": "Lo spoglio ha confermato lo **stallo**: il blocco di **Netanyahu** ha **53 seggi**, quello di **Eisenkot 48**, e i partiti arabi 17-19 secondo le fonti. Per governare ne servono **61**; i voti in busta doppia possono ancora spostare qualcosa.",
+      "title": "Midterm Usa del 3 novembre: i Democratici favoriti alla Camera, Senato in bilico",
+      "subtitle": "Camera a 218-214 per i Repubblicani, Senato 53-47: i sondaggi sono favorevoli ai Democratici, ma con cautela",
+      "summary": "Il **3 novembre** gli americani votano per rinnovare la **Camera** e un terzo del **Senato**. Le previsioni danno i **Democratici** favoriti alla Camera, mentre il Senato è **più incerto**. I sondaggi hanno sbagliato in passato.",
       "stat": {
-        "value": "53 / 48",
-        "label": "seggi dei blocchi di Netanyahu e di Eisenkot, su 120; ne servono 61"
+        "value": "3 novembre",
+        "label": "data delle elezioni di metà mandato negli Stati Uniti"
       },
       "sections": [
         {
-          "heading": "Il verdetto",
-          "text": "A spoglio concluso, secondo i giornali italiani, il blocco di Netanyahu ottiene **53 seggi** e quello di Eisenkot **48**. Nessuno arriva a **61**."
+          "heading": "Cosa si vota",
+          "text": "Si rinnovano tutti i **435 seggi della Camera** e circa un terzo del **Senato**. Oggi la Camera è a **218-214** per i Repubblicani e il Senato a **53-47**."
         },
         {
-          "heading": "Il confronto con il 2022",
-          "text": "Il blocco di Netanyahu **perde** rispetto ai 64 del 2022. Il Likud resta primo partito ma scende da 32 a **24 deputati**."
+          "heading": "Le previsioni",
+          "text": "Le previsioni danno i **Democratici** favoriti alla Camera: una stima parla di **86%** di probabilità, i mercati di scommesse oltre il **90%**. Per il Senato le stime sono tra il **58% e l'82%**, a seconda della fonte."
         },
         {
-          "heading": "I partiti arabi",
-          "text": "I partiti arabi salgono da 10 a circa **19** seggi, ma una fonte ne dà **17**: il numero va verificato. Sono loro l'ago della bilancia."
+          "heading": "I sondaggi",
+          "text": "Nel sondaggio NPR/Marist i Democratici hanno **10 punti** di vantaggio tra gli elettori registrati sulla scheda generica. Nelle corse per il Senato, CNN dà in vantaggio i Democratici in **Texas, Maine e Michigan**."
         },
         {
-          "heading": "Le prossime mosse",
-          "text": "Secondo le cronache, il presidente **Herzog** vedrà Netanyahu ed Eisenkot per proporre un **governo di unità nazionale**. Netanyahu ha parlato di elezioni «rubate dai partiti arabi»: è una sua accusa, non un fatto verificato."
+          "heading": "Perché si perde a metà mandato",
+          "text": "Secondo Cook Political Report, il partito del presidente ha perso seggi alla Camera in **18 delle 20** elezioni di metà mandato dal dopoguerra. Le eccezioni sono il **1998** e il **2002**."
         },
         {
-          "heading": "Quando è ufficiale",
-          "text": "I **voti in busta doppia** di militari e diplomatici sono contati per ultimi. Il risultato ufficiale è atteso per il **4 novembre**."
+          "heading": "La cautela",
+          "text": "I sondaggi hanno **sbagliato più volte** di recente, e i risultati possono arrivare lentamente. Le percentuali di oggi non sono un risultato."
         }
       ],
       "keyPoints": [
-        "Blocco di Netanyahu 53 seggi, blocco di Eisenkot 48: nessuna maggioranza a 61",
-        "Partiti arabi a 17-19 seggi, decisivi per qualunque coalizione",
-        "Herzog propone un governo di unità; risultati ufficiali il 4 novembre"
+        "Voto di metà mandato il 3 novembre: Camera e un terzo del Senato",
+        "Democratici favoriti alla Camera, Senato più incerto",
+        "Il partito del presidente ha perso seggi in 18 midterm su 20 dal dopoguerra"
       ],
-      "whyItMatters": "Senza maggioranza, la **guerra, le tregue e i rapporti con Stati Uniti e paesi arabi** restano nelle mani di un governo che non c'è. Settimane di trattative possono portare a un'**unità nazionale** o a nuove elezioni.",
-      "actionToday": "Fra una settimana, cerca il **risultato ufficiale del 4 novembre** e confrontalo con i dati di oggi: **quanti seggi sono cambiati** dopo le buste doppie? Segna la differenza.",
+      "whyItMatters": "Chi controlla Camera e Senato decide **leggi, bilancio e nomine** negli Stati Uniti, e quindi anche politiche su commercio, dazi e alleanze che toccano l'Europa.",
+      "actionToday": "Segna sul calendario il **3 novembre** e scrivi **tre cose** che vorresti controllare nei risultati: quale partito vince la Camera, i seggi del Senato e le tre corse più vicine.",
       "checklist": [],
-      "eli5": "Due squadre hanno quasi gli stessi punti e nessuna vince da sola il campionato: per decidere chi comanda, devono mettersi d'accordo con chi ha i voti che mancano.",
+      "eli5": "È come un esame a metà anno: a metà del suo mandato il presidente riceve un voto dagli elettori, che quasi sempre è meno generoso di quello iniziale.",
       "deepDive": [
         {
-          "title": "Cos'è un governo di unità nazionale",
-          "text": "È un governo formato da **partiti che di solito sono avversari**, per superare uno stallo o un'emergenza. I partiti si dividono i ministeri e i temi su cui non fanno scontro."
+          "title": "Perché le midterm sono diverse",
+          "text": "Non si vota il presidente, ma il **Congresso**. Spesso il partito all'opposizione è più motivato a votare, e per questo di solito guadagna terreno."
         },
         {
-          "title": "Perché le buste doppie arrivano dopo",
-          "text": "Sono i voti di **soldati, diplomatici e detenuti** che non votano nel proprio seggio. Vanno verificati uno a uno, quindi si contano dopo. Possono spostare uno o due seggi, che con blocchi così vicini contano molto."
+          "title": "Come si legge una previsione",
+          "text": "Una probabilità di **86%** non è una certezza: vuol dire che in 100 elezioni simili il partito ne vincerebbe 86. Il 14% restante si realizza, e ogni tanto succede."
         }
       ],
       "glossary": [
         {
-          "term": "stallo",
-          "meaning": "Una situazione in cui nessuno schieramento ha la maggioranza per governare."
+          "term": "midterm",
+          "meaning": "Le elezioni di metà mandato presidenziale, in cui si rinnovano la Camera e un terzo del Senato."
         },
         {
-          "term": "governo di unità nazionale",
-          "meaning": "Un governo formato da partiti avversari per uscire da uno stallo."
+          "term": "scheda generica",
+          "meaning": "Un sondaggio che chiede per quale partito si voterebbe al Congresso, senza nomi di candidati."
         },
         {
-          "term": "Knesset",
-          "meaning": "Il parlamento israeliano, con 120 seggi."
+          "term": "toss-up",
+          "meaning": "Una corsa elettorale così incerta che nessun candidato è favorito."
         }
       ],
       "sources": [
         {
-          "title": "Il Sole 24 Ore — Elezioni in Israele, finito lo spoglio: Netanyahu 53 seggi, Eisenkot 48",
-          "url": "https://www.ilsole24ore.com/art/elezioni-israele-meta-seggi-scrutinati-likud-testa-il-2081percento-AJZN3SwB"
+          "title": "NPR — These are the House races to watch in the 2026 midterm election on Nov. 3",
+          "url": "https://www.npr.org/2026/10/29/nx-s1-6020921/2026-house-map-democrats-flip-republicans-tossup-triage"
         },
         {
-          "title": "Il Gazzettino — Elezioni Israele, spoglio finito: al blocco Netanyahu 53 seggi, Eisenkot 48",
-          "url": "https://www.ilgazzettino.it/esteri/elezioni_israele_2026_risultati_diretta_netanyahu-9853826.html"
+          "title": "CNN — New polls have more good news for Democrats' Senate hopes",
+          "url": "https://www.cnn.com/2026/10/28/politics/polls-democrats-midterms-senate"
         },
         {
-          "title": "Fanpage — Elezioni Israele 2026, i risultati in diretta",
-          "url": "https://www.fanpage.it/live/elezioni-israele-risultati-diretta-28-ottobre-eisenkot-netanyahu-sfida/"
+          "title": "Forbes — Hottest 2026 Midterm Races",
+          "url": "https://www.forbes.com/sites/saradorn/2026/10/29/latest-polls-in-2026-midterms-democrats-lead-in-texas-maine-michigan-kansas-new-hampshire/"
         },
         {
-          "title": "Il Fatto Quotidiano — Elezioni in Israele: lo scrutinio e i risultati",
-          "url": "https://www.ilfattoquotidiano.it/mondo/live-post/2026/10/28/israele-elezioni-risultati-ultime-notizie/8552182/"
+          "title": "Cook Political Report — Republicans, is it about environment or exposure",
+          "url": "https://www.cookpolitical.com/analysis/national/national-politics/republicans-it-about-environment-or-exposure"
         }
       ],
       "readingMinutes": 3,
       "quiz": [
         {
-          "q": "Perché i partiti arabi sono decisivi?",
+          "q": "Che cosa si rinnova alle elezioni di metà mandato?",
           "options": [
-            "Perché sono il primo partito",
-            "Perché nessun blocco arriva a 61 senza di loro",
-            "Perché scelgono il presidente",
-            "Perché contano i voti all'estero"
+            "Il presidente",
+            "La Camera e circa un terzo del Senato",
+            "Solo i governatori",
+            "La Corte suprema"
           ],
           "answer": 1,
-          "explanation": "Con 53 e 48 seggi, nessuno dei due blocchi ha la maggioranza: i seggi dei partiti arabi fanno la differenza."
+          "explanation": "Si rinnovano tutti i seggi della Camera e circa un terzo del Senato."
         },
         {
-          "q": "Che cos'è un governo di unità nazionale?",
+          "q": "Che cosa significa una probabilità del 86%?",
           "options": [
-            "Un governo di un solo partito",
-            "Un governo di partiti avversari per uscire da uno stallo",
-            "Un governo militare",
-            "Un governo senza ministri"
+            "Che il partito vincerà sicuramente",
+            "Che in 100 elezioni simili ne vincerebbe circa 86",
+            "Che prenderà l'86% dei voti",
+            "Che i sondaggi sono perfetti"
           ],
           "answer": 1,
-          "explanation": "Partiti che di solito si oppongono governano insieme per superare lo stallo."
+          "explanation": "È una probabilità, non una certezza: nel restante 14% dei casi l'esito è diverso."
         }
       ],
-      "reflection": "Quando nessuno ha la maggioranza, cosa conta di più: i programmi o la disponibilità a cedere qualcosa?",
-      "id": "2026-10-29-mondo",
+      "reflection": "Quando leggi una previsione elettorale, che cosa ti ricordi per non scambiarla con un risultato?",
+      "id": "2026-10-30-mondo",
       "label": "Mondo"
     },
     {
       "category": "sapere",
       "interests": [
+        "produttivita",
         "crescita",
-        "psicologia",
         "lavoro",
-        "salute"
+        "psicologia"
       ],
-      "title": "La dicotomia del controllo: cosa dipende da te e cosa no",
-      "subtitle": "Il primo principio dello stoico Epitteto, per decidere dove mettere energia e dove lasciar perdere",
-      "summary": "Epitteto apre il suo **Manuale** con una distinzione: alcune cose **dipendono da noi**, altre **no**. Dividerle prima di agire aiuta a non sprecare energie su ciò che non puoi cambiare.",
+      "title": "La legge di Parkinson: il lavoro si allarga fino al tempo che hai",
+      "subtitle": "Perché una scadenza lunga rende i compiti più lunghi e come usare il tempo a tuo favore",
+      "summary": "La **legge di Parkinson** dice che il lavoro **si dilata** fino a riempire il tempo disponibile. Una scadenza lunga non rende un compito migliore: spesso lo rende solo più lungo.",
       "stat": null,
       "sections": [
         {
-          "heading": "Il principio",
-          "text": "Nel *Manuale* (Enchiridion), compilato da Arriano dalle lezioni di **Epitteto**, la prima idea è questa: alcune cose sono **in nostro potere**, altre **no**."
+          "heading": "Da dove viene",
+          "text": "La frase viene da un articolo satirico di **Cyril Northcote Parkinson**, pubblicato sull'*Economist* nel **1955**. Parlava della burocrazia, ma l'idea si applica a ogni lavoro."
         },
         {
-          "heading": "Cosa dipende da noi",
-          "text": "Per Epitteto dipendono da noi **giudizi, impulsi, desideri e avversioni**: cioè le nostre scelte e il modo in cui interpretiamo le cose."
+          "heading": "Cosa dice",
+          "text": "Se hai una settimana per scrivere una mail, la mail occuperà una settimana: la preparazione, i dubbi e le correzioni si **allargano** fino alla scadenza."
         },
         {
-          "heading": "Cosa non dipende da noi",
-          "text": "Non dipendono da noi **corpo, beni, reputazione e cariche pubbliche**. Si può agire su queste cose, ma il risultato non è garantito."
+          "heading": "Perché succede",
+          "text": "Con tempo in abbondanza è facile **rimandare**, aggiungere dettagli inutili e rifare cose già buone. La scadenza vicina obbliga a scegliere cosa conta."
         },
         {
-          "heading": "Un esempio",
-          "text": "Prepari un colloquio. Dipende da te **quanto ti prepari e come rispondi**; non dipende da te **quale altro candidato arriva** o come sta il selezionatore."
+          "heading": "Come usarla",
+          "text": "Dai a ogni compito un **tempo più corto** del necessario, come **25 o 45 minuti**. Inizia, e alla fine decidi cosa manca davvero."
         },
         {
-          "heading": "Un'obiezione",
-          "text": "Spesso il controllo è **parziale**: la distinzione non è netta. Un buon uso è dividere un problema nei suoi passaggi e chiedersi, per ognuno, **quanto dipende da me**."
+          "heading": "Il limite",
+          "text": "Non è una legge scientifica. Accorciare troppo i tempi su lavori complessi porta a errori: serve per compiti **chiari**, non per quelli che richiedono ricerca."
         }
       ],
       "keyPoints": [
-        "Epitteto separa ciò che dipende da noi da ciò che non dipende da noi",
-        "Dipendono da noi giudizi e scelte; non dipendono corpo, beni, reputazione",
-        "Il controllo è spesso parziale: si divide il problema in passaggi"
+        "Il lavoro tende a riempire il tempo che gli concedi",
+        "Una scadenza più corta obbliga a scegliere cosa conta",
+        "Non vale per i compiti complessi o di ricerca"
       ],
-      "whyItMatters": "Ti aiuta a **decidere dove mettere l'energia** e a ridurre l'ansia per cose che non puoi cambiare. Funziona sul lavoro, nelle relazioni e nelle notizie che ti preoccupano.",
-      "actionToday": "Scegli **una preoccupazione di oggi** e scrivi due colonne: **dipende da me** e **non dipende da me**. Poi scegli **una sola azione** della prima colonna, da fare entro stasera.",
+      "whyItMatters": "Ti aiuta a **finire prima** compiti piccoli e ripetitivi e a ritrovare tempo per quelli importanti. Funziona anche sul lavoro d'ufficio, dove le attività sono spesso rimandabili.",
+      "actionToday": "Scegli **un compito di oggi**, scrivi quanto pensi che serva, poi **taglia il tempo di un terzo** e metti un timer. Alla fine annota se il risultato è peggiorato.",
       "checklist": [],
-      "eli5": "È come una partita a carte: non scegli le carte che ti arrivano, ma come le giochi sì.",
+      "eli5": "È come lo zaino: se hai uno zaino enorme, lo riempi di cose in più; se è piccolo, porti solo l'essenziale.",
       "deepDive": [
         {
-          "title": "Stoicismo non vuol dire non sentire",
-          "text": "Il punto non è reprimere le emozioni, ma **non farsi guidare** da ciò che non si può cambiare. Prima si riconosce l'emozione, poi si sceglie su cosa agire."
+          "title": "Parkinson era ironico",
+          "text": "L'articolo originale era una **satira** sull'amministrazione britannica: i funzionari aumentavano di numero anche quando il lavoro diminuiva. La versione sul tempo è diventata famosa dopo."
         },
         {
-          "title": "Le traduzioni cambiano",
-          "text": "L'elenco dipende dalla traduzione: una versione parla di giudizio, impulso e desiderio, un'altra di **giudizio, motivazione, desiderio e avversione**. L'idea di fondo resta la stessa."
+          "title": "Collegata ad altre idee",
+          "text": "Somiglia all'idea di **timeboxing**, cioè dare a un compito un blocco di tempo fisso, e alla tecnica del pomodoro: lavori in blocchi corti con una fine chiara."
         }
       ],
       "glossary": [
         {
-          "term": "stoicismo",
-          "meaning": "Una scuola filosofica antica che propone di concentrarsi su ciò che dipende da noi."
+          "term": "legge di Parkinson",
+          "meaning": "L'idea che un lavoro si dilati fino a occupare tutto il tempo disponibile."
         },
         {
-          "term": "dicotomia",
-          "meaning": "Una divisione in due parti distinte."
+          "term": "timeboxing",
+          "meaning": "Dare a un compito un blocco di tempo fisso e fermarsi allo scadere."
         }
       ],
       "sources": [
         {
-          "title": "Living Stoicism — What is controlling what?",
-          "url": "https://livingstoicism.com/2023/05/13/what-is-controlling-what/"
+          "title": "Wikipedia — Parkinson's law",
+          "url": "https://en.wikipedia.org/wiki/Parkinson%27s_law"
         },
         {
-          "title": "Gregory Sadler — What Epictetus Really Thinks Is In Our Power Or Control",
-          "url": "https://gregorybsadler.substack.com/p/what-epictetus-really-thinks-is-in"
+          "title": "Wikipedia — C. Northcote Parkinson",
+          "url": "https://en.wikipedia.org/wiki/C._Northcote_Parkinson"
+        },
+        {
+          "title": "World Economic Forum — This is why work will always fill up your time",
+          "url": "https://weforum.org/agenda/2015/11/this-is-why-work-will-always-fill-up-your-time"
         }
       ],
       "readingMinutes": 3,
       "quiz": [
         {
-          "q": "Quale di queste cose, per Epitteto, dipende da noi?",
+          "q": "Che cosa dice la legge di Parkinson?",
           "options": [
-            "La reputazione",
-            "Il giudizio e le scelte",
-            "Il corpo",
-            "I beni"
-          ],
-          "answer": 1,
-          "explanation": "Giudizi e scelte sono nostri; corpo, beni e reputazione non dipendono solo da noi."
-        },
-        {
-          "q": "Perché conviene dividere un problema in passaggi?",
-          "options": [
-            "Perché il controllo è spesso parziale e passaggi diversi dipendono da noi in misura diversa",
-            "Perché così è più lungo",
-            "Perché gli stoici non agiscono",
-            "Perché nessun passaggio dipende da noi"
+            "Il lavoro si dilata fino al tempo disponibile",
+            "Ogni lavoro si fa meglio con più tempo",
+            "I capi lavorano meno",
+            "Le mail si scrivono da sole"
           ],
           "answer": 0,
-          "explanation": "Spesso un problema ha parti in nostro controllo e parti no: separarle indica dove agire."
+          "explanation": "Con più tempo a disposizione, il lavoro tende a occuparlo tutto."
+        },
+        {
+          "q": "In quale caso conviene non accorciare i tempi?",
+          "options": [
+            "In un compito semplice",
+            "In un lavoro complesso o di ricerca",
+            "In una mail breve",
+            "In una lista della spesa"
+          ],
+          "answer": 1,
+          "explanation": "Per compiti complessi, tempi troppo brevi portano a errori."
         }
       ],
-      "reflection": "Quale preoccupazione ti porti dietro da giorni che, guardata bene, è quasi tutta fuori dal tuo controllo?",
-      "id": "2026-10-29-sapere",
+      "reflection": "Quale compito ti prende più tempo di quanto servirebbe, solo perché hai una scadenza lontana?",
+      "id": "2026-10-30-sapere",
       "label": "Sapere"
     },
     {
       "category": "routine",
       "interests": [
-        "salute",
-        "psicologia",
         "crescita",
-        "produttivita"
+        "psicologia",
+        "produttivita",
+        "salute"
       ],
-      "title": "Il sospiro ciclico: 5 minuti di respiro per calmarti",
-      "subtitle": "Un doppio inspiro e una lunga espirazione: in uno studio di un mese ha migliorato l'umore più della meditazione",
-      "summary": "Il **sospiro ciclico** è un respiro con **due inspirazioni** e una **espirazione lunga**. In uno studio randomizzato di un mese, **5 minuti al giorno** hanno migliorato l'umore più della meditazione mindfulness.",
+      "title": "Se-allora: un piano in una frase per fare ciò che hai deciso",
+      "subtitle": "Le intenzioni di implementazione, studiate da Gollwitzer, aiutano a trasformare un obiettivo in un'azione",
+      "summary": "Una frase del tipo **\"Se succede X, allora faccio Y\"** aiuta a passare dall'intenzione all'azione. Una sintesi di **94 studi** (Gollwitzer e Sheeran, 2006) ha trovato un effetto **medio-grande** sul raggiungimento degli obiettivi.",
       "stat": {
-        "value": "5 minuti",
-        "label": "al giorno per un mese, nello studio di Balban e colleghi (2023)"
+        "value": "94 studi",
+        "label": "analizzati nella sintesi di Gollwitzer e Sheeran del 2006, con effetto d = 0,65"
       },
       "sections": [
         {
-          "heading": "Lo studio",
-          "text": "Nel **2023** un gruppo di ricercatori ha pubblicato su *Cell Reports Medicine* uno studio randomizzato di **un mese**. I partecipanti facevano **5 minuti al giorno** di una tecnica di respiro o di meditazione mindfulness."
+          "heading": "Il problema",
+          "text": "Spesso decidiamo di fare una cosa ma poi **non la facciamo**: non perché non vogliamo, ma perché non sappiamo quando e come iniziare."
         },
         {
-          "heading": "Il risultato",
-          "text": "Il **sospiro ciclico**, centrato sulla **espirazione lunga**, ha dato miglioramenti dell'umore e una riduzione della frequenza del respiro **maggiori** della meditazione. I dati venivano da un dispositivo da polso e da questionari."
+          "heading": "La soluzione",
+          "text": "Lo psicologo **Peter Gollwitzer** propone le **intenzioni di implementazione**: un piano che lega un **momento** o una situazione a una **azione precisa**. Per esempio: \"Se finisco la colazione, allora faccio 10 minuti di camminata\"."
         },
         {
-          "heading": "Come si fa",
-          "text": "Inspira dal naso, poi fai **un secondo piccolo inspiro** per riempire i polmoni. Espira piano dalla bocca, il più a lungo possibile. Ripeti per cinque minuti."
+          "heading": "Cosa dicono i dati",
+          "text": "Una sintesi del 2006 su **94 test** ha trovato un effetto **medio-grande** (d = 0,65) sul raggiungimento degli obiettivi. Il confronto era con chi si era dato un obiettivo ma non il piano."
         },
         {
-          "heading": "Perché può aiutare",
-          "text": "Un'espirazione lunga **rallenta il respiro**, e il corpo lo legge come segnale di calma. Gli autori lo descrivono come uno strumento **promettente**, non come una cura."
+          "heading": "Come scriverla",
+          "text": "Scegli **un segnale chiaro** (un orario, un luogo, un evento) e **una sola azione piccola**. Scrivi la frase e tienila dove la vedi."
         },
         {
           "heading": "I limiti",
-          "text": "Lo studio era **a distanza**, con misure in parte **dichiarate dai partecipanti**. Non sostituisce un aiuto per ansia forte o disturbi: se il disagio dura, parlane con un medico."
+          "text": "Il valore *d* è una misura statistica, non vuol dire che il 65% in più delle persone ce la faccia. Funziona meglio con obiettivi che vuoi davvero raggiungere."
         }
       ],
       "keyPoints": [
-        "Sospiro ciclico: doppio inspiro dal naso e lunga espirazione dalla bocca",
-        "5 minuti al giorno per un mese hanno migliorato l'umore più della mindfulness",
-        "Studio a distanza: promettente ma non è una cura"
+        "Formula: se (segnale) allora (azione piccola)",
+        "Una sintesi di 94 studi ha trovato un effetto medio-grande",
+        "Funziona con obiettivi che vuoi davvero e con segnali chiari"
       ],
-      "whyItMatters": "Hai sempre il respiro con te: è uno dei pochi strumenti per **calmarti in pochi minuti** senza app o attrezzi. Può aiutare prima di una riunione o quando senti la tensione salire.",
-      "actionToday": "Questa sera, prima di dormire o dopo una giornata pesante, fai **cinque minuti di sospiro ciclico** e scrivi in una riga **come ti senti** prima e dopo.",
+      "whyItMatters": "Rende più facile iniziare **senza dipendere dalla forza di volontà**: la decisione è già presa, a ogni segnale devi solo eseguire.",
+      "actionToday": "Scrivi **una frase se-allora** per un'abitudine che vuoi costruire. Mettila come promemoria sul telefono, con l'orario scelto.",
       "checklist": [
-        "Siediti comodo e appoggia la schiena",
-        "Inspira dal naso, poi fai un secondo piccolo inspiro",
-        "Espira lentamente dalla bocca, più a lungo che puoi",
-        "Ripeti per cinque minuti, con un timer",
-        "Scrivi in una riga come ti senti dopo"
+        "Scegli un obiettivo piccolo che vuoi davvero",
+        "Scegli un segnale chiaro (orario, luogo o evento)",
+        "Scrivi: Se [segnale], allora [azione]",
+        "Metti la frase dove la vedi ogni giorno",
+        "Dopo una settimana controlla quante volte l'hai fatta"
       ],
-      "eli5": "È come far uscire l'aria da un palloncino molto piano: più lenta esce, più il corpo capisce che può rilassarsi.",
+      "eli5": "È come mettere le scarpe da corsa accanto alla porta: quando le vedi, sai già cosa fare.",
       "deepDive": [
         {
-          "title": "Il doppio inspiro",
-          "text": "Secondo i ricercatori, il secondo inspiro potrebbe **riaprire gli alveoli**, le piccole sacche dei polmoni che tendono a chiudersi. È un’ipotesi sul meccanismo: lo studio misura soprattutto l’effetto sull’umore."
+          "title": "Perché funziona",
+          "text": "Il piano **delega la decisione** a un segnale. Quando il segnale arriva, l'azione parte quasi in automatico, senza dover scegliere ogni volta se farla."
         },
         {
-          "title": "Un'abitudine, non un trucco",
-          "text": "Nello studio la pratica era **quotidiana per un mese**. Cinque minuti fissi nello stesso momento della giornata sono più facili da mantenere di sessioni lunghe e rare."
+          "title": "Se-allora per gli ostacoli",
+          "text": "Si può usare anche per le difficoltà: \"Se mi viene voglia di rimandare, allora faccio solo 2 minuti\". Si chiama **piano per gli ostacoli**."
         }
       ],
       "glossary": [
         {
-          "term": "sospiro ciclico",
-          "meaning": "Un respiro con un doppio inspiro dal naso e una lunga espirazione dalla bocca."
+          "term": "intenzione di implementazione",
+          "meaning": "Un piano nella forma se-allora che lega un segnale a un'azione precisa."
         },
         {
-          "term": "studio randomizzato",
-          "meaning": "Uno studio in cui i partecipanti sono assegnati a caso a gruppi diversi, per confrontare i metodi."
+          "term": "effetto d",
+          "meaning": "Una misura statistica della differenza tra due gruppi: 0,65 indica un effetto medio-grande."
         }
       ],
       "sources": [
         {
-          "title": "Balban et al. (2023) — Brief structured respiration practices enhance mood and reduce physiological arousal, Cell Reports Medicine",
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/9873947/"
+          "title": "Gollwitzer & Sheeran (2006) — Implementation Intentions and Goal Achievement: A Meta-analysis of Effects and Processes",
+          "url": "https://kops.uni-konstanz.de/entities/publication/2e749bfb-8533-437c-8203-7e788c910c5f"
         },
         {
-          "title": "Stanford Healthcare — Brief structured respiration practices",
-          "url": "https://stanfordhealthcare.org/publications/867/867953.html"
+          "title": "Wieber, Thürmer, Gollwitzer (2015) — Promoting the translation of intentions into action by implementation intentions, Frontiers in Human Neuroscience",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4500900"
         }
       ],
       "readingMinutes": 3,
       "quiz": [
         {
-          "q": "Qual è la parte più importante del sospiro ciclico?",
+          "q": "Qual è la forma di un piano se-allora?",
           "options": [
-            "Trattenere il fiato a lungo",
-            "Un'espirazione lunga dopo un doppio inspiro",
-            "Respirare in fretta",
-            "Respirare solo con la bocca"
-          ],
-          "answer": 1,
-          "explanation": "Il doppio inspiro prepara una lunga espirazione, che rallenta il respiro."
-        },
-        {
-          "q": "Perché lo studio non basta per dire che sia una cura?",
-          "options": [
-            "Perché era a distanza e in parte autodichiarato",
-            "Perché durava un anno",
-            "Perché non c'era un confronto",
-            "Perché non ha dato risultati"
+            "Se succede X, allora faccio Y",
+            "Devo fare Y prima o poi",
+            "Farò Y quando ho voglia",
+            "Y è importante"
           ],
           "answer": 0,
-          "explanation": "Gli autori lo descrivono come promettente: le misure erano in parte dichiarate dai partecipanti."
+          "explanation": "Il piano lega un segnale preciso a un'azione precisa."
+        },
+        {
+          "q": "Che cosa non vuol dire d = 0,65?",
+          "options": [
+            "Un effetto medio-grande",
+            "Che il 65% in più di persone raggiunge l'obiettivo",
+            "Una differenza statistica",
+            "Che c'è un confronto tra gruppi"
+          ],
+          "answer": 1,
+          "explanation": "Il valore d è una misura statistica, non una percentuale di successo."
         }
       ],
-      "reflection": "In quale momento della giornata cinque minuti di respiro lento sarebbero più facili da inserire?",
-      "id": "2026-10-29-routine",
+      "reflection": "Quale cosa che rimandi da settimane potrebbe partire con una sola frase se-allora?",
+      "id": "2026-10-30-routine",
       "label": "Metodo & routine"
     }
   ],
@@ -572,790 +576,476 @@
     {
       "topic": "cucina",
       "kind": "news",
-      "title": "Gambero Rosso 2027: il Reale di Niko Romito prende 99 su 100, record della guida",
-      "subtitle": "Dietro, la Francescana di Bottura a 98 e Piazza Duomo di Crippa a 97; Ristorante dell'anno è un'osteria di un paese di 1.400 abitanti",
-      "summary": "Nella guida **Ristoranti d'Italia 2027** del Gambero Rosso il **Reale** di Niko Romito, a Castel di Sangro, ottiene **99 punti su 100**: il punteggio più alto mai dato dalla guida. Alle sue spalle ci sono Bottura e Crippa.",
+      "title": "Castagne 2026: raccolto in calo del 25% e prezzi all'origine quasi +65%",
+      "subtitle": "Il caldo estivo taglia la produzione, ma Coldiretti parla di qualità ottima; occhio all'etichetta d'origine",
+      "summary": "Secondo **Coldiretti** la raccolta di **castagne** 2026 è **-25%** per caldo e siccità. I prezzi all'origine sono saliti di circa **65%** sul 2025, secondo Ismea: da 2,13 a **3,50 euro al chilo**.",
       "stat": {
-        "value": "99/100",
-        "label": "punteggio del Reale di Niko Romito, il più alto mai assegnato dalla guida"
+        "value": "-25%",
+        "label": "produzione di castagne 2026 rispetto al 2025, stima Coldiretti"
       },
       "sections": [
         {
-          "heading": "Il record",
-          "text": "Il **Reale** di **Niko Romito** a Castel di Sangro, in Abruzzo, ottiene **99 punti**. È il voto più alto mai assegnato a un ristorante dalla guida del Gambero Rosso."
+          "heading": "Meno castagne",
+          "text": "Le prime stime di **Coldiretti** indicano una produzione in calo di circa il **25%** rispetto al 2025. La causa principale è il **caldo** e la siccità dell'estate. La qualità, dicono, è **ottima**."
         },
         {
-          "heading": "Il podio",
-          "text": "Al secondo posto l'**Osteria Francescana** di Massimo Bottura con **98**. Terzo **Piazza Duomo** di Enrico Crippa con **97**."
+          "heading": "Prezzi in salita",
+          "text": "Secondo **Ismea**, nella prima settimana di ottobre il prezzo all'origine era di **3,50 euro al chilo**, contro circa **2,13** dello stesso periodo del 2025: **+64,7%**. Un'altra fonte parla di +46%, perché la data di rilevazione cambia."
         },
         {
-          "heading": "Ristorante dell'anno",
-          "text": "Il premio **Ristorante dell'anno** va a un'**osteria** di un paese di circa **1.400 abitanti**. Il premio all'ospitalità è per Michela Scarello, di Agli Amici dal 1887 a Godia, in provincia di Udine."
+          "heading": "Italiane o importate",
+          "text": "Nel 2025 le importazioni hanno superato i **14 milioni di chili**, soprattutto da Turchia, Grecia, Portogallo e Spagna. Coldiretti invita a controllare **l'origine in etichetta**."
         },
         {
-          "heading": "Un dato da leggere bene",
-          "text": "I punti sono un voto della guida, non una classifica oggettiva. I premi diversi (cucina, ospitalità, ristorante dell'anno) misurano cose diverse."
+          "heading": "Un settore di montagna",
+          "text": "L'Italia è il primo produttore europeo, con circa **40 mila ettari**. Oltre il **60%** della raccolta resta manuale, con difficoltà di manodopera in montagna."
         }
       ],
       "keyPoints": [
-        "Il Reale di Niko Romito: 99/100, record della guida",
-        "Francescana 98, Piazza Duomo 97",
-        "Ristorante dell'anno è un'osteria di un paese di 1.400 abitanti"
+        "Raccolto di castagne 2026 in calo del 25% per il caldo",
+        "Prezzi all'origine +65% secondo Ismea (3,50 euro al chilo)",
+        "Controlla l'etichetta: molte castagne sono importate"
       ],
-      "whyItMatters": "Le guide orientano **dove si mangia bene** e dove va il turismo gastronomico. Un record come questo porta attenzione su un territorio lontano dalle grandi città.",
-      "actionToday": "Apri la guida e cerca **un ristorante a meno di un'ora da casa** con un buon punteggio e un prezzo che ti va bene: segnalo per un'occasione futura.",
+      "whyItMatters": "Il clima cambia **cosa trovi al mercato e quanto costa**. Le castagne sono un esempio: un'estate calda si vede sul prezzo all'autunno.",
+      "actionToday": "Al prossimo acquisto di castagne controlla **origine e prezzo al chilo**, e confronta una confezione italiana con una importata.",
       "checklist": [],
-      "eli5": "È come la pagella dei ristoranti: più alto è il voto, più la guida pensa che valga il viaggio.",
+      "eli5": "Se un campo produce meno frutti, ce ne sono meno da vendere e chi li vuole è disposto a pagare di più.",
       "deepDive": [
         {
-          "title": "Come si legge una guida",
-          "text": "Il **punteggio** dice quanto piace un posto agli ispettori; non dice se piacerà a te o se è adatto a una cena tra amici. Conta anche il **prezzo**, la distanza e l'occasione."
+          "title": "Perché il caldo incide",
+          "text": "Il castagno ha bisogno di **acqua nei mesi di crescita del frutto**. Con siccità e caldo i ricci si formano ma le castagne restano più piccole o meno numerose."
         }
       ],
       "glossary": [
         {
-          "term": "Tre Forchette",
-          "meaning": "Il massimo riconoscimento della guida Ristoranti d'Italia del Gambero Rosso."
+          "term": "prezzo all'origine",
+          "meaning": "Il prezzo a cui il produttore vende, prima dei passaggi fino al negozio."
         },
         {
-          "term": "guida",
-          "meaning": "Un libro o sito che valuta i ristoranti con giudizi e punteggi."
+          "term": "Ismea",
+          "meaning": "L'istituto che raccoglie i dati sui prezzi e i mercati agricoli in Italia."
         }
       ],
       "sources": [
         {
-          "title": "Affaritaliani — Niko Romito, il Reale è il miglior ristorante d'Italia con il punteggio più alto mai assegnato",
-          "url": "https://www.affaritaliani.it/economia/niko-romito-ecco-perche-il-reale-e-oggi-il-miglior-ristorante-ditalia-con-il-punteggio-piu-alto-mai-assegnato.html"
+          "title": "QuiFinanza — Prezzi castagne 2026, raccolto in calo del 25% e rincari del 46%",
+          "url": "https://quifinanza.it/lifestyle/food-economy/castagne-prezzi-2026/1019869/"
         },
         {
-          "title": "FIRSTonline — Un'osteria di un paesino di 1400 abitanti eletta Ristorante dell'anno dalla Guida del Gambero Rosso 2027",
-          "url": "https://www.firstonline.info/unosteria-di-un-paesino-di-1400-abitanti-eletta-ristorante-dellanno-dalla-guida-del-gambero-rosso-2027-niko-romito-con-il-suo-reale-al-vertice-delle-tre-forchette-scalza-dal-podio-b/"
+          "title": "Adnkronos Prometeo — Castagne, raccolti in calo (-25%) e prezzi alle stelle (+65%)",
+          "url": "https://prometeo.adnkronos.com/territorio/raccolta-castagne-2026-effetti-cambiamento-climatico-prezzi/"
         },
         {
-          "title": "HorecaNews — Dalla cucina all'accoglienza, un tour fra ristoranti premiati dal Gambero Rosso",
-          "url": "https://horecanews.it/dalla-cucina-allaccoglienza-un-tour-fra-ristoranti-premiati-dal-gambero-rosso"
+          "title": "Agricolae — Coldiretti, al via la raccolta delle castagne, clima taglia 25% produzione ma qualità ottima",
+          "url": "https://agricolae.eu/consumi-coldiretti-al-via-la-raccolta-della-castagne-clima-taglia-25-produzione-ma-qualita-ottima/"
         }
       ],
       "readingMinutes": 2,
       "quiz": [
         {
-          "q": "Che cosa significa 99/100 per il Reale?",
+          "q": "Perché le percentuali di rincaro cambiano tra le fonti?",
           "options": [
-            "Un voto della guida, il più alto mai dato",
-            "Il prezzo del menu",
-            "Il numero dei coperti",
-            "Il numero di stelle Michelin"
+            "Perché cambia la data di rilevazione",
+            "Perché le castagne cambiano nome",
+            "Perché Ismea sbaglia",
+            "Perché i prezzi sono fissi"
           ],
           "answer": 0,
-          "explanation": "È un punteggio della guida del Gambero Rosso, non una classifica oggettiva."
+          "explanation": "Dato che i prezzi cambiano di settimana in settimana, +46% e +65% dipendono dalla data presa a confronto."
         }
       ],
-      "reflection": "Quanto conta per te il voto di una guida rispetto al consiglio di qualcuno che conosci?",
-      "id": "2026-10-29-x-cucina-news",
+      "reflection": "Quando un prodotto costa di più, controlli da dove arriva prima di decidere se comprarlo?",
+      "id": "2026-10-30-x-cucina-news",
       "category": "routine",
       "label": "Cucina"
     },
     {
       "topic": "cucina",
       "kind": "spunto",
-      "title": "Tostare le spezie a secco: un minuto che cambia un piatto",
-      "subtitle": "Una padella asciutta fa uscire gli aromi di cumino, coriandolo e semi",
-      "summary": "Scaldare le spezie intere in una **padella asciutta** per un minuto ne fa uscire gli **aromi**. Poi si macinano e si usano: il piatto avrà un profumo più intenso.",
+      "title": "Caldarroste in forno: il taglio sulla buccia che evita gli scoppi",
+      "subtitle": "Un'incisione e dieci minuti di ammollo per castagne più morbide da sbucciare",
+      "summary": "Per cuocere le **castagne** in forno basta **incidere la buccia** con un taglio. Così il vapore esce e le castagne non scoppiano; l'ammollo prima aiuta a sbucciarle.",
       "stat": null,
       "sections": [
         {
-          "heading": "Perché si fa",
-          "text": "Il calore libera i **composti aromatici** chiusi nei semi. Le spezie intere tostate profumano molto più di quelle in polvere rimaste in dispensa."
+          "heading": "Perché incidere",
+          "text": "Dentro la buccia l'acqua della castagna diventa **vapore**. Senza un'apertura, la pressione sale e la castagna può **scoppiare**."
         },
         {
           "heading": "Come si fa",
-          "text": "Scalda una padella **senza olio** a fuoco medio. Aggiungi le spezie intere (cumino, coriandolo, finocchio) e **muovile** per circa un minuto, finché senti il profumo."
+          "text": "Incidi la buccia con un coltello a lama corta, con un **taglio sul lato curvo**. Disponi le castagne su una teglia e cuocile a **200 gradi** per circa **20-30 minuti**, a seconda della grandezza."
         },
         {
-          "heading": "Attenzione",
-          "text": "Appena senti l'aroma, **togli subito dal fuoco**. Se iniziano a scurirsi troppo diventano amare."
+          "heading": "Per sbucciarle meglio",
+          "text": "Quando sono cotte, avvolgile in un **canovaccio** per qualche minuto: il vapore ammorbidisce la buccia e si toglie meglio. Sbucciale **ancora calde**."
         }
       ],
       "keyPoints": [
-        "Tosta le spezie intere in padella asciutta",
-        "Un minuto, muovendole, finché profumano",
-        "Se scuriscono troppo diventano amare"
+        "Incidi la buccia per far uscire il vapore",
+        "Forno a 200 gradi per 20-30 minuti",
+        "Avvolgile in un canovaccio e sbucciale calde"
       ],
-      "whyItMatters": "È un gesto **gratuito** che dà più sapore a zuppe, legumi e carni, senza aggiungere sale.",
-      "actionToday": "Stasera tosta **un cucchiaino di semi di cumino o coriandolo**, macinali in un mortaio e aggiungili a una zuppa o a un piatto di legumi.",
+      "whyItMatters": "È un modo semplice per sfruttare un prodotto di stagione senza padelle speciali, e meno castagne finiscono rotte o sprecate.",
+      "actionToday": "Stasera cuoci **una manciata di castagne** con questo metodo e assaggia: segna **dopo quanti minuti** erano pronte nel tuo forno.",
       "checklist": [
-        "Scegli spezie intere (cumino, coriandolo, finocchio)",
-        "Scalda una padella asciutta a fuoco medio",
-        "Muovile per circa un minuto",
-        "Toglile quando senti il profumo",
-        "Macinale e usale subito"
+        "Lava e asciuga le castagne",
+        "Incidi la buccia sul lato curvo",
+        "Cuoci a 200 gradi per 20-30 minuti",
+        "Avvolgile in un canovaccio per 5 minuti",
+        "Sbucciale ancora calde"
       ],
-      "eli5": "È come strofinare una fogliolina di menta tra le dita: il profumo esce quando la scaldi o la schiacci.",
+      "eli5": "È come una pentola a pressione senza valvola: se il vapore non ha un'uscita, scoppia da qualche parte.",
       "deepDive": [
         {
-          "title": "Intere o in polvere",
-          "text": "Le spezie **intere** conservano gli aromi più a lungo di quelle macinate. Macinarle poco prima dell'uso dà il massimo profumo."
+          "title": "Tempi diversi",
+          "text": "Le castagne più grosse cuociono in più tempo: assaggia **una** a metà cottura. Se la polpa è ancora dura, lasciale 5 minuti in più."
         }
       ],
       "glossary": [
         {
-          "term": "spezie intere",
-          "meaning": "Semi o bacche non macinati, che conservano più a lungo gli aromi."
+          "term": "caldarroste",
+          "meaning": "Castagne cotte con la buccia, di solito sulla brace o in forno."
         },
         {
-          "term": "tostare",
-          "meaning": "Scaldare un alimento secco per far uscire il profumo."
+          "term": "vapore",
+          "meaning": "L'acqua allo stato gassoso, che si forma quando si scalda."
         }
       ],
       "sources": [],
       "readingMinutes": 2,
       "quiz": [
         {
-          "q": "Quando togli le spezie dalla padella?",
+          "q": "Perché si incide la buccia delle castagne?",
           "options": [
-            "Quando bruciano",
-            "Appena senti il profumo",
-            "Dopo dieci minuti",
-            "Mai"
+            "Per far uscire il vapore ed evitare gli scoppi",
+            "Per dare sapore",
+            "Per farle cuocere più in fretta",
+            "Per togliere il sale"
           ],
-          "answer": 1,
-          "explanation": "Se si scuriscono troppo diventano amare: basta circa un minuto."
+          "answer": 0,
+          "explanation": "Senza un'apertura il vapore aumenta la pressione e la buccia scoppia."
         }
       ],
-      "reflection": "Quale piatto che cucini spesso potrebbe guadagnare da un profumo in più?",
-      "id": "2026-10-29-x-cucina-spunto",
+      "reflection": "Quale prodotto di stagione hai provato a cucinare in modo nuovo quest'anno?",
+      "id": "2026-10-30-x-cucina-spunto",
       "category": "routine",
       "label": "Cucina"
     },
     {
       "topic": "cinema",
       "kind": "news",
-      "title": "Netflix svela il trailer di Orgoglio e pregiudizio: sei episodi dal 3 dicembre",
-      "subtitle": "Nella miniserie Emma Corrin, Jack Lowden e Olivia Colman; intanto arriva in streaming Noi un po' meglio di Luchetti",
-      "summary": "Netflix ha pubblicato il **trailer** della nuova serie **Orgoglio e pregiudizio**: **sei episodi** dal **3 dicembre**, con Emma Corrin, Jack Lowden e Olivia Colman. Da oggi è su Netflix anche il film di Luchetti **Noi un po' meglio**.",
+      "title": "Dracula di Bram Stoker torna al cinema in 4K, per Halloween",
+      "subtitle": "Il film di Francis Ford Coppola del 1992 in versione restaurata, evento speciale dal 30 ottobre al 1° novembre",
+      "summary": "Dal **30 ottobre al 1° novembre** torna in sala il *Dracula di Bram Stoker* di **Francis Ford Coppola**, in versione **restaurata 4K**, distribuito da **Lucky Red**. Tra le altre uscite del 30, il documentario *Everest: The Other Side*.",
       "stat": {
-        "value": "6",
-        "label": "episodi della miniserie Orgoglio e pregiudizio di Netflix, dal 3 dicembre"
+        "value": "1992",
+        "label": "anno del film di Coppola che torna in sala restaurato in 4K"
       },
       "sections": [
         {
-          "heading": "La serie",
-          "text": "La nuova miniserie di **Netflix** adatta il romanzo di **Jane Austen**. Sono **sei episodi**, diretti da **Euros Lyn**, con adattamento di **Dolly Alderton**."
+          "heading": "Il ritorno",
+          "text": "*Dracula di Bram Stoker* torna al cinema come **evento speciale** dal **30 ottobre al 1° novembre**, nel periodo di Halloween. È la versione **restaurata in 4K**, distribuita da **Lucky Red**."
         },
         {
-          "heading": "Il cast",
-          "text": "Tra gli interpreti **Emma Corrin**, **Jack Lowden** e **Olivia Colman**. Il trailer è uscito il 28 ottobre; la serie sarà disponibile dal **3 dicembre**."
+          "heading": "Il film",
+          "text": "Il film è del **1992** ed è diretto da **Francis Ford Coppola**, adattamento del romanzo di **Bram Stoker**. È noto per i costumi, le scenografie e per gli effetti ottenuti **senza il digitale**."
         },
         {
-          "heading": "Un film italiano in streaming",
-          "text": "Da oggi, 29 ottobre, su Netflix c'è **Noi un po' meglio**, il film di **Daniele Luchetti** con **Elio Germano** e **Maria Chiara Giannetta**."
+          "heading": "Un documentario",
+          "text": "Venerdì 30 esce anche *Everest: The Other Side*, il documentario di **Elizabeth Chai Vasarhelyi** e **Jimmy Chin**, distribuito da Disney. Un'altra uscita, *Fast and Furious*, è data al 29 o al 30 a seconda delle fonti."
         },
         {
-          "heading": "Altre uscite",
-          "text": "Il 28 ottobre in sala sono usciti, tra gli altri, l'horror *It Ends* e il documentario *Back to the Beginning* su Ozzy e i Black Sabbath. Alcune date cambiano da una fonte all'altra: controlla il calendario del cinema."
+          "heading": "Da verificare",
+          "text": "Le date di uscita variano da un calendario all'altro: controlla i **programmi del cinema vicino a te**."
         }
       ],
       "keyPoints": [
-        "Trailer di Orgoglio e pregiudizio, serie Netflix di sei episodi dal 3 dicembre",
-        "Noi un po' meglio di Luchetti è su Netflix dal 29 ottobre",
-        "Alcune date di uscita variano tra le fonti"
+        "Dracula di Coppola restaurato in 4K, in sala dal 30 ottobre al 1° novembre",
+        "Distribuisce Lucky Red",
+        "Le date di alcune uscite non coincidono tra le fonti"
       ],
-      "whyItMatters": "Le **trasposizioni dei classici** tornano spesso: confrontare una serie con il libro è un buon modo per capire cosa cambia con un altro mezzo.",
-      "actionToday": "Se non l'hai mai letto, leggi **il primo capitolo** di *Orgoglio e pregiudizio* e poi guarda il trailer: scrivi **una differenza** che noti.",
+      "whyItMatters": "Rivedere un classico **in sala** è un'esperienza diversa dal divano: schermo grande e sonoro curato fanno notare dettagli che altrimenti sfuggono.",
+      "actionToday": "Controlla il programma del **cinema più vicino**: se c'è il Dracula di Coppola, scegli **un orario** e segnalo in agenda.",
       "checklist": [],
-      "eli5": "È come una ricetta cucinata da un altro cuoco: gli ingredienti sono gli stessi, ma il piatto è un po' diverso.",
+      "eli5": "È come riascoltare un disco vecchio su un impianto nuovo: la musica è la stessa, ma senti cose che prima non sentivi.",
       "deepDive": [
         {
-          "title": "Perché si rifanno i classici",
-          "text": "I romanzi famosi hanno **già un pubblico** e personaggi molto noti, quindi sono una base sicura. Ogni nuova versione cambia il tono, il ritmo e le scelte di cast."
+          "title": "Cos'è un restauro 4K",
+          "text": "Il restauro parte dalla **pellicola originale**, la scansiona in alta definizione e pulisce graffi e sporco. Il risultato è più nitido, ma deve restare fedele ai colori voluti dal regista."
         }
       ],
       "glossary": [
         {
-          "term": "miniserie",
-          "meaning": "Una serie con una storia che si chiude in pochi episodi, senza stagioni successive."
+          "term": "restauro",
+          "meaning": "Il recupero di un film dalla pellicola originale, con pulizia e correzione dei difetti."
         },
         {
-          "term": "trasposizione",
-          "meaning": "L'adattamento di un'opera da un mezzo all'altro, per esempio da libro a serie."
+          "term": "4K",
+          "meaning": "Una definizione dell'immagine con circa quattromila pixel in larghezza."
         }
       ],
       "sources": [
         {
-          "title": "CinecittàNews — Orgoglio e pregiudizio, Netflix svela il trailer della serie",
-          "url": "https://cinecittanews.it/orgoglio-e-pregiudizio-netflix-svela-il-trailer-della-serie/"
+          "title": "FilmTV — I nuovi film al cinema dal 26 ottobre al 1° novembre 2026",
+          "url": "https://www.filmtv.it/cinema/uscite/"
         },
         {
-          "title": "UniversalMovies — Orgoglio e Pregiudizio: il trailer della serie Netflix",
-          "url": "https://www.universalmovies.it/orgoglio-e-pregiudizio-netflix-trailer/"
+          "title": "MyMovies — Calendario film uscita ottobre 2026",
+          "url": "https://www.mymovies.it/film/uscita/ottobre/2026/?country=italia"
         },
         {
-          "title": "ComingSoon — Film in streaming in uscita questa settimana",
-          "url": "https://www.comingsoon.it/cinema/news/film-in-streaming-in-uscita-questa-settimana-noi-un-po-meglio-wicked-2-e-le/n234559/"
+          "title": "Movieplayer — Film in uscita: prossimamente al cinema",
+          "url": "https://movieplayer.it/film/prossimamente/"
         }
       ],
       "readingMinutes": 2,
       "quiz": [
         {
-          "q": "Da quando è disponibile la serie Orgoglio e pregiudizio su Netflix?",
+          "q": "Che cosa è un restauro 4K?",
           "options": [
-            "Dal 28 ottobre",
-            "Dal 3 dicembre",
-            "Dal 29 ottobre",
-            "Dal 1° gennaio"
+            "Un nuovo montaggio",
+            "Il recupero della pellicola originale in alta definizione",
+            "Un doppiaggio",
+            "Un remake"
           ],
           "answer": 1,
-          "explanation": "Il trailer è uscito il 28 ottobre; la serie arriva il 3 dicembre."
+          "explanation": "Si parte dalla pellicola originale, si scansiona e si pulisce."
         }
       ],
-      "reflection": "Quale libro che ami vorresti vedere trasformato in serie, e quale parte non potresti perdere?",
-      "id": "2026-10-29-x-cinema-news",
+      "reflection": "Quale classico vorresti rivedere in sala, e che cosa speri di notare di nuovo?",
+      "id": "2026-10-30-x-cinema-news",
       "category": "mondo",
       "label": "Cinema e serie"
     },
     {
       "topic": "cinema",
       "kind": "spunto",
-      "title": "Il MacGuffin: l'oggetto che muove la storia",
-      "subtitle": "Un termine reso famoso da Hitchcock per ciò che i personaggi inseguono e allo spettatore importa poco",
-      "summary": "Un **MacGuffin** è l'oggetto, il segreto o la persona che i personaggi **vogliono a ogni costo**. Serve a far partire la trama: spesso conta più la corsa dell'oggetto in sé.",
+      "title": "Il colore nei film: cosa cercare in una scena",
+      "subtitle": "Un trucco per leggere l'atmosfera di un film guardando la tavolozza",
+      "summary": "I registi scelgono la **tavolozza dei colori** per far provare qualcosa allo spettatore. Individuare il **colore dominante** di una scena ti dice come il film vuole farti sentire.",
       "stat": null,
       "sections": [
         {
-          "heading": "Che cos'è",
-          "text": "Il **MacGuffin** è ciò che dà un motivo ai personaggi per muoversi: una valigetta, un documento, una formula. Il termine è legato al regista **Alfred Hitchcock**."
+          "heading": "Il colore dominante",
+          "text": "In una scena spesso un colore prevale: il **blu** può dare freddezza, il **rosso** pericolo o passione, il **giallo** calore o malattia. Non è una regola fissa, ma un indizio."
         },
         {
-          "heading": "Perché funziona",
-          "text": "Allo spettatore non interessa cosa contiene la valigetta: interessa **cosa fanno i personaggi per averla**. Il MacGuffin crea tensione e porta da un luogo all'altro."
+          "heading": "Come guardare",
+          "text": "Fermati su **un fotogramma** e chiediti: **quale colore domina?** E quale compare solo in un dettaglio, come un vestito o un oggetto?"
         },
         {
-          "heading": "Come riconoscerlo",
-          "text": "Se, togliendo l'oggetto, la storia sul **rapporto tra i personaggi** resta in piedi, forse era un MacGuffin."
+          "heading": "I cambi di colore",
+          "text": "Se la tavolozza **cambia** nel corso del film, spesso cambia anche lo stato dei personaggi. Nota **quando** avviene il cambio."
         }
       ],
       "keyPoints": [
-        "Il MacGuffin è l'oggetto che muove la trama",
-        "Conta la corsa, non l'oggetto",
-        "Se lo togli e la storia regge, era un MacGuffin"
+        "Cerca il colore dominante della scena",
+        "Un colore isolato in un dettaglio attira l'attenzione",
+        "Un cambio di tavolozza segnala un cambio nella storia"
       ],
-      "whyItMatters": "Riconoscerlo ti fa capire **cosa vuole raccontare davvero** un film: spesso non l'oggetto, ma ciò che i personaggi diventano per ottenerlo.",
-      "actionToday": "Nel prossimo film o nella prossima serie chiediti: **che cosa inseguono i personaggi?** E poi: **se sparisse, cosa resterebbe della storia?**",
+      "whyItMatters": "Ti fa guardare un film come un testo: **ogni scelta** (colore, luce, costume) comunica qualcosa.",
+      "actionToday": "Nel prossimo film metti in pausa **tre volte** su una scena e scrivi il colore dominante e come ti fa sentire.",
       "checklist": [
-        "Individua l'oggetto o l'obiettivo inseguito",
-        "Chiediti perché importa ai personaggi",
-        "Chiediti se importa anche a te",
-        "Nota cosa resta se lo togli"
+        "Scegli una scena",
+        "Metti in pausa su un fotogramma",
+        "Scrivi il colore dominante",
+        "Scrivi quale emozione ti dà",
+        "Confronta con una scena più avanti"
       ],
-      "eli5": "È come l'esca che muove un gioco a inseguimento: a nessuno importa davvero cosa sia, ma tutti corrono.",
+      "eli5": "È come l'umore di una stanza: pareti blu e luce fredda ti fanno sentire diverso da pareti gialle e luce calda.",
       "deepDive": [
         {
-          "title": "Quando non è un MacGuffin",
-          "text": "Se l'oggetto ha un **significato profondo** per i personaggi o per il tema, come un anello simbolico, non è un puro MacGuffin ma un elemento della storia."
+          "title": "Attenzione ai significati",
+          "text": "I colori **cambiano significato** da una cultura all'altra e da un film all'altro. Il bianco può essere purezza o lutto. Conta il contesto, non il dizionario."
         }
       ],
       "glossary": [
         {
-          "term": "MacGuffin",
-          "meaning": "Un oggetto o un obiettivo che dà inizio alla trama senza essere importante in sé."
+          "term": "tavolozza",
+          "meaning": "L'insieme dei colori usati in un'immagine o in un film."
         },
         {
-          "term": "trama",
-          "meaning": "La sequenza di eventi di una storia."
+          "term": "fotogramma",
+          "meaning": "Una singola immagine ferma di un film."
         }
       ],
       "sources": [],
       "readingMinutes": 2,
       "quiz": [
         {
-          "q": "Che cosa fa il MacGuffin?",
+          "q": "Che cosa conviene fare per capire il colore di una scena?",
           "options": [
-            "Spiega il finale",
-            "Dà ai personaggi un motivo per muoversi",
-            "Sostituisce la colonna sonora",
-            "Riassume la trama"
+            "Cercare il colore dominante in un fotogramma",
+            "Contare gli attori",
+            "Guardare solo i titoli di coda",
+            "Leggere la locandina"
           ],
-          "answer": 1,
-          "explanation": "È l'oggetto o l'obiettivo che mette in moto la storia."
+          "answer": 0,
+          "explanation": "Il colore dominante è un indizio sull'atmosfera che il regista vuole creare."
         }
       ],
-      "reflection": "In quale film l'oggetto inseguito ti importava meno delle persone che lo inseguivano?",
-      "id": "2026-10-29-x-cinema-spunto",
+      "reflection": "Quale film ti è rimasto in mente per il suo colore più che per la storia?",
+      "id": "2026-10-30-x-cinema-spunto",
       "category": "mondo",
       "label": "Cinema e serie"
     },
     {
       "topic": "cultura",
       "kind": "news",
-      "title": "Teatro e libri della settimana: Incendi di Mouawad a Padova, La lingua libera di Gheno",
-      "subtitle": "Due appuntamenti da segnare: uno spettacolo che apre la stagione e il nuovo saggio sulla lingua",
-      "summary": "Il **28 ottobre** debutta a Padova **Incendi** di **Wajdi Mouawad**, che apre la stagione del Teatro Stabile del Veneto fino al **3 novembre**. Nello stesso giorno esce **La lingua libera** di **Vera Gheno** per effequ.",
+      "title": "Lucca Comics & Games compie 60 anni: fino al 1° novembre, tema Legacy",
+      "subtitle": "Tra gli ospiti Frank Miller, Zerocalcare e Alberto Angela; il programma cambia giorno per giorno",
+      "summary": "La **60ª edizione** di **Lucca Comics & Games** è iniziata il **28 ottobre** e dura fino al **1° novembre**. Il tema è **Legacy**, l'eredità che passa da una generazione all'altra.",
       "stat": {
-        "value": "3 novembre",
-        "label": "ultima replica di Incendi al Teatro Verdi di Padova"
+        "value": "60",
+        "label": "anni di Lucca Comics & Games: l'edizione 2026 va dal 28 ottobre al 1° novembre"
       },
       "sections": [
         {
-          "heading": "Incendi a Padova",
-          "text": "Lo spettacolo di **Wajdi Mouawad** debutta in prima nazionale al **Teatro Verdi** di Padova e resta fino al **3 novembre**. Apre la stagione 2026-2027 del Teatro Stabile del Veneto."
+          "heading": "Date e tema",
+          "text": "Il festival va da **mercoledì 28 ottobre a domenica 1° novembre**, dalle 9 alle 19, con alcuni eventi serali. Il tema è **Legacy**: l'eredità tra generazioni."
         },
         {
-          "heading": "Lo slittamento",
-          "text": "Il debutto è slittato dal 27 al 28 ottobre per lo **sciopero dei lavoratori**. Il testo racconta, secondo ANSA, la volontà di **spezzare la catena dell'odio**."
+          "heading": "Gli ospiti",
+          "text": "Tra gli ospiti il fumettista **Frank Miller**, che presenta un film, **Zerocalcare**, **Jonathan Hickman** e **Go Nagai**. Sabato 31 ottobre è atteso **Alberto Angela**."
         },
         {
-          "heading": "Un nuovo saggio",
-          "text": "Il **28 ottobre** torna in libreria **Vera Gheno** con **La lingua libera**, pubblicato da **effequ**. È un saggio sul modo in cui usiamo le parole."
+          "heading": "Giorno per giorno",
+          "text": "Secondo le guide, giovedì 29 c'è **Hideki Kamiya** e Dungeons & Dragons; venerdì 30 **Dylan Dog** e la parata cosplay. Le guide non sono tutte allineate: controlla il **sito ufficiale**."
         },
         {
-          "heading": "Un appuntamento a Roma",
-          "text": "A Roma, il 28 e il 29 ottobre, con il **Roma Europa Festival**, va in scena *La medium* di **Marta Cuscunà**."
+          "heading": "Il cinema",
+          "text": "Domenica 1° novembre, dalle 18 alle 20, al Cinema Astra c'è un'anteprima per i fan di *Hunger Games: Sunrise on the Reaping*."
         }
       ],
       "keyPoints": [
-        "Incendi di Mouawad al Teatro Verdi di Padova fino al 3 novembre",
-        "La lingua libera di Vera Gheno esce il 28 ottobre",
-        "Alla fine di ottobre molti teatri aprono la nuova stagione"
+        "Lucca Comics & Games 2026: dal 28 ottobre al 1° novembre",
+        "Tema Legacy; ospiti come Frank Miller, Zerocalcare e Alberto Angela",
+        "Il programma giorno per giorno va verificato sul sito ufficiale"
       ],
-      "whyItMatters": "Teatro e saggistica ti danno **idee lente**: dopo una giornata di notizie veloci, un testo o uno spettacolo ti fanno ragionare con più calma.",
-      "actionToday": "Controlla **il teatro più vicino a te**: cerca lo spettacolo in cartellone fra due settimane e **segna la data**.",
+      "whyItMatters": "Fumetto, gioco e cinema popolare sono una **forma di cultura** con un pubblico enorme: seguire un festival ti dice dove sta andando l'immaginario di una generazione.",
+      "actionToday": "Se non vai a Lucca, **scegli un fumetto** di un autore ospite (per esempio Zerocalcare) e leggi le **prime dieci pagine**.",
       "checklist": [],
-      "eli5": "È come un calendario delle cose da vedere: se non lo guardi, le date passano senza che te ne accorga.",
+      "eli5": "È una grande fiera in cui fumetti, giochi e film si incontrano, e chi li ama si ritrova.",
       "deepDive": [
         {
-          "title": "Prima nazionale",
-          "text": "Una **prima nazionale** è la prima rappresentazione in Italia di uno spettacolo: spesso segna l'inizio di una **tournée** in altre città."
+          "title": "Cosa vuol dire Legacy",
+          "text": "**Legacy** in inglese è l'eredità, ciò che si lascia a chi viene dopo. In un festival di 60 anni è un tema naturale: guarda a ciò che è stato tramandato."
         }
       ],
       "glossary": [
         {
-          "term": "prima nazionale",
-          "meaning": "La prima rappresentazione di uno spettacolo in Italia."
+          "term": "cosplay",
+          "meaning": "Travestirsi da personaggio di fumetti, giochi, film o serie."
         },
         {
-          "term": "stagione teatrale",
-          "meaning": "L'insieme degli spettacoli programmati da un teatro in un anno."
+          "term": "legacy",
+          "meaning": "In inglese, l'eredità che un'opera o una persona lascia agli altri."
         }
       ],
       "sources": [
         {
-          "title": "ANSA — 'Incendi', in scena il capolavoro di Wajdi Mouawad per spezzare la catena dell'odio",
-          "url": "https://www.ansa.it/sito/notizie/cultura/libri/2026/10/28/incendi-in-scena-il-capolavoro-di-wajdi-mouawad-per-spezzare-la-catena-dellodio_870b9b19-1579-46ac-880b-005f091b66b8.html"
+          "title": "Il Libraio — Lucca Comics & Games 2026: ecco gli ospiti della 60esima edizione",
+          "url": "https://www.illibraio.it/news/narrativa/lucca-comics-games-2026-1500752/"
         },
         {
-          "title": "The Walk of Fame — Roma a Teatro: guida agli spettacoli dal 28 ottobre al 1 novembre 2026",
-          "url": "https://www.thewalkoffame.it/blog/roma-a-teatro-spettacoli-dal-28-ottobre-1-novembre-2026/"
+          "title": "Fumettologica — Lucca Comics 2026, il programma del cinema",
+          "url": "https://fumettologica.it/2026/10/lucca-comics-2026-cinema-programma/"
+        },
+        {
+          "title": "Telepass Moveo — Il Lucca Comics 2026 si avvicina! Date, ospiti e programma",
+          "url": "https://moveo.telepass.com/lucca-comics-2026-guida/"
         }
       ],
       "readingMinutes": 2,
       "quiz": [
         {
-          "q": "Perché il debutto di Incendi è slittato al 28 ottobre?",
+          "q": "Qual è il tema dell'edizione 2026 di Lucca Comics & Games?",
           "options": [
-            "Per lo sciopero dei lavoratori",
-            "Per il maltempo",
-            "Per un guasto alle luci",
-            "Per un lutto"
+            "Legacy",
+            "Futuro",
+            "Mondo",
+            "Tempo"
           ],
           "answer": 0,
-          "explanation": "Il debutto è slittato dal 27 al 28 ottobre a causa dello sciopero."
+          "explanation": "Il tema della 60ª edizione è Legacy, l'eredità tra generazioni."
         }
       ],
-      "reflection": "Quando sei stato l'ultima volta a teatro, e che cosa ti è rimasto?",
-      "id": "2026-10-29-x-cultura-news",
+      "reflection": "Quale fumetto o gioco ti ha accompagnato più a lungo, e a chi lo passeresti?",
+      "id": "2026-10-30-x-cultura-news",
       "category": "sapere",
       "label": "Libri e cultura"
     },
     {
       "topic": "cultura",
       "kind": "spunto",
-      "title": "Leggere ad alta voce per cinque minuti: un test per capire se capisci",
-      "subtitle": "Una pagina letta ad alta voce rivela subito dove perdi il filo",
-      "summary": "Leggere **ad alta voce** per cinque minuti ti costringe a **rallentare** e a notare dove ti distrai. È un modo semplice per ritrovare il gusto della lettura e capire meglio i testi difficili.",
+      "title": "Leggere un fumetto: lo spazio tra due vignette",
+      "subtitle": "Quello che non è disegnato lo costruisce il lettore, ed è dove nasce il ritmo",
+      "summary": "Tra una vignetta e l'altra c'è uno **spazio bianco**. Il lettore **riempie con la mente** ciò che accade nel mezzo: è così che il fumetto crea il ritmo e la tensione.",
       "stat": null,
       "sections": [
         {
-          "heading": "Perché funziona",
-          "text": "Ad alta voce non puoi **saltare le righe**. Il ritmo del testo si sente, e noti subito le frasi in cui perdi il filo."
+          "heading": "Lo spazio tra le vignette",
+          "text": "Lo spazio tra due vignette si chiama **gutter** (o canale). Non mostra nulla, ma il lettore **collega** le due immagini e capisce che c'è stato un passaggio."
         },
         {
-          "heading": "Come si fa",
-          "text": "Scegli **una pagina** di un libro o di un articolo che ti interessa. Leggila a voce chiara, a **velocità normale**, per cinque minuti."
+          "heading": "Il ritmo",
+          "text": "Vignette **piccole e frequenti** danno velocità; una **tavola intera** rallenta e fa fermare lo sguardo. Gli autori giocano con questo contrasto."
         },
         {
-          "heading": "Dopo la lettura",
-          "text": "Chiudi il libro e **ripeti con parole tue** di cosa parlava la pagina. Se non ci riesci, rileggi solo il punto in cui ti sei perso."
+          "heading": "Come leggere",
+          "text": "Leggi una pagina **due volte**: la prima per la storia, la seconda per guardare **come sono disposte** le vignette e dove si ferma l'occhio."
         }
       ],
       "keyPoints": [
-        "Leggere ad alta voce impedisce di saltare le righe",
-        "Cinque minuti su una pagina bastano",
-        "Ripeti con parole tue per controllare"
+        "Il canale tra le vignette lo riempie il lettore",
+        "Vignette piccole accelerano, tavole intere rallentano",
+        "Rileggi una pagina guardando la disposizione"
       ],
-      "whyItMatters": "È utile per testi **difficili** o quando sei stanco: il corpo tiene l'attenzione dove la lettura silenziosa scivola.",
-      "actionToday": "Stasera leggi **una pagina** ad alta voce, poi dillo con parole tue in **una frase**.",
+      "whyItMatters": "Imparare a leggere il **ritmo** di una tavola ti fa capire perché un fumetto funziona, e vale anche per film e narrativa.",
+      "actionToday": "Scegli **una pagina** di un fumetto: leggila una volta, poi **segna dove rallenta** e dove accelera.",
       "checklist": [
-        "Scegli una pagina di un testo che ti interessa",
-        "Leggi a voce chiara per cinque minuti",
-        "Segna i punti in cui perdi il filo",
-        "Ripeti con parole tue di cosa parla"
+        "Scegli una pagina di un fumetto",
+        "Leggila come storia",
+        "Rileggila guardando le vignette",
+        "Segna dove il ritmo rallenta",
+        "Segna dove accelera"
       ],
-      "eli5": "È come camminare a piedi invece che in auto: vedi più cose, perché vai piano.",
+      "eli5": "È come guardare una sequenza di foto: non vedi il passo fra una e l'altra, ma lo immagini.",
       "deepDive": [
         {
-          "title": "Lettura e ascolto",
-          "text": "Quando leggi ad alta voce **senti anche te stesso**: due canali, vista e udito, lavorano insieme. Per questo può aiutare a ricordare di più."
+          "title": "L'idea di chiusura",
+          "text": "Lo studioso di fumetti **Scott McCloud** chiama **chiusura** il processo con cui la mente completa ciò che non è disegnato. È ciò che rende attivo il lettore."
         }
       ],
       "glossary": [
         {
-          "term": "lettura silenziosa",
-          "meaning": "La lettura fatta in silenzio, con gli occhi, senza pronunciare le parole."
+          "term": "gutter",
+          "meaning": "Lo spazio bianco tra due vignette."
         },
         {
-          "term": "ritmo del testo",
-          "meaning": "La musicalità delle frasi: pause, lunghezza, ripetizioni."
+          "term": "tavola",
+          "meaning": "Una pagina di fumetto con le sue vignette."
         }
       ],
       "sources": [],
       "readingMinutes": 2,
       "quiz": [
         {
-          "q": "Perché leggere ad alta voce aiuta a capire?",
+          "q": "Che cosa è il gutter?",
           "options": [
-            "Perché non si possono saltare le righe e si nota dove ci si perde",
-            "Perché è più veloce",
-            "Perché il libro costa meno",
-            "Perché si legge meno"
+            "Lo spazio tra due vignette",
+            "Una vignetta più grande",
+            "Il titolo del fumetto",
+            "La copertina"
           ],
           "answer": 0,
-          "explanation": "La voce obbliga a rallentare e a seguire ogni frase."
+          "explanation": "Il gutter è lo spazio bianco tra le vignette, che il lettore completa con la mente."
         }
       ],
-      "reflection": "Che libro o articolo leggeresti ad alta voce, per goderne il suono?",
-      "id": "2026-10-29-x-cultura-spunto",
+      "reflection": "In quale fumetto o film hai sentito più forte ciò che non veniva mostrato?",
+      "id": "2026-10-30-x-cultura-spunto",
       "category": "sapere",
       "label": "Libri e cultura"
-    },
-    {
-      "topic": "startup",
-      "kind": "news",
-      "title": "Upwind raccoglie 400 milioni a 3,8 miliardi dopo aver rifiutato Datadog",
-      "subtitle": "La società di sicurezza cloud ha chiuso un Series C guidato da Bessemer, il secondo round in nove mesi",
-      "summary": "**Upwind**, società di **sicurezza cloud**, ha raccolto **400 milioni di dollari** in un round **Series C** a una valutazione di **3,8 miliardi**. Il round è guidato da **Bessemer** e arriva dopo che Upwind ha rifiutato un'offerta di acquisto di **Datadog**.",
-      "stat": {
-        "value": "400 mln $",
-        "label": "raccolti da Upwind in un Series C a 3,8 miliardi di valutazione"
-      },
-      "sections": [
-        {
-          "heading": "Il round",
-          "text": "Il 28 ottobre **Upwind** ha annunciato un **Series C da 400 milioni** di dollari, guidato da **Bessemer Venture Partners**. La valutazione è di **3,8 miliardi**."
-        },
-        {
-          "heading": "Il secondo round in nove mesi",
-          "text": "Nove mesi fa la società aveva raccolto **250 milioni** a **1,5 miliardi** di valutazione. La valutazione è quindi cresciuta di circa **2,5 volte**."
-        },
-        {
-          "heading": "Il no a Datadog",
-          "text": "Secondo le fonti, **Datadog** aveva tentato di acquistare Upwind, ma la società ha scelto di restare **indipendente** e raccogliere capitali. Le cifre vengono da articoli di stampa."
-        },
-        {
-          "heading": "Altri round",
-          "text": "In settimana altri round di AI: Tenstorrent 1,5 miliardi e FuriosaAI circa 570-620 milioni, con cifre diverse tra le fonti."
-        }
-      ],
-      "keyPoints": [
-        "Upwind: Series C da 400 milioni a 3,8 miliardi di valutazione",
-        "Secondo round in nove mesi: da 1,5 a 3,8 miliardi",
-        "Ha rifiutato l'offerta di acquisto di Datadog"
-      ],
-      "whyItMatters": "Il rifiuto di un'acquisizione per raccogliere capitali mostra quanto i fondatori puntino a **restare indipendenti** quando il mercato premia la crescita.",
-      "actionToday": "Scegli **una startup che segui** e cerca **a che round è** e **da chi è stata finanziata**: scrivi in una riga cosa ti dice.",
-      "checklist": [],
-      "eli5": "È come una squadra che rifiuta di essere comprata da una più grande e preferisce cercare nuovi soci per continuare da sola.",
-      "deepDive": [
-        {
-          "title": "Cos'è un Series C",
-          "text": "I round di una startup si chiamano **Seed, Series A, B, C** e così via: ogni lettera è una fase di crescita. Un **Series C** arriva di solito quando l'azienda ha già ricavi e vuole espandersi."
-        }
-      ],
-      "glossary": [
-        {
-          "term": "Series C",
-          "meaning": "Un round di finanziamento di una startup già avviata, che vuole crescere su scala più ampia."
-        },
-        {
-          "term": "valutazione",
-          "meaning": "Il valore attribuito a un'azienda al momento di un round di investimento."
-        }
-      ],
-      "sources": [
-        {
-          "title": "KuCoin News — Upwind Completes a $400 Million Funding Round at a $3.8 Billion Valuation After Rejecting Datadog's Acquisition Offer",
-          "url": "https://www.kucoin.com/news/flash/upwind-completes-400m-funding-round-at-3-8b-valuation-after-rejecting-datadog-acquisition"
-        },
-        {
-          "title": "Tech Bytes — Upwind Security Raises $400 Million at $3.8 Billion Valuation",
-          "url": "https://techbytes.app/posts/upwind-security-raises-400-million-at-38-billion-valuation/"
-        },
-        {
-          "title": "Tech Insider — AI Funding Rounds This Week: Tenstorrent $1.5B",
-          "url": "https://tech-insider.org/ai-funding-rounds-tenstorrent-flapping-airplanes-week-2026/"
-        }
-      ],
-      "readingMinutes": 2,
-      "quiz": [
-        {
-          "q": "Che cosa è successo prima di questo round di Upwind?",
-          "options": [
-            "La società è stata quotata",
-            "Ha rifiutato un'offerta di acquisto di Datadog",
-            "Ha chiuso un'attività",
-            "Ha cambiato nome"
-          ],
-          "answer": 1,
-          "explanation": "Secondo le fonti, Datadog aveva tentato di acquisire Upwind, che ha scelto di restare indipendente."
-        }
-      ],
-      "reflection": "Se ti offrissero di vendere il progetto su cui lavori, quale cifra o condizione ti farebbe dire sì?",
-      "id": "2026-10-29-x-startup-news",
-      "category": "finanza",
-      "label": "Imprenditoria e startup"
-    },
-    {
-      "topic": "startup",
-      "kind": "spunto",
-      "title": "Burn rate e runway: quanti mesi di cassa ha una startup",
-      "subtitle": "Due numeri per capire se un'azienda ha tempo davanti a sé",
-      "summary": "Il **burn rate** è quanto una startup spende ogni mese in più di quanto incassa. La **runway** è per quanti mesi basta la cassa: **cassa diviso burn rate**.",
-      "stat": null,
-      "sections": [
-        {
-          "heading": "Il burn rate",
-          "text": "Se una startup incassa 100 mila euro al mese e ne spende 300 mila, il **burn rate** è di **200 mila euro al mese**: è la cassa che brucia."
-        },
-        {
-          "heading": "La runway",
-          "text": "Se in cassa ha 2,4 milioni, la **runway** è 2,4 milioni diviso 200 mila: **12 mesi**. Dopo, senza nuovi soldi o più ricavi, i soldi finiscono."
-        },
-        {
-          "heading": "Come si usa",
-          "text": "Di solito si cerca di raccogliere nuovi capitali **con almeno 6-9 mesi di runway**: negoziare con poca cassa dà meno forza. È una regola pratica, non una legge."
-        }
-      ],
-      "keyPoints": [
-        "Burn rate = spesa mensile meno incassi mensili",
-        "Runway = cassa diviso burn rate",
-        "Raccogliere capitali con ancora mesi di cassa dà più forza"
-      ],
-      "whyItMatters": "Vale anche per un **progetto personale** o un'attività: sapere per quanti mesi hai risorse ti dice quando decidere.",
-      "actionToday": "Calcola la tua **runway personale**: i tuoi risparmi diviso la spesa mensile. Scrivi il numero di mesi.",
-      "checklist": [
-        "Scrivi quanto spendi al mese",
-        "Scrivi quanto incassi al mese",
-        "Calcola la differenza (burn rate)",
-        "Dividi la cassa per il burn rate",
-        "Segna la data in cui la cassa finirebbe"
-      ],
-      "eli5": "È la benzina di un'auto: il burn rate è quanta ne consumi ogni ora, la runway è per quante ore puoi guidare.",
-      "deepDive": [
-        {
-          "title": "Burn lordo e netto",
-          "text": "Il **burn lordo** è la spesa totale, il **burn netto** sottrae gli incassi. Per la runway si usa il netto."
-        }
-      ],
-      "glossary": [
-        {
-          "term": "burn rate",
-          "meaning": "La cassa che un'azienda consuma ogni mese, spese meno incassi."
-        },
-        {
-          "term": "runway",
-          "meaning": "Il numero di mesi per cui la cassa basta, a questo ritmo di spesa."
-        }
-      ],
-      "sources": [],
-      "readingMinutes": 2,
-      "quiz": [
-        {
-          "q": "Una startup ha 1,2 milioni in cassa e un burn rate di 100 mila euro al mese. Qual è la runway?",
-          "options": [
-            "6 mesi",
-            "12 mesi",
-            "24 mesi",
-            "120 mesi"
-          ],
-          "answer": 1,
-          "explanation": "1,2 milioni diviso 100 mila fa 12 mesi."
-        }
-      ],
-      "reflection": "Per quanti mesi potresti andare avanti con i risparmi di oggi, se le entrate si fermassero?",
-      "id": "2026-10-29-x-startup-spunto",
-      "category": "finanza",
-      "label": "Imprenditoria e startup"
-    },
-    {
-      "topic": "viaggi",
-      "kind": "news",
-      "title": "Sciopero generale del 30 ottobre: treni dalle 21 di giovedì, voli fermi tutto il giorno",
-      "subtitle": "Trenitalia, Italo e Trenord si fermano da giovedì sera; il ponte di Ognissanti rischia di complicarsi",
-      "summary": "Nello **sciopero generale del 30 ottobre** i treni si fermano dalle **21 di giovedì 29** alle **20:59 di venerdì 30**, i voli per l'intera giornata del 30. La Commissione di garanzia ha chiesto di escludere i trasporti: le comunicazioni possono cambiare.",
-      "stat": {
-        "value": "21:00",
-        "label": "ora in cui giovedì 29 ottobre scatta lo stop dei treni"
-      },
-      "sections": [
-        {
-          "heading": "Treni",
-          "text": "Lo stop del personale di **Trenitalia, Italo e Trenord** dura dalle **21 di giovedì 29** alle **20:59 di venerdì 30**. Per i regionali le fasce garantite sono **6-9 e 18-21**."
-        },
-        {
-          "heading": "Voli e autostrade",
-          "text": "Il settore aereo si ferma dalle **00:00 alle 23:59 del 30 ottobre**. Il settore autostradale si ferma dalle **22 di giovedì 29**."
-        },
-        {
-          "heading": "Città",
-          "text": "A Roma l'**ATAC** ha annunciato uno stop di 24 ore su bus, tram e metro, dalle **5 alle 23:59**."
-        },
-        {
-          "heading": "Un nodo",
-          "text": "La **Commissione di garanzia** ha richiamato la franchigia dal 30 ottobre al 5 novembre e invitato a escludere i trasporti, ma il sindacato USB dice di aver confermato lo sciopero. Le aziende potrebbero cambiare le comunicazioni."
-        },
-        {
-          "heading": "Cosa fare",
-          "text": "Controlla il tuo treno o volo sul **sito del vettore** poco prima di partire. Le fonti non concordano su tutte le fasce garantite."
-        }
-      ],
-      "keyPoints": [
-        "Treni fermi dalle 21 di giovedì 29 alle 20:59 di venerdì 30",
-        "Voli fermi tutto il 30 ottobre; ATAC dalle 5 alle 23:59",
-        "Le comunicazioni possono cambiare: controlla il vettore"
-      ],
-      "whyItMatters": "Chi parte per il ponte di Ognissanti rischia di restare a terra o di dover **cambiare programma all'ultimo**. Verificare prima costa poco, ed evita sorprese.",
-      "actionToday": "Se viaggi tra il 29 e il 30, apri **l'app o il sito del vettore** e segna la **fascia garantita** più vicina al tuo orario. Prepara un piano B.",
-      "checklist": [],
-      "eli5": "È come un cancello che si chiude per un giorno: qualcuno passa solo nelle ore in cui resta aperto, gli altri devono aspettare.",
-      "deepDive": [
-        {
-          "title": "Le fasce di garanzia",
-          "text": "Nei servizi pubblici essenziali la legge impone **fasce orarie** in cui il servizio deve funzionare. Per i regionali, qui sono 6-9 e 18-21."
-        }
-      ],
-      "glossary": [
-        {
-          "term": "fascia di garanzia",
-          "meaning": "L'orario in cui, anche durante uno sciopero, il servizio deve restare attivo."
-        },
-        {
-          "term": "franchigia",
-          "meaning": "Un periodo in cui gli scioperi dei trasporti non sono permessi, per esempio durante le feste."
-        }
-      ],
-      "sources": [
-        {
-          "title": "Civonline — Sciopero generale il 30 ottobre: l'Italia si ferma per 24 ore",
-          "url": "https://www.civonline.it/news/cronaca/1357178/sciopero-generale-il-30-ottobre-l-italia-si-ferma-per-24-ore-gli-orari-e-i-treni-garantiti.html"
-        },
-        {
-          "title": "Qualitytravel — Sciopero generale del 30 ottobre: chi si ferma nei trasporti",
-          "url": "https://www.qualitytravel.it/sciopero-generale-del-30-ottobre-chi-si-ferma-nei-trasporti/194034"
-        },
-        {
-          "title": "Today — Scioperi, due venerdì neri tra ottobre e novembre",
-          "url": "https://www.today.it/economia/scioperi-ottobre-novembre-2026.html"
-        }
-      ],
-      "readingMinutes": 2,
-      "quiz": [
-        {
-          "q": "Da quando si fermano i treni nello sciopero del 30 ottobre?",
-          "options": [
-            "Dalle 21 di giovedì 29",
-            "Dalle 5 di venerdì 30",
-            "Dalle 24 di sabato",
-            "Dalle 6 di lunedì"
-          ],
-          "answer": 0,
-          "explanation": "Lo stop va dalle 21 di giovedì 29 alle 20:59 di venerdì 30."
-        }
-      ],
-      "reflection": "Per un viaggio che hai in programma, qual è il tuo piano B se il mezzo previsto salta?",
-      "id": "2026-10-29-x-viaggi-news",
-      "category": "mondo",
-      "label": "Viaggi"
-    },
-    {
-      "topic": "viaggi",
-      "kind": "spunto",
-      "title": "Documenti in viaggio: la copia offline in tre posti",
-      "subtitle": "Una regola semplice per non restare bloccato se perdi il telefono o la connessione",
-      "summary": "Prima di partire salva **biglietti, prenotazioni e documenti** in **tre posti**: telefono, una copia stampata e un servizio online. Se uno manca, gli altri ti salvano il viaggio.",
-      "stat": null,
-      "sections": [
-        {
-          "heading": "Perché tre posti",
-          "text": "Un telefono può **scaricarsi o rompersi**, e la rete può mancare. Con più copie un singolo guasto non blocca il viaggio."
-        },
-        {
-          "heading": "Quali tre",
-          "text": "Una copia **offline sul telefono** (file scaricato, non solo email), una **copia stampata** dei documenti importanti e una **copia in cloud** o inviata a una persona di fiducia."
-        },
-        {
-          "heading": "Cosa includere",
-          "text": "**Biglietti**, prenotazioni di voli e alloggi, assicurazione, e **una foto del documento** d'identità. Metti anche i numeri utili."
-        }
-      ],
-      "keyPoints": [
-        "Salva i documenti in tre posti: telefono, carta e cloud",
-        "Il file offline funziona anche senza rete",
-        "Includi biglietti, prenotazioni, assicurazione e documento"
-      ],
-      "whyItMatters": "Costa **dieci minuti** e ti evita il peggio: restare senza biglietti o documenti lontano da casa, magari durante uno sciopero.",
-      "actionToday": "Per il tuo prossimo viaggio crea **una cartella** sul telefono con i file scaricati, stampa **una pagina riassuntiva** e invia una copia a una persona di fiducia.",
-      "checklist": [
-        "Scarica biglietti e prenotazioni come file",
-        "Stampa una pagina riassuntiva con orari e indirizzi",
-        "Salva una copia in cloud o inviala a qualcuno",
-        "Fotografa il documento d'identità",
-        "Controlla che il telefono sia carico prima di partire"
-      ],
-      "eli5": "È come portare una torcia di riserva: speri di non usarla, ma se manca la luce sei contento di averla.",
-      "deepDive": [
-        {
-          "title": "Attenzione ai dati sensibili",
-          "text": "Le foto dei documenti vanno conservate **in un posto protetto** (cartella con password) e non inviate a chiunque: servono a te, non a tutti."
-        }
-      ],
-      "glossary": [
-        {
-          "term": "cloud",
-          "meaning": "Un servizio online dove si salvano file accessibili da qualunque dispositivo."
-        },
-        {
-          "term": "offline",
-          "meaning": "Senza connessione a internet."
-        }
-      ],
-      "sources": [],
-      "readingMinutes": 2,
-      "quiz": [
-        {
-          "q": "Perché conviene avere una copia offline dei biglietti?",
-          "options": [
-            "Perché funziona anche senza rete",
-            "Perché costa meno",
-            "Perché è più veloce da stampare",
-            "Perché sostituisce il documento"
-          ],
-          "answer": 0,
-          "explanation": "Un file scaricato si apre anche senza connessione, a differenza di una mail da cercare online."
-        }
-      ],
-      "reflection": "Se domani perdessi il telefono in viaggio, che cosa ti mancherebbe subito?",
-      "id": "2026-10-29-x-viaggi-spunto",
-      "category": "mondo",
-      "label": "Viaggi"
     }
   ]
 }

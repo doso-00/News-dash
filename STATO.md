@@ -43,9 +43,10 @@ Aree del profilo in `config/profile.json`. Non ripetere un'area di Sapere o Rout
 | 2026-10-27 | Paradosso di Simpson (programmazione e dati) | Domande di approfondimento (relazioni) |
 | 2026-10-28 | Caffeina e adenosina (salute e fisiologia) | Richiamo attivo (apprendimento) |
 | 2026-10-29 | Dicotomia del controllo (filosofia pratica) | Sospiro ciclico (gestione dello stress) |
+| 2026-10-30 | Legge di Parkinson (produttività e gestione del tempo) | Se-allora, intenzioni di implementazione (mindset) |
 
-Prossime aree da coprire per Sapere: storia e geopolitica, scienza e tecnologia, produttività.
-Prossime aree per Routine: mindset.
+Prossime aree da coprire per Sapere: storia e geopolitica, scienza e tecnologia.
+Prossime aree per Routine: tutte usate; si ricomincia da sonno, movimento, concentrazione con metodi diversi.
 
 ## Schede su misura scritte
 
@@ -57,6 +58,7 @@ Prossime aree per Routine: mindset.
 | 2026-10-27 | cucina, cinema, cultura, produttività, viaggi (10 schede: il terzo profilo e un profilo senza produttività tra le schede principali) |
 | 2026-10-28 | cinema, cucina, cultura (6 schede: solo il terzo profilo è fuori dalle principali) |
 | 2026-10-29 | cucina, cinema, cultura, startup, viaggi (10 schede) |
+| 2026-10-30 | cinema, cucina, cultura (6 schede) |
 
 ## Registro delle edizioni
 
@@ -69,3 +71,4 @@ Prossime aree per Routine: mindset.
 | 2026-10-27 | 5 | Redazione automatica; 10 schede su misura. Notizia sull'IPO di Anthropic: dichiarato nel testo che Claude è un suo modello; cifre prese da stampa (WebFetch non raggiunge sec.gov) |
 | 2026-10-28 | 6 | Redazione automatica; 6 schede su misura. Esito del voto israeliano ancora aperto all'ora della ricerca (solo exit poll e scrutinio parziale, discordanti): dichiarato nel testo. Fed: decisione di sera, scheda scritta come anteprima |
 | 2026-10-29 | 7 | Redazione automatica; 10 schede su misura. Seguiti gli esiti di ieri: Fed (tassi fermi, 10 a 2), Cdm sulla manovra (approvata), spoglio israeliano (53/48, ufficiale il 4 novembre). Numeri discordanti tra fonti (seggi arabi 17 o 19; valore manovra) dichiarati nel testo |
+| 2026-10-30 | 8 | Redazione automatica; 6 schede su misura. Seguiti gli esiti: Bce (tassi fermi, Lagarde lascia a febbraio). La scheda Anthropic riporta il prospetto da stampa (Reuters), non dal testo dell'S-1, ed è dichiarato nel testo |
