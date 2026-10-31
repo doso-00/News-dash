@@ -1,0 +1,1045 @@
+{
+  "date": "2026-10-31",
+  "number": 9,
+  "generatedAt": "2026-10-31T05:18:57.546Z",
+  "headline": "Intel crolla e il Nasdaq perde quasi il 3%, l'inflazione italiana vola al 5,4% e Hormuz resta chiuso.",
+  "cards": [
+    {
+      "category": "ai",
+      "interests": [
+        "ai",
+        "tech",
+        "finanza",
+        "startup"
+      ],
+      "title": "Intel crolla del 29% e il Nasdaq perde il 2,86%: la Borsa teme il conto dell'AI",
+      "subtitle": "Dopo i conti di Amazon e Intel, gli investitori si chiedono quanto costi costruire l'infrastruttura dell'intelligenza artificiale",
+      "summary": "Venerdì il **Nasdaq** ha perso il **2,86%**, la peggior seduta dal 5 giugno. **Intel** ha chiuso a circa **-29%** dopo previsioni deboli, mentre **Amazon** ha confermato un piano di investimenti da **220 miliardi** quest'anno.",
+      "stat": {
+        "value": "-2,86%",
+        "label": "calo del Nasdaq venerdì 30 ottobre, la peggior seduta dal 5 giugno"
+      },
+      "sections": [
+        {
+          "heading": "La seduta",
+          "text": "Venerdì 30 ottobre **Wall Street** ha chiuso in forte calo: **Nasdaq -2,86%**, **S&P 500 -1,82%** a 7.580, **Dow -1,09%**. Ottobre è stato il peggior mese del Nasdaq da marzo 2025, con **-5,3%**."
+        },
+        {
+          "heading": "Il caso Intel",
+          "text": "**Intel** è arrivata a perdere oltre il 30% in seduta, e ha chiuso intorno al **-29%**. L'azienda ha avvisato che consumerà cassa quest'anno, per un mercato dei PC debole, difficoltà di produzione e spese per ampliare le fabbriche."
+        },
+        {
+          "heading": "Il caso Amazon",
+          "text": "**Amazon** ha perso circa il **4%** (le fonti non concordano) dopo aver mostrato un flusso di cassa negativo di **42,4 miliardi** negli ultimi dodici mesi e aver confermato **220 miliardi** di investimenti 2026, soprattutto per l'AI."
+        },
+        {
+          "heading": "Il settore dei chip",
+          "text": "Nvidia ha perso circa il **3%**, AMD il **9,3%**, Dell e HP circa il **9%**. Reuters lega il calo al timore che la Fed alzi i tassi di oltre 50 punti base entro metà 2027: molte aziende si finanziano con debito."
+        },
+        {
+          "heading": "Cosa significa",
+          "text": "La domanda del mercato non è più **se** l'AI funziona, ma **quanto costa** costruirla e **quando** i ricavi coprono la spesa. Le cifre vengono da fonti giornalistiche: controlla le chiusure ufficiali."
+        }
+      ],
+      "keyPoints": [
+        "Nasdaq -2,86%, peggior seduta dal 5 giugno; ottobre -5,3%",
+        "Intel -29% dopo previsioni deboli; Amazon conferma 220 miliardi di investimenti",
+        "Il mercato si chiede quando i ricavi dell'AI copriranno i costi"
+      ],
+      "whyItMatters": "L'AI dipende da **investimenti enormi in chip e data center**. Se gli investitori ritirano fiducia, i prezzi dei servizi e i piani di sviluppo possono cambiare, anche per chi usa questi strumenti ogni giorno.",
+      "actionToday": "Chiedi a Claude: \"Spiegami con un esempio numerico la differenza tra **spesa in conto capitale** e **flusso di cassa libero**, e perché un'azienda con ricavi in crescita può avere cassa negativa.\"",
+      "checklist": [],
+      "eli5": "È come aprire una pizzeria costosa: finché il forno e il locale non sono pagati, anche con tanti clienti la cassa resta in rosso.",
+      "deepDive": [
+        {
+          "title": "Cos'è la spesa in conto capitale",
+          "text": "È il denaro che un'azienda spende per **beni che durano nel tempo**, come data center e fabbriche, invece che per i costi quotidiani. Pesa sulla cassa subito, ma i ricavi arrivano negli anni."
+        },
+        {
+          "title": "Perché i tassi contano per l'AI",
+          "text": "Costruire chip e data center richiede soldi presi a prestito. Se i **tassi salgono**, il debito costa di più e i progetti diventano meno convenienti."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Nasdaq",
+          "meaning": "L'indice della Borsa americana dove sono quotate molte aziende tecnologiche."
+        },
+        {
+          "term": "flusso di cassa libero",
+          "meaning": "Il denaro che resta a un'azienda dopo le spese correnti e gli investimenti."
+        },
+        {
+          "term": "guidance",
+          "meaning": "Le previsioni su ricavi e utili che un'azienda dà per i trimestri successivi."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Reuters via MarketScreener — Nasdaq hits near three-month low as Amazon, Intel deepen AI capex concerns",
+          "url": "https://www.marketscreener.com/news/nasdaq-hits-near-three-month-low-as-amazon-intel-deepen-ai-capex-concerns-ce785fdbde80f726"
+        },
+        {
+          "title": "IBTimes — Intel plunges 29% as investors lose patience with costly AI spending and weak guidance",
+          "url": "https://www.ibtimes.com/stocks-plunge-investors-question-ai-spending-intel-outlook-3809231"
+        },
+        {
+          "title": "Investrade — Market Review: October 30, 2026",
+          "url": "https://investrade.com/market-review-october-30-2026/"
+        },
+        {
+          "title": "Saxo — Market Quick Take: Now Amazon and Intel spook US tech",
+          "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---now-amazon-and-intel-spook-us-tech---30-october-2026-30102026"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Qual è la preoccupazione principale dietro il calo del Nasdaq?",
+          "options": [
+            "Che l'AI non funzioni",
+            "Quanto costi costruire l'infrastruttura dell'AI e quando arriveranno i ricavi",
+            "Che manchino i clienti",
+            "Che chiudano le Borse"
+          ],
+          "answer": 1,
+          "explanation": "Gli investitori guardano ai costi enormi di chip e data center e a quando i ricavi li ripagheranno."
+        },
+        {
+          "q": "Perché un'azienda in crescita può avere cassa negativa?",
+          "options": [
+            "Perché spende molto in investimenti prima di incassare",
+            "Perché non vende nulla",
+            "Perché i clienti pagano in anticipo",
+            "Perché non paga le tasse"
+          ],
+          "answer": 0,
+          "explanation": "Investimenti in fabbriche e data center pesano subito sulla cassa, mentre i ricavi arrivano dopo."
+        }
+      ],
+      "reflection": "Quando un'azienda cresce ma brucia cassa, che cosa cerchi per capire se è una scommessa sensata o un rischio?",
+      "id": "2026-10-31-ai",
+      "label": "Intelligenza artificiale"
+    },
+    {
+      "category": "finanza",
+      "interests": [
+        "economia",
+        "finanza",
+        "politica",
+        "lavoro"
+      ],
+      "title": "Istat: inflazione al 5,4% a ottobre e Pil fermo nel terzo trimestre",
+      "subtitle": "Energia +31,4%: i prezzi corrono come ad agosto 2023, mentre la crescita si ferma e l'area euro cresce dello 0,4%",
+      "summary": "L'**inflazione** italiana sale al **5,4%** a ottobre, massimo da agosto 2023, trainata dall'**energia (+31,4%)**. Il **Pil** è **fermo** nel terzo trimestre, +0,8% sull'anno: peggio delle attese, mentre l'area euro cresce dello 0,4%.",
+      "stat": {
+        "value": "5,4%",
+        "label": "inflazione in Italia a ottobre 2026, stima Istat (da 4,2% a settembre)"
+      },
+      "sections": [
+        {
+          "heading": "I prezzi",
+          "text": "Secondo la stima preliminare dell'**Istat**, a ottobre l'inflazione sale al **5,4%** dal 4,2% di settembre. È il livello più alto da **agosto 2023**."
+        },
+        {
+          "heading": "Il motore: l'energia",
+          "text": "I prezzi dei **beni energetici** passano da **+22,6% a +31,4%** sull'anno, per il quadro geopolitico. Il **carrello della spesa** accelera da 1,5% a **2,5%**."
+        },
+        {
+          "heading": "L'inflazione di fondo",
+          "text": "Senza energia e alimentari freschi, l'**inflazione di fondo** resta al **2,0%**. Vuol dire che l'impennata viene soprattutto dal petrolio e dal gas, non da prezzi che salgono ovunque."
+        },
+        {
+          "heading": "La crescita ferma",
+          "text": "Nel terzo trimestre il **Pil** non è cresciuto rispetto al trimestre prima, e sull'anno è **+0,8%**. Gli analisti si aspettavano +0,1-0,2%. Nell'area euro il Pil è cresciuto dello **0,4%**."
+        },
+        {
+          "heading": "Perché è un problema",
+          "text": "Prezzi che salgono e crescita che si ferma sono una combinazione difficile per la **Bce**, che deve decidere a dicembre se alzare i tassi per frenare l'inflazione, rischiando di rallentare ancora l'economia."
+        }
+      ],
+      "keyPoints": [
+        "Inflazione al 5,4% a ottobre, massimo da agosto 2023",
+        "Energia +31,4%; inflazione di fondo al 2,0%",
+        "Pil fermo nel terzo trimestre, +0,8% sull'anno"
+      ],
+      "whyItMatters": "Con prezzi che salgono più dei salari, **il tuo potere d'acquisto cala**. E il Pil fermo rende più difficile per lo Stato e per la Bce scegliere tra frenare i prezzi e sostenere la crescita.",
+      "actionToday": "Guarda l'ultima **bolletta di luce o gas** e confrontala con quella di un anno fa. Se hai un contratto a prezzo variabile, valuta se **fissare il prezzo**.",
+      "checklist": [],
+      "eli5": "Se il prezzo di quasi tutto sale ma il tuo stipendio resta uguale, ogni euro compra meno: l'inflazione è questo.",
+      "deepDive": [
+        {
+          "title": "Inflazione di fondo e totale",
+          "text": "L'**inflazione totale** include tutto. Quella **di fondo** toglie le voci più volatili, come energia e alimentari freschi. Se la totale sale e la fondo no, la spinta viene da shock esterni, come un rincaro del petrolio."
+        },
+        {
+          "title": "Stagflazione",
+          "text": "Si parla di **stagflazione** quando prezzi alti e crescita debole vanno insieme. Non è ancora il caso certo dell'Italia, ma i dati di oggi vanno in quella direzione."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "inflazione di fondo",
+          "meaning": "L'inflazione senza le voci più volatili, come energia e alimentari freschi."
+        },
+        {
+          "term": "Pil",
+          "meaning": "Il valore di tutto ciò che un Paese produce in un periodo."
+        },
+        {
+          "term": "stagflazione",
+          "meaning": "Una situazione con prezzi in aumento e crescita economica ferma o debole."
+        }
+      ],
+      "sources": [
+        {
+          "title": "ANSA — Istat, l'inflazione ad ottobre sale al 5,4%. Il Pil è fermo nel terzo trimestre",
+          "url": "https://www.ansa.it/sito/notizie/economia/pmi/2026/10/30/istat-linflazione-ad-ottobre-sale-al-54i.-il-pil-e-fermo-nel-terzo-trimestre_18189111-ab4d-47c1-aa50-a880181f4b6b.html"
+        },
+        {
+          "title": "Il Fatto Quotidiano — Inflazione ottobre 2026 al 5,4%, massimo da agosto 2023. Pil fermo",
+          "url": "https://www.ilfattoquotidiano.it/2026/10/30/inflazione-vola-ottobre-pil-fermo-notizie/8555288/"
+        },
+        {
+          "title": "Sky TG24 — Pil Italia terzo trimestre 2026: i dati Istat",
+          "url": "https://tg24.sky.it/economia/2026/10/30/pil-italia-terzo-trimestre-2026-istat"
+        },
+        {
+          "title": "Milano Finanza — Istat: si ferma la crescita economica e l'inflazione vola a +5,4%",
+          "url": "https://www.milanofinanza.it/news/istat-si-ferma-la-crescita-economica-e-l-inflazione-vola-a-5-4-202610301233246409"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Perché l'inflazione di fondo è importante?",
+          "options": [
+            "Perché toglie le voci volatili e mostra se i prezzi salgono ovunque",
+            "Perché include solo l'energia",
+            "Perché misura i salari",
+            "Perché è sempre più alta"
+          ],
+          "answer": 0,
+          "explanation": "Se la totale sale e la fondo no, la spinta viene da shock come l'energia."
+        },
+        {
+          "q": "Che cosa significa Pil fermo nel trimestre?",
+          "options": [
+            "L'economia è crollata",
+            "Il Pil non è cambiato rispetto al trimestre precedente",
+            "Il Pil è raddoppiato",
+            "Lo Stato ha chiuso"
+          ],
+          "answer": 1,
+          "explanation": "Rispetto al trimestre prima la crescita è zero: l'economia non si espande né si contrae."
+        }
+      ],
+      "reflection": "Quali spese della tua famiglia sono più legate al prezzo dell'energia, e quali potresti ridurre?",
+      "id": "2026-10-31-finanza",
+      "label": "Finanza"
+    },
+    {
+      "category": "mondo",
+      "interests": [
+        "geopolitica",
+        "politica",
+        "storia"
+      ],
+      "title": "Hormuz ancora chiuso: il petrolio sopra 110 dollari e i negoziati con l'Iran restano incerti",
+      "subtitle": "Il Brent sale per il timore di nuovi attacchi; mediatori in giro per Teheran, ma nessun accordo concreto",
+      "summary": "Lo **Stretto di Hormuz** è ancora praticamente chiuso al traffico commerciale e il **Brent** è sopra i **110 dollari**. Mediatori regionali spingono per un accordo tra Stati Uniti e Iran, ma le fonti non descrivono ancora un negoziato concreto.",
+      "stat": {
+        "value": "> 110 $",
+        "label": "prezzo del Brent al barile il 30 ottobre; le fonti vanno da 112 a 117"
+      },
+      "sections": [
+        {
+          "heading": "Lo stretto",
+          "text": "Secondo un tracker del traffico marittimo, lo **Stretto di Hormuz** è chiuso al traffico commerciale al 30 ottobre: il 25 ottobre sono passate **2 navi**, contro circa 85 al giorno in condizioni normali."
+        },
+        {
+          "heading": "Il prezzo del petrolio",
+          "text": "Il **Brent** è salito di oltre il 2%: **112 dollari** per Trading Economics, circa **117** per The National e Al Jazeera, a seconda del contratto e dell'orario. Il rialzo riflette il timore di nuovi attacchi."
+        },
+        {
+          "heading": "I negoziati",
+          "text": "Secondo la stampa, mediatori di **Qatar, Pakistan, Turchia e Arabia Saudita** hanno visitato Teheran. Trump dice che i colloqui continuano, ma si chiede se avranno successo; l'Iran dice di accogliere ogni sforzo di dialogo."
+        },
+        {
+          "heading": "Le mine",
+          "text": "I Guardiani della Rivoluzione dicono che quattro petroliere hanno colpito delle mine su rotte non autorizzate. Nessuna autorità marittima lo ha confermato."
+        },
+        {
+          "heading": "Altre notizie",
+          "text": "A Atlanta si è aperto il G20 degli esteri, con Iran ed energia al centro. L'Ucraina avrebbe sospeso i raid sulle raffinerie russe fino alle elezioni americane, ma Kiev non lo ha confermato."
+        }
+      ],
+      "keyPoints": [
+        "Hormuz praticamente chiuso: 2 navi il 25 ottobre contro circa 85 al giorno",
+        "Brent oltre 110 dollari; le cifre cambiano tra le fonti",
+        "Mediatori a Teheran, ma nessun accordo concreto"
+      ],
+      "whyItMatters": "Da quello stretto passa una grossa parte del **petrolio mondiale**: la chiusura spiega perché oggi in Italia l'**energia costa il 31% in più** e perché l'inflazione sale.",
+      "actionToday": "Guarda un grafico del prezzo del **Brent** degli ultimi 12 mesi e scrivi **quanto è salito** da un anno fa. Poi cerca una voce della tua spesa che ne dipende.",
+      "checklist": [],
+      "eli5": "È come un tubo che porta l'acqua a mezza città: se si chiude, l'acqua che resta costa di più e tutti la pagano cara.",
+      "deepDive": [
+        {
+          "title": "Perché Hormuz è così importante",
+          "text": "È un **passaggio stretto** tra il Golfo e il mare aperto: le petroliere di molti Paesi produttori devono attraversarlo. Se si blocca, non ci sono molte alternative per portare il petrolio ai mercati."
+        },
+        {
+          "title": "Le fonti qui sono miste",
+          "text": "Alcune notizie di oggi vengono da **tracker e rassegne** e non da agenzie ufficiali. Le cifre su navi e prezzi sono indicative: verifica con agenzie come Reuters o AP."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Brent",
+          "meaning": "Il prezzo di riferimento europeo del petrolio greggio, al barile."
+        },
+        {
+          "term": "Stretto di Hormuz",
+          "meaning": "Il passaggio marittimo tra il Golfo Persico e il mare aperto, da cui passa una parte del petrolio mondiale."
+        },
+        {
+          "term": "mediatore",
+          "meaning": "Un Paese o una persona che aiuta due parti in conflitto a trovare un accordo."
+        }
+      ],
+      "sources": [
+        {
+          "title": "The National — Oil prices set for sharp monthly rise on Hormuz strikes and US threat to hit Iran",
+          "url": "https://www.thenationalnews.com/business/markets/2026/10/30/oil-prices-set-for-sharp-monthly-rise-on-hormuz-strikes-and-us-threat-to-hit-iran/"
+        },
+        {
+          "title": "Al Jazeera — Oil flows are up as Iran war turmoil eases. Why do prices keep rising?",
+          "url": "https://www.aljazeera.com/economy/2026/10/30/oil-flows-are-up-as-iran-war-turmoil-eases-why-do-prices-keep-rising"
+        },
+        {
+          "title": "Straits Daily Brief — Strait of Hormuz News, October 30, 2026",
+          "url": "https://straits.live/briefs/2026-10-30"
+        },
+        {
+          "title": "FDD — Overnight Brief, October 30, 2026",
+          "url": "https://www.fdd.org/overnight-brief/october-30-2026/"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Perché la chiusura di Hormuz fa salire i prezzi in Italia?",
+          "options": [
+            "Perché passa molto petrolio e gas: se manca, l'energia costa di più",
+            "Perché l'Italia produce solo petrolio",
+            "Perché chiudono le banche",
+            "Perché cambia la moneta"
+          ],
+          "answer": 0,
+          "explanation": "Meno petrolio disponibile fa salire il Brent e quindi i prezzi di carburanti e bollette."
+        },
+        {
+          "q": "Perché le cifre sul Brent variano tra le fonti?",
+          "options": [
+            "Perché cambiano contratto e orario di rilevazione",
+            "Perché il petrolio cambia colore",
+            "Perché le fonti sono false",
+            "Perché il Brent non esiste"
+          ],
+          "answer": 0,
+          "explanation": "Prezzo diverso a seconda della scadenza del contratto e del momento in cui si guarda."
+        }
+      ],
+      "reflection": "Quali tue spese cambierebbero se il petrolio restasse a questi prezzi per un anno?",
+      "id": "2026-10-31-mondo",
+      "label": "Mondo"
+    },
+    {
+      "category": "sapere",
+      "interests": [
+        "storia",
+        "geopolitica",
+        "economia",
+        "politica"
+      ],
+      "title": "Lo shock petrolifero del 1973: quando l'energia cambiò il mondo",
+      "subtitle": "L'embargo arabo dopo la guerra del Kippur fece quasi quadruplicare il prezzo in tre mesi",
+      "summary": "Nell'**ottobre 1973** i Paesi arabi esportatori di petrolio dichiararono un **embargo** contro chi appoggiava Israele nella guerra del Kippur. In pochi mesi il prezzo del barile **quasi quadruplicò**: la storia aiuta a leggere l'energia di oggi.",
+      "stat": {
+        "value": "~3 → ~12 $",
+        "label": "prezzo del barile tra ottobre 1973 e inizio 1974, secondo varie fonti; i valori di partenza non concordano"
+      },
+      "sections": [
+        {
+          "heading": "La guerra del Kippur",
+          "text": "Il **6 ottobre 1973** Egitto e Siria attaccarono Israele nella guerra del Kippur. I Paesi arabi del petrolio usarono la **leva dell'energia** contro chi sosteneva Israele."
+        },
+        {
+          "heading": "L'embargo",
+          "text": "Il **17 ottobre** l'organizzazione dei Paesi arabi esportatori (OAPEC) annunciò tagli alla produzione. Poi un **embargo** contro Stati Uniti e altri Paesi. Le date dei singoli Paesi variano di qualche giorno."
+        },
+        {
+          "heading": "I prezzi",
+          "text": "Il prezzo del barile **quasi quadruplicò** nel giro di tre mesi, da circa 3 a quasi 12 dollari. Le fonti non concordano sul prezzo di partenza e sui prezzi ufficiali."
+        },
+        {
+          "heading": "Le conseguenze",
+          "text": "L'embargo contro gli Stati Uniti fu tolto nel **marzo 1974**, dopo una tregua tra Israele e Siria. I prezzi non tornarono più ai livelli di prima. Molti Paesi cominciarono a **risparmiare energia**."
+        },
+        {
+          "heading": "In Italia",
+          "text": "Anche in Italia ci furono misure di austerità energetica, come le **domeniche a piedi**. Fu l'inizio di un periodo di inflazione alta e crescita debole in molti Paesi."
+        }
+      ],
+      "keyPoints": [
+        "Nel 1973 l'embargo arabo fece quasi quadruplicare il prezzo del petrolio in tre mesi",
+        "L'embargo contro gli Usa finì nel marzo 1974",
+        "L'energia diventò una leva politica e una questione di sicurezza"
+      ],
+      "whyItMatters": "Mostra che **l'energia è anche politica**: un conflitto lontano può cambiare prezzi, inflazione e scelte di governo. Oggi l'Italia lo vede di nuovo con Hormuz.",
+      "actionToday": "Chiedi a un familiare più grande se ricorda **le domeniche a piedi** o il razionamento: scrivi **una cosa** che ti racconta su come cambiò la vita quotidiana.",
+      "checklist": [],
+      "eli5": "Immagina che chi vende il carburante a tutta la città decida di darne meno: tutti pagano di più e imparano a usarne meno.",
+      "deepDive": [
+        {
+          "title": "Cos'è l'OAPEC",
+          "text": "L'**OAPEC** è l'organizzazione dei Paesi arabi esportatori di petrolio, diversa dall'**OPEC**, che raccoglie anche Paesi non arabi. Nel 1973 le due agirono in modo coordinato."
+        },
+        {
+          "title": "Cosa cambiò dopo",
+          "text": "Molti Paesi investirono in **efficienza, nucleare e nuove fonti**, e crearono **scorte strategiche**. Furono scelte nate dallo shock del 1973, che influenzarono le politiche energetiche per decenni."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "embargo",
+          "meaning": "Il divieto di vendere o comprare merci da un Paese, per motivi politici."
+        },
+        {
+          "term": "OAPEC",
+          "meaning": "L'organizzazione dei Paesi arabi esportatori di petrolio."
+        },
+        {
+          "term": "scorte strategiche",
+          "meaning": "Riserve di petrolio conservate dagli Stati per le emergenze."
+        }
+      ],
+      "sources": [
+        {
+          "title": "History.com — OPEC enacts oil embargo (17 ottobre 1973)",
+          "url": "https://www.history.com/this-day-in-history/october-17/opec-enacts-oil-embargo"
+        },
+        {
+          "title": "MoneyWeek — 17 October 1973: Arab states declare oil embargo",
+          "url": "https://moneyweek.com/352192/17-october-1973-arab-states-declare-oil-embargo"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Che cosa decisero i Paesi arabi del petrolio nell'ottobre 1973?",
+          "options": [
+            "Di regalare petrolio",
+            "Di tagliare la produzione e imporre un embargo",
+            "Di vendere solo all'Italia",
+            "Di chiudere i pozzi per sempre"
+          ],
+          "answer": 1,
+          "explanation": "Tagliarono la produzione e imposero un embargo a chi sosteneva Israele."
+        },
+        {
+          "q": "Perché lo shock del 1973 è un buon paragone con oggi?",
+          "options": [
+            "Perché mostra come un conflitto lontano può far salire i prezzi dell'energia",
+            "Perché i prezzi erano uguali",
+            "Perché non c'era inflazione",
+            "Perché ci fu solo in Italia"
+          ],
+          "answer": 0,
+          "explanation": "In entrambi i casi una crisi politica ha colpito l'offerta di petrolio e fatto salire i prezzi."
+        }
+      ],
+      "reflection": "Quali scelte quotidiane diventerebbero normali se l'energia costasse molto di più?",
+      "id": "2026-10-31-sapere",
+      "label": "Sapere"
+    },
+    {
+      "category": "routine",
+      "interests": [
+        "salute",
+        "sport",
+        "crescita",
+        "produttivita"
+      ],
+      "title": "Camminata a intervalli: 3 minuti veloci, 3 lenti",
+      "subtitle": "Un metodo giapponese per allenarsi camminando, senza attrezzi e senza correre",
+      "summary": "Nella **camminata a intervalli** alterni **3 minuti veloci** e **3 minuti lenti**, per circa 30 minuti. Uno studio giapponese del 2007 su adulti di mezza età e anziani ha trovato benefici di forma fisica e pressione, secondo fonti secondarie.",
+      "stat": {
+        "value": "3 + 3 min",
+        "label": "veloci e lenti, ripetuti 5 volte (circa 30 minuti), almeno 4 giorni a settimana"
+      },
+      "sections": [
+        {
+          "heading": "L'origine",
+          "text": "Il metodo viene da uno studio di **Nemoto e colleghi**, pubblicato nel **2007** su *Mayo Clinic Proceedings*. Secondo fonti secondarie, coinvolse circa 246 adulti di mezza età e anziani per cinque mesi."
+        },
+        {
+          "heading": "Come funziona",
+          "text": "Cammini **3 minuti** a passo veloce, in cui parlare è un po' faticoso, poi **3 minuti** a passo lento. Ripeti **5 volte**, per circa 30 minuti."
+        },
+        {
+          "heading": "Cosa dicono i risultati",
+          "text": "Secondo le fonti secondarie, i partecipanti migliorarono **capacità aerobica e forza delle gambe** e abbassarono la **pressione**, più di chi camminava a passo costante. Non ho letto lo studio originale."
+        },
+        {
+          "heading": "Come iniziare",
+          "text": "Parti con **2-3 serie**, poi aumenta. Il passo veloce è quello in cui sei **un po' senza fiato** ma riesci ancora a parlare a frasi brevi. Il passo lento ti fa recuperare."
+        },
+        {
+          "heading": "Cautele",
+          "text": "Se hai problemi di cuore, di pressione o di articolazioni, **parlane prima con un medico**. Fermati se senti dolore o vertigini."
+        }
+      ],
+      "keyPoints": [
+        "3 minuti veloci e 3 lenti, 5 volte, per circa 30 minuti",
+        "Uno studio del 2007 ha trovato miglioramenti di forma fisica e pressione, da fonti secondarie",
+        "Parti piano e consulta un medico se hai problemi di salute"
+      ],
+      "whyItMatters": "È un modo per **allenarti meglio senza attrezzi e senza correre**, con un tempo di 30 minuti, e che si adatta a molte età.",
+      "actionToday": "Oggi esci a camminare per **30 minuti**: usa un timer e alterna **3 minuti veloci e 3 lenti**. Segna **come ti senti** a fine allenamento.",
+      "checklist": [
+        "Scegli un percorso piano e un timer",
+        "Cammina 3 minuti a passo veloce",
+        "Cammina 3 minuti a passo lento",
+        "Ripeti 5 volte, o 2-3 se sei all'inizio",
+        "Prova a farlo almeno 4 giorni a settimana"
+      ],
+      "eli5": "È come alternare scatti e passeggiata, ma senza correre: il corpo lavora forte per un po' e poi recupera.",
+      "deepDive": [
+        {
+          "title": "Perché alternare",
+          "text": "L'alternanza **spinge il cuore** oltre il ritmo di una camminata normale e poi gli lascia il tempo di recuperare. Per chi non corre è un modo per allenare la capacità aerobica."
+        },
+        {
+          "title": "I limiti del dato",
+          "text": "I numeri che trovi online vengono per lo più da **blog e siti di benessere**. Per un'opinione affidabile, controlla l'articolo originale o parla con un medico."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "capacità aerobica",
+          "meaning": "Quanto ossigeno il corpo riesce a usare durante uno sforzo prolungato."
+        },
+        {
+          "term": "intervallo",
+          "meaning": "Una fase di sforzo alternata a una fase di recupero."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wikipedia — Interval walking training",
+          "url": "https://en.wikipedia.org/wiki/Interval_walking_training"
+        }
+      ],
+      "readingMinutes": 3,
+      "quiz": [
+        {
+          "q": "Come si struttura una serie di camminata a intervalli?",
+          "options": [
+            "3 minuti veloci e 3 lenti",
+            "30 minuti di corsa",
+            "1 ora lenta",
+            "10 minuti fermi"
+          ],
+          "answer": 0,
+          "explanation": "Si alternano 3 minuti di passo veloce e 3 di passo lento, ripetendo 5 volte."
+        },
+        {
+          "q": "Perché conviene verificare l'origine dei dati?",
+          "options": [
+            "Perché i numeri che circolano online vengono spesso da siti secondari",
+            "Perché gli studi sono sempre falsi",
+            "Perché non servono",
+            "Perché il passo non conta"
+          ],
+          "answer": 0,
+          "explanation": "Controllare l'articolo originale evita di fidarsi di cifre ripetute da blog."
+        }
+      ],
+      "reflection": "In quale momento della settimana potresti infilare 30 minuti di camminata a intervalli?",
+      "id": "2026-10-31-routine",
+      "label": "Metodo & routine"
+    }
+  ],
+  "extras": [
+    {
+      "topic": "cinema",
+      "kind": "news",
+      "title": "Giovedì al cinema: Fast & Furious in testa, Dio ride debutta secondo",
+      "subtitle": "Sedici novità in sala il 29 ottobre; in terza posizione il documentario su Ozzy e i Black Sabbath",
+      "summary": "Giovedì 29 ottobre la riedizione di **Fast & Furious** è prima con circa **118 mila euro**, seguita dal film italiano **Dio ride** (72 mila) e dal documentario **Ozzy & Black Sabbath: Back to the Beginning** (61 mila).",
+      "stat": {
+        "value": "16",
+        "label": "nuovi film arrivati in sala giovedì 29 ottobre"
+      },
+      "sections": [
+        {
+          "heading": "La classifica di giovedì",
+          "text": "Secondo **Cinema in sala**, giovedì in testa c'è la riedizione di **Fast & Furious** con **118.462 euro**. Al secondo posto **Dio ride**, film italiano, con **72.254 euro**."
+        },
+        {
+          "heading": "Il documentario musicale",
+          "text": "Terzo **Ozzy & Black Sabbath: Back to the Beginning**, con **61.313 euro**: un documentario su Ozzy Osbourne e i Black Sabbath."
+        },
+        {
+          "heading": "Tante uscite insieme",
+          "text": "Giovedì sono arrivate in sala **sedici novità**. Con tante uscite in un giorno, i film si dividono il pubblico e il passaparola conta di più."
+        },
+        {
+          "heading": "I dati completi",
+          "text": "Questi sono dati del **solo giovedì**. Il weekend è finito di contare solo lunedì: i dati ufficiali sono di **Cinetel**, e le cifre possono cambiare."
+        }
+      ],
+      "keyPoints": [
+        "Fast & Furious in testa giovedì con 118 mila euro",
+        "Dio ride debutta secondo con 72 mila euro",
+        "Sedici film nuovi in sala in un solo giorno"
+      ],
+      "whyItMatters": "I primi giorni di uscita dicono **come parte un film**, ma il weekend è quello che conta: giovedì e venerdì sono solo un assaggio.",
+      "actionToday": "Lunedì guarda la **classifica del weekend** e confronta con quella di giovedì: **quali film salgono e quali scendono?**",
+      "checklist": [],
+      "eli5": "È come guardare i primi minuti di una partita: ti dà un'idea, ma il risultato si vede solo alla fine.",
+      "deepDive": [
+        {
+          "title": "Perché i film escono di giovedì",
+          "text": "In Italia le uscite sono di **giovedì**, per avere un giorno in più prima del weekend. I dati del giovedì servono a capire se il film partirà bene."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "riedizione",
+          "meaning": "Un film già uscito che torna in sala, spesso restaurato o per una ricorrenza."
+        },
+        {
+          "term": "passaparola",
+          "meaning": "Il consiglio che gli spettatori si danno tra loro, che fa crescere un film dopo l'uscita."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cinema in sala — Il box office del giovedì",
+          "url": "https://cinemainsala.it/senza-categoria/il-box-office-del-giovedi-12/"
+        },
+        {
+          "title": "ANSA — Incassi Cinetel, resta primo il biopic su Pino Daniele",
+          "url": "https://www.ansa.it/sito/notizie/topnews/2026/10/26/incassi-cinetel-resta-primo-il-biopic-su-pino-daniele-je-so-pazzo_6d95ccfe-281a-429f-8b93-293734c2bc7d.html"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Quale film era primo giovedì 29 ottobre?",
+          "options": [
+            "Fast & Furious (riedizione)",
+            "Dio ride",
+            "Dracula",
+            "Je so' pazzo"
+          ],
+          "answer": 0,
+          "explanation": "La riedizione di Fast & Furious è in testa con 118.462 euro nel solo giovedì."
+        }
+      ],
+      "reflection": "Scegli un film per il passaparola di chi conosci, o per quello che dicono le classifiche?",
+      "id": "2026-10-31-x-cinema-news",
+      "category": "mondo",
+      "label": "Cinema e serie"
+    },
+    {
+      "topic": "cinema",
+      "kind": "spunto",
+      "title": "Il formato dell'immagine: perché alcuni film sono quasi quadrati",
+      "subtitle": "Il rapporto tra larghezza e altezza è una scelta, e cambia come guardi un film",
+      "summary": "Il **formato** (o rapporto d'aspetto) è il rapporto tra **larghezza e altezza** dell'immagine. Un'inquadratura quasi quadrata dà intimità; una molto larga dà spazio e paesaggio.",
+      "stat": null,
+      "sections": [
+        {
+          "heading": "Che cos'è",
+          "text": "Il **rapporto d'aspetto** si scrive, per esempio, **1,37:1** (quasi quadrato) oppure **2,39:1** (molto largo). Più il secondo numero è grande, più l'immagine è stretta e allungata."
+        },
+        {
+          "heading": "Cosa comunica",
+          "text": "Un formato **stretto** mette al centro i personaggi e può dare senso di chiusura. Uno **largo** mostra paesaggi e distanze, e dà respiro."
+        },
+        {
+          "heading": "Quando cambia",
+          "text": "Alcuni film **cambiano formato** durante la storia, per segnare un passaggio, un ricordo o un sogno. Se noti che i bordi neri spariscono, è una scelta."
+        }
+      ],
+      "keyPoints": [
+        "Il rapporto d'aspetto è larghezza diviso altezza",
+        "Formato stretto = intimità, largo = spazio",
+        "Un cambio di formato in un film è una scelta"
+      ],
+      "whyItMatters": "Ti fa notare **come il regista usa lo schermo**, e ti aiuta a capire perché una scena ti sembra soffocante o aperta.",
+      "actionToday": "Guarda l'inizio del prossimo film e **nota le bande nere** sopra o ai lati. Poi chiediti: **che effetto fa questo formato?**",
+      "checklist": [
+        "Apri un film e nota le bande nere",
+        "Chiediti se l'immagine è larga o quasi quadrata",
+        "Scrivi che effetto ti fa",
+        "Controlla se il formato cambia durante il film"
+      ],
+      "eli5": "È come scegliere la cornice di una foto: una cornice stretta ti avvicina al soggetto, una larga ti fa vedere il paesaggio.",
+      "deepDive": [
+        {
+          "title": "Perché i bordi neri",
+          "text": "Quando un film largo è mostrato su uno schermo più quadrato, restano **bande nere** sopra e sotto. Tagliarle per riempire lo schermo toglie parte dell'immagine."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "rapporto d'aspetto",
+          "meaning": "Il rapporto tra larghezza e altezza di un'immagine."
+        },
+        {
+          "term": "inquadratura",
+          "meaning": "Quello che la macchina da presa mostra senza stacchi."
+        }
+      ],
+      "sources": [],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Che effetto dà un formato molto largo?",
+          "options": [
+            "Spazio e paesaggio",
+            "Intimità stretta",
+            "Più colore",
+            "Più suono"
+          ],
+          "answer": 0,
+          "explanation": "Un formato largo mostra distanze e paesaggi, dando respiro all'immagine."
+        }
+      ],
+      "reflection": "In quale film hai sentito lo schermo troppo stretto o troppo largo per quello che raccontava?",
+      "id": "2026-10-31-x-cinema-spunto",
+      "category": "mondo",
+      "label": "Cinema e serie"
+    },
+    {
+      "topic": "cucina",
+      "kind": "news",
+      "title": "Guida Michelin Italia 2027: presentazione il 12 novembre a Piacenza",
+      "subtitle": "La 72ª edizione al Teatro Municipale: stelle, Stelle Verdi e il premio Passion Dessert",
+      "summary": "La **Guida Michelin Italia 2027** sarà presentata il **12 novembre** al **Teatro Municipale di Piacenza**, 72ª edizione, con diretta su YouTube. Nelle ultime settimane Michelin ha già segnalato **oltre trenta nuovi locali**, senza stelle.",
+      "stat": {
+        "value": "12 novembre",
+        "label": "data della presentazione della Guida Michelin Italia 2027 a Piacenza"
+      },
+      "sections": [
+        {
+          "heading": "La cerimonia",
+          "text": "La presentazione è fissata per **giovedì 12 novembre 2026** al **Teatro Municipale di Piacenza**. È la **72ª edizione** della guida e torna in Emilia-Romagna."
+        },
+        {
+          "heading": "Cosa si assegna",
+          "text": "Oltre alle **stelle** saranno assegnate le **Stelle Verdi** e il riconoscimento **Passion Dessert**, dedicato ai dolci. La cerimonia sarà in diretta su YouTube e Facebook."
+        },
+        {
+          "heading": "I nuovi locali",
+          "text": "Michelin ha segnalato **più di trenta ristoranti nuovi**, tra cui Cracco a Roma, Pascucci a Fiumicino e Iside De Cesare a Firenze. Per ora sono indicati come **Novità**, senza stelle."
+        },
+        {
+          "heading": "Cosa aspettarsi",
+          "text": "Fino al 12 novembre i giudizi non sono noti. Le segnalazioni di queste settimane sono **candidati**, non risultati."
+        }
+      ],
+      "keyPoints": [
+        "Michelin Italia 2027 presentata il 12 novembre a Piacenza",
+        "Stelle, Stelle Verdi e Passion Dessert tra i premi",
+        "I nuovi locali segnalati non hanno ancora stelle"
+      ],
+      "whyItMatters": "La guida orienta il **turismo gastronomico** e le prenotazioni. Le stelle cambiano la vita di un ristorante, quindi il 12 novembre è un appuntamento atteso.",
+      "actionToday": "Segna **il 12 novembre** e scrivi **un ristorante vicino a te** che pensi meriti un riconoscimento. Controlla poi se compare tra i nomi.",
+      "checklist": [],
+      "eli5": "È come la sera dei premi di un campionato: i nomi dei candidati si conoscono, ma i vincitori solo sul palco.",
+      "deepDive": [
+        {
+          "title": "Cos'è una Stella Verde",
+          "text": "La **Stella Verde Michelin** premia i ristoranti che si distinguono per **pratiche sostenibili**, come filiere corte, riduzione degli sprechi e attenzione all'ambiente."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Stella Verde",
+          "meaning": "Il riconoscimento Michelin ai ristoranti con pratiche di cucina sostenibili."
+        },
+        {
+          "term": "Novità",
+          "meaning": "L'etichetta con cui Michelin segnala un ristorante appena entrato nella selezione."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cronache di Gusto — Sarà presentata il 12 novembre a Piacenza la Guida Michelin Italia 2027",
+          "url": "https://www.cronachedigusto.it/eventi-e-iniziative/sara-presentata-il-12-novembre-a-piacenza-la-guida-michelin-italia-2027/"
+        },
+        {
+          "title": "Regione Emilia-Romagna — La Guida Michelin Italia 2027 torna in Emilia-Romagna",
+          "url": "https://notizie.regione.emilia-romagna.it/comunicati/2026/turismo-la-guida-michelin-italia-2027-torna-in-emilia-romagna-il-12-novembre-a-piacenza-la-presentazione-della-72esima-edizione-gli-assessori-frisoni-e-mammi-la-cucina-stellata-e-un-potente-strumento-di-promozione-turistica-che-valorizza-i-nostri"
+        },
+        {
+          "title": "Talkcity — Guida Michelin, 30 nuovi ristoranti in Italia a novembre",
+          "url": "https://talkcity.it/guida-michelin-30-nuovi-ristoranti-in-italia/"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Dove sarà presentata la Guida Michelin Italia 2027?",
+          "options": [
+            "Piacenza",
+            "Roma",
+            "Milano",
+            "Napoli"
+          ],
+          "answer": 0,
+          "explanation": "La cerimonia è al Teatro Municipale di Piacenza, il 12 novembre."
+        }
+      ],
+      "reflection": "Quale ristorante ti ha sorpreso di più senza essere in nessuna guida?",
+      "id": "2026-10-31-x-cucina-news",
+      "category": "routine",
+      "label": "Cucina"
+    },
+    {
+      "topic": "cucina",
+      "kind": "spunto",
+      "title": "Mise en place: prepara tutto prima di accendere il fuoco",
+      "subtitle": "La regola dei cuochi professionisti che rende più calma anche una cena a casa",
+      "summary": "La **mise en place** significa preparare e **mettere in ordine** tutti gli ingredienti **prima** di iniziare a cuocere. Ti evita di bruciare l'aglio mentre cerchi il prezzemolo.",
+      "stat": null,
+      "sections": [
+        {
+          "heading": "Che cos'è",
+          "text": "È un'espressione francese che vuol dire \"mettere a posto\". In cucina è la fase in cui **leggi la ricetta**, lavi, tagli e misuri, prima di accendere il fornello."
+        },
+        {
+          "heading": "Perché funziona",
+          "text": "Molte ricette hanno **momenti rapidi**, in cui ogni secondo conta. Se gli ingredienti sono pronti, non devi interrompere la cottura per cercare o tagliare."
+        },
+        {
+          "heading": "Come farla",
+          "text": "Prima **leggi tutta la ricetta**. Poi prepara gli ingredienti in **ciotoline**, nell'ordine in cui li userai, e tieni vicini gli attrezzi."
+        }
+      ],
+      "keyPoints": [
+        "Prepara tutto prima di cuocere",
+        "Leggi la ricetta fino in fondo",
+        "Ciotoline in ordine di utilizzo"
+      ],
+      "whyItMatters": "Cucinare diventa **meno stressante** e fai meno errori. Vale per qualsiasi piatto, dal soffritto al risotto.",
+      "actionToday": "Per la prossima cena **leggi la ricetta fino alla fine**, taglia e misura tutto, e metti gli ingredienti in ordine. Poi accendi il fuoco.",
+      "checklist": [
+        "Leggi tutta la ricetta",
+        "Prendi gli attrezzi che ti servono",
+        "Lava e taglia gli ingredienti",
+        "Misura quantità e spezie in ciotoline",
+        "Mettile in ordine di utilizzo"
+      ],
+      "eli5": "È come preparare lo zaino prima di una gita: se hai tutto a portata di mano non devi fermarti a cercare.",
+      "deepDive": [
+        {
+          "title": "Meno piatti sporchi",
+          "text": "Si pensa che la mise en place sporchi più ciotole, ma spesso **fa risparmiare tempo**: cucini senza interruzioni e il risultato viene meglio."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "mise en place",
+          "meaning": "Espressione francese per la preparazione e il riordino degli ingredienti prima di cucinare."
+        },
+        {
+          "term": "soffritto",
+          "meaning": "Una base di verdure tagliate e rosolate piano in olio o burro."
+        }
+      ],
+      "sources": [],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Quando si fa la mise en place?",
+          "options": [
+            "Prima di accendere il fuoco",
+            "Dopo aver cucinato",
+            "Mentre si serve",
+            "A metà cottura"
+          ],
+          "answer": 0,
+          "explanation": "Si prepara tutto prima di cuocere, per non interrompere la cottura."
+        }
+      ],
+      "reflection": "In quale ricetta ti è capitato di bruciare o sbagliare perché non avevi tutto pronto?",
+      "id": "2026-10-31-x-cucina-spunto",
+      "category": "routine",
+      "label": "Cucina"
+    },
+    {
+      "topic": "cultura",
+      "kind": "news",
+      "title": "Kusama apre oggi a Torino, Abramović a novembre a Roma e Milano",
+      "subtitle": "Tre mostre da segnare: Infinity Mirrored Room alle OGR dal 31 ottobre; Abramović alla GNAM dal 18 e a Palazzo Citterio dal 24 novembre",
+      "summary": "Da oggi, **31 ottobre**, **Yayoi Kusama** è alle **OGR di Torino** con la *Infinity Mirrored Room*. A novembre **Marina Abramović** arriva alla GNAM di Roma (dal **18**) e a Palazzo Citterio a Milano (dal **24**).",
+      "stat": {
+        "value": "31 ottobre",
+        "label": "apertura della mostra di Yayoi Kusama alle OGR di Torino"
+      },
+      "sections": [
+        {
+          "heading": "Kusama a Torino",
+          "text": "La mostra di **Yayoi Kusama** alle **OGR** di Torino va dal **31 ottobre al 28 febbraio 2027**. Al centro l'installazione *Infinity Mirrored Room*, una stanza di specchi."
+        },
+        {
+          "heading": "Abramović a Roma",
+          "text": "Alla **GNAM** di Roma, dal **18 novembre al 4 aprile 2027**, la mostra *Historical Works and Transforming Energy* di **Marina Abramović**."
+        },
+        {
+          "heading": "Abramović a Milano",
+          "text": "A Milano **Palazzo Citterio** ospita Abramović dal **24 novembre al 24 febbraio 2027**."
+        },
+        {
+          "heading": "Altre mostre",
+          "text": "A Milano **Sheila Hicks** al PAC è la prima retrospettiva italiana dell'artista. La **Biennale** di Venezia chiude il **22 novembre**. Le date vengono da guide diverse: controlla sui siti dei musei."
+        }
+      ],
+      "keyPoints": [
+        "Kusama alle OGR di Torino dal 31 ottobre al 28 febbraio 2027",
+        "Abramović alla GNAM dal 18 novembre e a Palazzo Citterio dal 24",
+        "La Biennale di Venezia chiude il 22 novembre"
+      ],
+      "whyItMatters": "Le grandi mostre hanno **date di chiusura**: segnarle ora evita di scoprirle quando sono finite, e ti permette di scegliere un weekend.",
+      "actionToday": "Scegli **una mostra** tra queste (o una vicina a te), segna **la data di chiusura** in agenda e prenota un **weekend** per andare.",
+      "checklist": [],
+      "eli5": "Le mostre sono come le stagioni di una serie: hanno un inizio e una fine, e dopo non puoi più vederle.",
+      "deepDive": [
+        {
+          "title": "Performance e installazione",
+          "text": "Una **performance** è un'opera fatta con il corpo dell'artista in un tempo preciso; un'**installazione** è un'opera costruita in uno spazio che il pubblico attraversa."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "performance",
+          "meaning": "Un'opera d'arte realizzata con l'azione dell'artista davanti al pubblico."
+        },
+        {
+          "term": "retrospettiva",
+          "meaning": "Una mostra che ripercorre l'intera carriera di un artista."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Telepass Moveo — Mostre in Italia di novembre 2026: le più belle da vedere",
+          "url": "https://moveo.telepass.com/mostre-italia-novembre-2026/"
+        },
+        {
+          "title": "Eventi Milano — Mostre a Milano Novembre 2026: la guida completa",
+          "url": "https://www.eventimilano.it/event/mostre-darte-a-milano/"
+        },
+        {
+          "title": "Conoscounposto — 5 mostre a Milano a novembre 2026 da visitare",
+          "url": "https://www.conoscounposto.com/mostre-a-milano-a-novembre-2026-da-visitare/"
+        }
+      ],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Dal 18 novembre dove è la mostra di Marina Abramović a Roma?",
+          "options": [
+            "Alla GNAM",
+            "Al Colosseo",
+            "Ai Musei Vaticani",
+            "A Palazzo Citterio"
+          ],
+          "answer": 0,
+          "explanation": "A Roma Abramović è alla GNAM; Palazzo Citterio è a Milano."
+        }
+      ],
+      "reflection": "Quale opera d'arte ti ha cambiato l'umore, e che cosa ti ha colpito?",
+      "id": "2026-10-31-x-cultura-news",
+      "category": "sapere",
+      "label": "Libri e cultura"
+    },
+    {
+      "topic": "cultura",
+      "kind": "spunto",
+      "title": "Una domanda sola davanti a un'opera",
+      "subtitle": "Un trucco per guardare un quadro o una scultura senza sentirsi sopraffatti",
+      "summary": "Davanti a un'opera scegli **una sola domanda** a cui rispondere: cosa vedo per primo? Cosa manca? Cosa cambierei? Una domanda ti fa **guardare più a lungo** e meglio.",
+      "stat": null,
+      "sections": [
+        {
+          "heading": "Il problema",
+          "text": "In una mostra si cammina in fretta e si legge solo la **didascalia**. Dopo dieci opere non si ricorda quasi nulla."
+        },
+        {
+          "heading": "Una domanda",
+          "text": "Prima di leggere il cartellino scegli **una domanda**: *cosa vedo per primo?*, *dove va il mio sguardo?*, *che cosa mi disturba?*. Rispondi in una frase."
+        },
+        {
+          "heading": "Poi leggi",
+          "text": "Solo **dopo** leggi la didascalia e confronta. La tua risposta resta, anche se è diversa da quella dell'esperto."
+        }
+      ],
+      "keyPoints": [
+        "Scegli una domanda prima di leggere il cartellino",
+        "Rispondi in una frase",
+        "Poi confronta con la didascalia"
+      ],
+      "whyItMatters": "Guardare con una domanda ti fa **ricordare di più** e ti permette di avere un'idea tua, non solo quella della guida.",
+      "actionToday": "Alla prossima mostra scegli **tre opere** e per ciascuna rispondi a **una domanda**. Scrivila nel telefono.",
+      "checklist": [
+        "Scegli un'opera che ti attira",
+        "Scegli una domanda prima di leggere il cartellino",
+        "Rispondi in una frase",
+        "Leggi la didascalia e confronta",
+        "Passa all'opera successiva"
+      ],
+      "eli5": "È come entrare in una stanza cercando un colore: finisci per notare molte più cose di quando guardi senza meta.",
+      "deepDive": [
+        {
+          "title": "Guardare lentamente",
+          "text": "In una mostra è facile passare davanti a un'opera in pochi secondi. Una **domanda** ti dà un motivo per fermarti: non serve guardare a lungo, ma **guardare con uno scopo**."
+        }
+      ],
+      "glossary": [
+        {
+          "term": "didascalia",
+          "meaning": "Il testo accanto a un'opera con titolo, autore, data e spiegazioni."
+        },
+        {
+          "term": "cartellino",
+          "meaning": "La targhetta con le informazioni su un'opera in un museo."
+        }
+      ],
+      "sources": [],
+      "readingMinutes": 2,
+      "quiz": [
+        {
+          "q": "Quando leggi la didascalia, con questo metodo?",
+          "options": [
+            "Dopo aver risposto alla tua domanda",
+            "Prima di guardare",
+            "Mai",
+            "Solo a casa"
+          ],
+          "answer": 0,
+          "explanation": "Prima guardi con una domanda, poi confronti con il testo."
+        }
+      ],
+      "reflection": "Quale domanda faresti per prima davanti al tuo quadro preferito?",
+      "id": "2026-10-31-x-cultura-spunto",
+      "category": "sapere",
+      "label": "Libri e cultura"
+    }
+  ]
+}

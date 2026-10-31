@@ -30,6 +30,8 @@ Appunti per scrivere l'edizione del giorno senza dover ricostruire il contesto. 
 - Se la scheda `mondo` di ieri anticipava un evento (voto, riunione), oggi va riportato l'esito: cerca prima i risultati, poi scrivi.
 - Questa sessione non raggiunge supabase.co (rete bloccata). Per verificare il database usa il workflow "Verifica database" (`.github/workflows/check-db.yml`), che fa solo controlli in lettura, e leggine i log.
 
+- Sabato e domenica le notizie di settore (cinema, cucina, cultura) sono scarse: usa uscite e date della settimana con fonti, e dichiara quando i dati sono del solo giorno (es. box office del giovedì).
+
 ## Rotazione degli argomenti
 
 Aree del profilo in `config/profile.json`. Non ripetere un'area di Sapere o Routine prima di averle usate tutte, se possibile.
@@ -44,8 +46,9 @@ Aree del profilo in `config/profile.json`. Non ripetere un'area di Sapere o Rout
 | 2026-10-28 | Caffeina e adenosina (salute e fisiologia) | Richiamo attivo (apprendimento) |
 | 2026-10-29 | Dicotomia del controllo (filosofia pratica) | Sospiro ciclico (gestione dello stress) |
 | 2026-10-30 | Legge di Parkinson (produttività e gestione del tempo) | Se-allora, intenzioni di implementazione (mindset) |
+| 2026-10-31 | Shock petrolifero del 1973 (storia e geopolitica) | Camminata a intervalli (movimento) |
 
-Prossime aree da coprire per Sapere: storia e geopolitica, scienza e tecnologia.
+Prossime aree da coprire per Sapere: scienza e tecnologia; poi si riparte dalle prime aree con argomenti nuovi.
 Prossime aree per Routine: tutte usate; si ricomincia da sonno, movimento, concentrazione con metodi diversi.
 
 ## Schede su misura scritte
@@ -59,6 +62,7 @@ Prossime aree per Routine: tutte usate; si ricomincia da sonno, movimento, conce
 | 2026-10-28 | cinema, cucina, cultura (6 schede: solo il terzo profilo è fuori dalle principali) |
 | 2026-10-29 | cucina, cinema, cultura, startup, viaggi (10 schede) |
 | 2026-10-30 | cinema, cucina, cultura (6 schede) |
+| 2026-10-31 | cinema, cucina, cultura (6 schede) |
 
 ## Registro delle edizioni
 
@@ -72,3 +76,4 @@ Prossime aree per Routine: tutte usate; si ricomincia da sonno, movimento, conce
 | 2026-10-28 | 6 | Redazione automatica; 6 schede su misura. Esito del voto israeliano ancora aperto all'ora della ricerca (solo exit poll e scrutinio parziale, discordanti): dichiarato nel testo. Fed: decisione di sera, scheda scritta come anteprima |
 | 2026-10-29 | 7 | Redazione automatica; 10 schede su misura. Seguiti gli esiti di ieri: Fed (tassi fermi, 10 a 2), Cdm sulla manovra (approvata), spoglio israeliano (53/48, ufficiale il 4 novembre). Numeri discordanti tra fonti (seggi arabi 17 o 19; valore manovra) dichiarati nel testo |
 | 2026-10-30 | 8 | Redazione automatica; 6 schede su misura. Seguiti gli esiti: Bce (tassi fermi, Lagarde lascia a febbraio). La scheda Anthropic riporta il prospetto da stampa (Reuters), non dal testo dell'S-1, ed è dichiarato nel testo |
+| 2026-10-31 | 9 | Redazione automatica; 6 schede su misura. Scheda Hormuz/Brent e camminata a intervalli: fonti secondarie dichiarate nel testo (tracker marittimo, blog); cifre discordanti sul Brent riportate come intervallo |

@@ -1,6 +1,33 @@
 {
   "days": [
     {
+      "date": "2026-10-31",
+      "number": 9,
+      "headline": "Intel crolla e il Nasdaq perde quasi il 3%, l'inflazione italiana vola al 5,4% e Hormuz resta chiuso.",
+      "cards": [
+        {
+          "category": "ai",
+          "title": "Intel crolla del 29% e il Nasdaq perde il 2,86%: la Borsa teme il conto dell'AI"
+        },
+        {
+          "category": "finanza",
+          "title": "Istat: inflazione al 5,4% a ottobre e Pil fermo nel terzo trimestre"
+        },
+        {
+          "category": "mondo",
+          "title": "Hormuz ancora chiuso: il petrolio sopra 110 dollari e i negoziati con l'Iran restano incerti"
+        },
+        {
+          "category": "sapere",
+          "title": "Lo shock petrolifero del 1973: quando l'energia cambiò il mondo"
+        },
+        {
+          "category": "routine",
+          "title": "Camminata a intervalli: 3 minuti veloci, 3 lenti"
+        }
+      ]
+    },
+    {
       "date": "2026-10-30",
       "number": 8,
       "headline": "Anthropic ammette incidenti nei test, la Bce lascia i tassi e Lagarde annuncia l'addio.",
